@@ -1,11 +1,3 @@
-<script>
-    export default {
-        setup() {
-            const gongImg = '/src/assets/gongs.jpg';
-            return { gongImg }
-        }
-    }
-</script>
 <template>
   <div>
     <main>
@@ -15,7 +7,7 @@
       >
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
-          style="background-image: url('/src/assets/gongs.jpg')"
+          id="landingCoverImg"
         >
           <span
             id="blackOverlay"
