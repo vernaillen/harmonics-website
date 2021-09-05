@@ -10,3 +10,7 @@ html {
 body {
     font-family: 'Nunito', sans-serif;
 }
+
+#landingCoverImg {
+    background-image: url ('@/assets/gongs.jpg');
+}

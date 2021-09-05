@@ -7,9 +7,7 @@
   <div>
     <navbar-component></navbar-component>
     <main>
-      <div class="mt-20">
-        <router-view />
-      </div>
+      <router-view />
     </main>
     <footer-component></footer-component>
   </div>

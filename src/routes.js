@@ -1,5 +1,6 @@
 import Home from './views/Home.vue'
 import About from './views/About.vue'
+import Landing from './views/Landing.vue'
 import NotFound from './views/NotFound.vue'
 
 /** @type {import('vue-router').RouterOptions['routes']} */
@@ -14,5 +15,6 @@ export const routes = [
     // which is lazy-loaded when the route is visited.
     // component: () => import('./views/About.vue')
   },
+  { path: '/landing', meta: { title: 'Landing' }, component: Landing, },
   { path: '/:path(.*)', component: NotFound },
 ]

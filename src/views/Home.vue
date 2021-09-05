@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="relative pt-16 pb-32 flex">
+  <div class="relative pt-16 pb-32 mt-20 flex">
       <section class="relative">
         <div class="container mx-auto px-4">
           <div class="items-center flex flex-wrap">

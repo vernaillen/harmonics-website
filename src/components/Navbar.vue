@@ -27,10 +27,13 @@
       >
         <ul class="flex flex-col lg:flex-row list-none mr-auto">
           <li class="flex items-center">
-            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-sm font-bold"
-              href="/about"
-            >
+            <a href="/about" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-sm font-bold">
                 About
+            </a>
+          </li>
+          <li class="flex items-center">
+            <a href="/landing" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-sm font-bold">
+                Landing
             </a>
           </li>
         </ul>
