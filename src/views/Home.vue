@@ -6,7 +6,7 @@
     <section class="relative">
       <div class="lg:container mx-auto px-4 mt-10 mb-20">
         <div class="items-center flex flex-wrap">
-          <div class="w-8/12 lg:w-4/12 ml-auto mr-auto lg:mr-0 px-4 mt-10">
+          <div class="w-10/12 lg:w-4/12 ml-auto mr-auto lg:mr-0 px-4 mt-10">
             <div class="md:pr-12">
               <h1 class="text-5xl font-semibold py-4">Harmonics</h1>
               <ul class="list-none mt-6">
@@ -51,7 +51,7 @@
               </ul>
             </div>
           </div>
-          <div class="w-8/12 lg:w-4/12 ml-auto mr-auto lg:ml-0 px-4 mt-10">
+          <div class="w-10/12 lg:w-4/12 ml-auto mr-auto lg:ml-0 px-4 mt-10">
             <img
               alt="..."
               class="max-w-full rounded-lg shadow-2xl"
