@@ -10,7 +10,7 @@
       >
         <img src="../assets/logo.png" class="inline-flex rounded-full w-10 h-10 "/>
         <a
-          class=" font-bold leading-relaxed inline-block mr-4 px-3 py-2 whitespace-nowrap"
+          class="text-lg font-bold leading-relaxed inline-block mr-4 px-3 py-2 whitespace-nowrap"
           href="/"
           >Harmonics</a
         ><button
@@ -25,6 +25,7 @@
         class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none"
         v-bind:class="{'hidden': !showMenu, 'block': showMenu}"
       >
+      <!--
         <ul class="flex flex-col lg:flex-row list-none mr-auto">
           <li class="flex items-center">
             <a href="/about" class="lg:hover:text-gray-900 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-sm font-bold">
@@ -37,6 +38,7 @@
             </a>
           </li>
         </ul>
+        -->
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li class="flex items-center">
             <a

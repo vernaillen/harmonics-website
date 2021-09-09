@@ -19,11 +19,11 @@
         ></polygon>
       </svg>
     </div>
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 mt-10">
       <div class="flex flex-wrap">
-        <div class="w-full lg:w-6/12 px-4">
-          <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
-          <h5 class="text-lg mt-0 mb-2 text-gray-700">
+        <div class="w-full lg:w-6/12 px-4 mb-10">
+          <h4 class="text-3xl text-gray-600 font-semibold">Let's keep in touch!</h4>
+          <h5 class="text-lg text-gray-500 mt-5 mb-2 text-gray-700">
             Find us on any of these platforms.
           </h5>
           <div class="mt-6">
@@ -48,15 +48,22 @@
           <div class="flex flex-wrap items-top mb-6">
             <div class="w-full lg:w-4/12 px-4 ml-auto">
               <span
-                class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                class="block text-gray-400 text-sm font-semibold mb-5"
                 >Useful Links</span
               >
               <ul class="list-unstyled">
                 <li>
                   <a
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="/"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                     href="/about"
-                    >About Us</a
+                    >About</a
                   >
                 </li>
                 <li>
@@ -66,11 +73,18 @@
                     >Blog</a
                   >
                 </li>
+                <li>
+                  <a
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    href="/landing"
+                    >Test landing page</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="w-full lg:w-4/12 px-4">
               <span
-                class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                class="block text-gray-400 text-sm font-semibold mb-5"
                 >Other Resources</span
               >
               <ul class="list-unstyled">
@@ -104,7 +118,7 @@
         class="flex flex-wrap items-center md:justify-between justify-center"
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-          <div class="text-sm text-gray-600 font-semibold py-1">
+          <div class="text-sm text-gray-400 font-semibold py-1">
             Copyright © {{date}} Vernaillen Consulting BVBA.
           </div>
         </div>
