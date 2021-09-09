@@ -1,5 +1,5 @@
 <template>
-  <footer class="relative bg-gray-300 pt-8 pb-6 mt-20">
+  <footer class="relative pt-8 pb-6 mt-20">
     <div
       class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
       style="height: 80px;"
@@ -15,7 +15,7 @@
       >
         <polygon
           class="text-gray-300 fill-current"
-          points="2560 0 2560 100 0 100"
+          points="2560,0 2560,2 0,99 0,100"
         ></polygon>
       </svg>
     </div>
@@ -100,7 +100,6 @@
           </div>
         </div>
       </div>
-      <hr class="my-6 border-gray-400" />
       <div
         class="flex flex-wrap items-center md:justify-between justify-center"
       >
