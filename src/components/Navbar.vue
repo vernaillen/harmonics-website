@@ -1,30 +1,22 @@
 <template>
-  <nav
-    class="top-0 absolute sticky z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-white"
-  >
-    <div
-      class="container px-4 mx-auto flex flex-wrap items-center justify-between"
-    >
-      <div
-        class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
-      >
-        <img src="../assets/logo.png" class="inline-flex rounded-full w-10 h-10 "/>
+  <nav class="top-0 absolute sticky z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 bg-white">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex lg:w-auto lg:static lg:block">
+        <img src="../assets/wave_sound-02-small.jpg" class="inline-flex rounded-full w-20 h-10 "/>
         <a
           class="text-lg font-bold leading-relaxed inline-block mr-4 px-3 py-2 whitespace-nowrap"
-          href="/"
-          >Harmonics</a
-        ><button
-          class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          href="/">
+          Harmonics</a>
+        <button
+          class="right-0 top-2 absolute cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
           type="button"
-          v-on:click="toggleNavbar()"
-        >
+          v-on:click="toggleNavbar()">
           <i class="fas fa-bars"></i>
         </button>
       </div>
       <div
         class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none"
-        v-bind:class="{'hidden': !showMenu, 'block': showMenu}"
-      >
+        v-bind:class="{'hidden': !showMenu, 'block': showMenu}">
       <!--
         <ul class="flex flex-col lg:flex-row list-none mr-auto">
           <li class="flex items-center">
