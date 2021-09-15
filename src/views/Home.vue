@@ -32,7 +32,7 @@
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">Ecstatic dance</p>
+                      <p class="text-gray-600">Sound healing</p>
                     </div>
                   </div>
                 </li>
@@ -44,7 +44,7 @@
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">Sound healing</p>
+                      <p class="text-gray-600">Ecstatic dance</p>
                     </div>
                   </div>
                 </li>
