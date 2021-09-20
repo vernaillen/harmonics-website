@@ -9,7 +9,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "postcss-import": "^14.0.2",
-    "vue": "^3.2.11",
+    "vue": "^3.2.12",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
@@ -20,11 +20,11 @@
     "@tailwindcss/line-clamp": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "@types/tailwindcss": "^2.2.1",
-    "@vitejs/plugin-vue": "^1.6.2",
+    "@vitejs/plugin-vue": "^1.8.1",
     "@vue/compiler-sfc": "^3.2.12",
     "autoprefixer": "^10.3.4",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.15",
-    "vite": "^2.5.7"
+    "vite": "^2.5.10"
   }
 }
