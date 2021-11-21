@@ -19,8 +19,20 @@
                     </div>
                     <div>
                       <p class="text-gray-600">
-                        Immersive soundbaths & Sound healing
+                        Immersive soundbaths
                       </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3">
+                        <i class="fas fa-arrow-right"></i>
+                      </span>
+                    </div>
+                    <div>
+                      <p class="text-gray-600">Sound healing</p>
                     </div>
                   </div>
                 </li>
@@ -44,7 +56,7 @@
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">Websites for energy healers</p>
+                      <p class="text-gray-600">Websites for energy healers & non profit</p>
                     </div>
                   </div>
                 </li>
