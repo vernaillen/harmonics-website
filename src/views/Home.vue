@@ -56,7 +56,7 @@
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">Websites for energy healers & non profit</p>
+                      <p class="text-gray-600">Websites for energy healers</p>
                     </div>
                   </div>
                 </li>
