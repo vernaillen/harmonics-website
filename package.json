@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "npm run test:unit",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
@@ -13,6 +15,7 @@
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
     "@headlessui/vue": "^1.5.0",
     "@heroicons/vue": "^1.0.6",
     "@tailwindcss/aspect-ratio": "^0.4.0",
@@ -21,8 +24,14 @@
     "@tailwindcss/typography": "^0.5.2",
     "@types/tailwindcss": "^3.0.9",
     "@vitejs/plugin-vue": "^2.2.4",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/cli-service": "^5.0.4",
     "@vue/compiler-sfc": "^3.2.31",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
     "autoprefixer": "^10.4.4",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.5",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.23",
     "vite": "^2.8.6"
