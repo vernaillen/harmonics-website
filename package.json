@@ -5,8 +5,9 @@
     "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview",
-    "test": "npm run test:unit",
-    "test:unit": "vue-cli-service test:unit"
+    "test": "npm run test:unit:coverage",
+    "test:unit": "jest --ci",
+    "test:unit:coverage": "jest --coverage"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
@@ -24,8 +25,7 @@
     "@tailwindcss/typography": "^0.5.2",
     "@types/tailwindcss": "^3.0.9",
     "@vitejs/plugin-vue": "^2.2.4",
-    "@vue/cli-plugin-unit-jest": "~5.0.0",
-    "@vue/cli-service": "^5.0.4",
+    "@vue/cli-plugin-unit-jest": "^5.0.4",
     "@vue/compiler-sfc": "^3.2.31",
     "@vue/test-utils": "^2.0.0-0",
     "@vue/vue3-jest": "^27.0.0-alpha.1",

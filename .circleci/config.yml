@@ -2,10 +2,31 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.2
+  sonarcloud: sonarsource/sonarcloud@1.0.3
+  codecov: codecov/codecov@3.2.2
+
+executors:
+  my-executor:
+    docker:
+      - image: cimg/node:17.8.0
+        auth:
+          username: $DOCKER_HUB_USER
+          password: $DOCKER_HUB_PASSWORD
+
+jobs:
+  build:
+    executor: my-executor
+    steps:
+      - checkout
+      - sonarcloud/scan
 
 workflows:
-  test:
+  build-test:
     jobs:
+      - build:
+          context: SonarCloud
       - node/test:
-          version: '16.10'
-          pkg-manager: npm
+          post-steps:
+            - codecov/upload
+      - node/run:
+          npm-run: build
