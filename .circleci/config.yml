@@ -8,7 +8,7 @@ orbs:
 executors:
   my-executor:
     docker:
-      - image: cimg/node:17.8.0
+      - image: cimg/node:16.14
         auth:
           username: $DOCKER_HUB_USER
           password: $DOCKER_HUB_PASSWORD
