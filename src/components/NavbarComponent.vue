@@ -7,6 +7,7 @@
     >
       <div class="w-full relative flex lg:w-auto lg:static lg:block">
         <img
+          alt="Harmonics logo"
           src="../assets/wave_sound-02-small.jpg"
           class="inline-flex rounded-full w-20 h-10"
         />
@@ -33,7 +34,7 @@
             <a
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="https://www.facebook.com/harmonics.be/"
-              target="_blank"
+              target="_blank" rel=”noopener”
             >
               <font-awesome-icon
                 :icon="['fab', 'facebook']"
@@ -46,7 +47,7 @@
             <a
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="https://www.instagram.com/harmonics.be/"
-              target="_blank"
+              target="_blank" rel=”noopener”
             >
               <font-awesome-icon
                 :icon="['fab', 'instagram']"

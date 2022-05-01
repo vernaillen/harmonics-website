@@ -29,7 +29,7 @@
             Find us on any of these platforms.
           </h5>
           <div class="mt-6">
-            <a href="https://www.facebook.com/harmonics.be/" target="_blank">
+            <a href="https://www.facebook.com/harmonics.be/" target="_blank" rel=”noopener”>
               <button
                 class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
@@ -40,7 +40,7 @@
                 />
               </button>
             </a>
-            <a href="https://www.instagram.com/harmonics.be/" target="_blank">
+            <a href="https://www.instagram.com/harmonics.be/" target="_blank" rel=”noopener”>
               <button
                 class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"

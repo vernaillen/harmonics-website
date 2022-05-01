@@ -130,7 +130,7 @@
           <div class="items-center flex flex-wrap">
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <img
-                alt="..."
+                alt="Gongs"
                 class="max-w-full rounded-lg shadow-lg"
                 src="../assets/gongs.jpg"
               />
@@ -138,10 +138,6 @@
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
                 <h3 class="text-3xl font-semibold py-4">Harmonics</h3>
-                <img
-                  src="../assets/logo.png"
-                  class="rounded-full shadow-lg w-16 h-16"
-                />
                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
                   Healing power of Sound & Music
                 </p>
