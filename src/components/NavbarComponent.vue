@@ -21,7 +21,7 @@
           type="button"
           v-on:click="toggleNavbar()"
         >
-          <i class="fas fa-bars"></i>
+          <font-awesome-icon :icon="['fas', 'bars']" />
         </button>
       </div>
       <div
@@ -34,22 +34,26 @@
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="https://www.facebook.com/harmonics.be/"
               target="_blank"
-              ><i
-                class="lg:text-gray-900 text-gray-500 fab fa-facebook text-lg leading-lg"
-              ></i
-              ><span class="lg:hidden inline-block ml-2">Facebook</span></a
             >
+              <font-awesome-icon
+                :icon="['fab', 'facebook']"
+                class="hover:text-gray-800 text-gray-500 text-lg"
+              />
+              <span class="lg:hidden inline-block ml-2">Facebook</span>
+            </a>
           </li>
           <li class="flex items-center">
             <a
               class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
               href="https://www.instagram.com/harmonics.be/"
               target="_blank"
-              ><i
-                class="lg:text-gray-900 text-gray-500 fab fa-instagram text-lg leading-lg"
-              ></i
-              ><span class="lg:hidden inline-block ml-2">Instagram</span></a
             >
+              <font-awesome-icon
+                :icon="['fab', 'instagram']"
+                class="hover:text-gray-800 text-gray-500 text-lg"
+              />
+              <span class="lg:hidden inline-block ml-2">Instagram</span>
+            </a>
           </li>
         </ul>
       </div>
