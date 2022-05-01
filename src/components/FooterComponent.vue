@@ -2,7 +2,7 @@
   <footer class="relative pt-8 pb-6 mt-20">
     <div
       class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-      style="height: 80px;"
+      style="height: 80px"
     >
       <svg
         class="absolute bottom-0 overflow-hidden"
@@ -22,7 +22,9 @@
     <div class="container mx-auto px-4 mt-10">
       <div class="flex flex-wrap">
         <div class="w-full lg:w-6/12 px-4 mb-10">
-          <h4 class="text-3xl text-gray-600 font-semibold">Let's keep in touch!</h4>
+          <h4 class="text-3xl text-gray-600 font-semibold">
+            Let's keep in touch!
+          </h4>
           <h5 class="text-lg text-gray-500 mt-5 mb-2 text-gray-700">
             Find us on any of these platforms.
           </h5>
@@ -32,7 +34,8 @@
                 class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-              <i class="flex fab fa-facebook"></i></button>
+                <i class="flex fab fa-facebook"></i>
+              </button>
             </a>
             <a href="https://www.instagram.com/harmonics.be/" target="_blank">
               <button
@@ -47,8 +50,7 @@
         <div class="w-full lg:w-6/12 px-4">
           <div class="flex flex-wrap items-top mb-6">
             <div class="w-full lg:w-4/12 px-4 ml-auto">
-              <span
-                class="block text-gray-400 text-sm font-semibold my-5"
+              <span class="block text-gray-400 text-sm font-semibold my-5"
                 >Useful Links</span
               >
               <ul class="list-unstyled">
@@ -83,8 +85,7 @@
               </ul>
             </div>
             <div class="w-full lg:w-4/12 px-4">
-              <span
-                class="block text-gray-400 text-sm font-semibold my-5"
+              <span class="block text-gray-400 text-sm font-semibold my-5"
                 >Other Resources</span
               >
               <ul class="list-unstyled">
@@ -119,7 +120,7 @@
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-400 font-semibold py-1">
-            Copyright © {{date}} Vernaillen Consulting BVBA.
+            Copyright © {{ date }} Vernaillen Consulting BVBA.
           </div>
         </div>
       </div>
@@ -130,8 +131,8 @@
 export default {
   data() {
     return {
-      date: new Date().getFullYear()
-    }
-  }
-}
+      date: new Date().getFullYear(),
+    };
+  },
+};
 </script>

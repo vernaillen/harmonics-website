@@ -3,7 +3,9 @@
     <div class="flex flex-wrap">
       <header class="bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-          <h1 class="text-3xl font-bold leading-tight text-gray-900">Not Found</h1>
+          <h1 class="text-3xl font-bold leading-tight text-gray-900">
+            Not Found
+          </h1>
         </div>
       </header>
     </div>

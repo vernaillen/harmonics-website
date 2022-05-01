@@ -3,7 +3,7 @@
     <main>
       <div
         class="relative pt-16 pb-32 flex content-center items-center justify-center"
-        style="min-height: 75vh;"
+        style="min-height: 75vh"
       >
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
@@ -18,9 +18,7 @@
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
-                <h1 class="text-white font-semibold text-5xl">
-                  Harmonics
-                </h1>
+                <h1 class="text-white font-semibold text-5xl">Harmonics</h1>
                 <p class="mt-4 text-lg text-gray-300">
                   Healing power of Sound & Music.
                 </p>
@@ -30,7 +28,7 @@
         </div>
         <div
           class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
-          style="height: 70px;"
+          style="height: 70px"
         >
           <svg
             class="absolute bottom-0 overflow-hidden"
@@ -61,10 +59,10 @@
                   >
                     <i class="fas fa-music"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Immersive sonic experiences</h6>
-                  <p class="mt-2 mb-4 text-gray-600">
-                    Soundbaths
-                  </p>
+                  <h6 class="text-xl font-semibold">
+                    Immersive sonic experiences
+                  </h6>
+                  <p class="mt-2 mb-4 text-gray-600">Soundbaths</p>
                 </div>
               </div>
             </div>
@@ -97,8 +95,9 @@
                   </div>
                   <h6 class="text-xl font-semibold">Sound healing</h6>
                   <p class="mt-2 mb-4 text-gray-600">
-                    The medicine of the past and the future.<br>
-                    Healing frequencies to balance the energy within and around the body.
+                    The medicine of the past and the future.<br />
+                    Healing frequencies to balance the energy within and around
+                    the body.
                   </p>
                 </div>
               </div>
@@ -109,7 +108,7 @@
       <section class="relative py-20">
         <div
           class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-          style="height: 80px;"
+          style="height: 80px"
         >
           <svg
             class="absolute bottom-0 overflow-hidden"
@@ -126,7 +125,7 @@
             ></polygon>
           </svg>
         </div>
-        
+
         <div class="container mx-auto px-4">
           <div class="items-center flex flex-wrap">
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -139,7 +138,10 @@
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
                 <h3 class="text-3xl font-semibold py-4">Harmonics</h3>
-                <img src="../assets/logo.png" class="rounded-full shadow-lg w-16 h-16 "/>
+                <img
+                  src="../assets/logo.png"
+                  class="rounded-full shadow-lg w-16 h-16"
+                />
                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
                   Healing power of Sound & Music
                 </p>
@@ -191,7 +193,6 @@
           </div>
         </div>
       </section>
-     
     </main>
   </div>
 </template>

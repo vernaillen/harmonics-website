@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <div class="relative lg:pt-32 pb-32 h-screen">
@@ -8,26 +7,30 @@
         <div class="flex flex-wrap">
           <div class="w-10/12 lg:w-4/12 ml-auto mr-auto lg:mr-0 px-4 mt-10">
             <div class="md:pr-12">
-              <h1 class="text-4xl md:text-5xl xl:text-6xl font-semibold py-4">Harmonics</h1>
+              <h1 class="text-4xl md:text-5xl xl:text-6xl font-semibold py-4">
+                Harmonics
+              </h1>
               <ul class="list-none mt-6">
                 <li class="py-2">
                   <div class="flex items-center">
                     <div>
-                      <span class="text-s font-semibold inline-block py-1 px-2 rounded-full text-gray-600 bg-gray-100 ml-2 mr-3">
+                      <span
+                        class="text-s font-semibold inline-block py-1 px-2 rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
+                      >
                         <i class="fas fa-arrow-right"></i>
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">
-                        Immersive soundbaths
-                      </p>
+                      <p class="text-gray-600">Immersive soundbaths</p>
                     </div>
                   </div>
                 </li>
                 <li class="py-2">
                   <div class="flex items-center">
                     <div>
-                      <span class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3">
+                      <span
+                        class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
+                      >
                         <i class="fas fa-arrow-right"></i>
                       </span>
                     </div>
@@ -39,7 +42,9 @@
                 <li class="py-2">
                   <div class="flex items-center">
                     <div>
-                      <span class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3">
+                      <span
+                        class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
+                      >
                         <i class="fas fa-arrow-right"></i>
                       </span>
                     </div>
@@ -51,7 +56,9 @@
                 <li class="py-2">
                   <div class="flex items-center">
                     <div>
-                      <span class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3">
+                      <span
+                        class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
+                      >
                         <i class="fas fa-arrow-right"></i>
                       </span>
                     </div>
