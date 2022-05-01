@@ -3,10 +3,9 @@ version: 2.1
 orbs:
   node: circleci/node@5.0.2
   sonarcloud: sonarsource/sonarcloud@1.0.3
-  codecov: codecov/codecov@3.2.2
 
 executors:
-  my-executor:
+  node-executor:
     docker:
       - image: cimg/node:16.14
         auth:
@@ -15,18 +14,16 @@ executors:
 
 jobs:
   build:
-    executor: my-executor
+    executor: node-executor
     steps:
       - checkout
+      - run:
+          name: build
+          command: npm run build
       - sonarcloud/scan
 
 workflows:
-  build-test:
+  validate:
     jobs:
       - build:
           context: SonarCloud
-      - node/test:
-          post-steps:
-            - codecov/upload
-      - node/run:
-          npm-run: build
