@@ -1,6 +1,6 @@
-import { createApp } from "vue";
+import { ViteSSG } from "vite-ssg";
 import App from "./App.vue";
-import router from "./router";
+import routes from "./router";
 import "virtual:windi-devtools";
 import "virtual:windi.css";
 import "./main.css";
@@ -25,7 +25,7 @@ library.add(
   faInstagram
 );
 
-const app = createApp(App);
-app.component("FontAwesomeIcon", FontAwesomeIcon);
-app.use(router);
-app.mount("#app");
+export const createApp = ViteSSG(App, { routes }, ({ app, router }) => {
+  app.component("FontAwesomeIcon", FontAwesomeIcon);
+  app.use(router);
+});
