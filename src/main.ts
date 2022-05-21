@@ -1,6 +1,8 @@
 import { ViteSSG } from "vite-ssg";
 import App from "./App.vue";
 import MarkdownWrapper from "@/components/MarkdownWrapper.vue";
+import dayjs from "dayjs";
+import LocalizedFormat from "dayjs/plugin/localizedFormat.js";
 import routes from "~pages";
 import "virtual:windi-devtools";
 import "virtual:windi.css";
@@ -26,8 +28,14 @@ library.add(
   faInstagram
 );
 
-export const createApp = ViteSSG(App, { routes }, ({ app, router }) => {
+function formatDate(d: string) {
+  const date = dayjs(d);
+  return date.format("D MMM YYYY");
+}
+dayjs.extend(LocalizedFormat);
+
+export const createApp = ViteSSG(App, { routes }, ({ app }) => {
   app.component("FontAwesomeIcon", FontAwesomeIcon);
   app.component("markdown-wrapper", MarkdownWrapper);
-  app.use(router);
+  app.config.globalProperties.$formatDate = formatDate;
 });
