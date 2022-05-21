@@ -1,5 +1,8 @@
+[build.environment]
+  NPM_FLAGS="--prefix=/dev/null"
+
 [build]
-  command = "npm run build"
+  command = "pnpm run build"
   publish = "dist"
   environment = { NODE_VERSION = "16" }
 
