@@ -69,31 +69,31 @@
               >
               <ul class="list-unstyled">
                 <li>
-                  <a
+                  <router-link
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="/"
-                    >Home</a
+                    to="/"
+                    >Home</router-link
                   >
                 </li>
                 <li>
-                  <a
+                  <router-link
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="/about"
-                    >About</a
+                    to="/about"
+                    >About</router-link
                   >
                 </li>
                 <li>
-                  <a
+                  <router-link
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="/blog"
-                    >Blog</a
+                    to="/blog"
+                    >Blog</router-link
                   >
                 </li>
                 <li>
-                  <a
+                  <router-link
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="/landing"
-                    >Test landing page</a
+                    to="/landing"
+                    >Test landing page</router-link
                   >
                 </li>
               </ul>
@@ -104,24 +104,24 @@
               >
               <ul class="list-unstyled">
                 <li>
-                  <a
+                  <router-link
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="/terms"
-                    >Terms &amp; Conditions</a
+                    to="/terms"
+                    >Terms &amp; Conditions</router-link
                   >
                 </li>
                 <li>
-                  <a
+                  <router-link
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="/privacy"
-                    >Privacy Policy</a
+                    to="/privacy"
+                    >Privacy Policy</router-link
                   >
                 </li>
                 <li>
-                  <a
+                  <router-link
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="/contact"
-                    >Contact Us</a
+                    to="/contact"
+                    >Contact Us</router-link
                   >
                 </li>
               </ul>
