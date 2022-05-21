@@ -1,7 +1,9 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
-import "./tailwind.css";
+import "virtual:windi-devtools";
+import "virtual:windi.css";
+import "./main.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
