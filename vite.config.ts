@@ -3,6 +3,8 @@ import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import Markdown from "vite-plugin-md";
 import WindiCSS from "vite-plugin-windicss";
+import Pages from "vite-plugin-pages";
+import generateSitemap from "vite-plugin-pages-sitemap";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,8 +12,21 @@ export default defineConfig({
     Vue({
       include: [/\.vue$/, /\.md$/], // <--
     }),
-    Markdown(),
+
+    Markdown({
+      wrapperComponent: "markdown-wrapper",
+      wrapperClasses: "prose m-auto",
+    }),
     WindiCSS(),
+    Pages({
+      extensions: ["vue", "md"],
+      exclude: ["**/components/*.vue"],
+      onRoutesGenerated: (routes) =>
+        generateSitemap({
+          hostname: "https://harmonics.be/",
+          routes,
+        }),
+    }),
   ],
   resolve: {
     alias: {

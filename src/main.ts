@@ -1,6 +1,7 @@
 import { ViteSSG } from "vite-ssg";
 import App from "./App.vue";
-import routes from "./router";
+import MarkdownWrapper from "@/components/MarkdownWrapper.vue";
+import routes from "~pages";
 import "virtual:windi-devtools";
 import "virtual:windi.css";
 import "./main.css";
@@ -27,5 +28,6 @@ library.add(
 
 export const createApp = ViteSSG(App, { routes }, ({ app, router }) => {
   app.component("FontAwesomeIcon", FontAwesomeIcon);
+  app.component("markdown-wrapper", MarkdownWrapper);
   app.use(router);
 });
