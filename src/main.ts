@@ -1,7 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import { routes } from "./routes.js";
-import { createRouter, createWebHistory } from "vue-router";
+import router from "./router";
 import "./tailwind.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -23,11 +22,6 @@ library.add(
   faFacebook,
   faInstagram
 );
-
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
 
 const app = createApp(App);
 app.component("FontAwesomeIcon", FontAwesomeIcon);

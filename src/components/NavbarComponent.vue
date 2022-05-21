@@ -27,7 +27,7 @@
       </div>
       <div
         class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none"
-        :class="{ hidden: !showMenu, block: showMenu }"
+        :class="{ hidden: !navbar.show, block: navbar.show }"
       >
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li class="flex items-center">
@@ -63,17 +63,13 @@
     </div>
   </nav>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      showMenu: false,
-    };
-  },
-  methods: {
-    toggleNavbar: function () {
-      this.showMenu = !this.showMenu;
-    },
-  },
-};
+<script setup lang="ts">
+import { reactive } from "vue";
+
+const navbar = reactive({
+  show: false,
+});
+function toggleNavbar() {
+  navbar.show = !navbar.show;
+}
 </script>

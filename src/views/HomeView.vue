@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <div class="relative lg:pt-32 pb-32 h-screen">
     <section class="relative">

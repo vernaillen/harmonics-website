@@ -141,12 +141,6 @@
     </div>
   </footer>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      date: new Date().getFullYear(),
-    };
-  },
-};
+<script setup lang="ts">
+const date: number = new Date().getFullYear();
 </script>
