@@ -4,7 +4,7 @@
   "scripts": {
     "serve": "vite preview",
     "build": "vite build",
-    "lint": "vue-cli-service lint",
+    "lint": "eslint --ext .js,.vue src",
     "dev": "vite --host"
   },
   "dependencies": {

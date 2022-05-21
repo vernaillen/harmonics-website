@@ -20,14 +20,14 @@
         <button
           class="right-0 top-2 absolute cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
           type="button"
-          v-on:click="toggleNavbar()"
+          @click="toggleNavbar()"
         >
-          <font-awesome-icon :icon="['fas', 'bars']" />
+          <FontAwesomeIcon :icon="['fas', 'bars']" />
         </button>
       </div>
       <div
         class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none"
-        v-bind:class="{ hidden: !showMenu, block: showMenu }"
+        :class="{ hidden: !showMenu, block: showMenu }"
       >
         <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
           <li class="flex items-center">
@@ -37,7 +37,7 @@
               target="_blank"
               rel="”noopener”"
             >
-              <font-awesome-icon
+              <FontAwesomeIcon
                 :icon="['fab', 'facebook']"
                 class="hover:text-gray-800 text-gray-500 text-lg"
               />
@@ -51,7 +51,7 @@
               target="_blank"
               rel="”noopener”"
             >
-              <font-awesome-icon
+              <FontAwesomeIcon
                 :icon="['fab', 'instagram']"
                 class="hover:text-gray-800 text-gray-500 text-lg"
               />

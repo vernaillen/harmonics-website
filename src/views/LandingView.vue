@@ -6,8 +6,8 @@
         style="min-height: 75vh"
       >
         <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
           id="landingCoverImg"
+          class="absolute top-0 w-full h-full bg-center bg-cover"
         >
           <span
             id="blackOverlay"
@@ -57,7 +57,7 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
                   >
-                    <font-awesome-icon :icon="['fas', 'music']" />
+                    <FontAwesomeIcon :icon="['fas', 'music']" />
                   </div>
                   <h6 class="text-xl font-semibold">
                     Immersive sonic experiences
@@ -74,7 +74,7 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
                   >
-                    <font-awesome-icon :icon="['fas', 'child-reaching']" />
+                    <FontAwesomeIcon :icon="['fas', 'child-reaching']" />
                   </div>
                   <h6 class="text-xl font-semibold">Ecstatic dance</h6>
                   <p class="mt-2 mb-4 text-gray-600">
@@ -91,7 +91,7 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
                   >
-                    <font-awesome-icon :icon="['fas', 'drum']" />
+                    <FontAwesomeIcon :icon="['fas', 'drum']" />
                   </div>
                   <h6 class="text-xl font-semibold">Sound healing</h6>
                   <p class="mt-2 mb-4 text-gray-600">
@@ -148,7 +148,7 @@
                         <span
                           class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
                         >
-                          <font-awesome-icon :icon="['fas', 'music']" />
+                          <FontAwesomeIcon :icon="['fas', 'music']" />
                         </span>
                       </div>
                       <div>
@@ -164,9 +164,7 @@
                         <span
                           class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
                         >
-                          <font-awesome-icon
-                            :icon="['fas', 'child-reaching']"
-                          />
+                          <FontAwesomeIcon :icon="['fas', 'child-reaching']" />
                         </span>
                       </div>
                       <div>
@@ -180,7 +178,7 @@
                         <span
                           class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
                         >
-                          <font-awesome-icon :icon="['fas', 'drum']" />
+                          <FontAwesomeIcon :icon="['fas', 'drum']" />
                         </span>
                       </div>
                       <div>

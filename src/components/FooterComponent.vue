@@ -38,7 +38,7 @@
                 class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <font-awesome-icon
+                <FontAwesomeIcon
                   :icon="['fab', 'facebook']"
                   class="hover:text-gray-800 text-gray-500 text-lg"
                 />
@@ -53,7 +53,7 @@
                 class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <font-awesome-icon
+                <FontAwesomeIcon
                   :icon="['fab', 'instagram']"
                   class="hover:text-gray-800 text-gray-500 text-lg"
                 />

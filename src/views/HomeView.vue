@@ -17,7 +17,7 @@
                       <span
                         class="text-s font-semibold inline-block py-1 px-2 rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
                       >
-                        <font-awesome-icon :icon="['fas', 'arrow-right']" />
+                        <FontAwesomeIcon :icon="['fas', 'arrow-right']" />
                       </span>
                     </div>
                     <div>
@@ -31,7 +31,7 @@
                       <span
                         class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
                       >
-                        <font-awesome-icon :icon="['fas', 'arrow-right']" />
+                        <FontAwesomeIcon :icon="['fas', 'arrow-right']" />
                       </span>
                     </div>
                     <div>
@@ -45,7 +45,7 @@
                       <span
                         class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
                       >
-                        <font-awesome-icon :icon="['fas', 'arrow-right']" />
+                        <FontAwesomeIcon :icon="['fas', 'arrow-right']" />
                       </span>
                     </div>
                     <div>
@@ -59,7 +59,7 @@
                       <span
                         class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
                       >
-                        <font-awesome-icon :icon="['fas', 'arrow-right']" />
+                        <FontAwesomeIcon :icon="['fas', 'arrow-right']" />
                       </span>
                     </div>
                     <div>
