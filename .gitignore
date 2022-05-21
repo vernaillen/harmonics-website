@@ -6,3 +6,5 @@ dist-ssr
 debug.log
 .idea
 coverage/
+package-lock.json
+yarn.lock
