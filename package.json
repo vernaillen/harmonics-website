@@ -17,7 +17,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/vue-fontawesome": "^3.0.0-5",
-    "vue": "^3.2.35",
+    "vue": "^3.2.36",
     "vue-router": "^4.0.15"
   },
   "devDependencies": {
@@ -37,16 +37,16 @@
     "fs-extra": "^10.1.0",
     "gray-matter": "^4.0.3",
     "prettier": "^2.6.2",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.4",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2",
     "vite": "^2.9.9",
     "vite-plugin-md": "^0.13.1",
     "vite-plugin-pages": "^0.23.0",
     "vite-plugin-pages-sitemap": "^1.2.2",
     "vite-plugin-windicss": "^1.8.4",
     "vite-ssg": "^0.20.0",
-    "vitest": "^0.12.7",
-    "vue-tsc": "^0.34.15",
+    "vitest": "^0.12.9",
+    "vue-tsc": "^0.34.16",
     "windicss": "^3.5.4"
   }
 }
