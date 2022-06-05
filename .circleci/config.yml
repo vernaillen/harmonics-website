@@ -2,75 +2,47 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.2
-  sonarcloud: sonarsource/sonarcloud@1.0.3
-
-executors:
-  node-executor:
-    docker:
-      - image: cimg/node:16.15
-        auth:
-          username: $DOCKER_HUB_USER
-          password: $DOCKER_HUB_PASSWORD
+  sonarcloud: sonarsource/sonarcloud@1.1.0
 
 jobs:
-  setup:
-    executor:
-      name: node/default
+  build_and_test:
+    docker:
+      - image: vernaillen/circleci-pnpm:18.2.0
     steps:
       - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "pnpm-lock.yaml" }}
-      - run:
-          name: Install pnpm
-          command: curl -L https://pnpm.js.org/pnpm.js | node - add --global pnpm
       - run:
           name: Install packages
           command: pnpm install --no-frozen-lockfile
-      - save_cache:
-          key: dependency-cache-{{ checksum "pnpm-lock.yaml" }}
-          paths:
-            - ~/.nvm
-            - node_modules
-  build:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "pnpm-lock.yaml" }}
+      - run:
+          name: Lint
+          command: pnpm run lint
+      - run:
+          name: Test
+          command: pnpm test
+      - sonarcloud/scan
       - run:
           name: Build
           command: |
             pnpm run build
             ls dist
-      - save_cache:
-          key: build-output-{{ .Environment.CIRCLE_SHA1 }}
-          paths:
-            - dist
-      - store_artifacts:
-          path: dist
-          destination: dist
-  test:
-    executor:
+  trigger_deploy:
+    executor: 
       name: node/default
     steps:
-      - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "pnpm-lock.yaml" }}
       - run:
-          name: Test and Lint
-          command: pnpm run lint && pnpm test
-      - sonarcloud/scan
+          name: Trigger Netlify Deploy
+          command: curl -X POST -d {} ${NETLIFY_HOOK}
 
 workflows:
   version: 2
-  build_and_test:
+  build_test_deploy:
     jobs:
-      - setup
-      - build:
-          requires:
-            - setup
-      - test:
-          requires:
-            - setup
+      - build_and_test:
           context: SonarCloud
+      - trigger_deploy:
+          requires:
+            - build_and_test
+          filters:
+            branches:
+              only:
+                - master
