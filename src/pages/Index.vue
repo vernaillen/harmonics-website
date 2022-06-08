@@ -90,10 +90,10 @@
   </div>
 
   <ClientOnly>
-    <Plum />
+    <PlumTest />
   </ClientOnly>
 </template>
 
 <script setup lang="ts">
-import Plum from "@/components/Plum.vue";
+import PlumTest from "@/components/PlumTest.vue";
 </script>
