@@ -25,13 +25,6 @@ jobs:
           command: |
             pnpm run build
             ls dist
-  trigger_deploy:
-    executor: 
-      name: node/default
-    steps:
-      - run:
-          name: Trigger Netlify Deploy
-          command: curl -X POST -d {} ${NETLIFY_HOOK}
 
 workflows:
   version: 2
@@ -39,10 +32,3 @@ workflows:
     jobs:
       - build_and_test:
           context: SonarCloud
-      - trigger_deploy:
-          requires:
-            - build_and_test
-          filters:
-            branches:
-              only:
-                - master
