@@ -47,7 +47,7 @@
     "vite-plugin-windicss": "^1.8.4",
     "vite-ssg": "^0.20.1",
     "vitest": "^0.13.1",
-    "vue-tsc": "^0.36.1",
+    "vue-tsc": "^0.37.0",
     "windicss": "^3.5.4"
   }
 }
