@@ -13,13 +13,13 @@
                   <div class="flex items-center">
                     <div>
                       <span
-                        class="text-s font-semibold inline-block py-1 px-2 rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
+                        class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
                       >
                         <FontAwesomeIcon :icon="['fas', 'arrow-right']" />
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">Immersive soundbaths</p>
+                      <p class="text-gray-600">Ecstatic Dance</p>
                     </div>
                   </div>
                 </li>
@@ -27,13 +27,13 @@
                   <div class="flex items-center">
                     <div>
                       <span
-                        class="text-s font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
+                        class="text-s font-semibold inline-block py-1 px-2 rounded-full text-gray-600 bg-gray-100 ml-2 mr-3"
                       >
                         <FontAwesomeIcon :icon="['fas', 'arrow-right']" />
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">Sound healing</p>
+                      <p class="text-gray-600">Immersive soundbaths</p>
                     </div>
                   </div>
                 </li>
