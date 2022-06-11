@@ -88,12 +88,4 @@
       </div>
     </section>
   </div>
-
-  <ClientOnly>
-    <PlumTest />
-  </ClientOnly>
 </template>
-
-<script setup lang="ts">
-import PlumTest from "@/components/PlumTest.vue";
-</script>
