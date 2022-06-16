@@ -25,7 +25,7 @@ specifiers:
   ts-node: ^10.8.1
   typescript: ^4.7.3
   vite: ^2.9.12
-  vite-plugin-md: ^0.14.2
+  vite-plugin-md: ^0.15.0
   vite-plugin-pages: ^0.24.1
   vite-plugin-pages-sitemap: ^1.2.2
   vite-plugin-windicss: ^1.8.4
@@ -65,7 +65,7 @@ devDependencies:
   ts-node: 10.8.1_av6tzkob7xmfjwzlcser3pgv4e
   typescript: 4.7.3
   vite: 2.9.12
-  vite-plugin-md: 0.14.2_vite@2.9.12
+  vite-plugin-md: 0.15.0_vite@2.9.12
   vite-plugin-pages: 0.24.1_vite@2.9.12
   vite-plugin-pages-sitemap: 1.2.2
   vite-plugin-windicss: 1.8.4_vite@2.9.12
@@ -3128,8 +3128,8 @@ packages:
       convert-source-map: 1.8.0
     dev: true
 
-  /vite-plugin-md/0.14.2_vite@2.9.12:
-    resolution: {integrity: sha512-TP8TTuwd7C1skxU/15S7srsln77uDqA/jQ7r05nbrvu6X5aJogxlTOJvg5RYpYjTROtYrSqRe1Lzw39FSBDIDw==}
+  /vite-plugin-md/0.15.0_vite@2.9.12:
+    resolution: {integrity: sha512-0GEUMUU13Xg8KHFBwRNiNf9AJbpi0WrXTpBTUna0/gv851qbLZg5fR3ovfH8l29NNDmRhanEmRIwfKE3xWjzqQ==}
     peerDependencies:
       vite: ^2.9.0
     dependencies:
