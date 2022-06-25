@@ -10,7 +10,7 @@
     "coverage": "vitest run --coverage",
     "typecheck": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "prepushtest": "pnpm run lint && pnpm run coverage && pnpm run build"
+    "prepushtest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -40,6 +40,7 @@
     "happy-dom": "^5.3.1",
     "markdown-it": "^13.0.1",
     "prettier": "^2.7.1",
+    "prismjs": "^1.28.0",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4",
     "vite": "^3.0.0-beta.2",
