@@ -33,7 +33,7 @@ specifiers:
   vite-plugin-pages-sitemap: ^1.2.2
   vite-plugin-windicss: ^1.8.6
   vite-ssg: ^0.20.2
-  vitest: ^0.17.0
+  vitest: ^0.18.0
   vue: ^3.2.37
   vue-router: ^4.1.1
   vue-tsc: ^0.38.3
@@ -76,7 +76,7 @@ devDependencies:
   vite-plugin-pages-sitemap: 1.2.2
   vite-plugin-windicss: 1.8.6_vite@3.0.0-beta.7
   vite-ssg: 0.20.2_tjdsbqssbyw4dr2kjmafbajl34
-  vitest: 0.17.0_c8@7.11.3+happy-dom@6.0.2
+  vitest: 0.18.0_c8@7.11.3+happy-dom@6.0.2
   vue-tsc: 0.38.3_typescript@4.7.4
   windicss: 3.5.6
 
@@ -3521,8 +3521,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.17.0_c8@7.11.3+happy-dom@6.0.2:
-    resolution: {integrity: sha512-5YO9ubHo0Zg35mea3+zZAr4sCku32C3usvIH5COeJB48TZV/R0J9aGNtGOOqEWZYfOKP0pGZUvTokne3x/QEFg==}
+  /vitest/0.18.0_c8@7.11.3+happy-dom@6.0.2:
+    resolution: {integrity: sha512-ryAtlh5Gvg3+aLNuOQ8YOHxgQCCu46jx40X5MBL0K0/ejB9i5zsr8fV8LTGXbXex80UMHlzceI9F+ouGaiR+mQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
