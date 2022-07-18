@@ -8,21 +8,29 @@ author: Wouter Vernaillen
 
 # {{frontmatter.title}}
 
-Ecstatic dance is a form of dance in which the dancers abandon themselves to the rhythm and move freely,
+Ecstatic dance is a form of dance in which the dancers surrender themselves to the rhythm and move freely,
 as the music helps them to let go of any tension and blocked energy and leads them into trance and ecstatic feelings.
 
-Dancers are described as feeling deeply connected to others and to their own emotions. The dance serves as a form of meditation, helping people to cope with stress and to attain serenity.
+Dancers are described as feeling deeply connected to their own emotions and to others. The dance serves as a form of meditation, helping people to cope with stress and to attain serenity.
 
-Ecstatic Dance session often start with a form of meditation, allowing the dancers to connect consciously with their inner self. Then slow music invites them to start moving, and steadily the music will build up and take the dancers on a journey of released emotions and ecstatic feelings.
+### The structure of an ED session
+
+* Ecstatic Dance session usually starts with a form of meditation, allowing the dancers to connect consciously with their inner self.
+* Soft and slow music invites everyone to start moving, and steadily the music will build up and take the dancers on a journey of ecstatic feelings. After the first high, the music will slow down again, so dancers can reconnect and feel the created bliss.
+* This kind of wave is repeated 2 or 3 times. Sessions take about 2 to 3 hours.
+
+### A few guidelines
 
 As a dancer you are welcome as you are, you are invited to move as you feel and let your body guide you.
 
-There are a few rules to allow each dancer to fully expreience the dance in safe and conscious way:
+Usually there's these rules to allow each dancer to fully experience the dance in safe and conscious way:
 
 * no chitchat during the dance
 * no booze or drugs
-* dance barefoot, no shoes
-* repect the space of yoiur fellow dancers
+* dance barefoot, no shoes (recommended)
+* repect the space of your fellow dancers
+
+### Videos
 
 This beautiful video, created by [Sophie Sôfrēē of Wakamaia](https://www.wakamaia.love/), shows the kind of the meditative start and beautiful sound journey of a good ecstatic dance:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9CEnSTruBBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
