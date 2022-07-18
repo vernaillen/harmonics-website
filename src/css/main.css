@@ -35,3 +35,10 @@ h6 {
 .navbarTogglerActive > span:nth-child(3) {
   @apply top-[-8px] rotate-[135deg];
 }
+
+.prose iframe {
+  position: relative; 
+  width: 100%; 
+  height: 100vh; 
+  max-height: 450px;
+}

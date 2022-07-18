@@ -15,9 +15,6 @@ jobs:
           name: Install packages
           command: pnpm install --no-frozen-lockfile
       - run:
-          name: Lint
-          command: pnpm run lint
-      - run:
           name: Test
           command: pnpm test
       - sonarcloud/scan
