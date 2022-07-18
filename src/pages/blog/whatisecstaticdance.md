@@ -8,26 +8,30 @@ author: Wouter Vernaillen
 
 # {{frontmatter.title}}
 
-Ecstatic dance is a form of dance in which the dancers surrender themselves to the rhythm and move freely,
-as the music helps them to let go of any tension and blocked energy and leads them into trance and ecstatic feelings.
+Ecstatic dance is a form of dance in which the dancers surrender to the rhythm of the music and move freely as the music helps them to release tension and blocked energy, bringing them into trance and even ecstasy.
 
-Dancers are described as feeling deeply connected to their own emotions and to others. The dance serves as a form of meditation, helping people to cope with stress and to attain serenity.
+Dancers are described as feeling deeply connected with their own emotions and with others. The meditative aspect of the dance helps people cope with stress and attain serenity. Feeling revitalised by the process.
 
 ### The structure of an ED session
 
 * Ecstatic Dance session usually starts with a form of meditation, allowing the dancers to connect consciously with their inner self and be fully present in their body.
-* Soft and slow music invites everyone to start moving, and steadily the music will build up and take the dancers on a journey of ecstatic feelings and movement. After the first high, the music will slow down again, so dancers can reconnect and feel the created bliss.
-* This kind of wave is repeated 2 or 3 times. Sessions usually take about 2 to 3 hours.
+* The music steadily builds up and takes the dancers on a journey of ecstatic feelings and movement.  
+* After reaching an initial high ecstatic state, the music slows down again, allowing the dancers to reconnect and feel the bliss created.
+* This wave is repeated 2 or 3 times. Sessions usually take about 2 to 3 hours.
+
+### The setting of an ED session
+
+Although it is not prescribed, an ED session works best in a green, open environment. The connection with nature strengthens the connection with one's own feelings, with one's own being.
 
 ### A few guidelines
 
 As a dancer you are welcome as you are, you are invited to move as you feel and let your body guide you.
 
-Usually there's these rules to allow each dancer to fully experience the dance in a safe and conscious way:
+These rules are designed to allow each dancer to fully experience the dance in a safe and conscious way:
 
-* no chitchat during the dance
-* no booze or drugs
-* dance barefoot, no shoes (recommended)
+* no chatting during the dance
+* no alcohol or drugs
+* dance barefoot, no shoes (highly recommended)
 * repect the space of your fellow dancers
 
 ### Videos
