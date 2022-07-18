@@ -32,12 +32,12 @@ Usually there's these rules to allow each dancer to fully experience the dance i
 
 ### Videos
 
-This video, created by [Sophie Sôfrēē of Wakamaia](https://www.wakamaia.love/), starts with a guided meditation and, followed by a beautiful sound journey:
+This video, created by [Sophie Sôfrēē of Wakamaia](https://www.wakamaia.love/), starts with a guided meditation, followed by a beautiful sound journey and dance:
 <iframe src="https://www.youtube.com/embed/9CEnSTruBBg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="proseIframe"></iframe>
 
-To get a good idea of the ecstatic nature of the dance, I'd recommend this documentary by the [ED tribe in Koh Phangan, Thailand](https://www.facebook.com/EcstaticDanceThailand/):
+To get a good idea of the ecstatic nature of the dance, I can recommend this documentary by the [ED tribe in Koh Phangan, Thailand](https://www.facebook.com/EcstaticDanceThailand/):
 <iframe src="https://www.youtube.com/embed/lY41coxPKuY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="proseIframe"></iframe>
 
-The beautiful "Ecstatic flow" video by [Odessa Amsterdam](https://www.odessa.amsterdam):
+"Ecstatic flow" video by [Odessa Amsterdam](https://www.odessa.amsterdam):
 
 <iframe src="https://www.youtube.com/embed/N9Ft3UKDPWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="proseIframe"></iframe>
