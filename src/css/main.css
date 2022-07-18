@@ -36,9 +36,24 @@ h6 {
   @apply top-[-8px] rotate-[135deg];
 }
 
-.prose iframe {
+.prose iframe.proseIframe {
   position: relative; 
   width: 100%; 
   height: 100vh; 
-  max-height: 450px;
+  max-height: 260px;
+}
+@media only screen and (min-width: 720px) {
+  iframe.proseIframe {
+    max-height: 400px !important;
+  }
+}
+@media only screen and (min-width: 960px) {
+  iframe.proseIframe {
+    max-height: 500px !important;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  iframe.proseIframe {
+    max-height: 600px !important;
+  }
 }
