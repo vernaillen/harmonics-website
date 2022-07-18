@@ -65,7 +65,7 @@
           <div class="flex flex-wrap items-top mb-6">
             <div class="w-full lg:w-4/12 px-4 ml-auto">
               <span class="block text-gray-400 text-sm font-semibold my-5"
-                >Useful Links</span
+                >Menu</span
               >
               <ul class="list-unstyled">
                 <li>
@@ -89,41 +89,6 @@
                     >Blog</router-link
                   >
                 </li>
-                <li>
-                  <router-link
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    to="/landing"
-                    >Test landing page</router-link
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="w-full lg:w-4/12 px-4">
-              <span class="block text-gray-400 text-sm font-semibold my-5"
-                >Other Resources</span
-              >
-              <ul class="list-unstyled">
-                <li>
-                  <router-link
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    to="/terms"
-                    >Terms &amp; Conditions</router-link
-                  >
-                </li>
-                <li>
-                  <router-link
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    to="/privacy"
-                    >Privacy Policy</router-link
-                  >
-                </li>
-                <li>
-                  <router-link
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    to="/contact"
-                    >Contact Us</router-link
-                  >
-                </li>
               </ul>
             </div>
           </div>
@@ -134,7 +99,7 @@
       >
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-400 font-semibold py-1">
-            Copyright © {{ date }} Vernaillen Consulting BVBA.
+            Copyright © {{ date }} Vernaillen Consulting / Harmonics BV
           </div>
         </div>
       </div>

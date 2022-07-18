@@ -24,3 +24,14 @@ h6 {
 #landingCoverImg {
     background-image: url('@/assets/gongs.jpg');
 }
+
+
+.navbarTogglerActive > span:nth-child(1) {
+  @apply transform rotate-45 top-[7px];
+}
+.navbarTogglerActive > span:nth-child(2) {
+  @apply opacity-0;
+}
+.navbarTogglerActive > span:nth-child(3) {
+  @apply top-[-8px] rotate-[135deg];
+}

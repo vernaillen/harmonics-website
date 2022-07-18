@@ -1,6 +1,13 @@
 <script setup lang="ts">
-import NavbarComponent from "./components/NavbarComponent.vue";
-import FooterComponent from "./components/FooterComponent.vue";
+useHead({
+  title: "Harmonics.be",
+  meta: [
+    {
+      name: "description",
+      content: "Healing power of Sound & Music - by Wouter Vernaillen",
+    },
+  ],
+});
 </script>
 
 <template>

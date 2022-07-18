@@ -6,7 +6,9 @@ import LocalizedFormat from "dayjs/plugin/localizedFormat.js";
 import routes from "~pages";
 import "virtual:windi-devtools";
 import "virtual:windi.css";
-import "./main.css";
+import "@/css/markdown.css";
+import "@/css/main.css";
+import "@/css/prose.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
