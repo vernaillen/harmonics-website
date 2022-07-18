@@ -1,18 +1,18 @@
-import { useRouter } from "vue-router";
-import type { Post } from "@/types";
+import { useRouter } from 'vue-router'
+import type { Post } from '@/types'
 
 export class Blog {
   getPosts(): Post[] {
-    const router = useRouter();
+    const router = useRouter()
     return router
       .getRoutes()
-      .filter((i) => i.path.startsWith("/blog/") && i.meta.frontmatter.date)
+      .filter(i => i.path.startsWith('/blog/') && i.meta.frontmatter.date)
       .sort(
         (a, b) =>
-          +new Date(b.meta.frontmatter.date) -
-          +new Date(a.meta.frontmatter.date)
+          +new Date(b.meta.frontmatter.date)
+          - +new Date(a.meta.frontmatter.date),
       )
-      .map((i) => ({
+      .map(i => ({
         path: i.path,
         title: i.meta.frontmatter.title,
         desc: i.meta.frontmatter.desc,
@@ -24,8 +24,8 @@ export class Blog {
         thumbnail: i.meta.frontmatter.thumbnail,
         thumbnail_dark: i.meta.frontmatter.thumbnail_dark,
         thumbnail_light: i.meta.frontmatter.thumbnail_light,
-      }));
+      }))
   }
 }
-const blog = new Blog();
-export default blog;
+const blog = new Blog()
+export default blog

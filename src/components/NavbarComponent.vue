@@ -1,3 +1,29 @@
+<script setup lang="ts">
+const navbar = reactive({
+  show: false,
+})
+function toggleNavbar() {
+  navbar.show = !navbar.show
+}
+const navbarTogglerClass = computed(() => {
+  return navbar.show ? 'navbarTogglerActive' : ''
+})
+const navbarCollapseClass = computed(() => {
+  return navbar.show ? '' : 'hidden'
+})
+
+const linkClass = (path: string) => {
+  const currentRoute = useRoute().path
+  let classToAdd = ''
+  if (
+    (path !== '/' && currentRoute.startsWith(path))
+    || (currentRoute === '/thanks' && path === '/contact')
+  )
+    classToAdd = 'router-link-active'
+  return classToAdd
+}
+</script>
+
 <template>
   <header
     class="header bg-transparent absolute top-0 left-0 z-20 w-full flex items-center"
@@ -13,7 +39,7 @@
               alt="Harmonics logo"
               src="../assets/wave_sound-02-small.jpg"
               class="inline-flex rounded-full w-20 h-10"
-            />
+            >
             Harmonics
           </router-link>
         </div>
@@ -22,8 +48,8 @@
             <button
               class="right-0 top-2 absolute cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
-              @click="toggleNavbar()"
               :class="navbarTogglerClass"
+              @click="toggleNavbar()"
             >
               <FontAwesomeIcon :icon="['fas', 'bars']" />
             </button>
@@ -69,32 +95,6 @@
     </div>
   </header>
 </template>
-
-<script setup lang="ts">
-const navbar = reactive({
-  show: false,
-});
-function toggleNavbar() {
-  navbar.show = !navbar.show;
-}
-const navbarTogglerClass = computed(() => {
-  return navbar.show ? "navbarTogglerActive" : "";
-});
-const navbarCollapseClass = computed(() => {
-  return navbar.show ? "" : "hidden";
-});
-
-const linkClass = (path: string) => {
-  const currentRoute = useRoute().path;
-  let classToAdd = "";
-  if (
-    (path !== "/" && currentRoute.startsWith(path)) ||
-    (currentRoute === "/thanks" && path === "/contact")
-  )
-    classToAdd = "router-link-active";
-  return classToAdd;
-};
-</script>
 
 <style scoped>
 .header-logo,

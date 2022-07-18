@@ -12,13 +12,15 @@
           <span
             id="blackOverlay"
             class="w-full h-full absolute opacity-60 bg-black"
-          ></span>
+          />
         </div>
         <div class="container relative mx-auto">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
-                <h1 class="text-white font-semibold text-5xl">Harmonics</h1>
+                <h1 class="text-white font-semibold text-5xl">
+                  Harmonics
+                </h1>
                 <p class="mt-4 text-lg text-gray-300">
                   Healing power of Sound & Music.
                 </p>
@@ -42,7 +44,7 @@
             <polygon
               class="text-gray-300 fill-current"
               points="2560 0 2560 100 0 100"
-            ></polygon>
+            />
           </svg>
         </div>
       </div>
@@ -62,7 +64,9 @@
                   <h6 class="text-xl font-semibold">
                     Immersive sonic experiences
                   </h6>
-                  <p class="mt-2 mb-4 text-gray-600">Soundbaths</p>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Soundbaths
+                  </p>
                 </div>
               </div>
             </div>
@@ -76,7 +80,9 @@
                   >
                     <FontAwesomeIcon :icon="['fas', 'child-reaching']" />
                   </div>
-                  <h6 class="text-xl font-semibold">Ecstatic dance</h6>
+                  <h6 class="text-xl font-semibold">
+                    Ecstatic dance
+                  </h6>
                   <p class="mt-2 mb-4 text-gray-600">
                     Conscious freeform movement journeys.
                   </p>
@@ -93,9 +99,11 @@
                   >
                     <FontAwesomeIcon :icon="['fas', 'drum']" />
                   </div>
-                  <h6 class="text-xl font-semibold">Sound healing</h6>
+                  <h6 class="text-xl font-semibold">
+                    Sound healing
+                  </h6>
                   <p class="mt-2 mb-4 text-gray-600">
-                    The medicine of the past and the future.<br />
+                    The medicine of the past and the future.<br>
                     Healing frequencies to balance the energy within and around
                     the body.
                   </p>
@@ -122,7 +130,7 @@
             <polygon
               class="text-white fill-current"
               points="2560 0 2560 100 0 100"
-            ></polygon>
+            />
           </svg>
         </div>
 
@@ -133,11 +141,13 @@
                 alt="Gongs"
                 class="max-w-full rounded-lg shadow-lg"
                 src="../assets/gongs.jpg"
-              />
+              >
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
-                <h3 class="text-3xl font-semibold py-4">Harmonics</h3>
+                <h3 class="text-3xl font-semibold py-4">
+                  Harmonics
+                </h3>
                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
                   Healing power of Sound & Music
                 </p>
@@ -168,7 +178,9 @@
                         </span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Ecstatic dance</h4>
+                        <h4 class="text-gray-600">
+                          Ecstatic dance
+                        </h4>
                       </div>
                     </div>
                   </li>
@@ -182,7 +194,9 @@
                         </span>
                       </div>
                       <div>
-                        <h4 class="text-gray-600">Sound healing</h4>
+                        <h4 class="text-gray-600">
+                          Sound healing
+                        </h4>
                       </div>
                     </div>
                   </li>

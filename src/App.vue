@@ -1,21 +1,21 @@
 <script setup lang="ts">
 useHead({
-  title: "Harmonics.be",
+  title: 'Harmonics.be',
   meta: [
     {
-      name: "description",
-      content: "Healing power of Sound & Music - by Wouter Vernaillen",
+      name: 'description',
+      content: 'Healing power of Sound & Music - by Wouter Vernaillen',
     },
   ],
-});
+})
 </script>
 
 <template>
   <div>
-    <navbar-component></navbar-component>
+    <navbar-component />
     <main>
       <router-view />
     </main>
-    <footer-component></footer-component>
+    <footer-component />
   </div>
 </template>

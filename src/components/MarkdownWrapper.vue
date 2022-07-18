@@ -1,3 +1,12 @@
+<script setup lang="ts">
+defineProps({
+  frontmatter: {
+    type: Object,
+    required: true,
+  },
+})
+</script>
+
 <template>
   <div class="container mx-auto px-4 pt-16 my-20">
     <div class="flex flex-wrap">
@@ -7,12 +16,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-defineProps({
-  frontmatter: {
-    type: Object,
-    required: true,
-  },
-});
-</script>

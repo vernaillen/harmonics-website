@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import blog from "@/classes/blog";
-import type { Post } from "@/types";
+import blog from '@/classes/blog'
+import type { Post } from '@/types'
 
-const posts: Post[] = blog.getPosts();
+const posts: Post[] = blog.getPosts()
 </script>
 
 <template>
@@ -53,7 +53,9 @@ const posts: Post[] = blog.getPosts();
                   </div>
                 </div>
                 <div class="inline-block">
-                  <p class="text-xs text-body-color">by {{ post.author }}</p>
+                  <p class="text-xs text-body-color">
+                    by {{ post.author }}
+                  </p>
                 </div>
               </div>
             </div>

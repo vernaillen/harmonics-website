@@ -19,7 +19,9 @@
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">Ecstatic Dance</p>
+                      <p class="text-gray-600">
+                        Ecstatic Dance
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -33,7 +35,9 @@
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">Immersive soundbaths</p>
+                      <p class="text-gray-600">
+                        Immersive soundbaths
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -47,7 +51,9 @@
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">Music production</p>
+                      <p class="text-gray-600">
+                        Music production
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -59,7 +65,7 @@
               alt="..."
               class="max-w-full rounded-lg shadow-2xl mt-5"
               src="../assets/gongs.jpg"
-            />
+            >
           </div>
         </div>
       </div>

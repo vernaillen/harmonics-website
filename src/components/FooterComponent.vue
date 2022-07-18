@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const date: number = new Date().getFullYear()
+</script>
+
 <template>
   <footer class="relative pt-8 pb-6 mt-20">
     <div
@@ -16,7 +20,7 @@
         <polygon
           class="text-gray-300 fill-current"
           points="2560,0 2560,2 0,99 0,100"
-        ></polygon>
+        />
       </svg>
     </div>
     <div class="container mx-auto px-4 mt-10">
@@ -64,30 +68,31 @@
         <div class="w-full lg:w-6/12 px-4">
           <div class="flex flex-wrap items-top mb-6">
             <div class="w-full lg:w-4/12 px-4 ml-auto">
-              <span class="block text-gray-400 text-sm font-semibold my-5"
-                >Menu</span
-              >
+              <span class="block text-gray-400 text-sm font-semibold my-5">Menu</span>
               <ul class="list-unstyled">
                 <li>
                   <router-link
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                     to="/"
-                    >Home</router-link
                   >
+                    Home
+                  </router-link>
                 </li>
                 <li>
                   <router-link
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                     to="/about"
-                    >About</router-link
                   >
+                    About
+                  </router-link>
                 </li>
                 <li>
                   <router-link
                     class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                     to="/blog"
-                    >Blog</router-link
                   >
+                    Blog
+                  </router-link>
                 </li>
               </ul>
             </div>
@@ -106,6 +111,3 @@
     </div>
   </footer>
 </template>
-<script setup lang="ts">
-const date: number = new Date().getFullYear();
-</script>
