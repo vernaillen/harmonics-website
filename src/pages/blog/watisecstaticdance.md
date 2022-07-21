@@ -18,7 +18,7 @@ Dansers voelen een diepe connectie met hun eigen emoties en die van anderen. Het
 
 * Een Ecstatic Dance sessie start gewoonlijke met een vorm van meditatie of yoga, wat de dansers toelaat om bewust te verbinden met hun innerlijke zelf en volledig aanwezig te zijn in het moment en in hun lichaam.
 * De muziek bouwt langzaam op en neemt de dansers mee op een reis van ecstatische gevoelens en bewegingen.  
-* Na het bereiken van een initiële ecstatische ervaring, bouwt de muziek terug af, om de dansers toe te laten te herconnecteren en het zaligmakende gevoel te ervaren en integreren.
+* Na het bereiken van een eerste piek, bouwt de muziek terug af, om de dansers toe te laten te herconnecteren en het zaligmakende gevoel te ervaren en integreren.
 * Deze golf wordt 2 of 3 maal herhaald. Sessies duren gewoonlijk zo'n 2 tot 3 uur.
 
 ### De locatie voor een ED sessie
