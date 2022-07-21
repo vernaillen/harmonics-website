@@ -1,0 +1,16 @@
+language: language
+menu:
+  home: Home
+  blog: Blog
+  about: About
+home:
+  ecstaticdance: Ecstatic Dance
+  immersivesoundbaths: Immersive soundbaths
+  musicproduction: Music Production
+  tagline: Healing power of Sound & Music
+blog:
+  readmore: read more
+  by: by
+footer:
+  intouch: Let's keep in touch!
+  findus: Find us on any of these platforms.

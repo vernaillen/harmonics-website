@@ -1,0 +1,16 @@
+language: taal
+menu:
+  home: Home
+  blog: Blog
+  about: Over
+home:
+  ecstaticdance: Ecstatic Dance
+  immersivesoundbaths: Immersive soundbaths
+  musicproduction: Muziek Productie
+  tagline: Genezende kracht van geluid en muziek
+blog:
+  readmore: lees meer
+  by: door
+footer:
+  intouch: Laat ons contact houden!
+  findus: Je kan ons vinden op deze platformen

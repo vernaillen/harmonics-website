@@ -6,7 +6,7 @@ export class Blog {
     const router = useRouter()
     return router
       .getRoutes()
-      .filter(i => i.path.startsWith('/blog/') && i.meta.frontmatter.date)
+      .filter(i => i.path.startsWith('/blog') && i.meta.frontmatter.date)
       .sort(
         (a, b) =>
           +new Date(b.meta.frontmatter.date)
@@ -14,8 +14,10 @@ export class Blog {
       )
       .map(i => ({
         path: i.path,
-        title: i.meta.frontmatter.title,
-        desc: i.meta.frontmatter.desc,
+        title_nl: i.meta.frontmatter.title_nl,
+        title_en: i.meta.frontmatter.title_en,
+        desc_nl: i.meta.frontmatter.desc_nl,
+        desc_en: i.meta.frontmatter.desc_en,
         author: i.meta.frontmatter.author,
         date: i.meta.frontmatter.date,
         lang: i.meta.frontmatter.lang,

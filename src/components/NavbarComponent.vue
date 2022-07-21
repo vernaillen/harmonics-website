@@ -22,22 +22,17 @@ const linkClass = (path: string) => {
     classToAdd = 'router-link-active'
   return classToAdd
 }
+const { t } = useI18n()
 </script>
 
 <template>
-  <header
-    class="header bg-transparent absolute top-0 left-0 z-20 w-full flex items-center"
-  >
+  <header class="header bg-transparent absolute top-0 left-0 z-20 w-full flex items-center">
     <div class="container">
       <div class="flex justify-between relative">
         <div class="px-4 mr-10 mt-3 max-w-full">
-          <router-link
-            to="/"
-            class="text-xl leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
-          >
+          <router-link to="/" class="text-xl leading-relaxed inline-block mr-5 whitespace-nowrap header-logo">
             <img
-              alt="Harmonics logo"
-              src="../assets/wave_sound-02-small.jpg"
+              alt="Harmonics logo" src="../assets/wave_sound-02-small.jpg"
               class="inline-flex rounded-full w-20 h-10"
             >
             Harmonics
@@ -46,10 +41,8 @@ const linkClass = (path: string) => {
         <div class="flex px-4 justify-between items-center w-full">
           <div>
             <button
-              class="right-0 top-2 absolute cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button"
-              :class="navbarTogglerClass"
-              @click="toggleNavbar()"
+              class="right-0 top-2 absolute cursor-pointer text-xl leading-none p-3 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              type="button" :class="navbarTogglerClass" @click="toggleNavbar()"
             >
               <FontAwesomeIcon :icon="['fas', 'bars']" />
             </button>
@@ -66,7 +59,7 @@ const linkClass = (path: string) => {
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/')"
                   >
-                    Home
+                    {{ t('menu.home') }}
                   </router-link>
                 </li>
                 <li class="relative group">
@@ -75,7 +68,7 @@ const linkClass = (path: string) => {
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/blog')"
                   >
-                    Blog
+                    {{ t('menu.blog') }}
                   </router-link>
                 </li>
                 <li class="relative group">
@@ -84,12 +77,15 @@ const linkClass = (path: string) => {
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/about')"
                   >
-                    About
+                    {{ t('menu.about') }}
                   </router-link>
                 </li>
               </ul>
             </nav>
           </div>
+        </div>
+        <div class="px-4 py-2 mr-10 mt-3 max-w-full">
+          <LanguageSwitcher />
         </div>
       </div>
     </div>

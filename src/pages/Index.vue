@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const { t } = useI18n()
+</script>
+
 <template>
   <div class="relative lg:pt-32 pb-32 h-screen">
     <section class="relative">
@@ -20,7 +24,7 @@
                     </div>
                     <div>
                       <p class="text-gray-600">
-                        Ecstatic Dance
+                        {{ t('home.ecstaticdance') }}
                       </p>
                     </div>
                   </div>
@@ -36,7 +40,7 @@
                     </div>
                     <div>
                       <p class="text-gray-600">
-                        Immersive soundbaths
+                        {{ t('home.immersivesoundbaths') }}
                       </p>
                     </div>
                   </div>
@@ -52,7 +56,7 @@
                     </div>
                     <div>
                       <p class="text-gray-600">
-                        Music production
+                        {{ t('home.musicproduction') }}
                       </p>
                     </div>
                   </div>
@@ -61,11 +65,7 @@
             </div>
           </div>
           <div class="w-10/12 lg:w-4/12 ml-auto mr-auto lg:ml-0 px-4 mt-10">
-            <img
-              alt="..."
-              class="max-w-full rounded-lg shadow-2xl mt-5"
-              src="../assets/gongs.jpg"
-            >
+            <img alt="..." class="max-w-full rounded-lg shadow-2xl mt-5" src="../assets/gongs.jpg">
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
     <section class="relative">
       <div class="lg:container text-center mx-auto px-4 mt-20 mb-20">
         <h4 class="text-4xl leading-relaxed text-gray-500 pb-32 mb-20">
-          Healing power of Sound & Music
+          {{ t('home.tagline') }}
         </h4>
       </div>
     </section>

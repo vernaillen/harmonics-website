@@ -1,5 +1,5 @@
 import { URL, fileURLToPath } from 'url'
-import { resolve } from 'path'
+import path, { resolve } from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Markdown from 'vite-plugin-vue-markdown'
@@ -13,6 +13,7 @@ import fs from 'fs-extra'
 import matter from 'gray-matter'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import VueI18n from '@intlify/vite-plugin-vue-i18n'
 
 import 'prismjs/components/prism-regex'
 import 'prismjs/components/prism-javascript'
@@ -34,7 +35,6 @@ export default defineConfig({
     }),
     Markdown({
       wrapperComponent: 'markdown-wrapper',
-      wrapperClasses: 'prose m-auto',
       markdownItSetup(md) {
         md.use(Anchor)
         md.use(Prism)
@@ -66,13 +66,18 @@ export default defineConfig({
       },
     }),
     AutoImport({
-      imports: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head', 'vitest'],
+      imports: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head', 'vitest', 'vue-i18n'],
       dts: true, // generate TypeScript declaration
     }),
     Components({
       extensions: ['vue', 'md', 'svg', 'mock'],
       dts: true,
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/, /\.svg$/, /\.mock$/],
+    }),
+    VueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
+      include: [path.resolve(__dirname, './locales/**')],
     }),
   ],
   resolve: {
@@ -84,5 +89,9 @@ export default defineConfig({
     script: 'async',
     formatting: 'minify',
     format: 'cjs',
+  },
+  ssr: {
+    // TODO: workaround until they support native ESM
+    noExternal: ['workbox-window', /vue-i18n/],
   },
 })
