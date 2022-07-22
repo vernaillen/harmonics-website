@@ -57,3 +57,7 @@ h6 {
     max-height: 600px !important;
   }
 }
+
+.text-end {
+  text-align: end;
+}

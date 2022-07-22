@@ -1,4 +1,3 @@
-import { useRouter } from 'vue-router'
 import type { Post } from '@/types'
 
 export class Blog {
@@ -31,3 +30,27 @@ export class Blog {
 }
 const blog = new Blog()
 export default blog
+
+export function getPreviousPost(currentPostPath: string): Post | null {
+  let foundCurrentPost = false
+  let previousPost = null
+  for (const post of blog.getPosts()) {
+    if (foundCurrentPost && previousPost == null)
+      previousPost = post
+
+    if (post.path === currentPostPath)
+      foundCurrentPost = true
+  }
+  return previousPost
+}
+
+export function getNextPost(currentPostPath: string): Post | null {
+  let moreRecentPost = null
+  for (const post of blog.getPosts()) {
+    if (moreRecentPost != null && post.path === currentPostPath)
+      return moreRecentPost
+
+    moreRecentPost = post
+  }
+  return null
+}

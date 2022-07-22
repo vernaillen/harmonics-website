@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     LanguageSwitcher: typeof import('./src/components/LanguageSwitcher.vue')['default']
     MarkdownWrapper: typeof import('./src/components/MarkdownWrapper.vue')['default']
     NavbarComponent: typeof import('./src/components/NavbarComponent.vue')['default']
+    NextPreviousPost: typeof import('./src/components/NextPreviousPost.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TranslatedSection: typeof import('./src/components/TranslatedSection.vue')['default']

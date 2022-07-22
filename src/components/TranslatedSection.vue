@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+import { useLocale } from '@/stores/lang'
 </script>
 
 <template>
-  <slot v-if="locale === 'en'" name="en" />
-  <slot v-if="locale === 'nl'" name="nl" />
+  <slot v-if="useLocale().lang === 'en'" name="en" />
+  <slot v-if="useLocale().lang === 'nl'" name="nl" />
 </template>

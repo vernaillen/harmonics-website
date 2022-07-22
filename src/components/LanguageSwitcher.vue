@@ -1,10 +1,13 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+import { useLocale } from '@/stores/lang'
+const setLanguage = (event: Event) => {
+  useLocale().setLanguage(event.target.value)
+}
 </script>
 
 <template>
   <form>
-    <select v-model="locale">
+    <select @change="setLanguage">
       <option value="nl">
         NL
       </option>

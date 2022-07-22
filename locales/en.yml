@@ -11,6 +11,8 @@ home:
 blog:
   readmore: read more
   by: by
+  next: next blogpost
+  previous: previous blogpost
 footer:
   intouch: Let's keep in touch!
   findus: Find us on any of these platforms.

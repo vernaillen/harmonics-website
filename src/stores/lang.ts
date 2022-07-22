@@ -1,11 +1,13 @@
 import { defineStore } from 'pinia'
+import { i18n } from '@/i18n'
 
-export const useLangStore = defineStore('langStore', {
+export const useLocale = defineStore('localeStore', {
   state: () => ({
     lang: 'nl',
   }),
   actions: {
-    changeLang(newLang: String) {
+    setLanguage(newLang: string) {
+      i18n.locale.value = newLang
       this.lang = newLang
     },
   },

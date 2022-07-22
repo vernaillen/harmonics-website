@@ -1,8 +1,8 @@
 ---
 title_nl: Rebirth Ecstatic Dance
 title_en: Rebirth Ecstatic Dance
-desc_nl: Ecstatic Dance DJ-set played during a private birthday/rebirth event
-desc_en: Ecstatic Dance DJ-set gespeeld tijdens een privé verjaardags/rebirth evenement
+desc_nl: Ecstatic Dance DJ-set gespeeld tijdens een privé verjaardags/rebirth evenement
+desc_en: Ecstatic Dance DJ-set played during a private birthday/rebirth event
 pageName: Rebirth Ecstatic Dance
 date: 07/21/2022
 author: Wouter Vernaillen

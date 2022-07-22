@@ -11,6 +11,8 @@ home:
 blog:
   readmore: lees meer
   by: door
+  next: volgende blogpost
+  previous: vorige blogpost
 footer:
   intouch: Laat ons contact houden!
   findus: Je kan ons vinden op deze platformen

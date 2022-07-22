@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import blog from '@/classes/blog'
-import type { Post } from '@/types'
-const { locale, t } = useI18n()
-const posts: Post[] = blog.getPosts()
+import { useLocale } from '@/stores/lang'
+const { t } = useI18n()
 </script>
 
 <template>
-  <div v-for="post in posts" :key="post.path" class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 px-4">
+  <div v-for="post in blog.getPosts()" :key="post.path" class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 px-4">
     <div
       class="relative bg-white dark:bg-dark shadow- rounded-md shadow-light-300 rounded-md overflow-hidden mb-10 animated fadeIn"
     >
@@ -16,15 +15,15 @@ const posts: Post[] = blog.getPosts()
             :to="post.path"
             class="font-bold text-primary dark:text-white text-xl sm:text-2xl block mb-4 hover:bg-opacity-80"
           >
-            <span v-if="locale === 'nl'">{{ post.title_nl }}</span>
-            <span v-if="locale === 'en'">{{ post.title_en }}</span>
+            <span v-if="useLocale().lang === 'nl'">{{ post.title_nl }}</span>
+            <span v-if="useLocale().lang === 'en'">{{ post.title_en }}</span>
           </router-link>
         </h3>
         <p
           class="text-base text-body-color font-medium pb-6 mb-6 border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10"
         >
-          <span v-if="locale === 'nl'">{{ post.desc_nl }}</span>
-          <span v-if="locale === 'en'">{{ post.desc_en }}</span>
+          <span v-if="useLocale().lang === 'nl'">{{ post.desc_nl }}</span>
+          <span v-if="useLocale().lang === 'en'">{{ post.desc_en }}</span>
           <br>
           <router-link :to="post.path">
             <button
