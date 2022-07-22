@@ -32,15 +32,6 @@ library.add(
   faInstagram,
 )
 
-function formatDate(d: string) {
-  const date = dayjs(d)
-  return date.format('D MMM YYYY')
-}
-declare module '@vue/runtime-core' {
-  interface ComponentCustomProperties {
-    $formatDate: typeof formatDate
-  }
-}
 dayjs.extend(LocalizedFormat)
 
 const pinia = createPinia()
@@ -50,5 +41,4 @@ export const createApp = ViteSSG(App, { routes }, ({ app }) => {
   app.use(pinia)
   app.component('FontAwesomeIcon', FontAwesomeIcon)
   app.component('MarkdownWrapper', MarkdownWrapper)
-  app.config.globalProperties.$formatDate = formatDate
 })

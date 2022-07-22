@@ -1,7 +1,14 @@
 <script setup lang="ts">
+import dayjs from 'dayjs'
 import blog from '@/classes/blog'
 import { useLocale } from '@/stores/lang'
+
 const { t } = useI18n()
+
+function formatDate(d: string) {
+  const date = dayjs(d)
+  return date.format('D MMM YYYY')
+}
 </script>
 
 <template>
@@ -40,7 +47,7 @@ const { t } = useI18n()
           >
             <div class="w-full">
               <p class="text-xs text-body-color">
-                {{ $formatDate(post.date) }}
+                {{ formatDate(post.date) }}
               </p>
             </div>
           </div>
