@@ -33,7 +33,7 @@ specifiers:
   prismjs: ^1.28.0
   ts-node: ^10.9.1
   typescript: ^4.7.4
-  unplugin-auto-import: ^0.9.4
+  unplugin-auto-import: ^0.10.0
   unplugin-vue-components: ^0.21.1
   vite: ^3.0.2
   vite-plugin-pages: ^0.25.0
@@ -79,14 +79,14 @@ devDependencies:
   gray-matter: 4.0.3
   happy-dom: 6.0.4
   markdown-it: 13.0.1
-  markdown-it-anchor: 8.6.4_ea7kj7wzjkld5jo2noyjqxi764
+  markdown-it-anchor: 8.6.4_markdown-it@13.0.1
   markdown-it-link-attributes: 4.0.0
   markdown-it-prism: 2.2.4
   prettier: 2.7.1
   prismjs: 1.28.0
   ts-node: 10.9.1_tdn3ypgnfy6bmey2q4hu5jonwi
   typescript: 4.7.4
-  unplugin-auto-import: 0.9.4_h424so5tb623alsee2e3aarhfi
+  unplugin-auto-import: 0.10.0_h424so5tb623alsee2e3aarhfi
   unplugin-vue-components: 0.21.1_vite@3.0.2+vue@3.2.37
   vite: 3.0.2
   vite-plugin-pages: 0.25.0_vite@3.0.2
@@ -3235,13 +3235,12 @@ packages:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
     dev: true
 
-  /markdown-it-anchor/8.6.4_ea7kj7wzjkld5jo2noyjqxi764:
+  /markdown-it-anchor/8.6.4_markdown-it@13.0.1:
     resolution: {integrity: sha512-Ul4YVYZNxMJYALpKtu+ZRdrryYt/GlQ5CK+4l1bp/gWXOG2QWElt6AqF3Mih/wfUKdZbNAZVXGR73/n6U/8img==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: '*'
     dependencies:
-      '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
     dev: true
 
@@ -4373,8 +4372,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-auto-import/0.9.4_h424so5tb623alsee2e3aarhfi:
-    resolution: {integrity: sha512-xCFPdUeZmfBIkbkMYbBij4WREX85vJKpdBklFXuo/oq6XA8/4sMg4XbVxRcIvomA9x0SltCyieWUU6sJ/Ehf+g==}
+  /unplugin-auto-import/0.10.0_h424so5tb623alsee2e3aarhfi:
+    resolution: {integrity: sha512-XvGa/38TlHQnyNvKX+PgyM7og1DR+q3DPNp0RkifCQ2t8JCFUEixfRj9yDlfzNnLuEppFxqBZaUxNYjrstCUBA==}
     engines: {node: '>=14'}
     peerDependencies:
       '@vueuse/core': '*'
