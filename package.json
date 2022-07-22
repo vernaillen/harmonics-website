@@ -8,7 +8,7 @@
     "build": "vue-tsc --noEmit && vite-ssg build",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "typecheck": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
+    "typecheck": "vue-tsc --noEmit --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:fix": "eslint . --fix",
     "prepushtest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build"

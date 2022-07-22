@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useLocale } from '@/stores/lang'
 const setLanguage = (event: Event) => {
-  useLocale().setLanguage(event.target.value)
+  const target = event.target as HTMLSelectElement
+  useLocale().setLanguage(target.value)
 }
 </script>
 

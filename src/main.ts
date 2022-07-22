@@ -36,6 +36,11 @@ function formatDate(d: string) {
   const date = dayjs(d)
   return date.format('D MMM YYYY')
 }
+declare module '@vue/runtime-core' {
+  interface ComponentCustomProperties {
+    $formatDate: typeof formatDate
+  }
+}
 dayjs.extend(LocalizedFormat)
 
 const pinia = createPinia()

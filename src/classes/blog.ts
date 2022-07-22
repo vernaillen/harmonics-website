@@ -5,13 +5,13 @@ export class Blog {
     const router = useRouter()
     return router
       .getRoutes()
-      .filter(i => i.path.startsWith('/blog') && i.meta.frontmatter.date)
+      .filter((i: { path: string; meta: { frontmatter: { date: any } } }) => i.path.startsWith('/blog') && i.meta.frontmatter.date)
       .sort(
-        (a, b) =>
+        (a: { path: string; meta: { frontmatter: { date: any } } }, b: { path: string; meta: { frontmatter: { date: any } } }) =>
           +new Date(b.meta.frontmatter.date)
           - +new Date(a.meta.frontmatter.date),
       )
-      .map(i => ({
+      .map((i: { path: any; meta: { frontmatter: { title_nl: any; title_en: any; desc_nl: any; desc_en: any; author: any; date: any; lang: any; duration: any; category: any; thumbnail: any; thumbnail_dark: any; thumbnail_light: any } } }) => ({
         path: i.path,
         title_nl: i.meta.frontmatter.title_nl,
         title_en: i.meta.frontmatter.title_en,
