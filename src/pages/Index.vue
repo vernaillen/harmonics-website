@@ -9,11 +9,11 @@ const { t } = useI18n()
         <div class="flex flex-wrap">
           <div class="w-10/12 lg:w-4/12 ml-auto mr-auto lg:mr-0 px-4 mt-10">
             <div class="md:pr-12">
-              <h1 class="text-4xl md:text-5xl xl:text-6xl font-semibold py-4">
+              <h1 class="text-4xl md:text-5xl xl:text-6xl font-semibold py-4 animated pulse">
                 Harmonics
               </h1>
               <ul class="list-none mt-6">
-                <li class="py-2">
+                <li class="py-2 animated fadeIn animate-delay-100">
                   <div class="flex items-center">
                     <div>
                       <span
@@ -29,7 +29,7 @@ const { t } = useI18n()
                     </div>
                   </div>
                 </li>
-                <li class="py-2">
+                <li class="py-2 animated fadeIn animate-delay-200">
                   <div class="flex items-center">
                     <div>
                       <span
@@ -45,7 +45,7 @@ const { t } = useI18n()
                     </div>
                   </div>
                 </li>
-                <li class="py-2">
+                <li class="py-2 animated fadeIn animate-delay-300">
                   <div class="flex items-center">
                     <div>
                       <span
@@ -80,4 +80,5 @@ const { t } = useI18n()
       </div>
     </section>
   </div>
+  <footer-component />
 </template>

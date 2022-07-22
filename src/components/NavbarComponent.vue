@@ -26,7 +26,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <header class="header bg-transparent absolute top-0 left-0 z-20 w-full flex items-center">
+  <header class="header bg-transparent absolute top-0 left-0 z-20 w-full flex items-center animated fadeIn animate-delay-1000">
     <div class="container">
       <div class="flex justify-between relative">
         <div class="px-4 mr-10 mt-3 max-w-full">

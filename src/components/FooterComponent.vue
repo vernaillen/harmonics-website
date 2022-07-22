@@ -6,7 +6,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <footer class="relative pt-8 pb-6 mt-20">
+  <footer class="relative pt-8 pb-6 mt-5 animated fadeIn animate-delay-1000">
     <div
       class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
       style="height: 80px"

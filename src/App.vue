@@ -16,6 +16,5 @@ useHead({
     <main>
       <router-view />
     </main>
-    <footer-component />
   </div>
 </template>
