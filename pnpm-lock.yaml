@@ -42,7 +42,7 @@ specifiers:
   vite-plugin-vue-markdown: ^0.20.1
   vite-plugin-windicss: ^1.8.7
   vite-ssg: ^0.20.2
-  vitest: ^0.18.1
+  vitest: ^0.19.0
   vue: ^3.2.37
   vue-i18n: ^9.1.10
   vue-router: ^4.1.2
@@ -81,7 +81,7 @@ devDependencies:
   gray-matter: 4.0.3
   happy-dom: 6.0.4
   markdown-it: 13.0.1
-  markdown-it-anchor: 8.6.4_ea7kj7wzjkld5jo2noyjqxi764
+  markdown-it-anchor: 8.6.4_markdown-it@13.0.1
   markdown-it-link-attributes: 4.0.0
   markdown-it-prism: 2.2.4
   prettier: 2.7.1
@@ -96,7 +96,7 @@ devDependencies:
   vite-plugin-vue-markdown: 0.20.1_vite@3.0.2
   vite-plugin-windicss: 1.8.7_vite@3.0.2
   vite-ssg: 0.20.2_bc535nzjtcqlryzrekyvursaoq
-  vitest: 0.18.1_c8@7.12.0+happy-dom@6.0.4
+  vitest: 0.19.0_c8@7.12.0+happy-dom@6.0.4
   vue-tsc: 0.38.9_typescript@4.7.4
   windicss: 3.5.6
 
@@ -3241,13 +3241,12 @@ packages:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
     dev: true
 
-  /markdown-it-anchor/8.6.4_ea7kj7wzjkld5jo2noyjqxi764:
+  /markdown-it-anchor/8.6.4_markdown-it@13.0.1:
     resolution: {integrity: sha512-Ul4YVYZNxMJYALpKtu+ZRdrryYt/GlQ5CK+4l1bp/gWXOG2QWElt6AqF3Mih/wfUKdZbNAZVXGR73/n6U/8img==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: '*'
     dependencies:
-      '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
     dev: true
 
@@ -4608,18 +4607,21 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.18.1_c8@7.12.0+happy-dom@6.0.4:
-    resolution: {integrity: sha512-4F/1K/Vn4AvJwe7i2YblR02PT5vMKcw9KN4unDq2KD0YcSxX0B/6D6Qu9PJaXwVuxXMFTQ5ovd4+CQaW3bwofA==}
+  /vitest/0.19.0_c8@7.12.0+happy-dom@6.0.4:
+    resolution: {integrity: sha512-nU80Gm95tMchigHpAMukxv1LoWbBGgknX/1MqrXCOoJoJL7/wfq4h2aow61o2jwf5szQrahoNqBqaGb+fYdYrQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
       '@edge-runtime/vm': '*'
+      '@vitest/browser': '*'
       '@vitest/ui': '*'
       c8: '*'
       happy-dom: '*'
       jsdom: '*'
     peerDependenciesMeta:
       '@edge-runtime/vm':
+        optional: true
+      '@vitest/browser':
         optional: true
       '@vitest/ui':
         optional: true
