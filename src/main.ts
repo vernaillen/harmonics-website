@@ -8,6 +8,7 @@ import '@/css/markdown.css'
 import '@/css/main.css'
 import '@/css/prose.css'
 import { createPinia } from 'pinia'
+import VueEasyLightbox from 'vue-easy-lightbox'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
@@ -40,6 +41,7 @@ const pinia = createPinia()
 export const createApp = ViteSSG(App, { routes }, ({ app }) => {
   app.use(i18nInstance)
   app.use(pinia)
+  app.use(VueEasyLightbox)
   app.component('FontAwesomeIcon', FontAwesomeIcon)
   app.component('MarkdownWrapper', MarkdownWrapper)
 })

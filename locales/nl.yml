@@ -3,6 +3,7 @@ menu:
   home: Home
   blog: Blog
   about: Over
+  contact: Contact
 home:
   ecstaticdance: Ecstatic Dance
   immersivesoundbaths: Immersive soundbaths
@@ -13,6 +14,13 @@ blog:
   by: door
   next: volgende blogpost
   previous: vorige blogpost
+contact:
+  name: Jouw naam
+  email: Jouw email
+  message: Jouw bericht
+  submit: Verstuur
+  required: Custom, required
+  field_too_short: Custom
 footer:
-  intouch: Laat ons contact houden!
-  findus: Je kan ons vinden op deze platformen
+  findus: Je kan ons ook vinden op deze platformen
+  copyright: Copyright ©

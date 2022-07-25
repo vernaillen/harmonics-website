@@ -21,30 +21,10 @@ const { t } = useI18n()
     <div class="container mx-auto px-4 mt-10">
       <div class="flex flex-wrap">
         <div class="w-full lg:w-6/12 px-4 mb-10">
-          <h4 class="text-3xl text-gray-600 font-semibold">
-            {{ t('footer.intouch') }}
-          </h4>
           <h5 class="text-lg text-gray-500 mt-5 mb-2 text-gray-700">
             {{ t('footer.findus') }}:
           </h5>
-          <div class="mt-6">
-            <a href="https://www.facebook.com/harmonics.be/" target="_blank" rel="”noopener”">
-              <button
-                class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <FontAwesomeIcon :icon="['fab', 'facebook']" class="hover:text-gray-800 text-gray-500 text-lg" />
-              </button>
-            </a>
-            <a href="https://www.instagram.com/harmonics.be/" target="_blank" rel="”noopener”">
-              <button
-                class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                type="button"
-              >
-                <FontAwesomeIcon :icon="['fab', 'instagram']" class="hover:text-gray-800 text-gray-500 text-lg" />
-              </button>
-            </a>
-          </div>
+          <social-icons />
         </div>
         <div class="w-full lg:w-6/12 px-4">
           <div class="flex flex-wrap items-top mb-6">
@@ -57,28 +37,33 @@ const { t } = useI18n()
               <ul class="list-unstyled">
                 <li>
                   <router-link class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" to="/">
-                    Home
-                  </router-link>
-                </li>
-                <li>
-                  <router-link class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" to="/about">
-                    About
+                    {{ t('menu.home') }}
                   </router-link>
                 </li>
                 <li>
                   <router-link class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" to="/blog">
-                    Blog
+                    {{ t('menu.blog') }}
+                  </router-link>
+                </li>
+                <li>
+                  <router-link class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" to="/about">
+                    {{ t('menu.about') }}
+                  </router-link>
+                </li>
+                <li>
+                  <router-link class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" to="/contact">
+                    {{ t('menu.contact') }}
                   </router-link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="flex flex-wrap items-center md:justify-between justify-center">
-          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-            <div class="text-sm text-gray-400 font-semibold py-1">
-              Copyright © {{ date }} Vernaillen Consulting / Harmonics BV
-            </div>
+      </div>
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-400 font-semibold py-1">
+            {{ t('footer.copyright') }} {{ date }} Vernaillen Consulting / Harmonics BV
           </div>
         </div>
       </div>

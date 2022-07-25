@@ -17,4 +17,5 @@ useHead({
       <router-view />
     </main>
   </div>
+  <easy-lightbox />
 </template>

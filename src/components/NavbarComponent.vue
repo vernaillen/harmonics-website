@@ -26,7 +26,9 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <header class="header bg-transparent absolute top-0 left-0 z-20 w-full flex items-center animated fadeIn animate-delay-1000">
+  <header
+    class="header bg-transparent absolute top-0 left-0 z-20 w-full flex items-center animated fadeIn animate-delay-1000"
+  >
     <div class="container">
       <div class="flex justify-between relative">
         <div class="px-4 mr-10 mt-3 max-w-full">
@@ -78,6 +80,15 @@ const { t } = useI18n()
                     :class="linkClass('/about')"
                   >
                     {{ t('menu.about') }}
+                  </router-link>
+                </li>
+                <li class="relative group">
+                  <router-link
+                    to="/contact"
+                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
+                    :class="linkClass('/contact')"
+                  >
+                    {{ t('menu.contact') }}
                   </router-link>
                 </li>
               </ul>
