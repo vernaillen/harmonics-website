@@ -1,4 +1,5 @@
 ---
+title: Release your Inner Dancer - 20 augustus - Harmonics.be
 title_nl: Release your Inner Dancer - 20 augustus
 title_en: Release your Inner Dancer - August 20
 desc_nl: Laat je innerlijke kind los en dans met ons mee op 20 augustus in Haaltert

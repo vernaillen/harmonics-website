@@ -7,6 +7,11 @@ useHead({
       content: 'Healing power of Sound & Music - by Wouter Vernaillen',
     },
   ],
+  noscript: [
+    {
+      children: `Javascript is required`,
+    },
+  ],
 })
 </script>
 

@@ -1,4 +1,5 @@
 ---
+title: Rebirth Ecstatic Dance - Harmonics.be
 title_nl: Rebirth Ecstatic Dance
 title_en: Rebirth Ecstatic Dance
 desc_nl: opname van een Ecstatic Dance DJ-set gespeeld tijdens een privé verjaardags/rebirth evenement

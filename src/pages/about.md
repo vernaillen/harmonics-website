@@ -1,4 +1,5 @@
 ---
+title: Over Harmonics BV - Harmonics.be
 title_nl: Over Harmonics BV
 title_en: About Harmonics BV
 ---

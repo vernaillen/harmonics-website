@@ -1,4 +1,5 @@
 ---
+title: Wat is Ecstatic Dance? - Harmonics.be
 title_en: What is Ecstatic Dance?
 title_nl: Wat is Ecstatic Dance?
 desc_en: a form of dance in which the dancers abandon themselves to the rhythm and move freely, as the music leads them...
