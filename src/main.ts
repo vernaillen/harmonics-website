@@ -38,7 +38,15 @@ dayjs.extend(LocalizedFormat)
 
 const pinia = createPinia()
 
-export const createApp = ViteSSG(App, { routes }, ({ app }) => {
+const scrollBehavior = (
+  _to: unknown,
+  _from: unknown,
+  _savedPosition: unknown,
+) => {
+  return { top: 0 }
+}
+
+export const createApp = ViteSSG(App, { routes, scrollBehavior }, ({ app }) => {
   app.use(i18nInstance)
   app.use(pinia)
   app.use(VueEasyLightbox)

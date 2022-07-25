@@ -9,7 +9,7 @@ useHead({
   ],
   noscript: [
     {
-      children: `Javascript is required`,
+      children: 'Javascript is required',
     },
   ],
 })

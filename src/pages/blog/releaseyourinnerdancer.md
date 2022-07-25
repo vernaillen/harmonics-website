@@ -25,10 +25,9 @@ Inschrijven kan door een bericht te sturen naar Wouter m.b.v. het [contact formu
 
 ### Praktische gegevens
 
-* we starten met dansen om 17u, kom bij voorkeur een kwartiertje vroeger
+* we starten met dansen om 19u, kom bij voorkeur een kwartiertje vroeger
 * de dans duurt ongeveer 2u
 * er wordt water en fruitsap voorzien
-* na de dans is er mogelijk om samen te eten in de tuin, we stellen daarvoor graag een potluck voor waarbij elk iets gezonds meebrengt om te eten
 
 ### enkele richtlijnen voor tijdens de dans
 

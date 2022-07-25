@@ -3,6 +3,57 @@ import LanguageSwitcher from './LanguageSwitcher.vue'
 const date: number = new Date().getFullYear()
 
 const { t } = useI18n()
+
+function easeInOutQuad(
+  currentTime: number,
+  start: number,
+  change: number,
+  duration: number,
+) {
+  currentTime /= duration / 2
+  if (currentTime < 1)
+    return (change / 2) * currentTime * currentTime + start
+  currentTime--
+  return (-change / 2) * (currentTime * (currentTime - 2) - 1) + start
+}
+
+function scrollToTop() {
+  const to = 0
+  const duration = 500
+  const element = document.documentElement
+  const start = element.scrollTop
+  const change = to - start
+  const increment = 20
+  let currentTime = 0
+
+  const animateScroll = () => {
+    currentTime += increment
+
+    const val = easeInOutQuad(currentTime, start, change, duration)
+
+    element.scrollTop = val
+
+    if (currentTime < duration)
+      setTimeout(animateScroll, increment)
+  }
+  animateScroll()
+}
+
+onMounted(() => {
+  window.onscroll = function () {
+    const ud_header = document.querySelector('.header') as HTMLElement
+    if (ud_header) {
+      const backToTop = document.querySelector('.back-to-top') as HTMLElement
+      if (
+        document.body.scrollTop > 50
+        || document.documentElement.scrollTop > 50
+      )
+        backToTop.style.display = 'flex'
+      else
+        backToTop.style.display = 'none'
+    }
+  }
+})
 </script>
 
 <template>
@@ -69,4 +120,11 @@ const { t } = useI18n()
       </div>
     </div>
   </footer>
+  <a
+    href="javascript:void(0)"
+    class="hidden items-center justify-center bg-primary text-white w-10 h-10 rounded-md fixed bottom-8 right-8 left-auto z-[999] hover:shadow-signUp hover:bg-opacity-80 transition duration-300 ease-in-out back-to-top shadow-md"
+    @click="scrollToTop()"
+  >
+    <span class="w-3 h-3 border-t border-l border-white rotate-45 mt-[6px]" />
+  </a>
 </template>
