@@ -7,7 +7,6 @@ defineProps({
   },
 })
 const router = useRouter()
-const route = useRoute()
 const content = ref<HTMLDivElement>()
 onMounted(() => {
   const navigate = () => {

@@ -43,16 +43,18 @@ const { t } = useI18n()
         <div class="flex px-4 justify-between items-center w-full">
           <div>
             <button
-              id="navbarToggler" class="block absolute right-0 top-2 cursor-pointer translate-y-[-50%] lg:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg" :class="navbarTogglerClass" @click="toggleNavbar"
+              id="navbarToggler"
+              class="block absolute right-0 top-2 cursor-pointer translate-y-[-50%] lg:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg"
+              :class="navbarTogglerClass" @click="toggleNavbar"
             >
-              <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white" />
-              <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white" />
-              <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white" />
+              <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white transition" />
+              <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white transition" />
+              <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white transition" />
             </button>
 
             <nav
-              id="navbarCollapse"
-              class="absolute py-5 lg:py-0 lg:px-4 xl:px-6 bg-white dark:bg-dark lg:dark:bg-transparent lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full lg:block lg:static lg:shadow-none"
+              id="navbarCollapse" ref="navbarCollapse"
+              class="absolute py-5 lg:py-0 lg:px-4 xl:px-6 bg-white dark:bg-dark lg:dark:bg-transparent lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full lg:block lg:static lg:shadow-none transition"
               :class="navbarCollapseClass"
             >
               <ul class="block lg:flex">
@@ -60,7 +62,7 @@ const { t } = useI18n()
                   <router-link
                     to="/"
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
-                    :class="linkClass('/')"
+                    :class="linkClass('/')" @click="navbar.show = false"
                   >
                     {{ t('menu.home') }}
                   </router-link>
@@ -69,7 +71,7 @@ const { t } = useI18n()
                   <router-link
                     to="/blog"
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
-                    :class="linkClass('/blog')"
+                    :class="linkClass('/blog')" @click="navbar.show = false"
                   >
                     {{ t('menu.blog') }}
                   </router-link>
@@ -78,7 +80,7 @@ const { t } = useI18n()
                   <router-link
                     to="/about"
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
-                    :class="linkClass('/about')"
+                    :class="linkClass('/about')" @click="navbar.show = false"
                   >
                     {{ t('menu.about') }}
                   </router-link>
@@ -87,7 +89,7 @@ const { t } = useI18n()
                   <router-link
                     to="/contact"
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
-                    :class="linkClass('/contact')"
+                    :class="linkClass('/contact')" @click="navbar.show = false"
                   >
                     {{ t('menu.contact') }}
                   </router-link>
