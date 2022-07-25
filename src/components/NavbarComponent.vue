@@ -43,10 +43,11 @@ const { t } = useI18n()
         <div class="flex px-4 justify-between items-center w-full">
           <div>
             <button
-              class="right-0 top-2 absolute cursor-pointer text-xl leading-none p-3 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-              type="button" :class="navbarTogglerClass" @click="toggleNavbar()"
+              id="navbarToggler" class="block absolute right-0 top-2 cursor-pointer translate-y-[-50%] lg:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg" :class="navbarTogglerClass" @click="toggleNavbar"
             >
-              <FontAwesomeIcon :icon="['fas', 'bars']" />
+              <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white" />
+              <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white" />
+              <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white" />
             </button>
 
             <nav
