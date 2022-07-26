@@ -65,6 +65,14 @@ onMounted(() => {
               {{ frontmatter.title_nl }}
             </h1>
           </div>
+          <div v-if="frontmatter.show_desc" class="flex flex-wrap">
+            <h4 v-if="useLocale().lang === 'en'">
+              {{ frontmatter.desc_en }}
+            </h4>
+            <h4 v-if="useLocale().lang === 'nl'">
+              {{ frontmatter.desc_nl }}
+            </h4>
+          </div>
           <article ref="content">
             <slot />
           </article>
