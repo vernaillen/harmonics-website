@@ -1,8 +1,8 @@
 ---
-title: Release your Inner Dancer - 20 augustus - Harmonics.be
-title_nl: Release your Inner Dancer - 20 augustus
-title_en: Release your Inner Dancer - August 20
-desc_nl: Wanneer danste je laatst op blote voeten in het gras in de natuur?  Laat je innerlijke kind vrij en dans met ons mee op 20 augustus in Haaltert
+title: Release your Inner Dancer - 3 september augustus - Harmonics.be
+title_nl: Release your Inner Dancer - 3 september
+title_en: Release your Inner Dancer - September 3
+desc_nl: Wanneer danste je laatst op blote voeten in het gras in de natuur?  Laat je innerlijke kind vrij en dans met ons mee op 3 september in Haaltert
 desc_en: When did you last dance barefoot in the grass in nature? Release your inner child and dance with us on August 20 in Haaltert
 pageName: Release your inner Dancer
 date: 07/25/2022
@@ -14,14 +14,14 @@ author: Wouter Vernaillen
 
 _Wanneer danste je laatst op blote voeten in het gras in de natuur?_
 
-### Dans met ons mee op 20 augustus
+### Dans met ons mee op 3 september
 
 Diep vanbinnen hebben we allemaal de behoefte om uitbundig te mogen zijn, om ons innerlijke wildheid los te laten.
 
 We bieden daarom graag een plek en een moment aan waar het kind van 3 in ons eens opnieuw mag vrij zijn.<br/>
 Dit in de vorm van een [Ecstatic Dance](/blog/watisecstaticdance) sessie, een dansreisje waarbij we verbinding maken met ons innerlijke zelf, gewoon "mogen zijn", vrij bewegen en onze energie loslaten.
 
-Het thema van de sessie op 20 augustus is "Release your Inner Dancer". We nodigen uit om "los te laten", geleid door ritme en de kracht van muziek, op een veilige manier, zonder andere middelen om onze remmingen weg te nemen.
+Het thema van de sessie op 3 september is "Release your Inner Dancer". We nodigen uit om "los te laten", geleid door ritme en de kracht van muziek, op een veilige manier, zonder andere middelen om onze remmingen weg te nemen.
 
 Inschrijven kan door een bericht te sturen naar Wouter met het [contact formulier](/contact), met vermelding van het aantal personen. Breng gerust vrienden of vriendinnen mee die hier ook zin in hebben.
 
