@@ -15,8 +15,8 @@ author: Wouter Vernaillen
 Op 25 mei 2022 speelde ik mijn eerste Ecstatic Dance DJ-set voor een publiek van een 40-tal mensen op een sjamanistisch "Rebirth" verjaardagsevenement in Krimpvarkie Huisi in Haaltert.
 
 De volledige set werd opgenomen en kan je hieronder beluisteren. De tracklist kan je vinden op de [Mixcloud pagina](https://www.mixcloud.com/woutervernaillen/rebirth-ecstatic-dance-krimpvarkie-huisi/).
-</template>
 
+</template>
 <template #en>
 
 On 25 May 2022 I played my first Ecstatic Dance DJ-set for around 40 dancers at a shamanistic "Rebirth" birthday event at Krimpvarkie Huisi in Haaltert.
