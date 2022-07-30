@@ -3,16 +3,19 @@ title: Release your Inner Dancer - 3 september augustus - Harmonics.be
 title_nl: Release your Inner Dancer - 3 september
 title_en: Release your Inner Dancer - September 3
 desc_nl: Wanneer danste je laatst op blote voeten in het gras in de natuur?  Laat je innerlijke kind vrij en dans met ons mee op 3 september in Haaltert
-desc_en: When did you last dance barefoot in the grass in nature? Release your inner child and dance with us on August 20 in Haaltert
+desc_en: When did you last dance barefoot in the grass in nature? Release your inner child and dance with us on September 3rd in Haaltert
+show_subtitle: true
+subtitle_nl: Wanneer danste je laatst op blote voeten in het gras in de natuur?
+subtitle_en: When was the last time you danced barefoot in the grass in nature?
 pageName: Release your inner Dancer
 date: 07/25/2022
 author: Wouter Vernaillen
+image: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-unsplash.jpg
+thumbnail: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-thumb.png
 ---
 
 <TranslatedSection>
 <template #nl>
-
-_Wanneer danste je laatst op blote voeten in het gras in de natuur?_
 
 ### Dans met ons mee op 3 september
 
@@ -23,7 +26,7 @@ Dit in de vorm van een [Ecstatic Dance](/blog/watisecstaticdance) sessie, een da
 
 Het thema van de sessie op 3 september is "Release your Inner Dancer". We nodigen uit om "los te laten", geleid door ritme en de kracht van muziek, op een veilige manier, zonder andere middelen om onze remmingen weg te nemen.
 
-Inschrijven kan door een bericht te sturen naar Wouter met het [contact formulier](/contact), met vermelding van het aantal personen. Breng gerust vrienden of vriendinnen mee die hier ook zin in hebben.
+<cm-tickets-3-sept/>
 
 ### Praktische gegevens
 
@@ -39,7 +42,7 @@ Inschrijven kan door een bericht te sturen naar Wouter met het [contact formulie
 
 ### De locatie: KrimpVarkie Huisi, Haaltert
 
-<image-gallery folder="blog/releaseyourinnerdancer" />
+<image-gallery folder="blog/releaseyourinnerdancer/gallery" />
 
 ### Adres
 
@@ -63,18 +66,16 @@ U heeft uw bestemming bereikt.
 </template>
 <template #en>
 
-_When was the last time you danced barefoot in the grass in nature?_
-
-### Dance with us on August 20th
+### Dance with us on September 3rd
 
 Deep down we all have the need to be exuberant, to let go of our inner wildness.
 
 We would like to offer a place and a moment where the 3-year-old child in us can be free again.<br/>
 This in the form of an [Ecstatic Dance](/blog/watisecstaticdance) session, a dance trip where we connect with our inner self, just "may be", move freely and release our energy.
 
-The theme of the session on August 20 is "Release your Inner Dancer". We invite you to "let go", guided by rhythm and the power of music, in a safe way, with no other means to remove our inhibitions.
+The theme of the session on September 3rd is "Release your Inner Dancer". We invite you to "let go", guided by rhythm and the power of music, in a safe way, with no other means to remove our inhibitions.
 
-You can register by sending a message to Wouter using the [contact form](/contact), stating the number of people. Feel free to bring friends or girlfriends who might enjoy this dance as well.
+<cm-tickets-3-sept/>
 
 ### Practical information
 
@@ -90,7 +91,7 @@ You can register by sending a message to Wouter using the [contact form](/contac
 
 ### The location: KrimpVarkie Huisi, Haalter
 
-<image-gallery folder="blog/releaseyourinnerdancer" />
+<image-gallery folder="blog/releaseyourinnerdancer/gallery" />
 
 ### Address
 

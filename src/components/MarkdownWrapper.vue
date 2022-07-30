@@ -73,6 +73,15 @@ onMounted(() => {
               {{ frontmatter.desc_nl }}
             </h4>
           </div>
+          <div v-if="frontmatter.show_subtitle" class="flex flex-wrap">
+            <em v-if="useLocale().lang === 'en'">
+              {{ frontmatter.subtitle_en }}
+            </em>
+            <em v-if="useLocale().lang === 'nl'">
+              {{ frontmatter.subtitle_nl }}
+            </em>
+          </div>
+          <img v-if="frontmatter.image" :src="frontmatter.image" class="rounded-md">
           <article ref="content">
             <slot />
           </article>

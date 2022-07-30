@@ -7,6 +7,8 @@ desc_nl: een dansvorm waarin de dansers zich volledig overgeven aan het ritme va
 pageName: Ecstatic Dance
 date: 07/18/2022
 author: Wouter Vernaillen
+thumb_video_webm: /images/blog/ed.webm
+thumb_video_mp4: /images/blog/ed.mp4
 ---
 
 <TranslatedSection>

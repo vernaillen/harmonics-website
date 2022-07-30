@@ -3,7 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class="relative lg:pt-32 pb-32 h-screen">
+  <div class="relative pt-14 lg:pt-20 pb-20">
     <section class="relative">
       <div class="lg:container mx-auto px-4 mt-10 mb-20 xl:mt-18 3xl:mt-32">
         <div class="flex flex-wrap">
@@ -23,8 +23,10 @@ const { t } = useI18n()
                       </span>
                     </div>
                     <div>
-                      <p class="text-gray-600">
-                        {{ t('home.ecstaticdance') }}
+                      <p class="prose">
+                        <router-link to="/blog/watisecstaticdance">
+                          {{ t('home.ecstaticdance') }}
+                        </router-link>
                       </p>
                     </div>
                   </div>
@@ -69,9 +71,16 @@ const { t } = useI18n()
           </div>
         </div>
       </div>
+      <div class="lg:container mx-auto px-4 mt-10 mb-20 xl:mt-30 3xl:mt-40">
+        <div class="flex flex-wrap">
+          <div class="w-10/12 lg:w-6/12 mx-auto px-4 mt-10">
+            <latest-blog-post />
+          </div>
+        </div>
+      </div>
     </section>
   </div>
-  <div class="relative pb-32 mb-20 mt-20">
+  <div class="relative pb-32 mb-20 mt-30">
     <section class="relative">
       <div class="lg:container text-center mx-auto px-4 mt-20 mb-20">
         <h4 class="text-4xl leading-relaxed text-gray-500 pb-32 mb-20">

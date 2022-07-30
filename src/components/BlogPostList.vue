@@ -15,6 +15,18 @@ function formatDate(d: string) {
   <div v-for="post in blog.getPosts()" :key="post.path" class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 px-4">
     <div class="relative bg-white dark:bg-dark shadow- rounded-md shadow-light-300 rounded-md overflow-hidden mb-10">
       <div class="p-6 sm:p-8 md:py-8 md:px-6 lg:p-8 xl:py-8 xl:px-5 2xl:p-8">
+        <router-link v-if="post.thumbnail" :to="post.path">
+          <img :src="post.thumbnail" class="rounded-md mb-4">
+        </router-link>
+        <router-link v-if="post.thumb_video_webm || post.thumb_video_mp4" :to="post.path">
+          <client-only>
+            <video autoplay width="320" class="rounded-md mb-4">
+              <source v-if="post.thumb_video_webm" :src="post.thumb_video_webm" type="video/webm">
+              <source v-if="post.thumb_video_mp4" :src="post.thumb_video_mp4" type="video/m4v">
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </client-only>
+        </router-link>
         <h3 class="animated pulse">
           <router-link
             :to="post.path"
@@ -24,6 +36,7 @@ function formatDate(d: string) {
             <span v-if="useLocale().lang === 'en'">{{ post.title_en }}</span>
           </router-link>
         </h3>
+
         <p
           class="text-base text-body-color font-medium pb-6 mb-6 border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10"
         >

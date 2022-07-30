@@ -11,6 +11,7 @@ home:
   tagline: Genezende kracht van geluid en muziek
 blog:
   readmore: lees meer
+  findoutmore: ontdek meer
   by: door
   next: volgende blogpost
   previous: vorige blogpost
@@ -24,3 +25,4 @@ contact:
 footer:
   findus: Je kan ons ook vinden op deze platformen
   copyright: Copyright ©
+tickets: Tickets

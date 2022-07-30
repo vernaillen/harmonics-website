@@ -17,6 +17,7 @@ import {
   faChildReaching,
   faDrum,
   faMusic,
+  faTicket,
 } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -30,6 +31,7 @@ library.add(
   faChildReaching,
   faDrum,
   faMusic,
+  faTicket,
   faFacebook,
   faInstagram,
 )

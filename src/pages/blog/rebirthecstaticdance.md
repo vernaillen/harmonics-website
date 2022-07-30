@@ -7,6 +7,7 @@ desc_en: recording of an Ecstatic Dance DJ-set played during a private birthday/
 pageName: Rebirth Ecstatic Dance
 date: 07/21/2022
 author: Wouter Vernaillen
+thumbnail: /images/blog/mixcloud-rebirthecstaticdance.png
 ---
 
 <TranslatedSection>

@@ -5,31 +5,41 @@ export class Blog {
     const router = useRouter()
     return router
       .getRoutes()
-      .filter((i: { path: string; meta: { frontmatter: { date: any } } }) => i.path.startsWith('/blog') && i.meta.frontmatter.date)
+      .filter((i: { path: string; meta: { frontmatter: Post } }) => i.path.startsWith('/blog') && i.meta.frontmatter.date)
       .sort(
-        (a: { path: string; meta: { frontmatter: { date: any } } }, b: { path: string; meta: { frontmatter: { date: any } } }) =>
+        (a: { path: string; meta: { frontmatter: Post } }, b: { path: string; meta: { frontmatter: Post } }) =>
           +new Date(b.meta.frontmatter.date)
           - +new Date(a.meta.frontmatter.date),
       )
-      .map((i: { path: any; meta: { frontmatter: { title_nl: any; title_en: any; desc_nl: any; desc_en: any; author: any; date: any; lang: any; duration: any; category: any; thumbnail: any; thumbnail_dark: any; thumbnail_light: any } } }) => ({
+      .map((i: { path: string; meta: { frontmatter: Post } }) => ({
         path: i.path,
         title_nl: i.meta.frontmatter.title_nl,
         title_en: i.meta.frontmatter.title_en,
+        show_desc: i.meta.frontmatter.show_desc,
         desc_nl: i.meta.frontmatter.desc_nl,
         desc_en: i.meta.frontmatter.desc_en,
+        show_subtitle: i.meta.frontmatter.show_subtitle,
+        subtitle_nl: i.meta.frontmatter.subtitle_nl,
+        subtitle_en: i.meta.frontmatter.subtitle_en,
         author: i.meta.frontmatter.author,
         date: i.meta.frontmatter.date,
         lang: i.meta.frontmatter.lang,
-        duration: i.meta.frontmatter.duration,
-        category: i.meta.frontmatter.category,
+        image: i.meta.frontmatter.image,
         thumbnail: i.meta.frontmatter.thumbnail,
-        thumbnail_dark: i.meta.frontmatter.thumbnail_dark,
-        thumbnail_light: i.meta.frontmatter.thumbnail_light,
+        thumb_video_webm: i.meta.frontmatter.thumb_video_webm,
+        thumb_video_mp4: i.meta.frontmatter.thumb_video_mp4,
       }))
   }
 }
 const blog = new Blog()
 export default blog
+
+export function getLatestPost(): Post | null {
+  if (blog.getPosts().length > 0)
+    return blog.getPosts()[0]
+
+  return null
+}
 
 export function getPreviousPost(currentPostPath: string): Post | null {
   let foundCurrentPost = false
