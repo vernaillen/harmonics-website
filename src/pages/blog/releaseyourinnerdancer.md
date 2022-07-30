@@ -26,7 +26,8 @@ Dit in de vorm van een [Ecstatic Dance](/blog/watisecstaticdance) sessie, een da
 
 Het thema van de sessie op 3 september is "Release your Inner Dancer". We nodigen uit om "los te laten", geleid door ritme en de kracht van muziek, op een veilige manier, zonder andere middelen om onze remmingen weg te nemen.
 
-<cm-tickets-3-sept/>
+Inschrijven kan door een bericht te sturen naar Wouter via het [contact formulier](/contact), met vermelding van het aantal personen. Breng gerust vrienden of vriendinnen mee die hier ook zin in hebben.
+Voor deelname in de onkosten stellen we een vrije bijdrage voor, richtbedrag 15 à 20 euro. Ter plaatse te betalen.
 
 ### Praktische gegevens
 
@@ -75,7 +76,8 @@ This in the form of an [Ecstatic Dance](/blog/watisecstaticdance) session, a dan
 
 The theme of the session on September 3rd is "Release your Inner Dancer". We invite you to "let go", guided by rhythm and the power of music, in a safe way, with no other means to remove our inhibitions.
 
-<cm-tickets-3-sept/>
+You can register by sending a message to Wouter using the [contact form](/contact), stating the number of people. Feel free to bring friends or girlfriends who might enjoy this dance as well.
+For participation in the expenses, we propose a free contribution, guideline amount of 15 to 20 euros. Payable locally.
 
 ### Practical information
 
