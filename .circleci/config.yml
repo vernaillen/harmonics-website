@@ -24,8 +24,11 @@ jobs:
       - run:
           name: Build
           command: |
-            pnpm run build
-            ls dist
+            pnpm run netlify:build
+      - run:
+          name: Deploy
+          command: |
+            pnpm run netlify:deploy
       - slack/notify:
           channel: circleci
           event: always

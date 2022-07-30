@@ -11,7 +11,9 @@
     "typecheck": "vue-tsc --noEmit --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:fix": "eslint . --fix",
-    "prepushtest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build"
+    "prepushtest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build",
+    "netlify-build": "netlify build",
+    "netlify-deploy": "netlify deploy --prod"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
@@ -52,6 +54,7 @@
     "markdown-it-anchor": "^8.6.4",
     "markdown-it-link-attributes": "^4.0.0",
     "markdown-it-prism": "^2.2.4",
+    "netlify-cli": "^10.13.0",
     "prettier": "^2.7.1",
     "prismjs": "^1.28.0",
     "ts-node": "^10.9.1",
