@@ -9,7 +9,7 @@ const post: Post | null = getLatestPost()
 </script>
 
 <template>
-  <div v-if="post" class="p-6 sm:p-8 md:py-8 md:px-6 lg:p-8 xl:py-8 xl:px-5 2xl:p-8">
+  <div v-if="post">
     <router-link v-if="post.image" :to="post.path">
       <img :src="post.image" class="rounded-md mb-4">
     </router-link>

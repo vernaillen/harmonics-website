@@ -5,9 +5,9 @@ const { t } = useI18n()
 <template>
   <div class="relative pt-14 lg:pt-20 pb-20">
     <section class="relative">
-      <div class="lg:container mx-auto px-4 mt-10 mb-20 xl:mt-18 3xl:mt-32">
+      <div class="lg:container mx-auto px-4 mt-10 mb-20 xl:mt-24 3xl:mt-40">
         <div class="flex flex-wrap">
-          <div class="w-10/12 lg:w-4/12 ml-auto mr-auto lg:mr-0 px-4 mt-10">
+          <div class="w-full sm:w-10/12 md:w-8/12 lg:w-5/12 ml-auto mr-auto lg:mr-0 px-4 mt-10">
             <div class="md:pr-12">
               <h1 class="text-4xl md:text-5xl xl:text-6xl font-semibold py-4 animated pulse">
                 Harmonics
@@ -66,14 +66,14 @@ const { t } = useI18n()
               </ul>
             </div>
           </div>
-          <div class="w-10/12 lg:w-4/12 ml-auto mr-auto lg:ml-0 px-4 mt-10">
+          <div class="w-full sm:w-10/12 md:w-8/12 lg:w-5/12 ml-auto mr-auto lg:ml-0 px-4 mt-10">
             <img alt="..." class="max-w-full rounded-lg shadow-2xl mt-5" src="../assets/gongs.jpg">
           </div>
         </div>
       </div>
-      <div class="lg:container mx-auto px-4 mt-10 mb-20 xl:mt-30 3xl:mt-40">
+      <div class="lg:container mx-auto px-4 mt-30 mb-20 xl:mt-40 3xl:mt-50">
         <div class="flex flex-wrap">
-          <div class="w-10/12 lg:w-6/12 mx-auto px-4 mt-10">
+          <div class="w-full sm:w-10/12 lg:w-6/12 mx-auto px-4 mt-10">
             <latest-blog-post />
           </div>
         </div>

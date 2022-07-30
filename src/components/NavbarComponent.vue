@@ -29,7 +29,7 @@ const { t } = useI18n()
   <header
     class="header bg-transparent absolute top-0 left-0 z-20 w-full flex items-center animated fadeIn animate-delay-1000"
   >
-    <div class="container">
+    <div class="lg:container">
       <div class="flex justify-between relative">
         <div class="px-4 mr-10 mt-3 max-w-full">
           <router-link to="/" class="text-xl leading-relaxed inline-block mr-5 whitespace-nowrap header-logo">
@@ -98,7 +98,7 @@ const { t } = useI18n()
             </nav>
           </div>
         </div>
-        <div class="px-4 py-2 mr-10 mt-3 max-w-full">
+        <div class="px-4 py-1 mr-12 mt-3 max-w-full">
           <LanguageSwitcher />
         </div>
       </div>
