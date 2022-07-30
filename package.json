@@ -12,8 +12,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:fix": "eslint . --fix",
     "prepushtest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build",
-    "netlify-build": "netlify build",
-    "netlify-deploy": "netlify deploy --prod"
+    "netlify:build": "netlify build",
+    "netlify:deploy": "netlify deploy --prod"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
