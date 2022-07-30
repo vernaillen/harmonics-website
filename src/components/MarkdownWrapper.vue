@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useLocale } from '@/stores/lang'
 defineProps({
   frontmatter: {
     type: Object,
@@ -58,27 +57,18 @@ onMounted(() => {
       <div class="w-full px-4 sm:px-6 lg:px-8 mb-10">
         <div class="prose m-auto">
           <div class="flex flex-wrap">
-            <h1 v-if="useLocale().lang === 'en'" class="animated pulse">
-              {{ frontmatter.title_en }}
-            </h1>
-            <h1 v-if="useLocale().lang === 'nl'" class="animated pulse">
-              {{ frontmatter.title_nl }}
+            <h1 class="animated pulse">
+              {{ frontmatter.title }}
             </h1>
           </div>
           <div v-if="frontmatter.show_desc" class="flex flex-wrap">
-            <h4 v-if="useLocale().lang === 'en'">
-              {{ frontmatter.desc_en }}
-            </h4>
-            <h4 v-if="useLocale().lang === 'nl'">
-              {{ frontmatter.desc_nl }}
+            <h4>
+              {{ frontmatter.desc }}
             </h4>
           </div>
           <div v-if="frontmatter.show_subtitle" class="flex flex-wrap">
-            <em v-if="useLocale().lang === 'en'">
-              {{ frontmatter.subtitle_en }}
-            </em>
-            <em v-if="useLocale().lang === 'nl'">
-              {{ frontmatter.subtitle_nl }}
+            <em>
+              {{ frontmatter.subtitle }}
             </em>
           </div>
           <img v-if="frontmatter.image" :src="frontmatter.image" class="rounded-md">

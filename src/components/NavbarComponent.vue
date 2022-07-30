@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useLocale } from '@/stores/lang'
+
 const navbar = reactive({
   show: false,
 })
@@ -16,8 +18,8 @@ const linkClass = (path: string) => {
   const currentRoute = useRoute().path
   let classToAdd = ''
   if (
-    (path !== '/' && currentRoute.startsWith(path))
-    || (currentRoute === '/thanks' && path === '/contact')
+    (path !== '/' && currentRoute.startsWith(`/${useLocale().lang}${path}`))
+    || (currentRoute === `/${useLocale().lang}/thanks` && path === '/contact')
   )
     classToAdd = 'router-link-active'
   return classToAdd
@@ -32,7 +34,10 @@ const { t } = useI18n()
     <div class="lg:container">
       <div class="flex justify-between relative">
         <div class="px-4 mr-10 mt-3 max-w-full">
-          <router-link to="/" class="text-xl leading-relaxed inline-block mr-5 whitespace-nowrap header-logo">
+          <router-link
+            :to="`/${useLocale().lang}`"
+            class="text-xl leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
+          >
             <img
               alt="Harmonics logo" src="../assets/wave_sound-02-small.jpg"
               class="inline-flex rounded-full w-20 h-10"
@@ -60,7 +65,7 @@ const { t } = useI18n()
               <ul class="block lg:flex">
                 <li class="relative group">
                   <router-link
-                    to="/"
+                    :to="`/${useLocale().lang}`"
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/')" @click="navbar.show = false"
                   >
@@ -69,7 +74,7 @@ const { t } = useI18n()
                 </li>
                 <li class="relative group">
                   <router-link
-                    to="/blog"
+                    :to="`/${useLocale().lang}/blog`"
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/blog')" @click="navbar.show = false"
                   >
@@ -78,7 +83,7 @@ const { t } = useI18n()
                 </li>
                 <li class="relative group">
                   <router-link
-                    to="/about"
+                    :to="`/${useLocale().lang}/about`"
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/about')" @click="navbar.show = false"
                   >
@@ -87,7 +92,7 @@ const { t } = useI18n()
                 </li>
                 <li class="relative group">
                   <router-link
-                    to="/contact"
+                    :to="`/${useLocale().lang}/contact`"
                     class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/contact')" @click="navbar.show = false"
                   >

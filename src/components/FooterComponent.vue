@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import LanguageSwitcher from './LanguageSwitcher.vue'
+import { useLocale } from '@/stores/lang'
 const date: number = new Date().getFullYear()
 
 const { t } = useI18n()
@@ -87,22 +88,34 @@ onMounted(() => {
               <span class="block text-gray-400 text-sm font-semibold my-5">Menu</span>
               <ul class="list-unstyled">
                 <li>
-                  <router-link class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" to="/">
+                  <router-link
+                    :to="`/${useLocale().lang}`"
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                  >
                     {{ t('menu.home') }}
                   </router-link>
                 </li>
                 <li>
-                  <router-link class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" to="/blog">
+                  <router-link
+                    :to="`/${useLocale().lang}/blog`"
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                  >
                     {{ t('menu.blog') }}
                   </router-link>
                 </li>
                 <li>
-                  <router-link class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" to="/about">
+                  <router-link
+                    :to="`/${useLocale().lang}/about`"
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                  >
                     {{ t('menu.about') }}
                   </router-link>
                 </li>
                 <li>
-                  <router-link class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm" to="/contact">
+                  <router-link
+                    :to="`/${useLocale().lang}/contact`"
+                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                  >
                     {{ t('menu.contact') }}
                   </router-link>
                 </li>

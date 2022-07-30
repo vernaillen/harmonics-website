@@ -32,16 +32,14 @@ function formatDate(d: string) {
             :to="post.path"
             class="font-bold text-primary dark:text-white text-xl sm:text-2xl block mb-4 hover:bg-opacity-80"
           >
-            <span v-if="useLocale().lang === 'nl'">{{ post.title_nl }}</span>
-            <span v-if="useLocale().lang === 'en'">{{ post.title_en }}</span>
+            {{ post.title }}
           </router-link>
         </h3>
 
         <p
           class="text-base text-body-color font-medium pb-6 mb-6 border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10"
         >
-          <span v-if="useLocale().lang === 'nl'">{{ post.desc_nl }}</span>
-          <span v-if="useLocale().lang === 'en'">{{ post.desc_en }}</span>
+          {{ post.desc }}
           <br>
           <router-link :to="post.path">
             <button

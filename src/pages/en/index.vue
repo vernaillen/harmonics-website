@@ -67,7 +67,7 @@ const { t } = useI18n()
             </div>
           </div>
           <div class="w-full sm:w-10/12 md:w-8/12 lg:w-5/12 ml-auto mr-auto lg:ml-0 px-4 mt-10">
-            <img alt="..." class="max-w-full rounded-lg shadow-2xl mt-5" src="../assets/gongs.jpg">
+            <img alt="..." class="max-w-full rounded-lg shadow-2xl mt-5" src="../../assets/gongs.jpg">
           </div>
         </div>
       </div>

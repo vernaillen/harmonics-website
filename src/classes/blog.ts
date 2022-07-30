@@ -1,11 +1,12 @@
 import type { Post } from '@/types'
+import { useLocale } from '@/stores/lang'
 
 export class Blog {
   getPosts(): Post[] {
     const router = useRouter()
     return router
       .getRoutes()
-      .filter((i: { path: string; meta: { frontmatter: Post } }) => i.path.startsWith('/blog') && i.meta.frontmatter.date)
+      .filter((i: { path: string; meta: { frontmatter: Post } }) => i.path.startsWith(`/${useLocale().lang}/blog`) && i.meta.frontmatter.date)
       .sort(
         (a: { path: string; meta: { frontmatter: Post } }, b: { path: string; meta: { frontmatter: Post } }) =>
           +new Date(b.meta.frontmatter.date)
@@ -13,17 +14,13 @@ export class Blog {
       )
       .map((i: { path: string; meta: { frontmatter: Post } }) => ({
         path: i.path,
-        title_nl: i.meta.frontmatter.title_nl,
-        title_en: i.meta.frontmatter.title_en,
+        title: i.meta.frontmatter.title,
         show_desc: i.meta.frontmatter.show_desc,
-        desc_nl: i.meta.frontmatter.desc_nl,
-        desc_en: i.meta.frontmatter.desc_en,
+        desc: i.meta.frontmatter.desc,
         show_subtitle: i.meta.frontmatter.show_subtitle,
-        subtitle_nl: i.meta.frontmatter.subtitle_nl,
-        subtitle_en: i.meta.frontmatter.subtitle_en,
+        subtitle: i.meta.frontmatter.subtitle,
         author: i.meta.frontmatter.author,
         date: i.meta.frontmatter.date,
-        lang: i.meta.frontmatter.lang,
         image: i.meta.frontmatter.image,
         thumbnail: i.meta.frontmatter.thumbnail,
         thumb_video_webm: i.meta.frontmatter.thumb_video_webm,

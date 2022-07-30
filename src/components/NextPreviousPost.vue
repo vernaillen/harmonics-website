@@ -19,8 +19,7 @@ const nextPost: Post | null = getNextPost(route.path)
       >
         <router-link v-if="nextPost" :to="nextPost.path">
           {{ t('blog.next') }}:<br>
-          <span v-if="useLocale().lang === 'nl'" class="text-primary">{{ nextPost.title_nl }}</span>
-          <span v-if="useLocale().lang === 'en'" class="text-primary">{{ nextPost.title_en }}</span>
+          <span class="text-primary">{{ nextPost.title }}</span>
         </router-link>
       </div>
       <div
@@ -28,8 +27,7 @@ const nextPost: Post | null = getNextPost(route.path)
       >
         <router-link v-if="previousPost" :to="previousPost.path">
           {{ t('blog.previous') }}:<br>
-          <span v-if="useLocale().lang === 'nl'" class="text-primary">{{ previousPost.title_nl }}</span>
-          <span v-if="useLocale().lang === 'en'" class="text-primary">{{ previousPost.title_en }}</span>
+          <span class="text-primary">{{ previousPost.title }}</span>
         </router-link>
       </div>
     </div>
