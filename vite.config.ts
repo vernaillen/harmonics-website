@@ -52,8 +52,8 @@ export default defineConfig({
     Pages({
       dirs: [
         { dir: 'src/pages', baseRoute: '' },
-        { dir: 'content/pages/nl', baseRoute: 'nl' },
-        { dir: 'content/pages/en', baseRoute: 'en' },
+        { dir: 'content/nl', baseRoute: 'nl' },
+        { dir: 'content/en', baseRoute: 'en' },
       ],
       extensions: ['vue', 'md'],
       exclude: ['**/components/*.vue'],
@@ -82,7 +82,7 @@ export default defineConfig({
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
-      include: [path.resolve(__dirname, './content/locales/**')],
+      include: [path.resolve(__dirname, './content/*.yml')],
     }),
   ],
   resolve: {
