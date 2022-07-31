@@ -3,7 +3,6 @@ title: Release your Inner Dancer - September 3
 desc: When did you last dance barefoot in the grass in nature? Release your inner child and dance with us on September 3rd in Haaltert
 show_subtitle: true
 subtitle: When was the last time you danced barefoot in the grass in nature?
-pageName: Release your inner Dancer
 date: 07/25/2022
 author: Wouter Vernaillen
 image: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-unsplash.jpg

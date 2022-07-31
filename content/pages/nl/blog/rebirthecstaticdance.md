@@ -1,7 +1,6 @@
 ---
 title: Rebirth Ecstatic Dance
 desc: opname van een Ecstatic Dance DJ-set gespeeld tijdens een privé verjaardags/rebirth evenement
-pageName: Rebirth Ecstatic Dance
 date: 07/21/2022
 author: Wouter Vernaillen
 thumbnail: /images/blog/mixcloud-rebirthecstaticdance.png

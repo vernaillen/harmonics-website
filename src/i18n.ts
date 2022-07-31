@@ -2,9 +2,9 @@ import { createI18n } from 'vue-i18n'
 
 const messages = Object.fromEntries(
   Object.entries(
-    import.meta.glob<{ default: any }>('../locales/*.yml', { eager: true }))
+    import.meta.glob<{ default: any }>('../content/locales/*.yml', { eager: true }))
     .map(([key, value]) => {
-      return [key.slice(11, -4), value.default]
+      return [key.slice(19, -4), value.default]
     }),
 )
 

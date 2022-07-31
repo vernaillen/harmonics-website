@@ -1,7 +1,6 @@
 ---
 title: What is Ecstatic Dance?
 desc: a form of dance in which the dancers abandon themselves to the rhythm and move freely, as the music leads them...
-pageName: Ecstatic Dance
 date: 07/18/2022
 author: Wouter Vernaillen
 thumb_video_webm: /images/blog/ed.webm

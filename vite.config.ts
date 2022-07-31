@@ -50,6 +50,11 @@ export default defineConfig({
     }),
     WindiCSS(),
     Pages({
+      dirs: [
+        { dir: 'src/pages', baseRoute: '' },
+        { dir: 'content/pages/nl', baseRoute: 'nl' },
+        { dir: 'content/pages/en', baseRoute: 'en' },
+      ],
       extensions: ['vue', 'md'],
       exclude: ['**/components/*.vue'],
       onRoutesGenerated: routes =>
@@ -77,7 +82,7 @@ export default defineConfig({
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
-      include: [path.resolve(__dirname, './locales/**')],
+      include: [path.resolve(__dirname, './content/locales/**')],
     }),
   ],
   resolve: {

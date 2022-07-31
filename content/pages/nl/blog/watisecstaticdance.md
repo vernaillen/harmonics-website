@@ -1,7 +1,6 @@
 ---
 title: Wat is Ecstatic Dance?
 desc: een dansvorm waarin de dansers zich volledig overgeven aan het ritme van de muziek en vrij bewegen...
-pageName: Ecstatic Dance
 date: 07/18/2022
 author: Wouter Vernaillen
 thumb_video_webm: /images/blog/ed.webm
