@@ -45,7 +45,7 @@ specifiers:
   vite-plugin-vue-markdown: ^0.21.1
   vite-plugin-windicss: ^1.8.7
   vite-ssg: ^0.20.2
-  vitest: ^0.19.1
+  vitest: ^0.20.0
   vue: ^3.2.37
   vue-easy-lightbox: ^1.7.1
   vue-i18n: ^9.1.10
@@ -90,7 +90,7 @@ devDependencies:
   gray-matter: 4.0.3
   happy-dom: 6.0.4
   markdown-it: 13.0.1
-  markdown-it-anchor: 8.6.4_ea7kj7wzjkld5jo2noyjqxi764
+  markdown-it-anchor: 8.6.4_markdown-it@13.0.1
   markdown-it-link-attributes: 4.0.0
   markdown-it-prism: 2.2.4
   netlify-cli: 10.13.0
@@ -106,7 +106,7 @@ devDependencies:
   vite-plugin-vue-markdown: 0.21.1_vite@3.0.4
   vite-plugin-windicss: 1.8.7_vite@3.0.4
   vite-ssg: 0.20.2_x5ujt4bx23edlerxxrmot3wb4a
-  vitest: 0.19.1_c8@7.12.0+happy-dom@6.0.4
+  vitest: 0.20.2_c8@7.12.0+happy-dom@6.0.4
   vue-tsc: 0.39.2_typescript@4.7.4
   windicss: 3.5.6
 
@@ -7361,13 +7361,12 @@ packages:
       object-visit: 1.0.1
     dev: true
 
-  /markdown-it-anchor/8.6.4_ea7kj7wzjkld5jo2noyjqxi764:
+  /markdown-it-anchor/8.6.4_markdown-it@13.0.1:
     resolution: {integrity: sha512-Ul4YVYZNxMJYALpKtu+ZRdrryYt/GlQ5CK+4l1bp/gWXOG2QWElt6AqF3Mih/wfUKdZbNAZVXGR73/n6U/8img==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: '*'
     dependencies:
-      '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
     dev: true
 
@@ -10866,8 +10865,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.19.1_c8@7.12.0+happy-dom@6.0.4:
-    resolution: {integrity: sha512-E/ZXpFMUahn731wzhMBNzWRp4mGgiZFT0xdHa32cbNO0CSaHpE9hTfteEU247Gi2Dula8uXo5vvrNB6dtszmQA==}
+  /vitest/0.20.2_c8@7.12.0+happy-dom@6.0.4:
+    resolution: {integrity: sha512-AFXTHrwG4d2OO6SAL8WP5ZkOwLtgeF4tlrHfXFqrHc+5chNegeR53pge0lv/C4316SqJ2DbYaUBH8vh3CdF+BQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
