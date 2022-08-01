@@ -1,4 +1,8 @@
 language: taal
+website:
+  title: Harmonics.be
+  description: Genezende kracht van Geluid en Muziek - door Wouter Vernaillen
+  noJavaScript: JavaScript is nodig
 menu:
   home: Home
   blog: Blog

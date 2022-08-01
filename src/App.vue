@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import { useLocale } from './stores/lang'
+const { t } = useI18n()
 
 const route = useRoute()
 const router = useRouter()
 
 useHead({
-  title: 'Harmonics.be',
   meta: [
     {
       name: 'description',
-      content: 'Healing power of Sound & Music - by Wouter Vernaillen',
+      content: t('website.description'),
     },
   ],
   noscript: [
     {
-      children: 'Javascript is required',
+      children: t('website.noJavaScript'),
     },
   ],
 })
