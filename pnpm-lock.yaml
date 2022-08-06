@@ -7,7 +7,7 @@ specifiers:
   '@fortawesome/free-regular-svg-icons': ^6.1.2
   '@fortawesome/free-solid-svg-icons': ^6.1.2
   '@fortawesome/vue-fontawesome': ^3.0.1
-  '@intlify/vite-plugin-vue-i18n': ^5.0.1
+  '@intlify/vite-plugin-vue-i18n': ^6.0.0
   '@rushstack/eslint-patch': ^1.1.4
   '@types/jsdom': ^20.0.0
   '@types/node': ^18.6.3
@@ -72,7 +72,7 @@ dependencies:
 
 devDependencies:
   '@antfu/eslint-config': 0.25.2_qugx7qdu5zevzvxaiqyxfiwquq
-  '@intlify/vite-plugin-vue-i18n': 5.0.1_vite@3.0.4+vue-i18n@9.2.0
+  '@intlify/vite-plugin-vue-i18n': 6.0.0_vite@3.0.4+vue-i18n@9.2.0
   '@rushstack/eslint-patch': 1.1.4
   '@types/jsdom': 20.0.0
   '@types/node': 18.6.3
@@ -90,7 +90,7 @@ devDependencies:
   gray-matter: 4.0.3
   happy-dom: 6.0.4
   markdown-it: 13.0.1
-  markdown-it-anchor: 8.6.4_ea7kj7wzjkld5jo2noyjqxi764
+  markdown-it-anchor: 8.6.4_markdown-it@13.0.1
   markdown-it-link-attributes: 4.0.0
   markdown-it-prism: 2.2.4
   netlify-cli: 10.13.0
@@ -462,8 +462,8 @@ packages:
     resolution: {integrity: sha512-71uObL3Sy2ZiBQBMVETbkspE4Plpy87Hvlj6FAUF3xdD+M82tuxe3MVJjaD3ucqhtHmQWBkAWEurVLdPYr8G2g==}
     engines: {node: '>= 14'}
 
-  /@intlify/vite-plugin-vue-i18n/5.0.1_vite@3.0.4+vue-i18n@9.2.0:
-    resolution: {integrity: sha512-+LAUdm5PxGtLrUYgD2Wg9SINmLmhZqrcTnzccfqopca5NvaXWOPnQR4cQOkn82qLuyjWdCYC1BoqMHWBWX/MyQ==}
+  /@intlify/vite-plugin-vue-i18n/6.0.0_vite@3.0.4+vue-i18n@9.2.0:
+    resolution: {integrity: sha512-9hvd846YWACtSr6akOR57utxSP2205XJqVfidiQVZLTkHTVHjDhPiRg1ShdZBT909fzW2+71e2tgG4lRi4r87Q==}
     engines: {node: '>= 14.6'}
     peerDependencies:
       petite-vue-i18n: '*'
@@ -7353,13 +7353,12 @@ packages:
       object-visit: 1.0.1
     dev: true
 
-  /markdown-it-anchor/8.6.4_ea7kj7wzjkld5jo2noyjqxi764:
+  /markdown-it-anchor/8.6.4_markdown-it@13.0.1:
     resolution: {integrity: sha512-Ul4YVYZNxMJYALpKtu+ZRdrryYt/GlQ5CK+4l1bp/gWXOG2QWElt6AqF3Mih/wfUKdZbNAZVXGR73/n6U/8img==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: '*'
     dependencies:
-      '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
     dev: true
 
