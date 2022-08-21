@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     ContactForm: typeof import('./src/components/ContactForm.vue')['default']
     EasyLightbox: typeof import('./src/components/EasyLightbox.vue')['default']
     FooterComponent: typeof import('./src/components/FooterComponent.vue')['default']
+    IframeComponent: typeof import('./src/components/IframeComponent.vue')['default']
     IkBenAanwezig20Augustus: typeof import('./src/components/IkBenAanwezig20Augustus.vue')['default']
     ImageGallery: typeof import('./src/components/ImageGallery.vue')['default']
     LanguageSwitcher: typeof import('./src/components/LanguageSwitcher.vue')['default']
