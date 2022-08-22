@@ -9,10 +9,9 @@ menu:
   about: About
   contact: Contact
 home:
-  ecstaticdance: Ecstatic Dance
-  immersivesoundbaths: Immersive soundbaths
-  musicproduction: Music Production
-  tagline: Healing power of Sound & Music
+  title: Harmonics
+  tagline: Healing power of Sound, Music and Dance
+  services: Ecstatic Dance, Immersive Soundbaths, Music Production, etc
 blog:
   readmore: read more
   findoutmore: find out more

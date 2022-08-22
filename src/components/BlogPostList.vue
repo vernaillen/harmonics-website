@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import dayjs from 'dayjs'
 import blog from '@/classes/blog'
-import { useLocale } from '@/stores/lang'
 
 const { t } = useI18n()
 

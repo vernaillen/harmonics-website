@@ -1,11 +1,8 @@
 ---
-title: Over Wouter en Harmonics BV
+title: Over Wouter en Harmonics
 ---
 
-Harmonics BV is de nieuwe naam van Vernaillen Consulting BVBA.
-De zaak werd in 2013 opgestart door Wouter Vernaillen als een IT Consultancy bedrijf en biedt diensten aan zoals het ontwerpen en ontwikkelen van web portaal sites.
-
-Na gezondheidsproblemen in 2020 ontdekte Wouter de genezende kracht van geluid en muziek en besloot een sound healing opleiding te volgen [bij Surya in Akasha Retreat Center](https://www.akasharetreatcenter.com/) in 2021/2022.<br/>Met daarnaast ook een bescheiden kennis van elektronische muziekproductie en dj-skills uit een vorig leven, besloot Wouter om naast het consultancy werk ook muziek te maken en spelend voor holistische gezondheid en dans.
+In 2020 ondervond Wouter peroonlijk de genezende kracht van geluid en muziek en besloot in 2021 een sound healing opleiding te volgen [gegeven door Surya in Akasha Retreat Center](https://www.akasharetreatcenter.com/).<br/>Met daarnaast ook een bescheiden kennis van elektronische muziekproductie en dj-skills uit een vorig leven, besloot Wouter om naast IT consultancy ook muziek te maken en spelend voor holistische gezondheid en dans.
 
 In mei 2022 speelde Wouter een eerste Ecstatic Dance sessie op een privé verjaardagsevenement: [Rebirth Ecstatic Dance @ Krimpvarkie Huisi](/blog/rebirthecstaticdance).<br/>Voor later deze zomer en het najaar (2022) worden nog enkele Ecstatic Dance sessies gepland. Heel binnenkort komt daarover meer nieuws.
 

@@ -1,11 +1,8 @@
 ---
-title: About Wouter and Harmonics BV
+title: About Wouter and Harmonics
 ---
 
-Harmonics BV is the new name of Vernaillen Consulting BVBA.
-The company was started by Wouter Vernaillen in 2013 as an IT Consultancy Company, offering web portal development services.
-
-After health issues in 2020, Wouter experienced the healing power of sound and music and decided to follow a sound healing training [from Surya at Akasha Retreat Center](https://www.akasharetreatcenter.com/) in 2021/2022.<br/>
+In 2020 Wouter personally experienced the healing power of sound and music and decided in 2021 to follow a sound healing training [provided by Surya at Akasha Retreat Center](https://www.akasharetreatcenter.com/).<br/>
 Combined with modest electronic music production skills and dj-skills from a previous life, Wouter decided to start creating and playing music for holistic healing and dance.
 
 In May 2022 Wouter played a first Ecstatic Dance session at a private birthday event: [Rebirth Ecstatic Dance @ Krimpvarkie Huisi](/en/blog/rebirthecstaticdance).<br/>A few more Ecstatic Dance sessions are currently being planned for later this summer and autumn. Soon there will be more news about that.

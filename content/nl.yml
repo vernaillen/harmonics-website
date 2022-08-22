@@ -9,10 +9,9 @@ menu:
   about: Over
   contact: Contact
 home:
-  ecstaticdance: Ecstatic Dance
-  immersivesoundbaths: Immersive soundbaths
-  musicproduction: Muziek Productie
-  tagline: Genezende kracht van geluid en muziek
+  title: Harmonics
+  tagline: Genezende kracht van Geluid, Muziek en Dans
+  services: Ecstatic Dance, Immersive Soundbaths, Muziek Productie, etc
 blog:
   readmore: lees meer
   findoutmore: ontdek meer

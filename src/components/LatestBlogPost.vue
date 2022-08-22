@@ -1,14 +1,22 @@
 <script setup lang="ts">
 import { getLatestPost } from '@/classes/blog'
-import type { Post } from '@/types'
 
 const { t } = useI18n()
-
-const post: Post | null = getLatestPost()
+const post = computed(() => {
+  return getLatestPost()
+})
 </script>
 
 <template>
   <div v-if="post">
+    <h3 class="animated pulse">
+      <router-link
+        :to="post.path"
+        class="font-bold text-primary dark:text-white text-xl sm:text-2xl block mb-4 hover:bg-opacity-80"
+      >
+        {{ post.title }}
+      </router-link>
+    </h3>
     <router-link v-if="post.image" :to="post.path">
       <img :src="post.image" class="rounded-md mb-4">
     </router-link>
@@ -21,14 +29,6 @@ const post: Post | null = getLatestPost()
         </video>
       </client-only>
     </router-link>
-    <h3 class="animated pulse">
-      <router-link
-        :to="post.path"
-        class="font-bold text-primary dark:text-white text-xl sm:text-2xl block mb-4 hover:bg-opacity-80"
-      >
-        {{ post.title }}
-      </router-link>
-    </h3>
 
     <p class="text-base text-body-color font-medium pb-6 mb-6">
       {{ post.desc }}
