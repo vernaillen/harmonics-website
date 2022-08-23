@@ -23,17 +23,17 @@ For participation in the expenses, we propose a contribution of 20 euros. Payabl
 
 ### Practical information
 
-* we welcome you from 18h30
-* opening ceremony by Frouke Vermeulen at 19h
-* next we start the dance, which will take 1,5 to 2 hours
-* after the dance we gather in the circle around the fire
-* water, fruit juice and tea will be provided
+* We welcome you from 18h30
+* Opening ceremony by [Frouke Vermeulen](https://www.artsoundmedicinewoman.com/) at 19h
+* Next we start the dance, which will take 1,5 to 2 hours. The music for the dance will be provided by [Wouter](https://harmonics.be/nl/about) (dj-set)
+* After the dance we gather in the circle around the fire
+* Water, fruit juice and tea will be provided
 
 ### Some guidelines for during the dance
 
-* we recommend to dance barefoot
-* no talking during the dance
-* no alcohol, cigarettes or other substances
+* We recommend to dance barefoot
+* No talking during the dance
+* No alcohol, cigarettes or other substances
 
 ### The location: KrimpVarkie Huisi, Haalter
 
@@ -47,9 +47,10 @@ Brantegemstraat 5<br/>
 
 ### Parking
 
-You can park on the Keiberg in Haaltert!
-There are parking spaces on top of the Keiberg.
-Try to park at the odd house numbers 61-63-...
+You can park on the Keiberg in Haaltert.
+There are parking spaces along the road between house numbers 23 to 61.
+In the gps you can add Keiberg 35, Haaltert, for example.
+
 Step towards the white chapel at the bottom of the Keiberg (100m)
 
 At the chapel, turn left into Brantegemstraat and walk past house number 5 (50m).

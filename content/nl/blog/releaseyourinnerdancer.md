@@ -23,17 +23,17 @@ Voor deelname in de onkosten stellen we een bijdrage van 20 euro voor. Ter plaat
 
 ### Praktische gegevens
 
-* we verwelkomen jullie vanaf 18u30
-* openingsceremonie door Frouke Vermeuelen om 19u
-* aansluitend starten we de dans, die duurt ongeveer anderhalf uur tot 2u
-* we eindigen de avond in cirkel rond het vuur
-* er wordt water, fruitsap en thee voorzien
+* We verwelkomen jullie vanaf 18u30
+* Openingsceremonie door [Frouke Vermeulen](https://www.artsoundmedicinewoman.com/) om 19u
+* Aansluitend starten we de dans, die duurt ongeveer anderhalf uur tot 2u. De muziek voor de dans wordt voorzien door [Wouter](https://harmonics.be/nl/about) (dj-set)
+* We eindigen de avond in cirkel rond het vuur
+* Er wordt water, fruitsap en thee voorzien
 
 ### Enkele richtlijnen voor tijdens de dans
 
-* we raden aan te dansen op blote voeten
-* er wordt niet gepraat terwijl we dansen
-* geen alcohol, sigaretten of andere middelen
+* We raden aan te dansen op blote voeten
+* Er wordt niet gepraat terwijl we dansen
+* Geen alcohol, sigaretten of andere middelen
 
 ### De locatie: KrimpVarkie Huisi, Haaltert
 
@@ -47,10 +47,10 @@ Brantegemstraat 5<br/>
 
 ### Parkeren
 
-Parkeren doe je op de Keiberg in Haaltert!
-Er zijn parkeervakken voorzien bovenop de Keiberg.
-Probeer te parkeren ter hoogte van de oneven huisnummers 61-63-...
-Stap richting het witte kapeltje onderaan de keiberg (100m)
+Parkeren doe je best op de Keiberg. Er zijn parkeervakken langs de kant van de weg ter hoogte van huisnummers 23 tot 61.
+In de gps kan je daarvoor bv Keiberg 35, Haaltert ingeven.
+
+Stap daarna richting het witte kapelletje onderaan de Keiberg (100m)
 
 Aan de kapel sla je links in de brantegemstraat tot voorbij huisnummer 5 (50m).
 
