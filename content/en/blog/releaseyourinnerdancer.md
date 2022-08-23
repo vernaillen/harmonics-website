@@ -9,7 +9,7 @@ image: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-unsplash.jpg
 thumbnail: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-thumb.png
 ---
 
-### Dance with us on September 3rd
+### Let's dance together on September 3rd
 
 Deep down we all have the need to be exuberant, to let go of our inner wildness.
 
@@ -18,18 +18,20 @@ This in the form of an [Ecstatic Dance](/en/blog/watisecstaticdance) session, a 
 
 The theme of the session on September 3rd is "Release your Inner Dancer". We invite you to "let go", guided by rhythm and the power of music, in a safe way, with no other means to remove our inhibitions.
 
-You can register by sending a message to Wouter using the [contact form](/en/contact), stating the number of people. Feel free to bring friends or girlfriends who might enjoy this dance as well.
-For participation in the expenses, we propose a free contribution, guideline amount of 15 to 20 euros. Payable locally.
+You can register by sending a message to Wouter using the [contact form](/en/contact), stating the number of people. Feel free to bring friends or girlfriends who might enjoy this dance as well..<br/>
+For participation in the expenses, we propose a contribution of 20 euros. Payable locally.
 
 ### Practical information
 
-* we start dancing at 7 pm, preferably come 15 minutes earlier
-* the dance lasts about 2 hours
-* water and fruit juice will be provided
+* we welcome you from 18h30
+* opening ceremony by Frouke Vermeulen at 19h
+* next we start the dance, which will take 1,5 to 2 hours
+* after the dance we gather in the circle around the fire
+* water, fruit juice and tea will be provided
 
 ### Some guidelines for during the dance
 
-* we prefer to dance barefoot
+* we recommend to dance barefoot
 * no talking during the dance
 * no alcohol, cigarettes or other substances
 

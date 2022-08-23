@@ -9,7 +9,7 @@ image: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-unsplash.jpg
 thumbnail: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-thumb.png
 ---
 
-### Dans met ons mee op 3 september
+### Laat ons samen dansen op 3 september
 
 Diep vanbinnen hebben we allemaal de behoefte om uitbundig te mogen zijn, om ons innerlijke wildheid los te laten.
 
@@ -18,18 +18,20 @@ Dit in de vorm van een [Ecstatic Dance](/nl/blog/watisecstaticdance) sessie, een
 
 Het thema van de sessie op 3 september is "Release your Inner Dancer". We nodigen uit om "los te laten", geleid door ritme en de kracht van muziek, op een veilige manier, zonder andere middelen om onze remmingen weg te nemen.
 
-Inschrijven kan door een bericht te sturen naar Wouter via het [contact formulier](/nl/contact), met vermelding van het aantal personen. Breng gerust vrienden of vriendinnen mee die hier ook zin in hebben.
-Voor deelname in de onkosten stellen we een vrije bijdrage voor, richtbedrag 15 à 20 euro. Ter plaatse te betalen.
+Inschrijven kan door een bericht te sturen naar Wouter via het [contact formulier](/nl/contact), met vermelding van het aantal personen. Breng gerust vrienden of vriendinnen mee die hier ook zin in hebben.<br/>
+Voor deelname in de onkosten stellen we een bijdrage van 20 euro voor. Ter plaatse te betalen.
 
 ### Praktische gegevens
 
-* we starten met dansen om 19u, kom bij voorkeur een kwartiertje vroeger
-* de dans duurt ongeveer 2u
-* er wordt water en fruitsap voorzien
+* we verwelkomen jullie vanaf 18u30
+* openingsceremonie door Frouke Vermeuelen om 19u
+* aansluitend starten we de dans, die duurt ongeveer anderhalf uur tot 2u
+* we eindigen de avond in cirkel rond het vuur
+* er wordt water, fruitsap en thee voorzien
 
 ### Enkele richtlijnen voor tijdens de dans
 
-* we dansen bij voorkeur op blote voeten
+* we raden aan te dansen op blote voeten
 * er wordt niet gepraat terwijl we dansen
 * geen alcohol, sigaretten of andere middelen
 
