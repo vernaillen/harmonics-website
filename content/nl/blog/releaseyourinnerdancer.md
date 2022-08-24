@@ -3,7 +3,7 @@ title: Release your Inner Dancer - 3 september
 desc: Wanneer danste je laatst op blote voeten in het gras in de natuur?  Laat je innerlijke kind vrij en dans met ons mee op 3 september in Haaltert
 show_subtitle: true
 subtitle: Wanneer danste je laatst op blote voeten in het gras in de natuur?
-date: 07/25/2022
+date: 08/23/2022
 author: Wouter Vernaillen
 image: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-unsplash.jpg
 thumbnail: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-thumb.png
