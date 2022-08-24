@@ -21,6 +21,8 @@ The theme of the session on September 3rd is "Release your Inner Dancer". We inv
 You can register by sending a message to Wouter using the [contact form](/en/contact), stating the number of people. Feel free to bring friends or girlfriends who might enjoy this dance as well..<br/>
 For participation in the expenses, we propose a contribution of 20 euros. Payable locally.
 
+["Release your Inner Dancer" event on <FontAwesomeIcon :icon="['fab', 'facebook']" class="hover:text-gray-800 text-gray-500 text-lg" />](https://www.facebook.com/events/351637197012556)
+
 ### Practical information
 
 * We welcome you from 18h30

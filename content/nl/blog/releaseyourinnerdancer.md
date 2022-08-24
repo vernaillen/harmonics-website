@@ -21,6 +21,8 @@ Het thema van de sessie op 3 september is "Release your Inner Dancer". We nodige
 Inschrijven kan door een bericht te sturen naar Wouter via het [contact formulier](/nl/contact), met vermelding van het aantal personen. Breng gerust vrienden of vriendinnen mee die hier ook zin in hebben.<br/>
 Voor deelname in de onkosten stellen we een bijdrage van 20 euro voor. Ter plaatse te betalen.
 
+["Release your Inner Dancer" evenement op <FontAwesomeIcon :icon="['fab', 'facebook']" class="hover:text-gray-800 text-gray-500 text-lg" />](https://www.facebook.com/events/351637197012556)
+
 ### Praktische gegevens
 
 * We verwelkomen jullie vanaf 18u30
