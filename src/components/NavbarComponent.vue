@@ -66,7 +66,7 @@ const { t } = useI18n()
                 <li class="relative group">
                   <router-link
                     :to="`/${useLocale().lang}`"
-                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
+                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-50 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/')" @click="navbar.show = false"
                   >
                     {{ t('menu.home') }}
@@ -75,7 +75,7 @@ const { t } = useI18n()
                 <li class="relative group">
                   <router-link
                     :to="`/${useLocale().lang}/blog`"
-                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
+                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-50 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/blog')" @click="navbar.show = false"
                   >
                     {{ t('menu.blog') }}
@@ -84,7 +84,7 @@ const { t } = useI18n()
                 <li class="relative group">
                   <router-link
                     :to="`/${useLocale().lang}/about`"
-                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
+                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-50 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/about')" @click="navbar.show = false"
                   >
                     {{ t('menu.about') }}
@@ -93,7 +93,7 @@ const { t } = useI18n()
                 <li class="relative group">
                   <router-link
                     :to="`/${useLocale().lang}/contact`"
-                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
+                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-50 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/contact')" @click="navbar.show = false"
                   >
                     {{ t('menu.contact') }}
@@ -103,8 +103,11 @@ const { t } = useI18n()
             </nav>
           </div>
         </div>
-        <div class="px-4 py-1 mr-12 mt-3 max-w-full">
+        <div class="px-4 py-1 mt-3 max-w-full">
           <LanguageSwitcher />
+        </div>
+        <div class="flex justify-end px-4 py-1 mr-5 mt-3 max-w-full">
+          <social-icons />
         </div>
       </div>
     </div>

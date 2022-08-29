@@ -28,4 +28,9 @@ contact:
 footer:
   findus: You can find us on any of these platforms.
   copyright: Copyright ©
+mailinglist:
+  title: Subscribe to our mailing list
+  email: Email Address
+  firstname: First Name
+  subscribe: Subscribe
 tickets: Tickets

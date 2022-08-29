@@ -1,20 +1,10 @@
 <template>
-  <div class="mt-6">
+  <div class="min-w-28 pt-1 sm:pr-10 xl:pr-0 mr-[-10px]">
     <a href="https://www.facebook.com/harmonics.be/" target="_blank" rel="”noopener”">
-      <button
-        class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-        type="button"
-      >
-        <FontAwesomeIcon :icon="['fab', 'facebook']" class="hover:text-gray-800 text-gray-500 text-lg" />
-      </button>
+      <FontAwesomeIcon :icon="['fab', 'facebook']" class="hover:text-gray-800 text-gray-500 h-5 mx-2" />
     </a>
     <a href="https://www.instagram.com/harmonics.be/" target="_blank" rel="”noopener”">
-      <button
-        class="bg-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-        type="button"
-      >
-        <FontAwesomeIcon :icon="['fab', 'instagram']" class="hover:text-gray-800 text-gray-500 text-lg" />
-      </button>
+      <FontAwesomeIcon :icon="['fab', 'instagram']" class="hover:text-gray-800 text-gray-500 h-5 mx-2" />
     </a>
   </div>
 </template>

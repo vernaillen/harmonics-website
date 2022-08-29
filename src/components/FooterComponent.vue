@@ -58,7 +58,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <footer class="relative pt-8 pb-6 mt-5 animated fadeIn animate-delay-1000">
+  <footer class="relative pt-8 pb-6 animated fadeIn animate-delay-1000">
     <div
       class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
       style="height: 80px"
@@ -73,55 +73,45 @@ onMounted(() => {
     <div class="container mx-auto px-4 mt-10">
       <div class="flex flex-wrap">
         <div class="w-full lg:w-6/12 px-4 mb-10">
-          <h5 class="text-lg text-gray-500 mt-5 mb-2 text-gray-700">
-            {{ t('footer.findus') }}:
-          </h5>
-          <social-icons />
-        </div>
-        <div class="w-full lg:w-6/12 px-4">
-          <div class="flex flex-wrap items-top mb-6">
-            <div class="w-full lg:w-4/12 px-4 ml-auto">
-              <span class="block text-gray-400 text-sm font-semibold my-5">Taal</span>
-              <LanguageSwitcher />
-            </div>
-            <div class="w-full lg:w-4/12 px-4 ml-auto">
-              <span class="block text-gray-400 text-sm font-semibold my-5">Menu</span>
-              <ul class="list-unstyled">
-                <li>
-                  <router-link
-                    :to="`/${useLocale().lang}`"
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  >
-                    {{ t('menu.home') }}
-                  </router-link>
-                </li>
-                <li>
-                  <router-link
-                    :to="`/${useLocale().lang}/blog`"
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  >
-                    {{ t('menu.blog') }}
-                  </router-link>
-                </li>
-                <li>
-                  <router-link
-                    :to="`/${useLocale().lang}/about`"
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  >
-                    {{ t('menu.about') }}
-                  </router-link>
-                </li>
-                <li>
-                  <router-link
-                    :to="`/${useLocale().lang}/contact`"
-                    class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                  >
-                    {{ t('menu.contact') }}
-                  </router-link>
-                </li>
-              </ul>
+          <div class="inline-block px-4 py-1 mt-3 max-w-full">
+            <LanguageSwitcher />
+          </div>
+          <div class="inline-block px-4 py-1 mr-5 mt-3 max-w-full">
+            <social-icons />
+          </div>
+
+          <div class="w-full flex-row items-top mb-6 mt-20">
+            <div class="w-full px-4 ml-auto">
+              <span class="block text-primary text-md font-semibold my-5">Menu</span>
+              <router-link
+                :to="`/${useLocale().lang}`"
+                class=" text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
+              >
+                {{ t('menu.home') }}
+              </router-link>
+              <router-link
+                :to="`/${useLocale().lang}/blog`"
+                class="text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
+              >
+                {{ t('menu.blog') }}
+              </router-link>
+              <router-link
+                :to="`/${useLocale().lang}/about`"
+                class="text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
+              >
+                {{ t('menu.about') }}
+              </router-link>
+              <router-link
+                :to="`/${useLocale().lang}/contact`"
+                class="text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
+              >
+                {{ t('menu.contact') }}
+              </router-link>
             </div>
           </div>
+        </div>
+        <div class="w-full lg:w-6/12 px-4">
+          <mailchimp-component />
         </div>
       </div>
       <div class="flex flex-wrap items-center md:justify-between justify-center">

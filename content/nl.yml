@@ -28,4 +28,9 @@ contact:
 footer:
   findus: Je kan ons ook vinden op deze platformen
   copyright: Copyright ©
+mailinglist:
+  title: Schrijf in op onze mailinglist
+  email: E-mail adres
+  firstname: Voornaam
+  subscribe: Inschrijven
 tickets: Tickets

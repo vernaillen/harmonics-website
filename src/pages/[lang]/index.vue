@@ -4,7 +4,7 @@ useHead({ title: 'Home' })
 </script>
 
 <template>
-  <div class="relative pt-10 pb-20">
+  <div class="relative pt-10">
     <section class="relative">
       <div class="lg:container mx-auto px-4 mt-10 xl:mt-16 3xl:mt-22">
         <div class="flex flex-wrap">
