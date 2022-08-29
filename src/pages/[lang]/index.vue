@@ -13,7 +13,7 @@ useHead({ title: 'Home' })
           </div>
           <div class="w-full sm:w-10/12 lg:w-6/12 ml-auto mr-auto lg:ml-0 px-4 lg:px-8 mt-10">
             <div>
-              <h1 class="text-4xl md:text-5xl xl:text-6xl text-gray-600 font-semibold py-4 animated pulse">
+              <h1 class="text-4xl md:text-5xl xl:text-6xl text-primary font-semibold py-4 animated pulse">
                 {{ t('home.title') }}
               </h1>
               <h4 class="text-2xl leading-relaxed text-gray-500 my-5">
