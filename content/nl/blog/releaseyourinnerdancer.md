@@ -14,7 +14,7 @@ thumbnail: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-thumb.pn
 Diep vanbinnen hebben we allemaal de behoefte om uitbundig te mogen zijn, om ons innerlijke wildheid los te laten.
 
 We bieden daarom graag een plek en een moment aan waar het kind van 3 in ons eens opnieuw mag vrij zijn.<br/>
-Dit in de vorm van een [Ecstatic Dance](/nl/blog/watisecstaticdance) sessie, een dansreisje waarbij we verbinding maken met ons innerlijke zelf, gewoon "mogen zijn", vrij bewegen en onze energie loslaten.
+Dit in de vorm van een [Ecstatic Dance](/nl/blog/watisecstaticdance) sessie, met de blote voeten in het gras, in de natuur. Een dansreisje waarbij we verbinding maken met ons innerlijke zelf, gewoon "mogen zijn", vrij bewegen en onze energie loslaten.
 
 Het thema van de sessie op 3 september is "Release your Inner Dancer". We nodigen uit om "los te laten", geleid door ritme en de kracht van muziek, op een veilige manier, zonder andere middelen om onze remmingen weg te nemen.
 
