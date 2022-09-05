@@ -14,7 +14,7 @@ thumbnail: /images/blog/releaseyourinnerdancer/simon-wilkes-m3IxlGqG3dk-thumb.pn
 Deep down we all have the need to be exuberant, to let go of our inner wildness.
 
 We would like to offer a place and a moment where the 3-year-old child in us can be free again.<br/>
-This in the form of an [Ecstatic Dance](/en/blog/watisecstaticdance) session, a dance trip where we connect with our inner self, just "may be", move freely and release our energy.
+This in the form of an [Ecstatic Dance](/en/blog/watisecstaticdance) session, barefoot in the grass in nature. A dance trip where we connect with our inner self, just "may be", move freely and release our energy.
 
 The theme of the session on September 3rd is "Release your Inner Dancer". We invite you to "let go", guided by rhythm and the power of music, in a safe way, with no other means to remove our inhibitions.
 
