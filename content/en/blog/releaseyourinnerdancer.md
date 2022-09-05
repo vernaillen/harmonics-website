@@ -18,8 +18,7 @@ This in the form of an [Ecstatic Dance](/en/blog/watisecstaticdance) session, a 
 
 The theme of the session on September 3rd is "Release your Inner Dancer". We invite you to "let go", guided by rhythm and the power of music, in a safe way, with no other means to remove our inhibitions.
 
-You can register by sending a message to Wouter using the [contact form](/en/contact), stating the number of people. Feel free to bring friends or girlfriends who might enjoy this dance as well..<br/>
-For participation in the expenses, we propose a contribution of 20 euros. Payable locally.
+You can register by sending a message to Wouter using the [contact form](/en/contact), stating the number of people. Feel free to bring friends or girlfriends who might enjoy this dance as well.
 
 ["Release your Inner Dancer" event on <FontAwesomeIcon :icon="['fab', 'facebook']" class="hover:text-gray-800 text-gray-500 text-lg" />](https://www.facebook.com/events/351637197012556)
 
