@@ -9,6 +9,7 @@ const { t } = useI18n()
         <h1 class="animated pulse">
           {{ t('mailinglist.title') }}
         </h1>
+        <p>{{ t('mailinglist.subtitle') }}</p>
         <div class="mc-field-group">
           <label for="mce-EMAIL">{{ t('mailinglist.email') }}  <span class="asterisk">*</span>
           </label>

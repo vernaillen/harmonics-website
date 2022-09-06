@@ -29,9 +29,14 @@ useHead({ title: 'Home' })
       <div class="lg:container mx-auto px-4 my-20">
         <div class="flex flex-wrap">
           <div class="w-full sm:w-10/12 lg:w-6/12 mx-auto px-4 mt-10">
-            <latest-blog-post />
+            <mailchimp-component />
           </div>
         </div>
+      </div>
+    </section>
+    <section class="lg:container mx-auto pt-[20px] pb-[100px] px-4 mt-20">
+      <div class="flex flex-wrap mx-[-16px] justify-start py-4 px-2 md:px-6">
+        <BlogPostList />
       </div>
     </section>
   </div>
