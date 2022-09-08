@@ -7,12 +7,12 @@ export class Blog {
     return router
       .getRoutes()
       .filter((route: { path: string; meta: { frontmatter: Post } }) => route.path.startsWith(`/${useLocale().lang}/blog`) && route.meta.frontmatter.date)
-      .filter((route, index) => index < maxNrOfPosts)
       .sort(
         (a: { path: string; meta: { frontmatter: Post } }, b: { path: string; meta: { frontmatter: Post } }) =>
           +new Date(b.meta.frontmatter.date)
           - +new Date(a.meta.frontmatter.date),
       )
+      .filter((route, index) => index < maxNrOfPosts)
       .map((route: { path: string; meta: { frontmatter: Post } }) => ({
         path: route.path,
         title: route.meta.frontmatter.title,
