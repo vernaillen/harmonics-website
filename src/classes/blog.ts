@@ -2,46 +2,40 @@ import type { Post } from '@/types'
 import { useLocale } from '@/stores/lang'
 
 export class Blog {
-  getPosts(): Post[] {
+  getPosts(maxNrOfPosts: number): Post[] {
     const router = useRouter()
     return router
       .getRoutes()
-      .filter((i: { path: string; meta: { frontmatter: Post } }) => i.path.startsWith(`/${useLocale().lang}/blog`) && i.meta.frontmatter.date)
+      .filter((route: { path: string; meta: { frontmatter: Post } }) => route.path.startsWith(`/${useLocale().lang}/blog`) && route.meta.frontmatter.date)
+      .filter((route, index) => index < maxNrOfPosts)
       .sort(
         (a: { path: string; meta: { frontmatter: Post } }, b: { path: string; meta: { frontmatter: Post } }) =>
           +new Date(b.meta.frontmatter.date)
           - +new Date(a.meta.frontmatter.date),
       )
-      .map((i: { path: string; meta: { frontmatter: Post } }) => ({
-        path: i.path,
-        title: i.meta.frontmatter.title,
-        show_desc: i.meta.frontmatter.show_desc,
-        desc: i.meta.frontmatter.desc,
-        show_subtitle: i.meta.frontmatter.show_subtitle,
-        subtitle: i.meta.frontmatter.subtitle,
-        author: i.meta.frontmatter.author,
-        date: i.meta.frontmatter.date,
-        image: i.meta.frontmatter.image,
-        thumbnail: i.meta.frontmatter.thumbnail,
-        thumb_video_webm: i.meta.frontmatter.thumb_video_webm,
-        thumb_video_mp4: i.meta.frontmatter.thumb_video_mp4,
+      .map((route: { path: string; meta: { frontmatter: Post } }) => ({
+        path: route.path,
+        title: route.meta.frontmatter.title,
+        show_desc: route.meta.frontmatter.show_desc,
+        desc: route.meta.frontmatter.desc,
+        show_subtitle: route.meta.frontmatter.show_subtitle,
+        subtitle: route.meta.frontmatter.subtitle,
+        author: route.meta.frontmatter.author,
+        date: route.meta.frontmatter.date,
+        image: route.meta.frontmatter.image,
+        thumbnail: route.meta.frontmatter.thumbnail,
+        thumb_video_webm: route.meta.frontmatter.thumb_video_webm,
+        thumb_video_mp4: route.meta.frontmatter.thumb_video_mp4,
       }))
   }
 }
 const blog = new Blog()
 export default blog
 
-export function getLatestPost(): Post | null {
-  if (blog.getPosts().length > 0)
-    return blog.getPosts()[0]
-
-  return null
-}
-
 export function getPreviousPost(currentPostPath: string): Post | null {
   let foundCurrentPost = false
   let previousPost = null
-  for (const post of blog.getPosts()) {
+  for (const post of blog.getPosts(1000)) {
     if (foundCurrentPost && previousPost == null)
       previousPost = post
 
@@ -53,7 +47,7 @@ export function getPreviousPost(currentPostPath: string): Post | null {
 
 export function getNextPost(currentPostPath: string): Post | null {
   let moreRecentPost = null
-  for (const post of blog.getPosts()) {
+  for (const post of blog.getPosts(1000)) {
     if (moreRecentPost != null && post.path === currentPostPath)
       return moreRecentPost
 

@@ -1,0 +1,20 @@
+---
+title: Foli - er is geen beweging zonder ritme
+desc: Het leven heeft een ritme, het is constant in beweging. Het woord voor ritme (gebruikt door de Malinke-stammen) is FOLI.
+show_subtitle: false
+date: 09/08/2022
+author: Wouter Vernaillen
+thumbnail: /images/blog/foli.png
+---
+
+”Het leven heeft een ritme, het is constant in beweging. Het woord voor ritme (gebruikt door de Malinke-stammen) is FOLI.<br/>
+Het is een woord dat zoveel meer omvat dan drummen, dansen of geluid.
+We vinden het terug in elk onderdeel van het dagelijks leven.
+
+In deze film hoor en voel je ritme niet alleen, maar zie je het ook.<br/>
+Het is een buitengewone mix van beeld en geluid die de zintuigen voedt en ons allemaal herinnert
+hoe essentieel het is.”
+
+Een uitstekende film van Thomas Roebers en Floris Leeuwenberg:
+
+<iframe-component title="FOLI (there is no movement without rhythm) original version by Thomas Roebers and Floris Leeuwenberg" src="https://www.youtube.com/embed/lVPLIuBy9CY?feature=oembed"/>

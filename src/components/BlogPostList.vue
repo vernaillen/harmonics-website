@@ -2,6 +2,14 @@
 import dayjs from 'dayjs'
 import blog from '@/classes/blog'
 
+defineProps({
+  nrOfPosts: {
+    type: Number,
+    default: 1000,
+    required: false,
+  },
+})
+
 const { t } = useI18n()
 
 function formatDate(d: string) {
@@ -11,7 +19,7 @@ function formatDate(d: string) {
 </script>
 
 <template>
-  <div v-for="post in blog.getPosts()" :key="post.path" class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 px-4">
+  <div v-for="post in blog.getPosts(nrOfPosts)" :key="post.path" class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 px-4">
     <div class="relative bg-white dark:bg-dark shadow- rounded-md shadow-light-300 rounded-md overflow-hidden mb-10">
       <div class="p-6 sm:p-8 md:py-8 md:px-6 lg:p-8 xl:py-8 xl:px-5 2xl:p-8">
         <router-link v-if="post.thumbnail" :to="post.path">
