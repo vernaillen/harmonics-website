@@ -11,7 +11,7 @@ specifiers:
   '@rushstack/eslint-patch': ^1.1.4
   '@types/jsdom': ^20.0.0
   '@types/node': ^18.7.16
-  '@vitejs/plugin-vue': 3.0.3
+  '@vitejs/plugin-vue': 3.1.0
   '@vitest/coverage-c8': ^0.23.1
   '@vue/eslint-config-prettier': ^7.0.0
   '@vue/eslint-config-typescript': ^11.0.1
@@ -77,7 +77,7 @@ devDependencies:
   '@rushstack/eslint-patch': 1.1.4
   '@types/jsdom': 20.0.0
   '@types/node': 18.7.16
-  '@vitejs/plugin-vue': 3.0.3_vite@3.1.0+vue@3.2.39
+  '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.39
   '@vitest/coverage-c8': 0.23.1_happy-dom@6.0.4
   '@vue/eslint-config-prettier': 7.0.0_bxpuzolsxufkw2ipnoyzzxnyrm
   '@vue/eslint-config-typescript': 11.0.1_eigtonit5c3q5td2tbopyi5r7e
@@ -92,7 +92,7 @@ devDependencies:
   gray-matter: 4.0.3
   happy-dom: 6.0.4
   markdown-it: 13.0.1
-  markdown-it-anchor: 8.6.4_ea7kj7wzjkld5jo2noyjqxi764
+  markdown-it-anchor: 8.6.4_markdown-it@13.0.1
   markdown-it-link-attributes: 4.0.1
   markdown-it-prism: 2.3.0
   netlify-cli: 11.5.1
@@ -1908,8 +1908,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vitejs/plugin-vue/3.0.3_vite@3.1.0+vue@3.2.39:
-    resolution: {integrity: sha512-U4zNBlz9mg+TA+i+5QPc3N5lQvdUXENZLO2h0Wdzp56gI1MWhqJOv+6R+d4kOzoaSSq6TnGPBdZAXKOe4lXy6g==}
+  /@vitejs/plugin-vue/3.1.0_vite@3.1.0+vue@3.2.39:
+    resolution: {integrity: sha512-fmxtHPjSOEIRg6vHYDaem+97iwCUg/uSIaTzp98lhELt2ISOQuDo2hbkBdXod0g15IhfPMQmAxh4heUks2zvDA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0
@@ -7391,13 +7391,12 @@ packages:
       object-visit: 1.0.1
     dev: true
 
-  /markdown-it-anchor/8.6.4_ea7kj7wzjkld5jo2noyjqxi764:
+  /markdown-it-anchor/8.6.4_markdown-it@13.0.1:
     resolution: {integrity: sha512-Ul4YVYZNxMJYALpKtu+ZRdrryYt/GlQ5CK+4l1bp/gWXOG2QWElt6AqF3Mih/wfUKdZbNAZVXGR73/n6U/8img==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: '*'
     dependencies:
-      '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
     dev: true
 
