@@ -56,7 +56,7 @@ useHead({
   meta: [
     {
       property: 'og:title',
-      content: props.frontmatter.title,
+      content: `${constants.websiteTitle} | ${props.frontmatter.title}`,
     },
     {
       property: 'og:url',

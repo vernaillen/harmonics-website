@@ -2,13 +2,10 @@
 import dayjs from 'dayjs'
 import blog from '@/classes/blog'
 
-defineProps({
-  nrOfPosts: {
-    type: Number,
-    default: 1000,
-    required: false,
-  },
-})
+interface Props {
+  nrOfPosts?: number
+}
+const { nrOfPosts = 1000 } = defineProps<Props>()
 
 const { t } = useI18n()
 

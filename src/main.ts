@@ -51,7 +51,7 @@ const scrollBehavior = (
 }
 
 const head = createHead({
-  titleTemplate: `%s | ${constants.websiteTitle}`,
+  titleTemplate: `${constants.websiteTitle} | %s`,
 })
 
 export const createApp = ViteSSG(App, { routes, scrollBehavior }, ({ app }) => {
