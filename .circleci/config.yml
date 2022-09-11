@@ -21,14 +21,6 @@ jobs:
           name: Test
           command: pnpm test
       - sonarcloud/scan
-      - run:
-          name: Build
-          command: |
-            pnpm run netlify:build
-      - run:
-          name: Deploy
-          command: |
-            pnpm run netlify:deploy
       - slack/notify:
           channel: circleci
           event: always
