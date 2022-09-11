@@ -14,6 +14,7 @@ import matter from 'gray-matter'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
+import { constants } from './src/constants'
 
 import 'prismjs/components/prism-regex'
 import 'prismjs/components/prism-javascript'
@@ -59,7 +60,7 @@ export default defineConfig({
       exclude: ['**/components/*.vue'],
       onRoutesGenerated: routes =>
         generateSitemap({
-          hostname: 'https://harmonics.be/',
+          hostname: constants.hostname,
           routes,
         }),
       extendRoute(route) {

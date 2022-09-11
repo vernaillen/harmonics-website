@@ -1,11 +1,14 @@
 <script setup lang="ts">
-defineProps({
+import { constants } from '@/constants'
+
+const props = defineProps({
   frontmatter: {
     type: Object,
     required: true,
   },
 })
 const router = useRouter()
+const route = useRoute()
 const content = ref<HTMLDivElement>()
 onMounted(() => {
   const navigate = () => {
@@ -48,6 +51,22 @@ onMounted(() => {
   useEventListener(content.value!, 'click', handleAnchors, { passive: false })
   navigate()
   setTimeout(navigate, 500)
+})
+useHead({
+  meta: [
+    {
+      property: 'og:title',
+      content: props.frontmatter.title,
+    },
+    {
+      property: 'og:url',
+      content: constants.hostname + route.fullPath,
+    },
+    {
+      property: 'og:image',
+      content: constants.hostname + props.frontmatter.thumbnail,
+    },
+  ],
 })
 </script>
 

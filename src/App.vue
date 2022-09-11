@@ -1,23 +1,8 @@
 <script setup lang="ts">
 import { useLocale } from './stores/lang'
-const { t } = useI18n()
 
 const route = useRoute()
 const router = useRouter()
-
-useHead({
-  meta: [
-    {
-      name: 'description',
-      content: t('website.description'),
-    },
-  ],
-  noscript: [
-    {
-      children: t('website.noJavaScript'),
-    },
-  ],
-})
 
 const pathHasLang = (path: string) => {
   return path.startsWith('/nl/') || path.startsWith('/en/')

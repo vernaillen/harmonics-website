@@ -22,6 +22,7 @@ import {
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { createHead } from '@vueuse/head'
+import { constants } from '@/constants'
 import App from '@/App.vue'
 import { i18nInstance } from '@/i18n'
 import routes from '~pages'
@@ -50,7 +51,7 @@ const scrollBehavior = (
 }
 
 const head = createHead({
-  titleTemplate: '%s | Harmonics.be',
+  titleTemplate: `%s | ${constants.websiteTitle}`,
 })
 
 export const createApp = ViteSSG(App, { routes, scrollBehavior }, ({ app }) => {
@@ -60,4 +61,5 @@ export const createApp = ViteSSG(App, { routes, scrollBehavior }, ({ app }) => {
   app.use(VueEasyLightbox)
   app.component('FontAwesomeIcon', FontAwesomeIcon)
   app.component('MarkdownWrapper', MarkdownWrapper)
+  app.config.globalProperties.$constants = constants
 })
