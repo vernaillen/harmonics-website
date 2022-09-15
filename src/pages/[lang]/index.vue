@@ -1,6 +1,20 @@
 <script setup lang="ts">
+import { constants } from '@/constants'
 const { t } = useI18n()
-useHead({ title: 'Home' })
+useHead({
+  title: 'Home',
+  meta: [
+    {
+      property: 'og:title',
+      content: `${constants.websiteTitle} | Home`,
+    },
+    {
+      property: 'og:url',
+      content: constants.hostname,
+    },
+  ],
+})
+const nrOfPosts = 3
 </script>
 
 <template>
@@ -36,7 +50,7 @@ useHead({ title: 'Home' })
     </section>
     <section class="lg:container mx-auto pt-[20px] pb-[100px] px-4 mt-20">
       <div class="flex flex-wrap mx-[-16px] justify-start py-4 px-2 md:px-6">
-        <BlogPostList nr-of-posts="3" />
+        <BlogPostList :nr-of-posts="nrOfPosts" />
       </div>
     </section>
   </div>

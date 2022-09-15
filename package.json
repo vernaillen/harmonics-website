@@ -1,11 +1,11 @@
 {
   "name": "harmonics",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scripts": {
     "prebuild": "[[ $CI = true ]] && npx pnpm@3 install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "dev": "vite --host",
-    "serve": "vite preview",
     "build": "vue-tsc --noEmit && vite-ssg build",
+    "serve": "pnpm run build && serve dist",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "typecheck": "vue-tsc --noEmit --composite false",
