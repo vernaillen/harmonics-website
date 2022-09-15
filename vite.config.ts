@@ -52,9 +52,7 @@ export default defineConfig({
     WindiCSS(),
     Pages({
       dirs: [
-        { dir: 'src/pages', baseRoute: '' },
-        { dir: 'content/nl', baseRoute: 'nl' },
-        { dir: 'content/en', baseRoute: 'en' },
+        { dir: 'src/content', baseRoute: '' },
       ],
       extensions: ['vue', 'md'],
       exclude: ['**/components/*.vue'],
@@ -83,7 +81,7 @@ export default defineConfig({
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
-      include: [path.resolve(__dirname, './content/*.yml')],
+      include: [path.resolve(__dirname, './src/content/*.yml')],
     }),
   ],
   resolve: {
