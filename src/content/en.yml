@@ -1,5 +1,6 @@
 language: language
 website:
+  hostname: 'https://harmonics.be'
   title: Harmonics.be
   description: Healing power of Sound & Music - by Wouter Vernaillen
   noJavaScript: JavaScript is required

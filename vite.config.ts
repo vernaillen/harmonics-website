@@ -14,7 +14,6 @@ import matter from 'gray-matter'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
-import { constants } from './src/constants'
 
 import 'prismjs/components/prism-regex'
 import 'prismjs/components/prism-javascript'
@@ -47,18 +46,19 @@ export default defineConfig({
           },
         })
       },
-      headEnabled: true,
     }),
     WindiCSS(),
     Pages({
       dirs: [
-        { dir: 'src/content', baseRoute: '' },
+        { dir: 'src/pages', baseRoute: '' },
+        { dir: 'src/content/nl', baseRoute: 'nl' },
+        { dir: 'src/content/en', baseRoute: 'en' },
       ],
       extensions: ['vue', 'md'],
       exclude: ['**/components/*.vue'],
       onRoutesGenerated: routes =>
         generateSitemap({
-          hostname: constants.hostname,
+          hostname: 'https://harmonics.be',
           routes,
         }),
       extendRoute(route) {

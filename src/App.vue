@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import { useLocale } from './stores/lang'
+const { t } = useI18n()
+
+useHead({
+  meta: [
+    { name: 'description', content: t('website.description') },
+    {
+      property: 'og:url',
+      content: t('website.hostname'),
+    },
+  ],
+})
 
 const route = useRoute()
 const router = useRouter()

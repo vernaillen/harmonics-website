@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import { constants } from '@/constants'
-
 const props = defineProps({
   frontmatter: {
     type: Object,
     required: true,
   },
 })
+
+const { t } = useI18n()
+
 const router = useRouter()
 const route = useRoute()
 const content = ref<HTMLDivElement>()
@@ -52,19 +53,21 @@ onMounted(() => {
   navigate()
   setTimeout(navigate, 500)
 })
+const title = `${t('website.title')} | ${props.frontmatter.title}`
 useHead({
+  title,
   meta: [
     {
       property: 'og:title',
-      content: `${constants.websiteTitle} | ${props.frontmatter.title}`,
+      content: title,
     },
     {
       property: 'og:url',
-      content: constants.hostname + route.fullPath,
+      content: t('website.hostname') + route.fullPath,
     },
     {
       property: 'og:image',
-      content: constants.hostname + props.frontmatter.thumbnail,
+      content: t('website.hostname') + props.frontmatter.thumbnail,
     },
   ],
 })

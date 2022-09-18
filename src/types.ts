@@ -12,8 +12,3 @@ export interface Post {
   thumb_video_webm: string
   thumb_video_mp4: string
 }
-
-export interface Constants {
-  hostname: string
-  websiteTitle: string
-}

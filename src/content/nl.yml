@@ -1,5 +1,6 @@
 language: taal
 website:
+  hostname: 'https://harmonics.be'
   title: Harmonics.be
   description: Genezende kracht van Geluid en Muziek - door Wouter Vernaillen
   noJavaScript: JavaScript is nodig

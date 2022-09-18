@@ -1,5 +1,15 @@
 <script setup lang="ts">
-useHead({ title: 'Blog' })
+const { t } = useI18n()
+const title = `${t('website.title')} | Blog`
+useHead({
+  title,
+  meta: [
+    {
+      property: 'og:title',
+      content: title,
+    },
+  ],
+})
 </script>
 
 <template>

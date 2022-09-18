@@ -1,16 +1,12 @@
 <script setup lang="ts">
-import { constants } from '@/constants'
 const { t } = useI18n()
+const title = `${t('website.title')} | Home`
 useHead({
-  title: 'Home',
+  title,
   meta: [
     {
       property: 'og:title',
-      content: `${constants.websiteTitle} | Home`,
-    },
-    {
-      property: 'og:url',
-      content: constants.hostname,
+      content: title,
     },
   ],
 })
