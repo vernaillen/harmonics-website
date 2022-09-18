@@ -50,9 +50,8 @@ export default defineConfig({
     WindiCSS(),
     Pages({
       dirs: [
-        { dir: 'src/pages', baseRoute: '' },
-        { dir: 'src/content/nl', baseRoute: 'nl' },
-        { dir: 'src/content/en', baseRoute: 'en' },
+        { dir: 'src/pages', baseRoute: '[lang]' },
+        { dir: 'src/content', baseRoute: '' },
       ],
       extensions: ['vue', 'md'],
       exclude: ['**/components/*.vue'],
