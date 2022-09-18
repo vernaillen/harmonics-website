@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const title = `${t('website.title')} | Blog`
+const title = `Blog | ${t('website.title')}`
 useHead({
   title,
   meta: [

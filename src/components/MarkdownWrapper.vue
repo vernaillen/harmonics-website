@@ -53,7 +53,7 @@ onMounted(() => {
   navigate()
   setTimeout(navigate, 500)
 })
-const title = `${t('website.title')} | ${props.frontmatter.title}`
+const title = `${props.frontmatter.title} | ${t('website.title')}`
 useHead({
   title,
   meta: [
