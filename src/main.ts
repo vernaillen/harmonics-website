@@ -7,6 +7,7 @@ import 'animate.css/animate.compat.css'
 import '@/css/markdown.css'
 import '@/css/main.css'
 import '@/css/prose.css'
+import '@/css/mailchimp-embedcode-classic-071822.css'
 import { createPinia } from 'pinia'
 import VueEasyLightbox from 'vue-easy-lightbox'
 
