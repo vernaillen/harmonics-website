@@ -9,7 +9,7 @@ executors:
   pnpm-executor:
     docker:
       - image: vernaillen/circleci-pnpm:18.9.1-browsers
-    working_directory: /tmp
+    working_directory: /workspace
 
 jobs:
   build_test_deploy:
@@ -48,7 +48,7 @@ jobs:
     executor: pnpm-executor
     steps:
       - attach_workspace:
-          at: /tmp
+          at: /workspace
       - run:
           name: Run Cypress
           command: pnpm run cypress:run 
