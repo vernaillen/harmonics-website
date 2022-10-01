@@ -12,7 +12,7 @@ executors:
     working_directory: /tmp/workspace
 
 jobs:
-  build_test_deploy:
+  build_and_test:
     executor: pnpm-executor
     steps:
       - checkout
@@ -26,14 +26,6 @@ jobs:
           name: Test
           command: pnpm test
       - sonarcloud/scan
-      - run:
-          name: Build
-          command: |
-            pnpm run netlify:build
-      - run:
-          name: Deploy
-          command: |
-            pnpm run netlify:deploy
       - persist_to_workspace:
           root: .
           paths:
@@ -42,6 +34,22 @@ jobs:
             - node_modules
             - cypress
             - cypress.config.ts
+      - slack/notify:
+          channel: circleci
+          event: fail
+  deploy:
+    executor: pnpm-executor
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - run:
+          name: Build
+          command: |
+            pnpm run netlify:build
+      - run:
+          name: Deploy
+          command: |
+            pnpm run netlify:deploy
       - slack/notify:
           channel: circleci
           event: always
@@ -55,19 +63,27 @@ jobs:
           command: pnpm run cypress:run 
       - slack/notify:
           channel: circleci
-          event: always
+          event: fail
 
 workflows:
   version: 2
   build_test_deploy:
     jobs:
-      - build_test_deploy:
+      - build_and_test:
           context: 
             - SonarCloud
             - Slack
+      - deploy:
+          requires:
+            - build_and_test
+          filters:
+            branches:
+              only: master
+          context: 
+            - Slack
       - integration_test:
           requires:
-            - build_test_deploy
+            - deploy
           filters:
             branches:
               only: master
