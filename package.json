@@ -14,7 +14,9 @@
     "prepushtest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build && serve dist",
     "netlify:build": "netlify build",
     "netlify:test": "netlify deploy",
-    "netlify:deploy": "netlify deploy --prod"
+    "netlify:deploy": "netlify deploy --prod",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
@@ -46,6 +48,7 @@
     "@vueuse/core": "^9.3.0",
     "@vueuse/head": "^0.7.12",
     "c8": "^7.12.0",
+    "cypress": "^10.9.0",
     "dayjs": "^1.11.5",
     "eslint": "^8.24.0",
     "eslint-plugin-vue": "^9.5.1",

@@ -6,7 +6,7 @@ orbs:
   slack: circleci/slack@4.10.1
 
 jobs:
-  build_and_test:
+  build_test_deploy:
     docker:
       - image: vernaillen/circleci-pnpm:18.9.1
     steps:
@@ -32,12 +32,29 @@ jobs:
       - slack/notify:
           channel: circleci
           event: always
+  integration_test:
+    docker:
+      - image: vernaillen/circleci-pnpm:18.9.1-browsers
+    steps:
+      - checkout
+      - run:
+          name: Install packages
+          command: pnpm install --no-frozen-lockfile
+      - run:
+          name: Run Cypress
+          command: pnpm run cypress:run 
 
 workflows:
   version: 2
   build_test_deploy:
     jobs:
-      - build_and_test:
+      - build_test_deploy:
           context: 
             - SonarCloud
             - Slack
+      - integration_test:
+          requires:
+            - build_test_deploy
+          filters:
+            branches:
+              only: master
