@@ -24,6 +24,21 @@ jobs:
       - slack/notify:
           channel: circleci
           event: always
+  deploy:
+    docker:
+      - image: vernaillen/circleci-pnpm:18.9.1
+    steps:
+      - run:
+          name: Build
+          command: |
+            pnpm run netlify:build
+      - run:
+          name: Deploy
+          command: |
+            pnpm run netlify:deploy
+      - slack/notify:
+          channel: circleci
+          event: always
 
 workflows:
   version: 2
@@ -32,4 +47,12 @@ workflows:
       - build_and_test:
           context: 
             - SonarCloud
+            - Slack
+      - deploy:
+          requires:
+            - build_and_test
+          filters:
+            branches:
+              only: master
+          context: 
             - Slack
