@@ -15,6 +15,7 @@
     "netlify:build": "netlify build",
     "netlify:test": "netlify deploy",
     "netlify:deploy": "netlify deploy --prod",
+    "cypress:install": "cypress install",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
   },

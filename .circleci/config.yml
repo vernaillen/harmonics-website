@@ -60,6 +60,9 @@ jobs:
       - attach_workspace:
           at: /tmp/workspace
       - run:
+          name: Install Cypress
+          command: pnpm run cypress:install
+      - run:
           name: Run Cypress
           command: pnpm run cypress:run 
       - slack/notify:
