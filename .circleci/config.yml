@@ -39,6 +39,8 @@ jobs:
             - cypress
             - cypress.config.ts
             - tsconfig.json
+            - src
+            - test
             - dist
       - slack/notify:
           channel: circleci
