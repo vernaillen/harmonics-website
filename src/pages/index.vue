@@ -15,7 +15,7 @@ const nrOfPosts = 3
 
 <template>
   <div class="relative pt-10">
-    <section class="relative">
+    <section id="title" class="relative">
       <div class="lg:container mx-auto px-4 mt-10 xl:mt-16 3xl:mt-22">
         <div class="flex flex-wrap">
           <div class="w-full sm:w-10/12 lg:w-5/12 ml-auto mr-auto lg:mr-0 px-4 lg:px-8 mt-10">
@@ -44,7 +44,7 @@ const nrOfPosts = 3
         </div>
       </div>
     </section>
-    <section class="lg:container mx-auto pt-[20px] pb-[100px] px-4 mt-20">
+    <section id="blogposts" class="lg:container mx-auto pt-[20px] pb-[100px] px-4 mt-20">
       <div class="flex flex-wrap mx-[-16px] justify-start py-4 px-2 md:px-6">
         <BlogPostList :nr-of-posts="nrOfPosts" />
       </div>
