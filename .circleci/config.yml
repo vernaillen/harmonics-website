@@ -75,7 +75,7 @@ jobs:
 
 workflows:
   version: 2
-  build_test_deploy:
+  flow:
     jobs:
       - build:
           context: 
@@ -88,7 +88,7 @@ workflows:
             - Slack
       - e2e:
           requires:
-            - deploy
+            - test
           filters:
             branches:
               only: master
