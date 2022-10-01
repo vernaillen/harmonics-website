@@ -12,24 +12,22 @@ executors:
     working_directory: /tmp/workspace
 
 jobs:
-  build_and_test:
+  build:
     executor: pnpm-executor
     steps:
       - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: Install packages
           command: pnpm install --no-frozen-lockfile
-      - run:
-          name: Lint
-          command: pnpm run lint
-      - run:
-          name: Test
-          command: pnpm test
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
       - run:
           name: Build
-          command: |
-            pnpm run build
-      - sonarcloud/scan
+          command: pnpm run build
       - persist_to_workspace:
           root: .
           paths:
@@ -45,19 +43,22 @@ jobs:
       - slack/notify:
           channel: circleci
           event: fail
-  deploy:
+  test:
     executor: pnpm-executor
     steps:
       - attach_workspace:
           at: /tmp/workspace
       - run:
-          name: Deploy
-          command: |
-            pnpm run netlify:trigger
+          name: Lint
+          command: pnpm run lint
+      - run:
+          name: Test
+          command: pnpm test
+      - sonarcloud/scan
       - slack/notify:
           channel: circleci
-          event: always
-  integration_test:
+          event: fail
+  e2e:
     executor: pnpm-executor
     steps:
       - attach_workspace:
@@ -70,25 +71,22 @@ jobs:
           command: pnpm run cypress:run 
       - slack/notify:
           channel: circleci
-          event: fail
+          event: always
 
 workflows:
   version: 2
   build_test_deploy:
     jobs:
-      - build_and_test:
+      - build:
+          context: 
+            - Slack
+      - test:
+          requires:
+            - build
           context: 
             - SonarCloud
             - Slack
-      - deploy:
-          requires:
-            - build_and_test
-          filters:
-            branches:
-              only: master
-          context: 
-            - Slack
-      - integration_test:
+      - e2e:
           requires:
             - deploy
           filters:
