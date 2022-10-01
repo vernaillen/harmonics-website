@@ -18,7 +18,7 @@
     "netlify:trigger": "netlify deploy --prod --trigger",
     "cypress:install": "cypress install",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run --browser=chrome"
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
