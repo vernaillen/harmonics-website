@@ -38,7 +38,8 @@ jobs:
           root: .
           paths:
             - package.json
-            - node-modules
+            - pnpm-lock.yaml
+            - node_modules
             - cypress
             - cypress.config.ts
       - slack/notify:
