@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Build
           command: |
-            pnpm run netlify:build
+            pnpm run build
       - sonarcloud/scan
       - persist_to_workspace:
           root: .
@@ -53,7 +53,7 @@ jobs:
       - run:
           name: Deploy
           command: |
-            pnpm run netlify:deploy
+            pnpm run netlify:trigger
       - slack/notify:
           channel: circleci
           event: always

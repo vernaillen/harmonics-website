@@ -15,6 +15,7 @@
     "netlify:build": "netlify build",
     "netlify:test": "netlify deploy",
     "netlify:deploy": "netlify deploy --prod",
+    "netlify:trigger": "netlify deploy --prod --trigger",
     "cypress:install": "cypress install",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --browser=chrome"
