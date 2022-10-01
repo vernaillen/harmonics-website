@@ -21,13 +21,6 @@ jobs:
           name: Test
           command: pnpm test
       - sonarcloud/scan
-      - slack/notify:
-          channel: circleci
-          event: always
-  deploy:
-    docker:
-      - image: vernaillen/circleci-pnpm:18.9.1
-    steps:
       - run:
           name: Build
           command: |
@@ -47,12 +40,4 @@ workflows:
       - build_and_test:
           context: 
             - SonarCloud
-            - Slack
-      - deploy:
-          requires:
-            - build_and_test
-          filters:
-            branches:
-              only: master
-          context: 
             - Slack
