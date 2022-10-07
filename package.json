@@ -74,7 +74,7 @@
     "vite-plugin-vue-markdown": "^0.22.1",
     "vite-plugin-windicss": "^1.8.8",
     "vite-ssg": "^0.20.2",
-    "vitest": "^0.23.4",
+    "vitest": "^0.24.0",
     "vue-tsc": "^0.40.13",
     "windicss": "^3.5.6"
   },
