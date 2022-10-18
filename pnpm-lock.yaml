@@ -42,7 +42,7 @@ specifiers:
   unplugin-vue-components: ^0.22.8
   vee-validate: ^4.6.10
   vite: ^3.1.6
-  vite-plugin-pages: ^0.26.0
+  vite-plugin-pages: ^0.27.0
   vite-plugin-pages-sitemap: ^1.4.0
   vite-plugin-vue-markdown: ^0.22.1
   vite-plugin-windicss: ^1.8.8
@@ -94,7 +94,7 @@ devDependencies:
   gray-matter: 4.0.3
   happy-dom: 7.4.0
   markdown-it: 13.0.1
-  markdown-it-anchor: 8.6.5_ea7kj7wzjkld5jo2noyjqxi764
+  markdown-it-anchor: 8.6.5_markdown-it@13.0.1
   markdown-it-link-attributes: 4.0.1
   markdown-it-prism: 2.3.0
   netlify-cli: 12.0.7
@@ -105,7 +105,7 @@ devDependencies:
   unplugin-auto-import: 0.11.2_@vueuse+core@9.3.0
   unplugin-vue-components: 0.22.8_vue@3.2.40
   vite: 3.1.6
-  vite-plugin-pages: 0.26.0_vite@3.1.6
+  vite-plugin-pages: 0.27.0_vite@3.1.6
   vite-plugin-pages-sitemap: 1.4.0
   vite-plugin-vue-markdown: 0.22.1_vite@3.1.6
   vite-plugin-windicss: 1.8.8_vite@3.1.6
@@ -7797,13 +7797,12 @@ packages:
       object-visit: 1.0.1
     dev: true
 
-  /markdown-it-anchor/8.6.5_ea7kj7wzjkld5jo2noyjqxi764:
+  /markdown-it-anchor/8.6.5_markdown-it@13.0.1:
     resolution: {integrity: sha512-PI1qEHHkTNWT+X6Ip9w+paonfIQ+QZP9sCeMYi47oqhH+EsW8CrJ8J7CzV19QVOj6il8ATGbK2nTECj22ZHGvQ==}
     peerDependencies:
       '@types/markdown-it': '*'
       markdown-it: '*'
     dependencies:
-      '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
     dev: true
 
@@ -11221,8 +11220,8 @@ packages:
     resolution: {integrity: sha512-8GlmNSeObvDVUdmgutfWnGBZGsn3Zb8IXCjRODFB0tOhQqAQPZRwXrFha6ZLjvF4DgVJI3sW2FfiXa1wFxJvmg==}
     dev: true
 
-  /vite-plugin-pages/0.26.0_vite@3.1.6:
-    resolution: {integrity: sha512-yJZvwHEt7puYIf19S89IvkDsWPjWleSied4H8hmdW6i8buCA93z1UAU1ipW1d8fNKrC4FzXsUHHbPm6+kl1p9w==}
+  /vite-plugin-pages/0.27.0_vite@3.1.6:
+    resolution: {integrity: sha512-fLuBd8U9jcfB+MXj9yEsq6AHa0AHCP4Fhi7LCcCWJeL28Lx3o5B0uoBUhCZ+xwsnNs4GZwPOfgBG3yHKMsMNnA==}
     peerDependencies:
       '@vue/compiler-sfc': ^2.7.0 || ^3.0.0
       vite: ^2.0.0 || ^3.0.0-0
