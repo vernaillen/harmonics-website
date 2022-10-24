@@ -1,7 +1,6 @@
 <script setup>
 import { useField, useForm } from 'vee-validate'
 import * as yup from 'yup'
-import { useLocale } from '@/stores/lang'
 
 const schema = yup.object({
   name: yup.string().required(),
@@ -15,11 +14,11 @@ const schema = yup.object({
     max: ({ max }) => ({ key: 'contact.field_too_big', values: { max } }),
     required: () => ({ key: 'contact.required' }),
   },
-})
+}) */
 
 const { submitForm } = useForm({
   validationSchema: schema,
-}) */
+})
 const { value: name, errorMessage: nameError } = useField('name')
 const { value: email, errorMessage: emailError } = useField('email')
 const { value: message, errorMessage: messageError } = useField('message')
@@ -28,7 +27,7 @@ const { t } = useI18n()
 
 <template>
   <div class="bg-primary bg-opacity-[3%] dark:bg-dark rounded-md p-6 mb-12 lg:mb-5 md:p-8 lg:p-12">
-    <form name="harmonics-contact" data-netlify="true" method="POST">
+    <form action="https://formbold.com/s/3qV8o" method="POST" @submit="submitForm">
       <div class="flex flex-wrap mx-[-16px]">
         <div class="w-full md:w-1/2 px-4">
           <div class="mb-8">
