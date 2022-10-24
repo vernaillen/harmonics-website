@@ -27,7 +27,7 @@ const { t } = useI18n()
 
 <template>
   <div class="bg-primary bg-opacity-[3%] dark:bg-dark rounded-md p-6 mb-12 lg:mb-5 md:p-8 lg:p-12">
-    <form action="https://formbold.com/s/3qV8o" method="POST" @submit="submitForm">
+    <form name="harmonics-contact" data-netlify="true" action="/thanks" method="POST" @submit="submitForm">
       <div class="flex flex-wrap mx-[-16px]">
         <div class="w-full md:w-1/2 px-4">
           <div class="mb-8">
