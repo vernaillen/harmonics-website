@@ -1,12 +1,15 @@
 <script setup>
 import { useField, useForm } from 'vee-validate'
 import * as yup from 'yup'
+import axios from 'axios'
+import { useLocale } from '@/stores/lang'
 
 const schema = yup.object({
   name: yup.string().required(),
   email: yup.string().required().email(),
   message: yup.string().required().min(20),
 })
+const formError = ref()
 
 /* yup.setLocale({
   string: {
@@ -16,8 +19,23 @@ const schema = yup.object({
   },
 }) */
 
-const { submitForm } = useForm({
+const { handleSubmit } = useForm({
   validationSchema: schema,
+})
+
+const router = useRouter()
+const submitForm = handleSubmit((values) => {
+  axios({
+    method: 'POST',
+    url: 'https://formbold.com/s/3qV8o',
+    data: values,
+  })
+    .then(() => {
+      router.push(`/${useLocale().lang}/thanks`)
+    })
+    .catch((err) => {
+      formError.value = `error submitting form: ${err}`
+    })
 })
 const { value: name, errorMessage: nameError } = useField('name')
 const { value: email, errorMessage: emailError } = useField('email')
@@ -27,7 +45,7 @@ const { t } = useI18n()
 
 <template>
   <div class="bg-primary bg-opacity-[3%] dark:bg-dark rounded-md p-6 mb-12 lg:mb-5 md:p-8 lg:p-12">
-    <form action="https://formbold.com/s/3qV8o" method="POST" @submit="submitForm">
+    <form method="POST" @submit.prevent="submitForm">
       <div class="flex flex-wrap mx-[-16px]">
         <div class="w-full md:w-1/2 px-4">
           <div class="mb-8">
@@ -71,6 +89,8 @@ const { t } = useI18n()
               {{ messageError }}
             </span>
           </div>
+        </div><div v-if="formError" class="text-[red] font-bold px-4 pb-4 animated pulse">
+          {{ formError }}
         </div>
         <div class="w-full px-4">
           <button
