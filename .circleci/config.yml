@@ -8,7 +8,7 @@ orbs:
 executors:
   pnpm-executor:
     docker:
-      - image: vernaillen/circleci-pnpm:18.9.1-browsers
+      - image: vernaillen/circleci-pnpm:19.0.0-browsers
     working_directory: /tmp/workspace
 
 jobs:
@@ -55,7 +55,7 @@ jobs:
           command: pnpm run lint
       - run:
           name: Test
-          command: pnpm test
+          command: pnpm run coverage
       - sonarcloud/scan
       - slack/notify:
           channel: circleci
