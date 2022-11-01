@@ -1,13 +1,5 @@
 {  
   "extends": [
     "@vernaillen"
-  ],
-  "packageRules": [
-    {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "rangeStrategy": "replace"
-    }
   ]
 }
