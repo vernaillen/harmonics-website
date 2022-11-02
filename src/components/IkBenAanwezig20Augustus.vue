@@ -11,7 +11,7 @@ function centeredPopup(u, n, w, h, r) {
 <template>
   <a
     href="https://shop.ikbenaanwezig.nl/tickets/event/release-your-inner-dancer-20augustus"
-    target="_blank"
+    target="_blank" rel="noopener"
     @click="centeredPopup(href, 'Ik Ben Aanwezig Tickets', '500', '750', 'yes')"
   ><img
     src="https://shop.ikbenaanwezig.nl/media/images/tickets_button.png" alt="Tickets"

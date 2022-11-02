@@ -23,7 +23,7 @@ function formatDate(d: string) {
     <div class="relative bg-white dark:bg-dark shadow- rounded-md shadow-light-300 rounded-md overflow-hidden mb-10">
       <div class="p-6 sm:p-8 md:py-8 md:px-6 lg:p-8 xl:py-8 xl:px-5 2xl:p-8">
         <router-link v-if="post.thumbnail" :to="post.path">
-          <img :src="post.thumbnail" class="rounded-md mb-4">
+          <img :src="post.thumbnail" class="rounded-md mb-4" :alt="`thumbnail ${post.title}`">
         </router-link>
         <router-link v-if="post.thumb_video_webm || post.thumb_video_mp4" :to="post.path">
           <client-only>

@@ -93,7 +93,7 @@ useHead({
               {{ frontmatter.subtitle }}
             </em>
           </div>
-          <img v-if="frontmatter.image" :src="frontmatter.image" class="rounded-md">
+          <img v-if="frontmatter.image" :src="frontmatter.image" class="rounded-md" alt="article image">
           <article ref="content">
             <slot />
           </article>

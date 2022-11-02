@@ -1,6 +1,6 @@
 {
   "name": "harmonics",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "scripts": {
     "prebuild": "[[ $CI = true ]] && npx pnpm@3 install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "dev": "vite --host",
@@ -19,7 +19,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:dev": "start-server-and-test dev http://localhost:5173 'cypress open --config baseUrl=http://localhost:5173'",
-    "cypress:local": "start-server-and-test serve http://localhost:3000 cypress:run --config baseUrl=http://localhost:3000",
+    "cypress:local": "start-server-and-test serve http://localhost:3000 'cypress run --config baseUrl=http://localhost:3000'",
     "fulltest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run cypress:local"
   },
   "dependencies": {

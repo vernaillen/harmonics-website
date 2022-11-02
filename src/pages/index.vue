@@ -16,7 +16,7 @@ const nrOfPosts = 3
 <template>
   <div class="relative pt-10">
     <section id="title" class="relative">
-      <div class="lg:container mx-auto px-4 mt-10 xl:mt-16 3xl:mt-22">
+      <div class="lg:container mx-auto px-4 my-10 lg:my-50 3xl:my-80">
         <div class="flex flex-wrap">
           <div class="w-full sm:w-10/12 lg:w-5/12 ml-auto mr-auto lg:mr-0 px-4 lg:px-8 mt-10">
             <img alt="Gongs" class="max-w-full rounded-lg shadow-2xl mt-5" src="@/assets/gongs.jpg">
@@ -33,13 +33,6 @@ const nrOfPosts = 3
                 {{ t('home.services') }}
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="lg:container mx-auto px-4 my-20">
-        <div class="flex flex-wrap">
-          <div class="w-full sm:w-10/12 lg:w-6/12 mx-auto px-4 mt-10">
-            <mailchimp-component />
           </div>
         </div>
       </div>

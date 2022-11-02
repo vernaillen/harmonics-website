@@ -4,7 +4,7 @@ const { t } = useI18n()
 
 <template>
   <div id="mc_embed_signup" class="prose">
-    <form id="mc-embedded-subscribe-form" action="https://harmonics.us14.list-manage.com/subscribe/post?u=70b20f90b742c102a6d56ec9c&amp;id=7e4d7c55a7&amp;f_id=0082f7e0f0" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form id="mc-embedded-subscribe-form" action="https://harmonics.us14.list-manage.com/subscribe/post?u=70b20f90b742c102a6d56ec9c&amp;id=7e4d7c55a7&amp;f_id=0082f7e0f0" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" rel="noopener" novalidate>
       <div id="mc_embed_signup_scroll">
         <h1 class="animated pulse">
           {{ t('mailinglist.title') }}
@@ -33,7 +33,9 @@ const { t } = useI18n()
           <div class="clear foot">
             <input id="mc-embedded-subscribe" type="submit" :value="t('mailinglist.subscribe')" name="subscribe" class="button">
             <p class="brandingLogo">
-              <a href="http://eepurl.com/h9DWsH" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a>
+              <a href="http://eepurl.com/h9DWsH" title="Mailchimp - email marketing made easy and fun">
+                <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" alt="Mailchimp logo">
+              </a>
             </p>
           </div>
         </div>
@@ -45,13 +47,22 @@ const { t } = useI18n()
 <style scoped>
 #mc_embed_signup {
   clear: left;
-  max-width: 600px;
   font-size: 14px;
 }
 /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 #mc_embed_signup .mc-field-group {
   padding-bottom: 10px;
+}
+#mc_embed_signup .mc-field-group input {
+  display: block;
+  width: 100%;
+  padding: 2px 0;
+  text-indent: 2%;
+}
+#mc_embed_signup img {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 </style>
 

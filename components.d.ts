@@ -17,6 +17,7 @@ declare module '@vue/runtime-core' {
     ImageGallery: typeof import('./src/components/ImageGallery.vue')['default']
     LanguageSwitcher: typeof import('./src/components/LanguageSwitcher.vue')['default']
     MailchimpComponent: typeof import('./src/components/MailchimpComponent.vue')['default']
+    MailchimpModal: typeof import('./src/components/MailchimpModal.vue')['default']
     MarkdownWrapper: typeof import('./src/components/MarkdownWrapper.vue')['default']
     NavbarComponent: typeof import('./src/components/NavbarComponent.vue')['default']
     NextPreviousPost: typeof import('./src/components/NextPreviousPost.vue')['default']

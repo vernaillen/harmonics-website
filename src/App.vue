@@ -37,6 +37,11 @@ router.beforeEach((to, from, next) => {
     pushCorrectLangPath(to.path)
   next()
 })
+
+const showMailchimpModal = ref(false)
+onMounted(() => {
+  setTimeout(() => showMailchimpModal.value = true, 3000)
+})
 </script>
 
 <template>
@@ -47,4 +52,7 @@ router.beforeEach((to, from, next) => {
     </main>
   </div>
   <easy-lightbox />
+  <teleport to="body">
+    <mailchimp-modal :show="showMailchimpModal" @close="showMailchimpModal = false" />
+  </teleport>
 </template>

@@ -20,12 +20,16 @@ import {
   faMusic,
   faTicket,
 } from '@fortawesome/free-solid-svg-icons'
+import {
+  faCircleXmark,
+} from '@fortawesome/free-regular-svg-icons'
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from '@/App.vue'
 import { i18nInstance } from '@/i18n'
 import routes from '~pages'
 import MarkdownWrapper from '@/components/MarkdownWrapper.vue'
+import MailchimpModal from '@/components/MailchimpModal.vue'
 library.add(
   faArrowRight,
   faBars,
@@ -33,6 +37,7 @@ library.add(
   faDrum,
   faMusic,
   faTicket,
+  faCircleXmark,
   faFacebook,
   faInstagram,
   faYoutube,
@@ -56,4 +61,5 @@ export const createApp = ViteSSG(App, { routes, scrollBehavior }, ({ app }) => {
   app.use(VueEasyLightbox)
   app.component('FontAwesomeIcon', FontAwesomeIcon)
   app.component('MarkdownWrapper', MarkdownWrapper)
+  app.component('MailchimpModal', MailchimpModal)
 })
