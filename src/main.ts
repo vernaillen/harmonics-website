@@ -20,7 +20,7 @@ import {
   faMusic,
   faTicket,
 } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from '@/App.vue'
 import { i18nInstance } from '@/i18n'
@@ -35,6 +35,7 @@ library.add(
   faTicket,
   faFacebook,
   faInstagram,
+  faYoutube,
 )
 
 dayjs.extend(LocalizedFormat)
