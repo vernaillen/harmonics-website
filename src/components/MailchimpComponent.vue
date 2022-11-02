@@ -32,11 +32,6 @@ const { t } = useI18n()
         <div class="optionalParent">
           <div class="clear foot">
             <input id="mc-embedded-subscribe" type="submit" :value="t('mailinglist.subscribe')" name="subscribe" class="button">
-            <p class="brandingLogo">
-              <a href="http://eepurl.com/h9DWsH" title="Mailchimp - email marketing made easy and fun">
-                <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" alt="Mailchimp logo">
-              </a>
-            </p>
           </div>
         </div>
       </div>

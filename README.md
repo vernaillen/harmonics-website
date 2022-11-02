@@ -1,11 +1,14 @@
 # Harmonics website
 
-Work in progress. A new website for a slowly, but steadily growing project
+<https://harmonics.be>
 
-dev version is deployed @ <https://harmonics-website.netlify.app/>
+[![Build Status][circle-image]][circle-url] [![Deploy Status][netlify-image]][netlify-url] [![SonarCloud Status][sonarcloud-image]][sonarcloud-url]
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/974a1728-79bf-443a-b200-86be540e72c8/deploy-status)](https://app.netlify.com/sites/harmonics-website/deploys)
+[circle-url]: https://circleci.com/gh/vernaillen/harmonics-website
+[circle-image]: https://img.shields.io/circleci/project/github/vernaillen/harmonics-website/master.svg?style=for-the-badge&logo=circleci
 
-[![CircleCI Status](https://badgen.net/circleci/github/vernaillen/harmonics-website?icon=circleci)](https://app.circleci.com/pipelines/github/vernaillen/harmonics-website)
+[netlify-url]: https://app.netlify.com/sites/harmonics-website/deploys
+[netlify-image]: https://img.shields.io/netlify/974a1728-79bf-443a-b200-86be540e72c8?style=for-the-badge&logo=netlify
 
-[![SonarCloud Status](https://sonarcloud.io/api/project_badges/measure?project=harmonics-website&metric=alert_status)](https://sonarcloud.io/project/overview?id=harmonics-website)
+[sonarcloud-url]: https://sonarcloud.io/project/overview?id=harmonics-website
+[sonarcloud-image]: https://img.shields.io/sonar/quality_gate/harmonics-website/master?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge&logo=sonar
