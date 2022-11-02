@@ -1,8 +1,11 @@
-# Harmonics website
 
-<https://harmonics.be>
+[![CircleCI][circle-image]][circle-url]<br/>
+[![Netlify deploy][netlify-image]][netlify-url]<br/>
+[![SonarCloud Status][sonarcloud-image]][sonarcloud-url]<br/>
 
-[![Build Status][circle-image]][circle-url] [![Deploy Status][netlify-image]][netlify-url] [![SonarCloud Status][sonarcloud-image]][sonarcloud-url]
+# Harmonics.be
+
+website for <https://harmonics.be>, made with Vue, Vite, markdown, etc
 
 [circle-url]: https://circleci.com/gh/vernaillen/harmonics-website
 [circle-image]: https://img.shields.io/circleci/project/github/vernaillen/harmonics-website/master.svg?style=for-the-badge&logo=circleci
