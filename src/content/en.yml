@@ -12,7 +12,7 @@ menu:
 home:
   title: Harmonics
   tagline: Healing power of Sound, Music and Dance
-  services: Ecstatic Dance, Immersive Soundbaths, Music Production, etc
+  services: Ecstatic Dance, Trance Dance, Immersive Soundbaths, Music Production, etc
 blog:
   readmore: read more
   findoutmore: find out more
@@ -30,8 +30,8 @@ footer:
   findus: You can find us on any of these platforms.
   copyright: Copyright ©
 mailinglist:
-  title: Subscribe to the Harmonics mailing list
-  subtitle: ...and get notified of our upcoming activities, ecstatic dance and trance dance sessions
+  title: Subscribe to the Harmonics mailinglist
+  subtitle: ...and stay up to date about the upcoming ecstatic dance & trance dance sessions
   email: Email Address
   firstname: First Name
   subscribe: Subscribe
