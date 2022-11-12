@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 describe('test homepage language redirect', () => {
   beforeEach(() => {
     cy.visit('/')
@@ -33,7 +35,7 @@ describe('test homepage title section', () => {
     cy.get('main section#title h4').should('have.length', 1)
     cy.get('main section#title h4').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
     cy.get('main section#title p').should('have.length', 1)
-    cy.get('main section#title p').first().should('have.text', 'Ecstatic Dance, Immersive Soundbaths, Muziek Productie, etc')
+    cy.get('main section#title p').first().should('have.text', 'Ecstatic Dance, Trance Dance, Immersive Soundbaths, Muziek Productie, etc')
   })
   it('test English section', () => {
     cy.get('header select').should('have.length', 1)
@@ -44,7 +46,7 @@ describe('test homepage title section', () => {
     cy.get('main section#title h4').should('have.length', 1)
     cy.get('main section#title h4').first().should('have.text', 'Healing power of Sound, Music and Dance')
     cy.get('main section#title p').should('have.length', 1)
-    cy.get('main section#title p').first().should('have.text', 'Ecstatic Dance, Immersive Soundbaths, Music Production, etc')
+    cy.get('main section#title p').first().should('have.text', 'Ecstatic Dance, Trance Dance, Immersive Soundbaths, Music Production, etc')
   })
 })
 

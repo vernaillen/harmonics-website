@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 describe('test header section', () => {
   beforeEach(() => {
     cy.visit('/')
