@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import { onClickOutside } from '@vueuse/core'
 defineProps({
   show: Boolean,
 })
 const emit = defineEmits(['close'])
+
+const modal = ref(null)
+onClickOutside(modal, event => emit('close'))
 </script>
 
 <template>
@@ -12,10 +16,10 @@ const emit = defineEmits(['close'])
     class="fixed z-100 inset-0 overflow-y-auto bg-black bg-opacity-50 animated fadeIn"
   >
     <div
-      class="flex items-start pt-24 justify-center absolute bottom-5 md:right-5"
+      ref="modal"
+      class="modal flex items-start pt-24 justify-center absolute bottom-5 md:right-5"
     >
       <div
-        ref="modal"
         class="bg-white rounded-lg text-left overflow-hidden shadow-xl pt-4 px-4 w-[90%] md:w-[500px] animated slideInRight"
         role="dialog"
         aria-modal="true"
