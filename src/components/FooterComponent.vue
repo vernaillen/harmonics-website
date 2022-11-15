@@ -44,6 +44,15 @@ onMounted(() => {
   window.onscroll = function () {
     const ud_header = document.querySelector('.header') as HTMLElement
     if (ud_header) {
+      if (window.scrollY > 0) {
+        ud_header.classList.add('sticky')
+        ud_header.classList.add('shadow')
+      }
+      else {
+        ud_header.classList.remove('sticky')
+        ud_header.classList.remove('shadow')
+      }
+
       const backToTop = document.querySelector('.back-to-top') as HTMLElement
       if (
         document.body.scrollTop > 50

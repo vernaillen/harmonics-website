@@ -34,7 +34,7 @@ function formatDate(d: string) {
             </video>
           </client-only>
         </router-link>
-        <h3 class="animated pulse">
+        <h3>
           <router-link
             :to="post.path"
             class="font-bold text-primary dark:text-white text-xl sm:text-2xl block mb-4 hover:bg-opacity-80"

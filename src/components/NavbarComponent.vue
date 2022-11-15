@@ -29,18 +29,18 @@ const { t } = useI18n()
 
 <template>
   <header
-    class="header bg-transparent absolute top-0 left-0 z-20 w-full flex items-center animated fadeIn animate-delay-1000"
+    class="header bg-white bg-opacity-95 absolute top-0 left-0 z-20 w-full h-17 flex items-center animated slideInDown animate-delay-2000"
   >
     <div class="container">
       <div class="flex justify-between relative">
-        <div class="px-4 mr-10 mt-3 max-w-full">
+        <div class="px-0 md:px-4 mr-10 mt-3 max-w-full">
           <router-link
             :to="`/${useLocale().lang}`"
-            class="text-xl leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
+            class="text-xl md:text-2xl text-gray-500 font-medium leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
           >
             <img
               alt="Harmonics logo" src="../assets/wave_sound-02-small.jpg"
-              class="inline-flex rounded-full w-20 h-10"
+              class="inline-flex rounded-full w-12 h-6 md:w-20 md:h-10"
             >
             Harmonics
           </router-link>
@@ -66,7 +66,7 @@ const { t } = useI18n()
                 <li class="relative group">
                   <router-link
                     :to="`/${useLocale().lang}`"
-                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-50 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
+                    class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 active:text-primary py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/')" @click="navbar.show = false"
                   >
                     {{ t('menu.home') }}
@@ -75,7 +75,7 @@ const { t } = useI18n()
                 <li class="relative group">
                   <router-link
                     :to="`/${useLocale().lang}/blog`"
-                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-50 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
+                    class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/blog')" @click="navbar.show = false"
                   >
                     {{ t('menu.blog') }}
@@ -84,7 +84,7 @@ const { t } = useI18n()
                 <li class="relative group">
                   <router-link
                     :to="`/${useLocale().lang}/about`"
-                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-50 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
+                    class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/about')" @click="navbar.show = false"
                   >
                     {{ t('menu.about') }}
@@ -93,7 +93,7 @@ const { t } = useI18n()
                 <li class="relative group">
                   <router-link
                     :to="`/${useLocale().lang}/contact`"
-                    class="menu-scroll text-base text-black dark:text-white group-hover:opacity-50 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
+                    class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/contact')" @click="navbar.show = false"
                   >
                     {{ t('menu.contact') }}
@@ -103,10 +103,10 @@ const { t } = useI18n()
             </nav>
           </div>
         </div>
-        <div class="px-4 py-1 mt-3 max-w-full mr-12 sm:mr-0">
+        <div class="px-4 py-2 mt-3 max-w-full mr-12 sm:mr-0">
           <LanguageSwitcher />
         </div>
-        <div class="flex justify-end px-4 py-1 mr-5 mt-3 max-w-full hidden sm:block">
+        <div class="flex justify-end px-4 py-2 mr-5 mt-3 max-w-full hidden sm:block">
           <social-icons />
         </div>
       </div>

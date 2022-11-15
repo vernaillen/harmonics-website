@@ -40,7 +40,7 @@ router.beforeEach((to, from, next) => {
 
 const showMailchimpModal = ref(false)
 onMounted(() => {
-  setTimeout(() => showMailchimpModal.value = true, 2000)
+  setTimeout(() => showMailchimpModal.value = true, 5000)
 })
 </script>
 
