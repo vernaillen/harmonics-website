@@ -29,7 +29,7 @@ const { t } = useI18n()
 
 <template>
   <header
-    class="header bg-white bg-opacity-95 absolute top-0 left-0 z-20 w-full h-17 flex items-center animated slideInDown animate-delay-2000"
+    class="header bg-white bg-opacity-95 absolute top-0 left-0 z-20 w-full h-[68px] flex animated slideInDown animate-delay-2000"
   >
     <div class="container">
       <div class="flex justify-between relative">
@@ -49,7 +49,7 @@ const { t } = useI18n()
           <div>
             <button
               id="navbarToggler"
-              class="block absolute right-0 top-2 cursor-pointer translate-y-[-50%] lg:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg"
+              class="block absolute right-0 top-8 cursor-pointer translate-y-[-50%] lg:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg"
               :class="navbarTogglerClass" @click="toggleNavbar"
             >
               <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white transition" />

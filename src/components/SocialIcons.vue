@@ -3,7 +3,7 @@ const iconClass = 'hover:text-primary text-gray-500 h-5 mx-2'
 </script>
 
 <template>
-  <div id="socials" class="min-w-38 pt-1 sm:pr-10 xl:pr-0 mr-[-10px]">
+  <div id="socials" class="min-w-[110px] pt-1 sm:mr-4 xl:pr-0 mr-[-10px]">
     <a
       href="https://www.youtube.com/@harmonicsbe" target="_blank" rel="noopener"
     >
