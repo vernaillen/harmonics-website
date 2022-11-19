@@ -74,7 +74,7 @@ useHead({
 </script>
 
 <template>
-  <div class="container mx-auto px-4 pt-16 mt-20 animated fadeIn">
+  <div class="container mx-auto px-4 pt-[68px] mt-[100px] animated fadeIn">
     <div class="flex flex-wrap">
       <div class="w-full px-4 sm:px-6 lg:px-8 mb-10">
         <div class="prose m-auto">
@@ -102,5 +102,4 @@ useHead({
     </div>
     <next-previous-post />
   </div>
-  <footer-component />
 </template>

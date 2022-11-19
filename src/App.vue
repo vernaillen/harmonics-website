@@ -45,12 +45,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <navbar-component />
-    <main>
-      <router-view />
-    </main>
-  </div>
+  <navbar-component />
+  <main class="flex-grow">
+    <router-view />
+  </main>
+  <footer-component />
   <easy-lightbox />
   <!-- teleport to="body">
     <mailchimp-modal :show="showMailchimpModal" @close="showMailchimpModal = false" />
