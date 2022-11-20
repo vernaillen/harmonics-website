@@ -23,7 +23,7 @@ import {
 import {
   faCircleXmark,
 } from '@fortawesome/free-regular-svg-icons'
-import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faMastodon, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from '@/App.vue'
 import { i18nInstance } from '@/i18n'
@@ -41,6 +41,7 @@ library.add(
   faFacebook,
   faInstagram,
   faYoutube,
+  faMastodon,
 )
 
 dayjs.extend(LocalizedFormat)
