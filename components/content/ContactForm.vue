@@ -95,7 +95,7 @@ const { t } = useI18n()
         </div>
         <div class="w-full px-4">
           <button
-            class="text-base font-medium text-white bg-primary py-3 px-6 hover:bg-opacity-80 hover:shadow-signUp rounded-md transition duration-300 ease-in-out"
+            class="text-base font-medium text-white bg-primary py-3 px-6 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
           >
             {{ t('contact.submit') }}
           </button>

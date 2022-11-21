@@ -20,7 +20,7 @@ onClickOutside(modal, event => emit('close'))
       class="modal flex items-start pt-24 justify-center absolute bottom-5 md:right-5"
     >
       <div
-        class="bg-white rounded-lg text-left overflow-hidden shadow-xl pt-4 px-4 w-[90%] md:w-[500px] animated slideInRight"
+        class="bg-white rounded-lg text-left overflow-hidden shadow-xl pt-4 px-4 w-[90%] md:w-[500px] animate__animated animate__slideInRight"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-headline"
