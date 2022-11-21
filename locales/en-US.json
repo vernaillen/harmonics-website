@@ -1,0 +1,47 @@
+{
+    "language": "language",
+    "website": {
+        "hostname": "https://harmonics.be",
+        "title": "Harmonics.be",
+        "description": "Healing power of Sound, Music & Dance - by Wouter Vernaillen",
+        "noJavaScript": "JavaScript is required"
+    },
+    "menu": {
+        "home": "Home",
+        "blog": "Blog",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "home": {
+        "title": "Harmonics",
+        "tagline": "Healing power of Sound, Music and Dance",
+        "services": "Ecstatic Dance, Trance Dance, Immersive Soundbaths, Music Production, etc"
+    },
+    "blog": {
+        "readmore": "read more",
+        "findoutmore": "find out more",
+        "by": "by",
+        "next": "next blogpost",
+        "previous": "previous blogpost"
+    },
+    "contact": {
+        "name": "Your name",
+        "email": "Your email",
+        "message": "Your message",
+        "submit": "Submit",
+        "required": "Custom, required",
+        "field_too_short": "Custom"
+    },
+    "footer": {
+        "findus": "You can find us on any of these platforms.",
+        "copyright": "Copyright ©"
+    },
+    "mailinglist": {
+        "title": "Subscribe to the Harmonics mailinglist",
+        "subtitle": "...and stay up to date about the upcoming ecstatic dance & trance dance sessions",
+        "email": "Email Address",
+        "firstname": "First Name",
+        "subscribe": "Subscribe"
+    },
+    "tickets": "Tickets"
+}

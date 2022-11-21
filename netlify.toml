@@ -1,18 +1,3 @@
-[build.environment]
-  NPM_FLAGS = "--version"
-  NODE_VERSION = "16"
-
 [build]
-  command = "npx pnpm install --frozen-lockfile --store=node_modules/.pnpm-store && npx pnpm coverage && npx pnpm build"
+  command = "pnpm run generate"
   publish = "dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-# Opting your Website out of Google's FLoC Network
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Permissions-Policy = "interest-cohort=()"
