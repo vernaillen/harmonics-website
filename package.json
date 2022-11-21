@@ -6,10 +6,12 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "preview": "nuxt generate && nuxt preview",
     "cy:install": "cypress install",
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "cy:dev": "start-server-and-test dev http://localhost:3000 'cypress open --config baseUrl=http://localhost:3000'",
+    "cy:local": "start-server-and-test preview http://localhost:3000 'cypress run --config baseUrl=http://localhost:3000'"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
@@ -29,7 +31,8 @@
     "cypress": "^11.1.0",
     "dayjs": "^1.11.6",
     "nuxt": "^3.0.0",
-    "nuxt-icon": "^0.1.7"
+    "nuxt-icon": "^0.1.7",
+    "start-server-and-test": "^1.14.0"
   },
   "eslintConfig": {
     "extends": "@antfu"

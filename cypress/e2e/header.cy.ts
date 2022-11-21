@@ -7,7 +7,7 @@ describe('test header section', () => {
 
   it('test language switcher', () => {
     cy.location().should((location) => {
-      expect(location.pathname).to.eq('/nl/')
+      expect(location.pathname).to.eq('/')
     })
     cy.get('header select').should('have.length', 1)
     cy.get('header select option').should('have.length', 2)
