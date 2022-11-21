@@ -13,7 +13,7 @@ onClickOutside(modal, event => emit('close'))
   <div
     v-if="show"
     ref="modal-backdrop"
-    class="fixed z-100 inset-0 overflow-y-auto bg-black bg-opacity-50 animated fadeIn"
+    class="fixed z-100 inset-0 overflow-y-auto bg-black bg-opacity-50"
   >
     <div
       ref="modal"

@@ -17,6 +17,6 @@ describe('test header section', () => {
 
   it('test social icons', () => {
     cy.get('header #socials').should('have.length', 1)
-    cy.get('header #socials a').should('have.length', 3)
+    cy.get('header #socials a').should('have.length', 4)
   })
 })

@@ -6,7 +6,6 @@ import Markdown from 'vite-plugin-vue-markdown'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Anchor from 'markdown-it-anchor'
 import Prism from 'markdown-it-prism'
-import WindiCSS from 'vite-plugin-windicss'
 import Pages from 'vite-plugin-pages'
 import generateSitemap from 'vite-plugin-pages-sitemap'
 import fs from 'fs-extra'
@@ -47,7 +46,6 @@ export default defineConfig({
         })
       },
     }),
-    WindiCSS(),
     Pages({
       dirs: [
         { dir: 'src/pages', baseRoute: '[lang]' },

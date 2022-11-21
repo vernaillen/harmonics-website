@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body,
 button,
@@ -18,7 +18,13 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Poppins, Futura, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+header a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
 }
 
 #landingCoverImg {
@@ -60,4 +66,9 @@ h6 {
 
 .text-end {
   text-align: end;
+}
+
+.sticky {
+  @apply fixed z-[9995] transition bg-white bg-opacity-80 dark:bg-primary dark:bg-opacity-20;
+  backdrop-filter: blur(5px);
 }
