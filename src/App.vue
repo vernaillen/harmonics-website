@@ -38,21 +38,20 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
-const showMailchimpModal = ref(false)
+/* const showMailchimpModal = ref(false)
 onMounted(() => {
-  setTimeout(() => showMailchimpModal.value = true, 5000)
-})
+  setTimeout(() => showMailchimpModal.value = true, 3000)
+}) */
 </script>
 
 <template>
-  <div>
-    <navbar-component />
-    <main>
-      <router-view />
-    </main>
-  </div>
+  <navbar-component />
+  <main class="flex-grow">
+    <router-view />
+  </main>
+  <footer-component />
   <easy-lightbox />
-  <teleport to="body">
+  <!-- teleport to="body">
     <mailchimp-modal :show="showMailchimpModal" @close="showMailchimpModal = false" />
-  </teleport>
+  </teleport -->
 </template>

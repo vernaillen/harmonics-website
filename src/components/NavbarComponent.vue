@@ -29,27 +29,28 @@ const { t } = useI18n()
 
 <template>
   <header
-    class="header bg-white bg-opacity-95 absolute top-0 left-0 z-20 w-full h-17 flex items-center animated slideInDown animate-delay-2000"
+    class="header bg-white bg-opacity-95 absolute top-0 left-0 z-20 w-full h-[68px] flex animated slideInDown animate-delay-2000"
   >
     <div class="container">
       <div class="flex justify-between relative">
-        <div class="px-0 md:px-4 mr-10 mt-3 max-w-full">
+        <div class="px-2 md:px-4 mr-5 mt-2 max-w-full">
           <router-link
             :to="`/${useLocale().lang}`"
-            class="text-xl md:text-2xl text-gray-500 font-medium leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
+            class="text-3xl text-primary font-medium leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
           >
             <img
+              v-if="false"
               alt="Harmonics logo" src="../assets/wave_sound-02-small.jpg"
               class="inline-flex rounded-full w-12 h-6 md:w-20 md:h-10"
             >
             Harmonics
           </router-link>
         </div>
-        <div class="flex px-4 justify-between items-center w-full">
+        <div class="flex px-0 md:px-4 justify-between items-center w-full">
           <div>
             <button
               id="navbarToggler"
-              class="block absolute right-0 top-2 cursor-pointer translate-y-[-50%] lg:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg"
+              class="block absolute right-0 top-8 cursor-pointer translate-y-[-50%] lg:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg"
               :class="navbarTogglerClass" @click="toggleNavbar"
             >
               <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white transition" />
@@ -103,10 +104,10 @@ const { t } = useI18n()
             </nav>
           </div>
         </div>
-        <div class="px-4 py-2 mt-3 max-w-full mr-12 sm:mr-0">
+        <div class="px-3 py-2 mt-3 max-w-full hidden sm:block">
           <LanguageSwitcher />
         </div>
-        <div class="flex justify-end px-4 py-2 mr-5 mt-3 max-w-full hidden sm:block">
+        <div class="justify-end px-4 py-2 mr-5 mt-3 max-w-full hidden sm:block">
           <social-icons />
         </div>
       </div>

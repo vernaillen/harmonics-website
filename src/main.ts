@@ -1,8 +1,6 @@
 import { ViteSSG } from 'vite-ssg'
 import dayjs from 'dayjs'
 import LocalizedFormat from 'dayjs/plugin/localizedFormat.js'
-import 'virtual:windi-devtools'
-import 'virtual:windi.css'
 import 'animate.css/animate.compat.css'
 import '@/css/markdown.css'
 import '@/css/main.css'
