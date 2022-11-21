@@ -1,5 +1,6 @@
 /// <reference types="Cypress" />
 
+/*  MailChimp popup has been disabled
 describe('test mailchimp modal', () => {
   beforeEach(() => {
     cy.visit('/')
@@ -21,3 +22,4 @@ describe('test mailchimp modal', () => {
     cy.get('.modal #mc_embed_signup').should('have.length', 0)
   })
 })
+*/
