@@ -27,7 +27,7 @@ jobs:
             - ./node_modules
       - run:
           name: Build
-          command: pnpm run build
+          command: pnpm run generate
       - persist_to_workspace:
           root: .
           paths:
@@ -36,6 +36,7 @@ jobs:
             - node_modules
             - cypress
             - cypress.config.ts
+            - nuxt.config.ts
             - tsconfig.json
             - src
             - test
@@ -80,19 +81,5 @@ workflows:
   flow:
     jobs:
       - build:
-          context: 
-            - Slack
-      - test:
-          requires:
-            - build
-          context: 
-            - SonarCloud
-            - Slack
-      - e2e:
-          requires:
-            - test
-          filters:
-            branches:
-              only: master
           context: 
             - Slack
