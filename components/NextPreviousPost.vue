@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import type { Post } from '../composables/types'
-
 const { t } = useI18n()
-
-useRouter()
+const localePath = useLocalePath()
 const route = useRoute()
-const previousPost: Post | null = getPreviousPost(route.path)
-const nextPost: Post | null = getNextPost(route.path)
+const [prev, next] = await queryContent(localePath('/blog')).findSurround(route.path)
 </script>
 
 <template>
@@ -15,17 +11,17 @@ const nextPost: Post | null = getNextPost(route.path)
       <div
         class="w-full md:w-1/2 text-end order-1 md:order-2 justify-end font-medium text-base text-body-color leading-relaxed"
       >
-        <NuxtLink v-if="nextPost" :to="nextPost.path">
+        <NuxtLink v-if="next" :to="next._path">
           {{ t('blog.next') }}:<br>
-          <span class="text-primary">{{ nextPost.title }}</span>
+          <span class="text-primary">{{ next.title }}</span>
         </NuxtLink>
       </div>
       <div
         class="w-full md:w-1/2  order-2 md:order-1 justify-start font-medium text-base text-body-color leading-relaxed"
       >
-        <NuxtLink v-if="previousPost" :to="previousPost.path">
+        <NuxtLink v-if="prev" :to="prev._path">
           {{ t('blog.previous') }}:<br>
-          <span class="text-primary">{{ previousPost.title }}</span>
+          <span class="text-primary">{{ prev.title }}</span>
         </NuxtLink>
       </div>
     </div>

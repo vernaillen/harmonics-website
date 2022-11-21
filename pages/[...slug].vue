@@ -29,6 +29,6 @@ const { page } = useContent()
         </div>
       </div>
     </div>
-    <!-- <next-previous-post /> -->
+    <next-previous-post />
   </div>
 </template>
