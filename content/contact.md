@@ -2,4 +2,4 @@
 title: Contacteer Wouter
 ---
 
-<ContactForm />
+::ContactForm
