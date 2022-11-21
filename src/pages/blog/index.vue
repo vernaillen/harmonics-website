@@ -14,7 +14,7 @@ useHead({
 
 <template>
   <section class="lg:container mx-auto pt-[80px] mt-[68px] pb-[100px] px-4">
-    <div class="flex flex-wrap mx-[-16px] justify-start py-4 px-2 md:px-6">
+    <div class="flex flex-wrap mx-[-16px] justify-start py-4 px-2">
       <BlogPostList />
     </div>
   </section>
