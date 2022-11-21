@@ -67,10 +67,10 @@ jobs:
           at: /tmp/workspace
       - run:
           name: Install Cypress
-          command: pnpm run cypress:install
+          command: pnpm run cy:install
       - run:
           name: Run Cypress
-          command: pnpm run cypress:run 
+          command: pnpm run cy:run 
       - slack/notify:
           channel: circleci
           event: always

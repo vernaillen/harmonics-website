@@ -1,8 +1,6 @@
 import { ViteSSG } from 'vite-ssg'
 import dayjs from 'dayjs'
 import LocalizedFormat from 'dayjs/plugin/localizedFormat.js'
-import 'virtual:windi-devtools'
-import 'virtual:windi.css'
 import 'animate.css/animate.compat.css'
 import '@/css/markdown.css'
 import '@/css/main.css'
@@ -23,7 +21,7 @@ import {
 import {
   faCircleXmark,
 } from '@fortawesome/free-regular-svg-icons'
-import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faMastodon, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from '@/App.vue'
 import { i18nInstance } from '@/i18n'
@@ -41,6 +39,7 @@ library.add(
   faFacebook,
   faInstagram,
   faYoutube,
+  faMastodon,
 )
 
 dayjs.extend(LocalizedFormat)

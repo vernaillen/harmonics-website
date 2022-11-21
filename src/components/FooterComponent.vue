@@ -44,6 +44,15 @@ onMounted(() => {
   window.onscroll = function () {
     const ud_header = document.querySelector('.header') as HTMLElement
     if (ud_header) {
+      if (window.scrollY > 0) {
+        ud_header.classList.add('sticky')
+        ud_header.classList.add('shadow')
+      }
+      else {
+        ud_header.classList.remove('sticky')
+        ud_header.classList.remove('shadow')
+      }
+
       const backToTop = document.querySelector('.back-to-top') as HTMLElement
       if (
         document.body.scrollTop > 50
@@ -125,7 +134,7 @@ onMounted(() => {
   </footer>
   <a
     href="javascript:void(0)"
-    class="hidden items-center justify-center bg-primary text-white w-10 h-10 rounded-md fixed bottom-8 right-8 left-auto z-[999] hover:shadow-signUp hover:bg-opacity-80 transition duration-300 ease-in-out back-to-top shadow-md"
+    class="back-to-top hidden items-center justify-center bg-primary text-white w-10 h-10 rounded-md fixed bottom-8 right-8 left-auto z-[999] hover:shadow-signUp hover:bg-opacity-80 shadow-md animated slideInUp"
     @click="scrollToTop()"
   >
     <span class="w-3 h-3 border-t border-l border-white transform rotate-45 mt-[6px]" />
