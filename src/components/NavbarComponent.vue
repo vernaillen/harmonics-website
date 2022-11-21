@@ -104,10 +104,10 @@ const { t } = useI18n()
             </nav>
           </div>
         </div>
-        <div class="px-4 py-2 mt-3 max-w-full mr-10 md:mr-0">
+        <div class="px-3 py-2 mt-3 max-w-full hidden sm:block">
           <LanguageSwitcher />
         </div>
-        <div class="flex justify-end px-4 py-2 mr-5 mt-3 max-w-full hidden sm:block">
+        <div class="justify-end px-4 py-2 mr-5 mt-3 max-w-full hidden sm:block">
           <social-icons />
         </div>
       </div>
