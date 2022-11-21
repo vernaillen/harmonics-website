@@ -13,8 +13,5 @@ const iconClass = 'hover:text-primary text-gray-500 h-5 mx-2'
     <a href="https://www.instagram.com/harmonics.be/" target="_blank" rel="noopener">
       <FontAwesomeIcon :icon="['fab', 'instagram']" :class="iconClass" />
     </a>
-    <a href="https://fosstodon.org/@vernaillen" rel="me" target="_blank">
-      <font-awesome-icon :icon="['fab', 'mastodon']" />
-    </a>
   </div>
 </template>

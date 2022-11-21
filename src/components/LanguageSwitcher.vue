@@ -12,7 +12,7 @@ const setLanguage = (event: Event) => {
 
 <template>
   <form>
-    <select @change="setLanguage">
+    <select @change="setLanguage" class="bg-transparent">
       <option value="nl" :selected="useLocale().lang === 'nl'">
         NL
       </option>

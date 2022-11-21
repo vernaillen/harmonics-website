@@ -33,19 +33,20 @@ const { t } = useI18n()
   >
     <div class="container">
       <div class="flex justify-between relative">
-        <div class="px-0 md:px-4 mr-10 mt-3 max-w-full">
+        <div class="px-2 md:px-4 mr-5 mt-2 max-w-full">
           <router-link
             :to="`/${useLocale().lang}`"
-            class="text-xl md:text-2xl text-gray-500 font-medium leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
+            class="text-3xl text-primary font-medium leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
           >
             <img
+              v-if="false"
               alt="Harmonics logo" src="../assets/wave_sound-02-small.jpg"
               class="inline-flex rounded-full w-12 h-6 md:w-20 md:h-10"
             >
             Harmonics
           </router-link>
         </div>
-        <div class="flex px-4 justify-between items-center w-full">
+        <div class="flex px-0 md:px-4 justify-between items-center w-full">
           <div>
             <button
               id="navbarToggler"
@@ -103,7 +104,7 @@ const { t } = useI18n()
             </nav>
           </div>
         </div>
-        <div class="px-4 py-2 mt-3 max-w-full mr-12 sm:mr-0">
+        <div class="px-4 py-2 mt-3 max-w-full mr-10 md:mr-0">
           <LanguageSwitcher />
         </div>
         <div class="flex justify-end px-4 py-2 mr-5 mt-3 max-w-full hidden sm:block">
