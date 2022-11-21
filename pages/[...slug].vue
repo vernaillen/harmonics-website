@@ -3,12 +3,12 @@ const { page } = useContent()
 </script>
 
 <template>
-  <div class="container mx-auto px-4 pt-[80px] mt-[68px] animated fadeIn">
+  <div class="container mx-auto px-4 pt-[80px] mt-[68px] animate__animated animate__fadeIn">
     <div class="flex flex-wrap">
       <div class="w-full px-4 sm:px-6 lg:px-8 mb-10">
         <div class="prose m-auto">
           <div class="flex flex-wrap">
-            <h1 class="animated pulse">
+            <h1 class="animate__animated animate__pulse">
               {{ page.title }}
             </h1>
           </div>

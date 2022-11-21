@@ -67,7 +67,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <footer class="relative pt-8 pb-6 animated fadeIn animate-delay-1000">
+  <footer class="relative pt-8 pb-6">
     <div
       class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
       style="height: 80px"
@@ -134,7 +134,7 @@ onMounted(() => {
   </footer>
   <a
     href="javascript:void(0)"
-    class="back-to-top hidden items-center justify-center bg-primary text-white w-10 h-10 rounded-md fixed bottom-8 right-8 left-auto z-[999] hover:shadow-signUp hover:bg-opacity-80 shadow-md animated slideInUp"
+    class="back-to-top hidden items-center justify-center bg-primary text-white w-10 h-10 rounded-md fixed bottom-8 right-8 left-auto z-[999] hover:shadow-signUp hover:bg-opacity-80 shadow-md animate__animated animate__slideInUp"
     @click="scrollToTop()"
   >
     <span class="w-3 h-3 border-t border-l border-white transform rotate-45 mt-[6px]" />

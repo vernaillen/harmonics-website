@@ -25,7 +25,7 @@ const animateDurationClass = (index: number) => {
 </script>
 
 <template>
-  <div v-for="post, index in data" :key="index" class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 px-4 animated fadeIn" :class="animateDurationClass(index)">
+  <div v-for="post, index in data" :key="index" class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 px-4 animate__animated animate__fadeIn" :class="animateDurationClass(index)">
     <div class="relative bg-white dark:bg-dark shadow- rounded-md shadow-light-300 overflow-hidden mb-10">
       <div class="p-4 sm:p-8 md:py-8 md:px-6 lg:p-8 xl:py-8 xl:px-5 2xl:p-8">
         <NuxtLink v-if="post.thumbnail" :to="post._path">

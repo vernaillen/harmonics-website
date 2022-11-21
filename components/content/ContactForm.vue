@@ -90,7 +90,7 @@ const { t } = useI18n()
               {{ messageError }}
             </span>
           </div>
-        </div><div v-if="formError" class="text-[red] font-bold px-4 pb-4 animated pulse">
+        </div><div v-if="formError" class="text-[red] font-bold px-4 pb-4 animate__animated animate__pulse">
           {{ formError }}
         </div>
         <div class="w-full px-4">

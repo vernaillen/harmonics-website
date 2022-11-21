@@ -6,7 +6,7 @@ const { t } = useI18n()
   <div id="mc_embed_signup" class="prose">
     <form id="mc-embedded-subscribe-form" action="https://harmonics.us14.list-manage.com/subscribe/post?u=70b20f90b742c102a6d56ec9c&amp;id=7e4d7c55a7&amp;f_id=0082f7e0f0" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" rel="noopener" novalidate>
       <div id="mc_embed_signup_scroll">
-        <h1 class="animated pulse">
+        <h1 class="animate__animated animate__pulse">
           {{ t('mailinglist.title') }}
         </h1>
         <p>{{ t('mailinglist.subtitle') }}</p>
