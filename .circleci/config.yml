@@ -84,8 +84,6 @@ workflows:
           context: 
             - Slack
       - e2e:
-          requires:
-            - test
           filters:
             branches:
               only: master
