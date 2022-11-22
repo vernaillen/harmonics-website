@@ -24,9 +24,9 @@ export default defineNuxtConfig({
   },
   content: {
     documentDriven: true,
-  },
-  generate: {
-    routes: ['/', '/about'], // it seems the site is only crawled and fulle generated when one extra route is added
+    generate: {
+      routes: ['/', '/about', '/contact', '/thanks'],
+    },
   },
   i18n: {
     strategy: 'prefix_and_default',
