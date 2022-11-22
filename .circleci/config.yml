@@ -37,6 +37,7 @@ jobs:
             - cypress
             - cypress.config.ts
             - nuxt.config.ts
+            - .nuxt
             - tsconfig.json
             - src
             - test
