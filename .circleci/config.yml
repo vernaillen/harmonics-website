@@ -27,7 +27,7 @@ jobs:
             - ./node_modules
       - run:
           name: Build
-          command: pnpm run build
+          command: pnpm run generate
       - persist_to_workspace:
           root: .
           paths:
@@ -36,6 +36,8 @@ jobs:
             - node_modules
             - cypress
             - cypress.config.ts
+            - nuxt.config.ts
+            - .nuxt
             - tsconfig.json
             - src
             - test
@@ -50,9 +52,6 @@ jobs:
     steps:
       - attach_workspace:
           at: /tmp/workspace
-      - run:
-          name: Lint
-          command: pnpm run lint
       - run:
           name: Test
           command: pnpm run coverage

@@ -7,7 +7,7 @@ describe('test homepage language redirect', () => {
 
   it('test automatic language redirect to Dutch', () => {
     cy.location().should((location) => {
-      expect(location.pathname).to.eq('/nl/')
+      expect(location.pathname).to.eq('/')
     })
     cy.get('main h4').should('have.length', 1)
     cy.get('main h4').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
@@ -17,7 +17,7 @@ describe('test homepage language redirect', () => {
     cy.get('header select').should('have.length', 1)
     cy.get('header select').first().select('en')
     cy.location().should((location) => {
-      expect(location.pathname).to.eq('/en/')
+      expect(location.pathname).to.eq('/en')
     })
     cy.get('main h4').should('have.length', 1)
     cy.get('main h4').first().should('have.text', 'Healing power of Sound, Music and Dance')
