@@ -32,7 +32,7 @@ const submitForm = handleSubmit((values) => {
     data: values,
   })
     .then(() => {
-      router.push(localePath('thanks'))
+      router.push(localePath('/thanks'))
     })
     .catch((err) => {
       formError.value = `error submitting form: ${err}`
