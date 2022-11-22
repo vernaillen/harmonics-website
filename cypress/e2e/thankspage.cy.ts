@@ -2,7 +2,7 @@
 
 describe('test thanks page', () => {
   beforeEach(() => {
-    cy.visit('/thanks')
+    cy.visit('/thanks/')
   })
 
   it('Dutch page has correct content', () => {
@@ -17,7 +17,7 @@ describe('test thanks page', () => {
     cy.get('header select').should('have.length', 1)
     cy.get('header select').first().select('en')
     cy.location().should((location) => {
-      expect(location.pathname).to.eq('/en/thanks')
+      expect(location.pathname).to.eq('/en/thanks/')
     })
 
     /* cy.get('main h1').should('have.length', 1)
