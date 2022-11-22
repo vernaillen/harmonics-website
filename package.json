@@ -6,14 +6,15 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt generate && nuxt preview",
+    "preview": "nuxt preview",
+    "serve": "nuxt generate && serve dist",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "cy:install": "cypress install",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy:dev": "start-server-and-test dev http://localhost:3000 'cypress open --config baseUrl=http://localhost:3000'",
-    "cy:local": "start-server-and-test preview http://localhost:3000 'cypress run --config baseUrl=http://localhost:3000'",
+    "cy:local": "start-server-and-test serve http://localhost:3000 'cypress run --config baseUrl=http://localhost:3000'",
     "fulltest": "rm -rf node_modules && pnpm i && pnpm run coverage && pnpm run cy:local"
   },
   "dependencies": {
