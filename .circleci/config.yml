@@ -52,9 +52,6 @@ jobs:
       - attach_workspace:
           at: /tmp/workspace
       - run:
-          name: Lint
-          command: pnpm run lint
-      - run:
           name: Test
           command: pnpm run coverage
       - sonarcloud/scan
@@ -83,7 +80,15 @@ workflows:
       - build:
           context: 
             - Slack
+      - test:
+          requires:
+            - build
+          context: 
+            - SonarCloud
+            - Slack
       - e2e:
+          requires:
+            - test
           filters:
             branches:
               only: master

@@ -7,6 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt generate && nuxt preview",
+    "test": "vitest",
     "cy:install": "cypress install",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
@@ -26,14 +27,17 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.31.0",
     "@nuxt/content": "^2.2.2",
+    "@nuxt/test-utils-edge": "3.0.1-rc.0-27817270.4f2bfbe",
     "@nuxtjs/google-fonts": "^3.0.0-1",
     "@nuxtjs/i18n": "8.0.0-beta.4",
     "@nuxtjs/tailwindcss": "^6.1.3",
     "cypress": "^11.1.0",
     "dayjs": "^1.11.6",
+    "jsdom": "^20.0.3",
     "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.7",
-    "start-server-and-test": "^1.14.0"
+    "start-server-and-test": "^1.14.0",
+    "vitest": "^0.25.2"
   },
   "eslintConfig": {
     "extends": "@antfu"
