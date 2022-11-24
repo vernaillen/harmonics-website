@@ -17,6 +17,7 @@ specifiers:
   jsdom: ^20.0.3
   nuxt: ^3.0.0
   nuxt-icon: ^0.1.7
+  nuxt-lazy-hydrate: ^0.1.0
   start-server-and-test: ^1.14.0
   vee-validate: ^4.7.3
   vitest: ^0.25.2
@@ -28,6 +29,7 @@ dependencies:
   '@pinia/nuxt': 0.4.5_x2lopl6dvitdigtxz72gjjdrx4
   '@vueuse/nuxt': 9.5.0_xsv3vwo4hvye53m3n4ybcmydue
   animate.css: 4.1.1
+  nuxt-lazy-hydrate: 0.1.0_rollup@2.79.1+vue@3.2.45
   vee-validate: 4.7.3_vue@3.2.45
   vue-easy-lightbox: 1.10.0_vue@3.2.45
   yup: 0.32.11
@@ -6551,6 +6553,17 @@ packages:
       - vue
     dev: true
 
+  /nuxt-lazy-hydrate/0.1.0_rollup@2.79.1+vue@3.2.45:
+    resolution: {integrity: sha512-GLU4fqkdAN9JmQQuOaRiMTBZ/cR4Psz54lCMXpOsyMpeGC9frgNhWJ8kupyygdH4IVOB4LNsFQEuyDMCTMfdRA==}
+    dependencies:
+      '@nuxt/kit': 3.0.0_rollup@2.79.1
+      vue3-lazy-hydration: 1.2.1_vue@3.2.45
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+      - vue
+    dev: false
+
   /nuxt/3.0.0_fubavop2p4hgdt4pm327riwxc4:
     resolution: {integrity: sha512-RNlD78uv04ZiXWmlx9f1tnJfrqsYAWHU+4gbgOTQpIBmQzHWPWiox+fm/1m93iKfEd5sJi9TJUoXX5yBObVZYw==}
     engines: {node: ^14.16.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
@@ -9310,6 +9323,15 @@ packages:
       '@vue/runtime-dom': 3.2.45
       '@vue/server-renderer': 3.2.45_vue@3.2.45
       '@vue/shared': 3.2.45
+
+  /vue3-lazy-hydration/1.2.1_vue@3.2.45:
+    resolution: {integrity: sha512-0KEU+t1ZcOFomf2xhpKPMU2XBdZDVyVjvkxcXAJRpZ818Om4MMhKxbrmIK6hZ+NZOyoRAgMHl/N1zFZJuQoSJA==}
+    engines: {node: '>=14.6'}
+    peerDependencies:
+      vue: '>=3.0.0'
+    dependencies:
+      vue: 3.2.45
+    dev: false
 
   /w3c-xmlserializer/4.0.0:
     resolution: {integrity: sha512-d+BFHzbiCx6zGfz0HyQ6Rg69w9k19nviJspaj4yNscGjrHu94sVP+aRm75yEbCh+r2/yR+7q6hux9LVtbuTGBw==}

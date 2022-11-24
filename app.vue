@@ -1,13 +1,6 @@
-<script>
-export default {
-  metaInfo: {
-    title: 'My Example App',
-    titleTemplate: '%s - Yay!',
-    htmlAttrs: {
-      lang: 'en',
-      amp: true,
-    },
-  },
+<script setup lang="ts">
+const onHydrated = () => {
+  console.log('content hydrated !')
 }
 </script>
 
@@ -17,7 +10,9 @@ export default {
     <main class="flex-grow">
       <NuxtPage />
     </main>
-    <footer-component />
-    <easy-lightbox />
+    <LazyHydrate :on-interaction="['click', 'touchstart']" @hydrated="onHydrated">
+      <footer-component />
+      <easy-lightbox />
+    </LazyHydrate>
   </div>
 </template>
