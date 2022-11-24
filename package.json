@@ -20,7 +20,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@pinia/nuxt": "^0.4.5",
-    "@vueuse/nuxt": "^9.5.0",
+    "@vueuse/nuxt": "^9.6.0",
     "animate.css": "^4.1.1",
     "nuxt-lazy-hydrate": "^0.1.0",
     "vee-validate": "^4.7.3",
@@ -30,18 +30,18 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.31.0",
     "@nuxt/content": "^2.2.2",
-    "@nuxt/test-utils-edge": "3.0.1-rc.0-27817270.4f2bfbe",
+    "@nuxt/test-utils-edge": "3.0.1-rc.0-27821553.ab125bd",
     "@nuxtjs/google-fonts": "^3.0.0-1",
     "@nuxtjs/i18n": "8.0.0-beta.4",
     "@nuxtjs/tailwindcss": "^6.1.3",
-    "@vitest/coverage-c8": "^0.25.2",
-    "cypress": "^11.1.0",
+    "@vitest/coverage-c8": "^0.25.3",
+    "cypress": "^11.2.0",
     "dayjs": "^1.11.6",
     "jsdom": "^20.0.3",
     "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.7",
     "start-server-and-test": "^1.14.0",
-    "vitest": "^0.25.2"
+    "vitest": "^0.25.3"
   },
   "eslintConfig": {
     "extends": "@antfu"
