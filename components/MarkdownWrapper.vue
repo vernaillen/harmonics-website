@@ -93,7 +93,7 @@ useHead({
               {{ frontmatter.subtitle }}
             </em>
           </div>
-          <img v-if="frontmatter.image" :src="frontmatter.image" class="rounded-md" alt="article image">
+          <nuxt-img v-if="frontmatter.image" loading="lazy" :src="frontmatter.image" class="rounded-md" alt="article image" />
           <article ref="content">
             <slot />
           </article>

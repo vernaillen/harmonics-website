@@ -39,11 +39,6 @@ const linkClass = (path: string) => {
             :to="localePath('/')"
             class="text-3xl text-primary font-medium leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
           >
-            <img
-              v-if="false"
-              alt="Harmonics logo" src="../assets/wave_sound-02-small.jpg"
-              class="inline-flex rounded-full w-12 h-6 md:w-20 md:h-10"
-            >
             Harmonics
           </NuxtLink>
         </div>

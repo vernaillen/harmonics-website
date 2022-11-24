@@ -18,7 +18,7 @@ const nrOfPosts = 3
     <section id="title" class="lg:container mx-auto px-6">
       <div class="flex flex-wrap lg:h-screen items-center">
         <div class="w-full sm:w-10/12 lg:w-6/12 ml-auto mr-auto mt-[150px] lg:mr-0 lg:px-8 lg:mt-0">
-          <img alt="Gongs" class="max-w-full rounded-lg shadow-2xl" src="@/assets/gongs.jpg">
+          <nuxt-img loading="lazy" alt="Gongs" class="max-w-full rounded-lg shadow-2xl" src="@/assets/gongs.jpg" />
         </div>
         <div class="w-full sm:w-10/12 lg:w-6/12 ml-auto mr-auto mt-[50px] lg:ml-0 lg:px-8 lg:mt-0">
           <div>
