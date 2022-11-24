@@ -41,7 +41,4 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
   },
-  nitro: {
-    preset: 'netlify-edge',
-  },
 })
