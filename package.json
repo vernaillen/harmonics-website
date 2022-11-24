@@ -22,6 +22,7 @@
     "@pinia/nuxt": "^0.4.5",
     "@vueuse/nuxt": "^9.5.0",
     "animate.css": "^4.1.1",
+    "nuxt-lazy-hydrate": "^0.1.0",
     "vee-validate": "^4.7.3",
     "vue-easy-lightbox": "^1.10.0",
     "yup": "^0.32.11"
