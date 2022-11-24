@@ -29,7 +29,7 @@ const animateDurationClass = (index: number) => {
     <div class="relative bg-white dark:bg-dark shadow- rounded-md shadow-light-300 overflow-hidden mb-10">
       <div class="p-4 sm:p-8 md:py-8 md:px-6 lg:p-8 xl:py-8 xl:px-5 2xl:p-8">
         <NuxtLink v-if="post.thumbnail" :to="post._path">
-          <nuxt-img loading="lazy" :src="post.thumbnail" class="rounded-md mb-4" :alt="`thumbnail ${post.title}`" />
+          <img :src="post.thumbnail" class="rounded-md mb-4" :alt="`thumbnail ${post.title}`">
         </NuxtLink>
         <NuxtLink v-if="post.thumb_video_webm || post.thumb_video_mp4" :to="post._path">
           <client-only>

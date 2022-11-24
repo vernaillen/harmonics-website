@@ -13,7 +13,7 @@ function centeredPopup(u, n, w, h, r) {
     href="https://shop.ikbenaanwezig.nl/tickets/event/release-your-inner-dancer-20augustus"
     target="_blank" rel="noopener"
     @click="centeredPopup(href, 'Ik Ben Aanwezig Tickets', '500', '750', 'yes')"
-  >
-    <nuxt-img loading="lazy" src="https://shop.ikbenaanwezig.nl/media/images/tickets_button.png" alt="Tickets" />
-  </a>
+  ><img
+    src="https://shop.ikbenaanwezig.nl/media/images/tickets_button.png" alt="Tickets"
+  ></a>
 </template>

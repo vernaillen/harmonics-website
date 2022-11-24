@@ -1,6 +1,8 @@
 <template>
   <div class="flex flex-col min-h-screen">
-    <navbar-component />
+    <LazyHydrate when-idle>
+      <navbar-component />
+    </LazyHydrate>
     <main class="flex-grow">
       <NuxtPage />
     </main>
