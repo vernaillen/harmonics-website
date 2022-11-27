@@ -26,11 +26,6 @@ header a {
     font-weight: 400;
 }
 
-#landingCoverImg {
-    background-image: url('@/assets/gongs.jpg');
-}
-
-
 .navbarTogglerActive > span:nth-child(1) {
   @apply transform rotate-45 top-[7px];
 }
