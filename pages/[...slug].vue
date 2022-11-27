@@ -22,7 +22,7 @@ const { page } = useContent()
               {{ page.subtitle }}
             </em>
           </div>
-          <img v-if="page.image" :src="page.image" class="rounded-md" alt="article image">
+          <nuxt-img v-if="page.image" loading="lazy" :src="page.image" class="rounded-md" alt="article image" />
           <article ref="content">
             <ContentDoc />
           </article>
