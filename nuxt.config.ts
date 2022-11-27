@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
+    '@nuxt/image-edge',
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
@@ -16,6 +17,12 @@ export default defineNuxtConfig({
     '@/assets/css/mailchimp-embedcode-classic-071822.css',
     'animate.css/animate.min.css',
   ],
+  image: {
+    provider: 'twicpics',
+    twicpics: {
+      baseURL: 'https://vernaillen.twic.pics/harmonics',
+    },
+  },
   googleFonts: {
     download: true,
     display: 'swap',
@@ -27,7 +34,7 @@ export default defineNuxtConfig({
     documentDriven: true,
   },
   generate: {
-    routes: ['/', '/about', '/contact', '/thanks'],
+    routes: ['/', '/about', '/contact', '/thanks', '/nuxtimage'],
   },
   i18n: {
     strategy: 'prefix_and_default',

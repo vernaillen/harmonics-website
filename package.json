@@ -24,12 +24,13 @@
     "animate.css": "^4.1.1",
     "nuxt-lazy-hydrate": "^0.1.0",
     "vee-validate": "^4.7.3",
-    "vue-easy-lightbox": "^1.10.0",
+    "vue-easy-lightbox": "^1.11.0",
     "yup": "^0.32.11"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.31.0",
     "@nuxt/content": "^2.2.2",
+    "@nuxt/image-edge": "1.0.0-27821548.ab054e4",
     "@nuxt/test-utils-edge": "3.0.1-rc.0-27821553.ab125bd",
     "@nuxtjs/google-fonts": "^3.0.0-1",
     "@nuxtjs/i18n": "8.0.0-beta.4",
