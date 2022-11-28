@@ -1,15 +1,5 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const title = `${t('website.title')}`
-useHead({
-  title,
-  meta: [
-    {
-      property: 'og:title',
-      content: title,
-    },
-  ],
-})
 const nrOfPosts = 3
 </script>
 

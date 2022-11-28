@@ -53,24 +53,6 @@ onMounted(() => {
   navigate()
   setTimeout(navigate, 500)
 })
-const title = `${props.frontmatter.title} | ${t('website.title')}`
-useHead({
-  title,
-  meta: [
-    {
-      property: 'og:title',
-      content: title,
-    },
-    {
-      property: 'og:url',
-      content: t('website.hostname') + route.fullPath,
-    },
-    {
-      property: 'og:image',
-      content: t('website.hostname') + props.frontmatter.thumbnail,
-    },
-  ],
-})
 </script>
 
 <template>

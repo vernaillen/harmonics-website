@@ -1,5 +1,18 @@
 <script setup lang="ts">
 const { page } = useContent()
+
+const { t } = useI18n()
+
+const title = `${page.value.title} | ${t('website.title')}`
+useHead({
+  title,
+  meta: [
+    {
+      property: 'og:title',
+      content: title,
+    },
+  ],
+})
 </script>
 
 <template>
