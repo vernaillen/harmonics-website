@@ -28,10 +28,10 @@ const animateDurationClass = (index: number) => {
   <div v-for="post, index in data" :key="index" class="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 px-4 animate__animated animate__fadeIn" :class="animateDurationClass(index)">
     <div class="relative bg-white dark:bg-dark shadow- rounded-md shadow-light-300 overflow-hidden mb-10">
       <div class="p-4 sm:p-8 md:py-8 md:px-6 lg:p-8 xl:py-8 xl:px-5 2xl:p-8">
-        <NuxtLink v-if="post.thumbnail" :to="post._path">
+        <NuxtLink v-if="post.thumbnail" :to="post._path" :aria-label="post.title">
           <nuxt-img loading="lazy" :src="post.thumbnail" class="rounded-md mb-4" :alt="`thumbnail ${post.title}`" />
         </NuxtLink>
-        <NuxtLink v-if="post.thumb_video_webm || post.thumb_video_mp4" :to="post._path">
+        <NuxtLink v-if="post.thumb_video_webm || post.thumb_video_mp4" :to="post._path" :aria-label="post.title">
           <client-only>
             <video autoplay width="320" class="rounded-md mb-4">
               <source v-if="post.thumb_video_webm" :src="post.thumb_video_webm" type="video/webm">
@@ -42,6 +42,7 @@ const animateDurationClass = (index: number) => {
         </NuxtLink>
         <h3>
           <NuxtLink
+            :aria-label="post.title"
             :to="post._path"
             class="font-bold text-primary dark:text-white text-xl sm:text-2xl block mb-4 hover:bg-opacity-80"
           >
@@ -54,7 +55,7 @@ const animateDurationClass = (index: number) => {
         >
           {{ post.desc }}
           <br>
-          <NuxtLink :to="post._path">
+          <NuxtLink :to="post._path" :aria-label="post.title">
             <button
               class="text-base font-medium text-white bg-primary mt-5 py-1 px-3 hover:bg-opacity-80 hover:shadow-signUp rounded-md transition duration-300 ease-in-outÒ"
             >

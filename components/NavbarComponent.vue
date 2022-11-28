@@ -36,6 +36,7 @@ const linkClass = (path: string) => {
       <div class="flex justify-between relative">
         <div class="px-2 md:px-4 mr-5 mt-2 max-w-full">
           <NuxtLink
+            aria-label="Harmonics home"
             :to="localePath('/')"
             class="text-3xl text-primary font-medium leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
           >
@@ -47,7 +48,8 @@ const linkClass = (path: string) => {
             <button
               id="navbarToggler"
               class="block absolute right-0 top-8 cursor-pointer translate-y-[-50%] lg:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg"
-              :class="navbarTogglerClass" @click="toggleNavbar"
+              :class="navbarTogglerClass" aria-label="Mobile Menu"
+              @click="toggleNavbar"
             >
               <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white transition" />
               <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white transition" />
@@ -62,6 +64,7 @@ const linkClass = (path: string) => {
               <ul class="block lg:flex">
                 <li class="relative group">
                   <NuxtLink
+                    :aria-label="t('menu.home')"
                     :to="localePath('/')"
                     class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 active:text-primary py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/')" @click="navbar.show = false"
@@ -71,6 +74,7 @@ const linkClass = (path: string) => {
                 </li>
                 <li class="relative group">
                   <NuxtLink
+                    :aria-label="t('menu.blog')"
                     :to="localePath('/blog')"
                     class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/blog')" @click="navbar.show = false"
@@ -80,6 +84,7 @@ const linkClass = (path: string) => {
                 </li>
                 <li class="relative group">
                   <NuxtLink
+                    :aria-label="t('menu.about')"
                     :to="localePath('/about')"
                     class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/about')" @click="navbar.show = false"
@@ -89,6 +94,7 @@ const linkClass = (path: string) => {
                 </li>
                 <li class="relative group">
                   <NuxtLink
+                    :aria-label="t('menu.contact')"
                     :to="localePath('/contact')"
                     class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 py-2 lg:pt-4 lg:pb-6 lg:inline-flex px-7 lg:px-1 flex mr-7"
                     :class="linkClass('/contact')" @click="navbar.show = false"

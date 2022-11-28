@@ -93,24 +93,28 @@ onMounted(() => {
             <div class="w-full px-4 ml-auto">
               <span class="block text-primary text-md font-semibold my-5">Menu</span>
               <NuxtLink
+                :aria-label="t('menu.home')"
                 :to="localePath('/')"
                 class=" text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
               >
                 {{ t('menu.home') }}
               </NuxtLink>
               <NuxtLink
+                :aria-label="t('menu.blog')"
                 :to="localePath('/blog')"
                 class="text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
               >
                 {{ t('menu.blog') }}
               </NuxtLink>
               <NuxtLink
+                :aria-label="t('menu.about')"
                 :to="localePath('/about')"
                 class="text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
               >
                 {{ t('menu.about') }}
               </NuxtLink>
               <NuxtLink
+                :aria-label="t('menu.contact')"
                 :to="localePath('/contact')"
                 class="text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
               >
