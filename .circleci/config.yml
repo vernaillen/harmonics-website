@@ -2,7 +2,6 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.3
-  sonarcloud: sonarsource/sonarcloud@1.1.1
   slack: circleci/slack@4.10.1
 
 executors:
@@ -43,7 +42,6 @@ jobs:
             - test
             - dist
             - .gitignore
-            - sonar-project.properties
       - slack/notify:
           channel: circleci
           event: fail
@@ -55,7 +53,6 @@ jobs:
       - run:
           name: Test
           command: pnpm run coverage
-      - sonarcloud/scan
       - slack/notify:
           channel: circleci
           event: fail
@@ -85,7 +82,6 @@ workflows:
           requires:
             - build
           context: 
-            - SonarCloud
             - Slack
       - e2e:
           requires:
