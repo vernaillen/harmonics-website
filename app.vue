@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 useHead({
+  title: t('website.title'),
   meta: [
     { name: 'description', content: t('website.description') },
     {

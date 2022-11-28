@@ -41,6 +41,7 @@
     "jsdom": "^20.0.3",
     "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.7",
+    "sitemap": "^7.1.1",
     "start-server-and-test": "^1.14.0",
     "vitest": "^0.25.3"
   },
