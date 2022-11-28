@@ -35,7 +35,12 @@ useHead({
               {{ page.subtitle }}
             </em>
           </div>
-          <nuxt-img v-if="page.image" loading="lazy" :src="page.image" class="rounded-md" alt="article image" />
+          <nuxt-img
+            v-if="page.image" loading="lazy"
+            sizes="xl:1600px"
+            height="400px"
+            :src="page.image" class="rounded-md" alt="article image"
+          />
           <article ref="content">
             <ContentDoc />
           </article>
