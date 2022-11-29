@@ -30,7 +30,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.31.0",
     "@nuxt/content": "^2.2.2",
-    "@nuxt/image-edge": "1.0.0-27809804.194d2d6",
+    "@nuxt/image-edge": "1.0.0-27827328.bc9ddc0",
     "@nuxt/test-utils-edge": "3.0.1-rc.0-27821553.ab125bd",
     "@nuxtjs/google-fonts": "^3.0.0-1",
     "@nuxtjs/i18n": "8.0.0-beta.6",
