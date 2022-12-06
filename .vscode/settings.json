@@ -2,5 +2,11 @@
   "i18n-ally.localesPaths": [
     "locales"
   ],
-  "i18n-ally.keystyle": "nested"
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "en-US",
+  "vite.autoStart": false,
+  "vite.open": true,
+  "vite.port": 3000,
+  "vite.devCommand": "pnpm run dev",
+  "vite.buildCommand": "pnpm run build"
 }
