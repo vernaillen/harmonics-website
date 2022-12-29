@@ -34,7 +34,7 @@ const linkClass = (path: string) => {
   >
     <div class="container">
       <div class="flex justify-between relative">
-        <div class="px-2 md:px-4 mr-5 mt-2 max-w-full">
+        <div class="px-2 md:px-4 mr-0 sm:mr-5 mt-2 max-w-full">
           <NuxtLink
             aria-label="Harmonics home"
             :to="localePath('/')"
@@ -79,7 +79,7 @@ const linkClass = (path: string) => {
         <div class="px-4 py-2 mt-2 max-w-full hidden sm:block">
           <social-icons />
         </div>
-        <div class="justify-end px-3 py-2 mt-3 mr-14 xl:mr-0 max-w-full block">
+        <div class="justify-end px-0 sm:px-3 py-2 mt-3 mr-16 xl:mr-0 max-w-full block">
           <LanguageSwitcher />
         </div>
       </div>
