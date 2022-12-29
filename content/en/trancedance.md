@@ -9,10 +9,6 @@ While dancing we come out of our head, into our body and make an inner journey.<
 
 You can start the dance with a specific intention, an insight you are willing to receive, something to process, or simply to celebrate life.
 
-> A trance dance is a powerful experience, that invites you to return home, deep within yourself. In many contemporary forms of dance the emphasis lies on recreational and social aspects, such as watching and being watched.<br>Trance dancing is usually not intended to communicate with the outside world, but takes place within the context of spirituality, personal growth and inner transformation. A contemporary trance dance is a powerful experience that invites you to drop your masks of limited conditioning and separation and come home deep within yourself.
-
-Source: [Aernoudt Knecht @ trance-dance.net](https://trance-dance.net/what-is-trance-dance/){target="blank"}
-
 ::IframeComponent
 ---
 src: https://www.youtube.com/embed/E_LeudWIEJU
@@ -20,6 +16,10 @@ title: Trance Dance
 class: proseIframeSmall
 ---
 ::
+
+> A trance dance is a powerful experience, that invites you to return home, deep within yourself. In many contemporary forms of dance the emphasis lies on recreational and social aspects, such as watching and being watched.<br>Trance dancing is usually not intended to communicate with the outside world, but takes place within the context of spirituality, personal growth and inner transformation. A contemporary trance dance is a powerful experience that invites you to drop your masks of limited conditioning and separation and come home deep within yourself.
+
+Source: [Aernoudt Knecht @ trance-dance.net](https://trance-dance.net/what-is-trance-dance/){target="blank"}
 
 ### Concept
 

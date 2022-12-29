@@ -9,16 +9,16 @@ Al dansend komen we uit ons hoofd, in ons lichaam en maken we een innerlijke rei
 
 Je kan de dans aanvatten met een specifieke intentie, een inzicht dat je bereid bent te ontvangen, iets om te verwerken, of gewoon om het leven te vieren.
 
-> Een trancedans is een diepgaande ervaring die je uitnodigt om terug te keren naar jezelf. In veel hedendaagse dansvormen ligt de nadruk op de recreatieve en sociale aspecten, zoals het kijken en bekeken worden.<br>Trancedansen zijn niet bedoeld om te communiceren met de buitenwereld, maar vinden plaats binnen de context van spiritualiteit, persoonlijke groei en transformatie. Muziek, dans en spiritualiteit zijn onlosmakelijk met elkaar verbonden. <br>Bewegen op ritmische en melodieuze klanken is niet alleen leuk, maar muziek en dans kunnen ons ook in geestvervoering brengen en bijdragen aan onze gezondheid.
-
-Bron: [Wat is Trancedans? door Aernoudt Knecht](http://www.trancedans.net/trancedans-en-muziek/index.html){target="blank"}
-
 ::IframeComponent
 ---
 src: https://www.youtube.com/embed/E_LeudWIEJU
 class: proseIframeSmall
 ---
 ::
+
+> Een trancedans is een diepgaande ervaring die je uitnodigt om terug te keren naar jezelf. In veel hedendaagse dansvormen ligt de nadruk op de recreatieve en sociale aspecten, zoals het kijken en bekeken worden.<br>Trancedansen zijn niet bedoeld om te communiceren met de buitenwereld, maar vinden plaats binnen de context van spiritualiteit, persoonlijke groei en transformatie. Muziek, dans en spiritualiteit zijn onlosmakelijk met elkaar verbonden. <br>Bewegen op ritmische en melodieuze klanken is niet alleen leuk, maar muziek en dans kunnen ons ook in geestvervoering brengen en bijdragen aan onze gezondheid.
+
+Bron: [Wat is Trancedans? door Aernoudt Knecht](http://www.trancedans.net/trancedans-en-muziek/index.html){target="blank"}
 
 ### Concept
 
