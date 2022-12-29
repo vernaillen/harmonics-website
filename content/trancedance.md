@@ -23,7 +23,7 @@ Het combineren van trancedans met ademwerk, drumcirkel of sound healing zorgt vo
 De muziek voor de trancedans wordt zorgvuldig uitgekozen door [Wouter](/about). Daarbij wordt meestal gewerkt rond één bepaald thema, en wordt veel aandacht besteed aan het creëren van een diepgaande, meeslepende flow.
 Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.com/soundhealing-training){target='_blank'}, en bescheiden dj-skills uit een vorig leven, komen daarbij goed van pas.
 
-### Voorlopige data 2023
+### Data 2023
 
  * Maandag 23 januari 2023 om 19u
  * Maandag 20 februari 2023 om 19u

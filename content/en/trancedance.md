@@ -23,7 +23,7 @@ Combining Trance Dance with breathwork, a drum circle or sound healing provides 
 The music for the trance dance is carefully selected by [Wouter](/about), usually around one specific theme. A lot of attention is put into creating a profound, compelling flow.
 A recent [sound healing training](https://www.akasharetreatcenter.com/soundhealing-training){target='_blank'}, and modest DJ skills from a past life, come in handy.
 
-### Tentative dates 2023
+### Dates 2023
 
   * Monday 23 January 2023 at 7pm
   * Monday 20 February 2023 at 7pm
