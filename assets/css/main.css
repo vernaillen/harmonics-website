@@ -58,6 +58,18 @@ header a {
   }
 }
 
+.prose iframe.proseIframeSmall {
+  position: relative; 
+  width: 100%; 
+  height: 100vh;
+  max-height: 260px;
+}
+@media only screen and (min-width: 960px) {
+  iframe.proseIframeSmall {
+    max-height: 250px !important;
+  }
+}
+
 .text-end {
   text-align: end;
 }

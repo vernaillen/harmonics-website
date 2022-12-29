@@ -2,8 +2,6 @@
 title: Trance Dance
 ---
 
-![Photo by cottonbro studio](/images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg){class="floatRight" width="280"}
-
 ### Blindfolded dance meditation
 
 By dancing blindfolded and no longer letting in visual stimuli in, you sink into your body more easily and other sensations become stronger.<br>
@@ -15,6 +13,15 @@ You can start the dance with a specific intention, an insight you are willing to
 
 Source: [Aernoudt Knecht @ trance-dance.net](https://trance-dance.net/what-is-trance-dance/){target="blank"}
 
+::IframeComponent
+---
+src: https://www.youtube.com/watch?v=E_LeudWIEJU
+class: proseIframeSmall
+---
+::
+
+![Photo by cottonbro studio](/images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg){class="floatRight" width="280"}
+
 ### Concept
 
 In the winter and spring of 2023 we plan monthly Trance Dance sessions at [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/){target='blank'}, each time in co-creation with a different facilitator.
@@ -25,7 +32,7 @@ A recent [sound healing training](https://www.akasharetreatcenter.com/soundheali
 
 ### Dates
 
-More details will follow very soon. You can [subscribe to the newsletter](/newsletter) to stay informed.
+More details will follow very soon. You can already [subscribe to the newsletter](/newsletter) to stay informed.
 
 Every last Monday of the month:
   * Monday 30 January 2023, 7pm
@@ -33,7 +40,7 @@ Every last Monday of the month:
   * Monday 20 March 2023, 7pm
   * Monday 17 April 2023, 7pm
 
-Address:<br>
+Location:<br>
 [vzw Dwarsligger](https://www.dwarsligger33.com/){target='blank'}<br>
 Gontrode Heirweg 141<br>
 Melle, Belgium<br>

@@ -67,7 +67,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <footer class="relative pt-8 pb-6">
+  <footer class="relative pt-4 pb-4">
     <div
       class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
       style="height: 80px"

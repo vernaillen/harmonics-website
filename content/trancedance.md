@@ -2,11 +2,9 @@
 title: Trancedans
 ---
 
-![Photo by cottonbro studio](/images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg){class="floatRight" width="280"}
-
 ### Geblinddoekte dans meditatie
 
-Door geblinddoekt te dansen en geen visuele prikkels meer binnen te laten, zak je gemakkelijker in je lichaam en worden je gewaarwordingen sterker.<br>
+Door geblinddoekt te dansen en geen visuele prikkels meer binnen te laten, zak je gemakkelijker in je lichaam en worden je andere gewaarwordingen sterker.<br>
 Al dansend komen we uit ons hoofd, in ons lichaam en maken we een innerlijke reis.<br>
 
 Je kan de dans aanvatten met een specifieke intentie, een inzicht dat je bereid bent te ontvangen, iets om te verwerken, of gewoon om het leven te vieren.
@@ -14,6 +12,15 @@ Je kan de dans aanvatten met een specifieke intentie, een inzicht dat je bereid 
 > Een trancedans is een diepgaande ervaring die je uitnodigt om terug te keren naar jezelf. In veel hedendaagse dansvormen ligt de nadruk op de recreatieve en sociale aspecten, zoals het kijken en bekeken worden.<br>Trancedansen zijn niet bedoeld om te communiceren met de buitenwereld, maar vinden plaats binnen de context van spiritualiteit, persoonlijke groei en transformatie. Muziek, dans en spiritualiteit zijn onlosmakelijk met elkaar verbonden. <br>Bewegen op ritmische en melodieuze klanken is niet alleen leuk, maar muziek en dans kunnen ons ook in geestvervoering brengen en bijdragen aan onze gezondheid.
 
 Bron: [Wat is Trancedans? door Aernoudt Knecht](http://www.trancedans.net/trancedans-en-muziek/index.html){target="blank"}
+
+::IframeComponent
+---
+src: https://www.youtube.com/watch?v=E_LeudWIEJU
+class: proseIframeSmall
+---
+::
+
+![Photo by cottonbro studio](/images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg){class="floatRight" width="280"}
 
 ### Concept
 
@@ -25,7 +32,7 @@ Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.co
 
 ### Data voorjaar 2023
 
-Meer details volgen heel binnenkort. Je kan [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven.
+Meer details volgen heel binnenkort. Je kan alvast [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven.
 
 Elke laatste maandag van de maand:
  * Maandag 30 januari 2023, 19u
@@ -33,7 +40,7 @@ Elke laatste maandag van de maand:
  * Maandag 20 maart 2023, 19u
  * Maandag 17 april 2023, 19u
 
-Adres:<br>
+Locatie:<br>
 [vzw Dwarsligger](https://www.dwarsligger33.com/){target='blank'}<br>
 Gontrode Heirweg 141<br>
 Melle, België<br>
