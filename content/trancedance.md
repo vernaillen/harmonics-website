@@ -25,12 +25,14 @@ Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.co
 
 ### Data 2023
 
- * Maandag 23 januari 2023 om 19u
- * Maandag 20 februari 2023 om 19u
- * Maandag 20 maart 2023 om 19u
- * Maandag 17 april 2023 om 19u
+ * Maandag 23 januari 2023 om 18u30 
+ * Maandag 20 februari 2023 om 18u30
+ * Maandag 20 maart 2023 om 18u30
+ * Maandag 17 april 2023 om 18u30
 
-Meer details volgen heel binnenkort. Je kan alvast [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven.
+Reserveer jouw plekje via [de agenda van Dwarsligger](https://www.dwarsligger33.com/agenda){target=blank}
+
+Je kan je ook [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven ivm nieuwe data.
 
 ### Locatie
 [vzw Dwarsligger](https://www.dwarsligger33.com/){target='blank'}<br>

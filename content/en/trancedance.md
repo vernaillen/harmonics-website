@@ -25,10 +25,12 @@ A recent [sound healing training](https://www.akasharetreatcenter.com/soundheali
 
 ### Dates 2023
 
-  * Monday 23 January 2023 at 7pm
-  * Monday 20 February 2023 at 7pm
-  * Monday 20 March 2023 at 7pm
-  * Monday 17 April 2023 at 7pm
+  * Monday 23 January 2023 at 6:30pm
+  * Monday 20 February 2023 at 6:30pm
+  * Monday 20 March 2023 at 6:30pm
+  * Monday 17 April 2023 at 6:30pm
+
+Reserve your spot on [the event page of Dwarsligger](https://en.dwarsligger33.com/agenda){target=blank}
 
 More details will follow very soon. You can already [subscribe to the newsletter](/newsletter) to stay informed.
 
