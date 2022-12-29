@@ -15,14 +15,14 @@ Bron: [Wat is Trancedans? door Aernoudt Knecht](http://www.trancedans.net/trance
 
 ::IframeComponent
 ---
-src: https://www.youtube.com/watch?v=E_LeudWIEJU
+src: https://www.youtube.com/embed/E_LeudWIEJU
 class: proseIframeSmall
 ---
 ::
 
-![Photo by cottonbro studio](/images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg){class="floatRight" width="280"}
-
 ### Concept
+
+![Photo by cottonbro studio](/images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg){class="floatRight" width="280"}
 
 In de winter en voorjaar van 2023 plannen we een maandelijkse trancedans sessie bij [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/){target='blank'}, telkens in co-creatie met een andere facilitator.
 Het combineren van trancedans met ademwerk, drumcirkel of sound healing zorgt voor een nog diepgaandere ervaring.
@@ -30,17 +30,16 @@ Het combineren van trancedans met ademwerk, drumcirkel of sound healing zorgt vo
 De muziek voor de trancedans wordt zorgvuldig uitgekozen door [Wouter](/about). Daarbij wordt meestal gewerkt rond één bepaald thema, en wordt veel aandacht besteed aan het creëren van een diepgaande, meeslepende flow.
 Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.com/soundhealing-training){target='_blank'}, en bescheiden dj-skills uit een vorig leven, komen daarbij goed van pas.
 
-### Data voorjaar 2023
+### Voorlopige data 2023
+
+ * Maandag 23 januari 2023 om 19u
+ * Maandag 20 februari 2023 om 19u
+ * Maandag 20 maart 2023 om 19u
+ * Maandag 17 april 2023 om 19u
 
 Meer details volgen heel binnenkort. Je kan alvast [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven.
 
-Elke laatste maandag van de maand:
- * Maandag 30 januari 2023, 19u
- * Maandag 20 februari 2023, 19u
- * Maandag 20 maart 2023, 19u
- * Maandag 17 april 2023, 19u
-
-Locatie:<br>
+### Locatie
 [vzw Dwarsligger](https://www.dwarsligger33.com/){target='blank'}<br>
 Gontrode Heirweg 141<br>
 Melle, België<br>

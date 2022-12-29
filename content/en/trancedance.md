@@ -15,14 +15,15 @@ Source: [Aernoudt Knecht @ trance-dance.net](https://trance-dance.net/what-is-tr
 
 ::IframeComponent
 ---
-src: https://www.youtube.com/watch?v=E_LeudWIEJU
+src: https://www.youtube.com/embed/E_LeudWIEJU
+title: Trance Dance
 class: proseIframeSmall
 ---
 ::
 
-![Photo by cottonbro studio](/images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg){class="floatRight" width="280"}
-
 ### Concept
+
+![Photo by cottonbro studio](/images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg){class="floatRight" width="280"}
 
 In the winter and spring of 2023 we plan monthly Trance Dance sessions at [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/){target='blank'}, each time in co-creation with a different facilitator.
 Combining Trance Dance with breathwork, a drum circle or sound healing provides an even more profound experience.
@@ -30,17 +31,16 @@ Combining Trance Dance with breathwork, a drum circle or sound healing provides 
 The music for the trance dance is carefully selected by [Wouter](/about), usually around one specific theme. A lot of attention is put into creating a profound, compelling flow.
 A recent [sound healing training](https://www.akasharetreatcenter.com/soundhealing-training){target='_blank'}, and modest DJ skills from a past life, come in handy.
 
-### Dates
+### Tentative dates 2023
+
+  * Monday 23 January 2023 at 7pm
+  * Monday 20 February 2023 at 7pm
+  * Monday 20 March 2023 at 7pm
+  * Monday 17 April 2023 at 7pm
 
 More details will follow very soon. You can already [subscribe to the newsletter](/newsletter) to stay informed.
 
-Every last Monday of the month:
-  * Monday 30 January 2023, 7pm
-  * Monday 20 February 2023, 7pm
-  * Monday 20 March 2023, 7pm
-  * Monday 17 April 2023, 7pm
-
-Location:<br>
+### Location
 [vzw Dwarsligger](https://www.dwarsligger33.com/){target='blank'}<br>
 Gontrode Heirweg 141<br>
 Melle, Belgium<br>
