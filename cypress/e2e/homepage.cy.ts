@@ -14,8 +14,9 @@ describe('test homepage language redirect', () => {
   })
 
   it('test switch to English', () => {
-    cy.get('header select').should('have.length', 1)
-    cy.get('header select').first().select('en')
+    cy.get('header .languageSwitcher').should('have.length', 1)
+    cy.get('header .languageSwitcher a').should('have.length', 2)
+    cy.get('header .languageSwitcher a').last().click()
     cy.location().should((location) => {
       expect(location.pathname).to.eq('/en')
     })
@@ -35,18 +36,22 @@ describe('test homepage title section', () => {
     cy.get('main section#title h4').should('have.length', 1)
     cy.get('main section#title h4').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
     cy.get('main section#title p').should('have.length', 1)
-    cy.get('main section#title p').first().should('have.text', 'Ecstatic Dance, Trance Dance, Immersive Soundbaths, Muziek Productie, etc')
+    cy.get('main section#title p').first().should('have.text', 'Ecstatic Dance, Trance Dance, Immersive Soundbaths, Muziek Productie')
   })
   it('test English section', () => {
-    cy.get('header select').should('have.length', 1)
-    cy.get('header select').first().select('en')
+    cy.get('header .languageSwitcher').should('have.length', 1)
+    cy.get('header .languageSwitcher a').should('have.length', 2)
+    cy.get('header .languageSwitcher a').last().click()
+    cy.location().should((location) => {
+      expect(location.pathname).to.eq('/en')
+    })
     cy.get('main section#title').should('have.length', 1)
     cy.get('main section#title h1').should('have.length', 1)
     cy.get('main section#title h1').first().should('have.text', 'Harmonics')
     cy.get('main section#title h4').should('have.length', 1)
     cy.get('main section#title h4').first().should('have.text', 'Healing power of Sound, Music and Dance')
     cy.get('main section#title p').should('have.length', 1)
-    cy.get('main section#title p').first().should('have.text', 'Ecstatic Dance, Trance Dance, Immersive Soundbaths, Music Production, etc')
+    cy.get('main section#title p').first().should('have.text', 'Ecstatic Dance, Trance Dance, Immersive Soundbaths, Music Production')
   })
 })
 

@@ -33,9 +33,6 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
   },
-  generate: {
-    routes: ['/', '/about', '/contact', '/thanks', '/nuxtimage'],
-  },
   i18n: {
     strategy: 'prefix_and_default',
     defaultLocale: 'nl',

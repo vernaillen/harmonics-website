@@ -9,14 +9,18 @@ describe('test header section', () => {
     cy.location().should((location) => {
       expect(location.pathname).to.eq('/')
     })
-    cy.get('header select').should('have.length', 1)
-    cy.get('header select option').should('have.length', 2)
-    cy.get('header select option').first().should('have.text', ' NL ')
-    cy.get('header select option').last().should('have.text', ' EN ')
+    cy.get('header .languageSwitcher').should('have.length', 1)
+    cy.get('header .languageSwitcher a').should('have.length', 2)
+    cy.get('header .languageSwitcher a').first().should('have.attr', 'aria-current')
+    cy.get('header .languageSwitcher a').first().should('have.class', 'opacity-100')
+    cy.get('header .languageSwitcher a').first().should('not.have.class', 'opacity-40')
+    cy.get('header .languageSwitcher a').last().should('not.have.attr', 'aria-current')
+    cy.get('header .languageSwitcher a').last().should('have.class', 'opacity-40')
+    cy.get('header .languageSwitcher a').last().should('not.have.class', 'opacity-100')
   })
 
   it('test social icons', () => {
     cy.get('header #socials').should('have.length', 1)
-    cy.get('header #socials a').should('have.length', 4)
+    cy.get('header #socials a').should('have.length', 3)
   })
 })

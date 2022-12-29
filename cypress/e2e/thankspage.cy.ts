@@ -14,8 +14,9 @@ describe('test thanks page', () => {
   })
 
   it('English page has correct content', () => {
-    cy.get('header select').should('have.length', 1)
-    cy.get('header select').first().select('en')
+    cy.get('header .languageSwitcher').should('have.length', 1)
+    cy.get('header .languageSwitcher a').should('have.length', 2)
+    cy.get('header .languageSwitcher a').last().click()
     cy.location().should((location) => {
       expect(location.pathname).to.eq('/en/thanks/')
     })

@@ -1,9 +1,10 @@
 <script setup lang="ts">
 const { page } = useContent()
-
 const { t } = useI18n()
 
-const title = `${page.value.title} | ${t('website.title')}`
+let title = t('website.title')
+if (page && page.value && page.value.title)
+  title = `${page.value.title} | ${t('website.title')}`
 useHead({
   title,
   meta: [
@@ -19,8 +20,8 @@ useHead({
   <div class="container mx-auto px-4 pt-[80px] mt-[68px] animate__animated animate__fadeIn">
     <div class="flex flex-wrap">
       <div class="w-full px-4 sm:px-6 lg:px-8 mb-10">
-        <div class="prose m-auto">
-          <div class="flex flex-wrap">
+        <div v-if="page" class="prose m-auto">
+          <div v-if="page.title" class="flex flex-wrap">
             <h1 class="animate__animated animate__pulse">
               {{ page.title }}
             </h1>

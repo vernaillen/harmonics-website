@@ -485,3 +485,22 @@
 .prose-sm > :last-child {
   margin-bottom: 0;
 }
+
+
+@media (min-width: 640px) {
+  .prose .col-left,
+  .prose .col-right {
+    width: 50%;
+    float: left;
+    margin-bottom: 30px;
+  }
+  .prose .col-left {
+    padding-right: 20px;
+  }
+  .prose .col-right {
+    padding-left: 20px;
+  }
+  .prose .col-clear {
+    clear: left;
+  }
+}

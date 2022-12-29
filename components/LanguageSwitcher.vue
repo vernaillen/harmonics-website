@@ -4,21 +4,18 @@ const switchLocalePath = useSwitchLocalePath()
 const route = useRoute()
 const router = useRouter()
 
-const setLanguage = (event: Event) => {
-  const target = event.target as HTMLSelectElement
-  router.push(switchLocalePath(target.value))
+const setLanguage = (lang: string) => {
+  router.push(switchLocalePath(lang))
 }
 </script>
 
 <template>
-  <form>
-    <select class="bg-transparent" @change="setLanguage">
-      <option value="nl" :selected="locale === 'nl'">
-        NL
-      </option>
-      <option value="en" :selected="locale === 'en'">
-        EN
-      </option>
-    </select>
-  </form>
+  <div class="languageSwitcher min-w-[60px]">
+    <NuxtLink :to="switchLocalePath('nl')" :class="locale === 'nl' ? 'opacity-100' : 'opacity-40'" class="px-1">
+      <Icon name="flagpack:nl" size="1.2em" />
+    </NuxtLink>
+    <NuxtLink :to="switchLocalePath('en')" :class="locale === 'en' ? 'opacity-100' : 'opacity-40'" class="px-1">
+      <Icon name="flagpack:gb-ukm" size="1.2em" />
+    </NuxtLink>
+  </div>
 </template>

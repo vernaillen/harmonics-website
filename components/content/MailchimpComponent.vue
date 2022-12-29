@@ -3,12 +3,12 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div id="mc_embed_signup" class="prose">
+  <div id="mc_embed_signup" class="w-full xl:w-1/2">
     <form id="mc-embedded-subscribe-form" action="https://harmonics.us14.list-manage.com/subscribe/post?u=70b20f90b742c102a6d56ec9c&amp;id=7e4d7c55a7&amp;f_id=0082f7e0f0" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" rel="noopener" novalidate>
       <div id="mc_embed_signup_scroll">
-        <h1 class="animate__animated animate__pulse">
+        <h2 class="animate__animated animate__pulse">
           {{ t('mailinglist.title') }}
-        </h1>
+        </h2>
         <p>{{ t('mailinglist.subtitle') }}</p>
         <div class="mc-field-group">
           <label for="mce-EMAIL">{{ t('mailinglist.email') }}  <span class="asterisk">*</span>
@@ -60,4 +60,3 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
   margin-bottom: 0;
 }
 </style>
-

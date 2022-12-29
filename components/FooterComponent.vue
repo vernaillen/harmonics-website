@@ -79,54 +79,30 @@ onMounted(() => {
         <polygon class="text-gray-300 fill-current" points="2560,0 2560,2 0,99 0,100" />
       </svg>
     </div>
-    <div class="container mx-auto px-4 mt-10">
-      <div class="flex flex-wrap">
-        <div class="w-full lg:w-6/12 px-4 mb-10">
-          <div class="inline-block px-4 py-1 mt-3 max-w-full">
+    <div class="container mx-auto px-4 mt-5">
+      <div class="flex flex-wrap ">
+        <div class="w-full lg:w-6/12 px-4 text-center lg:text-left mb-10">
+          <div class="inline-block px-4 py-1 max-w-full">
             <LanguageSwitcher />
           </div>
-          <div class="inline-block px-4 py-1 mr-5 mt-3 max-w-full">
+          <div class="inline-block px-4 py-1 mr-5 max-w-full">
             <social-icons />
           </div>
-
-          <div class="w-full flex-row items-top mb-6 mt-20">
-            <div class="w-full px-4 ml-auto">
-              <span class="block text-primary text-md font-semibold my-5">Menu</span>
+        </div>
+        <div class="w-full lg:w-6/12 px-4 mb-0 lg:mb-10">
+          <div class="w-full flex-row items-top mb-6 text-center lg:text-right">
+            <div class="px-4 py-1 ml-auto">
               <NuxtLink
-                :aria-label="t('menu.home')"
-                :to="localePath('/')"
-                class=" text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
+                v-for="item, index in useMenu()" :key="index" :aria-label="t(item.titleKey)" :to="localePath(item.path)"
+                class=" text-black hover:opacity-50 font-semibold inline-block pb-6 pr-6 text-sm"
               >
-                {{ t('menu.home') }}
-              </NuxtLink>
-              <NuxtLink
-                :aria-label="t('menu.blog')"
-                :to="localePath('/blog')"
-                class="text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
-              >
-                {{ t('menu.blog') }}
-              </NuxtLink>
-              <NuxtLink
-                :aria-label="t('menu.about')"
-                :to="localePath('/about')"
-                class="text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
-              >
-                {{ t('menu.about') }}
-              </NuxtLink>
-              <NuxtLink
-                :aria-label="t('menu.contact')"
-                :to="localePath('/contact')"
-                class="text-black hover:opacity-50 font-semibold inline-block pb-10 pr-6 text-sm"
-              >
-                {{ t('menu.contact') }}
+                {{ t(item.titleKey) }}
               </NuxtLink>
             </div>
           </div>
         </div>
-        <div class="w-full lg:w-6/12 px-4">
-          <mailchimp-component />
-        </div>
       </div>
+
       <div class="flex flex-wrap items-center md:justify-between justify-center">
         <div class="w-full md:w-4/12 px-4 mx-auto text-center">
           <div class="text-sm text-gray-400 font-semibold py-1">
