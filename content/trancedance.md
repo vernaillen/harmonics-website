@@ -4,17 +4,10 @@ title: Trancedans
 
 ### Geblinddoekte dans meditatie
 
-Door geblinddoekt te dansen en geen visuele prikkels meer binnen te laten, zak je gemakkelijker in je lichaam en worden je andere gewaarwordingen sterker.<br>
+Door geblinddoekt te dansen en geen visuele prikkels binnen te laten, zak je gemakkelijker in je lichaam en worden andere gewaarwordingen sterker.<br>
 Al dansend komen we uit ons hoofd, in ons lichaam en maken we een innerlijke reis.<br>
 
 Je kan de dans aanvatten met een specifieke intentie, een inzicht dat je bereid bent te ontvangen, iets om te verwerken, of gewoon om het leven te vieren.
-
-::IframeComponent
----
-src: https://www.youtube.com/embed/E_LeudWIEJU
-class: proseIframeSmall
----
-::
 
 > Een trancedans is een diepgaande ervaring die je uitnodigt om terug te keren naar jezelf. In veel hedendaagse dansvormen ligt de nadruk op de recreatieve en sociale aspecten, zoals het kijken en bekeken worden.<br>Trancedansen zijn niet bedoeld om te communiceren met de buitenwereld, maar vinden plaats binnen de context van spiritualiteit, persoonlijke groei en transformatie. Muziek, dans en spiritualiteit zijn onlosmakelijk met elkaar verbonden. <br>Bewegen op ritmische en melodieuze klanken is niet alleen leuk, maar muziek en dans kunnen ons ook in geestvervoering brengen en bijdragen aan onze gezondheid.
 
