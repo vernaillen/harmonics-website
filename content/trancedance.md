@@ -6,7 +6,14 @@ title: Trancedans
 
 Bron: [Wat is Trancedans? door Aernoudt Knecht](http://www.trancedans.net/trancedans-en-muziek/index.html){target="blank"}
 
-![Photo by cottonbro studio](/images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg){class="floatRight" width="280"}
+::FloatingImage
+---
+src: /images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg
+width: 280
+caption: picture by cottonbro studio
+captionUrl: "https://www.pexels.com/photo/blindfolded-woman-dancing-on-a-rock-10556674/"
+---
+::
 
 ### Geblinddoekte dans meditatie
 
