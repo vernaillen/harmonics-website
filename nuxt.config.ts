@@ -32,6 +32,12 @@ export default defineNuxtConfig({
   },
   content: {
     documentDriven: true,
+    markdown: {
+      externalLinks: {
+        target: '_blank',
+        rel: false,
+      },
+    },
   },
   i18n: {
     strategy: 'prefix_and_default',

@@ -36,7 +36,7 @@ describe('test homepage title section', () => {
     cy.get('main section#title h4').should('have.length', 1)
     cy.get('main section#title h4').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
     cy.get('main section#title p').should('have.length', 1)
-    cy.get('main section#title p').first().should('have.text', 'Ecstatic Dance, Trance Dance, Immersive Soundbaths, Muziek Productie')
+    cy.get('main section#title p').first().should('have.text', 'Trance Dance, Ecstatic Dance, Immersive Soundbaths, Muziek Productie')
   })
   it('test English section', () => {
     cy.get('header .languageSwitcher').should('have.length', 1)
@@ -51,7 +51,7 @@ describe('test homepage title section', () => {
     cy.get('main section#title h4').should('have.length', 1)
     cy.get('main section#title h4').first().should('have.text', 'Healing power of Sound, Music and Dance')
     cy.get('main section#title p').should('have.length', 1)
-    cy.get('main section#title p').first().should('have.text', 'Ecstatic Dance, Trance Dance, Immersive Soundbaths, Music Production')
+    cy.get('main section#title p').first().should('have.text', 'Trance Dance, Ecstatic Dance, Immersive Soundbaths, Music Production')
   })
 })
 

@@ -33,14 +33,15 @@ const linkClass = (path: string) => {
     class="header bg-white bg-opacity-95 absolute top-0 left-0 z-20 w-full h-[68px] flex animate__animated animate__slideInDown animate__delay-1s"
   >
     <div class="container">
-      <div class="flex justify-between relative">
-        <div class="px-2 md:px-4 mr-0 sm:mr-5 mt-2 max-w-full">
+      <div class="flex justify-between relative  text-center sm:text-left">
+        <div class="px-2 md:px-4 mr-0 sm:mr-10 mt-2 w-[400px]">
           <NuxtLink
             aria-label="Harmonics home"
             :to="localePath('/')"
-            class="text-3xl text-primary font-medium leading-relaxed inline-block mr-5 whitespace-nowrap header-logo"
+            class="text-3xl text-primary font-medium leading-relaxed inline-block whitespace-nowrap header-logo"
           >
-            Harmonics
+            <NuxtImg src="images/wave_sound-02-small.jpg" class="rounded-full w-20 h-10 inline-flex" />
+            <span class="hidden sm:inline-flex">Harmonics</span>
           </NuxtLink>
         </div>
         <div class="flex px-0 log:px-4 justify-between items-center w-full">
@@ -79,7 +80,7 @@ const linkClass = (path: string) => {
         <div class="px-4 py-2 mt-2 max-w-full hidden sm:block">
           <social-icons />
         </div>
-        <div class="justify-end px-0 sm:px-3 py-2 mt-3 mr-16 xl:mr-0 max-w-full block">
+        <div class="justify-end px-0 sm:px-3 py-2 mt-3 mr-14 sm:mr-10 xl:mr-0 max-w-full block">
           <LanguageSwitcher />
         </div>
       </div>

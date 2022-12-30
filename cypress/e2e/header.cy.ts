@@ -13,9 +13,9 @@ describe('test header section', () => {
     cy.get('header .languageSwitcher a').should('have.length', 2)
     cy.get('header .languageSwitcher a').first().should('have.attr', 'aria-current')
     cy.get('header .languageSwitcher a').first().should('have.class', 'opacity-100')
-    cy.get('header .languageSwitcher a').first().should('not.have.class', 'opacity-40')
+    cy.get('header .languageSwitcher a').first().should('not.have.class', 'opacity-30')
     cy.get('header .languageSwitcher a').last().should('not.have.attr', 'aria-current')
-    cy.get('header .languageSwitcher a').last().should('have.class', 'opacity-40')
+    cy.get('header .languageSwitcher a').last().should('have.class', 'opacity-30')
     cy.get('header .languageSwitcher a').last().should('not.have.class', 'opacity-100')
   })
 
