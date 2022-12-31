@@ -37,7 +37,7 @@ Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.co
 In de winter en voorjaar van 2023 plannen we een maandelijkse trancedans sessie bij [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/){target='blank'}.
 
 Elk van deze sessies gebeurt in co-creatie met een collega facilitator.<br>
-Daardoor kunnen we de trancedans combineren met ademwerk, drumcirkel of sound healing, wat zorgt voor een nog diepgaandere ervaring.
+Daardoor kunnen we de trancedans combineren met bijvoorbeeld ademwerk, drumcirkel of sound healing, wat zorgt voor een nog diepgaandere ervaring.
 
 Eerstvolgende sessies:
 
@@ -48,7 +48,7 @@ Eerstvolgende sessies:
 
 Reserveer jouw plekje via [de agenda van Dwarsligger](https://www.dwarsligger33.com/agenda){target=blank}
 
-Je kan je ook [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven ivm nieuwe data.
+Je kan ook [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven ivm nieuwe data.
 
 ### Meebrengen
 * een (yoga) kussentje om op te zitten

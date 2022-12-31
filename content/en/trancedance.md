@@ -39,7 +39,7 @@ A recent [sound healing training](https://www.akasharetreatcenter.com/soundheali
 In the winter and spring of 2023 we plan monthly Trance Dance sessions at [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/){target='blank'}.
 
 Each of these sessions is co-created with a fellow facilitator.<br>
-This way we can combine the trance dance with breathwork, drum circle or sound healing, which ensures an even more profound experience.
+This way we can combine the trance dance with for example breathwork, drum circle or sound healing, which ensures an even more profound experience.
 
 Upcoming sessions:
 
