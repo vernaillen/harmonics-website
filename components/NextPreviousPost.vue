@@ -11,7 +11,7 @@ const [prev, next] = await queryContent(localePath('/blog')).findSurround(route.
       <div
         class="w-full md:w-1/2 text-end order-1 md:order-2 justify-end font-medium text-base text-body-color leading-relaxed"
       >
-        <NuxtLink v-if="next" :to="next._path" :aria-label="`${t('menu.next')}: ${next.title}`">
+        <NuxtLink v-if="next" :to="next._path" :aria-label="`${t('blog.next')}: ${next.title}`">
           {{ t('blog.next') }}:<br>
           <span class="text-primary">{{ next.title }}</span>
         </NuxtLink>
@@ -19,7 +19,7 @@ const [prev, next] = await queryContent(localePath('/blog')).findSurround(route.
       <div
         class="w-full md:w-1/2  order-2 md:order-1 justify-start font-medium text-base text-body-color leading-relaxed"
       >
-        <NuxtLink v-if="prev" :to="prev._path" :aria-label="`${t('menu.previous')}: ${prev.title}`">
+        <NuxtLink v-if="prev" :to="prev._path" :aria-label="`${t('blog.previous')}: ${prev.title}`">
           {{ t('blog.previous') }}:<br>
           <span class="text-primary">{{ prev.title }}</span>
         </NuxtLink>

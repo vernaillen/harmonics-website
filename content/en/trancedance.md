@@ -22,24 +22,41 @@ While dancing we come out of our head, into our body and make an inner journey.<
 
 You can start the dance with a specific intention, an insight you are willing to receive, something to process, or simply to celebrate life.
 
-### Concept
+There are no fixed steps, you move freely and dance your own dance from within your inner self. 
+This allows you to release or transform conditioned thinking patterns.<br>
+You are taken to where healing takes place.
 
-In the winter and spring of 2023 we plan monthly Trance Dance sessions at [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/){target='blank'}, each time in co-creation with a different facilitator.
-Combining Trance Dance with breathwork, a drum circle or sound healing provides an even more profound experience.
+The dance takes place within a safely defined space, and there are several facilitators who take good care of you.
 
-The music for the trance dance is carefully selected by [Wouter](/about), usually around one specific theme. A lot of attention is put into creating a profound, compelling flow.
-A recent [sound healing training](https://www.akasharetreatcenter.com/soundhealing-training){target='_blank'}, and modest DJ skills from a past life, come in handy.
+### Music
 
-### Dates 2023
+The music for the trance dance is carefully selected by [Wouter](/about), usually around one specific theme. A lot of attention is put into creating a profound, compelling flow with healing sounds and rhythms.<br>
+A recent [sound healing training](https://www.akasharetreatcenter.com/soundhealing-training){target='_blank'}, and modest DJ skills from a past life, come in handy here.
 
-  * [Monday 23 January 2023](https://www.dwarsligger33.com/event-details/trancedans){target='blank'} at 6:30pm - facilitated by Rita Oostens & Wouter Vernaillen
+
+### Monthly sessions at Dwarsligger
+
+In the winter and spring of 2023 we plan monthly Trance Dance sessions at [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/){target='blank'}.
+
+Each of these sessions is co-created with a fellow facilitator.<br>
+This way we can combine the trance dance with breathwork, drum circle or sound healing, which ensures an even more profound experience.
+
+Upcoming sessions:
+
+  * [Monday 23 January 2023](https://www.dwarsligger33.com/event-details/trancedans){target='blank'} at 6:30pm :FBLink{src=https://www.facebook.com/events/6449004268461709}<br>
+  facilitated by Rita Oostens & Wouter Vernaillen
   * [Monday 20 February 2023](https://www.dwarsligger33.com/event-details/trancedans-2){target='blank'} at 6:30pm
   * [Monday 20 March 2023](https://www.dwarsligger33.com/event-details/trancedans-3){target='blank'} at 6:30pm
   * [Monday 17 April 2023](https://www.dwarsligger33.com/event-details/trancedans-4){target='blank'} at 6:30pm
 
 Reserve your spot on [the event page of Dwarsligger](https://en.dwarsligger33.com/agenda){target=blank}
 
-More details will follow very soon. You can already [subscribe to the newsletter](/newsletter) to stay informed.
+You can also [subscribe to the newsletter](/newsletter) to stay informed.
+
+### Bring your own
+* (yoga) cushion to sit on
+* blanket
+* writing material to write down the experiences from your trip after the dance
 
 ### Location
 [vzw Dwarsligger](https://www.dwarsligger33.com/){target='blank'}<br>
