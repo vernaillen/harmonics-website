@@ -1,6 +1,6 @@
 {
   "name": "harmonics",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -41,6 +41,8 @@
     "jsdom": "^20.0.3",
     "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.8",
+    "remark-breaks": "^3.0.2",
+    "remark-directive-rehype": "^0.4.2",
     "sitemap": "^7.1.1",
     "start-server-and-test": "^1.15.2",
     "vitest": "^0.26.2"

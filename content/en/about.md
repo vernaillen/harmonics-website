@@ -2,18 +2,18 @@
 title: About Wouter and Harmonics
 ---
 
-In 2020 Wouter personally experienced the healing power of sound and music and decided in 2021 to follow a sound healing training [provided by Surya at Akasha Retreat Center](https://www.akasharetreatcenter.com/){target=blank}.<br/>
+In 2020 Wouter personally experienced the healing power of sound and music and decided in 2021 to follow a sound healing training [provided by Surya at Akasha Retreat Center](https://www.akasharetreatcenter.com/){target=blank}.
 Combined with modest electronic music production skills and dj-skills from a previous life, Wouter decided to start creating and playing music for holistic healing and dance.
 
-In May 2022 Wouter played a first Ecstatic Dance session at a private birthday event: [Rebirth Ecstatic Dance @ Krimpvarkie Huisi](/en/blog/rebirthecstaticdance). 2 more ED sessions followed in the summer of 2022, including [Release Your Inner Dancer](/en/blog/releaseyourinnerdancer) on September 3.<br>
+In May 2022 Wouter played a first Ecstatic Dance session at a private birthday event: [Rebirth Ecstatic Dance @ Krimpvarkie Huisi](/en/blog/rebirthecstaticdance). 2 more ED sessions followed in the summer of 2022, including [Release Your Inner Dancer](/en/blog/releaseyourinnerdancer) on September 3.
 If you're not familiar yet with Ecstatic Dance you can read about it in this [blogpost: What is Ecstatic Dance?](/en/blog/watisecstaticdance)
 
-From August to the end of October 2022, Wouter followed the [Trance Dance Facilitator Training](https://trance-dance.net/events/trancedance-facilitator-training/){target=blank} by Aernoudt Knecht.<br>
+From August to the end of October 2022, Wouter followed the [Trance Dance Facilitator Training](https://trance-dance.net/events/trancedance-facilitator-training/){target=blank} by Aernoudt Knecht.
 After a successful first Trance dance session on October 17, [monthly Trance Dance sessions](/en/trancedance) will be planned in the winter of 2023.
 
 ### Training
 
-* The Crew, a curated 4-week Success Accelerator for Entrepreneurs by [Colleen Shell](https://fabx.tv/speaker/colleen-schell/){target=blank} (Ubud, Indonesia - January 2017)<br>
+* The Crew, a curated 4-week Success Accelerator for Entrepreneurs by [Colleen Shell](https://fabx.tv/speaker/colleen-schell/){target=blank} (Ubud, Indonesia - January 2017)
  During this accelerator program I learned about Ecstatic Dance in [The Yoga Barn](https://www.theyogabarn.com){target=blank} and [Akasha, New Earth Haven](https://newearthhaven.com/){target=blank}, and received my first [Sound Healing at Pyramids of Chi](https://pyramidsofchi.com/){target=blank}
 * [SOMA Breathwork 21-day Awakening Breathwork Journey](https://www.somabreath.com/the-awakening-breathwork-journey-fp/){target=blank} (online, January 2021)
 * [SOMA Breathwork Instructor Level 1 Training](https://www.somabreath.com/breathwork-facilitator-teacher-training-certification/){target=blank} (online, February 2021)
