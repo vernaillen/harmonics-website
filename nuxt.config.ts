@@ -33,7 +33,16 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
     markdown: {
-      remarkPlugins: ['remark-breaks', 'remark-directive-rehype'],
+      anchorLinks: false,
+      remarkPlugins: [
+        'remark-breaks',
+        'remark-directive-rehype',
+      ],
+      rehypePlugins: {
+        'rehype-external-links': {
+          target: '_blank',
+        },
+      },
     },
   },
   i18n: {

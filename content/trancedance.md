@@ -6,7 +6,7 @@ title: Trancedans
 Trancedansen zijn niet bedoeld om te communiceren met de buitenwereld, maar vinden plaats binnen de context van spiritualiteit, persoonlijke groei en transformatie. Muziek, dans en spiritualiteit zijn onlosmakelijk met elkaar verbonden.
 Bewegen op ritmische en melodieuze klanken is niet alleen leuk, maar muziek en dans kunnen ons ook in geestvervoering brengen en bijdragen aan onze gezondheid.
 
-Bron: [Wat is Trancedans? door Aernoudt Knecht](http://www.trancedans.net/trancedans-en-muziek/index.html){target="blank"}
+Bron: [Wat is Trancedans? door Aernoudt Knecht](https://www.trancedans.net/trancedans-en-muziek/index.html)
 
 ::FloatingImage
 ---
@@ -32,24 +32,24 @@ De dans vindt plaats binnen een veilig afgebakende ruimte, en er zijn meerdere f
 ### Muziek
 
 De muziek voor de trancedans wordt zorgvuldig uitgekozen door [Wouter](/about). Daarbij wordt meestal gewerkt rond één bepaald thema, en wordt veel aandacht besteed aan het creëren van een diepgaande, meeslepende flow met helende klanken en ritmes.
-Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.com/soundhealing-training){target='_blank'}, en bescheiden dj-skills uit een vorig leven, komen daarbij goed van pas.
+Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.com/soundhealing-training), en bescheiden dj-skills uit een vorig leven, komen daarbij goed van pas.
 
 ### Maandelijkse sessies bij Dwarsligger
 
-In de winter en voorjaar van 2023 plannen we een maandelijkse trancedans sessie bij [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/){target='blank'}.
+In de winter en voorjaar van 2023 plannen we een maandelijkse trancedans sessie bij [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/).
 
 Elk van deze sessies gebeurt in co-creatie met een collega facilitator.
 Daardoor kunnen we de trancedans combineren met bijvoorbeeld ademwerk, drumcirkel of sound healing, wat zorgt voor een nog diepgaandere ervaring.
 
 Eerstvolgende sessies:
 
- * [Maandag 23 januari 2023](https://www.dwarsligger33.com/event-details/trancedans){target='blank'} om 18u30 :FBLink{src=https://www.facebook.com/events/6449004268461709}
+ * [Maandag 23 januari 2023](https://www.dwarsligger33.com/event-details/trancedans) om 18u30 :FBLink{src=https://www.facebook.com/events/6449004268461709}
  gefaciliteerd door Rita Oostens & Wouter Vernaillen 
- * [Maandag 20 februari 2023](https://www.dwarsligger33.com/event-details/trancedans-2){target='blank'} om 18u30
- * [Maandag 20 maart 2023](https://www.dwarsligger33.com/event-details/trancedans-3){target='blank'} om 18u30
- * [Maandag 17 april 2023](https://www.dwarsligger33.com/event-details/trancedans-4){target='blank'} om 18u30
+ * [Maandag 20 februari 2023](https://www.dwarsligger33.com/event-details/trancedans-2) om 18u30
+ * [Maandag 20 maart 2023](https://www.dwarsligger33.com/event-details/trancedans-3) om 18u30
+ * [Maandag 17 april 2023](https://www.dwarsligger33.com/event-details/trancedans-4) om 18u30
 
-Reserveer jouw plekje via [de agenda van Dwarsligger](https://www.dwarsligger33.com/agenda){target=blank}
+Reserveer jouw plekje via [de agenda van Dwarsligger](https://www.dwarsligger33.com/agenda).
 
 Je kan ook [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven ivm nieuwe data.
 
@@ -59,9 +59,9 @@ Je kan ook [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijv
 * schrijfgerief om na de dans de ervaringen uit jouw reis te noteren
 
 ### Locatie
-[vzw Dwarsligger](https://www.dwarsligger33.com/){target='blank'}
+[vzw Dwarsligger](https://www.dwarsligger33.com/)
 Gontrode Heirweg 141
 Melle, België
-[google maps](https://goo.gl/maps/MnNE7r2AvZPsRXsK9){target='blank'}
+[google maps](https://goo.gl/maps/MnNE7r2AvZPsRXsK9)
 
 ![workshop space @ Dwarsligger](/images/trancedance/dwarsligger.jpg)
