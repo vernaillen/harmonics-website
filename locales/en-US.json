@@ -45,5 +45,9 @@
         "firstname": "First Name",
         "subscribe": "Subscribe"
     },
+    "dates": {
+        "published": "published on",
+        "lastUpdated": "last edited on"
+    },
     "tickets": "Tickets"
 }

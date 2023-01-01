@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import dayjs from 'dayjs'
-
 const props = defineProps({
   nrOfPosts: {
     type: Number,
@@ -15,10 +13,6 @@ const { data } = await useAsyncData(`content-${path}`, () => queryContent(locale
 
 const { t } = useI18n()
 
-function formatDate(d: string) {
-  const date = dayjs(d)
-  return date.format('D MMM YYYY')
-}
 const animateDurationClass = (index: number) => {
   return `animate-duration-${index * 1000}, animate-delay-${index * 100}`
 }
@@ -48,11 +42,14 @@ const animateDurationClass = (index: number) => {
           >
             {{ post.title }}
           </NuxtLink>
-        </h3>
-
-        <p
-          class="text-base text-body-color font-medium pb-6 mb-6 border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10"
-        >
+        </h3><div class="mr-1 mb-6 mt-0">
+          <div class="text-[0.6rem] text-gray-400 mr-2">
+            <div class="w-full">
+              {{ t('dates.published') }} {{ useFormattedDate(post.date) }}
+            </div>
+          </div>
+        </div>
+        <p class="text-base text-body-color font-medium pb-6 mb-6 border-b border-body-color border-opacity-10 dark:border-white dark:border-opacity-10">
           {{ post.desc }}
           <br>
           <NuxtLink :to="post._path" :aria-label="post.title">
@@ -63,23 +60,6 @@ const animateDurationClass = (index: number) => {
             </button>
           </NuxtLink>
         </p>
-
-        <div class="flex">
-          <div
-            class="flex pr-5 mr-5 xl:pr-3 2xl:pr-5 xl:mr-3 2xl:mr-5 border-r border-body-color border-opacity-10 dark:border-white dark:border-opacity-10"
-          >
-            <div class="w-full">
-              <p class="text-xs text-body-color">
-                {{ formatDate(post.date) }}
-              </p>
-            </div>
-          </div>
-          <div class="inline-block">
-            <p class="text-xs text-body-color">
-              {{ t('blog.by') }} {{ post.author }}
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </div>

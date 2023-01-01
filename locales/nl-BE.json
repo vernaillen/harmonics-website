@@ -45,6 +45,9 @@
         "firstname": "Voornaam",
         "subscribe": "Inschrijven"
   },
-    "tickets": "Tickets"
-
+  "dates": {
+    "published": "gepubliceerd op",
+    "lastUpdated": "laatst aangepast op"
+  },
+  "tickets": "Tickets"
 }

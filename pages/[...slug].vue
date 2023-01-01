@@ -17,7 +17,7 @@ useHead({
 </script>
 
 <template>
-  <div class="container mx-auto px-4 pt-[80px] mt-[68px] animate__animated animate__fadeIn">
+  <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px] animate__animated animate__fadeIn">
     <div class="flex flex-wrap">
       <div class="w-full px-4 sm:px-6 lg:px-8 mb-10">
         <div v-if="page" class="prose m-auto">
@@ -26,6 +26,11 @@ useHead({
               {{ page.title }}
             </h1>
           </div>
+          <MarkdownEditedDates
+            v-if="!page.hideEditedDates"
+            :page-date="page.date"
+            :page-file="page._file"
+          />
           <div v-if="page.show_desc" class="flex flex-wrap">
             <h4>
               {{ page.desc }}
