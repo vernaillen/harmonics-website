@@ -21,7 +21,7 @@ const animateDurationClass = (index: number) => {
 <template>
   <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px] animate__animated animate__fadeIn">
     <div class="flex flex-wrap">
-      <div class="w-full md:w-1/2 mb-5 px-4 prose">
+      <div class="w-full md:w-1/2 mb-5 md:px-4 prose">
         <div
           v-for="post, index in posts" :key="index"
         >
@@ -36,7 +36,7 @@ const animateDurationClass = (index: number) => {
   <div class="container mx-auto px-4 animate__animated animate__fadeIn">
     <div class="flex flex-wrap mx-[-16px] justify-start py-4 px-2 prose">
       <template v-for="post, index in posts" :key="index">
-        <div v-if="index !== 0" class="w-full md:w-1/2 lg:w-1/3 px-4 animate__animated animate__fadeIn" :class="animateDurationClass(index)">
+        <div v-if="index !== 0" class="w-full md:w-1/2 lg:w-1/3 px-2 md:px-4 animate__animated animate__fadeIn" :class="animateDurationClass(index)">
           <NewsItem :post="post" :big="false" class="p-4 sm:p-8 md:py-8 md:px-6 lg:p-8 xl:py-8 xl:px-5 2xl:p-8" />
         </div>
       </template>
