@@ -8,10 +8,9 @@
     },
     "menu": {
         "home": "Home",
+        "news": "Nieuws",
         "trancedance": "Trancedans",
-        "blog": "Blog",
         "about": "Over",
-        "newsletter": "Nieuwsbrief",
         "contact": "Contact"
     },
     "home": {
@@ -19,12 +18,13 @@
         "tagline": "Genezende kracht van Geluid, Muziek en Dans",
         "services": "Trance Dance, Ecstatic Dance, Immersive Soundbaths, Muziek Productie"
     },
-    "blog": {
+    "news": {
+        "title": "Nieuws",
         "readmore": "lees meer",
         "findoutmore": "ontdek meer",
         "by": "door",
-        "next": "volgende blogpost",
-        "previous": "vorige blogpost"
+        "next": "volgende nieuwsbericht",
+        "previous": "vorige nieuwsbericht"
     },
     "contact": {
         "name": "Jouw naam",
@@ -39,7 +39,7 @@
         "copyright": "Copyright ©"
     },
     "mailinglist": {
-        "title": "Schrijf je in op de Harmonics nieuwsbrief",
+        "title": "Ontvang Harmonics nieuws via e-mail",
         "subtitle": "...en blijf op de hoogte van de komende ecstatic dance & trance dance sessies",
         "email": "E-mail adres",
         "firstname": "Voornaam",

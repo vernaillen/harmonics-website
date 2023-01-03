@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const nrOfPosts = 3
+
+const localePath = useLocalePath()
+const { data: posts } = await useLazyAsyncData('posts', () => queryContent(localePath('/news')).sort({ _file: -1 }).limit(1).find())
 </script>
 
 <template>
@@ -25,9 +27,11 @@ const nrOfPosts = 3
         </div>
       </div>
     </section>
-    <section id="blogposts" class="lg:container mx-auto pt-[20px] pb-[100px] px-4 mt-20">
+    <section id="blogposts" class="lg:container mx-auto pt-[20px] pb-[100px] px-4">
       <div class="flex flex-wrap mx-[-16px] justify-start py-4 px-2 md:px-6">
-        <BlogPostList :nr-of-posts="nrOfPosts" />
+        <template v-for="post, index in posts" :key="index">
+          <NewsItem :post="post" :big="true" class="w-full lg:w-1/2 m-auto p-4 sm:p-8 md:py-8 md:px-6 lg:p-8 xl:py-8 xl:px-5 2xl:p-8" />
+        </template>
       </div>
     </section>
   </div>

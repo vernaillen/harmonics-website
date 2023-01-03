@@ -94,7 +94,7 @@ onMounted(() => {
             <div class="px-4 py-1 ml-auto">
               <NuxtLink
                 v-for="item, index in useMenu()" :key="index" :aria-label="t(item.titleKey)" :to="localePath(item.path)"
-                class=" text-black hover:opacity-50 font-semibold inline-block pb-6 pr-6 text-sm"
+                class=" text-black hover:opacity-50 inline-block pb-6 pr-6 text-sm"
               >
                 {{ t(item.titleKey) }}
               </NuxtLink>

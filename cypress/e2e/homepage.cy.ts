@@ -61,7 +61,6 @@ describe('test homepage blog post section', () => {
   })
   it('test blog post section', () => {
     cy.get('main > div > section#blogposts').should('have.length', 1)
-    cy.get('section#blogposts > div > div').should('have.length', 3)
-    cy.get('section#blogposts > div > div').should('have.length', 3)
+    cy.get('section#blogposts > div > div').should('have.length', 1)
   })
 })

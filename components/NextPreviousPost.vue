@@ -2,7 +2,7 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
-const [prev, next] = await queryContent(localePath('/blog')).findSurround(route.path)
+const [prev, next] = await queryContent(localePath('/news')).findSurround(route.path)
 </script>
 
 <template>
@@ -11,16 +11,16 @@ const [prev, next] = await queryContent(localePath('/blog')).findSurround(route.
       <div
         class="w-full md:w-1/2 text-end order-1 md:order-2 justify-end font-medium text-base text-body-color leading-relaxed"
       >
-        <NuxtLink v-if="next" :to="next._path" :aria-label="`${t('blog.next')}: ${next.title}`">
-          {{ t('blog.next') }}:<br>
+        <NuxtLink v-if="next" :to="next._path" :aria-label="`${t('news.next')}: ${next.title}`">
+          {{ t('news.next') }}:<br>
           <span class="text-primary">{{ next.title }}</span>
         </NuxtLink>
       </div>
       <div
         class="w-full md:w-1/2  order-2 md:order-1 justify-start font-medium text-base text-body-color leading-relaxed"
       >
-        <NuxtLink v-if="prev" :to="prev._path" :aria-label="`${t('blog.previous')}: ${prev.title}`">
-          {{ t('blog.previous') }}:<br>
+        <NuxtLink v-if="prev" :to="prev._path" :aria-label="`${t('news.previous')}: ${prev.title}`">
+          {{ t('news.previous') }}:<br>
           <span class="text-primary">{{ prev.title }}</span>
         </NuxtLink>
       </div>

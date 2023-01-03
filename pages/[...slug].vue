@@ -26,11 +26,7 @@ useHead({
               {{ page.title }}
             </h1>
           </div>
-          <MarkdownEditedDates
-            v-if="!page.hideEditedDates"
-            :page-date="page.date"
-            :page-file="page._file"
-          />
+          <MarkdownEditedDates v-if="page && !page.hideEditedDates" />
           <div v-if="page.show_desc" class="flex flex-wrap">
             <h4>
               {{ page.desc }}

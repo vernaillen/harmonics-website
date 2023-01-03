@@ -112,12 +112,12 @@ button#navbarToggler:focus {
 nav ul li a {
   border-top: 3px solid transparent;
 }
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   nav ul li a.link-active {
     border-top: 3px solid #bfac22;
   }
 }
-@media (max-width: 959px) {
+@media (max-width: 1139px) {
   nav ul li a.link-active {
     border-left: 3px solid #bfac22;
   }

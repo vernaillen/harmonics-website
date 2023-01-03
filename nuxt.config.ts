@@ -14,7 +14,6 @@ export default defineNuxtConfig({
     '@/assets/css/main.css',
     '@/assets/css/markdown.css',
     '@/assets/css/prose.css',
-    '@/assets/css/mailchimp-embedcode-classic-071822.css',
     'animate.css/animate.min.css',
   ],
   image: {
@@ -25,6 +24,7 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     download: true,
+    preconnect: true,
     display: 'swap',
     families: {
       Ubuntu: [400, 500, 700],

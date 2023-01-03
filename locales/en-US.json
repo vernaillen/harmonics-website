@@ -8,10 +8,9 @@
     },
     "menu": {
         "home": "Home",
+        "news": "News",
         "trancedance": "Trance Dance",
-        "blog": "Blog",
         "about": "About",
-        "newsletter": "Newsletter",
         "contact": "Contact"
     },
     "home": {
@@ -19,12 +18,13 @@
         "tagline": "Healing power of Sound, Music and Dance",
         "services": "Trance Dance, Ecstatic Dance, Immersive Soundbaths, Music Production"
     },
-    "blog": {
+    "news": {
+        "title": "News",
         "readmore": "read more",
         "findoutmore": "find out more",
         "by": "by",
-        "next": "next blogpost",
-        "previous": "previous blogpost"
+        "next": "next news item",
+        "previous": "previous news item"
     },
     "contact": {
         "name": "Your name",
@@ -39,7 +39,7 @@
         "copyright": "Copyright ©"
     },
     "mailinglist": {
-        "title": "Subscribe to the Harmonics newsletter",
+        "title": "Receive Harmonics news by email",
         "subtitle": "...and stay up to date about the upcoming ecstatic dance & trance dance sessions",
         "email": "Email Address",
         "firstname": "First Name",

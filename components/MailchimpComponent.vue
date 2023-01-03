@@ -3,12 +3,12 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div id="mc_embed_signup" class="w-full xl:w-1/2">
+  <div id="mc_embed_signup" class="w-full">
     <form id="mc-embedded-subscribe-form" action="https://harmonics.us14.list-manage.com/subscribe/post?u=70b20f90b742c102a6d56ec9c&amp;id=7e4d7c55a7&amp;f_id=0082f7e0f0" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" rel="noopener" novalidate>
       <div id="mc_embed_signup_scroll">
-        <h2 class="animate__animated animate__pulse">
+        <h1 class="animate__animated animate__pulse">
           {{ t('mailinglist.title') }}
-        </h2>
+        </h1>
         <p>{{ t('mailinglist.subtitle') }}</p>
         <div class="mc-field-group">
           <label for="mce-EMAIL">{{ t('mailinglist.email') }}  <span class="asterisk">*</span>
@@ -31,7 +31,7 @@ const { t } = useI18n()
         </div>
         <div class="optionalParent">
           <div class="clear foot">
-            <input id="mc-embedded-subscribe" type="submit" :value="t('mailinglist.subscribe')" name="subscribe" class="button">
+            <input id="mc-embedded-subscribe" type="submit" :value="t('mailinglist.subscribe')" name="subscribe" class="text-base font-medium text-white bg-primary mt-5 py-1 px-3 hover:bg-opacity-80 hover:shadow-signUp rounded-md transition duration-300 ease-in-out">
           </div>
         </div>
       </div>
@@ -40,13 +40,8 @@ const { t } = useI18n()
 </template>
 
 <style scoped>
-#mc_embed_signup {
-  clear: left;
-  font-size: 14px;
-}
-/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 #mc_embed_signup .mc-field-group {
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 #mc_embed_signup .mc-field-group input {
@@ -54,6 +49,8 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
   width: 100%;
   padding: 2px 0;
   text-indent: 2%;
+  border: 1px solid #ABB0B2;
+  border-radius: 3px;
 }
 #mc_embed_signup img {
   margin-top: 0;

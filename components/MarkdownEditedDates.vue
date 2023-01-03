@@ -1,29 +1,25 @@
 <script setup lang="ts">
-const props = defineProps<{
-  pageDate: string
-  pageFile: string
-}>()
+const { page } = useContent()
 const { t } = useI18n()
-const route = useRoute()
-const { data } = await useFetch(
-  `https://api.github.com/repos/vernaillen/harmonics-website/commits?path=content/${props.pageFile}`, {
+const lastUpdated = ref()
+const { data } = useLazyFetch(
+  `https://api.github.com/repos/vernaillen/harmonics-website/commits?path=content/${page._file}`, {
     query: { page: 1, per_page: 1 },
-  })
-const lastUpdated = computed(() => {
+  },
+)
+watch(data, () => {
   if (data.value && data.value[0] && data.value[0].commit.author.date)
     return useFormattedDate(data.value[0].commit.author.date)
-
-  return ''
 })
 </script>
 
 <template>
   <div class="mr-2 mb-8 mt-0">
     <div class="text-[0.6rem] text-gray-400 mr-2">
-      <div v-if="pageDate" class="block sm:inline-flex">
-        {{ t('dates.published') }} {{ useFormattedDate(pageDate) }}
+      <div v-if="page.date" class="block sm:inline-flex">
+        {{ t('dates.published') }} {{ useFormattedDate(page.date) }}
       </div>
-      <div v-if="pageDate && lastUpdated" class="mx-1 hidden sm:inline-flex">
+      <div v-if="page.date && lastUpdated" class="mx-1 hidden sm:inline-flex">
         -
       </div>
       <div v-if="lastUpdated" class="block sm:inline-flex">
