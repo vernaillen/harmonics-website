@@ -38,7 +38,7 @@
     "@vitest/coverage-c8": "^0.26.3",
     "cypress": "^12.3.0",
     "dayjs": "^1.11.7",
-    "jsdom": "^20.0.3",
+    "jsdom": "^21.0.0",
     "nuxt": "^3.0.0",
     "nuxt-icon": "^0.1.8",
     "remark-breaks": "^3.0.2",
