@@ -42,8 +42,9 @@ useHead({
           >
             <nuxt-img
               loading="lazy"
-              :sizes="page.imageSizes ? page.imageSizes : 'xl:1600px'"
-              height="400px"
+              :sizes="page.imageSizes ? page.imageSizes : ''"
+              :height="page.imageHeight ? page.imageHeight : '400'"
+              :width="page.imageWidth ? page.imageWidth : ''"
               :src="page.image" class="rounded-md  shadow-md shadow-gray-400" alt="article image"
             />
           </div>

@@ -2,6 +2,7 @@
 export interface Props {
   src: string
   width: number
+  height?: number
   caption?: string
   captionUrl?: string
   cssClass?: string
@@ -16,8 +17,8 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <div :class="cssClass" style="max-width: 50%">
-    <NuxtImg :src="src" :width="width" :alt="caption" :title="caption" class="rounded-md" :class="imageShadow ? 'shadow-md shadow-gray-400' : ''" />
+  <div :class="cssClass">
+    <NuxtImg :src="src" :width="width" :height="height" :alt="caption" :title="caption" class="rounded-md" :class="imageShadow ? 'shadow-md shadow-gray-400' : ''" />
     <p v-if="caption" class="caption text-xs w-full text-center mt-0">
       <a :href="captionUrl" target="_blank" :alt="caption" :title="caption">{{ caption }}</a>
     </p>
@@ -43,5 +44,11 @@ withDefaults(defineProps<Props>(), {
 }
 .prose p.caption {
     margin-top: 0;
+}
+@media (max-width: 540px) {
+  .prose .floatLeft,
+  .prose .floatRight {
+    max-width: 100%;
+  }
 }
 </style>
