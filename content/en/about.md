@@ -5,8 +5,8 @@ title: About Wouter and Harmonics
 In 2020 Wouter personally experienced the healing power of sound and music and decided in 2021 to follow a sound healing training [provided by Surya at Akasha Retreat Center](https://www.akasharetreatcenter.com/).
 Combined with modest electronic music production skills and dj-skills from a previous life, Wouter decided to start creating and playing music for holistic healing and dance.
 
-In May 2022 Wouter played a first Ecstatic Dance session at a private birthday event: [Rebirth Ecstatic Dance @ Krimpvarkie Huisi](/en/blog/rebirthecstaticdance). 2 more ED sessions followed in the summer of 2022, including [Release Your Inner Dancer](/en/blog/releaseyourinnerdancer) on September 3.
-If you're not familiar yet with Ecstatic Dance you can read about it in this [blogpost: What is Ecstatic Dance?](/en/blog/watisecstaticdance)
+In May 2022 Wouter played a first Ecstatic Dance session at a private birthday event: [Rebirth Ecstatic Dance @ Krimpvarkie Huisi](/en/news/rebirthecstaticdance). 2 more ED sessions followed in the summer of 2022, including [Release Your Inner Dancer](/en/news/releaseyourinnerdancer) on September 3.
+If you're not familiar yet with Ecstatic Dance you can read about it in this [blogpost: What is Ecstatic Dance?](/en/news/watisecstaticdance)
 
 From August to the end of October 2022, Wouter followed the [Trance Dance Facilitator Training](https://trance-dance.net/events/trancedance-facilitator-training/) by Aernoudt Knecht.
 After a successful first Trance dance session on October 17, [monthly Trance Dance sessions](/en/trancedance) will be planned in the winter of 2023.
