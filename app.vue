@@ -1,7 +1,10 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { locale, t } = useI18n()
 useHead({
   title: t('website.title'),
+  htmlAttrs: {
+    lang: locale,
+  },
   meta: [
     { name: 'description', content: t('website.description') },
     {

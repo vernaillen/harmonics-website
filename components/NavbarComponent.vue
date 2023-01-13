@@ -40,7 +40,7 @@ const linkClass = (path: string) => {
             :to="localePath('/')"
             class="text-3xl text-primary font-medium leading-relaxed inline-block whitespace-nowrap header-logo"
           >
-            <img src="/images/wavesound.jpg" class="rounded-full w-20 h-10 inline-flex">
+            <img src="/images/wavesound.jpg" class="rounded-full w-20 h-10 inline-flex" alt="Harmonics wavesound logo">
             <span class="hidden sm:inline-flex">Harmonics</span>
           </NuxtLink>
         </div>

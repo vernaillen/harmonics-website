@@ -35,17 +35,17 @@
     "@nuxtjs/google-fonts": "3.0.0-1",
     "@nuxtjs/i18n": "8.0.0-beta.7",
     "@nuxtjs/tailwindcss": "^6.2.0",
-    "@vitest/coverage-c8": "^0.27.0",
+    "@vitest/coverage-c8": "^0.27.1",
     "cypress": "^12.3.0",
     "dayjs": "^1.11.7",
     "jsdom": "^21.0.0",
     "nuxt": "^3.0.0",
-    "nuxt-icon": "^0.1.8",
+    "nuxt-icon": "^0.2.0",
     "remark-breaks": "^3.0.2",
     "remark-directive-rehype": "^0.4.2",
     "sitemap": "^7.1.1",
     "start-server-and-test": "^1.15.2",
-    "vitest": "^0.27.0"
+    "vitest": "^0.27.1"
   },
   "eslintConfig": {
     "extends": "@antfu"

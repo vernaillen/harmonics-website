@@ -17,9 +17,9 @@ const { data: posts } = await useLazyAsyncData('posts', () => queryContent(local
             <h1 class="text-4xl md:text-5xl xl:text-6xl font-medium text-primary py-4 animate__animated animate__pulse">
               {{ t('home.title') }}
             </h1>
-            <h4 class="text-2xl leading-relaxed text-gray-500 my-5">
+            <h2 class="text-2xl leading-relaxed text-gray-500 my-5">
               {{ t('home.tagline') }}
-            </h4>
+            </h2>
             <p class="pt-5 text-lg text-gray-400">
               {{ t('home.services') }}
             </p>
