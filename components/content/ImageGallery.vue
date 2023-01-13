@@ -32,7 +32,7 @@ const openGallery = (i: number) => {
 <template>
   <div class="columns-1 md:columns-2 lg:columns-3 mx-[-8px]">
     <div v-for="(image, index) in images" :key="index" class="px-2">
-      <div class="galleryImgWrapper rounded-md overflow-hidden relative mb-8 shadow-md shadow-gray-800">
+      <div class="galleryImgWrapper rounded-md overflow-hidden relative mb-8 shadow-md shadow-gray-400">
         <nuxt-picture loading="lazy" :src="image" class="cursor-pointer rounded-md max-w-full p-0 m-0" :alt="image" @click="openGallery(index)" />
       </div>
     </div>

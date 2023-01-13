@@ -7,12 +7,12 @@ defineProps({
   title: {
     type: String,
     required: false,
-    default: ''
+    default: '',
   },
-  class: {
+  cssClass: {
     type: String,
     required: false,
-    default: 'proseIframe'
+    default: 'proseIframe',
   },
 })
 </script>
@@ -20,11 +20,10 @@ defineProps({
 <template>
   <iframe
     :src="src"
-    :class="class"
+    :class="cssClass"
     :title="title"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
   />
 </template>
-

@@ -70,7 +70,7 @@ onMounted(() => {
               {{ frontmatter.desc }}
             </h4>
           </div>
-          <div v-if="frontmatter.show_subtitle" class="flex flex-wrap">
+          <div v-if="frontmatter.subtitle" class="flex flex-wrap">
             <em>
               {{ frontmatter.subtitle }}
             </em>

@@ -12,13 +12,13 @@ const imgHeight = props.big ? '' : 200
 </script>
 
 <template>
-  <div class="relative bg-white dark:bg-dark shadow- rounded-md shadow-light-300 overflow-hidden">
+  <div class="relative bg-white dark:bg-dark rounded-md overflow-hidden">
     <NuxtLink v-if="post.thumbnail" :to="post._path" :aria-label="post.title">
-      <nuxt-img :width="imgWidth" :height="imgHeight" loading="lazy" :src="post.thumbnail" class="rounded-md newsImg" :alt="`thumbnail ${post.title}`" />
+      <nuxt-img :width="imgWidth" :height="imgHeight" loading="lazy" :src="post.thumbnail" class="rounded-md shadow-md shadow-gray-400 newsImg" :alt="`thumbnail ${post.title}`" />
     </NuxtLink>
     <NuxtLink v-if="post.thumb_video_webm || post.thumb_video_mp4" :to="post._path" :aria-label="post.title">
       <client-only>
-        <video autoplay :width="imgWidth" class="rounded-md newsImg">
+        <video autoplay :width="imgWidth" class="rounded-md shadow-md shadow-gray-400 newsImg">
           <source v-if="post.thumb_video_webm" :src="post.thumb_video_webm" type="video/webm">
           <source v-if="post.thumb_video_mp4" :src="post.thumb_video_mp4" type="video/m4v">
           Sorry, your browser doesn't support embedded videos.

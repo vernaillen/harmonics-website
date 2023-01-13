@@ -13,14 +13,16 @@ Bron: [Wat is Trancedans? door Aernoudt Knecht](https://www.trancedans.net/tranc
 src: /images/trancedance/pexels-cottonbro-studio-10556674-flipped.jpg
 width: 280
 caption: picture by cottonbro studio
-captionUrl: "https://www.pexels.com/photo/blindfolded-woman-dancing-on-a-rock-10556674/"
+captionUrl: https://www.pexels.com/photo/blindfolded-woman-dancing-on-a-rock-10556674/
+imageShadow: true
 ---
 ::
 
 ### Geblinddoekte dans meditatie
 
 Door geblinddoekt te dansen en geen visuele prikkels binnen te laten, zak je gemakkelijker in je lichaam en worden andere gewaarwordingen sterker.
-Al dansend komen we uit ons hoofd, in ons lichaam en maken we een innerlijke reis.
+Al dansend komen we uit ons hoofd, in ons lichaam en maken we een innerlijke reis. 
+Zo kan Trancedans helpen om beperkende conditioneringen los te laten en trauma's gericht naar boven te brengen en te verwerken. 
 
 Je kan de dans aanvatten met een specifieke intentie, een inzicht dat je wil ontvangen, iets om te verwerken, of gewoon om het leven te vieren.
 Er zijn geen vaste passen, je beweegt vrij en danst je eigen dans vanuit jouw innerlijke zelf. 
@@ -29,6 +31,14 @@ Je wordt meegevoerd naar daar waar heling plaatsvindt.
 
 De dans vindt plaats binnen een veilig afgebakende ruimte, en er zijn meerdere facilitators die goed voor je zorgen.
 
+### Oorsprong
+
+Een Trancedans is een shamanistische dansreis die we terugvinden in veel traditionele culturen over de hele wereld:
+> Meestal is een trancedans ingebed in een ritueel. Dit soort rituelen zijn oeroud en vind je terug in culturen van over de hele wereld, zoals de Inuit, de Navajo en de Sioux van Noord-Amerika, de Siberische sjamanen, de Vodou van Benin en Haïti, de Santeria van Cuba, de Saami van Scandinavië, de Huichol van Mexico, de wervelende Soefi’s en de Yoruba van West-Afrika. De Umbanda van Brazilië combineren Rooms-Katholicisme met de religieuze gebruiken van de Yoruba. Zij geloven dat je tijdens een trancedans vervuld wordt van Spirit en anderen kan genezen. 
+Ook tijdens de Ierse rivierdansen, de Balinese maskerdansen en de Indische tempeldansen gaan de dansers in trance. Trancedans is van alle tijden, en tot op de dag van vandaag zoekt de energie van trance en extase haar weg, bijvoorbeeld via de party's van dansende jongeren.
+
+Bron: [Wat is Trancedans? door Aernoudt Knecht](https://www.trancedans.net/trancedans-en-muziek/index.html)
+
 ### Muziek
 
 De muziek voor de trancedans wordt zorgvuldig uitgekozen door [Wouter](/about). Daarbij wordt meestal gewerkt rond één bepaald thema, en wordt veel aandacht besteed aan het creëren van een diepgaande, meeslepende flow met helende klanken en ritmes.
@@ -36,7 +46,7 @@ Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.co
 
 ### Maandelijkse sessies bij Dwarsligger
 
-In de winter en voorjaar van 2023 plannen we een maandelijkse trancedans sessie bij [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/).
+Vanaf januari 2023 plannen we een maandelijkse trancedans sessie bij [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/).
 
 Elk van deze sessies gebeurt in co-creatie met een collega facilitator.
 Daardoor kunnen we de trancedans combineren met bijvoorbeeld ademwerk, drumcirkel of sound healing, wat zorgt voor een nog diepgaandere ervaring.
@@ -45,7 +55,8 @@ Eerstvolgende sessies:
 
  * [Maandag 23 januari 2023](https://www.dwarsligger33.com/event-details/trancedans) om 18u30 :FBLink{src=https://www.facebook.com/events/6449004268461709}
  gefaciliteerd door Rita & Wouter
- * [Maandag 20 februari 2023](https://www.dwarsligger33.com/event-details/trancedans-2) om 18u30
+ * [Maandag 20 februari 2023](https://www.dwarsligger33.com/event-details/trancedans-2) om 18u30 :FBLink{src=https://www.facebook.com/events/3402343063376965/}
+ gefaciliteerd door Karien Iztacitlal & Wouter
  * [Maandag 20 maart 2023](https://www.dwarsligger33.com/event-details/trancedans-3) om 18u30
  * [Maandag 17 april 2023](https://www.dwarsligger33.com/event-details/trancedans-4) om 18u30
 
@@ -54,14 +65,16 @@ Reserveer jouw plekje via [de agenda van Dwarsligger](https://www.dwarsligger33.
 Je kan ook [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven ivm nieuwe data.
 
 ### Meebrengen
-* een (yoga) kussentje om op te zitten
-* een dekentje
-* schrijfgerief om na de dans de ervaringen uit jouw reis te noteren
+* een (yoga) kussen om te zitten (tijdens de opening en closing cirkel)
+* een dekentje (tijdens integratie moment na de dans)
+* flesje water
+* eventueel pen en papier om na de dans je ervaringen te noteren
 
 ### Locatie
 [vzw Dwarsligger](https://www.dwarsligger33.com/)
 Gontrode Heirweg 141
 Melle, België
 [google maps](https://goo.gl/maps/MnNE7r2AvZPsRXsK9)
+(best 'vzw Dwarsligger' intikken in de gps)
 
 ![workshop space @ Dwarsligger](/images/trancedance/dwarsligger.jpg)

@@ -32,17 +32,21 @@ useHead({
               {{ page.desc }}
             </h4>
           </div>
-          <div v-if="page.show_subtitle" class="flex flex-wrap">
+          <div v-if="page.subtitle" class="flex flex-wrap">
             <em>
               {{ page.subtitle }}
             </em>
           </div>
-          <nuxt-img
-            v-if="page.image" loading="lazy"
-            sizes="xl:1600px"
-            height="400px"
-            :src="page.image" class="rounded-md" alt="article image"
-          />
+          <div
+            v-if="page.image"
+          >
+            <nuxt-img
+              loading="lazy"
+              :sizes="page.imageSizes ? page.imageSizes : 'xl:1600px'"
+              height="400px"
+              :src="page.image" class="rounded-md  shadow-md shadow-gray-400" alt="article image"
+            />
+          </div>
           <article ref="content">
             <ContentDoc />
           </article>
