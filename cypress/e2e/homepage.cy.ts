@@ -9,8 +9,8 @@ describe('test homepage language redirect', () => {
     cy.location().should((location) => {
       expect(location.pathname).to.eq('/')
     })
-    cy.get('main h4').should('have.length', 1)
-    cy.get('main h4').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
+    cy.get('main h2').should('have.length', 1)
+    cy.get('main h2').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
   })
 
   it('test switch to English', () => {
@@ -20,8 +20,8 @@ describe('test homepage language redirect', () => {
     cy.location().should((location) => {
       expect(location.pathname).to.eq('/en')
     })
-    cy.get('main h4').should('have.length', 1)
-    cy.get('main h4').first().should('have.text', 'Healing power of Sound, Music and Dance')
+    cy.get('main h2').should('have.length', 1)
+    cy.get('main h2').first().should('have.text', 'Healing power of Sound, Music and Dance')
   })
 })
 
@@ -33,8 +33,8 @@ describe('test homepage title section', () => {
     cy.get('main section#title').should('have.length', 1)
     cy.get('main section#title h1').should('have.length', 1)
     cy.get('main section#title h1').first().should('have.text', 'Harmonics')
-    cy.get('main section#title h4').should('have.length', 1)
-    cy.get('main section#title h4').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
+    cy.get('main section#title h2').should('have.length', 1)
+    cy.get('main section#title h2').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
     cy.get('main section#title p').should('have.length', 1)
     cy.get('main section#title p').first().should('have.text', 'Trance Dance, Ecstatic Dance, Immersive Soundbaths, Muziek Productie')
   })
@@ -48,8 +48,8 @@ describe('test homepage title section', () => {
     cy.get('main section#title').should('have.length', 1)
     cy.get('main section#title h1').should('have.length', 1)
     cy.get('main section#title h1').first().should('have.text', 'Harmonics')
-    cy.get('main section#title h4').should('have.length', 1)
-    cy.get('main section#title h4').first().should('have.text', 'Healing power of Sound, Music and Dance')
+    cy.get('main section#title h2').should('have.length', 1)
+    cy.get('main section#title h2').first().should('have.text', 'Healing power of Sound, Music and Dance')
     cy.get('main section#title p').should('have.length', 1)
     cy.get('main section#title p').first().should('have.text', 'Trance Dance, Ecstatic Dance, Immersive Soundbaths, Music Production')
   })
