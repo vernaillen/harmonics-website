@@ -64,6 +64,7 @@ Reserve your spot on [the event page of Dwarsligger](https://en.dwarsligger33.co
 You can also [subscribe to the newsletter](/newsletter) to stay informed.
 
 ### Bring your own
+* blindfold, best is dark, multi-layered fabric
 * (yoga) cushion to sit on (during open and closing circle)
 * blanket (during integration)
 * bottle of water

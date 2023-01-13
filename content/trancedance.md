@@ -65,6 +65,7 @@ Reserveer jouw plekje via [de agenda van Dwarsligger](https://www.dwarsligger33.
 Je kan ook [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven ivm nieuwe data.
 
 ### Meebrengen
+* een blinddoek, best met meerdere donkere lagen stof
 * een (yoga) kussen om te zitten (tijdens de opening en closing cirkel)
 * een dekentje (tijdens integratie moment na de dans)
 * flesje water
