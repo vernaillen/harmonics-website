@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
+    '@nuxtjs/plausible',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon',
