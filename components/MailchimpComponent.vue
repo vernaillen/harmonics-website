@@ -3,39 +3,21 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div id="mc_embed_signup" class="w-full">
-    <form id="mc-embedded-subscribe-form" action="https://harmonics.us14.list-manage.com/subscribe/post?u=70b20f90b742c102a6d56ec9c&amp;id=7e4d7c55a7&amp;f_id=0082f7e0f0" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" rel="noopener" novalidate>
-      <div id="mc_embed_signup_scroll">
-        <h1 class="animate__animated animate__pulse">
-          {{ t('mailinglist.title') }}
-        </h1>
-        <p>{{ t('mailinglist.subtitle') }}</p>
-        <div class="mc-field-group">
-          <label for="mce-EMAIL">{{ t('mailinglist.email') }}  <span class="asterisk">*</span>
-          </label>
-          <input id="mce-EMAIL" type="email" value="" name="EMAIL" class="required email" required>
-          <span id="mce-EMAIL-HELPERTEXT" class="helper_text" />
-        </div>
-        <div class="mc-field-group">
-          <label for="mce-FNAME">{{ t('mailinglist.firstname') }}  <span class="asterisk">*</span>
-          </label>
-          <input id="mce-FNAME" type="text" value="" name="FNAME" class="required" required>
-          <span id="mce-FNAME-HELPERTEXT" class="helper_text" />
-        </div>
-        <div id="mce-responses" class="clear foot">
-          <div id="mce-error-response" class="response" style="display:none" />
-          <div id="mce-success-response" class="response" style="display:none" />
-        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_70b20f90b742c102a6d56ec9c_7e4d7c55a7" tabindex="-1" value="">
-        </div>
-        <div class="optionalParent">
-          <div class="clear foot">
-            <input id="mc-embedded-subscribe" type="submit" :value="t('mailinglist.subscribe')" name="subscribe" class="text-base font-medium text-white bg-primary mt-5 py-1 px-3 hover:bg-opacity-80 hover:shadow-signUp rounded-md transition duration-300 ease-in-out">
-          </div>
-        </div>
-      </div>
-    </form>
+  <div>
+    <h1 class="animate__animated animate__pulse">
+      {{ t('mailinglist.title') }}
+    </h1>
+    <p>{{ t('mailinglist.subtitle') }}</p>
+    <p>
+      <a href="http://eepurl.com/h9DVsf" target="_blank">
+        <button class="text-base font-medium text-white bg-primary mt-5 py-2 px-6 hover:bg-opacity-80 hover:shadow-signUp rounded-md transition duration-300 ease-in-out">
+          {{ t('mailinglist.subscribe') }}
+        </button>
+      </a>
+    </p>
+    <p class="text-sm">
+      {{ t('mailinglist.opensmailchimp') }}
+    </p>
   </div>
 </template>
 

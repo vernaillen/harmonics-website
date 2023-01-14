@@ -41,9 +41,8 @@
     "mailinglist": {
         "title": "Ontvang Harmonics nieuws via e-mail",
         "subtitle": "...en blijf op de hoogte van de komende ecstatic dance & trance dance sessies",
-        "email": "E-mail adres",
-        "firstname": "Voornaam",
-        "subscribe": "Inschrijven"
+        "subscribe": "Schrijf nu in",
+        "opensmailchimp": "(opent de mailchimp registratie pagina)"
   },
   "dates": {
     "published": "gepubliceerd op",

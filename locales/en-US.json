@@ -41,9 +41,8 @@
     "mailinglist": {
         "title": "Receive Harmonics news by email",
         "subtitle": "...and stay up to date about the upcoming ecstatic dance & trance dance sessions",
-        "email": "Email Address",
-        "firstname": "First Name",
-        "subscribe": "Subscribe"
+        "subscribe": "Subscribe now",
+        "opensmailchimp": "(opens the mailchimp registration page)"
     },
     "dates": {
         "published": "published on",
