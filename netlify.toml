@@ -5,3 +5,15 @@
 [build]
   publish = "dist"
   command = "pnpm run build"
+
+[[redirects]]
+  from = "/plredir/js/script.js"
+  to = "https://plausible.io/js/script.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/plredir/api/event"
+  to = "https://plausible.io/api/event"
+  status = 200
+  force = true

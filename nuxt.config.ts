@@ -59,4 +59,7 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
   },
+  plausible: {
+    apiHost: 'https://harmonics.be/plredir',
+  },
 })
