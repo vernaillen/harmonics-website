@@ -28,7 +28,7 @@ const imgHeight = props.big ? '' : 200
     <h1>
       <NuxtLink
         :aria-label="post.title" :to="post._path"
-        class="font-bold text-primary dark:text-white text-xl sm:text-2xl block mb-4 hover:bg-opacity-80"
+        class="font-bold text-primary dark:text-white text-2xl block mb-4 hover:bg-opacity-80"
       >
         {{ post.title }}
       </NuxtLink>

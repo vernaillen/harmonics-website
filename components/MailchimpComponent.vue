@@ -4,7 +4,7 @@ const { t } = useI18n()
 
 <template>
   <div>
-    <h1 class="animate__animated animate__pulse">
+    <h1 class=" text-3xl font-bold text-primary">
       {{ t('mailinglist.title') }}
     </h1>
     <p>{{ t('mailinglist.subtitle') }}</p>
@@ -22,20 +22,7 @@ const { t } = useI18n()
 </template>
 
 <style scoped>
-#mc_embed_signup .mc-field-group {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-#mc_embed_signup .mc-field-group input {
-  display: block;
-  width: 100%;
-  padding: 2px 0;
-  text-indent: 2%;
-  border: 1px solid #ABB0B2;
-  border-radius: 3px;
-}
-#mc_embed_signup img {
-  margin-top: 0;
-  margin-bottom: 0;
+h1 {
+  font-size: 1.875rem;
 }
 </style>
