@@ -21,7 +21,7 @@ useHead({
     <div class="flex flex-wrap">
       <div class="w-full px-4 sm:px-6 lg:px-8 mb-10">
         <div v-if="page" class="prose m-auto">
-          <div v-if="page.title" class="flex flex-wrap">
+          <div v-if="page.title && !page.hideTitle" class="flex flex-wrap">
             <h1 class="animate__animated animate__pulse">
               {{ page.title }}
             </h1>
