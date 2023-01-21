@@ -6,14 +6,14 @@ const { data: posts } = await useLazyAsyncData('posts', () => queryContent(local
 </script>
 
 <template>
-  <div class="flex-col animate__animated animate__fadeIn">
+  <div class="flex-col">
     <section id="title" class="lg:container mx-auto px-6">
       <div class="flex flex-wrap lg:h-screen items-center">
         <div class="w-full sm:w-10/12 lg:w-6/12 ml-auto mr-auto mt-[150px] lg:mr-0 lg:px-8 lg:mt-0">
           <NuxtImg alt="Gongs" format="webp" class="max-w-full rounded-lg shadow-lg shadow-gray-400" src="/images/gongs.jpg" sizes="sm:500px lg:800px" />
         </div>
         <div class="w-full sm:w-10/12 lg:w-6/12 ml-auto mr-auto mt-[50px] lg:ml-0 lg:px-8 lg:mt-0">
-          <div>
+          <div class="flex flex-wrap">
             <h1 class="text-4xl md:text-5xl xl:text-6xl font-medium text-primary py-4 animate__animated animate__pulse">
               {{ t('home.title') }}
             </h1>

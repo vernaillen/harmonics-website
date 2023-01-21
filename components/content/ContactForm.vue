@@ -45,10 +45,10 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class="bg-primary bg-opacity-[3%] dark:bg-dark rounded-md p-6 mb-12 lg:mb-5 md:p-8 lg:p-12">
+  <div class="bg-primary bg-opacity-[3%] dark:bg-dark rounded-md p-4 mb-12 lg:mb-5 md:p-6 lg:p-8">
     <form method="POST" @submit.prevent="submitForm">
       <div class="flex flex-wrap mx-[-16px]">
-        <div class="w-full md:w-1/2 px-4">
+        <div class="w-full lg:w-1/2 px-4">
           <div class="mb-8">
             <label for="name" class="block text-sm font-medium text-dark dark:text-white mb-3">
               {{ t('contact.name') }}
@@ -62,7 +62,7 @@ const { t } = useI18n()
             </span>
           </div>
         </div>
-        <div class="w-full md:w-1/2 px-4">
+        <div class="w-full lg:w-1/2 px-4">
           <div class="mb-8">
             <label for="email" class="block text-sm font-medium text-dark dark:text-white mb-3">
               {{ t('contact.email') }}

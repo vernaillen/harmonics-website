@@ -4,7 +4,7 @@ const { t } = useI18n()
 
 <template>
   <div>
-    <h1 class=" text-3xl font-bold text-primary">
+    <h1 class="text-3xl font-bold text-primary animate__animated animate__pulse">
       {{ t('mailinglist.title') }}
     </h1>
     <p>{{ t('mailinglist.subtitle') }}</p>
