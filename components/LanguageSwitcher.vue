@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const { locale } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
-const router = useRouter()
 </script>
 
 <template>

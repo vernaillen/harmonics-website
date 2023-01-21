@@ -3,6 +3,10 @@ const { t } = useI18n()
 
 const localePath = useLocalePath()
 const { data: posts } = await useLazyAsyncData('posts', () => queryContent(localePath('/news')).sort({ _file: -1 }).limit(1).find())
+
+definePageMeta({
+  middleware: ['i18n'],
+})
 </script>
 
 <template>

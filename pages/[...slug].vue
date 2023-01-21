@@ -14,6 +14,10 @@ useHead({
     },
   ],
 })
+
+definePageMeta({
+  middleware: ['i18n'],
+})
 </script>
 
 <template>

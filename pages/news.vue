@@ -16,6 +16,9 @@ const { data: posts } = await useLazyAsyncData('posts', () => queryContent(local
 const animateDurationClass = (index: number) => {
   return `animate-duration-${index * 1000}, animate-delay-${index * 100}`
 }
+definePageMeta({
+  middleware: ['i18n'],
+})
 </script>
 
 <template>

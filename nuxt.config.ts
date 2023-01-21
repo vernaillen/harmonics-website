@@ -49,6 +49,7 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
+    skipSettingLocaleOnNavigate: true,
     strategy: 'prefix_and_default',
     defaultLocale: 'nl',
     langDir: 'locales/',

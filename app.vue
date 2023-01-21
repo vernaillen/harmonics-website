@@ -20,7 +20,7 @@ useHead({
 </script>
 
 <template>
-  <NuxtLoadingIndicator :height="4" color="repeating-linear-gradient(to right,#231f20 100%,#BFAC22 100%)" />
+  <NuxtLoadingIndicator color="repeating-linear-gradient(to right,#231f20 100%,#BFAC22 100%)" />
   <div class="flex flex-col min-h-screen">
     <navbar-component />
     <main class="flex-grow">
