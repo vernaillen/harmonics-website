@@ -6,7 +6,7 @@ const { data: posts } = await useLazyAsyncData('posts', () => queryContent(local
 </script>
 
 <template>
-  <div class="flex-col">
+  <div :class="isHydrated ? '' : 'opacity-60'" class="flex-col">
     <section id="title" class="lg:container mx-auto px-6">
       <div class="flex flex-wrap lg:h-screen items-center">
         <div class="w-full sm:w-10/12 lg:w-6/12 ml-auto mr-auto mt-[150px] lg:mr-0 lg:px-8 lg:mt-0">

@@ -17,7 +17,7 @@ useHead({
 </script>
 
 <template>
-  <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
+  <div :class="isHydrated ? '' : 'opacity-60'" class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
     <div class="flex flex-wrap">
       <div class="w-full px-4 sm:px-6 lg:px-8 mb-10">
         <div v-if="page" class="prose m-auto">
