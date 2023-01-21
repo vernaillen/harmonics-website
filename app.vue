@@ -20,16 +20,13 @@ useHead({
 </script>
 
 <template>
+  <NuxtLoadingIndicator color="repeating-linear-gradient(to right,#BFAC22 0%,#BFAC22 100%)" />
   <div class="flex flex-col min-h-screen">
-    <LazyHydrate when-idle>
-      <navbar-component />
-    </LazyHydrate>
+    <navbar-component />
     <main class="flex-grow">
       <NuxtPage />
     </main>
-    <LazyHydrate when-idle>
-      <footer-component />
-      <easy-lightbox />
-    </LazyHydrate>
+    <footer-component />
+    <easy-lightbox />
   </div>
 </template>

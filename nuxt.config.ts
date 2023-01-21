@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon',
-    'nuxt-lazy-hydrate',
   ],
   css: [
     '@/assets/css/main.css',
