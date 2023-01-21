@@ -30,7 +30,7 @@ const linkClass = (path: string) => {
 
 <template>
   <header
-    class="header bg-white bg-opacity-95 absolute top-0 left-0 z-20 w-full h-[68px] flex animate__animated animate__slideInDown animate__delay-1s"
+    class="header bg-white bg-opacity-95 absolute top-0 left-0 z-20 w-full h-[68px] flex"
   >
     <div class="container">
       <div class="flex justify-between relative  text-center sm:text-left">
