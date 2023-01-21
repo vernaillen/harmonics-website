@@ -34,7 +34,7 @@ useHead({
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 
 .page-enter-from,
