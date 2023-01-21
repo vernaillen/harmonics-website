@@ -114,12 +114,12 @@ nav ul li a {
 }
 @media (min-width: 1140px) {
   nav ul li a.link-active {
-    border-top: 3px solid #bfac22;
+    border-top: 4px solid #bfac22;
   }
 }
 @media (max-width: 1139px) {
   nav ul li a.link-active {
-    border-left: 3px solid #bfac22;
+    border-left: 4px solid #bfac22;
   }
 }
 </style>
