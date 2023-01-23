@@ -35,7 +35,7 @@
     "@nuxtjs/i18n": "8.0.0-beta.7",
     "@nuxtjs/plausible": "^0.2.0",
     "@nuxtjs/tailwindcss": "^6.2.0",
-    "@vitest/coverage-c8": "^0.27.2",
+    "@vitest/coverage-c8": "^0.28.0",
     "cypress": "^12.3.0",
     "dayjs": "^1.11.7",
     "jsdom": "^21.0.0",
@@ -45,7 +45,7 @@
     "remark-directive-rehype": "^0.4.2",
     "sitemap": "^7.1.1",
     "start-server-and-test": "^1.15.2",
-    "vitest": "^0.27.2"
+    "vitest": "^0.28.0"
   },
   "eslintConfig": {
     "extends": "@antfu"
