@@ -20,7 +20,7 @@ useHead({
 </script>
 
 <template>
-  <NuxtLoadingIndicator color="repeating-linear-gradient(to right,#231f20 100%,#BFAC22 100%)" />
+  <NuxtLoadingIndicator color="repeating-linear-gradient(to right,#FFFFFF 0%,#BFAC22 50%,#FFFFFF 100%)" />
   <div class="flex flex-col min-h-screen">
     <navbar-component />
     <main class="flex-grow">
@@ -32,6 +32,9 @@ useHead({
 </template>
 
 <style>
+.nuxt-loading-indicator {
+  opacity: 100% !important;
+}
 .page-enter-active,
 .page-leave-active {
   transition: all 0.2s;
