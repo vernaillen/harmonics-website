@@ -15,7 +15,8 @@
     "cy:run": "cypress run",
     "cy:dev": "start-server-and-test dev http://localhost:3000 'cypress open --config baseUrl=http://localhost:3000'",
     "cy:local": "start-server-and-test serve http://localhost:3000 'cypress run --config baseUrl=http://localhost:3000'",
-    "fulltest": "rm -rf node_modules && pnpm i --shamefully-hoist && pnpm run coverage && pnpm run cy:local"
+    "fulltest": "rm -rf node_modules && pnpm i --shamefully-hoist && pnpm run coverage && pnpm run cy:local",
+    "release": "release-it --ci"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
@@ -41,6 +42,7 @@
     "jsdom": "^21.1.0",
     "nuxt": "^3.1.1",
     "nuxt-icon": "^0.2.10",
+    "release-it": "^15.6.0",
     "remark-breaks": "^3.0.2",
     "remark-directive-rehype": "^0.4.2",
     "sitemap": "^7.1.1",
@@ -49,5 +51,19 @@
   },
   "eslintConfig": {
     "extends": "@antfu"
+  },
+  "release-it": {
+    "git": {
+      "commit": true,
+      "tag": true,
+      "push": true,
+      "commitMessage": "chore: release v${version}"
+    },
+    "github": {
+      "release": false
+    },
+    "npm": {
+      "publish": false
+    }
   }
 }
