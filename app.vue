@@ -20,7 +20,7 @@ useHead({
 </script>
 
 <template>
-  <NuxtLoadingIndicator color="repeating-linear-gradient(to right,#FFFFFF 0%,#BFAC22 50%,#FFFFFF 100%)" />
+  <NuxtLoadingIndicator color="repeating-linear-gradient(to right,rgb(191 172 34/40%) 0%,rgb(191 172 34/100%) 50%,rgb(75 85 99/20%) 100%)" />
   <div class="flex flex-col min-h-screen">
     <navbar-component />
     <main class="flex-grow">
@@ -42,7 +42,7 @@ useHead({
 
 .page-enter-from,
 .page-leave-to {
-  opacity: 60%;
+  opacity: 80%;
   filter: blur(0.1rem);
 }
 </style>

@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   modules: [
+    '@vueuse/nuxt',
     '@nuxt/content',
     '@nuxt/image-edge',
     '@nuxtjs/google-fonts',
@@ -12,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon',
+    '~/modules/build-env',
   ],
   css: [
     '@/assets/css/main.css',

@@ -1,4 +1,4 @@
-import type { MenuItem } from '~~/types/menuItem'
+import type { MenuItem } from '~/types'
 
 export const useMenu = (): MenuItem[] => {
   return [

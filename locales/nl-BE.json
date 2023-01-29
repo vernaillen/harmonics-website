@@ -36,17 +36,50 @@
     },
     "footer": {
         "findus": "Je kan ons ook vinden op deze platformen",
-        "copyright": "Copyright ©"
+        "copyright": "©",
+        "built_at": "{0} gebouwd",
+        "fetchingBuildinfo": "build info wordt opgehaald..."
     },
     "mailinglist": {
         "title": "Ontvang Harmonics nieuws via e-mail",
         "subtitle": "...en blijf op de hoogte van de komende ecstatic dance & trance dance sessies",
         "subscribe": "Schrijf nu in",
         "opensmailchimp": "(opent de mailchimp registratie pagina)"
-  },
-  "dates": {
-    "published": "gepubliceerd op",
-    "lastUpdated": "laatst aangepast op"
-  },
-  "tickets": "Tickets"
+    },
+    "dates": {
+        "published": "gepubliceerd op",
+        "lastUpdated": "laatst aangepast op"
+    },
+    "tickets": "Tickets",
+    "time_ago_options": {
+        "day_future": "in 0 dagen|morgen|in {n} dagen",
+        "day_past": "0 dagen geleden|gisteren|{n} dagen geleden",
+        "hour_future": "in 0 uur|in 1 uur|in {n} uur",
+        "hour_past": "0 uur geleden|1 uur geleden|{n} uur geleden",
+        "just_now": "nu net",
+        "minute_future": "in 0 minuten|in 1 minuut|in {n} minuten",
+        "minute_past": "0 minuten geleden|1 minuut geleden|{n} minuten geleden",
+        "month_future": "in 0 maanden|volgende maand|in {n} maanden",
+        "month_past": "0 maanden geleden|laatste maand|{n} maanden geleden",
+        "second_future": "nu net|in {n} seconden|in {n} seconden",
+        "second_past": "nu net|{n} seconden geleden|{n} seconden geleden",
+        "short_day_future": "in {n}d",
+        "short_day_past": "{n}d",
+        "short_hour_future": "in {n}u",
+        "short_hour_past": "{n}u",
+        "short_minute_future": "in {n}min",
+        "short_minute_past": "{n}min",
+        "short_month_future": "in {n}ma",
+        "short_month_past": "{n}ma",
+        "short_second_future": "in {n}s",
+        "short_second_past": "{n}s",
+        "short_week_future": "in {n}w",
+        "short_week_past": "{n}w",
+        "short_year_future": "in {n}j",
+        "short_year_past": "{n}j",
+        "week_future": "in 0 weken|volgende week|in {n} weken",
+        "week_past": "0 weken geleden|vorige week|{n} weken geleden",
+        "year_future": "in 0 jaar|volgend jaar|in {n} jaar",
+        "year_past": "0 jaar geleden|vorig jaar|{n} jaar geleden"
+    }
 }

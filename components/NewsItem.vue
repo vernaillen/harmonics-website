@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { NewsItem } from '~~/types/newsItem'
+import type { NewsItem } from '~/types'
 
 export interface Props {
   post: NewsItem
