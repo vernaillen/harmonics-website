@@ -7,8 +7,8 @@ export interface Props {
 }
 const props = defineProps<Props>()
 const { t } = useI18n()
-const imgWidth = props.big ? '' : 432
-const imgHeight = props.big ? '' : 200
+const imgWidth = props.big ? '' : 624
+const imgHeight = props.big ? '' : 326
 </script>
 
 <template>
@@ -28,7 +28,7 @@ const imgHeight = props.big ? '' : 200
     <h1>
       <NuxtLink
         :aria-label="post.title" :to="post._path"
-        class="font-bold text-primary dark:text-white text-2xl block mb-4 hover:bg-opacity-80 animate__animated animate__pulse"
+        class="font-bold text-primary dark:text-white text-2xl block mb-4 hover:bg-opacity-80"
       >
         {{ post.title }}
       </NuxtLink>

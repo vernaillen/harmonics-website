@@ -4,7 +4,7 @@ defineProps<{ id: string }>()
 
 <template>
   <div class="flex flex-wrap">
-    <h1 :id="id" class="animate__animated animate__pulse">
+    <h1 :id="id">
       <slot />
     </h1>
   </div>

@@ -19,7 +19,6 @@ export default defineNuxtConfig({
     '@/assets/css/main.css',
     '@/assets/css/markdown.css',
     '@/assets/css/prose.css',
-    'animate.css/animate.min.css',
   ],
   image: {
     provider: 'twicpics',
