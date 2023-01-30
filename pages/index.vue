@@ -11,9 +11,9 @@ definePageMeta({
 
 <template>
   <div class="flex-col">
-    <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
+    <section id="title" class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
       <div class="flex flex-wrap">
-        <div class="w-full lg:w-1/2 mb-5 md:px-4">
+        <div class="w-full lg:w-1/2 mb-5 px-4 sm:px-6 lg:px-8">
           <NuxtImg
             alt="Gongs" format="webp" class="max-w-full rounded-lg shadow-lg shadow-gray-400" src="/images/gongs.jpg"
             sizes="sm:500px lg:800px"
@@ -33,7 +33,7 @@ definePageMeta({
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <section id="blogposts" class="container mx-auto pt-20 pb-[100px] px-4">
       <div class="flex flex-wrap prose">
         <template v-for="post, index in posts" :key="index">

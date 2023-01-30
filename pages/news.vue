@@ -22,14 +22,14 @@ definePageMeta({
   <div class="flex-col">
     <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
       <div class="flex flex-wrap">
-        <div class="w-full lg:w-1/2 mb-5 md:px-4 prose">
+        <div class="w-full lg:w-1/2 mb-5 px-4 sm:px-6 lg:px-8 prose">
           <div
             v-for="post, index in posts" :key="index"
           >
             <NewsItem v-if="index === 0" :post="post" :big="true" />
           </div>
         </div>
-        <div class="w-full lg:w-1/2 px-4 lg:px-8 mb-5 prose">
+        <div class="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 mb-5 prose">
           <MailchimpComponent />
         </div>
       </div>
