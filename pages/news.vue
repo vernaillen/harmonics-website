@@ -35,7 +35,7 @@ definePageMeta({
       </div>
     </div>
     <div class="container mx-auto px-4">
-      <div class="flex flex-wrap mx-[-16px] justify-start py-4 prose">
+      <div class="flex flex-wrap justify-start py-4 prose">
         <template v-for="post, index in posts" :key="index">
           <div v-if="index !== 0" class="w-full lg:w-1/2 2xl:w-1/3 px-2 md:px-4">
             <NewsItem :post="post" :big="false" class="p-4" />
