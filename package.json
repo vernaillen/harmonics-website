@@ -1,6 +1,6 @@
 {
   "name": "harmonics",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -16,7 +16,9 @@
     "cy:dev": "start-server-and-test dev http://localhost:3000 'cypress open --config baseUrl=http://localhost:3000'",
     "cy:local": "start-server-and-test serve http://localhost:3000 'cypress run --config baseUrl=http://localhost:3000'",
     "fulltest": "rm -rf node_modules && pnpm i --shamefully-hoist && pnpm run coverage && pnpm run cy:local",
-    "release": "release-it"
+    "release:patch": "release-it patch --ci",
+    "release:minor": "release-it minor --ci",
+    "release:major": "release-it major --ci"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
