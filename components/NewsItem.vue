@@ -58,4 +58,8 @@ const imgHeight = props.big ? '' : 326
 img.newsImg {
   margin-top: 0;
 }
+video {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
 </style>
