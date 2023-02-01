@@ -1,3 +1,5 @@
+import { i18n } from './config/i18n'
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   app: {
@@ -49,20 +51,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  i18n: {
-    skipSettingLocaleOnNavigate: true,
-    strategy: 'prefix_and_default',
-    defaultLocale: 'nl',
-    langDir: 'locales/',
-    locales: [
-      { code: 'nl', iso: 'en-BE', file: 'nl-BE.json' },
-      { code: 'en', iso: 'en-US', file: 'en-US.json' },
-    ],
-    detectBrowserLanguage: {
-      useCookie: true,
-      redirectOn: 'root',
-    },
-  },
+  i18n,
   plausible: {
     // apiHost: 'https://harmonics.be/plredir',
   },
