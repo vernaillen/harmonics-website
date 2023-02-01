@@ -5,10 +5,6 @@ useHead({
   htmlAttrs: {
     lang: locale,
   },
-  script: [{
-    src: 'https://www.googletagmanager.com/gtag/js?id=G-K4Q8LZV0QW',
-    async: true,
-  }],
   meta: [
     { name: 'description', content: t('website.description') },
     {
