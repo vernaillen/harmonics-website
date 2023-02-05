@@ -94,7 +94,7 @@ const pluralRules = Object.values(currentLocales).reduce((acc, data) => {
 }, <PluralizationRules>{})
 
 export const i18n: NuxtI18nOptions = {
-  skipSettingLocaleOnNavigate: true,
+  // skipSettingLocaleOnNavigate: true,
   locales: [
     { code: 'nl', iso: 'en-BE', file: 'nl-BE.json' },
     { code: 'en', iso: 'en-US', file: 'en-US.json' },
