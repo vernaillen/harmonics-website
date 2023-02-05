@@ -10,7 +10,6 @@ Met daarnaast ook een bescheiden kennis van elektronische muziekproductie en dj-
 src: /images/wouter.jpg
 width: 280
 caption: foto door James Vanneman
-modifiers: { flip: 'x' }
 ---
 ::
 In mei 2022 speelde Wouter een eerste Ecstatic Dance sessie op een privé verjaardagsevenement: [Rebirth Ecstatic Dance @ Krimpvarkie Huisi](/news/rebirthecstaticdance). In de zomer van 2022 volgenden nog 2 succesvolle Ecstatic Dance sessies, waaronder [Release Your Inner Dancer](/news/releaseyourinnerdancer) op 3 september. 
