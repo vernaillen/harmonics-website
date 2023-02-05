@@ -52,8 +52,15 @@ withDefaults(defineProps<Props>(), {
   .prose .floatLeft,
   .prose .floatRight {
     float: none;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .prose .floatLeft img,
+  .prose .floatRight img {
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
   }
 }
 </style>
