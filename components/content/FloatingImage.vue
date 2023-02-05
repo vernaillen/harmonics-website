@@ -7,35 +7,38 @@ export interface Props {
   captionUrl?: string
   cssClass?: string
   imageShadow?: boolean
+  modifiers?: Record<string, any>
 }
 
 withDefaults(defineProps<Props>(), {
   cssClass: 'floatRight',
-  captionUrl: '#',
   imageShadow: true,
 })
 </script>
 
 <template>
   <div :class="cssClass">
-    <NuxtImg :src="src" :width="width" :height="height" :alt="caption" :title="caption" class="rounded-md" :class="imageShadow ? 'shadow-md shadow-gray-400' : ''" />
+    <NuxtImg :modifiers="modifiers" :src="src" :width="width" :height="height" :alt="caption" :title="caption" class="!mt-0 rounded-md" :class="imageShadow ? 'shadow-md shadow-gray-400' : ''" />
     <p v-if="caption" class="caption text-xs w-full text-center mt-0">
-      <a :href="captionUrl" target="_blank" :alt="caption" :title="caption">{{ caption }}</a>
+      <a v-if="captionUrl" :href="captionUrl" target="_blank" :alt="caption" :title="caption">{{ caption }}</a>
+      <span v-else>{{ caption }}</span>
     </p>
   </div>
 </template>
 
 <style scoped>
 .prose .floatLeft {
-    float: left;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    max-width: 50%;
+  float: left;
+  margin-right: 15px;
+  padding-right: 0;
+  padding-bottom: 0;
+  max-width: 50%;
 }
 .prose .floatRight {
   float: right;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  margin-left: 15px;
+  padding-left: 0;
+  padding-bottom: 0;
   max-width: 50%;
 }
 .prose .floatleft img,
@@ -48,7 +51,9 @@ withDefaults(defineProps<Props>(), {
 @media (max-width: 540px) {
   .prose .floatLeft,
   .prose .floatRight {
-    max-width: 100%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>

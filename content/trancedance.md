@@ -53,8 +53,6 @@ Daardoor kunnen we de trancedans combineren met bijvoorbeeld ademwerk, drumcirke
 
 Eerstvolgende sessies:
 
- * [Maandag 23 januari 2023](https://www.dwarsligger33.com/event-details/trancedans) om 18u30 :FBLink{src=https://www.facebook.com/events/6449004268461709}
- gefaciliteerd door Rita & Wouter
  * [Maandag 20 februari 2023](https://www.dwarsligger33.com/event-details/trancedans-2) om 18u30 :FBLink{src=https://www.facebook.com/events/3402343063376965/}
  gefaciliteerd door Karien Iztacitlal & Wouter
  * [Maandag 20 maart 2023](https://www.dwarsligger33.com/event-details/trancedans-3) om 18u30
