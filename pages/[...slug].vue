@@ -6,7 +6,9 @@ let title = t('website.title')
 let ogImage = '/harmonics.png'
 if (page && page.value && page.value.title)
   title = `${page.value.title} | ${t('website.title')}`
-if (page && page.value && page.value.thumbnail)
+if (page && page.value && page.value.ogImage)
+  ogImage = page.value.ogImage
+else if (page && page.value && page.value.thumbnail)
   ogImage = page.value.thumbnail
 useHead({
   title,
