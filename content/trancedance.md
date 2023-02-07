@@ -2,11 +2,10 @@
 title: Trancedans
 ---
 
-> Een trancedans is een diepgaande ervaring die je uitnodigt om terug te keren naar jezelf. In veel hedendaagse dansvormen ligt de nadruk op de recreatieve en sociale aspecten, zoals het kijken en bekeken worden.
-Trancedansen zijn niet bedoeld om te communiceren met de buitenwereld, maar vinden plaats binnen de context van spiritualiteit, persoonlijke groei en transformatie. Muziek, dans en spiritualiteit zijn onlosmakelijk met elkaar verbonden.
-Bewegen op ritmische en melodieuze klanken is niet alleen leuk, maar muziek en dans kunnen ons ook in geestvervoering brengen en bijdragen aan onze gezondheid.
+### Geblinddoekte dans meditatie
 
-Bron: [Wat is Trancedans? door Aernoudt Knecht](https://www.trancedans.net/trancedans-en-muziek/index.html)
+Door geblinddoekt te dansen en geen visuele prikkels binnen te laten, zak je gemakkelijker in je lichaam en worden andere gewaarwordingen sterker. 
+Al dansend komen we uit ons hoofd, in ons lichaam en maken we een innerlijke reis. Zo kan Trancedans helpen om beperkende conditioneringen los te laten en trauma's gericht naar boven te brengen en te verwerken. 
 
 ::FloatingImage
 ---
@@ -18,18 +17,19 @@ imageShadow: true
 ---
 ::
 
-### Geblinddoekte dans meditatie
-
-Door geblinddoekt te dansen en geen visuele prikkels binnen te laten, zak je gemakkelijker in je lichaam en worden andere gewaarwordingen sterker.
-Al dansend komen we uit ons hoofd, in ons lichaam en maken we een innerlijke reis. 
-Zo kan Trancedans helpen om beperkende conditioneringen los te laten en trauma's gericht naar boven te brengen en te verwerken. 
-
 Je kan de dans aanvatten met een specifieke intentie, een inzicht dat je wil ontvangen, iets om te verwerken, of gewoon om het leven te vieren.
 Er zijn geen vaste passen, je beweegt vrij en danst je eigen dans vanuit jouw innerlijke zelf. 
 Dit laat toe om vaste geconditioneerde denkpatronen los te laten of te transformeren.
 Je wordt meegevoerd naar daar waar heling plaatsvindt. 
 
+> Een trancedans is een diepgaande ervaring die je uitnodigt om terug te keren naar jezelf. In veel hedendaagse dansvormen ligt de nadruk op de recreatieve en sociale aspecten, zoals het kijken en bekeken worden.
+Trancedansen zijn niet bedoeld om te communiceren met de buitenwereld, maar vinden plaats binnen de context van spiritualiteit, persoonlijke groei en transformatie. Muziek, dans en spiritualiteit zijn onlosmakelijk met elkaar verbonden.
+Bewegen op ritmische en melodieuze klanken is niet alleen leuk, maar muziek en dans kunnen ons ook in geestvervoering brengen en bijdragen aan onze gezondheid.
+
+Bron: [Wat is Trancedans? door Aernoudt Knecht](https://www.trancedans.net/trancedans-en-muziek/index.html)
+
 De dans vindt plaats binnen een veilig afgebakende ruimte, en er zijn meerdere facilitators die goed voor je zorgen.
+Er is geen enkele voorafgaande dans ervaring of kennis vereist.
 
 ### Oorsprong
 

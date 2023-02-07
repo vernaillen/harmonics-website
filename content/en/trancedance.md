@@ -2,10 +2,10 @@
 title: Trance Dance
 ---
 
-> A trance dance is a powerful experience, that invites you to return home, deep within yourself. In many contemporary forms of dance the emphasis lies on recreational and social aspects, such as watching and being watched.
-Trance dancing is usually not intended to communicate with the outside world, but takes place within the context of spirituality, personal growth and inner transformation. A contemporary trance dance is a powerful experience that invites you to drop your masks of limited conditioning and separation and come home deep within yourself.
+### Blindfolded dance meditation
 
-Source: [Aernoudt Knecht @ trance-dance.net](https://trance-dance.net/what-is-trance-dance/)
+By dancing blindfolded and no longer letting visual stimuli in, you can sink into your body more easily and other sensations become stronger. 
+While dancing we come out of our head, into our body and make an inner journey. Trance Dance can help to release limiting believes, and consiously bring traumas to the surface so we can start to process them.
 
 ::FloatingImage
 ---
@@ -16,18 +16,18 @@ captionUrl: "https://www.pexels.com/photo/blindfolded-woman-dancing-on-a-rock-10
 ---
 ::
 
-### Blindfolded dance meditation
-
-By dancing blindfolded and no longer letting visual stimuli in, you can sink into your body more easily and other sensations become stronger.
-While dancing we come out of our head, into our body and make an inner journey.
-Trance Dance can help to release limiting believes, and consiously bring traumas to the surface so we can start to process them.
-
 You can start the dance with a specific intention, an insight you are willing to receive, something to process, or simply to celebrate life.
 There are no fixed steps, you move freely and dance your own dance from within your inner self. 
 This allows you to release or transform conditioned thinking patterns.
 You are taken to where healing takes place.
 
+> A trance dance is a powerful experience, that invites you to return home, deep within yourself. In many contemporary forms of dance the emphasis lies on recreational and social aspects, such as watching and being watched.
+Trance dancing is usually not intended to communicate with the outside world, but takes place within the context of spirituality, personal growth and inner transformation. A contemporary trance dance is a powerful experience that invites you to drop your masks of limited conditioning and separation and come home deep within yourself.
+
+Source: [Aernoudt Knecht @ trance-dance.net](https://trance-dance.net/what-is-trance-dance/)
+
 The dance takes place within a safely defined space, and there are several facilitators who take good care of you.
+No previous dance experience or knowledge is required.
 
 ### Origin
 
