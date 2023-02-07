@@ -7,9 +7,9 @@ let ogImage = '/harmonics.png'
 if (page && page.value && page.value.title)
   title = `${page.value.title} | ${t('website.title')}`
 if (page && page.value && page.value.ogImage)
-  ogImage = page.value.ogImage
+  ogImage = t('website.hostname') + page.value.ogImage
 else if (page && page.value && page.value.thumbnail)
-  ogImage = page.value.thumbnail
+  ogImage = t('website.hostname') + page.value.thumbnail
 useHead({
   title,
   meta: [
