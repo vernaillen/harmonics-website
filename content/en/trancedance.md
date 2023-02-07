@@ -42,6 +42,8 @@ Source: [Aernoudt Knecht @ trance-dance.net](https://trance-dance.net/what-is-tr
 The music for the trance dance is carefully selected by [Wouter](/en/about), usually around one specific theme. A lot of attention is put into creating a profound, compelling flow with healing sounds and rhythms.
 A recent [sound healing training](https://www.akasharetreatcenter.com/soundhealing-training), and modest DJ skills from a past life, come in handy here.
 
+You can listen to an example of a Trance Dance set from a previous session: [Trance Dance Music](/en/news/trancedancemusic).
+Each session different music will be used.
 
 ### Monthly sessions at Dwarsligger
 
@@ -53,13 +55,13 @@ This way we can combine the trance dance with for example breathwork, drum circl
 Upcoming sessions:
 
   * [Monday 20 February 2023](https://www.dwarsligger33.com/event-details/trancedans-2) at 6:45pm :FBLink{src=https://www.facebook.com/events/3402343063376965/}
-  facilitated by [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about)
+  facilitated by [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/en/about)
   * [Monday 20 March 2023](https://www.dwarsligger33.com/event-details/trancedans-3) at 6:45pm
   * [Monday 17 April 2023](https://www.dwarsligger33.com/event-details/trancedans-4) at 6:45pm
 
 Reserve your spot on [the event page of Dwarsligger](https://en.dwarsligger33.com/agenda).
 
-You can also [subscribe to the newsletter](/newsletter) to stay informed.
+You can also [subscribe to the newsletter](/en/news) to stay informed.
 
 ### Bring your own
 * blindfold, best is dark, multi-layered fabric

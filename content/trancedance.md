@@ -44,6 +44,9 @@ Bron: [Wat is Trancedans? door Aernoudt Knecht](https://www.trancedans.net/tranc
 De muziek voor de trancedans wordt zorgvuldig uitgekozen door [Wouter](/about). Daarbij wordt meestal gewerkt rond één bepaald thema, en wordt veel aandacht besteed aan het creëren van een diepgaande, meeslepende flow met helende klanken en ritmes.
 Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.com/soundhealing-training), en bescheiden dj-skills uit een vorig leven, komen daarbij goed van pas.
 
+Hier kan je luisteren naar een voorbeeld van een trancedans set van een vorige sessie: [Trancedans Muziek](/news/trancedancemusic).
+Voor elke sessie wordt telkens andere muziek gebruikt.
+
 ### Maandelijkse sessies bij Dwarsligger
 
 Vanaf januari 2023 plannen we een maandelijkse trancedans sessie bij [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/).
@@ -53,14 +56,14 @@ Daardoor kunnen we de trancedans combineren met bijvoorbeeld ademwerk, drumcirke
 
 Eerstvolgende sessies:
 
- * [Maandag 20 februari 2023](https://www.dwarsligger33.com/event-details/trancedans-2) om 18u30 :FBLink{src=https://www.facebook.com/events/3402343063376965/}
- gefaciliteerd door Karien Iztacitlal & Wouter
- * [Maandag 20 maart 2023](https://www.dwarsligger33.com/event-details/trancedans-3) om 18u30
- * [Maandag 17 april 2023](https://www.dwarsligger33.com/event-details/trancedans-4) om 18u30
+ * [Maandag 20 februari 2023](https://www.dwarsligger33.com/event-details/trancedans-2) om 18u45 :FBLink{src=https://www.facebook.com/events/3402343063376965/}
+ gefaciliteerd door [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about)
+ * [Maandag 20 maart 2023](https://www.dwarsligger33.com/event-details/trancedans-3) om 18u45
+ * [Maandag 17 april 2023](https://www.dwarsligger33.com/event-details/trancedans-4) om 18u45
 
 Reserveer jouw plekje via [de agenda van Dwarsligger](https://www.dwarsligger33.com/agenda).
 
-Je kan ook [inschrijven op de nieuwsbrief](/newsletter) om op de hoogte te blijven ivm nieuwe data.
+Je kan ook [inschrijven op de nieuwsbrief](/news) om op de hoogte te blijven ivm nieuwe data.
 
 ### Meebrengen
 * een blinddoek, best met meerdere donkere lagen stof
