@@ -57,6 +57,9 @@
         "lastUpdated": "last edited on"
     },
     "tickets": "Tickets",
+    "toc": {
+        "title": "Table of Contents"
+    },
     "time_ago_options": {
         "day_future": "in 0 days|tomorrow|in {n} days",
         "day_past": "0 days ago|yesterday|{n} days ago",

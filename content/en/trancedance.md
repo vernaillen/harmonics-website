@@ -1,5 +1,6 @@
 ---
 title: Trance Dance
+showToc: false
 ---
 
 ### Blindfolded dance meditation

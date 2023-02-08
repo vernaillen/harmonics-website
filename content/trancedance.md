@@ -1,5 +1,6 @@
 ---
 title: Trancedans
+showToc: false
 ---
 
 ### Geblinddoekte dans meditatie

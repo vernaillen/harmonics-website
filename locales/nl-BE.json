@@ -50,13 +50,16 @@
         "thanks": "Bedankt voor je bezoekje aan ",
         "question": "Heb je graag dat we jou via e-mail op de hoogte houden van de komende dans sessies?",
         "yes": "Graag!",
-        "no": "Dat hoeft niet"
+        "no": "Hoeft niet"
     },
     "dates": {
         "published": "gepubliceerd op",
         "lastUpdated": "laatst aangepast op"
     },
     "tickets": "Tickets",
+    "toc": {
+        "title": "Pagina Inhoud"
+    },
     "time_ago_options": {
         "day_future": "in 0 dagen|morgen|in {n} dagen",
         "day_past": "0 dagen geleden|gisteren|{n} dagen geleden",

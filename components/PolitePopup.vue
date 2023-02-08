@@ -29,17 +29,18 @@ const onClickClose = () => {
     "
   >
     <span class="prose">
-      <h3 class="text-lg">{{ t('politePopup.thanks') }}
+      <h3 class="text-lg !mb-0">{{ t('politePopup.thanks') }}
         <span class="text-primary font-bold">Harmonics</span>!
-        <Icon name="openmoji:folded-hands-medium-light-skin-tone" class="hover:text-gray-500 text-[#1877F2]" size="24" />
+
       </h3>
+      <Icon name="openmoji:folded-hands-medium-light-skin-tone" class="hover:text-gray-500 text-[#1877F2]" size="24" />
       <p>{{ t('politePopup.question') }}</p>
     </span>
     <div class="flex gap-4 mt-4">
-      <button class="text-base font-medium text-white bg-primary py-2 px-6 hover:bg-opacity-80 hover:shadow-signUp rounded-md" @click="onClickOk">
+      <button class="text-base font-medium text-white bg-primary py-2 px-4 hover:bg-opacity-80 hover:shadow-signUp rounded-md" @click="onClickOk">
         {{ t('politePopup.yes') }}
       </button>
-      <button class="bg-white text-base font-medium py-2 px-6 hover:bg-opacity-80 hover:shadow-signUp rounded-md" @click="onClickClose">
+      <button class="bg-white text-base font-medium py-2 px-4 hover:bg-opacity-80 hover:shadow-signUp rounded-md" @click="onClickClose">
         {{ t('politePopup.no') }}
       </button>
     </div>
