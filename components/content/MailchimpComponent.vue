@@ -20,9 +20,6 @@ const { t } = useI18n()
         </button>
       </a>
     </p>
-    <p class="text-sm">
-      {{ t('mailinglist.opensmailchimp') }}
-    </p>
   </div>
 </template>
 

@@ -46,6 +46,12 @@
         "subscribe": "Schrijf nu in",
         "opensmailchimp": "(opent de mailchimp registratie pagina)"
     },
+    "politePopup": {
+        "thanks": "Bedankt voor je bezoekje aan ",
+        "question": "Heb je graag dat we jou via e-mail op de hoogte houden van de komende dans sessies?",
+        "yes": "Graag!",
+        "no": "Dat hoeft niet"
+    },
     "dates": {
         "published": "gepubliceerd op",
         "lastUpdated": "laatst aangepast op"

@@ -24,6 +24,7 @@ useHead({
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
+  <PolitePopup />
 </template>
 
 <style>

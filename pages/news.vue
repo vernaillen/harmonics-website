@@ -25,7 +25,7 @@ const { data: posts } = await useLazyAsyncData('posts', () => queryContent(local
             <NewsItem v-if="index === 0" :post="post" :big="true" />
           </div>
         </div>
-        <div class="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 mb-5 prose">
+        <div id="newsletter" class="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 mb-5 prose">
           <MailchimpComponent />
         </div>
       </div>

@@ -23,6 +23,11 @@ useHead({
     },
   ],
 })
+
+const route = useRoute()
+const { trigger } = usePolitePopup()
+if (route.path !== '/contact' && route.path !== '/en/contact')
+  trigger()
 </script>
 
 <template>

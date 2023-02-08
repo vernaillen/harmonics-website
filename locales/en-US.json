@@ -46,6 +46,12 @@
         "subscribe": "Subscribe now",
         "opensmailchimp": "(opens the mailchimp registration page)"
     },
+    "politePopup": {
+        "thanks": "Thanks for visiting ",
+        "question": "Do you want us to keep you informed via e-mail about upcoming dance sessions?",
+        "yes": "Yes please!",
+        "no": "No need"
+    },
     "dates": {
         "published": "published on",
         "lastUpdated": "last edited on"
