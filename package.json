@@ -28,7 +28,7 @@
     "vee-validate": "^4.7.3",
     "vue-easy-lightbox": "^1.12.0",
     "vue-gtag": "^2.0.1",
-    "yup": "^0.32.11"
+    "yup": "^1.0.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.1",
