@@ -45,8 +45,8 @@ Bron: [Wat is Trancedans? door Aernoudt Knecht](https://www.trancedans.net/tranc
 De muziek voor de trancedans wordt zorgvuldig uitgekozen door [Wouter](/about). Daarbij wordt meestal gewerkt rond één bepaald thema, en wordt veel aandacht besteed aan het creëren van een diepgaande, meeslepende flow met helende klanken en ritmes.
 Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.com/soundhealing-training), en bescheiden dj-skills uit een vorig leven, komen daarbij goed van pas.
 
-Hier kan je luisteren naar een voorbeeld van een trancedans set van een vorige sessie: [Trancedans Muziek](/news/trancedancemusic).
-Voor elke sessie wordt telkens andere muziek gebruikt.
+Hier kan je luisteren naar een trancedans set van een vorige sessie: [Trancedans Muziek](/news/trancedancemusic).
+Voor elke sessie wordt telkens andere muziek gebruikt, gebaseerd op het thema voor die specifieke sessie.
 
 ### Maandelijkse sessies bij Dwarsligger
 

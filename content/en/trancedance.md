@@ -43,8 +43,8 @@ Source: [Aernoudt Knecht @ trance-dance.net](https://trance-dance.net/what-is-tr
 The music for the trance dance is carefully selected by [Wouter](/en/about), usually around one specific theme. A lot of attention is put into creating a profound, compelling flow with healing sounds and rhythms.
 A recent [sound healing training](https://www.akasharetreatcenter.com/soundhealing-training), and modest DJ skills from a past life, come in handy here.
 
-You can listen to an example of a Trance Dance set from a previous session: [Trance Dance Music](/en/news/trancedancemusic).
-Each session different music will be used.
+You can listen to Trance Dance set from a previous session: [Trance Dance Music](/en/news/trancedancemusic).
+Each session different music will be used, based on the theme for that specific session.
 
 ### Monthly sessions at Dwarsligger
 
