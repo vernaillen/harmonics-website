@@ -57,14 +57,12 @@ Daardoor kunnen we de trancedans combineren met bijvoorbeeld ademwerk, drumcirke
 
 Eerstvolgende sessies:
 
- * [Maandag 20 februari 2023](https://www.dwarsligger33.com/event-details/trancedans-2) om 18u45 :FBLink{src=https://www.facebook.com/events/3402343063376965/} :ButtonLink{text='Reserveer je plek' src=https://www.dwarsligger33.com/event-details/trancedans-2/form extraClass='mt-[-20px] inline-block'}
+ * [Maandag 20 februari 2023](/news/trancedance20february2023) om 18u45 :FBLink{src=https://www.facebook.com/events/3402343063376965/} :ButtonLink{text='Reserveer je plek' src=https://www.dwarsligger33.com/event-details/trancedans-2/form extraClass='mt-[-20px] inline-block'}
  gefaciliteerd door [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about)
- * [Maandag 20 maart 2023](https://www.dwarsligger33.com/event-details/trancedans-3) om 18u45
- * [Maandag 17 april 2023](https://www.dwarsligger33.com/event-details/trancedans-4) om 18u45
+ * Maandag 20 maart 2023 om 18u45
+ * Maandag 17 april 2023 om 18u45
 
-Reserveer jouw plekje via [de agenda van Dwarsligger](https://www.dwarsligger33.com/agenda).
-
-Je kan ook [inschrijven op de nieuwsbrief](/news) om op de hoogte te blijven ivm nieuwe data.
+Je kan ook inschrijven op :MailchimpExternalLink om op de hoogte te blijven ivm nieuwe data.
 
 ### Meebrengen
 * een blinddoek, best met meerdere donkere lagen stof
@@ -74,10 +72,7 @@ Je kan ook [inschrijven op de nieuwsbrief](/news) om op de hoogte te blijven ivm
 * eventueel pen en papier om na de dans je ervaringen te noteren
 
 ### Locatie
-[vzw Dwarsligger](https://www.dwarsligger33.com/)
-Gontrode Heirweg 141
-Melle, België
-[google maps](https://goo.gl/maps/MnNE7r2AvZPsRXsK9)
-(best 'vzw Dwarsligger' intikken in de gps)
 
-![workshop space @ Dwarsligger](/images/trancedance/dwarsligger.jpg)
+:DwarsliggerLocationInfo
+
+![dans ruimte bij Dwarsligger](/images/trancedance/dwarsligger.jpg)

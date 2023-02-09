@@ -41,6 +41,7 @@
         "fetchingBuildinfo": "build info wordt opgehaald..."
     },
     "mailinglist": {
+        "name": "Harmonics nieuwsbrief",
         "title": "Ontvang Harmonics nieuws via e-mail",
         "subtitle": "...en blijf op de hoogte van de komende ecstatic dance & trance dance sessies",
         "subscribe": "Schrijf nu in",
@@ -59,6 +60,12 @@
     "tickets": "Tickets",
     "toc": {
         "title": "Pagina Inhoud"
+    },
+    "dwarsligger": {
+        "name": "vzw Dwarsligger",
+        "addressLine1": "Gontrode Heirweg 141",
+        "addressLine2": "9090 Melle, België",
+        "gpsInfo": "best 'vzw Dwarsligger' intikken in de gps"
     },
     "time_ago_options": {
         "day_future": "in 0 dagen|morgen|in {n} dagen",
