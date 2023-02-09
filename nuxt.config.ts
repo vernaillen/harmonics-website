@@ -55,4 +55,7 @@ export default defineNuxtConfig({
   plausible: {
     // apiHost: 'https://harmonics.be/plredir',
   },
+  generate: {
+    routes: ['/', '/thanks'],
+  },
 })

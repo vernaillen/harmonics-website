@@ -19,7 +19,7 @@ describe('test thanks page', () => {
     cy.get('header .languageSwitcher a').should('have.length', 2)
     cy.get('header .languageSwitcher a').last().click()
     cy.location().should((location) => {
-      expect(location.pathname).to.eq('/en/thanks/')
+      expect(location.pathname).contains('/en/thanks')
     })
 
     cy.get('main h1').should('have.length', 2)
