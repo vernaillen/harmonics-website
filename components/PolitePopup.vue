@@ -1,10 +1,11 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const { setClosed, visible } = usePolitePopup()
+const appConfig = useAppConfig()
 
 const onClickOk = async () => {
   setClosed()
-  window.open('https://harmonics.us14.list-manage.com/subscribe?u=70b20f90b742c102a6d56ec9c&id=7e4d7c55a7')
+  window.open(appConfig.mailchimpLink)
 }
 
 const onClickClose = () => {

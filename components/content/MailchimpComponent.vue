@@ -1,15 +1,16 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const appConfig = useAppConfig()
 </script>
 
 <template>
-  <div>
+  <div v-if="appConfig.mailchimpLink">
     <h1 class="text-3xl font-bold text-primary">
       {{ t('mailinglist.title') }}
     </h1>
     <p>{{ t('mailinglist.subtitle') }}</p>
     <p>
-      <a href="http://eepurl.com/h9DVsf" target="_blank">
+      <a :href="appConfig.mailchimpLink" target="_blank">
         <Icon name="twemoji:open-mailbox-with-raised-flag" class="mailbox text-6xl fill-primary" />
       </a>
     </p>

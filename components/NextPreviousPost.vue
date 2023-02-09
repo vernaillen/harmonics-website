@@ -2,7 +2,9 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
-const [prev, next] = await queryContent(localePath('/news')).findSurround(route.path)
+const [prev, next] = await queryContent(localePath('/news'))
+  .where({ news: true })
+  .findSurround(route.path)
 </script>
 
 <template>
