@@ -11,7 +11,11 @@ useHead({
   ],
 })
 const localePath = useLocalePath()
-const { data: posts } = await useLazyAsyncData('posts', () => queryContent(localePath('/news')).sort({ _file: -1 }).find())
+const { data: posts } = await useLazyAsyncData('posts', () =>
+  queryContent(localePath('/news'))
+    .where({ news: true })
+    .sort({ _file: -1 })
+    .find())
 </script>
 
 <template>
