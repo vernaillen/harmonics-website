@@ -21,6 +21,8 @@
     "release:major": "release-it major --ci"
   },
   "dependencies": {
+    "@mollie/api-client": "^3.6.0",
+    "@netlify/plugin-emails": "^1.0.0",
     "@nuxtjs/axios": "^5.13.6",
     "@pinia/nuxt": "^0.4.6",
     "@vueuse/core": "^9.12.0",

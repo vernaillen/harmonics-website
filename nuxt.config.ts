@@ -2,6 +2,9 @@ import { i18n } from './config/i18n'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    mollieApiKey: '', // can be overridden by NUXT_MOLLIE_API_KEY environment variable
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
@@ -56,6 +59,12 @@ export default defineNuxtConfig({
     // apiHost: 'https://harmonics.be/plredir',
   },
   generate: {
+    exclude: ['.netlify'],
     routes: ['/', '/thanks'],
+  },
+  nitro: {
+    prerender: {
+      ignore: ['.netlify'],
+    },
   },
 })

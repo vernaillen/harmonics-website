@@ -8,3 +8,7 @@ node_modules
 dist
 coverage/
 cypress/screenshots/
+cypress/cache/
+
+# Local Netlify folder
+.netlify
