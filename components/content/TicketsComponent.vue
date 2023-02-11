@@ -1,6 +1,4 @@
 <script setup lang="ts">
-const emailResponse = ref()
-
 const triggerPayment = async () => {
   // call to the Netlify Function you created
   try {
@@ -12,7 +10,6 @@ const triggerPayment = async () => {
       }),
     })
     console.log(resp)
-    emailResponse.value = resp
   }
   catch (error) {
     console.error(error)
@@ -44,5 +41,5 @@ const triggerPayment = async () => {
     @click="triggerPayment"
   >
     Bestel nu
-  </button> {{ emailResponse.value }}
+  </button>
 </template>
