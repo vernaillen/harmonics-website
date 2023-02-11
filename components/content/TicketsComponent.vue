@@ -1,14 +1,21 @@
 <script setup lang="ts">
 import type { Payment } from '@mollie/api-client'
 
+const message = ref()
+
 const startPayment = async () => {
   const { data: payment } = await useFetch<Payment>('/api/mollie')
   if (payment && payment.value) {
-    console.log(payment.value)
-    const paymentData: Payment = payment.value
-    console.log(paymentData)
-    if (paymentData._links.checkout && paymentData._links.checkout?.href)
-      document.location.href = paymentData._links.checkout?.href
+    if (payment.value === 'MollieApiKeyMissing') {
+      message.value = payment.value
+    }
+    else {
+      console.log(payment.value)
+      const paymentData: Payment = payment.value
+      console.log(paymentData)
+      if (paymentData._links.checkout && paymentData._links.checkout?.href)
+        document.location.href = paymentData._links.checkout?.href
+    }
   }
 }
 </script>
@@ -19,5 +26,5 @@ const startPayment = async () => {
     @click="startPayment"
   >
     Bestel nu
-  </button>
+  </button> {{ message }}
 </template>
