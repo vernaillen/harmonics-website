@@ -1,24 +1,33 @@
-import type { Payment } from '@mollie/api-client'
 import { createMollieClient } from '@mollie/api-client'
 const config = useRuntimeConfig()
 
-export default defineEventHandler(async () => {
+export default defineEventHandler(async (event) => {
   if (config.mollieApiKey) {
+    const body = await readBody(event)
+
+    const unitPrice = 45
+    const totalPrice: number = unitPrice * body.amount
+
     const mollieClient = createMollieClient({ apiKey: config.mollieApiKey })
 
-    const paymentResponse: Payment = await mollieClient.payments.create({
-      amount: {
-        value: '10.00',
-        currency: 'EUR',
-      },
-      description: 'My next API payment',
-      redirectUrl: 'https://harmonics.be/tickets/123456',
-      webhookUrl: 'https://harmonics.be/api/mollieWebhook',
-      metadata: {
-        order_id: '123456',
-      },
-    })
-    return paymentResponse
+    try {
+      const paymentResponse = await mollieClient.payments.create({
+        amount: {
+          value: `${totalPrice}.00`,
+          currency: 'EUR',
+        },
+        description: 'Tickets Trancedans 20 februari 2023',
+        redirectUrl: `${config.mollieRedirectBase}/tickets/123456`,
+        webhookUrl: `${config.mollieRedirectBase}/api/mollieWebhook`,
+        metadata: {
+          order_id: '123456',
+        },
+      })
+      return paymentResponse
+    }
+    catch (error) {
+      console.error(error)
+    }
   }
   else {
     return 'MollieApiKeyMissing'

@@ -4,6 +4,7 @@ import { i18n } from './config/i18n'
 export default defineNuxtConfig({
   runtimeConfig: {
     mollieApiKey: '', // can be overridden by NUXT_MOLLIE_API_KEY environment variable
+    mollieRedirectBase: 'https://mollie--harmonics-website.netlify.app',
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
