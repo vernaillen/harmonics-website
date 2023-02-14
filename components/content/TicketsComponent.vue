@@ -39,7 +39,6 @@ const triggerPayment = async () => {
     Reserveer je ticket
   </button>
   <br>
-  {{ emailResponse.body }}
   <br>
   TODO:
   <ul>

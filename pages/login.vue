@@ -12,10 +12,11 @@ watchEffect(async () => {
 })
 
 const login = async () => {
-  const redirectTo = `${window.location.origin}/admin`
+  const redirect = `${window.location.origin}/news`
+  console.log(`login method redirect: ${redirect}`)
   const { error } = await supabase.auth.signInWithOAuth({
     provider: 'github',
-    options: { redirectTo },
+    options: { redirectTo: redirect },
   })
 
   if (error)
