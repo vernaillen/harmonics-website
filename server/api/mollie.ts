@@ -4,10 +4,7 @@ const config = useRuntimeConfig()
 export default defineEventHandler(async (event) => {
   if (config.mollieApiKey) {
     const body = await readBody(event)
-
-    const unitPrice = 45
-    const totalPrice: number = unitPrice * body.amount
-
+    const totalPrice: number = body.unitPrice * body.amount
     const mollieClient = createMollieClient({ apiKey: config.mollieApiKey })
 
     try {
@@ -16,8 +13,8 @@ export default defineEventHandler(async (event) => {
           value: `${totalPrice}.00`,
           currency: 'EUR',
         },
-        description: 'Tickets Trancedans 20 februari 2023',
-        redirectUrl: `${config.mollieRedirectBase}/tickets/123456`,
+        description: body.ticketTitle,
+        redirectUrl: `${config.mollieRedirectBase}/ticket/123456`,
         webhookUrl: `${config.mollieRedirectBase}/api/mollieWebhook`,
         metadata: {
           order_id: '123456',

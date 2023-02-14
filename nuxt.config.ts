@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     mollieApiKey: '', // can be overridden by NUXT_MOLLIE_API_KEY environment variable
     mollieRedirectBase: 'https://mollie--harmonics-website.netlify.app',
+    sendgridApiKey: '',
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -16,6 +17,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
     '@nuxtjs/plausible',
+    '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon',
@@ -60,12 +62,11 @@ export default defineNuxtConfig({
     // apiHost: 'https://harmonics.be/plredir',
   },
   generate: {
-    exclude: ['.netlify'],
     routes: ['/', '/thanks'],
   },
   nitro: {
     prerender: {
-      ignore: ['.netlify'],
+      ignore: ['.netlify', '/emails/paymentReceived'],
     },
   },
 })
