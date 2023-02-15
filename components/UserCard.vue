@@ -40,6 +40,7 @@ const profile = computed(
     class="rounded p-3 flex items-center space-x-3 bg-white"
   >
     <img
+      v-if="profile"
       class="rounded-full w-12 h-12 border-2 border-blue-400"
       :src="profile"
     >
