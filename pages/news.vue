@@ -16,6 +16,10 @@ const { data: posts } = await useLazyAsyncData('posts', () =>
     .where({ news: true })
     .sort({ _file: -1 })
     .find())
+
+definePageMeta({
+  documentDriven: false,
+})
 </script>
 
 <template>
