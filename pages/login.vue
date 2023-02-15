@@ -20,7 +20,6 @@ const signInWithGitHub = async () => {
     provider: 'github',
     options: { redirectTo: `${window.location.origin}/admin` },
   })
-
   if (error)
     console.error(error)
 }
@@ -55,18 +54,21 @@ definePageMeta({
             Log in with Github
           </button>
 
-          <br>
-          <br>
-          <input v-model="emailAddress" class="border rounded-md p-1" placeholder="E-mail address">
-          <button
-            class="bg-primary text-white font-bold py-1 px-3 ml-5 rounded-md"
-            @click="signInWithEmail"
-          >
-            Send me a Magic Link
-          </button>
-          <br><br>
-          <div v-if="emailOptInError">
+          <br><br><br>
+          <div v-if="emailOptInReply">
+            check your e-mail
+          </div>
+          <div v-else-if="emailOptInError">
             emailOptInError: {{ emailOptInError }}
+          </div>
+          <div v-else>
+            <input v-model="emailAddress" class="border rounded-md p-1" placeholder="E-mail address">
+            <button
+              class="bg-primary text-white font-bold py-1 px-3 ml-5 rounded-md"
+              @click="signInWithEmail"
+            >
+              Send me a Magic Link
+            </button>
           </div>
         </div>
       </div>
