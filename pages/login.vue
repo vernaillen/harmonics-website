@@ -13,7 +13,6 @@ watchEffect(async () => {
 
 const login = async () => {
   const redirect = `${window.location.origin}/news`
-  console.log(`login method redirect: ${redirect}`)
   const { error } = await supabase.auth.signInWithOAuth({
     provider: 'github',
     options: { redirectTo: redirect },
@@ -22,6 +21,9 @@ const login = async () => {
   if (error)
     console.error(error)
 }
+definePageMeta({
+  documentDriven: false,
+})
 </script>
 
 <template>
