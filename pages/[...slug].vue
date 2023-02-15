@@ -3,28 +3,35 @@ import type { Ref } from 'vue'
 
 const { page } = useContent()
 const { t } = useI18n()
+const localePath = useLocalePath()
 
 let title = t('website.title')
 let ogImage = '/harmonics.png'
-if (page && page.value && page.value.title)
+if (page.value && page.value.title)
   title = `${page.value.title} | ${t('website.title')}`
-if (page && page.value && page.value.ogImage)
+if (page.value && page.value.ogImage)
   ogImage = t('website.hostname') + page.value.ogImage
-else if (page && page.value && page.value.thumbnail)
+else if (page.value && page.value.thumbnail)
   ogImage = t('website.hostname') + page.value.thumbnail
-useHead({
-  title,
-  meta: [
-    {
-      property: 'og:title',
-      content: title,
-    },
-    {
-      property: 'og:image',
-      content: ogImage,
-    },
-  ],
-})
+
+if (page.value) {
+  useHead({
+    title,
+    meta: [
+      {
+        property: 'og:title',
+        content: title,
+      },
+      {
+        property: 'og:image',
+        content: ogImage,
+      },
+    ],
+  })
+}
+else {
+  setResponseStatus(404)
+}
 
 const route = useRoute()
 const { trigger } = usePolitePopup()
@@ -114,6 +121,11 @@ onUnmounted(() => {
                 </div>
               </template>
             </ContentDoc>
+          </article>
+        </div>
+        <div v-else class="prose m-auto">
+          <article>
+            <ContentDoc :path="localePath('/404')" />
           </article>
         </div>
       </div>
