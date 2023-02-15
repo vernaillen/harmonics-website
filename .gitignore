@@ -5,6 +5,9 @@ node_modules
 .cache
 .output
 .env
+.netlify
 dist
 coverage/
 cypress/screenshots/
+cypress/cache/
+pages/news.vue
