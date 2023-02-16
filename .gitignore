@@ -10,4 +10,3 @@ dist
 coverage/
 cypress/screenshots/
 cypress/cache/
-pages/news.vue

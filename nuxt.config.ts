@@ -2,6 +2,11 @@ import { i18n } from './config/i18n'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    mollieApiKey: '', // can be overridden by NUXT_MOLLIE_API_KEY environment variable
+    mollieRedirectBase: 'https://mollie--harmonics-website.netlify.app',
+    sendgridApiKey: '',
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
@@ -12,6 +17,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
     '@nuxtjs/plausible',
+    '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon',
@@ -57,5 +63,10 @@ export default defineNuxtConfig({
   },
   generate: {
     routes: ['/', '/thanks'],
+  },
+  nitro: {
+    prerender: {
+      ignore: ['.netlify', '/emails/paymentReceived'],
+    },
   },
 })
