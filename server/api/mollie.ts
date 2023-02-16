@@ -14,8 +14,8 @@ export default defineEventHandler(async (event) => {
           currency: 'EUR',
         },
         description: body.ticketTitle,
-        redirectUrl: `${config.mollieRedirectBase}/ticket/123456`,
-        webhookUrl: `${config.mollieRedirectBase}/api/mollieWebhook`,
+        redirectUrl: `${body.host}/ticket/123456`,
+        webhookUrl: `${config.host}/api/mollieWebhook`,
         metadata: {
           order_id: '123456',
         },

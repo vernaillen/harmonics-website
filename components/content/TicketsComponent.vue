@@ -4,7 +4,12 @@ import type { Payment } from '@mollie/api-client'
 const triggerPayment = async () => {
   notifyAdminAboutMollie(useAppConfig().sendGridEmailFrom)
   const { data: payment } = await useFetch<Payment>('/api/mollie', {
-    body: { amount: 1, unitPrice: 25, ticketTitle: 'Ticket Trancedans 20 maart 2023' },
+    body: {
+      amount: 1,
+      unitPrice: 25,
+      ticketTitle: 'Ticket Trancedans 20 maart 2023',
+      host: window.location.origin,
+    },
     method: 'post',
   })
 
