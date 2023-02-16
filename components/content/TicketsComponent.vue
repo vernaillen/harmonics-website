@@ -1,22 +1,8 @@
 <script setup lang="ts">
 import type { Payment } from '@mollie/api-client'
-const user = useSupabaseUser()
-const emailResponse = ref()
 
 const triggerPayment = async () => {
-  try {
-    const { data: resp } = await useFetch('/api/sendGrid', {
-      method: 'POST',
-      body: JSON.stringify({
-        subscriberName: user.value?.user_metadata.full_name,
-        subscriberEmail: user.value?.email,
-      }),
-    })
-    emailResponse.value = resp
-  }
-  catch (error) {
-    console.error(error)
-  }
+  notifyAdminAboutMollie(useAppConfig().sendGridEmailFrom)
   const { data: payment } = await useFetch<Payment>('/api/mollie', {
     body: { amount: 1, unitPrice: 25, ticketTitle: 'Ticket Trancedans 20 maart 2023' },
     method: 'post',
