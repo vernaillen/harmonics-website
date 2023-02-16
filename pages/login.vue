@@ -2,7 +2,6 @@
 const { query } = useRoute()
 const supabase = useSupabaseClient()
 const user = useSupabaseUser()
-const appConfig = useAppConfig()
 
 watchEffect(async () => {
   if (user.value) {
@@ -11,7 +10,6 @@ watchEffect(async () => {
     })
   }
 })
-
 const emailOptInReply = ref()
 const emailOptInError = ref()
 const emailAddress = ref('')
@@ -19,7 +17,7 @@ const emailAddress = ref('')
 const signInWithGitHub = async () => {
   const { error } = await supabase.auth.signInWithOAuth({
     provider: 'github',
-    options: { redirectTo: appConfig.supabaseRedirectUrl },
+    options: { redirectTo: `${window.location.origin}${query.redirectTo}` },
   })
   if (error)
     console.error(error)
@@ -29,7 +27,7 @@ const signInWithEmail = async () => {
   const { data, error } = await supabase.auth.signInWithOtp({
     email: emailAddress.value,
     options: {
-      emailRedirectTo: appConfig.supabaseRedirectUrl,
+      emailRedirectTo: `${window.location.origin}${query.redirectTo}`,
     },
   })
   emailOptInReply.value = data
