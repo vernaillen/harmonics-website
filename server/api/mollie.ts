@@ -15,7 +15,7 @@ export default defineEventHandler(async (event) => {
         },
         description: body.ticketTitle,
         redirectUrl: `${body.host}/ticket/123456`,
-        webhookUrl: `${config.host}/api/mollieWebhook`,
+        webhookUrl: 'https://harmonics.be/api/mollieWebhook',
         metadata: {
           order_id: '123456',
         },

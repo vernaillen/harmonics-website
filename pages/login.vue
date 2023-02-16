@@ -15,6 +15,10 @@ const supabase = useSupabaseClient()
 const user = useSupabaseUser()
 const appConfig = useAppConfig()
 
+const isPostAuthRedirect = ref(false)
+if (query && query.refresh && query.refresh === 'true')
+  isPostAuthRedirect.value = true
+
 watchEffect(async () => {
   if (user.value) {
     await navigateTo(query.redirectTo as string, {
@@ -31,7 +35,7 @@ const signInWithGitHub = async () => {
   notifyAdminAboutSignIn(appConfig.sendGridEmailFrom, 'method used: GitHub')
   const { error } = await supabase.auth.signInWithOAuth({
     provider: 'github',
-    options: { redirectTo: `${window.location.origin}/admin` },
+    options: { redirectTo: `${window.location.origin}/admin/redirect` },
   })
   if (error)
     console.error(error)
@@ -44,7 +48,7 @@ const signInWithEmail = async (email: string) => {
     const { data, error } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: `${window.location.origin}/admin`,
+        emailRedirectTo: `${window.location.origin}/admin/redirect`,
       },
     })
     emailOptInReply.value = data
@@ -66,7 +70,10 @@ definePageMeta({
   <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
     <div class="flex">
       <div class="w-full px-4 sm:px-6 lg:px-8 mb-10">
-        <div class="prose m-auto">
+        <div v-if="isPostAuthRedirect" class="prose m-auto">
+          <Spinner /> logging you in...
+        </div>
+        <div v-else class="prose m-auto">
           Log in with:<br><br>
           <button
             class="bg-primary text-white py-1 px-4 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
@@ -82,11 +89,7 @@ definePageMeta({
             emailOptInError: {{ emailOptInError }}
           </div>
           <div v-else-if="magicLinkPending">
-            <Icon
-              name="uil:spinner-alt"
-              class="animate-spin"
-              size="24"
-            />
+            <Spinner /> sending you the Magic Link...
           </div>
           <div v-else>
             <form method="POST" @submit.prevent="submitForm">

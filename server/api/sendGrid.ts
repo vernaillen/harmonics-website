@@ -1,11 +1,10 @@
 import sgMail from '@sendgrid/mail'
 
 const config = useRuntimeConfig()
-sgMail.setApiKey(config.sendGridApiKey)
+sgMail.setApiKey(config.sendgridApiKey)
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
-
   const msg = {
     to: body.emailTo,
     from: body.emailFrom,
