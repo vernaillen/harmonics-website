@@ -8,6 +8,6 @@ definePageMeta({
 
 <template>
   <div>
-    Hier overzicht ophalen van gemaakte reservaties
+    Hier overzicht tonen van gemaakte reservaties
   </div>
 </template>

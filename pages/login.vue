@@ -76,12 +76,18 @@ definePageMeta({
     <Spinner /> logging you in...
   </div>
   <div v-else class="prose m-auto">
-    Confirm your e-mail address to get your Harmonics tickets<br><br>
+    Confirm your e-mail address to access to your Harmonics reservations<br><br>
     <button
       class="bg-[#333] text-white py-1 px-2 mr-2 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
       @click="signInWithOAuth('github')"
     >
       <Icon name="mdi:github" size="28" />
+    </button>
+    <button
+      class="bg-[#1877f2] text-white py-1 px-2 mr-2 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
+      @click="signInWithOAuth('facebook')"
+    >
+      <Icon name="mdi:facebook" size="28" />
     </button>
     <button
       class="bg-[#ea4335] text-white py-1 px-2 mr-2 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
@@ -91,7 +97,7 @@ definePageMeta({
         name="ion:logo-google" size="28"
       />
     </button>
-    <br><br>
+    <br>or<br>
     <div v-if="emailOptInReply">
       check your e-mail, the magic link is send to {{ emailAddress }}
     </div>
@@ -105,10 +111,10 @@ definePageMeta({
       <form method="POST" @submit.prevent="submitForm">
         <input
           v-model="email" name="email" type="email"
-          class="border rounded-md py-1 px-2" placeholder="E-mail address"
+          class="border rounded-md py-1 px-2 mr-2 mt-1" placeholder="E-mail address"
         >
         <button
-          class="bg-primary text-white py-1 px-2 ml-2 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
+          class="bg-primary text-white py-1 px-2 mt-1 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
         >
           <Icon name="mdi:email" />
           Magic Link
