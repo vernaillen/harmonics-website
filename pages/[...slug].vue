@@ -100,7 +100,10 @@ onUnmounted(() => {
               :sizes="page.imageSizes ? page.imageSizes : ''"
               :height="page.imageHeight ? page.imageHeight : '400'"
               :width="page.imageWidth ? page.imageWidth : ''"
-              :src="page.image" class="rounded-md  shadow-md shadow-gray-400" alt="article image"
+              :src="page.image"
+              fit="cover"
+              class="rounded-md shadow-md shadow-gray-400"
+              alt="article image"
             />
           </div>
           <article>

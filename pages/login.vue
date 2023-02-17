@@ -12,6 +12,7 @@ const { value: email, errorMessage: emailError } = useField('email')
 
 const { query } = useRoute()
 const supabase = useSupabaseClient()
+const supabaseAuthClient = useSupabaseAuthClient()
 const user = useSupabaseUser()
 const appConfig = useAppConfig()
 
@@ -35,15 +36,16 @@ const emailOptInError = ref()
 const emailAddress = ref('')
 const magicLinkPending = ref(false)
 
-const signInWithGitHub = async () => {
-  notifyAdminAboutSignIn(appConfig.sendGridEmailFrom, 'method used: GitHub')
-  const { error } = await supabase.auth.signInWithOAuth({
-    provider: 'github',
+const signInWithOAuth = async (provider: 'github' | 'google' | 'facebook') => {
+  const { error } = await supabaseAuthClient.auth.signInWithOAuth({
+    provider,
     options: { redirectTo: `${window.location.origin}${redirectTo.value}/authenticating` },
   })
+
   if (error)
     console.error(error)
 }
+
 const signInWithEmail = async (email: string) => {
   magicLinkPending.value = true
   emailAddress.value = email
@@ -76,10 +78,18 @@ definePageMeta({
   <div v-else class="prose m-auto">
     Confirm your e-mail address to get your Harmonics tickets<br><br>
     <button
-      class="bg-primary text-white py-1 px-4 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
-      @click="signInWithGitHub"
+      class="bg-[#333] text-white py-1 px-2 mr-2 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
+      @click="signInWithOAuth('github')"
     >
-      <Icon name="mdi:github" /> Github
+      <Icon name="mdi:github" size="28" />
+    </button>
+    <button
+      class="bg-[#ea4335] text-white py-1 px-2 mr-2 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
+      @click="signInWithOAuth('google')"
+    >
+      <Icon
+        name="ion:logo-google" size="28"
+      />
     </button>
     <br><br>
     <div v-if="emailOptInReply">
@@ -93,28 +103,20 @@ definePageMeta({
     </div>
     <div v-else>
       <form method="POST" @submit.prevent="submitForm">
-        <button
-          class="bg-primary text-white py-1 px-4 mr-2 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
-        >
-          <Icon name="mdi:email" />
-          Magic Link
-        </button>
         <input
           v-model="email" name="email" type="email"
           class="border rounded-md py-1 px-2" placeholder="E-mail address"
         >
+        <button
+          class="bg-primary text-white py-1 px-2 ml-2 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
+        >
+          <Icon name="mdi:email" />
+          Magic Link
+        </button>
         <div v-if="emailError" class="text-primary">
           {{ emailError }}
         </div>
       </form>
     </div>
-    <br><br>
-    Which other methods should we enable?
-    <ul>
-      <li>Phone: sms</li>
-      <li>Facebook</li>
-      <li>Google</li>
-      <li>... <a href="https://supabase.com/docs/guides/auth/overview#providers" target="_blank">supabase auth providers</a></li>
-    </ul>
   </div>
 </template>

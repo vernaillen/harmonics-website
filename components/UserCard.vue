@@ -39,11 +39,11 @@ const profile = computed(
     v-if="user"
     class="rounded flex items-center space-x-3 bg-white"
   >
-    <img
+    <NuxtImg
       v-if="profile"
       class="rounded-full w-12 h-12 "
       :src="profile"
-    >
+    />
     <div class="text-right">
       <div class="font-medium">
         {{ name }}

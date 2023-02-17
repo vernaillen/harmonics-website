@@ -5,8 +5,6 @@ export default defineNuxtRouteMiddleware((to) => {
     return navigateTo(`/login?redirectTo=${origPath}&refresh=true`)
   }
 
-  if (
-    !user.value && to.path.startsWith('/tickets')
-  )
+  if (!user.value && to.path.startsWith('/tickets'))
     return navigateTo(`/login?redirectTo=${to.path}`)
 })

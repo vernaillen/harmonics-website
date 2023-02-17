@@ -23,6 +23,10 @@ const user = useSupabaseUser()
                 <NuxtLink to="/tickets/test">
                   reservaties
                 </NuxtLink>
+                <br>
+                <NuxtLink to="/tickets/todo">
+                  to do
+                </NuxtLink>
               </div>
             </div>
             <div v-if="user" class="w-full lg:w-3/4 mb-5 px-4 sm:px-6 lg:px-8 prose">
