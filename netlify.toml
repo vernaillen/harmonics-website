@@ -17,6 +17,3 @@
   to = "https://plausible.io/api/event"
   status = 200
   force = true
-
-[[plugins]]
-  package = "@netlify/plugin-emails"

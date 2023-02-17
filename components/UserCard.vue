@@ -37,11 +37,11 @@ const profile = computed(
 <template>
   <div
     v-if="user"
-    class="rounded p-3 flex items-center space-x-3 bg-white"
+    class="rounded flex items-center space-x-3 bg-white"
   >
     <img
       v-if="profile"
-      class="rounded-full w-12 h-12 border-2 border-blue-400"
+      class="rounded-full w-12 h-12 "
       :src="profile"
     >
     <div class="text-right">
@@ -57,6 +57,8 @@ const profile = computed(
     </div>
   </div>
   <div v-else>
-    <a href="/login">login</a>
+    <NuxtLink to="/login">
+      login
+    </NuxtLink>
   </div>
 </template>
