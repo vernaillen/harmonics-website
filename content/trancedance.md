@@ -57,7 +57,7 @@ Daardoor kunnen we de trancedans combineren met bijvoorbeeld ademwerk, drumcirke
 
 Eerstvolgende sessies:
 
- * [Maandag 20 februari 2023](/news/trancedance20february2023) om 18u45 :FBLink{src=https://www.facebook.com/events/3402343063376965/} :ButtonLink{text='Reserveer je plek' src=https://www.dwarsligger33.com/event-details/trancedans-2/form extraClass='mt-[-20px] inline-block'}
+ * [Maandag 20 februari 2023](/news/trancedance20february2023) om 18u45 
  gefaciliteerd door [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about)
  * Maandag 20 maart 2023 om 18u45
  * Maandag 17 april 2023 om 18u45

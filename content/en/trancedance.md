@@ -55,7 +55,7 @@ This way we can combine the trance dance with for example breathwork, drum circl
 
 Upcoming sessions:
 
-  * [Monday 20 February 2023](/en/news/trancedance20february2023) at 6:45pm :FBLink{src=https://www.facebook.com/events/3402343063376965/}  :ButtonLink{text='Reserve your spot' src=https://www.dwarsligger33.com/event-details/trancedans-2/form extraClass='mt-[-20px] inline-block'}
+  * [Monday 20 February 2023](/en/news/trancedance20february2023) at 6:45pm 
   facilitated by [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/en/about)
   * Monday 20 March 2023 at 6:45pm
   * Monday 17 April 2023 at 6:45pm
