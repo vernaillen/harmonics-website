@@ -87,6 +87,10 @@ const buildTimeAgo = useTimeAgo(buildTimeDate, timeAgoOptions)
               <time :datetime="String(buildTimeDate)" :title="$d(buildTimeDate, 'long')">{{ buildTimeAgo }}</time>
             </i18n-t>
             <span v-else>{{ t('footer.fetchingBuildinfo') }}</span>
+            <span>
+              <a href="https://nuxt.com/" target="_blank">
+                <SvgIcon file="nuxt-icon-green.svg" />
+              </a></span>
           </div>
           <div class="text-sm text-gray-400 py-1">
             {{ t('footer.copyright') }} {{ date }} Vernaillen Consulting / Harmonics BV
