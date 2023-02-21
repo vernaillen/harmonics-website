@@ -37,7 +37,8 @@
     "footer": {
         "findus": "Je kan ons ook vinden op deze platformen",
         "copyright": "©",
-        "built_at": "{0} gebouwd",
+        "built_at": "laatst aangepast: {0}",
+        "developed_with": "ontwikkeld met",
         "fetchingBuildinfo": "build info wordt opgehaald..."
     },
     "mailinglist": {

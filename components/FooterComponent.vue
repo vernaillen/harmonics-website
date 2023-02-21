@@ -93,10 +93,11 @@ const buildTimeAgo = useTimeAgo(buildTimeDate, timeAgoOptions)
               <a href="https://nuxt.com/" target="_blank">
                 <SvgIcon file="nuxt-icon-green.svg" />
               </a>
+              {{ t('news.by') }} <a href="https://vernaillen.dev" class="hover:text-primary" target="_blank">Wouter Vernaillen</a>
             </span>
           </div>
           <div class="text-sm text-gray-400 py-1">
-            {{ t('footer.copyright') }} {{ date }} Vernaillen Consulting / Harmonics BV
+            {{ t('footer.copyright') }} {{ date }} Vernaillen Consulting / Harmonics BV - BE0503971022
           </div>
         </div>
       </div>
