@@ -78,19 +78,22 @@ const buildTimeAgo = useTimeAgo(buildTimeDate, timeAgoOptions)
 
       <div class="flex flex-wrap items-center md:justify-between justify-center">
         <div class="w-full px-4 mx-auto text-center">
-          <div class="text-xs text-gray-400 py-1">
-            <a href="https://github.com/vernaillen/harmonics-website/" target="_blank" class="hover:text-primary">
-              v{{ buildInfo.version }}
-              <Icon name="mdi:github" size="20" class="pb-1" />
-            </a>&nbsp;
-            <i18n-t v-if="isHydrated" keypath="footer.built_at">
-              <time :datetime="String(buildTimeDate)" :title="$d(buildTimeDate, 'long')">{{ buildTimeAgo }}</time>
-            </i18n-t>
-            <span v-else>{{ t('footer.fetchingBuildinfo') }}</span>
-            <span>
+          <div class="flex flex-wrap text-xs text-gray-400 py-1 justify-center">
+            <span class="w-full sm:w-auto">
+              <i18n-t v-if="isHydrated" keypath="footer.built_at">
+                <time :datetime="String(buildTimeDate)" :title="$d(buildTimeDate, 'long')">{{ buildTimeAgo }}</time>
+              </i18n-t>
+              <span v-else>{{ t('footer.fetchingBuildinfo') }}</span>
+              <a href="https://github.com/vernaillen/harmonics-website/" target="_blank" class="hover:text-primary">
+                <Icon name="mdi:github" size="20" class="pb-1" />
+              </a>
+            </span>
+            <span class="w-full sm:w-auto">
+              {{ t('footer.developed_with') }}
               <a href="https://nuxt.com/" target="_blank">
                 <SvgIcon file="nuxt-icon-green.svg" />
-              </a></span>
+              </a>
+            </span>
           </div>
           <div class="text-sm text-gray-400 py-1">
             {{ t('footer.copyright') }} {{ date }} Vernaillen Consulting / Harmonics BV
