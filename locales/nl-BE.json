@@ -60,6 +60,16 @@
         "published": "gepubliceerd op",
         "lastUpdated": "laatst aangepast op"
     },
+    "login": {
+        "reservations": "Ticket Reservaties",
+        "facebook": "Verbind via Facebook",
+        "google": "Verbind via Google",
+        "github": "Verbind via GitHub",
+        "email": "Email adres",
+        "magiclinkintro": "of via een \"magic link\" die naar je email adres verstuurd wordt",
+        "magiclink": "Magic Link",
+        "sendingmagiclink": "de Magic Link wordt naar je verstuurd..."
+    },
     "tickets": "Tickets",
     "toc": {
         "title": "Pagina Inhoud"
