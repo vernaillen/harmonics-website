@@ -39,7 +39,9 @@
         "copyright": "©",
         "built_at": "laatst aangepast: {0}",
         "developed_with": "ontwikkeld met",
-        "fetchingBuildinfo": "build info wordt opgehaald..."
+        "fetchingBuildinfo": "build info wordt opgehaald...",
+        "privacypolicy": "Privacybeleid",
+        "cookiepolicy": "Cookiebeleid"
     },
     "mailinglist": {
         "name": "Harmonics nieuwsbrief",

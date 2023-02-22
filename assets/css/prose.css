@@ -508,3 +508,26 @@
     font-size: 1.9em;
   }
 }
+
+
+.prose .iubenda_legal_document h1,
+.prose .iubenda_embed_policy h1 {
+  font-size: 1.2em;
+}
+.prose .iubenda_legal_document h2,
+.prose .iubenda_embed_policy h2 {
+  font-size: 1.1em;
+}
+.prose .iubenda_legal_document h3,
+.prose .iubenda_embed_policy h3 {
+  font-size: 1em;
+}
+.prose .iubenda_legal_document p,
+.prose .iubenda_legal_document ul > li,
+.prose .iubenda_embed_policy p,
+.prose .iubenda_embed_policy ul > li
+ {
+  font-size: 0.8rem;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}

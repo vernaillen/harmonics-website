@@ -20,3 +20,8 @@ export interface BuildInfo {
   branch: string
   env: 'preview' | 'master' | 'dev' | 'release'
 }
+
+export interface LegalPolicy {
+  success: boolean
+  content: string
+}

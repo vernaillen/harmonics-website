@@ -5,6 +5,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     mollieApiKey: '', // can be overridden by NUXT_MOLLIE_API_KEY environment variable
     sendgridApiKey: '',
+    iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
+    iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup',
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
