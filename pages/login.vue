@@ -4,12 +4,14 @@ import * as yup from 'yup'
 const { t } = useI18n()
 
 const schema = yup.object({
+  firstname: yup.string().required(),
   email: yup.string().required().email(),
 })
 const { handleSubmit } = useForm({
   validationSchema: schema,
 })
 const { value: email, errorMessage: emailError } = useField('email')
+const { value: firstname, errorMessage: firstnameError } = useField('firstname')
 
 const { query } = useRoute()
 const supabase = useSupabaseClient()
@@ -78,7 +80,7 @@ definePageMeta({
   </div>
   <div v-else class="prose m-auto">
     <p>Bevestig je email adres voor toegang tot Harmonics reservaties:</p>
-    <div class="w-full ml-10 md:w-1/2 lg:w-1/3">
+    <div class="w-full ml-auto sm:ml-10 sm:w-[300px]">
       <button
         class="bg-[#1877f2] w-full text-white py-1 px-6 mr-2 my-2 hover:bg-opacity-80 hover:shadow-signUp rounded-lg"
         @click="signInWithOAuth('facebook')"
@@ -104,27 +106,34 @@ definePageMeta({
     <p class="!mt-12">
       {{ t('login.magiclinkintro') }}:
     </p>
-    <div v-if="emailOptInReply" class="!ml-10">
+    <div v-if="emailOptInReply" class="ml-0 md:!ml-10">
       You've got mail!
     </div>
-    <div v-else-if="emailOptInError" class="!ml-10">
+    <div v-else-if="emailOptInError" class="ml-0 md:!ml-10">
       emailOptInError: {{ emailOptInError }}
     </div>
-    <div v-else-if="magicLinkPending" class="!ml-10">
+    <div v-else-if="magicLinkPending" class="ml-0 md:!ml-10">
       <Spinner /> {{ t('login.sendingmagiclink') }}
     </div>
-    <div v-else class="!ml-10">
+    <div v-else class="ml-0 sm:ml-10">
       <form method="POST" @submit.prevent="submitForm">
         <input
+          v-model="firstname" name="firstname" type="firstname"
+          class="w-full sm:w-[300px] border rounded-md py-1 px-2 mr-2 mt-1" :placeholder="t('login.firstname')"
+        ><br>
+        <input
           v-model="email" name="email" type="email"
-          class="border rounded-md py-1 px-2 mr-2 mt-1" :placeholder="t('login.email')"
-        >
+          class="w-full sm:w-[300px] border rounded-md py-1 px-2 mr-2 mt-1" :placeholder="t('login.email')"
+        ><br>
         <button
-          class="bg-primary text-white py-1 px-2 mt-1 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
+          class="w-full sm:w-[300px] bg-primary text-white py-1 px-2 mt-1 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
         >
           <Icon name="mdi:email" />
           {{ t('login.magiclink') }}
         </button>
+        <div v-if="firstnameError" class="text-primary">
+          {{ firstnameError }}
+        </div>
         <div v-if="emailError" class="text-primary">
           {{ emailError }}
         </div>
