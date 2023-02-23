@@ -79,26 +79,9 @@ definePageMeta({
     <Spinner /> {{ t('login.loggingyouin') }}
   </div>
   <div v-else class="prose m-auto">
-    <p>{{ t('login.intro') }}</p>
-    <div class="ml-0 sm:ml-10 w-full sm:w-[275px]">
-      <LoginButton
-        icon="mdi:facebook" :text="t('login.facebook')" class="bg-[#1877f2]"
-        @click="signInWithOAuth('facebook')"
-      />
-      <LoginButton
-        icon="ion:logo-google" :text="t('login.google')" class="bg-[#ea4335]"
-        @click="signInWithOAuth('google')"
-      />
-      <LoginButton
-        icon="mdi:github" :text="t('login.github')" class="bg-[#333]"
-        @click="signInWithOAuth('github')"
-      />
-    </div>
-    <p class="!mt-12">
-      {{ t('login.magiclinkintro') }}:
-    </p>
+    <p v-html="t('login.intro')" />
     <div v-if="emailOptInReply" class="ml-0 md:!ml-10">
-      You've got mail!
+      {{ t('login.youvegotmail') }}
     </div>
     <div v-else-if="emailOptInError" class="ml-0 md:!ml-10">
       emailOptInError: {{ emailOptInError }}
@@ -126,6 +109,24 @@ definePageMeta({
           {{ emailError }}
         </div>
       </form>
+    </div>
+    <p class="!mt-12">
+      {{ t('login.social') }}:
+    </p>
+    <div class="ml-0 sm:ml-10 w-full sm:w-[275px]">
+      <LoginButton
+        icon="mdi:facebook" :text="t('login.facebook')" class="bg-[#1877f2]"
+        @click="signInWithOAuth('facebook')"
+      />
+      <LoginButton
+        icon="ion:logo-google" :text="t('login.google')" class="bg-[#ea4335]"
+        @click="signInWithOAuth('google')"
+      />
+      <!--
+      <LoginButton
+        icon="mdi:github" :text="t('login.github')" class="bg-[#333]"
+        @click="signInWithOAuth('github')"
+      /> -->
     </div>
   </div>
 </template>
