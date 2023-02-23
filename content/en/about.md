@@ -7,9 +7,9 @@ Combined with modest electronic music production skills and dj-skills from a pre
 
 ::FloatingImage
 ---
-src: /images/wouter.jpg
+src: /images/woutervernaillen.jpg
 width: 280
-caption: picture by James Vanneman
+caption: Wouter Vernaillen
 ---
 ::
 In May 2022 Wouter played a first Ecstatic Dance session at a private birthday event: [Rebirth Ecstatic Dance @ Krimpvarkie Huisi](/en/news/rebirthecstaticdance). 2 more ED sessions followed in the summer of 2022, including [Release Your Inner Dancer](/en/news/releaseyourinnerdancer) on September 3.
