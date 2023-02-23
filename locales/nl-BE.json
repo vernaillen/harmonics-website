@@ -75,7 +75,10 @@
         "youvegotmail": "You've got mail!",
         "loggingyouin": "bezig met inloggen..."
     },
-    "tickets": "Tickets",
+    "tickets": {
+        "title": "Tickets",
+        "orderbutton": "Reserveer je plek"
+    },
     "toc": {
         "title": "Pagina Inhoud"
     },

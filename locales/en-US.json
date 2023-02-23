@@ -75,7 +75,10 @@
         "youvegotmail": "You've got mail!",
         "loggingyouin": "logging you in..."
     },
-    "tickets": "Tickets",
+    "tickets": { 
+        "title": "Tickets",
+        "orderbutton": "Register your spot"
+    },
     "toc": {
         "title": "Table of Contents"
     },

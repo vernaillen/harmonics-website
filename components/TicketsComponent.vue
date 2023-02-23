@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Payment } from '@mollie/api-client'
+const { t } = useI18n()
 
 const triggerPayment = async () => {
   notifyAdminAboutMollie(useAppConfig().sendGridEmailFrom)
@@ -27,6 +28,6 @@ const triggerPayment = async () => {
     class="text-base font-medium text-white bg-primary py-1 px-3 m-2 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
     @click="triggerPayment"
   >
-    Reserveer je ticket
+    {{ t('tickets.orderbutton') }}
   </button>
 </template>
