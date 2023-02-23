@@ -97,14 +97,19 @@ const buildTimeAgo = useTimeAgo(buildTimeDate, timeAgoOptions)
             </span>
           </div>
           <div class="text-sm text-gray-400 py-1">
-            {{ t('footer.copyright') }} {{ date }} Harmonics / Vernaillen Consulting BVBA -
-            <NuxtLink :to="localePath('/privacybeleid')" class="hover:text-primary inline-block ">
-              {{ t('footer.privacypolicy') }}
-            </NuxtLink>
-            -
-            <NuxtLink :to="localePath('/cookiebeleid')" class="hover:text-primary inline-block">
-              {{ t('footer.cookiepolicy') }}
-            </NuxtLink>
+            <span class="w-full md:w-auto">
+              {{ t('footer.copyright') }} {{ date }} Harmonics / Vernaillen Consulting BVBA - BE0503971022
+            </span>
+            <span class="hidden md:inline-block mr-1"> / </span>
+            <span class="w-full md:w-auto">
+              <NuxtLink :to="localePath('/privacybeleid')" class="hover:text-primary inline-block ">
+                {{ t('footer.privacypolicy') }}
+              </NuxtLink>
+              -
+              <NuxtLink :to="localePath('/cookiebeleid')" class="hover:text-primary inline-block">
+                {{ t('footer.cookiepolicy') }}
+              </NuxtLink>
+            </span>
           </div>
         </div>
       </div>
