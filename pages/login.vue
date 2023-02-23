@@ -76,32 +76,23 @@ definePageMeta({
 
 <template>
   <div v-if="isPostAuthRedirect" class="prose m-auto">
-    <Spinner /> logging you in...
+    <Spinner /> {{ t('login.loggingyouin') }}
   </div>
   <div v-else class="prose m-auto">
-    <p>Bevestig je email adres voor toegang tot Harmonics reservaties:</p>
-    <div class="w-full ml-auto sm:ml-10 sm:w-[300px]">
-      <button
-        class="bg-[#1877f2] w-full text-white py-1 px-6 mr-2 my-2 hover:bg-opacity-80 hover:shadow-signUp rounded-lg"
+    <p>{{ t('login.intro') }}</p>
+    <div class="ml-0 sm:ml-10 w-full sm:w-[275px]">
+      <LoginButton
+        icon="mdi:facebook" :text="t('login.facebook')" class="bg-[#1877f2]"
         @click="signInWithOAuth('facebook')"
-      >
-        <Icon name="mdi:facebook" size="28" />
-        {{ t('login.facebook') }}
-      </button><br>
-      <button
-        class="bg-[#ea4335] w-full text-white py-1 px-6 mr-2 my-2 hover:bg-opacity-80 hover:shadow-signUp rounded-lg"
+      />
+      <LoginButton
+        icon="ion:logo-google" :text="t('login.google')" class="bg-[#ea4335]"
         @click="signInWithOAuth('google')"
-      >
-        <Icon name="ion:logo-google" size="28" />
-        {{ t('login.google') }}
-      </button><br>
-      <button
-        class="bg-[#333] w-full text-white py-1 px-6 mr-2 my-2 hover:bg-opacity-80 hover:shadow-signUp rounded-lg"
+      />
+      <LoginButton
+        icon="mdi:github" :text="t('login.github')" class="bg-[#333]"
         @click="signInWithOAuth('github')"
-      >
-        <Icon name="mdi:github" size="28" />
-        {{ t('login.github') }}
-      </button>
+      />
     </div>
     <p class="!mt-12">
       {{ t('login.magiclinkintro') }}:
@@ -115,22 +106,19 @@ definePageMeta({
     <div v-else-if="magicLinkPending" class="ml-0 md:!ml-10">
       <Spinner /> {{ t('login.sendingmagiclink') }}
     </div>
-    <div v-else class="ml-0 sm:ml-10">
+    <div v-else class="ml-0 sm:ml-10 w-full sm:w-[275px]">
       <form method="POST" @submit.prevent="submitForm">
         <input
           v-model="firstname" name="firstname" type="firstname"
-          class="w-full sm:w-[300px] border rounded-md py-1 px-2 mr-2 mt-1" :placeholder="t('login.firstname')"
+          class="w-full border rounded-md py-1 px-2 mr-2 mt-1" :placeholder="t('login.firstname')"
         ><br>
         <input
           v-model="email" name="email" type="email"
-          class="w-full sm:w-[300px] border rounded-md py-1 px-2 mr-2 mt-1" :placeholder="t('login.email')"
+          class="w-full border rounded-md py-1 px-2 mr-2 mt-1" :placeholder="t('login.email')"
         ><br>
-        <button
-          class="w-full sm:w-[300px] bg-primary text-white py-1 px-2 mt-1 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
-        >
-          <Icon name="mdi:email" />
-          {{ t('login.magiclink') }}
-        </button>
+        <LoginButton
+          icon="mdi:email" :text="t('login.magiclink')" class="bg-primary"
+        />
         <div v-if="firstnameError" class="text-primary">
           {{ firstnameError }}
         </div>

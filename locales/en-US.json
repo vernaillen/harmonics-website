@@ -62,14 +62,16 @@
     },
     "login": {
         "reservations": "Ticket Reservations",
-        "facebook": "Connect with Facebook",
-        "google": "Connect with Google",
-        "github": "Connect with GitHub",
+        "intro": "Confirm your e-mail address to access to your Harmonics reservations:",
+        "facebook": "Facebook",
+        "google": "Google",
+        "github": "GitHub",
         "firstname": "First Name",
         "email": "E-mail address",
         "magiclinkintro": "of via een \"magic link\" die naar je email adres verstuurd wordt",
         "magiclink": "Magic Link",
-        "sendingmagiclink": "sending you the Magic Link by e-mail..."
+        "sendingmagiclink": "sending you the Magic Link by e-mail...",
+        "loggingyouin": "logging you in..."
     },
     "tickets": "Tickets",
     "toc": {
