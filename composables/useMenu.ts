@@ -7,12 +7,12 @@ export const useMenu = (): MenuItem[] => {
       titleKey: 'menu.home',
     },
     {
-      path: '/news',
-      titleKey: 'menu.news',
-    },
-    {
       path: '/trancedance',
       titleKey: 'menu.trancedance',
+    },
+    {
+      path: '/news',
+      titleKey: 'menu.news',
     },
     {
       path: '/about',

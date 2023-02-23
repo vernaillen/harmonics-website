@@ -2,8 +2,8 @@
 title: About Wouter and Harmonics
 ---
 
-In 2020 Wouter personally experienced the healing power of sound and music and decided in 2021 to follow a sound healing training [provided by Surya at Akasha Retreat Center](https://www.akasharetreatcenter.com/).
-Combined with modest electronic music production skills and dj-skills from a previous life, Wouter decided to start creating and playing music for holistic healing and dance.
+In 2020 I personally experienced the healing power of sound and music and in 2021 I decided to follow a sound healing training [provided by Surya at Akasha Retreat Center](https://www.akasharetreatcenter.com/).
+Combined with modest electronic music production skills and dj-skills from a previous life, I started creating and playing music for holistic healing and dance.
 
 ::FloatingImage
 ---
@@ -12,11 +12,17 @@ width: 280
 caption: Wouter Vernaillen
 ---
 ::
-In May 2022 Wouter played a first Ecstatic Dance session at a private birthday event: [Rebirth Ecstatic Dance @ Krimpvarkie Huisi](/en/news/rebirthecstaticdance). 2 more ED sessions followed in the summer of 2022, including [Release Your Inner Dancer](/en/news/releaseyourinnerdancer) on September 3.
+The search and selection of music for ecstatic dance and trance dance sessions and creating immersive dance flows is what I really love doing.
+I also like to co-create with another spaceholder. Thereful I'm very gratefull for the beautiful collaborations with Rita (my fellow student from the trance dance facilitator training), [Frouke Vermeulen](https://www.artsoundmedicinewoman.com/about/) and [Karien Detavernier](https://www.shamanour.be/autobiografie).
+
+
+### Ecstatic dance
+In May 2022 I played a first Ecstatic Dance session at a private birthday event: [Rebirth Ecstatic Dance @ Krimpvarkie Huisi](/en/news/rebirthecstaticdance). 2 more ED sessions followed in the summer of 2022, including [Release Your Inner Dancer](/en/news/releaseyourinnerdancer) on September 3.
 If you're not familiar yet with Ecstatic Dance you can read about it in this [blogpost: What is Ecstatic Dance?](/en/news/watisecstaticdance)
 
-From August to the end of October 2022, Wouter followed the [Trance Dance Facilitator Training](https://trance-dance.net/events/trancedance-facilitator-training/) by Aernoudt Knecht.
-After a successful first Trance dance session on October 17, [monthly Trance Dance sessions](/en/trancedance) will be planned starting from January 2023.
+### Trance dance
+From August to the end of October 2022, I followed the [Trance Dance Facilitator Training](https://trance-dance.net/events/trancedance-facilitator-training/) by Aernoudt Knecht.
+After a successful first Trance dance session on October 17, [monthly Trance Dance sessions](/en/trancedance) will take place starting from January 2023.
 
 ### Training
 

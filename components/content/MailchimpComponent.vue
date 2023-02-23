@@ -16,7 +16,7 @@ const appConfig = useAppConfig()
     </p>
     <p>
       <a :href="appConfig.mailchimpLink" target="_blank">
-        <button class="text-base font-medium text-white bg-primary mt-5 py-2 px-6 hover:bg-opacity-80 hover:shadow-signUp rounded-md transition duration-300 ease-in-out">
+        <button class="text-base font-medium text-white bg-primary mt-5 py-1 px-3 hover:bg-opacity-80 hover:shadow-signUp rounded-md transition duration-300 ease-in-out">
           {{ t('mailinglist.subscribe') }}
         </button>
       </a>
