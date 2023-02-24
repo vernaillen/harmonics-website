@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
-    '@nuxtjs/plausible',
     '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
@@ -59,9 +58,6 @@ export default defineNuxtConfig({
     },
   },
   i18n,
-  plausible: {
-    // apiHost: 'https://harmonics.be/plredir',
-  },
   generate: {
     routes: ['/', '/thanks'],
   },
