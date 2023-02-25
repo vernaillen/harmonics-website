@@ -4,6 +4,7 @@ const config = useRuntimeConfig()
 sgMail.setApiKey(config.sendgridApiKey)
 
 export default defineEventHandler(async (event) => {
+  protectRoute(event)
   const body = await readBody(event)
   const msg = {
     to: body.emailTo,

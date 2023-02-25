@@ -8,7 +8,7 @@ if (user.value) {
   text.value = `Bedankt voor het bestellen van je ticket, ${user.value.user_metadata.name}.\nJe order nr is ${route.params.ticketOrder}`
   html.value = `Bedankt voor het bestellen van je ticket, ${user.value.user_metadata.name}<br><br>Je order nr is ${route.params.ticketOrder} <br><br>`
   try {
-    await useFetch('/api/sendGrid', {
+    await useFetch('/api/sendgrid', {
       method: 'POST',
       body: JSON.stringify({
         emailTo: user.value.email,

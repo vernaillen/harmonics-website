@@ -1,6 +1,6 @@
 export async function notifyAdminAboutSignIn(emailFrom: string, extraBody?: string) {
   try {
-    await useFetch('/api/sendGrid', {
+    await useFetch('/api/sendgrid', {
       method: 'POST',
       body: JSON.stringify({
         emailTo: 'wouter@vernaillen.com',
@@ -18,7 +18,7 @@ export async function notifyAdminAboutSignIn(emailFrom: string, extraBody?: stri
 
 export async function notifyAdminAboutMollie(emailFrom: string) {
   try {
-    await useFetch('/api/sendGrid', {
+    await useFetch('/api/sendgrid', {
       method: 'POST',
       body: JSON.stringify({
         emailTo: 'wouter@vernaillen.com',

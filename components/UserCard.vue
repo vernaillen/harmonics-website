@@ -45,8 +45,10 @@ const profile = computed(
       :src="profile"
     >
     <div class="text-right">
-      <div class="font-medium">
+      <div class="text-md">
         {{ name }}
+      </div><div class="text-xs">
+        {{ user.email }}
       </div>
       <button
         class="text-sm underline text-slate-500"
