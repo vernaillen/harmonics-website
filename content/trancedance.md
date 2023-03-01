@@ -57,9 +57,8 @@ Daardoor kunnen we de trancedans combineren met bijvoorbeeld ademwerk, drumcirke
 
 Eerstvolgende sessies:
 
- * [Maandag 20 februari 2023](/news/trancedance20february2023) om 18u45 
- gefaciliteerd door [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about)
  * Maandag 20 maart 2023 om 18u45
+gefaciliteerd door [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about) 
  * Maandag 17 april 2023 om 18u45
 
 Je kan ook inschrijven op :MailchimpExternalLink om op de hoogte te blijven ivm nieuwe data.

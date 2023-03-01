@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const localePath = useLocalePath()
-const { t } = useI18n()
+const { locale, t } = useI18n()
 
 const navbar = reactive({
   show: false,
@@ -73,6 +73,10 @@ const linkClass = (path: string) => {
                     {{ t(item.titleKey) }}
                   </NuxtLink>
                 </li>
+                <!--
+                <li class="relative group">
+                  <IkBenAanwezigKiosk class="py-2 xl:pt-4 xl:pb-6 xl:inline-flex px-7 xl:px-1 flex mr-7" />
+                </li> -->
               </ul>
             </nav>
           </div>

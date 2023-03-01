@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx,svg}'],
+  content: ['./index.html', './components/**/*.{vue,js,ts,jsx,tsx,svg}'],
   mode: 'jit',
   darkMode: 'class', // or 'media' or 'class'
   theme: {
