@@ -18,16 +18,19 @@ const onClickClose = () => {
     v-if="visible" class="
       fixed
       z-50
-      left-2
-      right-2
-      bottom-2
+      left-3
+      right-3
+      bottom-3
       md:left-5
+      md:right-3
       md:bottom-5
-      p-4
+      lg:left-1/2
+      p-5
       rounded-md
       shadow-[0_4px_25px_2px_rgba(0,0,0,0.5)]
       bg-opacity-[97%]
       bg-white
+      animate__animated animate__slideInUp
     "
   >
     <span class="prose">

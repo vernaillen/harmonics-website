@@ -16,6 +16,7 @@ specifiers:
   '@vitest/coverage-c8': ^0.29.2
   '@vueuse/core': ^9.13.0
   '@vueuse/nuxt': ^9.13.0
+  animate.css: ^4.1.1
   cypress: ^12.7.0
   dayjs: ^1.11.7
   jsdom: ^21.1.0
@@ -39,6 +40,7 @@ dependencies:
   '@pinia/nuxt': 0.4.7_hmuptsblhheur2tugfgucj7gc4
   '@sendgrid/mail': 7.7.0
   '@vueuse/core': 9.13.0_vue@3.2.47
+  animate.css: 4.1.1
   simple-git: 3.16.1
   vee-validate: 4.7.4_vue@3.2.47
   vue-easy-lightbox: 1.14.0_vue@3.2.47
@@ -2532,13 +2534,13 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.21.1
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/eslint/8.21.1:
     resolution: {integrity: sha512-rc9K8ZpVjNcLs8Fp0dkozd5Pt2Apk1glO4Vgz8ix1u6yFByxfqo5Yavpy65o+93TAe24jr7v+eSBtFLvOQtCRQ==}
     dependencies:
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
     dev: true
 
@@ -3297,6 +3299,10 @@ packages:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
     dev: true
+
+  /animate.css/4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
+    dev: false
 
   /ansi-align/3.0.1:
     resolution: {integrity: sha512-IOfwwBF5iczOjp/WeY4YxyjqAFMQoZufdQWDd19SEExbVLNXqvpzSJ/M7Za4/sCPmQ0+GRquoA7bGcINcxew6w==}
