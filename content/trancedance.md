@@ -1,8 +1,8 @@
 ---
 title: Trancedans
 showToc: false
+hideCreatedDate: true
 ---
-
 ### Geblinddoekte dans meditatie
 
 Door geblinddoekt te dansen en geen visuele prikkels binnen te laten, zak je gemakkelijker in je lichaam en worden andere gewaarwordingen sterker. 

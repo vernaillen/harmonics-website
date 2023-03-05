@@ -1,6 +1,8 @@
 ---
 title: Over Wouter en Harmonics
+hideCreatedDate: true
 ---
+
 In 2020 ondervond ik persoonlijk de genezende kracht van geluid en muziek en in 2021 besloot ik een sound healing opleiding te volgen bij Surya in [Akasha Retreat Center](https://www.akasharetreatcenter.com/).
 Met daarnaast ook een bescheiden kennis van elektronische muziekproductie en dj-skills uit een vorig leven, besloot ik om naast mijn hoofdberoep als IT consultant ook muziek te maken en spelen voor holistische gezondheid en dans.
 

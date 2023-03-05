@@ -1,7 +1,7 @@
 ---
 title: About Wouter and Harmonics
+hideCreatedDate: true
 ---
-
 In 2020 I personally experienced the healing power of sound and music and in 2021 I decided to follow a sound healing training [provided by Surya at Akasha Retreat Center](https://www.akasharetreatcenter.com/).
 Combined with modest electronic music production skills and dj-skills from a previous life, I started creating and playing music for holistic healing and dance.
 

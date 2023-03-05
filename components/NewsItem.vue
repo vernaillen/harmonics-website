@@ -33,13 +33,7 @@ const imgHeight = props.big ? '' : 326
         {{ post.title }}
       </NuxtLink>
     </h1>
-    <div class="mr-1 mb-6 mt-0">
-      <div class="text-[0.6rem] text-gray-400 mr-2">
-        <div class="w-full">
-          {{ t('dates.published') }} {{ useFormattedDate(post.date) }}
-        </div>
-      </div>
-    </div>
+    <MarkdownEditedDates v-if="!post.hideCreatedAndUpdatedDates" :post="post" />
     <p class="text-base text-body-color font-medium pb-6 mb-6 ">
       {{ post.desc }}
       <br>

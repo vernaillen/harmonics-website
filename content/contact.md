@@ -1,6 +1,6 @@
 ---
 hideTitle: true
-hideEditedDates: true
+hideCreatedAndUpdatedDates: true
 ---
 :::div{.col-left}
 

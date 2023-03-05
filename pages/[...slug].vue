@@ -81,7 +81,7 @@ onUnmounted(() => {
               {{ page.title }}
             </h1>
           </div>
-          <MarkdownEditedDates v-if="page && !page.hideEditedDates" />
+          <MarkdownEditedDates v-if="page && !page.hideCreatedAndUpdatedDates" :post="page" />
           <div v-if="page.show_desc" class="flex flex-wrap">
             <h4>
               {{ page.desc }}

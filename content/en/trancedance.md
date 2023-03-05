@@ -1,8 +1,8 @@
 ---
 title: Trance Dance
 showToc: false
+hideCreatedDate: true
 ---
-
 ### Blindfolded dance meditation
 
 By dancing blindfolded and no longer letting visual stimuli in, you can sink into your body more easily and other sensations become stronger. 

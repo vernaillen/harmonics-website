@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   modules: [
+    '~/modules/build-env',
     '@vueuse/nuxt',
     '@nuxt/content',
     '@nuxt/image-edge',
@@ -21,7 +22,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon',
-    '~/modules/build-env',
   ],
   css: [
     '@/assets/css/main.css',
@@ -63,8 +63,9 @@ export default defineNuxtConfig({
     routes: ['/', '/thanks'],
   },
   nitro: {
-    prerender: {
-      ignore: ['.netlify', '/emails/paymentReceived'],
-    },
+    /* prerender: {
+      routes: ['/sitemap.xml'],
+      ignore: ['.netlify'],
+    }, */
   },
 })

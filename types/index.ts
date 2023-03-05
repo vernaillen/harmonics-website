@@ -11,6 +11,8 @@ export interface NewsItem {
   thumbnail: string
   thumb_video_webm: string
   thumb_video_mp4: string
+  hideCreatedDate: boolean
+  hideCreatedAndUpdatedDates: boolean
 }
 
 export interface BuildInfo {
