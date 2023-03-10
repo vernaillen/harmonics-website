@@ -3,7 +3,7 @@ title: Trance Dance
 showToc: false
 hideCreatedDate: true
 ---
-### Blindfolded dance meditation
+### Blindfolded meditative free dance
 
 By dancing blindfolded and no longer letting visual stimuli in, you can sink into your body more easily and other sensations become stronger. 
 While dancing we come out of our head, into our body and make an inner journey. Trance Dance can help to release limiting believes, and consiously bring traumas to the surface so we can start to process them.

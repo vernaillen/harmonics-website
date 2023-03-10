@@ -3,7 +3,7 @@ title: Trancedans
 showToc: false
 hideCreatedDate: true
 ---
-### Geblinddoekte dans meditatie
+### Geblinddoekte meditatieve vrije dans
 
 Door geblinddoekt te dansen en geen visuele prikkels binnen te laten, zak je gemakkelijker in je lichaam en worden andere gewaarwordingen sterker. 
 Al dansend komen we uit ons hoofd, in ons lichaam en maken we een innerlijke reis. Zo kan Trancedans helpen om beperkende conditioneringen los te laten en trauma's gericht naar boven te brengen en te verwerken. 
