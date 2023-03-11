@@ -38,7 +38,7 @@
     "@nuxt/content": "^2.4.3",
     "@nuxt/image-edge": "1.0.0-27954023.4cee565",
     "@nuxt/test-utils": "^3.2.3",
-    "@nuxtjs/google-fonts": "3.0.0-1",
+    "@nuxtjs/google-fonts": "3.0.0",
     "@nuxtjs/i18n": "8.0.0-beta.9",
     "@nuxtjs/supabase": "^0.3.1",
     "@nuxtjs/tailwindcss": "^6.4.1",
