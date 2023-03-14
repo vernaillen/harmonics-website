@@ -48,14 +48,10 @@ Each session different music will be used, based on the theme for that specific 
 
 ### Monthly sessions at Dwarsligger
 
-From January 2023 we start with monthly Trance Dance sessions at [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/).
-
-Each of these sessions is co-created with a fellow facilitator.
-This way we can combine the trance dance with for example breathwork, drum circle or sound healing, which ensures an even more profound experience.
-
+From January 2023 we start with monthly Trance Dance sessions at [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/),
+facilitated by [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/en/about)
+  
 Upcoming sessions:
-  * Monday 20 March 2023 at 6:45pm 
-  facilitated by [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/en/about)
   * Monday 17 April 2023 at 6:45pm
 
 You can also subscribe to the :MailchimpExternalLink to stay informed about upcoming sessions.

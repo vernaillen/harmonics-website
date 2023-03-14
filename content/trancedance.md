@@ -50,15 +50,10 @@ Voor elke sessie wordt telkens andere muziek gebruikt, gebaseerd op het thema vo
 
 ### Maandelijkse sessies bij Dwarsligger
 
-Vanaf januari 2023 plannen we een maandelijkse trancedans sessie bij [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/).
-
-Elk van deze sessies gebeurt in co-creatie met een collega facilitator.
-Daardoor kunnen we de trancedans combineren met bijvoorbeeld ademwerk, drumcirkel of sound healing, wat zorgt voor een nog diepgaandere ervaring.
+Vanaf januari 2023 plannen we een maandelijkse trancedans sessie bij [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/),
+gefaciliteerd door [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about) 
 
 Eerstvolgende sessies:
-
- * Maandag 20 maart 2023 om 18u45
-gefaciliteerd door [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about) 
  * Maandag 17 april 2023 om 18u45
 
 Je kan ook inschrijven op :MailchimpExternalLink om op de hoogte te blijven ivm nieuwe data.
