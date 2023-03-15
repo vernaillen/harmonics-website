@@ -12,7 +12,6 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   modules: [
-    '~/modules/build-env',
     '@vueuse/nuxt',
     '@nuxt/content',
     '@nuxt/image-edge',
