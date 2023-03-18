@@ -32,8 +32,10 @@ definePageMeta({
 
 <template>
   <div>
-    {{ text }}
-    <br><br>
-    Er is ook een e-mail bevestiging naar je gestuurd
+    <NuxtLayout>
+      {{ text }}
+      <br><br>
+      Er is ook een e-mail bevestiging naar je gestuurd
+    </NuxtLayout>
   </div>
 </template>

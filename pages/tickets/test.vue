@@ -8,6 +8,8 @@ definePageMeta({
 
 <template>
   <div>
-    Hier overzicht tonen van gemaakte reservaties
+    <NuxtLayout>
+      Hier overzicht tonen van gemaakte reservaties
+    </NuxtLayout>
   </div>
 </template>

@@ -8,6 +8,8 @@ definePageMeta({
 
 <template>
   <div>
-    <TicketsComponent />
+    <NuxtLayout>
+      <TicketsComponent />
+    </NuxtLayout>
   </div>
 </template>

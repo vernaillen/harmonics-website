@@ -7,5 +7,9 @@ definePageMeta({
 </script>
 
 <template>
-  authenticating
+  <div>
+    <NuxtLayout>
+      authenticating
+    </NuxtLayout>
+  </div>
 </template>
