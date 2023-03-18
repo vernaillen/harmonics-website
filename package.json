@@ -31,7 +31,7 @@
     "animate.css": "^4.1.1",
     "simple-git": "^3.17.0",
     "vee-validate": "^4.8.3",
-    "vue-easy-lightbox": "^1.14.0",
+    "vue-easy-lightbox": "^1.15.0",
     "vue-gtag": "^2.0.1",
     "yup": "^1.0.2"
   },
@@ -41,7 +41,7 @@
     "@nuxt/image-edge": "1.0.0-27968280.9739e4d",
     "@nuxt/test-utils": "^3.3.1",
     "@nuxtjs/google-fonts": "3.0.0",
-    "@nuxtjs/i18n": "8.0.0-beta.10",
+    "@nuxtjs/i18n-edge": "8.0.0-beta.10-27985006.4ff543e",
     "@nuxtjs/supabase": "^0.3.1",
     "@nuxtjs/tailwindcss": "^6.6.0",
     "@typescript-eslint/eslint-plugin": "^5.55.0",

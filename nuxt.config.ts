@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image-edge',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/i18n',
+    '@nuxtjs/i18n-edge',
     '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
