@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const localePath = useLocalePath()
-const { locale, t } = useI18n()
+const { t } = useI18n()
 
 const navbar = reactive({
   show: false,

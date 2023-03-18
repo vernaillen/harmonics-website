@@ -1,125 +1,124 @@
 {
-    "language": "language",
-    "website": {
-        "hostname": "https://harmonics.be",
-        "title": "Harmonics.be",
-        "description": "Healing power of Sound, Music & Dance - by Wouter Vernaillen",
-        "noJavaScript": "JavaScript is required"
-    },
-    "menu": {
-        "home": "Home",
-        "news": "News",
-        "trancedance": "Trance Dance",
-        "about": "About",
-        "contact": "Contact"
-    },
-    "home": {
-        "title": "Harmonics",
-        "tagline": "Healing power of Sound, Music and Dance",
-        "services": "Trance Dance, Ecstatic Dance, Immersive Soundbaths, Music Production"
-    },
-    "news": {
-        "title": "News",
-        "readmore": "read more",
-        "findoutmore": "find out more",
-        "by": "by",
-        "next": "next news item",
-        "previous": "previous news item"
-    },
-    "contact": {
-        "name": "Your name",
-        "email": "Your email",
-        "message": "Your message",
-        "submit": "Submit",
-        "required": "Custom, required",
-        "field_too_short": "Custom"
-    },
-    "footer": {
-        "findus": "You can find us on any of these platforms.",
-        "copyright": "©",
-        "built_at": "last updated: {0}",
-        "developed_with": "developed on",
-        "fetchingBuildinfo": "fetching build info...",
-        "privacypolicy": "Privacy policy",
-        "cookiepolicy": "Cookie policy"
-    },
-    "mailinglist": {
-        "name": "Harmonics newsletter",
-        "title": "Receive Harmonics news by email",
-        "subtitle": "...and stay up to date about the upcoming ecstatic dance & trance dance sessions",
-        "subscribe": "Subscribe now",
-        "opensmailchimp": "(opens the mailchimp registration page)"
-    },
-    "politePopup": {
-        "thanks": "Thanks for visiting ",
-        "question": "Do you want us to keep you informed via e-mail about upcoming dance sessions?",
-        "yes": "Yes please!",
-        "no": "No need"
-    },
-    "dates": {
-        "published": "published on",
-        "lastUpdated": "last edited on"
-    },
-    "login": {
-        "reservations": "Ticket Reservations",
-        "intro": "Log in to reserve your tickets or retrieve previous reservations:",
-        "social": "or connect via Facebook or Google",
-        "facebook": "Facebook",
-        "google": "Google",
-        "github": "GitHub",
-        "firstname": "First Name",
-        "email": "E-mail address",
-        "magiclinkintro": "with a \"magic link\" send to your e-mail address",
-        "magiclink": "Magic Link",
-        "sendingmagiclink": "sending you the Magic Link by e-mail...",
-        "youvegotmail": "You've got mail!",
-        "loggingyouin": "logging you in..."
-    },
-    "tickets": { 
-        "title": "Tickets",
-        "orderbutton": "Register your spot",
-        "trancedance20march": "Trance Dance 20 March",
-        "trancedance17april": "Trance Dance 17 April"
-    },
-    "toc": {
-        "title": "Table of Contents"
-    },
-    "dwarsligger": {
-        "name": "vzw Dwarsligger",
-        "addressLine1": "Gontrode Heirweg 141",
-        "addressLine2": "9090 Melle, Belgium",
-        "gpsInfo": "best is to type 'vzw Dwarligger' in the gps"
-    },
-    "time_ago_options": {
-        "day_future": "in 0 days|tomorrow|in {n} days",
-        "day_past": "0 days ago|yesterday|{n} days ago",
-        "hour_future": "in 0 hours|in 1 hour|in {n} hours",
-        "hour_past": "0 hours ago|1 hour ago|{n} hours ago",
-        "just_now": "just now",
-        "minute_future": "in 0 minutes|in 1 minute|in {n} minutes",
-        "minute_past": "0 minutes ago|1 minute ago|{n} minutes ago",
-        "month_future": "in 0 months|next month|in {n} months",
-        "month_past": "0 months ago|last month|{n} months ago",
-        "second_future": "just now|in {n} second|in {n} seconds",
-        "second_past": "just now|{n} second ago|{n} seconds ago",
-        "short_day_future": "in {n}d",
-        "short_day_past": "{n}d",
-        "short_hour_future": "in {n}h",
-        "short_hour_past": "{n}h",
-        "short_minute_future": "in {n}min",
-        "short_minute_past": "{n}min",
-        "short_month_future": "in {n}mo",
-        "short_month_past": "{n}mo",
-        "short_second_future": "in {n}s",
-        "short_second_past": "{n}s",
-        "short_week_future": "in {n}w",
-        "short_week_past": "{n}w",
-        "short_year_future": "in {n}y",
-        "short_year_past": "{n}y",
-        "week_future": "in 0 weeks|next week|in {n} weeks",
-        "week_past": "0 weeks ago|last week|{n} weeks ago",
-        "year_future": "in 0 years|next year|in {n} years",
-        "year_past": "0 years ago|last year|{n} years ago"
-    }
+  "language": "language",
+  "website": {
+    "hostname": "https://harmonics.be",
+    "title": "Harmonics.be",
+    "description": "Healing power of Sound, Music & Dance - by Wouter Vernaillen",
+    "noJavaScript": "JavaScript is required"
+  },
+  "menu": {
+    "home": "Home",
+    "news": "News",
+    "trancedance": "Trance Dance",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Harmonics",
+    "tagline": "Healing power of Sound, Music and Dance",
+    "services": "Trance Dance, Ecstatic Dance, Immersive Soundbaths, Music Production"
+  },
+  "news": {
+    "title": "News",
+    "readmore": "read more",
+    "findoutmore": "find out more",
+    "by": "by",
+    "next": "next news item",
+    "previous": "previous news item"
+  },
+  "contact": {
+    "name": "Your name",
+    "email": "Your email",
+    "message": "Your message",
+    "submit": "Submit",
+    "required": "Custom, required",
+    "field_too_short": "Custom"
+  },
+  "footer": {
+    "findus": "You can find us on any of these platforms.",
+    "copyright": "©",
+    "built_at": "last updated: {0}",
+    "developed_with": "developed on",
+    "fetchingBuildinfo": "fetching build info...",
+    "privacypolicy": "Privacy policy",
+    "cookiepolicy": "Cookie policy"
+  },
+  "mailinglist": {
+    "name": "Harmonics newsletter",
+    "title": "Receive Harmonics news by email",
+    "subtitle": "...and stay up to date about the upcoming ecstatic dance & trance dance sessions",
+    "subscribe": "Subscribe now",
+    "opensmailchimp": "(opens the mailchimp registration page)"
+  },
+  "politePopup": {
+    "thanks": "Thanks for visiting ",
+    "question": "Do you want us to keep you informed via e-mail about upcoming dance sessions?",
+    "yes": "Yes please!",
+    "no": "No need"
+  },
+  "dates": {
+    "published": "published on",
+    "lastUpdated": "last edited on"
+  },
+  "login": {
+    "reservations": "Ticket Reservations",
+    "intro": "Log in to reserve your tickets or retrieve previous reservations:",
+    "social": "or connect via Facebook or Google",
+    "facebook": "Facebook",
+    "google": "Google",
+    "github": "GitHub",
+    "firstname": "First Name",
+    "email": "E-mail address",
+    "magiclinkintro": "with a \"magic link\" send to your e-mail address",
+    "magiclink": "Magic Link",
+    "sendingmagiclink": "sending you the Magic Link by e-mail...",
+    "youvegotmail": "You've got mail!",
+    "loggingyouin": "logging you in..."
+  },
+  "tickets": {
+    "title": "Tickets",
+    "orderbutton": "Register your spot",
+    "trancedance20march": "Trance Dance 20 March",
+    "trancedance17april": "Trance Dance 17 April"
+  },
+  "toc": {
+    "title": "Table of Contents"
+  },
+  "dwarsligger": {
+    "name": "vzw Dwarsligger",
+    "addressLine1": "Gontrode Heirweg 141",
+    "addressLine2": "9090 Melle, Belgium",
+    "gpsInfo": "best is to type 'vzw Dwarligger' in the gps"
+  },
+  "time_ago_options": {
+    "day_future": "in 0 days|tomorrow|in {n} days",
+    "day_past": "0 days ago|yesterday|{n} days ago",
+    "hour_future": "in 0 hours|in 1 hour|in {n} hours",
+    "hour_past": "0 hours ago|1 hour ago|{n} hours ago",
+    "just_now": "just now",
+    "minute_future": "in 0 minutes|in 1 minute|in {n} minutes",
+    "minute_past": "0 minutes ago|1 minute ago|{n} minutes ago",
+    "month_future": "in 0 months|next month|in {n} months",
+    "month_past": "0 months ago|last month|{n} months ago",
+    "second_future": "just now|in {n} second|in {n} seconds",
+    "second_past": "just now|{n} second ago|{n} seconds ago",
+    "short_day_future": "in {n}d",
+    "short_day_past": "{n}d",
+    "short_hour_future": "in {n}h",
+    "short_hour_past": "{n}h",
+    "short_minute_future": "in {n}min",
+    "short_minute_past": "{n}min",
+    "short_month_future": "in {n}mo",
+    "short_month_past": "{n}mo",
+    "short_second_future": "in {n}s",
+    "short_second_past": "{n}s",
+    "short_week_future": "in {n}w",
+    "short_week_past": "{n}w",
+    "short_year_future": "in {n}y",
+    "short_year_past": "{n}y",
+    "week_future": "in 0 weeks|next week|in {n} weeks",
+    "week_past": "0 weeks ago|last week|{n} weeks ago",
+    "year_future": "in 0 years|next year|in {n} years",
+    "year_past": "0 years ago|last year|{n} years ago"
+  }
 }
-

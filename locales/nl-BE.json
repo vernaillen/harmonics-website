@@ -1,124 +1,124 @@
 {
-    "language": "taal",
-    "website": {
-        "hostname": "https://harmonics.be",
-        "title": "Harmonics.be",
-        "description": "Genezende kracht van Geluid, Muziek en Dans - door Wouter Vernaillen",
-        "noJavaScript": "JavaScript is nodig"
-    },
-    "menu": {
-        "home": "Home",
-        "news": "Nieuws",
-        "trancedance": "Trancedans",
-        "about": "Over",
-        "contact": "Contact"
-    },
-    "home": {
-        "title": "Harmonics",
-        "tagline": "Genezende kracht van Geluid, Muziek en Dans",
-        "services": "Trance Dance, Ecstatic Dance, Immersive Soundbaths, Muziek Productie"
-    },
-    "news": {
-        "title": "Nieuws",
-        "readmore": "lees meer",
-        "findoutmore": "ontdek meer",
-        "by": "door",
-        "next": "volgende nieuwsbericht",
-        "previous": "vorige nieuwsbericht"
-    },
-    "contact": {
-        "name": "Jouw naam",
-        "email": "Jouw email",
-        "message": "Jouw bericht",
-        "submit": "Verstuur",
-        "required": "Custom, required",
-        "field_too_short": "Custom"
-    },
-    "footer": {
-        "findus": "Je kan ons ook vinden op deze platformen",
-        "copyright": "©",
-        "built_at": "laatst aangepast: {0}",
-        "developed_with": "ontwikkeld met",
-        "fetchingBuildinfo": "build info wordt opgehaald...",
-        "privacypolicy": "Privacybeleid",
-        "cookiepolicy": "Cookiebeleid"
-    },
-    "mailinglist": {
-        "name": "Harmonics nieuwsbrief",
-        "title": "Ontvang Harmonics nieuws via e-mail",
-        "subtitle": "...en blijf op de hoogte van de komende ecstatic dance & trance dance sessies",
-        "subscribe": "Schrijf nu in",
-        "opensmailchimp": "(opent de mailchimp registratie pagina)"
-    },
-    "politePopup": {
-        "thanks": "Bedankt voor je bezoekje aan ",
-        "question": "Heb je graag dat we jou via e-mail op de hoogte houden van de komende dans sessies?",
-        "yes": "Graag!",
-        "no": "Hoeft niet"
-    },
-    "dates": {
-        "published": "gepubliceerd op",
-        "lastUpdated": "laatst aangepast op"
-    },
-    "login": {
-        "reservations": "Ticket Reservaties",
-        "intro": "Meld je aan om jouw tickets te reserveren of bestaande reservaties te bekijken:",
-        "social": "of verbind via Facebook of Google",
-        "facebook": "Facebook",
-        "google": "Google",
-        "github": "GitHub",
-        "firstname": "Voornaam",
-        "email": "Email adres",
-        "magiclinkintro": "via een \"magic link\" die naar je email adres verstuurd wordt",
-        "magiclink": "Magic Link",
-        "sendingmagiclink": "de Magic Link wordt naar je verstuurd...",
-        "youvegotmail": "You've got mail!",
-        "loggingyouin": "bezig met inloggen..."
-    },
-    "tickets": {
-        "title": "Tickets",
-        "orderbutton": "Reserveer je plek",
-        "trancedance20march": "Trancedans 20 maart",
-        "trancedance17april": "Trancedans 17 april"
-    },
-    "toc": {
-        "title": "Pagina Inhoud"
-    },
-    "dwarsligger": {
-        "name": "vzw Dwarsligger",
-        "addressLine1": "Gontrode Heirweg 141",
-        "addressLine2": "9090 Melle, België",
-        "gpsInfo": "best 'vzw Dwarsligger' intikken in de gps"
-    },
-    "time_ago_options": {
-        "day_future": "in 0 dagen|morgen|in {n} dagen",
-        "day_past": "0 dagen geleden|gisteren|{n} dagen geleden",
-        "hour_future": "in 0 uur|in 1 uur|in {n} uur",
-        "hour_past": "0 uur geleden|1 uur geleden|{n} uur geleden",
-        "just_now": "nu net",
-        "minute_future": "in 0 minuten|in 1 minuut|in {n} minuten",
-        "minute_past": "0 minuten geleden|1 minuut geleden|{n} minuten geleden",
-        "month_future": "in 0 maanden|volgende maand|in {n} maanden",
-        "month_past": "0 maanden geleden|laatste maand|{n} maanden geleden",
-        "second_future": "nu net|in {n} seconden|in {n} seconden",
-        "second_past": "nu net|{n} seconden geleden|{n} seconden geleden",
-        "short_day_future": "in {n}d",
-        "short_day_past": "{n}d",
-        "short_hour_future": "in {n}u",
-        "short_hour_past": "{n}u",
-        "short_minute_future": "in {n}min",
-        "short_minute_past": "{n}min",
-        "short_month_future": "in {n}ma",
-        "short_month_past": "{n}ma",
-        "short_second_future": "in {n}s",
-        "short_second_past": "{n}s",
-        "short_week_future": "in {n}w",
-        "short_week_past": "{n}w",
-        "short_year_future": "in {n}j",
-        "short_year_past": "{n}j",
-        "week_future": "in 0 weken|volgende week|in {n} weken",
-        "week_past": "0 weken geleden|vorige week|{n} weken geleden",
-        "year_future": "in 0 jaar|volgend jaar|in {n} jaar",
-        "year_past": "0 jaar geleden|vorig jaar|{n} jaar geleden"
-    }
+  "language": "taal",
+  "website": {
+    "hostname": "https://harmonics.be",
+    "title": "Harmonics.be",
+    "description": "Genezende kracht van Geluid, Muziek en Dans - door Wouter Vernaillen",
+    "noJavaScript": "JavaScript is nodig"
+  },
+  "menu": {
+    "home": "Home",
+    "news": "Nieuws",
+    "trancedance": "Trancedans",
+    "about": "Over",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Harmonics",
+    "tagline": "Genezende kracht van Geluid, Muziek en Dans",
+    "services": "Trance Dance, Ecstatic Dance, Immersive Soundbaths, Muziek Productie"
+  },
+  "news": {
+    "title": "Nieuws",
+    "readmore": "lees meer",
+    "findoutmore": "ontdek meer",
+    "by": "door",
+    "next": "volgende nieuwsbericht",
+    "previous": "vorige nieuwsbericht"
+  },
+  "contact": {
+    "name": "Jouw naam",
+    "email": "Jouw email",
+    "message": "Jouw bericht",
+    "submit": "Verstuur",
+    "required": "Custom, required",
+    "field_too_short": "Custom"
+  },
+  "footer": {
+    "findus": "Je kan ons ook vinden op deze platformen",
+    "copyright": "©",
+    "built_at": "laatst aangepast: {0}",
+    "developed_with": "ontwikkeld met",
+    "fetchingBuildinfo": "build info wordt opgehaald...",
+    "privacypolicy": "Privacybeleid",
+    "cookiepolicy": "Cookiebeleid"
+  },
+  "mailinglist": {
+    "name": "Harmonics nieuwsbrief",
+    "title": "Ontvang Harmonics nieuws via e-mail",
+    "subtitle": "...en blijf op de hoogte van de komende ecstatic dance & trance dance sessies",
+    "subscribe": "Schrijf nu in",
+    "opensmailchimp": "(opent de mailchimp registratie pagina)"
+  },
+  "politePopup": {
+    "thanks": "Bedankt voor je bezoekje aan ",
+    "question": "Heb je graag dat we jou via e-mail op de hoogte houden van de komende dans sessies?",
+    "yes": "Graag!",
+    "no": "Hoeft niet"
+  },
+  "dates": {
+    "published": "gepubliceerd op",
+    "lastUpdated": "laatst aangepast op"
+  },
+  "login": {
+    "reservations": "Ticket Reservaties",
+    "intro": "Meld je aan om jouw tickets te reserveren of bestaande reservaties te bekijken:",
+    "social": "of verbind via Facebook of Google",
+    "facebook": "Facebook",
+    "google": "Google",
+    "github": "GitHub",
+    "firstname": "Voornaam",
+    "email": "Email adres",
+    "magiclinkintro": "via een \"magic link\" die naar je email adres verstuurd wordt",
+    "magiclink": "Magic Link",
+    "sendingmagiclink": "de Magic Link wordt naar je verstuurd...",
+    "youvegotmail": "You've got mail!",
+    "loggingyouin": "bezig met inloggen..."
+  },
+  "tickets": {
+    "title": "Tickets",
+    "orderbutton": "Reserveer je plek",
+    "trancedance20march": "Trancedans 20 maart",
+    "trancedance17april": "Trancedans 17 april"
+  },
+  "toc": {
+    "title": "Pagina Inhoud"
+  },
+  "dwarsligger": {
+    "name": "vzw Dwarsligger",
+    "addressLine1": "Gontrode Heirweg 141",
+    "addressLine2": "9090 Melle, België",
+    "gpsInfo": "best 'vzw Dwarsligger' intikken in de gps"
+  },
+  "time_ago_options": {
+    "day_future": "in 0 dagen|morgen|in {n} dagen",
+    "day_past": "0 dagen geleden|gisteren|{n} dagen geleden",
+    "hour_future": "in 0 uur|in 1 uur|in {n} uur",
+    "hour_past": "0 uur geleden|1 uur geleden|{n} uur geleden",
+    "just_now": "nu net",
+    "minute_future": "in 0 minuten|in 1 minuut|in {n} minuten",
+    "minute_past": "0 minuten geleden|1 minuut geleden|{n} minuten geleden",
+    "month_future": "in 0 maanden|volgende maand|in {n} maanden",
+    "month_past": "0 maanden geleden|laatste maand|{n} maanden geleden",
+    "second_future": "nu net|in {n} seconden|in {n} seconden",
+    "second_past": "nu net|{n} seconden geleden|{n} seconden geleden",
+    "short_day_future": "in {n}d",
+    "short_day_past": "{n}d",
+    "short_hour_future": "in {n}u",
+    "short_hour_past": "{n}u",
+    "short_minute_future": "in {n}min",
+    "short_minute_past": "{n}min",
+    "short_month_future": "in {n}ma",
+    "short_month_past": "{n}ma",
+    "short_second_future": "in {n}s",
+    "short_second_past": "{n}s",
+    "short_week_future": "in {n}w",
+    "short_week_past": "{n}w",
+    "short_year_future": "in {n}j",
+    "short_year_past": "{n}j",
+    "week_future": "in 0 weken|volgende week|in {n} weken",
+    "week_past": "0 weken geleden|vorige week|{n} weken geleden",
+    "year_future": "in 0 jaar|volgend jaar|in {n} jaar",
+    "year_past": "0 jaar geleden|vorig jaar|{n} jaar geleden"
+  }
 }

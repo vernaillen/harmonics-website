@@ -1,5 +1,3 @@
-export default defineEventHandler(async (event) => {
-  console.log('mollieWebhook was called')
-  console.log(event.node.req)
+export default defineEventHandler(async (_event) => {
   return 'OK'
 })

@@ -54,7 +54,7 @@ const addTicket = (ticket: EventTicket) => {
   {{ order.user.user_metadata.email }}<br><br>
   tickets added:<br>
   <ul>
-    <li v-for="ticketOrder in order.ticketOrder">
+    <li v-for="ticketOrder in order.ticketOrder" :key="ticketOrder.ticket.id">
       {{ t(ticketOrder.ticket.titleKey) }} - €{{ ticketOrder.ticket.unitPrice }}
     </li>
   </ul>

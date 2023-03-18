@@ -2,6 +2,7 @@
   "recommendations": [
     "vue.volar",
     "antfu.vite",
-    "antfu.browse-lite"
+    "antfu.browse-lite",
+    "Vue.vscode-typescript-vue-plugin"
   ]
 }
