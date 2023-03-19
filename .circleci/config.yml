@@ -27,6 +27,7 @@ jobs:
       - run:
           name: Build
           command: pnpm run generate
+      - sonarcloud/scan
       - persist_to_workspace:
           root: .
           paths:
@@ -55,7 +56,6 @@ jobs:
       - run:
           name: Test
           command: pnpm run coverage
-      - sonarcloud/scan
       - slack/notify:
           channel: circleci
           event: fail
@@ -80,11 +80,11 @@ workflows:
       - build:
           context: 
             - Slack
+            - SonarCloud
       - test:
           requires:
             - build
           context: 
-            - SonarCloud
             - Slack
       - e2e:
           requires:
