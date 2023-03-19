@@ -63,7 +63,7 @@
   "login": {
     "reservations": "Ticket Reservaties",
     "intro": "Meld je aan om jouw tickets te reserveren of bestaande reservaties te bekijken:",
-    "social": "of verbind via Facebook of Google",
+    "social": "of verbind via SSO",
     "facebook": "Facebook",
     "google": "Google",
     "github": "GitHub",

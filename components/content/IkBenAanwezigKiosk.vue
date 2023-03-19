@@ -9,9 +9,9 @@ const ticketsLink = computed(() => {
 </script>
 
 <template>
-  <a :href="ticketsLink" target="_blank" class="menu-scroll text-base text-primary dark:text-white group-hover:opacity-70 active:text-primary ">
+  <NuxtLink :href="ticketsLink" target="_blank" class="menu-scroll text-base text-primary dark:text-white group-hover:opacity-70 active:text-primary ">
     <Icon
       name="ph:ticket-duotone" size="24" class="mr-2"
     />Tickets
-  </a>
+  </NuxtLink>
 </template>

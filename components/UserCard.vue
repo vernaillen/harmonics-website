@@ -43,6 +43,7 @@ const profile = computed(
       v-if="profile"
       class="rounded-full w-12 h-12 "
       :src="profile"
+      alt="profile picture"
     >
     <div class="text-right">
       <div class="text-md">

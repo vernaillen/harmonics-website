@@ -5,7 +5,7 @@ const appConfig = useAppConfig()
 
 const onClickOk = async () => {
   setClosed()
-  window.open(appConfig.mailchimpLink)
+  window.open(appConfig.mailchimpLink.href)
 }
 
 const onClickClose = () => {

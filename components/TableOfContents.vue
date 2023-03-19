@@ -5,8 +5,6 @@ const props = withDefaults(defineProps<{ activeTocId: string; slug: string }>(),
 
 const { t } = useI18n()
 
-// const router = useRouter()
-
 const sliderHeight = useState('sliderHeight', () => 0)
 const sliderTop = useState('sliderTop', () => 0)
 const container: Ref<HTMLElement | null> = ref(null)
@@ -20,11 +18,6 @@ const tocLinks = computed(() => blogPost.value?.body.toc.links ?? [])
 
 const onClick = (id: string) => {
   scrollToElement(id)
-  /* const el = document.getElementById(id)
-  if (el) {
-    router.push({ hash: `#${id}` })
-    el.scrollIntoView({ behavior: 'smooth', block: 'center' })
-  } */
 }
 
 watchDebounced(

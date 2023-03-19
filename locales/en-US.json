@@ -63,7 +63,7 @@
   "login": {
     "reservations": "Ticket Reservations",
     "intro": "Log in to reserve your tickets or retrieve previous reservations:",
-    "social": "or connect via Facebook or Google",
+    "social": "or connect using SSO",
     "facebook": "Facebook",
     "google": "Google",
     "github": "GitHub",

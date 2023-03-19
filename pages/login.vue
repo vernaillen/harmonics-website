@@ -124,11 +124,10 @@ definePageMeta({
             icon="ion:logo-google" :text="t('login.google')" class="bg-[#ea4335]"
             @click="signInWithOAuth('google')"
           />
-          <!--
-      <LoginButton
-        icon="mdi:github" :text="t('login.github')" class="bg-[#333]"
-        @click="signInWithOAuth('github')"
-      /> -->
+          <LoginButton
+            icon="mdi:github" :text="t('login.github')" class="bg-[#333]"
+            @click="signInWithOAuth('github')"
+          />
         </div>
       </div>
     </NuxtLayout>

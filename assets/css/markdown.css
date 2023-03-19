@@ -19,6 +19,12 @@ html:not(.ud-dark) .prose {
   --prism-decorator: #bd8f8f;
   --prism-regex: #ab5e3f;
   --prism-json-property: #698c96;
+
+  --fg: #555;
+  --fg-deep: #222;
+  --fg-deeper: #BFAC22;
+
+  color: var(--fg);
 }
 
 html.ud-dark .prose {
@@ -45,16 +51,7 @@ html.ud-dark .prose {
   --prism-line-number-gutter: #eeeeee;
   --prism-line-highlight-background: #444444;
   --prism-selection-background: #444444;
-}
 
-.prose {
-  --fg: #555;
-  --fg-deep: #222;
-  --fg-deeper: #BFAC22;
-
-  color: var(--fg);
-}
-html.ud-dark .prose {
   --fg: #ccc;
   --fg-deep: #fff;
   --fg-deeper: #BFAC22;

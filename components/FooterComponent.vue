@@ -84,16 +84,16 @@ const buildTimeAgo = useTimeAgo(buildTimeDate, timeAgoOptions)
                 <time :datetime="String(buildTimeDate)" :title="$d(buildTimeDate, 'long')">{{ buildTimeAgo }}</time>
               </i18n-t>
               <span v-else>{{ t('footer.fetchingBuildinfo') }}</span>
-              <a href="https://github.com/vernaillen/harmonics-website/" target="_blank" class="hover:text-primary">
+              <NuxtLink href="https://github.com/vernaillen/harmonics-website/" target="_blank" class="hover:text-primary">
                 <Icon name="mdi:github" size="20" class="pb-1" />
-              </a>
+              </NuxtLink>
             </span>
             <span class="w-full sm:w-auto">
               {{ t('footer.developed_with') }}
-              <a href="https://nuxt.com/" target="_blank">
+              <NuxtLink href="https://nuxt.com/" target="_blank">
                 <SvgIcon file="nuxt-icon-green.svg" />
-              </a>
-              {{ t('news.by') }} <a href="https://vernaillen.dev" class="hover:text-primary" target="_blank">Wouter Vernaillen</a>
+              </NuxtLink>
+              {{ t('news.by') }} <NuxtLink href="https://vernaillen.dev" class="hover:text-primary" target="_blank">Wouter Vernaillen</NuxtLink>
             </span>
           </div>
           <div class="text-sm text-gray-400 py-1">

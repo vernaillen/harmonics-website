@@ -4,22 +4,22 @@ const appConfig = useAppConfig()
 </script>
 
 <template>
-  <div v-if="appConfig.mailchimpLink">
+  <div v-if="appConfig.mailchimpLink.href">
     <h1 class="text-3xl font-bold text-primary">
       {{ t('mailinglist.title') }}
     </h1>
     <p>{{ t('mailinglist.subtitle') }}</p>
     <p>
-      <a :href="appConfig.mailchimpLink" target="_blank">
+      <NuxtLink :href="appConfig.mailchimpLink.href" target="_blank">
         <Icon name="twemoji:open-mailbox-with-raised-flag" class="mailbox text-6xl fill-primary" />
-      </a>
+      </NuxtLink>
     </p>
     <p>
-      <a :href="appConfig.mailchimpLink" target="_blank">
+      <NuxtLink :href="appConfig.mailchimpLink.href" target="_blank">
         <button class="text-base font-medium text-white bg-primary mt-5 py-1 px-3 hover:bg-opacity-80 hover:shadow-signUp rounded-md transition duration-300 ease-in-out">
           {{ t('mailinglist.subscribe') }}
         </button>
-      </a>
+      </NuxtLink>
     </p>
   </div>
 </template>

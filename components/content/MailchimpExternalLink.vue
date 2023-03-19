@@ -4,7 +4,7 @@ const appConfig = useAppConfig()
 </script>
 
 <template>
-  <a :href="appConfig.mailchimpLink" target="_blank">
+  <NuxtLink :href="appConfig.mailchimpLink.href" target="_blank">
     {{ t('mailinglist.name') }}
-  </a>
+  </NuxtLink>
 </template>

@@ -6,5 +6,5 @@ defineProps < {
 </script>
 
 <template>
-  <img :src="`/icons/${file}`" class="inline-block h-4 mt-[-3px]" :class="extraClass">
+  <img :src="`/icons/${file}`" alt="icon" class="inline-block h-4 mt-[-3px]" :class="extraClass">
 </template>
