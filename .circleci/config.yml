@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   slack: circleci/slack@4.12.1
+  sonarcloud: sonarsource/sonarcloud@1.1.1
 
 executors:
   pnpm-executor:
@@ -52,6 +53,7 @@ jobs:
       - run:
           name: Test
           command: pnpm run coverage
+      - sonarcloud/scan
       - slack/notify:
           channel: circleci
           event: fail
@@ -80,6 +82,7 @@ workflows:
           requires:
             - build
           context: 
+            - SonarCloud
             - Slack
       - e2e:
           requires:
