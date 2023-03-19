@@ -43,8 +43,6 @@ jobs:
             - test
             - dist
             - .gitignore
-            - .git
-            - sonar-project.properties
       - slack/notify:
           channel: circleci
           event: fail
