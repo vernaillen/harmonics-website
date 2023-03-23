@@ -58,7 +58,7 @@ const linkClass = (path: string) => {
             </button>
 
             <nav
-              id="navbarCollapse" ref="navbarCollapse"
+              id="navbarCollapse"
               class="absolute py-5 xl:py-0 xl:px-4 xl2:px-6 bg-white dark:bg-dark xl:dark:bg-transparent xl:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full xl:max-w-full xl:w-full right-4 top-full xl:block xl:static xl:shadow-none transition"
               :class="navbarCollapseClass"
             >

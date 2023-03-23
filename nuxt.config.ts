@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
+    'nuxt-gtag',
     'nuxt-icon',
   ],
   css: [
@@ -33,6 +34,9 @@ export default defineNuxtConfig({
     twicpics: {
       baseURL: 'https://vernaillen.twic.pics/harmonics',
     },
+  },
+  gtag: {
+    id: 'G-K4Q8LZV0QW',
   },
   googleFonts: {
     download: true,
