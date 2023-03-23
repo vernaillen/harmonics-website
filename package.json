@@ -40,7 +40,7 @@
     "@nuxt/image-edge": "1.0.0-27991759.1a5eea1",
     "@nuxt/test-utils": "^3.3.1",
     "@nuxtjs/google-fonts": "3.0.0",
-    "@nuxtjs/i18n-edge": "8.0.0-beta.10-27985006.4ff543e",
+    "@nuxtjs/i18n-edge": "8.0.0-beta.10-27993103.e65d8f2",
     "@nuxtjs/supabase": "^0.3.1",
     "@nuxtjs/tailwindcss": "^6.6.4",
     "@typescript-eslint/eslint-plugin": "^5.56.0",
