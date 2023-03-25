@@ -8,5 +8,8 @@
   "vite.open": true,
   "vite.port": 3000,
   "vite.devCommand": "pnpm run dev",
-  "vite.buildCommand": "pnpm run build"
+  "vite.buildCommand": "pnpm run build",
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "master"
+  ]
 }
