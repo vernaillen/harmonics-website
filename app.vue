@@ -21,6 +21,7 @@ useHead({
 
 <template>
   <NuxtLoadingIndicator color="repeating-linear-gradient(to right,rgb(191 172 34/20%) 0%,rgb(191 172 34/100%) 60%,rgb(75 85 99/40%) 100%)" />
+  <navbar-component />
   <NuxtPage />
   <PolitePopup />
 </template>

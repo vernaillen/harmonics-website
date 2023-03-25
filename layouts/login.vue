@@ -3,8 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <navbar-component />
-  <div :class="isHydrated ? '' : 'opacity-30 blur-md'" class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen">
     <main class="flex-grow">
       <div class="flex-col">
         <div class="container mx-auto px-4 pt-[80px] mt-[30px] mb-10 sm:mt-[68px]">

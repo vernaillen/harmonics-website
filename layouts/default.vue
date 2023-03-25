@@ -1,6 +1,5 @@
 <template>
-  <navbar-component />
-  <div :class="isHydrated ? '' : 'opacity-30 blur-md'" class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen">
     <main class="flex-grow">
       <slot />
     </main>

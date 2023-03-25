@@ -33,10 +33,6 @@ onMounted(() => {
     }
   }
 })
-const buildInfo = useRuntimeConfig().public.buildInfo
-const timeAgoOptions = useTimeAgoOptions()
-const buildTimeDate = new Date(buildInfo.time)
-const buildTimeAgo = useTimeAgo(buildTimeDate, timeAgoOptions)
 </script>
 
 <template>
@@ -80,10 +76,7 @@ const buildTimeAgo = useTimeAgo(buildTimeDate, timeAgoOptions)
         <div class="w-full px-4 mx-auto text-center">
           <div class="flex flex-wrap text-xs text-gray-400 py-1 justify-center">
             <span class="w-full sm:w-auto">
-              <i18n-t v-if="isHydrated" keypath="footer.built_at">
-                <time :datetime="String(buildTimeDate)" :title="$d(buildTimeDate, 'long')">{{ buildTimeAgo }}</time>
-              </i18n-t>
-              <span v-else>{{ t('footer.fetchingBuildinfo') }}</span>
+              <span class="hidden">{{ t('footer.fetchingBuildinfo') }}</span>
               <NuxtLink href="https://github.com/vernaillen/harmonics-website/" target="_blank" class="hover:text-primary">
                 <Icon name="mdi:github" size="20" class="pb-1" />
               </NuxtLink>
