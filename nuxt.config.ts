@@ -17,10 +17,10 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n-edge',
+    '@nuxtjs/plausible',
     '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
-    'nuxt-gtag',
     'nuxt-icon',
   ],
   css: [
@@ -35,9 +35,6 @@ export default defineNuxtConfig({
       baseURL: 'https://vernaillen.twic.pics/harmonics',
     },
   },
-  gtag: {
-    id: 'G-K4Q8LZV0QW',
-  },
   googleFonts: {
     download: true,
     preconnect: true,
@@ -45,6 +42,9 @@ export default defineNuxtConfig({
     families: {
       Ubuntu: [400, 500, 700],
     },
+  },
+  plausible: {
+    apiHost: 'https://harmonics.be/plio',
   },
   content: {
     documentDriven: true,
