@@ -15,7 +15,7 @@ const navbarCollapseClass = computed(() => {
   return navbar.show ? '' : 'hidden'
 })
 
-const linkClass = (path: string) => {
+function linkClass(path: string) {
   const currentRoute = useRoute().path
   let classToAdd = ''
   if (

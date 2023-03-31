@@ -15,7 +15,7 @@ const locales: LocaleObjectData[] = [
   { code: 'en', name: 'English', iso: 'en-US', file: 'en-US.json' },
 ]
 
-const buildLocales = () => {
+function buildLocales() {
   const useLocales = Object.values(locales).reduce((acc, data) => {
     acc.push(data)
     return acc

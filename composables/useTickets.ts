@@ -1,6 +1,6 @@
 import type { EventTicket } from '~~/types/tickets'
 
-export const useTickets = (): EventTicket[] => {
+export function useTickets(): EventTicket[] {
   return [
     {
       id: 1,

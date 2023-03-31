@@ -3,7 +3,7 @@ import VueEasyLightbox from 'vue-easy-lightbox'
 import { useLightbox } from '@/stores/lightbox'
 
 const lightbox = useLightbox()
-const handleHide = () => {
+function handleHide() {
   lightbox.hide()
 }
 </script>

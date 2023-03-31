@@ -11,5 +11,11 @@
   "vite.buildCommand": "pnpm run build",
   "githubPullRequests.ignoredPullRequestBranches": [
     "master"
-  ]
+  ],
+  // recommended by antfu: https://github.com/antfu/eslint-config
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

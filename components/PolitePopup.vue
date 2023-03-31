@@ -3,12 +3,12 @@ const { t } = useI18n()
 const { setClosed, visible } = usePolitePopup()
 const appConfig = useAppConfig()
 
-const onClickOk = async () => {
+async function onClickOk() {
   setClosed()
   window.open(appConfig.mailchimpLink.href)
 }
 
-const onClickClose = () => {
+function onClickClose() {
   setClosed()
 }
 </script>

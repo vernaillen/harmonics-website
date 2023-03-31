@@ -6,7 +6,7 @@ const { t } = useI18n()
 const user = useSupabaseUser()
 const { order, addTicketOrder } = useCart()
 
-const triggerPayment = async () => {
+async function triggerPayment() {
   notifyAdminAboutMollie(useAppConfig().sendGridEmailFrom)
   const { data: payment } = await useFetch<Payment>('/api/mollie', {
     body: {
@@ -24,7 +24,7 @@ const triggerPayment = async () => {
       document.location.href = paymentData._links.checkout?.href
   }
 }
-const addTicket = (ticket: EventTicket) => {
+function addTicket(ticket: EventTicket) {
   if (user.value && user.value.email) {
     const ticketOrder = {
       ticket,

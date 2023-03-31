@@ -11,7 +11,7 @@ const config = {
   contentScrollThresholdInPercentage: 35,
 }
 
-const isToday = (date: Date): boolean => {
+function isToday(date: Date): boolean {
   const today = new Date()
   return (
     date.getDate() === today.getDate()
@@ -26,7 +26,7 @@ interface PolitePopupStorageDTO {
   lastSeenAt: number
 }
 
-export const usePolitePopup = () => {
+export function usePolitePopup() {
   const visible = useState('visible', () => false)
   const readTimeElapsed = useState('read-time-elapsed', () => false)
 

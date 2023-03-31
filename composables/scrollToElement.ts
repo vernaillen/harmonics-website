@@ -1,4 +1,4 @@
-export const scrollToElement = (id: string) => {
+export function scrollToElement(id: string) {
   const toEl = document.getElementById(id)
   if (toEl) {
     const to = toEl.offsetTop

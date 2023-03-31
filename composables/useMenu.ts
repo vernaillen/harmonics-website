@@ -1,6 +1,6 @@
 import type { MenuItem } from '~/types'
 
-export const useMenu = (): MenuItem[] => {
+export function useMenu(): MenuItem[] {
   return [
     {
       path: '/',

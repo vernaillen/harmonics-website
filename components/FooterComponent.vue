@@ -5,7 +5,7 @@ const date: number = new Date().getFullYear()
 
 const { t } = useI18n()
 
-const scrollToTop = () => {
+function scrollToTop() {
   scrollToElement('__nuxt')
 }
 

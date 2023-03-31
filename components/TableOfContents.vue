@@ -16,13 +16,13 @@ const { data: blogPost } = await useAsyncData('blogToc', () =>
 )
 const tocLinks = computed(() => blogPost.value?.body.toc.links ?? [])
 
-const onClick = (id: string) => {
+function onClick(id: string) {
   scrollToElement(id)
 }
 
 watchDebounced(
   () => props.activeTocId,
-  (newActiveTocId) => {
+  (newActiveTocId: any) => {
     const h2Link = tocLinksH2.value.find(
       (el: HTMLElement) => el.id === `toc-${newActiveTocId}`,
     )

@@ -2,7 +2,7 @@
 const user = useSupabaseUser()
 const { auth } = useSupabaseClient()
 
-const logout = async () => {
+async function logout() {
   const { error } = await auth.signOut()
 
   if (error) {

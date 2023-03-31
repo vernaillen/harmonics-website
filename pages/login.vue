@@ -39,7 +39,7 @@ const emailOptInError = ref()
 const emailAddress = ref('')
 const magicLinkPending = ref(false)
 
-const signInWithOAuth = async (provider: 'github' | 'google' | 'facebook') => {
+async function signInWithOAuth(provider: 'github' | 'google' | 'facebook') {
   const { error } = await supabaseAuthClient.auth.signInWithOAuth({
     provider,
     options: { redirectTo: `${window.location.origin}${redirectTo.value}/authenticating` },
@@ -49,7 +49,7 @@ const signInWithOAuth = async (provider: 'github' | 'google' | 'facebook') => {
     console.error(error)
 }
 
-const signInWithEmail = async (email: string) => {
+async function signInWithEmail(email: string) {
   magicLinkPending.value = true
   emailAddress.value = email
   notifyAdminAboutSignIn(appConfig.sendGridEmailFrom, `email address used for magic link: ${email}`)
