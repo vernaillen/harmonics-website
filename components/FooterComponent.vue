@@ -91,7 +91,7 @@ onMounted(() => {
           </div>
           <div class="text-sm text-gray-400 py-1">
             <span class="w-full md:w-auto">
-              {{ t('footer.copyright') }} {{ date }} Harmonics / Vernaillen Consulting BVBA - BE0503971022
+              {{ t('footer.copyright') }} {{ date }} Harmonics BV / Vernaillen Consulting BVBA - BE0503971022
             </span>
             <span class="hidden md:inline-block mr-1"> / </span>
             <span class="w-full md:w-auto">

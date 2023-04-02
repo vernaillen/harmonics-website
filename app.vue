@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useMobileNav } from '@/stores/mobileNav'
+const mobileNav = useMobileNav()
 const { locale, t } = useI18n()
 useHead({
   title: t('website.title'),
@@ -17,6 +19,9 @@ useHead({
     },
   ],
 })
+onMounted(() => {
+  window.addEventListener('resize', () => mobileNav.hide())
+})
 </script>
 
 <template>
@@ -29,5 +34,15 @@ useHead({
 <style>
 .nuxt-loading-indicator {
   opacity: 100% !important;
+}
+.page-enter-active,
+.page-leave-active {
+    transition: all 0.2s;
+}
+
+.page-enter-from,
+.page-leave-to {
+    opacity: 85%;
+    filter: blur(0.05rem);
 }
 </style>

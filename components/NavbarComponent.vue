@@ -1,18 +1,14 @@
 <script setup lang="ts">
+import { useMobileNav } from '@/stores/mobileNav'
 const localePath = useLocalePath()
 const { t } = useI18n()
+const mobileNav = useMobileNav()
 
-const navbar = reactive({
-  show: false,
-})
-function toggleNavbar() {
-  navbar.show = !navbar.show
-}
 const navbarTogglerClass = computed(() => {
-  return navbar.show ? 'navbarTogglerActive' : ''
+  return mobileNav.visible ? 'navbarTogglerActive' : ''
 })
 const navbarCollapseClass = computed(() => {
-  return navbar.show ? '' : 'hidden'
+  return mobileNav.visible ? '' : 'hidden'
 })
 
 function linkClass(path: string) {
@@ -34,7 +30,7 @@ function linkClass(path: string) {
   >
     <div class="container">
       <div class="flex justify-between relative  text-center sm:text-left">
-        <div class="px-2 md:px-4 mr-0 sm:mr-10 mt-2 w-[400px]">
+        <div class="px-2 md:px-4 mr-0 sm:mr-10 mt-2 w-[400px] z-30">
           <NuxtLink
             aria-label="Harmonics home"
             :to="localePath('/')"
@@ -44,13 +40,13 @@ function linkClass(path: string) {
             <span class="hidden sm:inline-flex">Harmonics</span>
           </NuxtLink>
         </div>
-        <div class="flex px-0 log:px-4 justify-between items-center w-full">
+        <div class="flex px-0 lg:px-4 justify-between items-center w-full">
           <div>
             <button
               id="navbarToggler"
-              class="block absolute right-0 top-8 cursor-pointer translate-y-[-50%] xl:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg"
+              class="block absolute right-0 top-8 cursor-pointer translate-y-[-50%] xl:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg z-30"
               :class="navbarTogglerClass" aria-label="Mobile Menu"
-              @click="toggleNavbar"
+              @click="mobileNav.toggle()"
             >
               <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white transition" />
               <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white transition" />
@@ -58,9 +54,37 @@ function linkClass(path: string) {
             </button>
 
             <nav
-              id="navbarCollapse"
-              class="absolute py-5 xl:py-0 xl:px-4 xl2:px-6 bg-white dark:bg-dark xl:dark:bg-transparent xl:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full xl:max-w-full xl:w-full right-4 top-full xl:block xl:static xl:shadow-none transition"
+              id="navbarMobile"
+              class="fixed w-screen h-screen left-0 right-0 top-0 bottom-0 justify-start
+                bg-white dark:bg-black z-20
+                xl:hidden transition-all"
               :class="navbarCollapseClass"
+              aria-label="mobile-nav"
+            >
+              <div class="fixed w-screen h-screen flex justify-center pt-28 pb-5 sm:pt-36">
+                <div class="px-0 w-full sm:w-1/2 md:w-1/3 mx-4">
+                  <ul class="block xl:flex">
+                    <li v-for="item, index in useMenu()" :key="index" class="relative group my-0">
+                      <NuxtLink
+                        :aria-label="t(item.titleKey)"
+                        :to="localePath(item.path)"
+                        class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 active:text-primary
+                        py-2 px-7 flex text-center items-center justify-center"
+                        :class="linkClass(item.path)"
+                      >
+                        {{ t(item.titleKey) }}
+                      </NuxtLink>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <nav
+              id="navbarDesktop"
+              class="hidden absolute xl:py-0 xl:px-4 xl2:px-6 bg-white dark:bg-dark xl:dark:bg-transparent xl:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full xl:max-w-full xl:w-full right-4 top-full xl:block xl:static xl:shadow-none transition"
+              :class="navbarCollapseClass"
+              aria-label="desktop-nav"
             >
               <ul class="block xl:flex">
                 <li v-for="item, index in useMenu()" :key="index" class="relative group">
@@ -68,7 +92,7 @@ function linkClass(path: string) {
                     :aria-label="t(item.titleKey)"
                     :to="localePath(item.path)"
                     class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 active:text-primary py-2 xl:pt-4 xl:pb-6 xl:inline-flex px-7 xl:px-1 flex mr-7"
-                    :class="linkClass(item.path)" @click="navbar.show = false"
+                    :class="linkClass(item.path)"
                   >
                     {{ t(item.titleKey) }}
                   </NuxtLink>
@@ -77,10 +101,10 @@ function linkClass(path: string) {
             </nav>
           </div>
         </div>
-        <div class="px-4 py-2 mt-2 max-w-full hidden sm:block">
+        <div class="px-4 py-2 mt-2 max-w-full hidden sm:block z-30">
           <social-icons />
         </div>
-        <div class="justify-end px-0 sm:px-3 py-2 mt-3 mr-14 sm:mr-10 xl:mr-0 max-w-full block">
+        <div class="justify-end px-0 sm:px-3 py-2 mt-3 mr-14 sm:mr-10 xl:mr-0 max-w-full block z-30">
           <LanguageSwitcher />
         </div>
       </div>
@@ -120,6 +144,24 @@ nav ul li a {
 @media (max-width: 1139px) {
   nav ul li a.link-active {
     border-left: 3px solid #bfac22;
+    border-right: 3px solid #bfac22;
+    --tw-text-opacity: 0.6;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  #navbarMobile>div {
+    padding-top: 65px;
+  }
+  #navbarMobile>div>div {
+    width: 220px;
+  }
+  #navbarMobile ul li,
+  #navbarMobile ul li a {
+    line-height: 16px;
+  }
+  #navbarMobile a {
+    font-size: 15px;
   }
 }
 </style>
