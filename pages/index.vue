@@ -18,17 +18,11 @@ definePageMeta({
   <div>
     <NuxtLayout>
       <div class="flex-col">
-        <section id="title" class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
+        <section id="title" class="container mx-auto px-4 pt-[40px] mt-[30px]">
           <div class="flex flex-wrap">
-            <div class="w-full lg:w-1/2 mb-5 px-4 sm:px-6 lg:px-8">
-              <NuxtImg
-                alt="Gongs" format="webp" class="max-w-full rounded-lg shadow-lg shadow-gray-400" src="/images/gongs.jpg"
-                sizes="sm:500px lg:800px"
-              />
-            </div>
-            <div class="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 mb-5">
-              <div class="flex flex-wrap justify-center text-center lg:justify-start lg:text-left">
-                <h1 class="text-5xl xl:text-6xl font-medium text-primary mb-5 mt-7 lg:mt-0">
+            <div class="w-full px-4 sm:px-6 lg:px-8 mb-5">
+              <div class="justify-center text-center">
+                <h1 class="text-5xl xl:text-6xl font-medium text-primary mb-5 mt-7">
                   {{ t('home.title') }}
                 </h1>
                 <h2 class="text-xl sm:text-2xl leading-relaxed text-gray-500 my-5">
@@ -41,10 +35,10 @@ definePageMeta({
             </div>
           </div>
         </section>
-        <section id="blogposts" class="container mx-auto pt-7 md:pt-12 lg:pt-20 xl:pt-24 pb-[100px] px-4">
+        <section id="blogposts" class="container mx-auto pt-0 md:pt-12 pb-[100px] px-4">
           <div class="flex flex-wrap prose">
             <template v-for="post, index in posts" :key="index">
-              <NewsItem :post="post" :big="true" class="w-full lg:w-1/2 m-auto p-4" />
+              <NewsItem :post="post" :big="true" class="w-full lg:w-2/3 xl:1/2 m-auto p-4" />
             </template>
           </div>
         </section>

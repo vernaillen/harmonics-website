@@ -37,7 +37,7 @@ function linkClass(path: string) {
             class="text-3xl text-primary font-medium leading-relaxed inline-block whitespace-nowrap header-logo"
           >
             <img src="/images/wavesound.jpg" class="rounded-full w-20 h-10 inline-flex" alt="Harmonics wavesound logo">
-            <span class="hidden sm:inline-flex">Harmonics</span>
+            <span class="hidden xl:inline-flex">Harmonics</span>
           </NuxtLink>
         </div>
         <div class="flex px-0 lg:px-4 justify-between items-center w-full">
