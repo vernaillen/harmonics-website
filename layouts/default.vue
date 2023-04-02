@@ -5,7 +5,7 @@ const mobileNav = useMobileNav()
 
 <template>
   <div v-if="!mobileNav.visible" class="flex flex-col min-h-screen">
-    <main class="flex-grow">
+    <main class="flex-grow min-h-screen">
       <slot />
     </main>
     <footer-component />
