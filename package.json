@@ -39,7 +39,7 @@
     "@nuxtjs/google-fonts": "3.0.0",
     "@nuxtjs/i18n-edge": "8.0.0-beta.10-28003311.2c39470",
     "@nuxtjs/plausible": "^0.2.0",
-    "@nuxtjs/supabase": "0.3.1",
+    "@nuxtjs/supabase": "0.3.5",
     "@nuxtjs/tailwindcss": "^6.6.5",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@typescript-eslint/parser": "^5.57.0",
