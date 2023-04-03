@@ -95,7 +95,7 @@ onUnmounted(() => {
                 </em>
               </div>
               <div
-                v-if="page.image"
+                v-if="page.image && !page.imageFloatingRight"
               >
                 <NuxtImg
                   loading="lazy"
@@ -122,6 +122,7 @@ onUnmounted(() => {
                       </div>
                     </div>
                     <div v-else>
+                      <FloatingImage v-if="page.imageFloatingRight" :src="page.image" :width="page.imageWidth ? page.imageWidth : 600" />
                       <ContentRenderer ref="nuxtContent" :value="doc" />
                     </div>
                   </template>

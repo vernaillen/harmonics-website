@@ -29,7 +29,7 @@ function linkClass(path: string) {
     class="header bg-white bg-opacity-95 absolute top-0 left-0 z-20 w-full h-[68px] flex"
   >
     <div class="container">
-      <div class="flex justify-between relative  text-center sm:text-left">
+      <div class="flex justify-between relative text-left">
         <div class="px-2 md:px-4 mr-0 sm:mr-10 mt-2 w-[400px] z-30">
           <NuxtLink
             aria-label="Harmonics home"
@@ -40,7 +40,7 @@ function linkClass(path: string) {
             <span class="hidden xl:inline-flex">Harmonics</span>
           </NuxtLink>
         </div>
-        <div class="flex px-0 lg:px-4 justify-between items-center w-full">
+        <div class="flex px-0 lg:px-4 justify-between items-center text-center w-full">
           <div>
             <button
               id="navbarToggler"
@@ -62,7 +62,7 @@ function linkClass(path: string) {
               aria-label="mobile-nav"
             >
               <div class="fixed w-screen h-screen flex justify-center pt-28 pb-5 sm:pt-36">
-                <div class="px-0 w-full sm:w-1/2 md:w-1/3 mx-4">
+                <div class="px-0 w-full sm:w-1/2 md:w-1/3 mx-8">
                   <ul class="block xl:flex">
                     <li v-for="item, index in useMenu()" :key="index" class="relative group my-0">
                       <NuxtLink
@@ -76,6 +76,7 @@ function linkClass(path: string) {
                       </NuxtLink>
                     </li>
                   </ul>
+                  <SocialIcons class="!mr-2 mt-10 sm:hidden" />
                 </div>
               </div>
             </nav>

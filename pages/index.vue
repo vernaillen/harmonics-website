@@ -18,7 +18,7 @@ definePageMeta({
   <div>
     <NuxtLayout>
       <div class="flex-col">
-        <section id="title" class="container mx-auto px-4 pt-[40px] mt-[30px]">
+        <section id="title" class="container mx-auto px-4 pt-[40px] lg:pt-[60px] xl:pt-[80px] mt-[30px]">
           <div class="flex flex-wrap">
             <div class="w-full px-4 sm:px-6 lg:px-8 mb-5">
               <div class="justify-center text-center">
