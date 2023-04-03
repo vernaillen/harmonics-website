@@ -62,6 +62,10 @@ const width = `${props.width}px`
     width: v-bind('width')
 }
 @media (max-width: 540px) {
+  .prose p.caption {
+    margin-top: 0;
+    width: 100%;
+  }
   .prose .left,
   .prose .right
   .prose .floatLeft,
