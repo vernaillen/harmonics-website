@@ -84,7 +84,7 @@ onMounted(() => {
             <span class="w-full sm:w-auto">
               {{ t('footer.developed_with') }}
               <NuxtLink href="https://nuxt.com/" target="_blank">
-                <SvgIcon file="nuxt-icon-green.svg" />
+                <SvgIcon file="nuxt-icon-green.svg" width="16" height="16" />
               </NuxtLink>
               {{ t('news.by') }} <NuxtLink href="https://vernaillen.dev" class="hover:text-primary" target="_blank">Wouter Vernaillen</NuxtLink>
             </span>
