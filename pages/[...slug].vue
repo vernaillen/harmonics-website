@@ -103,6 +103,7 @@ onUnmounted(() => {
                   :height="page.imageHeight ? page.imageHeight : '400'"
                   :width="page.imageWidth ? page.imageWidth : ''"
                   :src="page.image"
+                  format="webp"
                   fit="cover"
                   class="rounded-md shadow-md shadow-gray-400"
                   alt="article image"

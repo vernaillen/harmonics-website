@@ -1,20 +1,23 @@
 <script setup lang="ts">
-import type { NewsItem } from '~/types'
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 
 export interface Props {
-  post: NewsItem
+  post: ParsedContent
   big: boolean
 }
 const props = defineProps<Props>()
 const { t } = useI18n()
 const imgWidth = props.big ? '' : 624
 const imgHeight = props.big ? '' : 326
+const thumbSizes = computed(() => {
+  return props.big ? 'sm:100vw md:580px lg:800px xl:1000px' : ''
+})
 </script>
 
 <template>
   <div class="relative bg-white dark:bg-dark rounded-md overflow-hidden">
     <NuxtLink v-if="post.thumbnail" :to="post._path" :aria-label="post.title">
-      <nuxt-img :width="imgWidth" :height="imgHeight" loading="lazy" :src="post.thumbnail" class="!mt-0 rounded-md shadow-md shadow-gray-400" :alt="`thumbnail ${post.title}`" />
+      <nuxt-img :sizes="thumbSizes" format="webp" :width="imgWidth" :height="imgHeight" loading="lazy" :src="post.thumbnail" class="!mt-0 rounded-md shadow-md shadow-gray-400" :alt="`thumbnail ${post.title}`" />
     </NuxtLink>
     <NuxtLink v-if="post.thumb_video_webm || post.thumb_video_mp4" :to="post._path" :aria-label="post.title">
       <client-only>

@@ -36,7 +36,7 @@ function linkClass(path: string) {
             :to="localePath('/')"
             class="text-3xl text-primary font-medium leading-relaxed inline-block whitespace-nowrap header-logo"
           >
-            <img src="/images/wavesound.jpg" class="rounded-full w-20 h-10 inline-flex" alt="Harmonics wavesound logo">
+            <img src="/images/wavesound.jpg" width="80" height="40" class="rounded-full min-w-[80px] w-[80px] h-[40px] inline-flex" alt="Harmonics wavesound logo">
             <span class="hidden xl:inline-flex">Harmonics</span>
           </NuxtLink>
         </div>

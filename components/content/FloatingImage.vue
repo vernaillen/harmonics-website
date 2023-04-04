@@ -19,7 +19,7 @@ const width = `${props.width}px`
 
 <template>
   <div :class="cssClass">
-    <NuxtImg :modifiers="modifiers" :src="src" :width="width" :height="height" :alt="caption" :title="caption" class="!mt-0 rounded-md" :class="imageShadow ? 'shadow-md shadow-gray-400' : ''" />
+    <NuxtImg format="webp" :modifiers="modifiers" :src="src" :width="width" :height="height" :alt="caption" :title="caption" class="!mt-0 rounded-md" :class="imageShadow ? 'shadow-md shadow-gray-400' : ''" />
     <p v-if="caption" class="caption text-xs text-center mt-0">
       <NuxtLink v-if="captionUrl" :href="captionUrl" target="_blank" :alt="caption" :title="caption">
         {{ caption }}
