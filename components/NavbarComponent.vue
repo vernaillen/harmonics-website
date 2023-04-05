@@ -76,7 +76,7 @@ function linkClass(path: string) {
                       </NuxtLink>
                     </li>
                   </ul>
-                  <SocialIcons class="!mr-2 mt-10 sm:hidden" />
+                  <SocialIcons id="socialsOnMobile" class="!mr-2 mt-10 sm:hidden" />
                 </div>
               </div>
             </nav>
@@ -103,7 +103,7 @@ function linkClass(path: string) {
           </div>
         </div>
         <div class="px-4 py-2 mt-2 max-w-full hidden sm:block z-30">
-          <social-icons />
+          <SocialIcons />
         </div>
         <div class="justify-end px-0 sm:px-3 py-2 mt-3 mr-14 sm:mr-10 xl:mr-0 max-w-full block z-30">
           <LanguageSwitcher />
