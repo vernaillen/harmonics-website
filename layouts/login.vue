@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useMobileNav } from '@/stores/mobileNav'
+
 const mobileNav = useMobileNav()
 const { t } = useI18n()
 </script>

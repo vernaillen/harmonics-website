@@ -1,4 +1,5 @@
 import type { LegalPolicy } from '~~/types'
+
 const config = useRuntimeConfig()
 
 export default defineEventHandler(async () => {

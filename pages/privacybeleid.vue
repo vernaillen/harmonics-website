@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { LegalPolicy } from '~~/types'
+
 const { data, error } = await useFetch<LegalPolicy>('/api/iubendaprivacypolicy')
 </script>
 

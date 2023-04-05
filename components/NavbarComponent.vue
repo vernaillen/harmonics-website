@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useMobileNav } from '@/stores/mobileNav'
+
 const localePath = useLocalePath()
 const { t } = useI18n()
 const mobileNav = useMobileNav()

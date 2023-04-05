@@ -2,6 +2,7 @@
 import type { Payment } from '@mollie/api-client'
 import { useCart } from '~/stores/cart'
 import type { EventTicket } from '~~/types/tickets'
+
 const { t } = useI18n()
 const user = useSupabaseUser()
 const { order, addTicketOrder } = useCart()

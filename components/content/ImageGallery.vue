@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useLightbox } from '@/stores/lightbox'
+
 const props = defineProps({
   folder: {
     type: String,

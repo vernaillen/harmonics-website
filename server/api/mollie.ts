@@ -1,5 +1,6 @@
 import { createMollieClient } from '@mollie/api-client'
 import protectRoute from '~/server/utils/protectRoute'
+
 const config = useRuntimeConfig()
 
 export default defineEventHandler(async (event) => {

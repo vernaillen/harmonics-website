@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useField, useForm } from 'vee-validate'
 import * as yup from 'yup'
+
 const { t } = useI18n()
 
 const schema = yup.object({

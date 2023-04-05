@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import LanguageSwitcher from './LanguageSwitcher.vue'
+
 const localePath = useLocalePath()
 const date: number = new Date().getFullYear()
 

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { watchDebounced } from '@vueuse/core'
 import type { Ref } from 'vue'
+
 const props = withDefaults(defineProps<{ activeTocId: string; slug: string }>(), {})
 
 const { t } = useI18n()
