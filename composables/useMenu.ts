@@ -7,12 +7,16 @@ export function useMenu(): MenuItem[] {
       titleKey: 'menu.home',
     },
     {
-      path: '/news',
-      titleKey: 'menu.news',
+      path: '/ecstaticdance',
+      titleKey: 'menu.ecstaticdance',
     },
     {
       path: '/trancedance',
       titleKey: 'menu.trancedance',
+    },
+    {
+      path: '/news',
+      titleKey: 'menu.news',
     },
     {
       path: '/about',
