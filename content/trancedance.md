@@ -48,15 +48,13 @@ Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.co
 Hier kan je luisteren naar een trancedans set van een vorige sessie: [Trancedans Muziek](/news/trancedancemusic).
 Voor elke sessie wordt telkens andere muziek gebruikt, gebaseerd op het thema voor die specifieke sessie.
 
-### Maandelijkse sessies bij Dwarsligger
+### Maandelijkse sessies
 
-Vanaf januari 2023 plannen we een maandelijkse trancedans sessie bij [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/),
-gefaciliteerd door [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about) 
+Vanaf januari 2023 plannen we een maandelijkse trancedans sessie gefaciliteerd door [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about) 
 
-Eerstvolgende sessies:
- * Maandag 17 april 2023 om 18u45
+Voorlopig zijn er geen nieuwe sessie ingepland. Weldra meer nieuws.
 
-Je kan ook inschrijven op :MailchimpExternalLink om op de hoogte te blijven ivm nieuwe data.
+Schrijf je in op :MailchimpExternalLink om op de hoogte te blijven ivm nieuwe data.
 
 ### Meebrengen
 * een blinddoek, best met meerdere donkere lagen stof
@@ -64,9 +62,3 @@ Je kan ook inschrijven op :MailchimpExternalLink om op de hoogte te blijven ivm 
 * een dekentje (tijdens integratie moment na de dans)
 * flesje water
 * eventueel pen en papier om na de dans je ervaringen te noteren
-
-### Locatie
-
-:DwarsliggerLocationInfo
-
-![dans ruimte bij Dwarsligger](/images/trancedance/dwarsligger.jpg)

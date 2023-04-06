@@ -46,15 +46,13 @@ A recent [sound healing training](https://www.akasharetreatcenter.com/soundheali
 You can listen to Trance Dance set from a previous session: [Trance Dance Music](/en/news/trancedancemusic).
 Each session different music will be used, based on the theme for that specific session.
 
-### Monthly sessions at Dwarsligger
+### Monthly sessions
 
-From January 2023 we start with monthly Trance Dance sessions at [vzw Dwarsligger in Melle](https://www.dwarsligger33.com/),
-facilitated by [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/en/about)
+From January 2023 we start with monthly Trance Dance sessions facilitated by [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/en/about)
   
-Upcoming sessions:
-  * Monday 17 April 2023 at 6:45pm
+At the moment we don't have any new sessions planned.
 
-You can also subscribe to the :MailchimpExternalLink to stay informed about upcoming sessions.
+Subscribe to the :MailchimpExternalLink to stay informed about upcoming sessions.
 
 ### Bring your own
 * blindfold, best is dark, multi-layered fabric
@@ -62,9 +60,3 @@ You can also subscribe to the :MailchimpExternalLink to stay informed about upco
 * blanket (during integration)
 * bottle of water
 * writing material to write down the experiences from your trip after the dance
-
-### Location
-
-:DwarsliggerLocationInfo
-
-![workshop space @ Dwarsligger](/images/trancedance/dwarsligger.jpg)
