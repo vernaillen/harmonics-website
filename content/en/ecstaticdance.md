@@ -17,7 +17,7 @@ Ecstatic dance is a free flow dance in which the dancers surrender to the rhythm
 
 Dancers feel deeply connected with their own emotions and with others. The meditative aspect of the dance helps people cope with stress and find inner peace. Feeling revitalised by the process.
 
-### A few guidelines
+### ED guidelines
 
 As a dancer you are welcome as you are, you are invited to move as you feel and let your body guide you.
 

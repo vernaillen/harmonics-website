@@ -16,7 +16,7 @@ Ecstatic dance is een "free flow" dansvorm waarin de dansers zich volledig overg
 
 Dansers voelen een diepe connectie met hun eigen emoties en die van anderen. Het meditatieve aspect van de dans helpt omgaan met stress en innerlijke rust te vinden. Men voelt zich gerevitaliseerd door het proces.
 
-### Enkele richtlijnen
+### ED richtlijnen
 
 Als danser ben je welkom zoals je bent, je wordt uitgenodigd om vrij te bewegen en je te laten leiden door je eigen lichaam en gevoelens.
 

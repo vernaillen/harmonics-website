@@ -29,23 +29,25 @@ function linkClass(path: string) {
   <header
     class="header bg-white bg-opacity-95 absolute top-0 left-0 z-20 w-full h-[68px] flex"
   >
-    <div class="container">
-      <div class="flex justify-between relative text-left">
-        <div class="px-2 md:px-4 mr-0 mt-2 w-[400px] z-30">
-          <NuxtLink
-            aria-label="Harmonics home"
-            :to="localePath('/')"
-            class="text-3xl text-primary font-medium leading-relaxed inline-block whitespace-nowrap header-logo"
-          >
-            <img src="/images/wavesound.jpg" width="80" height="40" class="rounded-full min-w-[80px] w-[80px] h-[40px] inline-flex" alt="Harmonics wavesound logo">
-            <span class="hidden xl:inline-flex">Harmonics</span>
-          </NuxtLink>
+    <div class="container relative">
+      <div class="xl:flex relative text-left">
+        <div class="px-2 md:px-4 ml-0 mt-2 max-w-full z-30">
+          <div class="w-full flex justify-center z-30">
+            <NuxtLink
+              aria-label="Harmonics home"
+              :to="localePath('/')"
+              class="text-3xl text-primary font-medium leading-relaxed inline-block whitespace-nowrap header-logo z-30"
+            >
+              <img src="/images/wavesound.jpg" width="80" height="40" class="rounded-full min-w-[80px] w-[80px] h-[40px] inline-flex" alt="Harmonics wavesound logo">
+              <span class="hidden xl:inline-flex">Harmonics</span>
+            </NuxtLink>
+          </div>
         </div>
-        <div class="flex px-0 lg:px-4 justify-between items-center text-center w-full">
+        <div class="flex px-0 lg:px-4">
           <div>
             <button
               id="navbarToggler"
-              class="block absolute right-0 top-8 cursor-pointer translate-y-[-50%] xl:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg z-30"
+              class="block absolute left-2 top-8 cursor-pointer translate-y-[-50%] xl:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg z-30"
               :class="navbarTogglerClass" aria-label="Mobile Menu"
               @click="mobileNav.toggle()"
             >
@@ -78,7 +80,7 @@ function linkClass(path: string) {
                       </NuxtLink>
                     </li>
                   </ul>
-                  <SocialIcons id="socialsOnMobile" class="!mr-2 mt-10 sm:hidden" />
+                  <SocialIcons id="socialsOnMobile" class="!mr-2 mt-10 text-center xl:hidden" />
                 </div>
               </div>
             </nav>
@@ -105,10 +107,10 @@ function linkClass(path: string) {
             </nav>
           </div>
         </div>
-        <div class="px-4 py-2 mt-2 max-w-full hidden sm:block z-30">
+        <div class="absolute top-0 right-20 px-4 py-2 mt-2 max-w-full hidden xl:block z-30">
           <SocialIcons />
         </div>
-        <div class="justify-end px-0 sm:px-3 py-2 mt-3 mr-14 sm:mr-10 xl:mr-0 max-w-full block z-30">
+        <div class="absolute top-0 right-0 px-0 sm:px-3 py-2 mt-3 mr-0 max-w-full z-30">
           <LanguageSwitcher />
         </div>
       </div>
