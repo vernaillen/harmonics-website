@@ -1,5 +1,5 @@
 ---
-title: About Wouter and Harmonics
+title: About Wouter
 hideCreatedDate: true
 ---
 In 2020 I personally experienced the healing power of sound and music and in 2021 I decided to follow a sound healing training [provided by Surya at Akasha Retreat Center](https://www.akasharetreatcenter.com/).
@@ -21,7 +21,7 @@ In May 2022 I played a first Ecstatic Dance session at a private birthday event:
 If you're not familiar yet with Ecstatic Dance you can read about it in this [blogpost: What is Ecstatic Dance?](/en/news/watisecstaticdance)
 
 ### Trance dance
-From August to the end of October 2022, I followed the [Trance Dance Facilitator Training](https://trance-dance.net/events/trancedance-facilitator-training/) by Aernoudt Knecht.
+From August to the end of October 2022, I followed the [Trance Dance Facilitator Training](https://trance-dance.net/events/trancedance-facilitator-training/) by Aernoudt Knecht and got [certified](https://trance-dance.net/international/facilitators/wouter-vernaillen/).
 After a successful first Trance dance session on October 17, [monthly Trance Dance sessions](/en/trancedance) will take place starting from January 2023.
 
 ### Training

@@ -1,5 +1,5 @@
 ---
-title: Over Wouter en Harmonics
+title: Over Wouter
 hideCreatedDate: true
 ---
 
@@ -21,9 +21,8 @@ In mei 2022 speelde ik een eerste Ecstatic Dance sessie op een privé verjaardag
 Ben je nog niet vertrouwd met het concept van Ecstatic Dance, dan kan je er meer over lezen in de [blogpost: What is Ecstatic Dance?](/news/watisecstaticdance)
 
 ### Trancedans
-Van augustus tot eind oktober 2022 volgde ik de [Trance Dance Facilitator Training](https://trance-dance.net/events/trancedance-facilitator-training/) bij Aernoudt Knecht.
+Van augustus tot eind oktober 2022 volgde ik de [Trance Dance Facilitator Training](https://trance-dance.net/events/trancedance-facilitator-training/) bij Aernoudt Knecht en behaalde het [certificaat](https://trance-dance.net/international/facilitators/wouter-vernaillen/).
 Na een een eerste Trancedans sessie georganiseerd te hebben op 17 oktober, worden vanaf januari 2023 [maandelijks Trancedans sessies](/trancedance) gepland.
-
 
 ### Opleiding
 
