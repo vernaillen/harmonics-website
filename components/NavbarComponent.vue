@@ -31,7 +31,7 @@ function linkClass(path: string) {
   >
     <div class="container">
       <div class="flex justify-between relative text-left">
-        <div class="px-2 md:px-4 mr-0 sm:mr-10 mt-2 w-[400px] z-30">
+        <div class="px-2 md:px-4 mr-0 mt-2 w-[400px] z-30">
           <NuxtLink
             aria-label="Harmonics home"
             :to="localePath('/')"
@@ -73,7 +73,8 @@ function linkClass(path: string) {
                         py-2 px-7 flex text-center items-center justify-center"
                         :class="linkClass(item.path)"
                       >
-                        {{ t(item.titleKey) }}
+                        <Icon v-if="index === 0" name="mdi:home" size="22" color="gray" class="mr-2" />
+                        <span v-else>{{ t(item.titleKey) }}</span>
                       </NuxtLink>
                     </li>
                   </ul>
@@ -84,7 +85,7 @@ function linkClass(path: string) {
 
             <nav
               id="navbarDesktop"
-              class="hidden absolute xl:py-0 xl:px-4 xl2:px-6 bg-white dark:bg-dark xl:dark:bg-transparent xl:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full xl:max-w-full xl:w-full right-4 top-full xl:block xl:static xl:shadow-none transition"
+              class="hidden xl:block static py-0 px-4 xl2:px-6 dark:bg-transparent bg-transparent rounded-lg w-full max-w-full right-4 top-full shadow-none transition"
               :class="navbarCollapseClass"
               aria-label="desktop-nav"
             >
@@ -93,10 +94,11 @@ function linkClass(path: string) {
                   <NuxtLink
                     :aria-label="t(item.titleKey)"
                     :to="localePath(item.path)"
-                    class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 active:text-primary py-2 xl:pt-4 xl:pb-6 xl:inline-flex px-7 xl:px-1 flex mr-7"
+                    class="menu-scroll text-base text-gray-600 dark:text-white group-hover:opacity-70 active:text-primary pt-4 pb-6 px-3 mx-1 inline-flex"
                     :class="linkClass(item.path)"
                   >
-                    {{ t(item.titleKey) }}
+                    <Icon v-if="index === 0" name="mdi:home" size="22" color="gray" />
+                    <span v-else>{{ t(item.titleKey) }}</span>
                   </NuxtLink>
                 </li>
               </ul>
