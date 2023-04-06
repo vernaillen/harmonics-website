@@ -47,7 +47,7 @@ function linkClass(path: string) {
           <div>
             <button
               id="navbarToggler"
-              class="block absolute left-2 top-8 cursor-pointer translate-y-[-50%] xl:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg z-30"
+              class="block absolute left-2 top-7 cursor-pointer translate-y-[-50%] xl:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg z-30"
               :class="navbarTogglerClass" aria-label="Mobile Menu"
               @click="mobileNav.toggle()"
             >
@@ -110,7 +110,7 @@ function linkClass(path: string) {
         <div class="absolute top-0 right-20 px-4 py-2 mt-2 max-w-full hidden xl:block z-30">
           <SocialIcons />
         </div>
-        <div class="absolute top-0 right-0 px-0 sm:px-3 py-2 mt-3 mr-0 max-w-full z-30">
+        <div class="absolute top-0 right-0 px-0 sm:px-3 py-2 mt-2 xl:mt-3 mr-0 max-w-full z-30">
           <LanguageSwitcher />
         </div>
       </div>
