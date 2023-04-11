@@ -1,7 +1,6 @@
 ---
 title: Trance Dance
 showToc: false
-hideCreatedDate: true
 ---
 
 At the moment we don't have any new sessions planned.
