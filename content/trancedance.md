@@ -1,10 +1,9 @@
 ---
 title: Trancedans
 showToc: false
-hideCreatedDate: true
 ---
 
-Voorlopig zijn er geen nieuwe sessie ingepland. Weldra meer nieuws.
+Voorlopig zijn er geen nieuwe sessies ingepland. Weldra meer nieuws.
 
 Schrijf je in op :MailchimpExternalLink om op de hoogte te blijven ivm nieuwe data.
 
