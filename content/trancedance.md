@@ -3,6 +3,11 @@ title: Trancedans
 showToc: false
 hideCreatedDate: true
 ---
+
+Voorlopig zijn er geen nieuwe sessie ingepland. Weldra meer nieuws.
+
+Schrijf je in op :MailchimpExternalLink om op de hoogte te blijven ivm nieuwe data.
+
 ### Geblinddoekte meditatieve vrije dans
 
 Door geblinddoekt te dansen en geen visuele prikkels binnen te laten, zak je gemakkelijker in je lichaam en worden andere gewaarwordingen sterker. 
@@ -47,14 +52,6 @@ Een recent gevolgde [sound healing opleiding](https://www.akasharetreatcenter.co
 
 Hier kan je luisteren naar een trancedans set van een vorige sessie: [Trancedans Muziek](/news/trancedancemusic).
 Voor elke sessie wordt telkens andere muziek gebruikt, gebaseerd op het thema voor die specifieke sessie.
-
-### Maandelijkse sessies
-
-Vanaf januari 2023 plannen we een maandelijkse trancedans sessie gefaciliteerd door [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/about) 
-
-Voorlopig zijn er geen nieuwe sessie ingepland. Weldra meer nieuws.
-
-Schrijf je in op :MailchimpExternalLink om op de hoogte te blijven ivm nieuwe data.
 
 ### Meebrengen
 * een blinddoek, best met meerdere donkere lagen stof

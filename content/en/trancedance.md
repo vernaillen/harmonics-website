@@ -3,6 +3,11 @@ title: Trance Dance
 showToc: false
 hideCreatedDate: true
 ---
+
+At the moment we don't have any new sessions planned.
+
+Subscribe to the :MailchimpExternalLink to stay informed about upcoming sessions.
+
 ### Blindfolded meditative free dance
 
 By dancing blindfolded and no longer letting visual stimuli in, you can sink into your body more easily and other sensations become stronger. 
@@ -45,14 +50,6 @@ A recent [sound healing training](https://www.akasharetreatcenter.com/soundheali
 
 You can listen to Trance Dance set from a previous session: [Trance Dance Music](/en/news/trancedancemusic).
 Each session different music will be used, based on the theme for that specific session.
-
-### Monthly sessions
-
-From January 2023 we start with monthly Trance Dance sessions facilitated by [Karien 'Iztacitlal'](https://www.shamanour.be/autobiografie) & [Wouter Vernaillen](/en/about)
-  
-At the moment we don't have any new sessions planned.
-
-Subscribe to the :MailchimpExternalLink to stay informed about upcoming sessions.
 
 ### Bring your own
 * blindfold, best is dark, multi-layered fabric
