@@ -40,8 +40,8 @@ devDependencies:
     specifier: ^2.5.2
     version: 2.5.2
   '@nuxt/image-edge':
-    specifier: 1.0.0-28008586.381b906
-    version: 1.0.0-28008586.381b906
+    specifier: 1.0.0-28020728.5df24eb
+    version: 1.0.0-28020728.5df24eb
   '@nuxt/test-utils':
     specifier: ^3.3.3
     version: 3.4.0(vue@3.2.47)
@@ -1183,12 +1183,12 @@ packages:
     resolution: {integrity: sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==}
     dev: true
 
-  /@nuxt/image-edge@1.0.0-28008586.381b906:
-    resolution: {integrity: sha512-f5IN9U0eZl+3TmwqRMt/45SuxqUQs4B2Z8TAL+k0T+F0pi4GRq2H89XYto0QoAWDbwVIVx8JK2PwZTmp9n6+Jw==}
+  /@nuxt/image-edge@1.0.0-28020728.5df24eb:
+    resolution: {integrity: sha512-3jOeWF7k1u2IVBMP235YtRENU5YA/y8RWKAYqvo18aDBnspt0L3/FnS1PKnRZPjBSEFT9loFCniNl0jyxEfIoQ==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
     dependencies:
       '@nuxt/kit': 3.4.0
-      consola: 2.15.3
+      consola: 3.0.1
       defu: 6.1.2
       h3: 1.6.4
       image-meta: 0.1.1
