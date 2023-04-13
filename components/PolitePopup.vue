@@ -1,7 +1,10 @@
 <script setup lang="ts">
+import { usePolitePopupStore } from '~/stores/politePopup'
+
 const { t } = useI18n()
-const { setClosed, visible } = usePolitePopup()
+const { setClosed } = usePolitePopup()
 const appConfig = useAppConfig()
+const politePopup = usePolitePopupStore()
 
 async function onClickOk() {
   setClosed()
@@ -15,7 +18,7 @@ function onClickClose() {
 
 <template>
   <div
-    v-if="visible" class="
+    v-if="politePopup.visible" class="
       fixed
       z-[9999]
       left-3

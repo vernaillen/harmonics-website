@@ -4,6 +4,7 @@ import {
   useWindowScroll,
   useWindowSize,
 } from '@vueuse/core'
+import { usePolitePopupStore } from '~/stores/politePopup'
 
 const config = {
   timeoutInMs: 3000,
@@ -27,7 +28,6 @@ interface PolitePopupStorageDTO {
 }
 
 export function usePolitePopup() {
-  const visible = useState('visible', () => false)
   const readTimeElapsed = useState('read-time-elapsed', () => false)
 
   const { y: scrollYInPx } = useWindowScroll()
@@ -73,7 +73,7 @@ export function usePolitePopup() {
     readTimeElapsed: readTimeElapsed.value,
     amountScrolledInPercentage: amountScrolledInPercentage.value,
     scrolledContent: scrolledContent.value,
-    visible: visible.value,
+    visible: usePolitePopupStore().visible,
     storedData: storedData.value,
   }))
 
@@ -83,7 +83,7 @@ export function usePolitePopup() {
   }
 
   const setClosed = () => {
-    visible.value = false
+    usePolitePopupStore().hide()
   }
 
   const setSubscribed = () => {
@@ -106,7 +106,7 @@ export function usePolitePopup() {
         return
 
       if (newReadTimeElapsed && newScrolledContent) {
-        visible.value = true
+        usePolitePopupStore().show()
         storedData.value.seenCount += 1
         storedData.value.lastSeenAt = new Date().getTime()
       }
@@ -114,7 +114,6 @@ export function usePolitePopup() {
   )
 
   return {
-    visible,
     trigger,
     setClosed,
     setSubscribed,
