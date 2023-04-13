@@ -2,7 +2,6 @@
 hideTitle: true
 hideCreatedAndUpdatedDates: true
 ---
-:::div{.col-left}
 
 # Contacteer Wouter
 
@@ -15,13 +14,3 @@ of stuur me een e-mail met het contact formulier:
 
 ::ContactForm
 ::
-
-:::
-:::div{.col-right}
-
-::MailchimpComponent
-::
-
-:::
-:::div{.col-clear}
-:::

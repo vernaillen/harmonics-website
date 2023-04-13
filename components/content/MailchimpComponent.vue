@@ -5,13 +5,15 @@ const appConfig = useAppConfig()
 
 <template>
   <div v-if="appConfig.mailchimpLink.href">
-    <h1 class="text-3xl font-bold text-primary">
+    <h4 class="text-xl font-bold !text-primary !mt-0">
       {{ t('mailinglist.title') }}
-    </h1>
-    <p>{{ t('mailinglist.subtitle') }}</p>
+    </h4>
+    <p class="text-sm">
+      {{ t('mailinglist.subtitle') }}
+    </p>
     <p>
       <NuxtLink :href="appConfig.mailchimpLink.href" target="_blank">
-        <Icon name="twemoji:open-mailbox-with-raised-flag" class="mailbox text-6xl fill-primary" />
+        <Icon name="twemoji:open-mailbox-with-raised-flag" class="mailbox text-5xl fill-primary" />
       </NuxtLink>
     </p>
     <p>

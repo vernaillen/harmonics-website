@@ -79,3 +79,7 @@ header a {
   @apply fixed z-[9995] transition bg-white bg-opacity-80 dark:bg-primary dark:bg-opacity-20;
   backdrop-filter: blur(5px);
 }
+
+#iubenda-cs-banner .iubenda-cs-container {
+  @apply shadow-black shadow-2xl
+}

@@ -17,7 +17,7 @@ function onClickClose() {
   <div
     v-if="visible" class="
       fixed
-      z-50
+      z-[9999]
       left-3
       right-3
       bottom-3

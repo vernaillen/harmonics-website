@@ -28,20 +28,20 @@ definePageMeta({
       <div class="flex-col">
         <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
           <div class="flex flex-wrap">
-            <div class="w-full lg:w-1/2 mb-5 px-4 sm:px-6 lg:px-8 prose">
+            <div class="w-full md:w-3/4 mb-5 px-4 sm:px-6 lg:px-8 prose">
               <div
                 v-for="post, index in posts" :key="index"
               >
                 <NewsItem v-if="index === 0" :post="post" :big="true" />
               </div>
             </div>
-            <div id="newsletter" class="w-full lg:w-1/2 px-4 sm:px-6 lg:px-8 mb-5 prose">
+            <div id="newsletter" class="sticky right-0 w-full md:block md:w-1/4 px-4 sm:px-6 lg:px-8 mb-5 prose">
               <MailchimpComponent />
             </div>
           </div>
         </div>
         <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-start py-4 prose">
+          <div class="flex flex-wrap md:w-3/4 justify-start py-4 prose">
             <template v-for="post, index in posts" :key="index">
               <div v-if="index !== 0" class="w-full lg:w-1/2 2xl:w-1/3 px-2 md:px-4">
                 <NewsItem :post="post" :big="false" class="p-4" />

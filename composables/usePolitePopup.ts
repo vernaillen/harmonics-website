@@ -6,9 +6,9 @@ import {
 } from '@vueuse/core'
 
 const config = {
-  timeoutInMs: 6000,
+  timeoutInMs: 3000,
   maxSeenCount: 5,
-  contentScrollThresholdInPercentage: 35,
+  contentScrollThresholdInPercentage: 20,
 }
 
 function isToday(date: Date): boolean {

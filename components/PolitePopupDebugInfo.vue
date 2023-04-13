@@ -13,7 +13,6 @@ const { debugInfo } = usePolitePopup()
       rounded-md
       shadow-lg
       bg-slate-400
-      shadow-lg
     "
   >
     <div class="flex gap-4">

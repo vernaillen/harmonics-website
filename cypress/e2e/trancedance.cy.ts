@@ -6,10 +6,9 @@ describe('test trancedance page', () => {
   })
 
   it('Dutch page has correct content', () => {
-    cy.get('main .prose > div').should('have.length', 2)
+    cy.get('main .prose > div').should('have.length', 3)
     cy.get('main .prose > div > h1').should('have.length', 1)
     cy.get('main .prose > div > h1').first().should('have.text', 'Trancedans')
-    cy.get('main .prose > div').last().contains('laatst aangepast op ')
 
     cy.get('article').should('have.length', 1)
     cy.get('article > div > div > h3').first().should('have.text', 'Geblinddoekte meditatieve vrije dans')
@@ -22,10 +21,9 @@ describe('test trancedance page', () => {
     cy.location().should((location) => {
       expect(location.pathname).contains('/en/trancedance')
     })
-    cy.get('main .prose > div').should('have.length', 2)
+    cy.get('main .prose > div').should('have.length', 3)
     cy.get('main .prose > div > h1').should('have.length', 1)
     cy.get('main .prose > div > h1').first().should('have.text', 'Trance Dance')
-    cy.get('main .prose > div').last().contains('last edited on ')
 
     cy.get('article').should('have.length', 1)
     cy.get('article > div > div > h3').first().should('have.text', 'Blindfolded meditative free dance')

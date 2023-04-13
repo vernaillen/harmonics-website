@@ -1,4 +1,5 @@
 import { i18n } from './config/i18n'
+import { iubenda } from './config/iubenda'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -7,6 +8,12 @@ export default defineNuxtConfig({
     sendgridApiKey: '',
     iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
     iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup',
+    public: {
+      googleAW: {
+        id: 'AW-1009002362',
+        initialConsent: true,
+      },
+    },
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -62,6 +69,7 @@ export default defineNuxtConfig({
     },
   },
   i18n,
+  iubenda,
   generate: {
     routes: ['/', '/thanks'],
   },
