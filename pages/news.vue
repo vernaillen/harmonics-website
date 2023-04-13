@@ -35,7 +35,7 @@ definePageMeta({
                 <NewsItem v-if="index === 0" :post="post" :big="true" />
               </div>
             </div>
-            <div id="newsletter" class="sticky right-0 w-full md:block md:w-1/4 px-4 sm:px-6 lg:px-8 mb-5 prose">
+            <div id="newsletter" class="sticky right-0 w-full hidden md:block md:w-1/4 px-4 sm:px-6 lg:px-8 mb-5 prose">
               <MailchimpComponent />
             </div>
           </div>
