@@ -1,5 +1,5 @@
-import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 import { useHead } from '@unhead/vue'
+import { defineNuxtPlugin, useRuntimeConfig } from '#app'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const options = useRuntimeConfig().public.iubenda
@@ -9,11 +9,8 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   if (nuxtApp.$i18n && i18nSettings) {
     const { locale } = nuxtApp.$i18n.locale
-    if (i18nSettings[locale]) {
+    if (i18nSettings[locale])
       localeCookiePolicyId = i18nSettings[locale].cookiePolicyId
-    }
-  } else {
-    console.debug('i18n not detected')
   }
 
   const linksStyle = options.links.style
@@ -58,6 +55,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.provide('iubenda', iub)
 
   useHead({
-    script: options.head.script
+    script: options.head.script,
   })
 })

@@ -116,8 +116,6 @@ export default defineNuxtModule<ModuleOptions>({
         ...defaultModuleOptions,
         ...options,
       })
-    console.log(moduleOptions)
-    console.log(nuxt.options.runtimeConfig)
     nuxt.options.runtimeConfig.public.iubenda = moduleOptions
     const resolver = createResolver(import.meta.url)
 

@@ -15,8 +15,8 @@
     "cy:run": "cypress run",
     "cy:dev": "start-server-and-test dev http://localhost:3000 'cypress open --config baseUrl=http://localhost:3000'",
     "cy:local": "start-server-and-test serve http://localhost:3000 'cypress run --config baseUrl=http://localhost:3000'",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint --ext .ts,.vue .",
+    "lint:fix": "eslint --ext .ts,.vue . --fix",
     "fulltest": "rm -rf node_modules && pnpm i --shamefully-hoist && pnpm lint && pnpm run coverage && pnpm run cy:local"
   },
   "dependencies": {

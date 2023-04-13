@@ -4,7 +4,7 @@ var _iub = _iub || []
 
 function gtag() {
   <% if (options.env === 'dev') { %>
-    console.log('datalayer push', arguments)
+    console.debug('datalayer push', arguments)
   <% } %>
   if (window.dataLayer && window.dataLayer.push) {
     window.dataLayer.push(arguments)
