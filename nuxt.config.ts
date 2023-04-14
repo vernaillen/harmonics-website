@@ -15,33 +15,38 @@ export default defineNuxtConfig({
       },
     },
   },
+
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
+
   modules: [
     '@vueuse/nuxt',
     '@nuxt/content',
     '@nuxt/image-edge',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/i18n-edge',
+    '@nuxtjs/i18n',
     '@nuxtjs/plausible',
     '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon',
   ],
+
   css: [
     '@/assets/css/main.css',
     '@/assets/css/markdown.css',
     '@/assets/css/prose.css',
     'animate.css/animate.min.css',
   ],
+
   image: {
     provider: 'twicpics',
     twicpics: {
       baseURL: 'https://vernaillen.twic.pics/harmonics',
     },
   },
+
   googleFonts: {
     download: true,
     preconnect: true,
@@ -50,9 +55,11 @@ export default defineNuxtConfig({
       Ubuntu: [400, 500, 700],
     },
   },
+
   plausible: {
     apiHost: 'https://harmonics.be/plio',
   },
+
   content: {
     documentDriven: true,
     markdown: {
@@ -68,15 +75,20 @@ export default defineNuxtConfig({
       },
     },
   },
+
   i18n,
   iubenda,
+
   generate: {
     routes: ['/', '/thanks'],
   },
+
   nitro: {
     /* prerender: {
       routes: ['/sitemap.xml'],
       ignore: ['.netlify'],
     }, */
   },
+
+  devtools: true,
 })
