@@ -3,6 +3,9 @@
 describe('test trancedance page', () => {
   beforeEach(() => {
     cy.visit('/trancedance/')
+    cy.get('#iubenda-cs-banner').should('have.length', 1)
+    cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').should('have.length', 1)
+    cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').first().click()
   })
 
   it('Dutch page has correct content', () => {

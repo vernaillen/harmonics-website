@@ -3,6 +3,9 @@
 describe('test homepage language redirect', () => {
   beforeEach(() => {
     cy.visit('/')
+    cy.get('#iubenda-cs-banner').should('have.length', 1)
+    cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').should('have.length', 1)
+    cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').first().click()
   })
 
   it('test automatic language redirect to Dutch', () => {
@@ -28,6 +31,9 @@ describe('test homepage language redirect', () => {
 describe('test homepage title section', () => {
   beforeEach(() => {
     cy.visit('/')
+    cy.get('#iubenda-cs-banner').should('have.length', 1)
+    cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').should('have.length', 1)
+    cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').first().click()
   })
   it('test Dutch title section', () => {
     cy.get('main section#title').should('have.length', 1)
