@@ -24,7 +24,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "@pinia/nuxt": "^0.4.8",
     "@sendgrid/mail": "^7.7.0",
-    "@vueuse/core": "^9.13.0",
+    "@vueuse/core": "^10.0.0",
     "animate.css": "^4.1.1",
     "simple-git": "^3.17.0",
     "vee-validate": "^4.8.4",
