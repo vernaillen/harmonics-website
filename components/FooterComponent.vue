@@ -103,6 +103,7 @@ onMounted(() => {
               <NuxtLink :to="localePath('/cookiebeleid')" class="hover:text-primary inline-block">
                 {{ t('footer.cookiepolicy') }}
               </NuxtLink>
+              <a href="#" class="iubenda-cs-preferences-link"><Icon name="material-symbols:cookie" class="pl-2" size="24" /></a>
             </span>
           </div>
         </div>

@@ -80,6 +80,14 @@ header a {
   backdrop-filter: blur(5px);
 }
 
-#iubenda-cs-banner .iubenda-cs-container {
-  @apply shadow-black shadow-2xl
+#iubenda-cs-banner .iubenda-cs-opt-group button, 
+#iubenda-iframe .iub-btn-consent,
+#iubenda-iframe #iubFooterBtnContainer button {
+    @apply !rounded-md
+}
+#iubenda-iframe #iubFooterBtnContainer button {
+    background-color: #BFAC22!important;
+}
+#iubenda-cs-banner .iubenda-banner-content h1 {
+    @apply text-xl text-primary mb-2
 }
