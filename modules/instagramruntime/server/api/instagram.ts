@@ -10,5 +10,5 @@ export interface WPInstagramPage {
 }
 
 export default defineEventHandler(async () => {
-  return await $fetch<WPInstagramPage>('https://wpanneleen.vernaillen.com/wp-json/wp/v2/pages/30201')
+  return await $fetch<WPInstagramPage>('https://harmonics.vernaillen.com/wp-json/wp/v2/pages/1824')
 })

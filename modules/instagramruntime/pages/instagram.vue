@@ -19,12 +19,12 @@ useHead({
     },
     {
       id: 'sbi_scripts-js-extra',
-      innerHTML: '/* <![CDATA[ */ var sb_instagram_js_options = { "font_method": "svg", "resized_url": "https:\/\/wpanneleen.vernaillen.com\/wp-content\/uploads\/sb-instagram-feed-images\/", "placeholder": "https:\/\/wpanneleen.vernaillen.com\/wp-content\/plugins\/instagram-feed-pro\/img\/placeholder.png", "br_adjust": "1" }; var sbiTranslations = { "share": "Share" }; /* ]]> */',
+      innerHTML: '/* <![CDATA[ */ var sb_instagram_js_options = { "font_method": "svg", "resized_url": "https:\/\/harmonics.vernaillen.com\/wp-content\/uploads\/sb-instagram-feed-images\/", "placeholder": "https:\/\/harmonics.vernaillen.com\/wp-content\/plugins\/instagram-feed-pro\/img\/placeholder.png", "br_adjust": "1" }; var sbiTranslations = { "share": "Share" }; /* ]]> */',
       type: 'text/javascript',
     },
     {
       id: 'sbi_scripts-js',
-      src: 'https://wpanneleen.vernaillen.com/wp-content/plugins/instagram-feed-pro/js/sbi-scripts.min.js?ver=6.2.3',
+      src: 'https://harmonics.vernaillen.com/wp-content/plugins/instagram-feed-pro/js/sbi-scripts.min.js?ver=6.2.3',
       type: 'text/javascript',
     },
     {
