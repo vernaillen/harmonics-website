@@ -18,7 +18,7 @@ const appConfig = useAppConfig()
     </p>
     <p>
       <NuxtLink :href="appConfig.mailchimpLink.href" target="_blank">
-        <button class="text-base font-medium text-white bg-primary mt-5 py-1 px-3 hover:bg-opacity-80 hover:shadow-signUp rounded-md transition duration-300 ease-in-out">
+        <button class="harmonicsButton">
           {{ t('mailinglist.subscribe') }}
         </button>
       </NuxtLink>

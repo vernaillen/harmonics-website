@@ -94,9 +94,7 @@ const { t } = useI18n()
           {{ formError }}
         </div>
         <div class="w-full px-4">
-          <button
-            class="text-base font-medium text-white bg-primary py-3 px-6 hover:bg-opacity-80 hover:shadow-signUp rounded-md"
-          >
+          <button class="harmonicsButton">
             {{ t('contact.submit') }}
           </button>
         </div>

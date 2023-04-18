@@ -91,3 +91,13 @@ html>body>#iubenda-iframe #iubFooterBtnContainer button {
 html>body>#iubenda-cs-banner .iubenda-banner-content h1 {
     @apply text-xl text-primary mb-2
 }
+
+@layer components {
+  .harmonicsButton {
+    @apply !text-base !font-medium !text-white !bg-primary mt-2 py-1 px-3 hover:!bg-opacity-80 hover:!shadow-signUp !rounded-md !transition !duration-300 !ease-in-out
+  }
+  .harmonicsButtonGray {
+    @apply !bg-gray-200 !text-base !font-medium mt-2 py-1 px-3 hover:!bg-opacity-80 hover:!shadow-signUp !rounded-md !transition !duration-300 !ease-in-out
+  }
+
+}

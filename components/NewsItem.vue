@@ -41,9 +41,7 @@ const thumbSizes = computed(() => {
       {{ post.desc }}
       <br>
       <NuxtLink :to="post._path" :aria-label="post.title">
-        <button
-          class="text-base font-medium text-white bg-primary mt-5 py-1 px-3 hover:bg-opacity-80 hover:shadow-signUp rounded-md transition duration-300 ease-in-out"
-        >
+        <button class="harmonicsButton">
           {{ t('news.readmore') }}
         </button>
       </NuxtLink>

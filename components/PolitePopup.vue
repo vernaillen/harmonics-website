@@ -44,10 +44,10 @@ function onClickClose() {
       <p>{{ t('politePopup.question') }}</p>
     </span>
     <div class="flex gap-4 mt-4">
-      <button class="text-base font-medium text-white bg-primary py-2 px-4 hover:bg-opacity-80 hover:shadow-signUp rounded-md" @click="onClickOk">
+      <button class="harmonicsButton" @click="onClickOk">
         {{ t('politePopup.yes') }}
       </button>
-      <button class="bg-gray-200 text-base font-medium py-2 px-4 hover:bg-opacity-80 hover:shadow-signUp rounded-md" @click="onClickClose">
+      <button class="harmonicsButtonGray" @click="onClickClose">
         {{ t('politePopup.no') }}
       </button>
     </div>
