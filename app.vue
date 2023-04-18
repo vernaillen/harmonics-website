@@ -3,6 +3,10 @@ import { useMobileNav } from '@/stores/mobileNav'
 
 const mobileNav = useMobileNav()
 const { locale, t } = useI18n()
+const route = useRoute()
+const isIG = computed(() => {
+  return route.path.startsWith('/instagram')
+})
 useHead({
   title: t('website.title'),
   htmlAttrs: {
@@ -26,10 +30,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <NuxtLoadingIndicator color="repeating-linear-gradient(to right,rgb(191 172 34/20%) 0%,rgb(191 172 34/100%) 60%,rgb(75 85 99/40%) 100%)" />
-  <navbar-component />
+  <NuxtLoadingIndicator v-if="!isIG" color="repeating-linear-gradient(to right,rgb(191 172 34/20%) 0%,rgb(191 172 34/100%) 60%,rgb(75 85 99/40%) 100%)" />
+  <navbar-component v-if="!isIG" />
   <NuxtPage />
-  <PolitePopup />
+  <PolitePopup v-if="!isIG" />
 </template>
 
 <style>

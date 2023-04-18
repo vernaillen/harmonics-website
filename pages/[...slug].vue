@@ -75,8 +75,8 @@ onUnmounted(() => {
   <div>
     <NuxtLayout>
       <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
-        <div class="flex flex-wrap">
-          <div class="w-full md:w-3/4 px-4 md:px-6 lg:px-8 mb-10">
+        <div class="grid grid-cols-4">
+          <div class="col-span-4 md:col-span-3 px-4 md:px-6 lg:px-8 mb-10">
             <div v-if="page" class="prose m-auto">
               <div v-if="page.title && !page.hideTitle" class="flex flex-wrap">
                 <h1>
@@ -136,10 +136,13 @@ onUnmounted(() => {
               </article>
             </div>
           </div>
-          <div id="newsletter" class="sticky right-0 hidden md:block md:w-1/4 px-4 sm:px-6 lg:px-8 mb-5 prose">
-            <MailchimpComponent />
-          </div>
+          <aside class="hidden md:col-span-1 md:flex md:flex-col">
+            <div id="newsletter" class="sticky top-36 right-10 block md:w-1/4 px-4 sm:px-6 lg:px-8 mb-5 prose">
+              <MailchimpComponent />
+            </div>
+          </aside>
         </div>
+
         <NextPreviousPost />
       </div>
     </NuxtLayout>

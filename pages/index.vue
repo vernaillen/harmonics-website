@@ -35,11 +35,21 @@ definePageMeta({
             </div>
           </div>
         </section>
-        <section id="blogposts" class="container mx-auto pt-0 md:pt-12 pb-[100px] px-4">
+        <section id="blogposts" class="container mx-auto pt-0 md:pt-12 pb-[30px] px-4">
           <div class="flex flex-wrap prose">
             <template v-for="post, index in posts" :key="index">
               <NewsItem :post="post" :big="true" class="w-full lg:w-2/3 xl:1/2 m-auto p-4" />
             </template>
+          </div>
+        </section>
+        <section id="instagram" class="container mx-auto pt-0 md:pt-12 pb-[100px] px-10">
+          <div class="flex flex-wrap justify-center mx-[-30px]">
+            <NuxtLink to="https://www.instagram.com/harmonics.be/" target="_blank">
+              <Icon name="mdi:instagram" class="block text-gray-500 hover:text-primary" size="24" />
+            </NuxtLink>
+          </div>
+          <div class="flex flex-wrap justify-center mx-[-30px]">
+            <InstagramIframe class="w-full lg:w-2/3 xl:1/2" />
           </div>
         </section>
       </div>

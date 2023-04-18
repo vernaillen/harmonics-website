@@ -31,7 +31,14 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon',
+    // 'nuxt-vernaillen-module',
   ],
+
+  vernaillenModule: {
+    instagram: {
+      enabled: true,
+    },
+  },
 
   css: [
     '@/assets/css/main.css',

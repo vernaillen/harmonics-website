@@ -1,12 +1,12 @@
 <script setup lang="ts">
+import { useFetch, useHead } from '#app'
 import type { WPInstagramPage } from '~/server/api/instagram'
 
 const { data, error } = await useFetch<WPInstagramPage>('/api/instagram')
-
 useHead({
   link: [
     {
-      href: 'https://wpanneleen.vernaillen.com/wp-content/plugins/instagram-feed-pro/css/sbi-styles.min.css?ver=6.2.3',
+      href: '/sbi-styles.min.css',
       rel: 'stylesheet',
       type: 'text/css',
     },
@@ -27,23 +27,32 @@ useHead({
       src: 'https://wpanneleen.vernaillen.com/wp-content/plugins/instagram-feed-pro/js/sbi-scripts.min.js?ver=6.2.3',
       type: 'text/javascript',
     },
+    {
+      src: '/iframeResizer.contentWindow.min.js',
+      type: 'text/javascript',
+    },
   ],
 })
 </script>
 
 <template>
   <div>
-    <NuxtLayout>
-      <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 sm:px-6 lg:px-8 mb-10">
-            <div v-if="error" class="prose m-auto">
-              Er liep iets mis bij het ophalen van de cookie policy
-            </div>
-            <div v-if="data" class="prose m-auto" v-html="data.content.rendered" />
-          </div>
-        </div>
-      </div>
-    </NuxtLayout>
+    <div
+      v-if="error"
+      class="prose m-auto"
+    >
+      Er liep iets mis bij het ophalen van de instagram content
+    </div>
+    <div
+      v-if="data"
+      class="m-auto h-[600px]"
+      v-html="data.content.rendered"
+    />
   </div>
 </template>
+
+<style>
+#sb_instagram .sbi_follow_btn a {
+  @apply harmonicsButton
+}
+</style>

@@ -1,3 +1,5 @@
+import { defineEventHandler } from 'h3'
+
 export interface WPInstagramContent {
   rendered: string
 }

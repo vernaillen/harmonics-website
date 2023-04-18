@@ -27,17 +27,19 @@ definePageMeta({
     <NuxtLayout>
       <div class="flex-col">
         <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
-          <div class="flex flex-wrap">
-            <div class="w-full md:w-3/4 mb-5 px-4 sm:px-6 lg:px-8 prose">
+          <div class="grid grid-cols-4">
+            <div class="col-span-4 md:col-span-3 mb-5 px-4 sm:px-6 lg:px-8 prose">
               <div
                 v-for="post, index in posts" :key="index"
               >
                 <NewsItem v-if="index === 0" :post="post" :big="true" />
               </div>
             </div>
-            <div id="newsletter" class="sticky right-0 w-full hidden md:block md:w-1/4 px-4 sm:px-6 lg:px-8 mb-5 prose">
-              <MailchimpComponent />
-            </div>
+            <aside class="hidden md:col-span-1 md:flex md:flex-col">
+              <div id="newsletter" class="sticky top-36 right-10 block md:w-1/4 px-4 sm:px-6 lg:px-8 mb-5 prose">
+                <MailchimpComponent />
+              </div>
+            </aside>
           </div>
         </div>
         <div class="container mx-auto px-4">
