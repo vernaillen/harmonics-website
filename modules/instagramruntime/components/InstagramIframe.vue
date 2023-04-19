@@ -3,7 +3,6 @@ import iframeResize from 'iframe-resizer/js/iframeResizer'
 import { ref } from 'vue'
 
 const iframeRef = ref()
-const spinner = ref()
 onMounted(() => {
   const iframeEl: HTMLIFrameElement = iframeRef.value
   iframeEl.addEventListener('load', () => iframeResize({}, iframeEl))
@@ -11,7 +10,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="iframeLoadingSpinner" ref="spinner" class="m-auto w-full text-center relative">
+  <div id="iframeLoadingSpinner" class="m-auto w-full text-center relative">
     <div class="absolute w-full mt-4">
       <Icon
         name="uil:spinner-alt"
@@ -24,6 +23,6 @@ onMounted(() => {
     ref="iframeRef"
     src="/instagram"
     width="100%"
-    loaded="spinner.value.style = 'display: none'"
+    class="w-full lg:w-2/3 xl:1/2"
   />
 </template>

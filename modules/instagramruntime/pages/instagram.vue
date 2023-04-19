@@ -53,8 +53,7 @@ onMounted(() => {
 #sb_instagram .sbi_follow_btn a {
   @apply harmonicsButton
 }
-
-#sb_instagram .sbi_inner_wrap {
-  @apply rounded-md overflow-hidden relative shadow-md shadow-gray-400
+#sb_instagram  #sbi_images .sbi_inner_wrap {
+  @apply rounded-md overflow-hidden relative shadow-md shadow-gray-400;
 }
 </style>

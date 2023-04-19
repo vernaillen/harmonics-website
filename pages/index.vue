@@ -48,8 +48,8 @@ definePageMeta({
               <Icon name="mdi:instagram" class="block text-gray-500 hover:text-primary" size="24" />
             </NuxtLink>
           </div>
-          <div class="flex flex-wrap justify-center mx-[-42px]">
-            <InstagramIframe class="w-full lg:w-2/3 xl:1/2" />
+          <div class="flex flex-wrap justify-center mx-[-34px]">
+            <InstagramIframe class="" />
           </div>
         </section>
       </div>
