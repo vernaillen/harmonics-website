@@ -32,22 +32,16 @@ useHead({
     },
   ],
 })
-const loading = ref()
 onMounted(() => {
-  loading.value.classList.add('animate__animated', 'animate__fadeOut')
+  if (window.parent.document) {
+    const spinner = window.parent.document.getElementById('iframeLoadingSpinner')
+    if (spinner)
+      spinner.classList.add('animate__animated', 'animate__fadeOut')
+  }
 })
 </script>
 
 <template>
-  <div ref="loading" class="m-auto text-center relative">
-    <div class="absolute w-full mt-4">
-      <Icon
-        name="uil:spinner-alt"
-        class="animate-spin"
-        size="24"
-      />
-    </div>
-  </div>
   <div
     v-if="data"
     class="m-auto h-[400px]"
