@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { useFetch, useHead } from '#app'
 import type { WPInstagramPage } from '~/server/api/instagram'
 
-const { data, error } = await useFetch<WPInstagramPage>('/api/instagram')
+const { data } = await useFetch<WPInstagramPage>('/api/instagram')
 useHead({
   link: [
     {
@@ -38,12 +37,6 @@ useHead({
 <template>
   <div>
     <div
-      v-if="error"
-      class="prose m-auto"
-    >
-      Er liep iets mis bij het ophalen van de instagram content
-    </div>
-    <div
       v-if="data"
       class="m-auto h-[600px]"
       v-html="data.content.rendered"
@@ -54,5 +47,9 @@ useHead({
 <style>
 #sb_instagram .sbi_follow_btn a {
   @apply harmonicsButton
+}
+
+#sb_instagram .sbi_inner_wrap {
+  @apply rounded-md overflow-hidden relative shadow-md shadow-gray-400
 }
 </style>

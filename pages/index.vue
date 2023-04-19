@@ -43,12 +43,12 @@ definePageMeta({
           </div>
         </section>
         <section id="instagram" class="container mx-auto pt-0 md:pt-12 pb-[100px] px-10">
-          <div class="flex flex-wrap justify-center mx-[-30px]">
+          <div class="flex flex-wrap justify-center">
             <NuxtLink to="https://www.instagram.com/harmonics.be/" target="_blank">
               <Icon name="mdi:instagram" class="block text-gray-500 hover:text-primary" size="24" />
             </NuxtLink>
           </div>
-          <div class="flex flex-wrap justify-center mx-[-30px]">
+          <div class="flex flex-wrap justify-center mx-[-42px]">
             <InstagramIframe class="w-full lg:w-2/3 xl:1/2" />
           </div>
         </section>

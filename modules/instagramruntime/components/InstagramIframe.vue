@@ -7,7 +7,7 @@ const iframeRef = ref()
 
 onMounted(() => {
   const iframeEl: HTMLIFrameElement = iframeRef.value
-  iframeEl.addEventListener('load', () => iframeResize({ log: true }, iframeEl))
+  iframeEl.addEventListener('load', () => iframeResize({}, iframeEl))
 })
 </script>
 
