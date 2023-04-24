@@ -99,5 +99,11 @@ html>body>#iubenda-cs-banner .iubenda-banner-content h1 {
   .harmonicsButtonGray {
     @apply !bg-gray-200 !text-base !font-medium mt-2 py-1 px-3 hover:!bg-opacity-80 hover:!shadow-signUp !rounded-md !transition !duration-300 !ease-in-out
   }
+}
 
+#sb_instagram .sbi_follow_btn a {
+  @apply harmonicsButton
+}
+#sb_instagram  #sbi_images .sbi_inner_wrap {
+  @apply rounded-md overflow-hidden relative shadow-md shadow-gray-400;
 }

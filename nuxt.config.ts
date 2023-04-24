@@ -16,6 +16,10 @@ export default defineNuxtConfig({
     },
   },
 
+  extends: [
+    '@vernaillen/nuxt-base-layer',
+  ],
+
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
