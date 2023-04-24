@@ -14,8 +14,8 @@ dependencies:
     specifier: ^7.7.0
     version: 7.7.0
   '@vernaillen/nuxt-base-layer':
-    specifier: ^0.1.18
-    version: 0.1.18(vue@3.2.47)(webpack@5.80.0)
+    specifier: ^0.1.21
+    version: 0.1.21(vue@3.2.47)(webpack@5.80.0)
   '@vueuse/core':
     specifier: ^10.1.0
     version: 10.1.0(vue@3.2.47)
@@ -2348,13 +2348,12 @@ packages:
       - supports-color
     dev: true
 
-  /@vernaillen/nuxt-base-layer@0.1.18(vue@3.2.47)(webpack@5.80.0):
-    resolution: {integrity: sha512-q+ng2Nq3Idk16FKitYjpkrVhwIg0Na8E4K8I7voW9MqAyA+r9yXHnE8u6S9vvUQ4bAOmBKO4efAZ5l1xzBtCrA==}
+  /@vernaillen/nuxt-base-layer@0.1.21(vue@3.2.47)(webpack@5.80.0):
+    resolution: {integrity: sha512-tzs2VV1S6zkbm70M6qC3xums5/PvYWpiXF6BkKncGlVp7rUb9RC2tiOpdFBh+RQo+hFyGVBTRevthsSGi2TxEg==}
     requiresBuild: true
     dependencies:
       '@nuxtjs/tailwindcss': 6.6.6(webpack@5.80.0)
       animate.css: 4.1.1
-      iframe-resizer: 4.3.6
       nuxt-icon: 0.3.3(vue@3.2.47)
     transitivePeerDependencies:
       - rollup
@@ -5865,11 +5864,6 @@ packages:
   /ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: true
-
-  /iframe-resizer@4.3.6:
-    resolution: {integrity: sha512-wz0WodRIF6eP0oGQa5NIP1yrITAZ59ZJvVaVJqJRjaeCtfm461vy2C3us6CKx0e7pooqpIGLpVMSTzrfAjX9Sg==}
-    engines: {node: '>=0.8.0'}
-    dev: false
 
   /ignore-walk@6.0.2:
     resolution: {integrity: sha512-ezmQ1Dg2b3jVZh2Dh+ar6Eu2MqNSTkyb32HU2MAQQQX9tKM3q/UQ/9lf03lQ5hW+fOeoMnwxwkleZ0xcNp0/qg==}
