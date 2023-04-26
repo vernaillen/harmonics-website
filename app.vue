@@ -28,6 +28,7 @@ useHead({
 onMounted(() => {
   window.addEventListener('resize', () => mobileNav.hide())
 })
+useColorMode().value = 'light'
 </script>
 
 <template>
