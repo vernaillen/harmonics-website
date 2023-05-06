@@ -16,6 +16,10 @@ export default defineNuxtConfig({
     },
     nitro: { envPrefix: 'VERCEL_' },
     region: process.env.VERCEL_REGION,
+    vercelKv: {
+      token: '',
+      url: ''
+    }
   },
 
   extends: [
