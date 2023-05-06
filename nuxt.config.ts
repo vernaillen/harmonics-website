@@ -22,6 +22,12 @@ export default defineNuxtConfig({
     }
   },
 
+  nitro: {
+    storage: {
+      data: { driver: 'vercelKV' }
+    }
+  },
+
   extends: [
     '@vernaillen/nuxt-base-layer'
   ],
