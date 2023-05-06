@@ -8,11 +8,6 @@ export default defineEventHandler(event => {
         version,
         vercel: {
             region: config.region,
-        },
-        netlify: {
-            branch: process.env.BRANCH,
-            pr: process.env.PULL_REQUEST,
-            context: process.env.CONTEXT,
         }
     }
 })

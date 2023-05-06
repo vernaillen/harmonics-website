@@ -95,10 +95,6 @@ export default defineNuxtConfig({
     routes: ['/', '/thanks']
   },
 
-  routeRules: {
-    '/**': { isr: 600 },
-  },
-
   devtools: {
     enabled: true
   }
