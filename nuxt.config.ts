@@ -96,7 +96,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/**': { isr: true },
+    '/**': { isr: 600 },
   },
 
   devtools: {
