@@ -34,7 +34,6 @@ function openGallery (i: number) {
     <div v-for="(image, index) in images" :key="index" class="px-2">
       <div class="galleryImgWrapper rounded-md overflow-hidden relative mb-8 shadow-md shadow-gray-400">
         <nuxt-picture
-          provider="static"
           format="webp"
           quality="70"
           loading="lazy"

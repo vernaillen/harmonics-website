@@ -19,7 +19,6 @@ const thumbSizes = computed(() => {
     <NuxtLink v-if="post.thumbnail" :to="post._path" :aria-label="post.title">
       <nuxt-img
         :sizes="thumbSizes"
-        provider="static"
         format="webp"
         :width="imgWidth"
         :height="imgHeight"

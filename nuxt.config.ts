@@ -62,12 +62,13 @@ export default defineNuxtConfig({
     'animate.css/animate.min.css'
   ],
 
-  /* image: {
-    provider: 'twicpics',
+  image: {
+    provider: 'vercel'
+    /* provider: 'twicpics',
     twicpics: {
       baseURL: 'https://vernaillen.twic.pics/harmonics'
-    }
-  }, */
+    } */
+  },
 
   googleFonts: {
     download: true,
