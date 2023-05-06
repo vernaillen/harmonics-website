@@ -1,14 +1,14 @@
 import { name, version } from '../../package.json'
 
-export default defineEventHandler(event => {
-    const config = useRuntimeConfig()
+export default defineEventHandler(() => {
+  const config = useRuntimeConfig()
 
-    return {
-        name,
-        version,
-        vercel: {
-            region: config.region,
-            env: process.env.VERCEL_ENV
-        }
+  return {
+    name,
+    version,
+    vercel: {
+      region: config.region,
+      env: process.env.VERCEL_ENV
     }
+  }
 })
