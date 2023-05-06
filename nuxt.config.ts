@@ -35,7 +35,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon',
-    // 'nuxt-vernaillen-module',
   ],
 
   vernaillenModule: {
@@ -63,7 +62,7 @@ export default defineNuxtConfig({
     preconnect: true,
     display: 'swap',
     families: {
-      Ubuntu: [400, 500, 700],
+      Montserrat: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
   },
 

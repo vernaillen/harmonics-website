@@ -22,7 +22,7 @@ definePageMeta({
           <div class="flex flex-wrap">
             <div class="w-full px-4 sm:px-6 lg:px-8 mb-5">
               <div class="justify-center text-center">
-                <h1 class="text-5xl xl:text-6xl font-medium text-primary mb-5 mt-7">
+                <h1 class="text-5xl xl:text-6xl font-bold text-primary mb-5 mt-7">
                   {{ t('home.title') }}
                 </h1>
                 <h2 class="text-xl sm:text-2xl leading-relaxed text-gray-500 my-5">

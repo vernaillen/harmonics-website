@@ -34,12 +34,12 @@ function linkClass(path: string) {
         <div class="px-2 md:px-4 ml-0 mt-2 max-w-full z-30">
           <div class="w-full flex justify-center z-30">
             <NuxtLink
-              aria-label="Harmonics home"
+              aria-label="harmonics home"
               :to="localePath('/')"
-              class="text-3xl text-primary font-medium leading-relaxed inline-block whitespace-nowrap header-logo z-30"
+              class="text-3xl text-primary font-semibold leading-relaxed inline-block whitespace-nowrap header-logo z-30"
             >
               <img src="/images/wavesound.jpg" width="80" height="40" class="rounded-full min-w-[80px] w-[80px] h-[40px] inline-flex" alt="Harmonics wavesound logo">
-              <span class="hidden xl:inline-flex">Harmonics</span>
+              <span class="hidden xl:inline-flex">harmonics</span>
             </NuxtLink>
           </div>
         </div>
