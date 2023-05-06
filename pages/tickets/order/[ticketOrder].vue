@@ -15,18 +15,17 @@ if (user.value) {
         emailFrom: appConfig.sendGridEmailFrom,
         subject: `Zo tof dat je komt meedansen, ${user.value.user_metadata.name}`,
         text: text.value,
-        html: html.value,
-      }),
+        html: html.value
+      })
     })
-  }
-  catch (error) {
+  } catch (error) {
     console.error(error)
   }
 }
 definePageMeta({
   layout: 'tickets',
   middleware: ['auth'],
-  documentDriven: false,
+  documentDriven: false
 })
 </script>
 

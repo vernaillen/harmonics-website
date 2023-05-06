@@ -17,7 +17,16 @@ const thumbSizes = computed(() => {
 <template>
   <div class="relative bg-white dark:bg-dark rounded-md overflow-hidden">
     <NuxtLink v-if="post.thumbnail" :to="post._path" :aria-label="post.title">
-      <nuxt-img :sizes="thumbSizes" format="webp" :width="imgWidth" :height="imgHeight" :loading="big ? 'eager' : 'lazy'" :src="post.thumbnail" class="!mt-0 rounded-md shadow-md shadow-gray-400" :alt="`thumbnail ${post.title}`" />
+      <nuxt-img
+        :sizes="thumbSizes"
+        format="webp"
+        :width="imgWidth"
+        :height="imgHeight"
+        :loading="big ? 'eager' : 'lazy'"
+        :src="post.thumbnail"
+        class="!mt-0 rounded-md shadow-md shadow-gray-400"
+        :alt="`thumbnail ${post.title}`"
+      />
     </NuxtLink>
     <NuxtLink v-if="post.thumb_video_webm || post.thumb_video_mp4" :to="post._path" :aria-label="post.title">
       <client-only>
@@ -30,7 +39,8 @@ const thumbSizes = computed(() => {
     </NuxtLink>
     <h1>
       <NuxtLink
-        :aria-label="post.title" :to="post._path"
+        :aria-label="post.title"
+        :to="post._path"
         class="font-bold text-primary dark:text-white text-2xl block mb-4 hover:bg-opacity-80"
       >
         {{ post.title }}

@@ -2,7 +2,7 @@
 definePageMeta({
   layout: 'tickets',
   middleware: ['auth'],
-  documentDriven: false,
+  documentDriven: false
 })
 </script>
 

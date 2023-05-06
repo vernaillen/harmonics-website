@@ -9,8 +9,7 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   if (nuxtApp.$i18n && i18nSettings) {
     const { locale } = nuxtApp.$i18n.locale
-    if (i18nSettings[locale])
-      localeCookiePolicyId = i18nSettings[locale].cookiePolicyId
+    if (i18nSettings[locale]) { localeCookiePolicyId = i18nSettings[locale].cookiePolicyId }
   }
 
   const linksStyle = options.links.style
@@ -28,7 +27,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     whiteLabel ? 'no-brand' : ''
   } iubenda-noiframe ${embed ? 'iubenda-embed' : ''}`
 
-  function getPrivacyPolicyLinkHtml(label = 'Privacy Policy', attributes = {}) {
+  function getPrivacyPolicyLinkHtml (label = 'Privacy Policy', attributes = {}) {
     const { classes } = attributes
     return `<a
         href="${privacyPolicyUrl}"
@@ -36,7 +35,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         title="${label}">${label}</a>`
   }
 
-  function getCookiePolicyLinkHtml(label = 'Cookie Policy', attributes = {}) {
+  function getCookiePolicyLinkHtml (label = 'Cookie Policy', attributes = {}) {
     const { classes } = attributes
     return `<a
         href="${cookiePolicyUrl}"
@@ -50,11 +49,11 @@ export default defineNuxtPlugin((nuxtApp) => {
     privacyPolicyApiUrl,
     cookiePolicyApiUrl,
     getPrivacyPolicyLinkHtml,
-    getCookiePolicyLinkHtml,
+    getCookiePolicyLinkHtml
   }
   nuxtApp.provide('iubenda', iub)
 
   useHead({
-    script: options.head.script,
+    script: options.head.script
   })
 })

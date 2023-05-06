@@ -2,7 +2,7 @@
 const user = useSupabaseUser()
 const { auth } = useSupabaseClient()
 
-async function logout() {
+async function logout () {
   const { error } = await auth.signOut()
 
   if (error) {
@@ -15,11 +15,10 @@ async function logout() {
   try {
     await $fetch('/api/_supabase/session', {
       method: 'POST',
-      body: { event: 'SIGNED_OUT', session: null },
+      body: { event: 'SIGNED_OUT', session: null }
     })
     user.value = null
-  }
-  catch (e) {
+  } catch (e) {
     console.error(error)
   }
 
@@ -27,10 +26,10 @@ async function logout() {
 }
 
 const name = computed(
-  () => user.value?.user_metadata.full_name,
+  () => user.value?.user_metadata.full_name
 )
 const profile = computed(
-  () => user.value?.user_metadata.avatar_url,
+  () => user.value?.user_metadata.avatar_url
 )
 </script>
 

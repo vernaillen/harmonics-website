@@ -12,15 +12,14 @@ const navbarCollapseClass = computed(() => {
   return mobileNav.visible ? '' : 'hidden'
 })
 
-function linkClass(path: string) {
+function linkClass (path: string) {
   const currentRoute = useRoute().path
   let classToAdd = ''
   if (
-    (path === '/' && currentRoute === localePath('/'))
-      || (path !== '/' && currentRoute.startsWith(localePath(path)))
-      || (currentRoute === localePath('/thanks') && path === '/contact')
-  )
-    classToAdd = 'link-active'
+    (path === '/' && currentRoute === localePath('/')) ||
+      (path !== '/' && currentRoute.startsWith(localePath(path))) ||
+      (currentRoute === localePath('/thanks') && path === '/contact')
+  ) { classToAdd = 'link-active' }
   return classToAdd
 }
 </script>
@@ -48,7 +47,8 @@ function linkClass(path: string) {
             <button
               id="navbarToggler"
               class="block absolute left-2 top-7 cursor-pointer translate-y-[-50%] xl:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg z-30"
-              :class="navbarTogglerClass" aria-label="Mobile Menu"
+              :class="navbarTogglerClass"
+              aria-label="Mobile Menu"
               @click="mobileNav.toggle()"
             >
               <span class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white transition" />

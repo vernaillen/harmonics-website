@@ -10,7 +10,7 @@ const { data: posts } = await useLazyAsyncData('posts', () =>
     .find())
 
 definePageMeta({
-  documentDriven: false,
+  documentDriven: false
 })
 </script>
 

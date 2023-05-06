@@ -7,34 +7,32 @@ const { t } = useI18n()
 const user = useSupabaseUser()
 const { order, addTicketOrder } = useCart()
 
-async function triggerPayment() {
+async function triggerPayment () {
   notifyAdminAboutMollie(useAppConfig().sendGridEmailFrom)
   const { data: payment } = await useFetch<Payment>('/api/mollie', {
     body: {
       amount: 1,
       unitPrice: 25,
       ticketTitle: 'Ticket Trancedans 20 maart 2023',
-      host: window.location.origin,
+      host: window.location.origin
     },
-    method: 'post',
+    method: 'post'
   })
 
   if (payment && payment.value) {
     const paymentData: Pick<Payment, any> = payment.value
-    if (paymentData._links.checkout && paymentData._links.checkout?.href)
-      document.location.href = paymentData._links.checkout?.href
+    if (paymentData._links.checkout && paymentData._links.checkout?.href) { document.location.href = paymentData._links.checkout?.href }
   }
 }
-function addTicket(ticket: EventTicket) {
+function addTicket (ticket: EventTicket) {
   if (user.value && user.value.email) {
     const ticketOrder = {
       ticket,
       fullname: user.value.user_metadata.fullname,
-      email: user.value.email,
+      email: user.value.email
     }
     addTicketOrder(ticketOrder)
-  }
-  else {
+  } else {
     console.error('user not correctly authenticated')
     navigateTo('/login?redirectTo=/tickets')
   }

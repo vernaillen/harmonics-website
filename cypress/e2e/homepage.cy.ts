@@ -38,7 +38,7 @@ describe('test homepage title section', () => {
   it('test Dutch title section', () => {
     cy.get('main section#title').should('have.length', 1)
     cy.get('main section#title h1').should('have.length', 1)
-    cy.get('main section#title h1').first().should('have.text', 'Harmonics')
+    cy.get('main section#title h1').first().should('have.text', 'harmonics')
     cy.get('main section#title h2').should('have.length', 1)
     cy.get('main section#title h2').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
     cy.get('main section#title p').should('have.length', 1)
@@ -53,7 +53,7 @@ describe('test homepage title section', () => {
     })
     cy.get('main section#title').should('have.length', 1)
     cy.get('main section#title h1').should('have.length', 1)
-    cy.get('main section#title h1').first().should('have.text', 'Harmonics')
+    cy.get('main section#title h1').first().should('have.text', 'harmonics')
     cy.get('main section#title h2').should('have.length', 1)
     cy.get('main section#title h2').first().should('have.text', 'Healing power of Sound, Music and Dance')
     cy.get('main section#title p').should('have.length', 1)

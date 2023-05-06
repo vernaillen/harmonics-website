@@ -5,12 +5,12 @@ export default defineEventHandler(async (event) => {
   // Fetch all documents
   const docs = await serverQueryContent(event).find()
   const sitemap = new SitemapStream({
-    hostname: 'https://harmonics.be',
+    hostname: 'https://harmonics.be'
   })
   for (const doc of docs) {
     sitemap.write({
       url: doc._path,
-      lastmod: doc.updatedDate,
+      lastmod: doc.updatedDate
     })
   }
   sitemap.end()

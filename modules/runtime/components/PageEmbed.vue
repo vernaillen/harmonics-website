@@ -4,13 +4,13 @@ import { useFetch, useNuxtApp } from '#app'
 const props = defineProps({
   type: { type: String, default: 'policy' },
   loadingText: { type: String, default: 'Loading content...' },
-  errorText: { type: String, default: 'Error fetching content' },
+  errorText: { type: String, default: 'Error fetching content' }
 })
 
 const nuxtApp = useNuxtApp()
 
-const apiUrl
-  = props.type === 'cookie'
+const apiUrl =
+  props.type === 'cookie'
     ? nuxtApp.$iubenda.cookiePolicyApiUrl
     : nuxtApp.$iubenda.privacyPolicyApiUrl
 

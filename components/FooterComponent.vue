@@ -6,31 +6,27 @@ const date: number = new Date().getFullYear()
 
 const { t } = useI18n()
 
-function scrollToTop() {
+function scrollToTop () {
   scrollToElement('__nuxt')
 }
 
 onMounted(() => {
   window.onscroll = function () {
-    const ud_header = document.querySelector('.header') as HTMLElement
-    if (ud_header) {
+    const udHeader = document.querySelector('.header') as HTMLElement
+    if (udHeader) {
       if (window.scrollY > 0) {
-        ud_header.classList.add('sticky')
-        ud_header.classList.add('shadow')
-      }
-      else {
-        ud_header.classList.remove('sticky')
-        ud_header.classList.remove('shadow')
+        udHeader.classList.add('sticky')
+        udHeader.classList.add('shadow')
+      } else {
+        udHeader.classList.remove('sticky')
+        udHeader.classList.remove('shadow')
       }
 
       const backToTop = document.querySelector('.back-to-top') as HTMLElement
       if (
-        document.body.scrollTop > 50
-        || document.documentElement.scrollTop > 50
-      )
-        backToTop.style.display = 'flex'
-      else
-        backToTop.style.display = 'none'
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) { backToTop.style.display = 'flex' } else { backToTop.style.display = 'none' }
     }
   }
 })
@@ -43,8 +39,13 @@ onMounted(() => {
       style="height: 80px"
     >
       <svg
-        class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-        version="1.1" viewBox="0 0 2560 100" x="0" y="0"
+        class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
       >
         <polygon class="text-gray-300 fill-current" points="2560,0 2560,2 0,99 0,100" />
       </svg>
@@ -63,7 +64,10 @@ onMounted(() => {
           <div class="w-full flex-row items-top mb-6 text-center lg:text-right">
             <div class="px-4 py-1 ml-auto">
               <NuxtLink
-                v-for="item, index in useMenu()" :key="index" :aria-label="t(item.titleKey)" :to="localePath(item.path)"
+                v-for="item, index in useMenu()"
+                :key="index"
+                :aria-label="t(item.titleKey)"
+                :to="localePath(item.path)"
                 class=" text-black hover:opacity-50 inline-block pb-6 pr-6 text-sm"
               >
                 {{ t(item.titleKey) }}

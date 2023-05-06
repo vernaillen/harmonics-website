@@ -11,19 +11,19 @@ const isIG = computed(() => {
 useHead({
   title: t('website.title'),
   htmlAttrs: {
-    lang: locale,
+    lang: locale
   },
   meta: [
     { name: 'description', content: t('website.description') },
     {
       property: 'og:title',
-      content: t('website.title'),
+      content: t('website.title')
     },
     {
       property: 'og:image',
-      content: '/harmonics.png',
-    },
-  ],
+      content: '/harmonics.png'
+    }
+  ]
 })
 onMounted(() => {
   window.addEventListener('resize', () => mobileNav.hide())

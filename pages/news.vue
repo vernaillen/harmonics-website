@@ -6,9 +6,9 @@ useHead({
   meta: [
     {
       property: 'og:title',
-      content: title,
-    },
-  ],
+      content: title
+    }
+  ]
 })
 const localePath = useLocalePath()
 const { data: posts } = await useLazyAsyncData('posts', () =>
@@ -18,7 +18,7 @@ const { data: posts } = await useLazyAsyncData('posts', () =>
     .find())
 
 definePageMeta({
-  documentDriven: false,
+  documentDriven: false
 })
 </script>
 
@@ -30,7 +30,8 @@ definePageMeta({
           <div class="grid grid-cols-4">
             <div class="col-span-4 md:col-span-3 mb-5 px-4 sm:px-6 lg:px-8 prose">
               <div
-                v-for="post, index in posts" :key="index"
+                v-for="post, index in posts"
+                :key="index"
               >
                 <NewsItem v-if="index === 0" :post="post" :big="true" />
               </div>

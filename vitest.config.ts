@@ -4,7 +4,7 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     deps: {
-      inline: [/@nuxt\/test-utils-edge/],
-    },
-  },
+      inline: [/@nuxt\/test-utils-edge/]
+    }
+  }
 })

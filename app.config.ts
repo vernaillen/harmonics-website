@@ -4,6 +4,6 @@ export default defineAppConfig({
   instagram: {
     enabled: true,
     wpPageId: 1824,
-    wpBaseUrl: 'https://harmonics.vernaillen.com/',
-  },
+    wpBaseUrl: 'https://harmonics.vernaillen.com/'
+  }
 })

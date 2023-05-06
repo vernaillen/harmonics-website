@@ -1,14 +1,14 @@
 import type { UseTimeAgoOptions } from '@vueuse/core'
 
-export function useTimeAgoOptions(short = false): UseTimeAgoOptions<false> {
+export function useTimeAgoOptions (short = false): UseTimeAgoOptions<false> {
   const { d, t, n: fnf, locale } = useI18n()
   const prefix = short ? 'short_' : ''
 
   const fn = (n: number, past: boolean, key: string) => {
     return t(`time_ago_options.${prefix}${key}_${past ? 'past' : 'future'}`, n, {
       named: {
-        v: fnf(n, 'smallCounting', locale.value),
-      },
+        v: fnf(n, 'smallCounting', locale.value)
+      }
     })
   }
 
@@ -29,10 +29,10 @@ export function useTimeAgoOptions(short = false): UseTimeAgoOptions<false> {
       week: (n, p) => fn(n, p, 'week'),
       month: (n, p) => fn(n, p, 'month'),
       year: (n, p) => fn(n, p, 'year'),
-      invalid: '',
+      invalid: ''
     },
-    fullDateFormatter(date) {
+    fullDateFormatter (date) {
       return d(date, short ? 'short' : 'long')
-    },
+    }
   }
 }

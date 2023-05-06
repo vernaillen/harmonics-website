@@ -10,21 +10,17 @@ export const useCart = defineStore(
     const order = ref<Order>({ user })
 
     // Toggle the progress of a lesson based on chapter slug and lesson slug
-    const addTicketOrder = async (
-      ticketOrder: TicketOrder,
+    const addTicketOrder = (
+      ticketOrder: TicketOrder
     ) => {
       // If there's no user we can't update the cart
-      if (!user.value || !ticketOrder)
-        return
-      if (!order.value.ticketOrder)
-        order.value.ticketOrder = [ticketOrder]
-      else
-        order.value.ticketOrder[order.value.ticketOrder.length] = ticketOrder
+      if (!user.value || !ticketOrder) { return }
+      if (!order.value.ticketOrder) { order.value.ticketOrder = [ticketOrder] } else { order.value.ticketOrder[order.value.ticketOrder.length] = ticketOrder }
     }
 
     return {
       order,
-      addTicketOrder,
+      addTicketOrder
     }
-  },
+  }
 )

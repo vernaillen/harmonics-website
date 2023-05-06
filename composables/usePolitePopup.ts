@@ -2,22 +2,22 @@ import {
   useLocalStorage,
   useTimeoutFn,
   useWindowScroll,
-  useWindowSize,
+  useWindowSize
 } from '@vueuse/core'
 import { usePolitePopupStore } from '~/stores/politePopup'
 
 const config = {
   timeoutInMs: 3000,
   maxSeenCount: 5,
-  contentScrollThresholdInPercentage: 20,
+  contentScrollThresholdInPercentage: 20
 }
 
-function isToday(date: Date): boolean {
+function isToday (date: Date): boolean {
   const today = new Date()
   return (
-    date.getDate() === today.getDate()
-    && date.getMonth() === today.getMonth()
-    && date.getFullYear() === today.getFullYear()
+    date.getDate() === today.getDate() &&
+    date.getMonth() === today.getMonth() &&
+    date.getFullYear() === today.getFullYear()
   )
 }
 
@@ -27,7 +27,7 @@ interface PolitePopupStorageDTO {
   lastSeenAt: number
 }
 
-export function usePolitePopup() {
+export function usePolitePopup () {
   const readTimeElapsed = useState('read-time-elapsed', () => false)
 
   const { y: scrollYInPx } = useWindowScroll()
@@ -35,13 +35,12 @@ export function usePolitePopup() {
 
   // Returns percentage scrolled (ie: 80 or NaN if trackLength == 0)
   const amountScrolledInPercentage = computed(() => {
-    if (!process.client)
-      return 0
+    if (!process.client) { return 0 }
 
     const documentScrollHeight = document.documentElement.scrollHeight
     const trackLength = documentScrollHeight - windowHeight.value
     const percentageScrolled = Math.floor(
-      (scrollYInPx.value / trackLength) * 100,
+      (scrollYInPx.value / trackLength) * 100
     )
     return percentageScrolled
   })
@@ -51,7 +50,7 @@ export function usePolitePopup() {
       readTimeElapsed.value = true
     },
     config.timeoutInMs,
-    { immediate: false },
+    { immediate: false }
   )
 
   const storedData: Ref<PolitePopupStorageDTO> = useLocalStorage(
@@ -59,14 +58,14 @@ export function usePolitePopup() {
     {
       status: 'unsubscribed',
       seenCount: 0,
-      lastSeenAt: 0,
-    },
+      lastSeenAt: 0
+    }
   )
 
   const scrolledContent = computed(
     () =>
-      amountScrolledInPercentage.value
-      >= config.contentScrollThresholdInPercentage,
+      amountScrolledInPercentage.value >=
+      config.contentScrollThresholdInPercentage
   )
 
   const debugInfo = computed(() => ({
@@ -74,7 +73,7 @@ export function usePolitePopup() {
     amountScrolledInPercentage: amountScrolledInPercentage.value,
     scrolledContent: scrolledContent.value,
     visible: usePolitePopupStore().visible,
-    storedData: storedData.value,
+    storedData: storedData.value
   }))
 
   const trigger = () => {
@@ -93,30 +92,27 @@ export function usePolitePopup() {
   watch(
     [readTimeElapsed, scrolledContent],
     ([newReadTimeElapsed, newScrolledContent]) => {
-      if (storedData.value.status === 'subscribed')
-        return
+      if (storedData.value.status === 'subscribed') { return }
 
-      if (storedData.value.seenCount >= config.maxSeenCount)
-        return
+      if (storedData.value.seenCount >= config.maxSeenCount) { return }
 
       if (
-        storedData.value.lastSeenAt
-        && isToday(new Date(storedData.value.lastSeenAt))
-      )
-        return
+        storedData.value.lastSeenAt &&
+        isToday(new Date(storedData.value.lastSeenAt))
+      ) { return }
 
       if (newReadTimeElapsed && newScrolledContent) {
         usePolitePopupStore().show()
         storedData.value.seenCount += 1
         storedData.value.lastSeenAt = new Date().getTime()
       }
-    },
+    }
   )
 
   return {
     trigger,
     setClosed,
     setSubscribed,
-    debugInfo,
+    debugInfo
   }
 }

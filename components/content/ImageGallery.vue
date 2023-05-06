@@ -4,27 +4,26 @@ import { useLightbox } from '@/stores/lightbox'
 const props = defineProps({
   folder: {
     type: String,
-    required: true,
+    required: true
   },
   filter: {
     type: String,
-    required: false,
-  },
+    required: false
+  }
 })
 const lightbox = useLightbox()
 const images: string[] = []
 Object.values(import.meta.glob('/public/images/**')).forEach((imageModule) => {
   if (
-    imageModule.name
-    && imageModule.name.startsWith(`/public/images/${props.folder}`)
-    && (props.filter == null
-      || props.filter === ''
-      || imageModule.name.indexOf(props.filter) > 0)
-  )
-    images.push(imageModule.name.substring('/public'.length))
+    imageModule.name &&
+    imageModule.name.startsWith(`/public/images/${props.folder}`) &&
+    (props.filter == null ||
+      props.filter === '' ||
+      imageModule.name.indexOf(props.filter) > 0)
+  ) { images.push(imageModule.name.substring('/public'.length)) }
 })
 
-function openGallery(i: number) {
+function openGallery (i: number) {
   lightbox.setImages(images)
   lightbox.show(i)
 }

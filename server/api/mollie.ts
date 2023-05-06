@@ -15,22 +15,20 @@ export default defineEventHandler(async (event) => {
       const paymentResponse = await mollieClient.payments.create({
         amount: {
           value: `${totalPrice}.00`,
-          currency: 'EUR',
+          currency: 'EUR'
         },
         description: body.ticketTitle,
         redirectUrl: `${body.host}/tickets/order/123456`,
         webhookUrl: 'https://harmonics.be/api/mollieWebhook',
         metadata: {
-          order_id: '123456',
-        },
+          order_id: '123456'
+        }
       })
       return paymentResponse
-    }
-    catch (error) {
+    } catch (error) {
       console.error(error)
     }
-  }
-  else {
+  } else {
     return 'MollieApiKeyMissing'
   }
 })

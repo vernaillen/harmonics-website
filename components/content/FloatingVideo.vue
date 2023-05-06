@@ -9,14 +9,15 @@ export interface Props {
 withDefaults(defineProps<Props>(), {
   height: 250,
   cssClass: 'floatRight',
-  shadow: true,
+  shadow: true
 })
 </script>
 
 <template>
   <div :class="cssClass">
     <iframe
-      :src="src" frameborder="0"
+      :src="src"
+      frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
       class="absolute top-0 left-0 w-full h-full rounded-md"

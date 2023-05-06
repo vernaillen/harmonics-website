@@ -30,7 +30,7 @@ export const iubenda = {
       rejectButtonCaption: 'Afwijzen',
       rejectButtonCaptionColor: '#FFFFFF',
       textColor: '#9CA3AF',
-      content: '<h1>Fijn dat je er bent!</h1>Door op \\"Accepteren\\" te klikken ga je akkoord met het gebruik van alle cookies zoals beschreven in ons <a href=https:\/\/harmonics.be\/cookiebeleid target=_blank>cookie beleid<\/a>.',
-    },
-  },
+      content: '<h1>Fijn dat je er bent!</h1>Door op \\"Accepteren\\" te klikken ga je akkoord met het gebruik van alle cookies zoals beschreven in ons <a href=https://harmonics.be/cookiebeleid target=_blank>cookie beleid</a>.'
+    }
+  }
 }

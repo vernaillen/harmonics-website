@@ -3,6 +3,6 @@ import { defineConfig } from 'cypress'
 export default defineConfig({
   video: false,
   e2e: {
-    baseUrl: 'https://harmonics.be',
-  },
+    baseUrl: 'https://harmonics.be'
+  }
 })

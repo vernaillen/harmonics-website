@@ -6,19 +6,20 @@ const { setClosed } = usePolitePopup()
 const appConfig = useAppConfig()
 const politePopup = usePolitePopupStore()
 
-async function onClickOk() {
+function onClickOk () {
   setClosed()
   window.open(appConfig.mailchimpLink.href)
 }
 
-function onClickClose() {
+function onClickClose () {
   setClosed()
 }
 </script>
 
 <template>
   <div
-    v-if="politePopup.visible" class="
+    v-if="politePopup.visible"
+    class="
       fixed
       z-[9999]
       left-3

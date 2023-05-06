@@ -7,12 +7,8 @@ const localePath = useLocalePath()
 
 let title = t('website.title')
 let ogImage = '/harmonics.png'
-if (page.value && page.value.title)
-  title = `${page.value.title} | ${t('website.title')}`
-if (page.value && page.value.ogImage)
-  ogImage = t('website.hostname') + page.value.ogImage
-else if (page.value && page.value.thumbnail)
-  ogImage = t('website.hostname') + page.value.thumbnail
+if (page.value && page.value.title) { title = `${page.value.title} | ${t('website.title')}` }
+if (page.value && page.value.ogImage) { ogImage = t('website.hostname') + page.value.ogImage } else if (page.value && page.value.thumbnail) { ogImage = t('website.hostname') + page.value.thumbnail }
 
 if (page.value) {
   useHead({
@@ -20,23 +16,21 @@ if (page.value) {
     meta: [
       {
         property: 'og:title',
-        content: title,
+        content: title
       },
       {
         property: 'og:image',
-        content: ogImage,
-      },
-    ],
+        content: ogImage
+      }
+    ]
   })
-}
-else {
+} else {
   setResponseStatus(404)
 }
 
 const route = useRoute()
 const { trigger } = usePolitePopup()
-if (route.path !== '/contact' && route.path !== '/en/contact')
-  trigger()
+if (route.path !== '/contact' && route.path !== '/en/contact') { trigger() }
 
 const activeTocId = ref()
 const nuxtContent = ref(null)
@@ -46,15 +40,14 @@ const observerOptions = reactive({
   root: nuxtContent.value,
   // 0, which means that as soon as even one pixel is visible, the callback will fire.
   // 0.5, to be 50% of the way through the viewport when observing the element
-  threshold: 0.5,
+  threshold: 0.5
 })
 
 onMounted(() => {
   observer.value = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       const id = entry.target.getAttribute('id')
-      if (entry.isIntersecting)
-        activeTocId.value = id
+      if (entry.isIntersecting) { activeTocId.value = id }
     })
   }, observerOptions)
 

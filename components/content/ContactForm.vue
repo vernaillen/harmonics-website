@@ -8,7 +8,7 @@ const localePath = useLocalePath()
 const schema = yup.object({
   name: yup.string().required(),
   email: yup.string().required().email(),
-  message: yup.string().required().min(20),
+  message: yup.string().required().min(20)
 })
 const formError = ref()
 
@@ -21,7 +21,7 @@ const formError = ref()
 }) */
 
 const { handleSubmit } = useForm({
-  validationSchema: schema,
+  validationSchema: schema
 })
 
 const router = useRouter()
@@ -29,7 +29,7 @@ const submitForm = handleSubmit((values) => {
   axios({
     method: 'POST',
     url: 'https://formbold.com/s/3qV8o',
-    data: values,
+    data: values
   })
     .then(() => {
       router.push(localePath('/thanks'))
@@ -54,7 +54,9 @@ const { t } = useI18n()
               {{ t('contact.name') }}
             </label>
             <input
-              v-model="name" name="name" type="text"
+              v-model="name"
+              name="name"
+              type="text"
               class="w-full border border-transparent dark:bg-black rounded-md shadow-one dark:shadow-signUp py-3 px-6 text-body-color text-base placeholder-body-color outline-none focus-visible:shadow-none focus:border-primary"
             >
             <span v-if="nameError" class="text-primary">
@@ -68,7 +70,9 @@ const { t } = useI18n()
               {{ t('contact.email') }}
             </label>
             <input
-              v-model="email" name="email" type="email"
+              v-model="email"
+              name="email"
+              type="email"
               class="w-full border border-transparent dark:bg-black rounded-md shadow-one dark:shadow-signUp py-3 px-6 text-body-color text-base placeholder-body-color outline-none focus-visible:shadow-none focus:border-primary"
             >
             <span v-if="emailError" class="text-primary">
@@ -82,7 +86,9 @@ const { t } = useI18n()
               {{ t('contact.message') }}
             </label>
             <textarea
-              v-model="message" name="message" rows="5"
+              v-model="message"
+              name="message"
+              rows="5"
               class="w-full border border-transparent dark:bg-black rounded-md shadow-one dark:shadow-signUp py-3 px-6 text-body-color text-base placeholder-body-color outline-none focus-visible:shadow-none focus:border-primary resize-none"
             />
 

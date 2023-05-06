@@ -2,18 +2,18 @@
 defineProps({
   src: {
     type: String,
-    required: true,
+    required: true
   },
   title: {
     type: String,
     required: false,
-    default: '',
+    default: ''
   },
   cssClass: {
     type: String,
     required: false,
-    default: 'proseIframe',
-  },
+    default: 'proseIframe'
+  }
 })
 </script>
 

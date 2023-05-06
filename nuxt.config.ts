@@ -11,17 +11,17 @@ export default defineNuxtConfig({
     public: {
       googleAW: {
         id: 'AW-1009002362',
-        initialConsent: true,
-      },
-    },
+        initialConsent: true
+      }
+    }
   },
 
   extends: [
-    '@vernaillen/nuxt-base-layer',
+    '@vernaillen/nuxt-base-layer'
   ],
 
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
+    pageTransition: { name: 'page', mode: 'out-in' }
   },
 
   modules: [
@@ -34,27 +34,27 @@ export default defineNuxtConfig({
     '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
-    'nuxt-icon',
+    'nuxt-icon'
   ],
 
   vernaillenModule: {
     instagram: {
-      enabled: true,
-    },
+      enabled: true
+    }
   },
 
   css: [
     '@/assets/css/main.css',
     '@/assets/css/markdown.css',
     '@/assets/css/prose.css',
-    'animate.css/animate.min.css',
+    'animate.css/animate.min.css'
   ],
 
   image: {
     provider: 'twicpics',
     twicpics: {
-      baseURL: 'https://vernaillen.twic.pics/harmonics',
-    },
+      baseURL: 'https://vernaillen.twic.pics/harmonics'
+    }
   },
 
   googleFonts: {
@@ -62,12 +62,12 @@ export default defineNuxtConfig({
     preconnect: true,
     display: 'swap',
     families: {
-      Montserrat: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-    },
+      Montserrat: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+    }
   },
 
   plausible: {
-    apiHost: 'https://harmonics.be/plio',
+    apiHost: 'https://harmonics.be/plio'
   },
 
   content: {
@@ -76,21 +76,21 @@ export default defineNuxtConfig({
       anchorLinks: false,
       remarkPlugins: [
         'remark-breaks',
-        'remark-directive-rehype',
+        'remark-directive-rehype'
       ],
       rehypePlugins: {
         'rehype-external-links': {
-          target: '_blank',
-        },
-      },
-    },
+          target: '_blank'
+        }
+      }
+    }
   },
 
   i18n,
   iubenda,
 
   generate: {
-    routes: ['/', '/thanks'],
+    routes: ['/', '/thanks']
   },
 
   nitro: {
@@ -101,6 +101,6 @@ export default defineNuxtConfig({
   },
 
   devtools: {
-    enabled: true,
-  },
+    enabled: true
+  }
 })

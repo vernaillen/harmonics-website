@@ -1,17 +1,16 @@
 import { defineNuxtPlugin, useHead, useRuntimeConfig } from '#imports'
 
-function gtag(..._args: any[]) {
+function gtag (..._args: any[]) {
   // eslint-disable-next-line prefer-rest-params
   (window as any).dataLayer.push(arguments)
 }
 
 export default defineNuxtPlugin(() => {
   const {
-    googleAW: { id, initialConsent },
+    googleAW: { id, initialConsent }
   } = useRuntimeConfig().public
 
-  if (!id)
-    return
+  if (!id) { return }
 
   // @ts-expect-error: `dataLayer` is not defined
   window.dataLayer = window.dataLayer || []
@@ -19,15 +18,14 @@ export default defineNuxtPlugin(() => {
   gtag('js', new Date())
   gtag('config', id)
 
-  if (!initialConsent)
-    return
+  if (!initialConsent) { return }
 
   useHead({
     script: [
       {
         src: `https://www.googletagmanager.com/gtag/js?id=${id}`,
-        async: true,
-      },
-    ],
+        async: true
+      }
+    ]
   })
 })

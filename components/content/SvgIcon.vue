@@ -2,7 +2,7 @@
 defineProps < {
   file: string
   extraClass?: string
-} > ()
+} >()
 </script>
 
 <template>

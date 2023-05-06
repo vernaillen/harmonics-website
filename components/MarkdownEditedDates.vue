@@ -7,8 +7,7 @@ const props = defineProps<{
 const { t } = useI18n()
 
 let createdDate = props.post.date
-if (!createdDate)
-  createdDate = props.post.createdDate
+if (!createdDate) { createdDate = props.post.createdDate }
 </script>
 
 <template>

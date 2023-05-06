@@ -60,19 +60,19 @@ const defaultModuleOptions = {
     enable: true, // Add script to include links to policy pages.
     style: 'nostyle', // Add styling to links. (nostyle, white or black)
     whiteLabel: true, // White label links.
-    embed: true, // Open links in popup.
+    embed: true // Open links in popup.
   },
-  i18n: {},
+  i18n: {}
 }
 
-function getScript(options, env) {
+function getScript (options, env) {
   const filePath = path.resolve(__dirname, 'runtime/script.js')
   const fileContents = fs.readFileSync(filePath, 'utf8')
   const compiler = template(fileContents, { variable: 'options' })
   const script = compiler({
     ...options,
     config_json: JSON.stringify(options.config),
-    env,
+    env
   })
   return script
 }
@@ -80,7 +80,7 @@ function getScript(options, env) {
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'iubenda-module',
-    configKey: 'iubenda',
+    configKey: 'iubenda'
   },
   // Default configuration options of the Nuxt module
   defaults: {
@@ -103,18 +103,18 @@ export default defineNuxtModule<ModuleOptions>({
         closeButtonDisplay: false,
         position: 'float-bottom-right',
         textColor: '#333',
-        backgroundColor: '#ddd',
-      },
+        backgroundColor: '#ddd'
+      }
     },
     head: {
-      script: [],
-    },
+      script: []
+    }
   },
-  setup(options, nuxt) {
+  setup (options, nuxt) {
     const moduleOptions = defu(nuxt.options.runtimeConfig.public.iubenda,
       {
         ...defaultModuleOptions,
-        ...options,
+        ...options
       })
     nuxt.options.runtimeConfig.public.iubenda = moduleOptions
     const resolver = createResolver(import.meta.url)
@@ -125,7 +125,7 @@ export default defineNuxtModule<ModuleOptions>({
     // Check required options
     if (!moduleOptions.config.siteId || !moduleOptions.config.cookiePolicyId) {
       console.warn(
-        '[iubenda-module] siteId and cookiePolicyId are required options.',
+        '[iubenda-module] siteId and cookiePolicyId are required options.'
       )
       return
     }
@@ -140,20 +140,20 @@ export default defineNuxtModule<ModuleOptions>({
     // Add our setup script.
     moduleOptions.head.script.push({
       hid: 'iubenda-setup',
-      innerHTML: getScript(moduleOptions, moduleOptions.dev ? 'dev' : 'prod'),
+      innerHTML: getScript(moduleOptions, moduleOptions.dev ? 'dev' : 'prod')
     })
 
     // Add Iubenda script.
     moduleOptions.head.script.push({
       hid: 'iubenda-cs-script',
-      src: '//cdn.iubenda.com/cs/iubenda_cs.js',
+      src: '//cdn.iubenda.com/cs/iubenda_cs.js'
     })
 
     if (moduleOptions.links.enable) {
       moduleOptions.head.script.push({
         hid: 'iubenda-script',
         src: '//cdn.iubenda.com/iubenda.js',
-        async: true,
+        async: true
       })
     }
 
@@ -169,5 +169,5 @@ export default defineNuxtModule<ModuleOptions>({
     moduleOptions.head.__dangerouslyDisableSanitizersByTagID['iubenda-script'] = [
       'innerHTML'
     ] */
-  },
+  }
 })

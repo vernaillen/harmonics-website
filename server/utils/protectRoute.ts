@@ -8,7 +8,7 @@ export default (event: H3Event) => {
     console.warn(`Unauthorized access of ${event.path}`)
     throw createError({
       statusCode: 401,
-      message: 'Unauthorized',
+      message: 'Unauthorized'
     })
   }
 }
