@@ -24,6 +24,8 @@
     "@nuxtjs/axios": "^5.13.6",
     "@pinia/nuxt": "^0.4.9",
     "@sendgrid/mail": "^7.7.0",
+    "@upstash/redis": "^1.20.6",
+    "@vercel/kv": "^0.1.1",
     "@vernaillen/nuxt-base-layer": "^0.1.26",
     "@vueuse/core": "^10.1.2",
     "animate.css": "^4.1.1",
@@ -59,9 +61,6 @@
     "start-server-and-test": "^2.0.0",
     "typescript": "^5.0.4",
     "vitest": "^0.31.0"
-  },
-  "eslintConfig": {
-    "extends": "@antfu"
   },
   "packageManager": "pnpm@8.4.0"
 }
