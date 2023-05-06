@@ -8,6 +8,7 @@ export default defineEventHandler(event => {
         version,
         vercel: {
             region: config.region,
+            env: process.env.VERCEL_ENV
         }
     }
 })
