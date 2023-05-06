@@ -14,8 +14,8 @@ dependencies:
     specifier: ^7.7.0
     version: 7.7.0
   '@vernaillen/nuxt-base-layer':
-    specifier: ^0.1.25
-    version: 0.1.25(nuxt@3.4.3)(typescript@5.0.4)(vue@3.2.47)(webpack@5.82.0)
+    specifier: ^0.1.26
+    version: 0.1.26(nuxt@3.4.3)(typescript@5.0.4)(vue@3.2.47)(webpack@5.82.0)
   '@vueuse/core':
     specifier: ^10.1.2
     version: 10.1.2(vue@3.2.47)
@@ -2314,8 +2314,8 @@ packages:
       - encoding
       - supports-color
 
-  /@vernaillen/nuxt-base-layer@0.1.25(nuxt@3.4.3)(typescript@5.0.4)(vue@3.2.47)(webpack@5.82.0):
-    resolution: {integrity: sha512-yF+X9jN3AMzU+ZMzG/3JyhKmsyWBhFtdus6vfxVKfrF4cMSk3hIb8jmKhZ8n8k1/eY1K3kvBx1s29zqjj10p6Q==}
+  /@vernaillen/nuxt-base-layer@0.1.26(nuxt@3.4.3)(typescript@5.0.4)(vue@3.2.47)(webpack@5.82.0):
+    resolution: {integrity: sha512-8d9XNq4QgOJmh7ZOWfebnu5eC9UvecL4vKSFM+eKSlgE82NxYo6KDcrJTIMdc65HzSmJ+08hQKU5qiv2INNBxA==}
     requiresBuild: true
     dependencies:
       '@nuxtjs/tailwindcss': 6.6.7(webpack@5.82.0)
