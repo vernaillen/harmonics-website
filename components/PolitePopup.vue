@@ -39,7 +39,7 @@ function onClickClose () {
   >
     <span class="prose">
       <h3 class="text-lg !mb-2">{{ t('politePopup.thanks') }}
-        <span class="text-primary font-bold">harmonics</span>!
+        <span class="text-primary font-bold">Harmonics</span>!
         <Icon name="openmoji:folded-hands-medium-light-skin-tone" class="ml-2" size="24" />
       </h3>
       <p>{{ t('politePopup.question') }}</p>
