@@ -1,4 +1,5 @@
 
+[![Nuxt][nuxt-src]][nuxt-href]<br/>
 [![CircleCI][circle-image]][circle-url]<br/>
 [![Netlify deploy][netlify-image]][netlify-url]<br/>
 [![SonarCloud Status][sonarcloud-image]][sonarcloud-url]<br/>
@@ -15,3 +16,6 @@ website for <https://harmonics.be>, made with Vue, Vite, markdown, etc
 
 [sonarcloud-url]: https://sonarcloud.io/project/overview?id=harmonics-website
 [sonarcloud-image]: https://img.shields.io/sonar/quality_gate/harmonics-website/master?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge&logo=sonar
+
+[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?style=for-the-badge&logo=nuxt.js&label=based%20on
+[nuxt-href]: https://nuxt.com
