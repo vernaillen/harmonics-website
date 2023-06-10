@@ -1490,9 +1490,9 @@ packages:
       pathe: 1.1.0
       pkg-types: 1.0.3
       scule: 1.0.0
-      semver: 7.5.0
+      semver: 7.5.1
       unctx: 2.3.0
-      unimport: 3.0.6
+      unimport: 3.0.7(rollup@3.22.0)
       untyped: 1.3.2
     transitivePeerDependencies:
       - rollup
@@ -1519,7 +1519,7 @@ packages:
       scule: 1.0.0
       semver: 7.5.1
       unctx: 2.3.0
-      unimport: 3.0.6
+      unimport: 3.0.7(rollup@3.22.0)
       untyped: 1.3.2
     transitivePeerDependencies:
       - rollup
@@ -1632,7 +1632,7 @@ packages:
       scule: 1.0.0
       std-env: 3.3.3
       ufo: 1.1.2
-      unimport: 3.0.6
+      unimport: 3.0.7(rollup@3.22.0)
       untyped: 1.3.2
     transitivePeerDependencies:
       - rollup
@@ -1650,7 +1650,7 @@ packages:
       postcss-import-resolver: 2.0.0
       std-env: 3.3.3
       ufo: 1.1.2
-      unimport: 3.0.6
+      unimport: 3.0.7(rollup@3.22.0)
       untyped: 1.3.2
     transitivePeerDependencies:
       - rollup
