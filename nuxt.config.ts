@@ -13,18 +13,6 @@ export default defineNuxtConfig({
         id: 'AW-1009002362',
         initialConsent: true
       }
-    },
-    nitro: { envPrefix: 'VERCEL_' },
-    region: process.env.VERCEL_REGION,
-    vercelKv: {
-      token: '',
-      url: ''
-    }
-  },
-
-  nitro: {
-    storage: {
-      data: { driver: 'vercelKV' }
     }
   },
 
@@ -105,6 +93,13 @@ export default defineNuxtConfig({
     routes: ['/', '/thanks']
   },
 
+  supabase: {
+    client: {
+      auth: {
+        persistSession: false
+      }
+    }
+  },
   devtools: {
     enabled: true
   }
