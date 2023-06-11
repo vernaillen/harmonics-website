@@ -18,12 +18,6 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-          name: enable corepack
-          command: corepack enable
-      - run:
-          name: prepare pnpm
-          command: corepack prepare pnpm@latest --activate
-      - run:
           name: Install packages
           command: pnpm install --no-frozen-lockfile
       - save_cache:
