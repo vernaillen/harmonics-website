@@ -7,7 +7,7 @@ orbs:
 executors:
   pnpm-executor:
     docker:
-      - image: vernaillen/circleci-pnpm:20.2.0-browsers
+      - image: cimg/node:20.3.0-browsers
     working_directory: /tmp/workspace
 
 jobs:
@@ -17,6 +17,12 @@ jobs:
       - checkout
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: enable corepack
+          command: corepack enable
+      - run:
+          name: prepare pnpm
+          command: corepack prepare pnpm@latest --activate
       - run:
           name: Install packages
           command: pnpm install --no-frozen-lockfile
