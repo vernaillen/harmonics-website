@@ -61,8 +61,8 @@ devDependencies:
     specifier: ^0.2.1
     version: 0.2.1
   '@nuxtjs/supabase':
-    specifier: 0.3.6
-    version: 0.3.6
+    specifier: 0.3.7
+    version: 0.3.7
   '@nuxtjs/tailwindcss':
     specifier: ^6.7.0
     version: 6.7.0(webpack@5.86.0)
@@ -1676,8 +1676,8 @@ packages:
       - debug
     dev: false
 
-  /@nuxtjs/supabase@0.3.6:
-    resolution: {integrity: sha512-LhBGyZ+ySEH3kxUwocMm+AaGVd7kIz//rEgOTdpTtnNPiogt5/3ZalJvt0XqZoPbk8KTf+yyOq+9SbDjup661A==}
+  /@nuxtjs/supabase@0.3.7:
+    resolution: {integrity: sha512-Hn4hryNuZYqWfbNvi44sN+Uxx5GcevhHwYzVKEZX23IKy1PSbY+h4mRe2MGoTSpV8MdNvyC0+ah2WoV50BIlrg==}
     dependencies:
       '@nuxt/kit': 3.5.3
       '@supabase/supabase-js': 2.24.0
