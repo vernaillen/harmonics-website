@@ -36,7 +36,7 @@
   "devDependencies": {
     "@nuxt/content": "^2.6.0",
     "@nuxt/devtools": "^0.5.5",
-    "@nuxt/image-edge": "1.0.0-rc.1-28106434.299e03e",
+    "@nuxt/image-edge": "1.0.0-rc.1-28124054.2f62c05",
     "@nuxt/test-utils-edge": "3.6.0-28108658.05a8c2d9",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/google-fonts": "3.0.1",

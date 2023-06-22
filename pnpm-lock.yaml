@@ -43,8 +43,8 @@ devDependencies:
     specifier: ^0.5.5
     version: 0.5.5(nuxt@3.5.3)(vite@4.3.9)
   '@nuxt/image-edge':
-    specifier: 1.0.0-rc.1-28106434.299e03e
-    version: 1.0.0-rc.1-28106434.299e03e
+    specifier: 1.0.0-rc.1-28124054.2f62c05
+    version: 1.0.0-rc.1-28124054.2f62c05
   '@nuxt/test-utils-edge':
     specifier: 3.6.0-28108658.05a8c2d9
     version: 3.6.0-28108658.05a8c2d9(vitest@0.32.0)(vue@3.3.4)
@@ -1255,14 +1255,14 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@nuxt/image-edge@1.0.0-rc.1-28106434.299e03e:
-    resolution: {integrity: sha512-X2IlPsXOLawpiKEdlS408S57+OYqoRjlGyKcI/xQAynXjSo8X5JIKam7YlL4iBu/Rk8Qicfyvgl7cjR9jVGJDA==}
+  /@nuxt/image-edge@1.0.0-rc.1-28124054.2f62c05:
+    resolution: {integrity: sha512-4l8gN4byGh3O2v6UcPYnJGgJFd3VWCPTYrYIO5chcww6IFwNsus3uzufwmCddvAHfzDcrRBl86ClqzZm9Eajvg==}
     engines: {node: ^14.16.0 || >=16.11.0}
     dependencies:
       '@nuxt/kit': 3.5.3
       consola: 3.1.0
       defu: 6.1.2
-      h3: 1.6.6
+      h3: 1.7.0
       image-meta: 0.1.1
       node-fetch-native: 1.2.0
       ohash: 1.1.2
@@ -1509,7 +1509,7 @@ packages:
       externality: 1.0.2
       fs-extra: 11.1.1
       get-port-please: 3.0.1
-      h3: 1.6.6
+      h3: 1.7.0
       knitwork: 1.0.0
       magic-string: 0.30.0
       mlly: 1.3.0
@@ -4100,6 +4100,9 @@ packages:
   /destr@1.2.2:
     resolution: {integrity: sha512-lrbCJwD9saUQrqUfXvl6qoM+QN3W7tLV5pAOs+OqOmopCCz/JkE05MHedJR1xfk4IAnZuJXPVuN5+7jNA2ZCiA==}
 
+  /destr@2.0.0:
+    resolution: {integrity: sha512-FJ9RDpf3GicEBvzI3jxc2XhHzbqD8p4ANw/1kPsFBfTvP1b7Gn/Lg1vO7R9J4IVgoMbyUmFrFGZafJ1hPZpvlg==}
+
   /destroy@1.2.0:
     resolution: {integrity: sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
@@ -5478,6 +5481,17 @@ packages:
       cookie-es: 1.0.0
       defu: 6.1.2
       destr: 1.2.2
+      iron-webcrypto: 0.7.0
+      radix3: 1.0.1
+      ufo: 1.1.2
+      uncrypto: 0.1.3
+
+  /h3@1.7.0:
+    resolution: {integrity: sha512-iJJz2Pn2rC0j8CB3rkFMs0K269W7hDVOC7eL3qne5Joy4JZX1W7id7PBFV593GboHDOx0PzgO6ocqsynrIvdxw==}
+    dependencies:
+      cookie-es: 1.0.0
+      defu: 6.1.2
+      destr: 2.0.0
       iron-webcrypto: 0.7.0
       radix3: 1.0.1
       ufo: 1.1.2
@@ -7511,7 +7525,7 @@ packages:
       fs-extra: 11.1.1
       globby: 13.1.4
       gzip-size: 7.0.0
-      h3: 1.6.6
+      h3: 1.7.0
       hookable: 5.5.3
       http-proxy: 1.18.1
       is-primitive: 3.0.1
@@ -10536,7 +10550,7 @@ packages:
       anymatch: 3.1.3
       chokidar: 3.5.3
       destr: 1.2.2
-      h3: 1.6.6
+      h3: 1.7.0
       ioredis: 5.3.2
       listhen: 1.0.4
       lru-cache: 9.1.2
