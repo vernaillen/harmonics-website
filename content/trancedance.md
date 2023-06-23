@@ -3,7 +3,7 @@ title: Trancedans
 showToc: false
 ---
 
-Voorlopig zijn er geen nieuwe sessies ingepland. Vanaf september 2023 plannen we opnieuw met maandelijkse sessies te starten. Weldra daarover meer nieuws.
+Vanaf september 2023 plannen we opnieuw met maandelijkse sessies te starten. Weldra daarover meer nieuws.
 
 Schrijf je in op :MailchimpExternalLink om op de hoogte te blijven ivm nieuwe data.
 
