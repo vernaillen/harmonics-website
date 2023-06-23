@@ -3,7 +3,7 @@ title: Trance Dance
 showToc: false
 ---
 
-At the moment we don't have any new sessions planned.
+At the moment we don't have any new sessions planned. But from september we plan to start again with a new series of sessions. 
 
 Subscribe to the :MailchimpExternalLink to stay informed about upcoming sessions.
 
