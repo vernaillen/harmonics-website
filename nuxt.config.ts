@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@nuxt/content',
-    '@nuxt/image-edge',
+    '@nuxt/image',
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
     '@nuxtjs/plausible',
@@ -36,12 +36,6 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'nuxt-icon'
   ],
-
-  vernaillenModule: {
-    instagram: {
-      enabled: true
-    }
-  },
 
   css: [
     '@/assets/css/main.css',
