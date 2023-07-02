@@ -37,8 +37,12 @@ export default defineNuxtConfig({
     'nuxt-icon'
   ],
 
+  experimental: {
+    inlineSSRStyles: false
+  },
+
   css: [
-    '@/assets/css/main.css',
+    '@/assets/css/tailwind.css',
     '@/assets/css/markdown.css',
     '@/assets/css/prose.css',
     'animate.css/animate.min.css'
@@ -95,6 +99,9 @@ export default defineNuxtConfig({
     }
   },
   devtools: {
+    enabled: true
+  },
+  debug: {
     enabled: true
   }
 })
