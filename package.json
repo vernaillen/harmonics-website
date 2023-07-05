@@ -26,10 +26,10 @@
     "@pinia/nuxt": "^0.4.11",
     "@sendgrid/mail": "^7.7.0",
     "@upstash/redis": "^1.22.0",
-    "@vernaillen/nuxt-base-layer": "^0.2.4",
+    "@vernaillen/nuxt-base-layer": "^0.2.8",
     "@vueuse/core": "^10.2.1",
     "animate.css": "^4.1.1",
-    "vee-validate": "^4.10.3",
+    "vee-validate": "^4.10.5",
     "vue-easy-lightbox": "^1.16.0",
     "yup": "^1.2.0"
   },
@@ -44,9 +44,9 @@
     "@nuxtjs/plausible": "^0.2.1",
     "@nuxtjs/supabase": "0.3.8",
     "@nuxtjs/tailwindcss": "^6.8.0",
-    "@typescript-eslint/eslint-plugin": "^5.60.1",
-    "@typescript-eslint/parser": "^5.60.1",
-    "@vitest/coverage-v8": "^0.32.2",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "@vitest/coverage-v8": "^0.32.4",
     "@vueuse/nuxt": "^10.2.1",
     "consola": "^3.2.2",
     "cypress": "^12.16.0",
@@ -60,6 +60,6 @@
     "sitemap": "^7.1.1",
     "start-server-and-test": "^2.0.0",
     "typescript": "^5.1.6",
-    "vitest": "^0.32.2"
+    "vitest": "^0.32.4"
   }
 }
