@@ -53,7 +53,7 @@
     "dayjs": "^1.11.9",
     "eslint": "^8.44.0",
     "jsdom": "^22.1.0",
-    "nuxt": "3.6.1",
+    "nuxt": "3.6.2",
     "nuxt-icon": "^0.4.2",
     "remark-breaks": "^3.0.3",
     "remark-directive-rehype": "^0.4.2",
