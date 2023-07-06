@@ -52,6 +52,8 @@ jobs:
       - slack/notify:
           channel: circleci
           event: fail
+    # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
+    resource_class: large
   test:
     executor: pnpm-executor
     steps:
@@ -73,7 +75,7 @@ jobs:
           command: pnpm run cy:install
       - run:
           name: Run Cypress
-          command: pnpm run cy:run 
+          command: pnpm run cy:run
       - slack/notify:
           channel: circleci
           event: always
@@ -82,13 +84,13 @@ workflows:
   flow:
     jobs:
       - build:
-          context: 
+          context:
             - Slack
             - SonarCloud
       - test:
           requires:
             - build
-          context: 
+          context:
             - Slack
       - e2e:
           requires:
@@ -96,7 +98,7 @@ workflows:
           filters:
             branches:
               only: master
-          context: 
+          context:
             - Slack
 
 # VS Code Extension Version: 1.5.1
