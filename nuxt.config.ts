@@ -92,6 +92,8 @@ export default defineNuxtConfig({
   },
 
   supabase: {
+    url: 'https://example.supabase.co',
+    key: 'replaceInEnvFile',
     client: {
       auth: {
         persistSession: false
