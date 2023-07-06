@@ -101,9 +101,6 @@ export default defineNuxtConfig({
     }
   },
   devtools: {
-    enabled: true
-  },
-  debug: {
-    enabled: true
+    enabled: false
   }
 })
