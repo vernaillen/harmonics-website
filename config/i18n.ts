@@ -10,7 +10,7 @@ export const i18n = {
   langDir: 'locales/',
   defaultLocale: 'nl',
   lazy: true,
-  strategy: 'prefix_and_default',
+  strategy: 'prefix_except_default',
 
   vueI18n: './config/vueI18n.ts'
 }
