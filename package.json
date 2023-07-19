@@ -54,7 +54,7 @@
     "eslint": "^8.45.0",
     "happy-dom": "^10.5.1",
     "jsdom": "^22.1.0",
-    "nuxt": "3.6.3",
+    "nuxt": "3.6.5",
     "nuxt-icon": "^0.4.2",
     "nuxt-vitest": "^0.10.0",
     "remark-breaks": "^3.0.3",
