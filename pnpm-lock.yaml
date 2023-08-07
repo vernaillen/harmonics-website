@@ -104,8 +104,8 @@ devDependencies:
     specifier: 3.6.5
     version: 3.6.5(@types/node@20.4.8)(@upstash/redis@1.22.0)(eslint@8.46.0)(typescript@5.1.6)
   nuxt-icon:
-    specifier: ^0.4.2
-    version: 0.4.2(vue@3.3.4)
+    specifier: ^0.5.0
+    version: 0.5.0(vue@3.3.4)
   nuxt-vitest:
     specifier: ^0.10.2
     version: 0.10.2(@vitejs/plugin-vue-jsx@3.0.1)(@vitejs/plugin-vue@4.2.3)(happy-dom@10.8.0)(jsdom@22.1.0)(vite@4.4.8)(vitest@0.33.0)(vue-router@4.2.4)(vue@3.3.4)
@@ -1595,7 +1595,7 @@ packages:
       rc9: 2.1.1
       semver: 7.5.4
       sirv: 2.0.3
-      unimport: 3.1.3
+      unimport: 3.1.3(rollup@3.27.0)
       vite: 4.4.8(@types/node@20.4.8)
       vite-plugin-inspect: 0.7.35(@nuxt/kit@3.6.5)(vite@4.4.8)
       vite-plugin-vue-inspector: 3.5.0(vite@4.4.8)
@@ -1650,7 +1650,7 @@ packages:
       scule: 1.0.0
       semver: 7.5.4
       unctx: 2.3.1
-      unimport: 3.1.3
+      unimport: 3.1.3(rollup@3.27.0)
       untyped: 1.3.2
     transitivePeerDependencies:
       - rollup
@@ -1675,7 +1675,7 @@ packages:
       scule: 1.0.0
       semver: 7.5.4
       unctx: 2.3.1
-      unimport: 3.1.3
+      unimport: 3.1.3(rollup@3.27.0)
       untyped: 1.4.0
     transitivePeerDependencies:
       - rollup
@@ -1707,7 +1707,7 @@ packages:
       postcss-import-resolver: 2.0.0
       std-env: 3.3.3
       ufo: 1.2.0
-      unimport: 3.1.3
+      unimport: 3.1.3(rollup@3.27.0)
       untyped: 1.3.2
     transitivePeerDependencies:
       - rollup
@@ -8323,7 +8323,7 @@ packages:
       ufo: 1.2.0
       uncrypto: 0.1.3
       unenv: 1.5.2
-      unimport: 3.0.14(rollup@3.27.0)
+      unimport: 3.1.3(rollup@3.27.0)
       unstorage: 1.8.0(@upstash/redis@1.22.0)
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -8560,11 +8560,11 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /nuxt-icon@0.4.2(vue@3.3.4):
-    resolution: {integrity: sha512-yFpvDA+FuUz+ixtt1eRzctTfR4sl7egZoXu7LL+CUc42qFlzCMaTZJ9eqFR2FTW8zu9tfLIZ83RJmUa1jNEWgg==}
+  /nuxt-icon@0.5.0(vue@3.3.4):
+    resolution: {integrity: sha512-ND4yh8kW4VyIbORP3cWjgVrOAvy6QSDFDTJltakdqmxVfVysNIs/bx2NzlkHeR1EOS8E/jVcemfTPmRsJ7WUVw==}
     dependencies:
       '@iconify/vue': 4.1.1(vue@3.3.4)
-      '@nuxt/kit': 3.6.2
+      '@nuxt/kit': 3.6.5
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -8656,7 +8656,7 @@ packages:
       uncrypto: 0.1.3
       unctx: 2.3.1
       unenv: 1.5.2
-      unimport: 3.0.14(rollup@3.27.0)
+      unimport: 3.0.14
       unplugin: 1.4.0
       unplugin-vue-router: 0.6.4(vue-router@4.2.4)(vue@3.3.4)
       untyped: 1.3.2
@@ -11222,7 +11222,7 @@ packages:
       vfile: 5.3.7
     dev: true
 
-  /unimport@3.0.14(rollup@3.27.0):
+  /unimport@3.0.14:
     resolution: {integrity: sha512-67Rh/sGpEuVqdHWkXaZ6NOq+I7sKt86o+DUtKeGB6dh4Hk1A8AQrzyVGg2+LaVEYotStH7HwvV9YSaRjyT7Uqg==}
     dependencies:
       '@rollup/pluginutils': 5.0.2(rollup@3.27.0)
@@ -11256,7 +11256,7 @@ packages:
     transitivePeerDependencies:
       - rollup
 
-  /unimport@3.1.3:
+  /unimport@3.1.3(rollup@3.27.0):
     resolution: {integrity: sha512-up4TE2yA+nMyyErGTjbYGVw95MriGa2hVRXQ3/JRp7984cwwqULcnBjHaovVpsO8tZc2j0fvgGu9yiBKOyxvYw==}
     dependencies:
       '@rollup/pluginutils': 5.0.2(rollup@3.27.0)

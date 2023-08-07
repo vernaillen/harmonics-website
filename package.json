@@ -55,7 +55,7 @@
     "happy-dom": "^10.8.0",
     "jsdom": "^22.1.0",
     "nuxt": "3.6.5",
-    "nuxt-icon": "^0.4.2",
+    "nuxt-icon": "^0.5.0",
     "nuxt-vitest": "^0.10.2",
     "remark-breaks": "^3.0.3",
     "remark-directive-rehype": "^0.4.2",
