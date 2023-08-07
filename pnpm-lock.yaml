@@ -65,8 +65,8 @@ devDependencies:
     specifier: ^0.2.1
     version: 0.2.1
   '@nuxtjs/supabase':
-    specifier: 1.0.2
-    version: 1.0.2
+    specifier: 0.3.8
+    version: 0.3.8
   '@nuxtjs/tailwindcss':
     specifier: ^6.8.0
     version: 6.8.0(webpack@5.88.2)
@@ -1980,11 +1980,11 @@ packages:
       - debug
     dev: false
 
-  /@nuxtjs/supabase@1.0.2:
-    resolution: {integrity: sha512-stHwyZy6pMLBTJVuwdLh9LtaebtVpDIXSkQZ8rnY9lIik8S1+r3HkxUhnpL8VOwMUn4jpBBGqrZUAcRXM/csbQ==}
+  /@nuxtjs/supabase@0.3.8:
+    resolution: {integrity: sha512-MEhfgllJx7DQX4XrycGbnTmiW6JI1wLTaVTkDV9X90q+jfBz59d/uM2E6aj4XhLuJp4GN/THGpMg8k1RfuYxqQ==}
     dependencies:
       '@nuxt/kit': 3.6.5
-      '@supabase/supabase-js': 2.31.0
+      '@supabase/supabase-js': 2.26.0
       defu: 6.1.2
       pathe: 1.1.1
     transitivePeerDependencies:
@@ -2308,8 +2308,8 @@ packages:
       - encoding
     dev: true
 
-  /@supabase/supabase-js@2.31.0:
-    resolution: {integrity: sha512-W9/4s+KnSUX67wJKBn/3yLq+ieycnMzVjK3nNTLX5Wko3ypNT/081l2iFYrf+nsLQ1CiT4mA92I3dxCy6CmxTg==}
+  /@supabase/supabase-js@2.26.0:
+    resolution: {integrity: sha512-RXmTPTobaYAwkSobadHZmEVLmzX3SGrtRZIGfLWnLv92VzBRrjuXn0a+bJqKl50GUzsyqPA+j5pod7EwMkcH5A==}
     dependencies:
       '@supabase/functions-js': 2.1.2
       '@supabase/gotrue-js': 2.46.1
