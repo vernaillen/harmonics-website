@@ -61,30 +61,6 @@
     "published": "published on",
     "lastUpdated": "last edited on"
   },
-  "login": {
-    "reservations": "Ticket Reservations",
-    "intro": "Log in to reserve your tickets or retrieve previous reservations:",
-    "social": "or connect using SSO",
-    "facebook": "Facebook",
-    "google": "Google",
-    "github": "GitHub",
-    "firstname": "First Name",
-    "email": "E-mail address",
-    "magiclinkintro": "with a \"magic link\" send to your e-mail address",
-    "magiclink": "Magic Link",
-    "sendingmagiclink": "sending you the Magic Link by e-mail...",
-    "youvegotmail": "You've got mail!",
-    "loggingyouin": "logging you in..."
-  },
-  "tickets": {
-    "title": "Tickets",
-    "orderbutton": "Register your spot",
-    "trancedance20march": "Trance Dance 20 March",
-    "trancedance17april": "Trance Dance 17 April"
-  },
-  "toc": {
-    "title": "Table of Contents"
-  },
   "dwarsligger": {
     "name": "vzw Dwarsligger",
     "addressLine1": "Gontrode Heirweg 141",

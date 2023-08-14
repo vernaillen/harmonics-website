@@ -4,7 +4,7 @@ import LanguageSwitcher from './LanguageSwitcher.vue'
 const localePath = useLocalePath()
 const date: number = new Date().getFullYear()
 
-const { t } = useI18n()
+const { locale, t } = useI18n()
 
 function scrollToTop () {
   scrollToElement('__nuxt')
@@ -77,24 +77,25 @@ onMounted(() => {
         </div>
       </div>
 
-      <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="flex flex-wrap prose items-center md:justify-between justify-center">
         <div class="w-full px-4 mx-auto text-center">
           <div class="flex flex-wrap text-xs text-gray-400 py-1 justify-center">
             <span class="w-full sm:w-auto">
               <span class="hidden">{{ t('footer.fetchingBuildinfo') }}</span>
               <NuxtLink href="https://github.com/vernaillen/harmonics-website/" target="_blank" class="hover:text-primary">
-                <Icon name="mdi:github" size="20" class="pb-1" />
+                <Icon name="mdi:github" size="20" class="" />
               </NuxtLink>
-            </span>
-            <span class="w-full sm:w-auto">
               {{ t('footer.developed_with') }}
               <NuxtLink href="https://nuxt.com/" target="_blank">
                 <SvgIcon file="nuxt-icon-green.svg" width="16" height="16" />
               </NuxtLink>
               {{ t('news.by') }} <NuxtLink href="https://vernaillen.dev" class="hover:text-primary" target="_blank">Wouter Vernaillen</NuxtLink>
             </span>
+            <span class="w-full sm:w-auto -mt-1 sm:ml-5 ml-0">
+              <GitHub :locale="locale" />
+            </span>
           </div>
-          <div class="text-sm text-gray-400 py-1">
+          <div class="text-sm text-gray-400">
             <span class="w-full md:w-auto">
               {{ t('footer.copyright') }} {{ date }} Harmonics BV / Vernaillen Consulting BVBA - BE0503971022
             </span>

@@ -4,8 +4,6 @@ import { iubenda } from './config/iubenda'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   runtimeConfig: {
-    mollieApiKey: '', // can be overridden by NUXT_MOLLIE_API_KEY environment variable
-    sendgridApiKey: '',
     iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
     iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup',
     public: {
@@ -31,7 +29,6 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
     '@nuxtjs/plausible',
-    '@nuxtjs/supabase',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     'nuxt-icon'
@@ -91,15 +88,6 @@ export default defineNuxtConfig({
     routes: ['/', '/thanks']
   },
 
-  supabase: {
-    url: 'https://example.supabase.co',
-    key: 'replaceInEnvFile',
-    client: {
-      auth: {
-        persistSession: false
-      }
-    }
-  },
   devtools: {
     enabled: false
   }

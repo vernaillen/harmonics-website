@@ -61,30 +61,6 @@
     "published": "gepubliceerd op",
     "lastUpdated": "laatst aangepast op"
   },
-  "login": {
-    "reservations": "Ticket Reservaties",
-    "intro": "Meld je aan om jouw tickets te reserveren of bestaande reservaties te bekijken:",
-    "social": "of verbind via SSO",
-    "facebook": "Facebook",
-    "google": "Google",
-    "github": "GitHub",
-    "firstname": "Voornaam",
-    "email": "Email adres",
-    "magiclinkintro": "via een \"magic link\" die naar je email adres verstuurd wordt",
-    "magiclink": "Magic Link",
-    "sendingmagiclink": "de Magic Link wordt naar je verstuurd...",
-    "youvegotmail": "You've got mail!",
-    "loggingyouin": "bezig met inloggen..."
-  },
-  "tickets": {
-    "title": "Tickets",
-    "orderbutton": "Reserveer je plek",
-    "trancedance20march": "Trancedans 20 maart",
-    "trancedance17april": "Trancedans 17 april"
-  },
-  "toc": {
-    "title": "Pagina Inhoud"
-  },
   "dwarsligger": {
     "name": "vzw Dwarsligger",
     "addressLine1": "Gontrode Heirweg 141",
