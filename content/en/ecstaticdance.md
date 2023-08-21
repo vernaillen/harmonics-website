@@ -1,6 +1,5 @@
 ---
 title: Ecstatic Dance
-showToc: false
 hideCreatedDate: true
 ---
 

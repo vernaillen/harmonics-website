@@ -1,6 +1,5 @@
 ---
 title: Trance Dance
-showToc: false
 ---
 
 From september we plan to start again with a new series of sessions. More info will follow soon.

@@ -1,6 +1,5 @@
 ---
 title: Trancedans
-showToc: false
 ---
 
 Vanaf september 2023 plannen we opnieuw met maandelijkse sessies te starten. Weldra daarover meer nieuws.
