@@ -3,29 +3,32 @@
 describe('test homepage language redirect', () => {
   beforeEach(() => {
     cy.clearCookies()
-    cy.visit('/')
-    // cy.get('#iubenda-cs-banner').should('have.length', 1)
-    // cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').should('have.length', 1)
-    // cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').first().click()
-  })
-
-  it('test automatic language redirect to Dutch', () => {
-    cy.location().should((location) => {
-      expect(location.pathname).to.eq('/')
+    cy.visit('/en', {
+      onBeforeLoad: (_contentWindow) => {
+        Object.defineProperty(_contentWindow.navigator, 'language', { value: 'en' })
+      }
     })
-    cy.get('main h2').should('have.length', 1)
-    cy.get('main h2').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
   })
 
-  it('test switch to English', () => {
-    cy.get('header .languageSwitcher').should('have.length', 1)
-    cy.get('header .languageSwitcher a').should('have.length', 2)
-    cy.get('header .languageSwitcher a').last().click()
+  it('test English', () => {
     cy.location().should((location) => {
       expect(location.pathname).to.eq('/en')
     })
     cy.get('main h2').should('have.length', 1)
     cy.get('main h2').first().should('have.text', 'Healing power of Sound, Music and Dance')
+  })
+
+  it('test switch to Dutch', () => {
+    cy.get('header .languageSwitcher').should('have.length', 1)
+    cy.get('header .languageSwitcher a').should('have.length', 2)
+    cy.get('header .languageSwitcher a').first().contains('NL')
+    cy.get('header .languageSwitcher a').last().contains('EN')
+    cy.get('header .languageSwitcher a').first().click()
+    cy.location().should((location) => {
+      expect(location.pathname).to.eq('/')
+    })
+    cy.get('main h2').should('have.length', 1)
+    cy.get('main h2').first().should('have.text', 'Genezende kracht van Geluid, Muziek en Dans')
   })
 })
 

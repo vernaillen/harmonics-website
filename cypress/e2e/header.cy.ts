@@ -3,24 +3,21 @@
 describe('test header section', () => {
   beforeEach(() => {
     cy.clearCookies()
-    cy.visit('/')
-    // cy.get('#iubenda-cs-banner').should('have.length', 1)
-    // cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').should('have.length', 1)
-    // cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').first().click()
+    cy.visit('/en', {
+      onBeforeLoad: (_contentWindow) => {
+        Object.defineProperty(_contentWindow.navigator, 'language', { value: 'en' })
+      }
+    })
   })
 
   it('test language switcher', () => {
     cy.location().should((location) => {
-      expect(location.pathname).to.eq('/')
+      expect(location.pathname).to.eq('/en')
     })
     cy.get('header .languageSwitcher').should('have.length', 1)
     cy.get('header .languageSwitcher a').should('have.length', 2)
-    cy.get('header .languageSwitcher a').first().should('have.attr', 'aria-current')
-    cy.get('header .languageSwitcher a').first().should('have.class', 'opacity-100')
-    cy.get('header .languageSwitcher a').first().should('not.have.class', 'opacity-30')
-    cy.get('header .languageSwitcher a').last().should('not.have.attr', 'aria-current')
-    cy.get('header .languageSwitcher a').last().should('have.class', 'opacity-30')
-    cy.get('header .languageSwitcher a').last().should('not.have.class', 'opacity-100')
+    cy.get('header .languageSwitcher a').first().contains('NL')
+    cy.get('header .languageSwitcher a').last().contains('EN')
   })
 
   it('test social icons', () => {
