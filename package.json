@@ -58,6 +58,6 @@
     "sitemap": "^7.1.1",
     "start-server-and-test": "^2.0.0",
     "typescript": "^5.1.6",
-    "vitest": "^0.33.0"
+    "vitest": "^0.34.0"
   }
 }
