@@ -2,6 +2,7 @@
 
 describe('test header section', () => {
   beforeEach(() => {
+    cy.clearCookies()
     cy.visit('/')
     // cy.get('#iubenda-cs-banner').should('have.length', 1)
     // cy.get('#iubenda-cs-banner button.iubenda-cs-accept-btn').should('have.length', 1)
