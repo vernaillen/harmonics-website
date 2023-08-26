@@ -50,7 +50,7 @@
     "eslint": "^8.47.0",
     "happy-dom": "^10.10.4",
     "jsdom": "^22.1.0",
-    "nuxt": "3.6.5",
+    "nuxt": "3.7.0",
     "nuxt-icon": "^0.5.0",
     "nuxt-vitest": "^0.10.2",
     "remark-breaks": "^3.0.3",
