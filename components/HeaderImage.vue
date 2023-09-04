@@ -80,7 +80,7 @@ onMounted(() => {
         style="transition: opacity 2s;"
       />
       <VImage
-        v-if="url"
+        v-if="!videoUrl && url"
         :src="url"
         format="webp"
         :height="300"
