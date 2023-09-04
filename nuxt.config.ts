@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxthq/ui',
     '@nuxthq/studio',
     '@nuxtjs/i18n',
+    '@nuxtjs/plausible',
     '@vueuse/nuxt',
     'nuxt-og-image',
     'nuxt-time',
@@ -30,6 +31,10 @@ export default defineNuxtConfig({
   runtimeConfig: {
     iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
     iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup'
+  },
+
+  plausible: {
+    apiHost: 'https://harmonics.be/plio'
   },
 
   ogImage: {

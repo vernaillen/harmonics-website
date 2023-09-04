@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@twicpics/components':
-    specifier: ^0.22.0
-    version: 0.22.0
+    specifier: ^0.22.1
+    version: 0.22.1
   resend:
     specifier: ^1.0.0
     version: 1.0.0
@@ -64,6 +64,9 @@ devDependencies:
   '@nuxtjs/i18n':
     specifier: 8.0.0-rc.3
     version: 8.0.0-rc.3(vue-router@4.2.4)(vue@3.3.4)
+  '@nuxtjs/plausible':
+    specifier: ^0.2.1
+    version: 0.2.1
   '@types/node':
     specifier: ^20.5.9
     version: 20.5.9
@@ -2098,6 +2101,18 @@ packages:
       - supports-color
     dev: true
 
+  /@nuxtjs/plausible@0.2.1:
+    resolution: {integrity: sha512-1AyV9woFeZKBhwYy05S7NBk4jeAXzWcF/SIK/S/GZ8C86G8x7f2hR2eJi9FRRQYGwHutBx2guU4tZAW4J71Azg==}
+    dependencies:
+      '@nuxt/kit': 3.7.0
+      defu: 6.1.2
+      pathe: 1.1.1
+      plausible-tracker: 0.3.8
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
   /@nuxtjs/tailwindcss@6.8.0(webpack@5.88.2):
     resolution: {integrity: sha512-jzuvD1nfA2BPnSbHtKK0aiI51ndMa7lNGL1iDEFuEPsltzilZ9ED7zOP6niGTrImg0n5Yt4GEJpixi6yWwp9Hw==}
     dependencies:
@@ -2727,8 +2742,8 @@ packages:
       minimatch: 9.0.3
     dev: true
 
-  /@twicpics/components@0.22.0:
-    resolution: {integrity: sha512-wMh+DAG1tpXDIdRii8EimR5yAn+RwgZI6+iCAEU5y8/YJim5XXsQIuQ1NJss9UuUgD2vO3xF6TVdnGWdE4CvGQ==}
+  /@twicpics/components@0.22.1:
+    resolution: {integrity: sha512-F9Tq5N5OrQl7DW4fdK+NU/+m1/zdLeVwf6B8zpWQRe1UfHpPJBaUurWkNDY7JhL/fwamovWjma+p1llk/Fv2Yw==}
     dev: false
 
   /@types/chai-subset@1.3.3:
@@ -10449,6 +10464,11 @@ packages:
       pathe: 1.1.1
     dev: true
 
+  /plausible-tracker@0.3.8:
+    resolution: {integrity: sha512-lmOWYQ7s9KOUJ1R+YTOR3HrjdbxIS2Z4de0P/Jx2dQPteznJl2eX3tXxKClpvbfyGP59B5bbhW8ftN59HbbFSg==}
+    engines: {node: '>=10'}
+    dev: true
+
   /playwright-core@1.37.1:
     resolution: {integrity: sha512-17EuQxlSIYCmEMwzMqusJ2ztDgJePjrbttaefgdsiqeLWidjYz9BxXaTaZWxH1J95SHGk6tjE+dwgWILJoUZfA==}
     engines: {node: '>=16'}
@@ -12559,12 +12579,23 @@ packages:
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.1
-      terser: 5.19.3
+      terser: 5.19.4
       webpack: 5.88.2
     dev: true
 
   /terser@5.19.3:
     resolution: {integrity: sha512-pQzJ9UJzM0IgmT4FAtYI6+VqFf0lj/to58AV0Xfgg0Up37RyPG7Al+1cepC6/BVuAxR9oNb41/DL4DEoHJvTdg==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      '@jridgewell/source-map': 0.3.5
+      acorn: 8.10.0
+      commander: 2.20.3
+      source-map-support: 0.5.21
+    dev: true
+
+  /terser@5.19.4:
+    resolution: {integrity: sha512-6p1DjHeuluwxDXcuT9VR8p64klWJKo1ILiy19s6C9+0Bh2+NWTX6nD9EPppiER4ICkHDVB1RkVpin/YW2nQn/g==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
