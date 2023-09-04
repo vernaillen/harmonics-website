@@ -1,4 +1,4 @@
-import type { LegalPolicy } from '~~/types'
+import type { LegalPolicy } from '@/types'
 
 const config = useRuntimeConfig()
 

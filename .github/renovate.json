@@ -12,6 +12,12 @@
         "micromark"
       ],
       "allowedVersions": "<=3.2"
+    },
+    {
+      "matchPackageNames": [
+        "vitest"
+      ],
+      "allowedVersions": "<=0.33"
     }
   ]
 }

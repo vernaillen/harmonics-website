@@ -1,34 +1,39 @@
 <script setup lang="ts">
+
 export interface Props {
   src: string
   width: number
-  height?: number
+  height: number
+  alt?: string
   caption?: string
   captionUrl?: string
   cssClass?: string
   imageShadow?: boolean
-  modifiers?: Record<string, any>
 }
 
 const props = withDefaults(defineProps<Props>(), {
   cssClass: 'floatRight',
-  imageShadow: true
+  imageShadow: true,
+  alt: 'image',
+  caption: 'image',
+  captionUrl: ''
 })
-const width = `${props.width}px`
+const imgClass = computed(() => {
+  return props.imageShadow ? 'shadow ' : ''
+})
 </script>
 
 <template>
   <div :class="cssClass">
-    <NuxtImg
+    <VImage
       format="webp"
-      :modifiers="modifiers"
       :src="src"
-      :width="width"
-      :height="height"
-      :alt="caption"
-      :title="caption"
-      class="!mt-0 rounded-md"
-      :class="imageShadow ? 'shadow-md shadow-gray-400' : ''"
+      :width="width * 2"
+      :height="height * 2"
+      :alt="alt === 'image' && caption !== 'image' ? caption : alt"
+      :title="alt === 'image' && caption !== 'image' ? caption : alt"
+      :img-class="'!mt-0 !mb-1 rounded-xl transition-opacity duration-700 ' + imgClass"
+      refit
     />
     <p v-if="caption" class="caption text-xs text-center mt-0">
       <NuxtLink v-if="captionUrl" :href="captionUrl" target="_blank" :alt="caption" :title="caption">

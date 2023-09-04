@@ -1,110 +1,112 @@
-<script setup>
-import { useField, useForm } from 'vee-validate'
-import * as yup from 'yup'
-import axios from 'axios'
-
-const localePath = useLocalePath()
-
-const schema = yup.object({
-  name: yup.string().required(),
-  email: yup.string().required().email(),
-  message: yup.string().required().min(20)
-})
-const formError = ref()
-
-/* yup.setLocale({
-  string: {
-    min: ({ min }) => ({ key: 'contact.field_too_short', values: { min } }),
-    max: ({ max }) => ({ key: 'contact.field_too_big', values: { max } }),
-    required: () => ({ key: 'contact.required' }),
-  },
-}) */
-
-const { handleSubmit } = useForm({
-  validationSchema: schema
-})
-
-const router = useRouter()
-const submitForm = handleSubmit((values) => {
-  axios({
-    method: 'POST',
-    url: 'https://formbold.com/s/3qV8o',
-    data: values
-  })
-    .then(() => {
-      router.push(localePath('/thanks'))
-    })
-    .catch((err) => {
-      formError.value = `error submitting form: ${err}`
-    })
-})
-const { value: name, errorMessage: nameError } = useField('name')
-const { value: email, errorMessage: emailError } = useField('email')
-const { value: message, errorMessage: messageError } = useField('message')
+<script setup lang="ts">
+import { object, string } from 'yup'
 const { t } = useI18n()
+
+const schema = object({
+  name: string().min(5, t('contact.minchars', { min: 5 })).required(t('contact.required')),
+  email: string().email(t('contact.invalidEmail')).required(t('contact.required')),
+  message: string().min(15, t('contact.minchars', { min: 15 })).required(t('contact.required'))
+})
+const state = ref({
+  name: undefined,
+  email: undefined,
+  message: undefined,
+  subjectForWouter: t('contact.subjectForWouter'),
+  subjectForSender: t('contact.subjectForSender'),
+  bodyForSender: t('contact.bodyForSender')
+})
+
+const form = ref()
+const formError = ref()
+const isBeingSubmitted = ref(false)
+const isSubmitted = ref(false)
+
+async function validateForm () {
+  try {
+    return await form.value!.validate()
+  } catch (e) {
+    // do nothing
+  }
+}
+watch(() => state.value.message, () => validateForm())
+async function submitForm () {
+  try {
+    await form.value!.validate()
+
+    isBeingSubmitted.value = true
+    const { data, error } = await useFetch('/api/sendmail', {
+      method: 'POST',
+      body: state.value
+    })
+    if (data.value) {
+      isSubmitted.value = true
+      scrollToElement('#thankyou')
+    }
+    if (error.value) {
+      formError.value = t('contact.error') + error.value
+    }
+  } catch (e) {
+    // do nothing
+  }
+}
+function resetForm () {
+  isBeingSubmitted.value = false
+  isSubmitted.value = false
+  state.value = {
+    name: undefined,
+    email: undefined,
+    message: undefined
+  }
+}
+const formGroupClass = 'pb-8'
+const formGroupUI = { label: { base: 'block font-normal text-gray-500 dark:text-gray-200' }, error: 'mt-1 px-1 absolute text-sm text-red-500 dark:text-red-400' }
+const inputClass = 'focus:rounded-xl'
+const errorClass = 'text-[red] dark:text-white text-sm p-1 absolute'
 </script>
 
 <template>
-  <div class="bg-primary bg-opacity-[3%] dark:bg-dark rounded-md p-4 mb-12 lg:mb-5 md:p-6 lg:p-8">
-    <form method="POST" @submit.prevent="submitForm">
-      <div class="flex flex-wrap mx-[-16px]">
-        <div class="w-full lg:w-1/2 px-4">
-          <div class="mb-8">
-            <label for="name" class="block text-sm font-medium text-dark dark:text-white mb-3">
-              {{ t('contact.name') }}
-            </label>
-            <input
-              v-model="name"
-              name="name"
-              type="text"
-              class="w-full border border-transparent dark:bg-black rounded-md shadow-one dark:shadow-signUp py-3 px-6 text-body-color text-base placeholder-body-color outline-none focus-visible:shadow-none focus:border-primary"
-            >
-            <span v-if="nameError" class="text-primary">
-              {{ nameError }}
-            </span>
-          </div>
-        </div>
-        <div class="w-full lg:w-1/2 px-4">
-          <div class="mb-8">
-            <label for="email" class="block text-sm font-medium text-dark dark:text-white mb-3">
-              {{ t('contact.email') }}
-            </label>
-            <input
-              v-model="email"
-              name="email"
-              type="email"
-              class="w-full border border-transparent dark:bg-black rounded-md shadow-one dark:shadow-signUp py-3 px-6 text-body-color text-base placeholder-body-color outline-none focus-visible:shadow-none focus:border-primary"
-            >
-            <span v-if="emailError" class="text-primary">
-              {{ emailError }}
-            </span>
-          </div>
-        </div>
-        <div class="w-full px-4">
-          <div class="mb-5">
-            <label for="message" class="block text-sm font-medium text-dark dark:text-white mb-3">
-              {{ t('contact.message') }}
-            </label>
-            <textarea
-              v-model="message"
-              name="message"
-              rows="5"
-              class="w-full border border-transparent dark:bg-black rounded-md shadow-one dark:shadow-signUp py-3 px-6 text-body-color text-base placeholder-body-color outline-none focus-visible:shadow-none focus:border-primary resize-none"
-            />
+  <UForm
+    v-if="!isBeingSubmitted"
+    ref="form"
+    :schema="schema"
+    :state="state"
+    method="POST"
+    @submit.prevent="submitForm"
+  >
+    <UFormGroup name="name" :label="t('contact.name')" :class="formGroupClass" :ui="formGroupUI">
+      <UInput v-model="state.name" :class="inputClass" />
+    </UFormGroup>
 
-            <span v-if="messageError" class="text-primary">
-              {{ messageError }}
-            </span>
-          </div>
-        </div><div v-if="formError" class="text-[red] font-bold px-4 pb-4">
-          {{ formError }}
-        </div>
-        <div class="w-full px-4">
-          <button class="harmonicsButton">
-            {{ t('contact.submit') }}
-          </button>
-        </div>
-      </div>
-    </form>
+    <UFormGroup name="email" :label="t('contact.email')" :class="formGroupClass" :ui="formGroupUI">
+      <UInput v-model="state.email" type="email" :class="inputClass" />
+    </UFormGroup>
+
+    <UFormGroup name="message" :label="t('contact.message')" :class="formGroupClass" :ui="formGroupUI">
+      <UTextarea v-model="state.message" size="xl" :rows="8" :class="inputClass" />
+    </UFormGroup>
+    <div>
+      <UButton icon="i-mdi-send" type="submit">
+        {{ t('contact.submit') }}
+      </UButton>
+    </div>
+  </UForm>
+  <div id="thankyou" class="py-10">
+    <div v-if="formError" :class="errorClass" class="px-4 mb-10">
+      {{ formError }}
+    </div>
+    <div v-if="isBeingSubmitted && !isSubmitted && !formError">
+      <UIcon
+        size="xs"
+        aria-label="Loading Color Mode..."
+        name="i-ph-spinner"
+        class="!my-0 inline-flex animate-spin rounded-full"
+      /> {{ t('contact.sending') }}
+    </div>
+    <div v-if="isBeingSubmitted && isSubmitted">
+      <UIcon name="i-noto-folded-hands" class="ml-2 w-5 h-5" /> {{ t('contact.thankyou') }}<br><br>
+    </div>
+    <UButton v-if="isBeingSubmitted" icon="i-heroicons-arrow-left-20-solid" class="mt-10" @click="resetForm">
+      {{ t('nav.back') }}
+    </UButton>
   </div>
 </template>

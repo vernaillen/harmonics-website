@@ -12,6 +12,7 @@ const { debugInfo } = usePolitePopup()
       p-4
       rounded-md
       shadow-lg
+      bg-white
       bg-slate-400
     "
   >

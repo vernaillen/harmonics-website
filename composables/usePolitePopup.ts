@@ -1,13 +1,13 @@
 import {
+  createSharedComposable,
   useLocalStorage,
   useTimeoutFn,
   useWindowScroll,
   useWindowSize
 } from '@vueuse/core'
-import { usePolitePopupStore } from '~/stores/politePopup'
 
 const config = {
-  timeoutInMs: 3000,
+  timeoutInMs: 5000,
   maxSeenCount: 5,
   contentScrollThresholdInPercentage: 20
 }
@@ -27,7 +27,10 @@ interface PolitePopupStorageDTO {
   lastSeenAt: number
 }
 
-export function usePolitePopup () {
+const _usePolitePopup = () => {
+  // const { isConsentGiven } = useCookieControl()
+  const visible = ref(false)
+
   const readTimeElapsed = useState('read-time-elapsed', () => false)
 
   const { y: scrollYInPx } = useWindowScroll()
@@ -72,7 +75,7 @@ export function usePolitePopup () {
     readTimeElapsed: readTimeElapsed.value,
     amountScrolledInPercentage: amountScrolledInPercentage.value,
     scrolledContent: scrolledContent.value,
-    visible: usePolitePopupStore().visible,
+    visible: visible.value,
     storedData: storedData.value
   }))
 
@@ -82,7 +85,7 @@ export function usePolitePopup () {
   }
 
   const setClosed = () => {
-    usePolitePopupStore().hide()
+    visible.value = false
   }
 
   const setSubscribed = () => {
@@ -92,17 +95,24 @@ export function usePolitePopup () {
   watch(
     [readTimeElapsed, scrolledContent],
     ([newReadTimeElapsed, newScrolledContent]) => {
-      if (storedData.value.status === 'subscribed') { return }
+      if (storedData.value.status === 'subscribed') {
+        return
+      }
 
-      if (storedData.value.seenCount >= config.maxSeenCount) { return }
+      if (storedData.value.seenCount >= config.maxSeenCount) {
+        return
+      }
 
       if (
         storedData.value.lastSeenAt &&
         isToday(new Date(storedData.value.lastSeenAt))
-      ) { return }
+      ) {
+        return
+      }
 
+      // if (newReadTimeElapsed && newScrolledContent && isConsentGiven) {
       if (newReadTimeElapsed && newScrolledContent) {
-        usePolitePopupStore().show()
+        visible.value = true
         storedData.value.seenCount += 1
         storedData.value.lastSeenAt = new Date().getTime()
       }
@@ -110,9 +120,12 @@ export function usePolitePopup () {
   )
 
   return {
+    visible,
     trigger,
     setClosed,
     setSubscribed,
     debugInfo
   }
 }
+
+export const usePolitePopup = createSharedComposable(_usePolitePopup)

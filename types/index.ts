@@ -1,29 +1,35 @@
-export interface MenuItem {
-  path: string
-  titleKey: string
+import type { ParsedContent as DefaultParsedContent } from '@nuxt/content/dist/runtime/types'
+import type { StorageMeta } from 'unstorage'
+
+export interface ParsedContent extends DefaultParsedContent {
+    storageMeta: StorageMeta
+    prose?: boolean
+    schemaOrg: Record<string, any>
+}
+export interface JsonParsedContent<T> extends ParsedContent {
+    body: T
 }
 
-export interface NewsItem {
-  _path: string
-  title: string
-  desc: string
-  date: Date
-  thumbnail: string
-  thumb_video_webm: string
-  thumb_video_mp4: string
-  hideCreatedDate: boolean
-  hideCreatedAndUpdatedDates: boolean
+export interface JsonContent {
+    title: string
+    description: string
+    url: string
+    category: string
 }
 
-export interface BuildInfo {
-  version: string
-  commit: string
-  time: number
-  branch: string
-  env: 'preview' | 'master' | 'dev' | 'release'
+export interface UpcomingSession extends JsonContent {
+    date: Date
+}
+
+export interface Website extends JsonContent {
+}
+
+export interface JsonContentList extends ParsedContent {
+    name: string
+    projects: JsonContentList[]
 }
 
 export interface LegalPolicy {
-  success: boolean
-  content: string
+    success: boolean
+    content: string
 }

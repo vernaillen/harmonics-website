@@ -1,0 +1,28 @@
+{
+    "body": [
+        {
+            "title": "Zacht Zorgende Kracht",
+            "description": "website voor de holistische massage praktijk van Hilde De Moor",
+            "url": "https://zachtzorgendekracht.be",
+            "category": "sound"
+        },
+        {
+            "title": "Harmonics.be",
+            "description": "Deze website die je nu aan 't bekijken bent, design door Anneleen Vernaillen",
+            "url": "https://harmonics.be",
+            "category": "sound"
+        },
+        {
+            "title": "Vernaillen.dev",
+            "description": "Mijn website als FullStack Java/JS Developer",
+            "url": "https://vernaillen.dev",
+            "category": "sound"
+        },
+        {
+            "title": "Anneleen Vernaillen",
+            "description": "Website van Anneleen, door haar zelf ontworpen als grafisch ontwerpster en door mij technisch geïmplementeerd",
+            "url": "https://anneleenvernaillen.com",
+            "category": "sound"
+        }
+    ]
+}

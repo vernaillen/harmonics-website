@@ -1,0 +1,46 @@
+{
+    "body": [
+        {
+            "title": "The Dance of my Awakening Soul",
+            "description": "A Conscious Healing Dance from Dark into Light into Colour<br>~ a project by Sofie AF De Smet ~",
+            "url": "/en/news/thedanceofmyawakeningsoul",
+            "date": "2023-09-23 19:00:00",
+            "category": "ecstatic"
+        },
+        {
+            "title": "Trance Dance Croix ou Pile",
+            "description": "Healing trancedance in Saint-Sauveur (near Ronse)",
+            "url": "/en/news/trancedancecroixoupile",
+            "date": "2023-10-02 19:00:00",
+            "category": "trance"
+        },
+        {
+            "title": "Awakening Soul Trancedance",
+            "description": "Healing trancedance in the WestremChurch (Wetteren). <a href='/en/contact'>Contact Wouter</a> for more info.",
+            "url": "/en/contact",
+            "date": "2023-10-09 19:00:00",
+            "category": "trance"
+        },
+        {
+            "title": "New Moon Dance @ Simply Be",
+            "description": "Cacao ceremony followed by Ecstatic Dance.<br>More info soon.",
+            "url": "/en/ecstaticdance",
+            "date": "2023-10-15 14:45:00",
+            "category": "ecstatic"
+        },
+        {
+            "title": "Trance Dance Croix ou Pile",
+            "description": "More info soon about this healing trancedance in Saint-Sauveur near Ronse",
+            "url": "/en/news/trancedancecroixoupile",
+            "date": "2023-11-06 19:00:00",
+            "category": "trance"
+        },
+        {
+            "title": "Trance Dance Croix ou Pile",
+            "description": "Healing trancedance in Saint-Sauveur (near Ronse)",
+            "url": "/en/news/trancedancecroixoupile",
+            "date": "2023-12-04 19:00:00",
+            "category": "trance"
+        }
+    ]
+}

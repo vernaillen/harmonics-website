@@ -1,71 +1,39 @@
 <script setup lang="ts">
 export interface Props {
   src: string
-  height?: number
-  cssClass?: string
+  title?: string
   shadow?: boolean
+  thumbnail?: string
 }
 
 withDefaults(defineProps<Props>(), {
-  height: 250,
-  cssClass: 'floatRight',
-  shadow: true
+  shadow: true,
+  title: 'Youtube video',
+  thumbnail: undefined
 })
 </script>
 
 <template>
-  <div :class="cssClass">
-    <iframe
+  <div
+    :class="shadow ? 'shadow-lg' : ''"
+    class="rounded-xl overflow-hidden"
+  >
+    <LazyYoutubeVideo
       :src="src"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-      class="absolute top-0 left-0 w-full h-full rounded-md"
-      :class="shadow ? 'shadow-md shadow-gray-400' : ''"
+      :alt="title"
+      :webp="true"
+      :thumbnail="thumbnail ? { webp: thumbnail } : undefined"
+      class="rounded-xl scale-[101%] overflow-hidden"
     />
   </div>
+  <p class="caption text-xs text-center mt-1">
+    <span>{{ title }}</span>
+  </p>
 </template>
-
-<style scoped>
-.prose .floatLeft,
-.prose .left,
-.prose .floatRight {
-  position: relative;
-  max-width: 50%;
-  width: 50%;
-  height: 0;
-  padding-bottom: 28.13%;
-  margin-bottom: 10px;
+<style>
+.prose .y-video__media--type--img {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.prose .floatLeft {
-  float: left;
-  margin-right: 15px;
-  padding-right: 0;
-}
-.prose .left {
-  position: relative;
-  margin-right: 15px;
-  padding-right: 0;
-}
-.prose .floatRight {
-  position: relative;
-  float: right;
-  margin-left: 15px;
-  padding-left: 0;
-}
-
-@media (max-width: 540px) {
-  .prose .left,
-  .prose .right
-  .prose .floatLeft,
-  .prose .floatRight {
-    float: none;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 58.25%;
-  }
-}
 </style>

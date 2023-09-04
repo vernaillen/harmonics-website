@@ -1,17 +1,24 @@
 <script setup lang="ts">
-const iconClass = 'hover:text-primary text-gray-500 ml-2'
+const appConfig = useAppConfig()
+const socials = appConfig.socials
 </script>
 
 <template>
-  <div id="socials" class="min-w-[100px] pt-1 xl:pr-0 mr-[-10px]">
-    <NuxtLink aria-label="Instagram" href="https://www.instagram.com/harmonics.be/" target="_blank" rel="me">
-      <Icon name="ph:instagram-logo" :class="iconClass" size="22" />
-    </NuxtLink>
-    <NuxtLink aria-label="Facebook" href="https://www.facebook.com/harmonics.be/" target="_blank" rel="me">
-      <Icon name="ph:facebook-logo" :class="iconClass" size="22" />
-    </NuxtLink>
-    <NuxtLink aria-label="WhatsApp" href="https://wa.me/+32473344656" target="_blank" rel="me">
-      <Icon name="logos:whatsapp-icon" :class="iconClass" size="22" />
+  <div id="socials" class="overflow-hidden inline-flex">
+    <NuxtLink
+      v-for="social, index in socials"
+      :key="index"
+      :href="social?.url"
+      :aria-label="social?.name ? social?.name : 'Social icon'"
+      target="_blank"
+      rel="me"
+    >
+      <UButton
+        v-if="social?.icon"
+        :aria-label="social.name"
+        :icon="social?.icon"
+        size="xs"
+      />
     </NuxtLink>
   </div>
 </template>
