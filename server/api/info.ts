@@ -1,14 +1,8 @@
-import { name, version } from '../../package.json'
-
-export default defineEventHandler(() => {
-  const config = useRuntimeConfig()
+export default defineEventHandler((event) => {
+  const ipHeader = getHeader(event, 'x-forwarded-for')
+  const ip = ipHeader ? ipHeader.split(',')[0] : '-'
 
   return {
-    name,
-    version,
-    vercel: {
-      region: config.region,
-      env: process.env.VERCEL_ENV
-    }
+    ip
   }
 })

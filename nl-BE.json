@@ -1,0 +1,89 @@
+{
+    "language": "taal",
+    "pageNotFound": "Pagina niet gevonden",
+    "website": {
+        "hostname": "https://harmonics.be",
+        "title": "Harmonics",
+        "description": "Genezende kracht van Geluid, Muziek en Dans",
+        "noJavaScript": "JavaScript is nodig"
+    },
+    "category": {
+        "ecstatic": "Ecstatic Dance",
+        "music": "Muziek",
+        "sound": "Sound Healing",
+        "trance": "Trancedans"
+    },
+    "nav": {
+        "gotopage": "Ga naar pagina ",
+        "back": "Terug"
+    },
+    "news": {
+        "title": "Nieuws",
+        "readmore": "lees meer {locale}",
+        "findoutmore": "ontdek meer",
+        "by": "door",
+        "next": "volgende nieuwsbericht",
+        "previous": "vorige nieuwsbericht",
+        "more": "Meer nieuws",
+        "overview": "Nieuws overzicht",
+        "backtooverview": "terug naar het nieuws overzicht",
+        "recent": "Nieuws",
+        "archive": "Nieuws archief"
+    },
+    "footer": {
+        "findus": "Je kan ons ook vinden op deze platformen",
+        "copyright": "©",
+        "privacypolicy": "Privacybeleid",
+        "cookiepolicy": "Cookiebeleid",
+        "cookiesettings": "instellingen"
+    },
+    "cookies": {
+        "bannerTitle": "Geserveerd met liefde en cookies",
+        "bannerDesc1": "Zo kunnen we jouw website ervaring optimaliseren.",
+        "bannerDesc2": "Lees er meer over in het",
+        "settings": "Pas jouw cookie instellingen aan"
+    },
+    "dates": {
+        "published": "gepubliceerd op",
+        "lastUpdated": "laatst aangepast op"
+    },
+    "dwarsligger": {
+        "name": "vzw Dwarsligger",
+        "addressLine1": "Gontrode Heirweg 141",
+        "addressLine2": "9090 Melle, België",
+        "gpsInfo": "best 'vzw Dwarsligger' intikken in de gps"
+    },
+    "mailinglist": {
+        "name": "Harmonics nieuwsbrief",
+        "desc": "Blijf op de hoogte van de komende ecstatic dance & trance dance sessies:",
+        "subscribe": "Schrijf nu in",
+        "opensmailchimp": "(opent de mailchimp registratie pagina)"
+    },
+    "politePopup": {
+        "thanks": "Bedankt voor je bezoekje aan ",
+        "question": "Heb je graag dat we jou via e-mail op de hoogte houden van de komende dans sessies?",
+        "yes": "Graag!",
+        "no": "Hoeft niet"
+    },
+    "sessions": {
+        "planned": "Geplande {category} sessies najaar 2023",
+        "singleCategory": "Dit zijn enkel de geplande {category} sessies.",
+        "allCats": "Een overzicht vinden van alle sessies kan je vinden op de ",
+        "newsPage": "nieuws pagina"
+    },
+    "contact": {
+        "name": "Naam",
+        "email": "E-mail adres",
+        "message": "Jouw bericht aan Harmonics",
+        "submit": "Verstuur",
+        "required": "verplicht veld",
+        "invalidEmail": "ongeldig e-mail adres",
+        "minchars": "geef minstens {min} karakters in",
+        "error": "Er gebeurde een onverwachte fout: ",
+        "subjectForWouter": "Bericht van ",
+        "subjectForSender": "Bedankt voor je bericht aan Harmonics",
+        "bodyForSender": "Dit is een automatisch mailtje ter bevestiging dat jouw bericht naar Harmonics met succes verstuurd werd.\n\nTot snel!\n\nHartegroet,\nWouter",
+        "sending": "Bezig met versturen mail...",
+        "thankyou": "Bedankt voor je berichtje! We nemen zo snel mogelijk contact met je op."
+    }
+}

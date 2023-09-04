@@ -1,28 +1,29 @@
 <script setup lang="ts">
-import VueEasyLightbox from 'vue-easy-lightbox'
-import { useLightbox } from '@/stores/lightbox'
 
 const lightbox = useLightbox()
 function handleHide () {
-  lightbox.hide()
+  lightbox.visible.value = false
 }
 </script>
 
 <template>
-  <VueEasyLightbox
+  <vue-easy-lightbox
     loop
     move-disabled
-    :index="lightbox.index"
-    :visible="lightbox.visible"
+    :index="lightbox.index.value"
+    :visible="lightbox.visible.value"
     :imgs="lightbox.images"
     @hide="handleHide"
   >
     <template #toolbar />
-  </VueEasyLightbox>
+  </vue-easy-lightbox>
 </template>
 
-<style scoped>
+<style>
 .vel-modal {
-  background: rgba(0, 0, 0, 0.7);
+  @apply bg-primary-50 bg-opacity-90 dark:bg-[#000000] dark:bg-opacity-80 backdrop-blur-xl;
+}
+.vel-icon {
+  @apply fill-[#000000] dark:fill-white;
 }
 </style>

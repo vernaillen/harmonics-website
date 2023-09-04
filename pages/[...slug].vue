@@ -1,101 +1,103 @@
 <script setup lang="ts">
-
-const { page } = useContent()
-const { t } = useI18n()
-const localePath = useLocalePath()
-
-let title = t('website.title')
-let ogImage = '/harmonics.png'
-if (page.value && page.value.title) { title = `${page.value.title} | ${t('website.title')}` }
-if (page.value && page.value.ogImage) { ogImage = t('website.hostname') + page.value.ogImage } else if (page.value && page.value.thumbnail) { ogImage = t('website.hostname') + page.value.thumbnail }
-
-if (page.value) {
-  useHead({
-    title,
-    meta: [
-      {
-        property: 'og:title',
-        content: title
-      },
-      {
-        property: 'og:image',
-        content: ogImage
-      }
-    ]
-  })
-} else {
-  setResponseStatus(404)
-}
-
 const route = useRoute()
-const { trigger } = usePolitePopup()
-if (route.path !== '/contact' && route.path !== '/en/contact') { trigger() }
+const localePath = useLocalePath()
+const { locale } = useI18n()
+const page = await queryContent(route.path).findOne()
+
+const swipableContainer = ref<HTMLElement | null>(null)
+
+const [prev, next] = await queryContent(localePath('/news'))
+  .where({ isNews: true, language: locale.value })
+  .sort({ _file: 1 })
+  .findSurround(route.path)
+const { isSwiping, direction, lengthX } = useSwipe(swipableContainer)
+
+watch(isSwiping, (val) => {
+  if (!val && Math.abs(lengthX.value) > 100) {
+    if (direction.value === 'left') {
+      if (next) { navigateTo(next._path) }
+    } else if (direction.value === 'right') {
+      if (prev) { navigateTo(prev._path) }
+    }
+  }
+})
+const routePath = ref('')
+onMounted(() => {
+  routePath.value = route.path
+})
+
+const ogImageOptions = {
+  component: 'OGImageHome'
+  /* component: 'OGImageContent',
+  lang: locale,
+  path: route.path */
+}
+// a. Use the Composition API
+defineOgImage(ogImageOptions)
 </script>
 
 <template>
   <div>
     <NuxtLayout>
-      <div class="container mx-auto px-4 pt-[80px] mt-[30px] sm:mt-[68px]">
-        <div class="grid grid-cols-4">
-          <div class="col-span-4 md:col-span-3 px-4 md:px-6 lg:px-8 mb-10">
-            <div v-if="page" class="prose m-auto">
-              <div v-if="page.title && !page.hideTitle" class="flex flex-wrap">
-                <h1>
-                  {{ page.title }}
-                </h1>
-              </div>
-              <MarkdownEditedDates v-if="page && !page.hideCreatedAndUpdatedDates" :post="page" />
-              <div v-if="page.show_desc" class="flex flex-wrap">
-                <h4>
-                  {{ page.desc }}
-                </h4>
-              </div>
-              <div v-if="page.subtitle" class="flex flex-wrap">
-                <em>
-                  {{ page.subtitle }}
-                </em>
-              </div>
-              <div
-                v-if="page.image && !page.imageFloatingRight"
+      <OgImage v-bind="ogImageOptions" />
+      <main class="flex-grow">
+        <HeaderImage
+          :lang="locale"
+          :page="page"
+          class="w-full container mx-auto pb-6"
+        />
+        <div class="w-full container mx-auto py-4">
+          <div
+            ref="swipableContainer"
+            class="prose prose-primary dark:prose-invert"
+          >
+            <NextPreviousPost v-if="isNews(route.path)" :path="route.path" :lang="locale" :news-path="localePath('/news')" />
+            <div class="slide-enter-content">
+              <ContentDoc
+                v-if="isHydrated && routePath === route.path"
+                v-slot="{ doc }"
+                :path="routePath"
               >
-                <NuxtImg
-                  loading="lazy"
-                  :sizes="page.imageSizes ? page.imageSizes : ''"
-                  :height="page.imageHeight ? page.imageHeight : '400'"
-                  :width="page.imageWidth ? page.imageWidth : ''"
-                  :src="page.image"
-                  format="webp"
-                  fit="cover"
-                  class="rounded-md shadow-md shadow-gray-400"
-                  alt="article image"
+                <ContentRenderer
+                  :value="doc"
+                  class="mainContent pt-3"
+                  :class="doc && doc.category ? 'category-' + doc.category : ''"
                 />
-              </div>
-              <article>
-                <ContentDoc>
-                  <template #default="{ doc }">
-                    <div>
-                      <FloatingImage v-if="page.imageFloatingRight" :src="page.image" :width="page.imageWidth ? page.imageWidth : 600" />
-                      <ContentRenderer :value="doc" />
-                    </div>
-                  </template>
-                </ContentDoc>
-              </article>
-            </div>
-            <div v-else class="prose m-auto">
-              <article>
-                <ContentDoc :path="localePath('/404')" />
-              </article>
+              </ContentDoc>
+              <ContentSkeleton v-else />
             </div>
           </div>
-          <aside class="hidden md:col-span-1 md:flex md:flex-col">
-            <div id="newsletter" class="sticky top-36 right-10 block md:w-1/4 px-4 sm:px-6 lg:px-8 mb-5 prose">
-              <MailchimpComponent />
-            </div>
-          </aside>
         </div>
-
-        <NextPreviousPost />
-      </div>
+      </main>
     </NuxtLayout>
   </div>
 </template>
+
+<style>
+.prose .col-left {
+  margin-bottom: 50px;
+}
+.prose .mainContent > div.col-left > :first-child,
+.prose .mainContent > div.col-right > :first-child,
+.prose .iub_content > :first-child,
+.prose .iubenda_legal_document > :first-child {
+  margin-top: 0;
+}
+@media (min-width: 640px) {
+  .prose .col-left,
+  .prose .col-right {
+    width: 50%;
+    float: left;
+    margin-bottom: 40px;
+  }
+  .prose .col-left {
+    padding-right: 15px;
+  }
+  .prose .col-right {
+    padding-left: 15px;
+  }
+  .prose .col-clear {
+    clear: left;
+  }
+}
+</style>

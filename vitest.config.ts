@@ -1,10 +1,16 @@
-import { defineConfig } from 'vitest/config'
+import { fileURLToPath } from 'node:url'
+import { defineVitestConfig } from 'nuxt-vitest/config'
 
-export default defineConfig({
+export default defineVitestConfig({
   test: {
-    environment: 'jsdom',
-    deps: {
-      inline: [/@nuxt\/test-utils-edge/]
+    dir: 'tests',
+    coverage: {
+      reportsDirectory: 'coverage'
+    },
+    environmentOptions: {
+      nuxt: {
+        rootDir: fileURLToPath(new URL('./', import.meta.url))
+      }
     }
   }
 })

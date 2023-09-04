@@ -1,9 +1,14 @@
 <script setup lang="ts">
-defineProps<{ nr: string }>()
+defineProps<{ nr: string, size?: string }>()
 </script>
 
 <template>
-  <NuxtLink :href="`https://wa.me/${nr}`" target="_blank">
-    <Icon name="logos:whatsapp-icon" class="hover:text-gray-500" size="24" />
-  </NuxtLink>
+  <UButton
+    :size="size ? size : 'xs'"
+    icon="i-logos-whatsapp-icon"
+    :to="`https://wa.me/${nr}`"
+    target="_blank"
+    aria-label="contact me on WhatsApp"
+    class="!mx-0"
+  />
 </template>

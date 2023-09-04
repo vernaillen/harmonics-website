@@ -1,0 +1,89 @@
+{
+    "language": "language",
+    "pageNotFound": "Page not found",
+    "website": {
+        "hostname": "https://harmonics.be/en",
+        "title": "Harmonics",
+        "description": "Healing power of Sound, Music & Dance",
+        "noJavaScript": "JavaScript is required"
+    },
+    "category": {
+        "ecstatic": "Ecstatic Dance",
+        "music": "Music",
+        "sound": "Sound Healing",
+        "trance": "Trance Dance"
+    },
+    "nav": {
+        "gotopage": "Go to page ",
+        "back": "Back"
+    },
+    "news": {
+        "title": "News",
+        "readmore": "read more",
+        "findoutmore": "find out more",
+        "by": "by",
+        "next": "next news item",
+        "previous": "previous news item",
+        "more": "More news",
+        "overview": "News overview",
+        "backtooverview": "back to the news overview",
+        "recent": "News",
+        "archive": "News archive"
+    },
+    "footer": {
+        "findus": "You can find us on any of these platforms.",
+        "copyright": "©",
+        "privacypolicy": "Privacy policy",
+        "cookiepolicy": "Cookie policy",
+        "cookiesettings": "settings"
+    },
+    "cookies": {
+        "bannerTitle": "Served with love & cookies",
+        "bannerDesc1": "We use cookies to improve your website experience.",
+        "bannerDesc2": "Read more about it in the",
+        "settings": "Adjust your cookie settings"
+    },
+    "dates": {
+        "published": "published on",
+        "lastUpdated": "last edited on"
+    },
+    "dwarsligger": {
+        "name": "vzw Dwarsligger",
+        "addressLine1": "Gontrode Heirweg 141",
+        "addressLine2": "9090 Melle, Belgium",
+        "gpsInfo": "best is to type 'vzw Dwarligger' in the gps"
+    },
+    "mailinglist": {
+        "name": "Harmonics newsletter",
+        "desc": "Stay up to date about the upcoming ecstatic dance & trance dance sessions:",
+        "subscribe": "Subscribe now",
+        "opensmailchimp": "(opens the mailchimp registration page)"
+    },
+    "politePopup": {
+        "thanks": "Thanks for visiting ",
+        "question": "Do you want us to keep you informed via e-mail about upcoming dance sessions?",
+        "yes": "Yes please!",
+        "no": "No need"
+    },
+    "sessions": {
+        "planned": "Planned {category} sessions autumn 2023",
+        "singleCategory": "These are only the planned {category} sessions. You can find an overview of all sessions on the ",
+        "newsPage": "news page"
+    },
+    "contact": {
+        "name": "Name",
+        "email": "Email address",
+        "message": "Your message to Harmonics",
+        "submit": "Send",
+        "required": "mandatory field",
+        "invalidEmail": "invalid email address",
+        "minchars": "minimum {min} characters",
+        "success": "Thanks for your message! We'll try to contact you as soon as possible.",
+        "error": "An unexpected error occurred: ",
+        "subjectForWouter": "Message from ",
+        "subjectForSender": "Thanks for contacting Harmonics",
+        "bodyForSender": "This is an automated email to confirm that your message to Harmonics has been sent succesfully.\n\nWarm greetings,\nWouter",
+        "sending": "Sending your email...",
+        "thankyou": "Thanks for your message. We'll contact you as soon as possible."
+    }
+}

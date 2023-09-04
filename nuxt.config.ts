@@ -1,77 +1,82 @@
-import { i18n } from './config/i18n'
-import { iubenda } from './config/iubenda'
-
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  runtimeConfig: {
-    iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
-    iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup',
-    public: {
-      googleAW: {
-        id: 'AW-1009002362',
-        initialConsent: true
-      }
-    }
-  },
 
   extends: [
     '@vernaillen/nuxt-base-layer'
   ],
 
-  app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
-  },
-
   modules: [
-    '@vueuse/nuxt',
+    // '@dargmuesli/nuxt-cookie-control',
     '@nuxt/content',
     '@nuxt/image',
-    '@nuxtjs/google-fonts',
+    '@nuxthq/ui',
+    '@nuxthq/studio',
     '@nuxtjs/i18n',
-    '@nuxtjs/plausible',
-    '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
-    'nuxt-icon'
+    '@vueuse/nuxt',
+    'nuxt-og-image',
+    'nuxt-time',
+    'nuxt-vitest',
+    [
+      '@twicpics/components/nuxt3',
+      {
+        domain: 'https://vernaillen.twic.pics',
+        prefix: 'harmonics.be',
+        anticipation: 0.5,
+        step: 100
+      }
+    ]
   ],
 
-  experimental: {
-    inlineSSRStyles: false
+  runtimeConfig: {
+    iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
+    iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup'
+  },
+
+  ogImage: {
+    fonts: [
+      // will load this font from Google fonts
+      'Montserrat:500',
+      'Montserrat:600',
+      'Montserrat:700'
+    ]
   },
 
   css: [
-    '@/assets/css/tailwind.css',
-    '@/assets/css/markdown.css',
-    '@/assets/css/prose.css',
-    'animate.css/animate.min.css'
+    '@twicpics/components/style.css',
+    '~/assets/css/main.css',
+    '~/assets/css/lazyYoutubeVideo.css'
   ],
 
-  image: {
-    provider: 'twicpics',
-    twicpics: {
-      baseURL: 'https://vernaillen.twic.pics/harmonics'
+  postcss: {
+    plugins: {
+      cssnano: true
     }
   },
 
-  googleFonts: {
-    download: true,
-    preconnect: true,
-    display: 'swap',
-    families: {
-      Ubuntu: [400, 500, 700]
+  svgo: {
+    svgo: true,
+    autoImportPath: './assets/svg/',
+
+    defaultImport: 'component',
+    svgoConfig: {
+      multipass: true
     }
   },
 
-  plausible: {
-    apiHost: 'https://harmonics.be/plio'
+  ui: {
+    icons: ['circle-flags', 'heroicons', 'logos', 'mdi', 'noto', 'ph', 'simple-icons']
+  },
+
+  colorMode: {
+    preference: 'light',
+    classSuffix: ''
   },
 
   content: {
-    documentDriven: true,
     markdown: {
       anchorLinks: false,
       remarkPlugins: [
-        'remark-breaks',
-        'remark-directive-rehype'
+        'remark-breaks'
       ],
       rehypePlugins: {
         'rehype-external-links': {
@@ -81,14 +86,65 @@ export default defineNuxtConfig({
     }
   },
 
-  i18n,
-  iubenda,
+  i18n: {
+    detectBrowserLanguage: {
+      useCookie: true,
+      redirectOn: 'root'
+    },
+    locales: [
+      { code: 'nl', iso: 'en-BE', file: 'nl-BE.json' },
+      { code: 'en', iso: 'en-US', file: 'en-US.json' }
+    ],
+    lazy: false,
+    defaultLocale: 'nl',
+    strategy: 'prefix_except_default'
+  },
 
-  generate: {
-    routes: ['/', '/thanks']
+  image: {
+    provider: 'twicpics',
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dys7j44q8/image/upload/harmonics/'
+    },
+    twicpics: {
+      baseURL: 'https://vernaillen.twic.pics/harmonics.be'
+    }
+  },
+
+  /* cookieControl: {
+    cookieNameIsConsentGiven: 'cookieConsentGiven',
+    cookieNameCookiesEnabledIds: 'allCookiesAccepted',
+    isCssEnabled: true,
+    colors: false,
+    locales: ['en', 'nl'],
+    localeTexts: {
+      nl: {
+        declineAll: 'Afwijzen'
+      }
+    }
+  }, */
+
+  sourcemap: false,
+
+  typescript: {
+    strict: true
   },
 
   devtools: {
-    enabled: false
-  }
+    enabled: true,
+    timeline: {
+      enabled: true
+    },
+    vscode: {
+      enabled: true,
+      startOnBoot: true
+    }
+  },
+  // debug: true,
+
+  plugins: [
+    '~/plugins/pageHooks.ts',
+    '~/plugins/lazyYoutubeVideo.ts',
+    '~/plugins/hydration.client.ts',
+    '~/plugins/scrollEvents.client.ts'
+  ]
 })

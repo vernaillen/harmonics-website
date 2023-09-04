@@ -5,10 +5,9 @@ node_modules
 .cache
 .output
 .env
-.env.development.local
-.netlify
 dist
-coverage/
-cypress/screenshots/
-cypress/cache/
 .vercel
+.unlighthouse
+coverage
+cypress/videos/
+cypress/screenshots/
