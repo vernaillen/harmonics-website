@@ -27,7 +27,7 @@
     "fulltest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build"
   },
   "devDependencies": {
-    "@dargmuesli/nuxt-cookie-control": "^6.4.1",
+    "@dargmuesli/nuxt-cookie-control": "^6.4.2",
     "@iconify-json/circle-flags": "^1.1.41",
     "@iconify-json/logos": "^1.1.35",
     "@iconify-json/mdi": "^1.1.54",
@@ -52,7 +52,7 @@
     "dayjs": "^1.11.9",
     "eslint": "^8.48.0",
     "happy-dom": "^10.11.2",
-    "nuxt": "^3.7.0",
+    "nuxt": "^3.7.1",
     "nuxt-og-image": "^2.0.24",
     "nuxt-time": "^0.1.1",
     "nuxt-vitest": "^0.10.4",
