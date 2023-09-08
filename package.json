@@ -51,7 +51,7 @@
     "cypress": "^13.1.0",
     "dayjs": "^1.11.9",
     "eslint": "^8.48.0",
-    "happy-dom": "^10.11.2",
+    "happy-dom": "^11.0.0",
     "nuxt": "^3.7.1",
     "nuxt-og-image": "^2.0.25",
     "nuxt-time": "^0.1.1",
