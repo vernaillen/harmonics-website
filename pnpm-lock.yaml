@@ -68,8 +68,8 @@ devDependencies:
     specifier: 8.0.0-rc.3
     version: 8.0.0-rc.3(vue-router@4.2.4)(vue@3.3.4)
   '@nuxtjs/plausible':
-    specifier: ^0.2.1
-    version: 0.2.1
+    specifier: ^0.2.3
+    version: 0.2.3
   '@types/node':
     specifier: ^20.5.9
     version: 20.5.9
@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^0.2.20
     version: 0.2.20(nuxt@3.7.1)(vue@3.3.4)
   '@vitest/coverage-v8':
-    specifier: ^0.34.3
-    version: 0.34.3(vitest@0.33.0)
+    specifier: ^0.34.4
+    version: 0.34.4(vitest@0.33.0)
   '@vueuse/nuxt':
     specifier: ^10.4.1
     version: 10.4.1(nuxt@3.7.1)(vue@3.3.4)
@@ -2060,8 +2060,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxtjs/plausible@0.2.1:
-    resolution: {integrity: sha512-1AyV9woFeZKBhwYy05S7NBk4jeAXzWcF/SIK/S/GZ8C86G8x7f2hR2eJi9FRRQYGwHutBx2guU4tZAW4J71Azg==}
+  /@nuxtjs/plausible@0.2.3:
+    resolution: {integrity: sha512-HGZA70ad6IgaP0bN2N3sEsBxURZfUb8HMMxQ7s/Iqw1U8snBsByAEaIxD0eafWLOvwNckHMTYzCIl+Xs6ZiXSA==}
     dependencies:
       '@nuxt/kit': 3.7.1
       defu: 6.1.2
@@ -3093,8 +3093,8 @@ packages:
       vue: 3.3.4
     dev: true
 
-  /@vitest/coverage-v8@0.34.3(vitest@0.33.0):
-    resolution: {integrity: sha512-bNjP0RHe8UxdklCigZlk6FVCNbOiqVjWnpZJ1zKixpvb7YHSaZiN/w+mzpvXIoqyxyePzKC+L+G1oj7SB20PJw==}
+  /@vitest/coverage-v8@0.34.4(vitest@0.33.0):
+    resolution: {integrity: sha512-TZ5ghzhmg3COQqfBShL+zRQEInHmV9TSwghTdfkHpCTyTOr+rxo6x41vCNcVfWysWULtqtBVpY6YFNovxnESfA==}
     peerDependencies:
       vitest: '>=0.32.0 <1'
     dependencies:
