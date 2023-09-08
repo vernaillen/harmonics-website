@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     // '@dargmuesli/nuxt-cookie-control',
     '@nuxt/content',
     '@nuxt/image',
-    '@nuxthq/ui',
+    '@nuxt/ui',
     '@nuxthq/studio',
     '@nuxtjs/i18n',
     '@nuxtjs/plausible',

@@ -29,7 +29,7 @@ const items = [
 
 <template>
   <div class="inline-flex relative">
-    <UDropdown :items="items" class="absolute -top-[4px]" :class="small ? '-right-3' : ''">
+    <UDropdown :items="items" class="-top-[4px]" :class="small ? '-right-3' : ''">
       <UButton size="xs" :label="locale.toUpperCase()">
         <template #trailing>
           <UIcon :name="'i-circle-flags-' + locale" class="opacity-80 hover:opacity-100" :class="small ? 'hidden sm:inline-flex ' : ''" />

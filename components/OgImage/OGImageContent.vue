@@ -35,7 +35,7 @@ const category = 'trance'
         <div
           v-if="url"
           class="m-5 p-5 rounded-xl shadow-lg"
-          :style="'background-image: url(https://concept.harmonics.be' + url + '); background-size: cover; background-position: center; background-repeat: no-repeat;'"
+          :style="'background-image: url(https://harmonics.be' + url + '); background-size: cover; background-position: center; background-repeat: no-repeat;'"
         >
           <h1
             class="font-mic32 text-white text-6xl mb-12 mx-auto"

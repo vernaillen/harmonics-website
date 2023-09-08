@@ -1,6 +1,6 @@
 export default defineAppConfig({
   github: {
-    repo: 'vernaillen/harmonics.be'
+    repo: 'vernaillen/harmonics-website'
   },
   instagram: {
     enabled: false
