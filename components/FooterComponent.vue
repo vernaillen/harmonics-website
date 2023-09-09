@@ -21,8 +21,8 @@ const currentYear: number = new Date().getFullYear()
             {{ t('footer.privacypolicy') }}
           </NuxtLink>
           -
-          <NuxtLink :to="localePath('/cookiepolicy')" class="text-primary-500 dark:text-primary-200" :aria-label="t('footer.cookiepolicy')" />
-          {{ t('footer.cookiepolicy') }}
+          <NuxtLink :to="localePath('/cookiepolicy')" class="text-primary-500 dark:text-primary-200" :aria-label="t('footer.cookiepolicy')">
+            {{ t('footer.cookiepolicy') }}
           </NuxtLink>
           <span v-if="false">
             & {{ t('footer.cookiesettings') }}: <MyCookieControl />
