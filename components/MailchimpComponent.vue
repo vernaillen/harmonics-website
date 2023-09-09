@@ -13,7 +13,7 @@ defineProps({
   <div v-if="appConfig.mailchimpLink" class="mb-8">
     <UCard>
       <h2 class="mt-0 text-primary-500 dark:text-primary-200">
-        <NuxtLink :to="appConfig.mailchimpLink" target="_blank">
+        <NuxtLink :to="appConfig.mailchimpLink" target="_blank" :aria-label="t('mailinglist.name', 1, { locale: lang })">
           {{ t('mailinglist.name', 1, { locale: lang }) }}
         </NuxtLink>
       </h2>

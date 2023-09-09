@@ -100,7 +100,7 @@ onMounted(() => {
         -mt-[25px] sm:-mt-[30px] lg:-mt-[40px]
         z-50 mx-auto top-[66px] sm:top-[70px] left-0 right-0"
       >
-        <NuxtLink :to="lang === 'nl' ? '/' : '/' + lang">
+        <NuxtLink :to="lang === 'nl' ? '/' : '/' + lang" aria-label="Harmonics home">
           <CategoryImage
             :category="page && page.category ? page.category : 'general'"
             :show-detail="true"

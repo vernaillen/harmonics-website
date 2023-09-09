@@ -14,7 +14,7 @@ const { data: posts } = await useAsyncData('posts', () =>
   <section id="news">
     <div class="container pb-10 mx-auto px-0 text-center">
       <h1>
-        <NuxtLink :href="localePath('/news')">
+        <NuxtLink :href="localePath('/news')" :aria-label="t('news.recent')">
           {{ t('news.recent') }}
         </NuxtLink>
       </h1>

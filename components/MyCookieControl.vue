@@ -34,7 +34,7 @@ watch(
             <p class="dark:text-gray-200">
               {{ t('cookies.bannerDesc1') }}<br>
               {{ t('cookies.bannerDesc2') }}
-              <NuxtLink :to="localePath('/cookiepolicy')" class="text-primary-500 dark:text-primary-200">
+              <NuxtLink :to="localePath('/cookiepolicy')" class="text-primary-500 dark:text-primary-200" :aria-label="t('footer.cookiepolicy')">
                 {{ t('footer.cookiepolicy') }}
               </NuxtLink>.
             </p>
@@ -49,7 +49,7 @@ watch(
           <p class="text-gray-200">
             {{ t('cookies.bannerDesc1') }}<br>
             {{ t('cookies.bannerDesc2') }}
-            <NuxtLink :to="localePath('/cookiepolicy')" class="text-primary-500 dark:text-primary-200">
+            <NuxtLink :to="localePath('/cookiepolicy')" class="text-primary-500 dark:text-primary-200" :aria-label="t('footer.cookiepolicy')">
               {{ t('footer.cookiepolicy') }}
             </NuxtLink>
           </p>

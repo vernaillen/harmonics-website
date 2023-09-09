@@ -69,7 +69,7 @@ const filteredSessions = computed(() => {
       <p v-if="categoryName" class="text-xs">
         {{ t('sessions.singleCategory', { category: categoryName }) }} <br>
         {{ t('sessions.allCats') }}
-        <NuxtLink :to="localePath('/news')">
+        <NuxtLink :to="localePath('/news')" :aria-label="t('sessions.newsPage')">
           {{ t('sessions.newsPage') }}
         </NuxtLink>
       </p>

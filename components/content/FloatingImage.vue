@@ -36,7 +36,7 @@ const imgClass = computed(() => {
       refit
     />
     <p v-if="caption" class="caption text-xs text-center mt-0">
-      <NuxtLink v-if="captionUrl" :href="captionUrl" target="_blank" :alt="caption" :title="caption">
+      <NuxtLink v-if="captionUrl" :href="captionUrl" target="_blank" :aria-label="caption">
         {{ caption }}
       </NuxtLink>
       <span v-else>{{ caption }}</span>
