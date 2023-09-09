@@ -100,6 +100,7 @@ export default defineNuxtConfig({
       { code: 'nl', iso: 'en-BE', file: 'nl-BE.json' },
       { code: 'en', iso: 'en-US', file: 'en-US.json' }
     ],
+    langDir: 'locales/',
     lazy: false,
     defaultLocale: 'nl',
     strategy: 'prefix_except_default'
