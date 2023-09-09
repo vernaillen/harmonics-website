@@ -21,9 +21,9 @@
     "cy:install": "cypress install",
     "cy:dev": "start-server-and-test dev http://localhost:3000 'cypress open --config baseUrl=http://localhost:3000'",
     "cy:local": "start-server-and-test preview http://localhost:3000 'cypress run --config baseUrl=http://localhost:3000'",
-    "cy:prod": "cypress run --config baseUrl=https://concept.harmonics.be",
+    "cy:prod": "cypress run --config baseUrl=https://harmonics.be",
     "unlighthouse:dev": "start-server-and-test preview http://localhost:3000 'npx unlighthouse --site http://localhost:3000'",
-    "unlighthouse:prod": "npx unlighthouse --site https://harmonics.vercel.app",
+    "unlighthouse:prod": "npx unlighthouse --site https://harmonics.be",
     "fulltest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build"
   },
   "devDependencies": {
