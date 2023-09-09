@@ -36,7 +36,7 @@ const filteredSessions = computed(() => {
         <div class="flex" :class="session.category ? 'category-' + session.category : ''">
           <div class="flex-none w-10 h-10 mb-3">
             <div class="h-[25px] w-[25px] rounded-full overflow-hidden">
-              <NuxtLink :to="session.url">
+              <NuxtLink :to="session.url" :aria-label="sessions.title">
                 <CategoryImage
                   :category="session.category"
                   :alt="session.category"
@@ -46,7 +46,7 @@ const filteredSessions = computed(() => {
             </div>
           </div>
           <div class="grow text-trance-400 dark:text-primary-100">
-            <NuxtLink :to="session.url">
+            <NuxtLink :to="session.url" :aria-label="sessions.title">
               {{ session.title }}
             </NuxtLink>
             <div class="mt-2 text-xs">
