@@ -42,6 +42,7 @@ jobs:
             - content
             - composables
             - layouts
+            - locales
             - pages
             - plugins
             - server
