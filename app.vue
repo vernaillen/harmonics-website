@@ -70,6 +70,7 @@ if (route.path !== '/contact' && route.path !== '/en/contact') { trigger() }
     </button>
   </div>
   <EasyLightbox />
+  <PolitePopup />
 </template>
 
 <style>
