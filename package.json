@@ -63,7 +63,7 @@
   "dependencies": {
     "@twicpics/components": "^0.22.1",
     "resend": "^1.0.0",
-    "valibot": "^0.14.0",
+    "valibot": "^0.15.0",
     "vue-easy-lightbox": "^1.16.0",
     "yup": "^1.2.0"
   },

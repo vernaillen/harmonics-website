@@ -12,8 +12,8 @@ dependencies:
     specifier: ^1.0.0
     version: 1.0.0
   valibot:
-    specifier: ^0.14.0
-    version: 0.14.0
+    specifier: ^0.15.0
+    version: 0.15.0
   vue-easy-lightbox:
     specifier: ^1.16.0
     version: 1.16.0(vue@3.3.4)
@@ -3955,6 +3955,7 @@ packages:
 
   /b4a@1.6.4:
     resolution: {integrity: sha512-fpWrvyVHEKyeEvbKZTVOeZF3VSKKWtJxFIxX/jaVPf+cLbGUSitjb49pHLqPV2BUNNZ0LcoeEGfE/YCpyDYHIw==}
+    requiresBuild: true
     dev: true
 
   /bail@2.0.2:
@@ -5317,6 +5318,7 @@ packages:
 
   /end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
+    requiresBuild: true
     dependencies:
       once: 1.4.0
     dev: true
@@ -6108,6 +6110,7 @@ packages:
 
   /fast-fifo@1.3.2:
     resolution: {integrity: sha512-/d9sfos4yxzpwkDkuN7k2SqFKtYNmCTzgfEpz82x34IM9/zc8KGxQoXg1liNC/izpRM/MBdt44Nmx41ZWqk+FQ==}
+    requiresBuild: true
     dev: true
 
   /fast-glob@3.3.1:
@@ -10933,6 +10936,7 @@ packages:
 
   /queue-tick@1.0.1:
     resolution: {integrity: sha512-kJt5qhMxoszgU/62PLP1CJytzd2NKetjSRnyuj31fDd3Rlcz3fzlFdFLD1SItunPwyqEOkca6GbV612BWfaBag==}
+    requiresBuild: true
     dev: true
 
   /queue@6.0.2:
@@ -11941,6 +11945,7 @@ packages:
 
   /streamx@2.15.1:
     resolution: {integrity: sha512-fQMzy2O/Q47rgwErk/eGeLu/roaFWV0jVsogDmrszM9uIw8L5OA+t+V93MgYlufNptfjmYR1tOMWhei/Eh7TQA==}
+    requiresBuild: true
     dependencies:
       fast-fifo: 1.3.2
       queue-tick: 1.0.1
@@ -13078,8 +13083,8 @@ packages:
       convert-source-map: 1.9.0
     dev: true
 
-  /valibot@0.14.0:
-    resolution: {integrity: sha512-9so+LH7y5k7fSTvhShbvj38OQ/NU/61QBeR61ALU4Ee9L14/ysGy31KSYEw7fyOWe+fW9Pjo8Add/1m1/rVUvQ==}
+  /valibot@0.15.0:
+    resolution: {integrity: sha512-OOE8+EeR/TO/uks08FGYe/6DJVIgkD4Ap3dkd8M4ws/bCaQUg3XDk1PGDFiAUJqyQilW/QZ5buBEA3R1gIgQ0g==}
     dev: false
 
   /validate-npm-package-license@3.0.4:
