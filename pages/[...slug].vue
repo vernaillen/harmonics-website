@@ -34,6 +34,9 @@ const ogImageOptions = {
 }
 // a. Use the Composition API
 defineOgImage(ogImageOptions)
+
+const { trigger } = usePolitePopup()
+if (route.path !== '/contact' && route.path !== '/en/contact') { trigger() }
 </script>
 
 <template>

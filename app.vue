@@ -46,9 +46,6 @@ onMounted(() => {
 function scrollToTop () {
   scrollToElement('pageTop')
 }
-
-const { trigger } = usePolitePopup()
-if (route.path !== '/contact' && route.path !== '/en/contact') { trigger() }
 </script>
 
 <template>
