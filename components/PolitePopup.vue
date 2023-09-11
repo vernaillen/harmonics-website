@@ -34,11 +34,12 @@ function onClickClose () {
     "
   >
     <span class="prose">
-      <h2 class="text-primary-500 dark:text-white !mb-2">{{ t('politePopup.thanks') }}
-        <span class="text-primary font-bold">Harmonics</span>!
-        <UIcon name="i-noto-folded-hands" class="ml-2 w-5 h-5" />
+      <h2 class="text-primary-500 dark:text-white !mb-2">
+        {{ t('politePopup.title') }}
       </h2>
-      <p class="dark:text-gray-200">{{ t('politePopup.question') }}</p>
+      <p class="dark:text-gray-200">
+        {{ t('politePopup.desc') }}
+      </p>
     </span>
     <div class="flex gap-2 mt-4">
       <UButton variant="solid" class="" @click="onClickOk">

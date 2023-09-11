@@ -60,8 +60,8 @@
         "opensmailchimp": "(opent de mailchimp registratie pagina)"
     },
     "politePopup": {
-        "thanks": "Bedankt voor je bezoekje aan ",
-        "question": "Heb je graag dat we jou via e-mail op de hoogte houden van de komende dans sessies?",
+        "title": "Blijf je graag op de hoogte van nieuwe dans sessies?",
+        "desc": "Schrijf je dan in op de Harmonics nieuwsbrief",
         "yes": "Graag!",
         "no": "Hoeft niet"
     },

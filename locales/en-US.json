@@ -60,8 +60,8 @@
         "opensmailchimp": "(opens the mailchimp registration page)"
     },
     "politePopup": {
-        "thanks": "Thanks for visiting ",
-        "question": "Do you want us to keep you informed via e-mail about upcoming dance sessions?",
+        "title": "Do you want to be informed about upcoming dance sessions?",
+        "desc": "Subscribe to the Harmonics newsletter",
         "yes": "Yes please!",
         "no": "No need"
     },
