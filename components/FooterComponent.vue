@@ -29,7 +29,7 @@ const currentYear: number = new Date().getFullYear()
           </span>
         </div>
       </div>
-      <div class="prose mx-auto text-[11px] text-primary-500 dark:text-primary-200 py-1">
+      <div class="prose dark:prose-invert mx-auto text-[11px] py-1">
         <GitHub :locale="locale" />
       </div>
     </div>
