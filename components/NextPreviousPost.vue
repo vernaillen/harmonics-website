@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ParsedContent } from '@nuxt/content/dist/runtime/types'
-
 const { t } = useI18n()
 const localePath = useLocalePath()
 const props = defineProps<{
@@ -8,20 +6,10 @@ const props = defineProps<{
   path: string
   newsPath: string
 }>()
-const prev = ref<ParsedContent | null>(null)
-const next = ref<ParsedContent | null>(null)
-onMounted(async () => {
-  const [foundPrev, foundNext] = await queryContent(props.newsPath)
-    .sort({ _file: 1 })
-    .where({ isNews: true, language: props.lang })
-    .findSurround(props.path)
-  if (foundPrev?._path?.startsWith(props.newsPath) && foundPrev?.language === props.lang) {
-    prev.value = foundPrev
-  }
-  if (foundNext?._path?.startsWith(props.newsPath) && foundNext?.language === props.lang) {
-    next.value = foundNext
-  }
-})
+const [prev, next] = await queryContent(props.newsPath)
+  .sort({ _file: 1 })
+  .where({ isNews: true, language: props.lang })
+  .findSurround(props.path)
 </script>
 
 <template>

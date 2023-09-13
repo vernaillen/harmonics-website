@@ -16,14 +16,14 @@ withDefaults(defineProps<Props>(), {
 <template>
   <div
     :class="shadow ? 'shadow-lg' : ''"
-    class="rounded-xl overflow-hidden"
+    class="rounded-xl overflow-hidden videoPicture"
   >
     <LazyYoutubeVideo
       :src="src"
       :alt="title"
       :webp="true"
       :thumbnail="thumbnail ? { webp: thumbnail } : undefined"
-      class="rounded-xl scale-[101%] overflow-hidden"
+      class="rounded-xl scale-[101%] overflow-hidden "
     />
   </div>
   <p class="caption text-xs text-center mt-1">
@@ -31,9 +31,9 @@ withDefaults(defineProps<Props>(), {
   </p>
 </template>
 <style>
-.prose .y-video__media--type--img {
+.prose .y-video__media--type--img,
+.videoPicture picture {
   margin-top: 0;
   margin-bottom: 0;
 }
-
 </style>
