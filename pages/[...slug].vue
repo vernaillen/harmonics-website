@@ -4,23 +4,6 @@ const localePath = useLocalePath()
 const { locale } = useI18n()
 const page = await queryContent(route.path).findOne()
 
-const swipableContainer = ref<HTMLElement | null>(null)
-
-const [prev, next] = await queryContent(localePath('/news'))
-  .where({ isNews: true, language: locale.value })
-  .sort({ _file: 1 })
-  .findSurround(route.path)
-const { isSwiping, direction, lengthX } = useSwipe(swipableContainer)
-
-watch(isSwiping, (val) => {
-  if (!val && Math.abs(lengthX.value) > 100) {
-    if (direction.value === 'left') {
-      if (next) { navigateTo(next._path) }
-    } else if (direction.value === 'right') {
-      if (prev) { navigateTo(prev._path) }
-    }
-  }
-})
 const routePath = ref('')
 onMounted(() => {
   routePath.value = route.path
@@ -50,10 +33,7 @@ if (route.path !== '/contact' && route.path !== '/en/contact') { trigger() }
           class="w-full container mx-auto pb-6"
         />
         <div class="w-full container mx-auto py-4">
-          <div
-            ref="swipableContainer"
-            class="prose prose-primary dark:prose-invert"
-          >
+          <div class="prose prose-primary dark:prose-invert">
             <NextPreviousPost v-if="isNews(route.path)" :path="route.path" :lang="locale" :news-path="localePath('/news')" />
             <div class="slide-enter-content">
               <ContentDoc
