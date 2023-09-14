@@ -58,7 +58,7 @@
     "nuxt-vitest": "^0.10.5",
     "remark-breaks": "^3.0.3",
     "start-server-and-test": "^2.0.0",
-    "vitest": "0.34.4"
+    "vitest": "0.33.0"
   },
   "dependencies": {
     "@twicpics/components": "^0.22.2",
