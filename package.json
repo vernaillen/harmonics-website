@@ -52,7 +52,7 @@
     "dayjs": "^1.11.9",
     "eslint": "^8.49.0",
     "happy-dom": "^11.0.6",
-    "nuxt": "^3.7.2",
+    "nuxt": "^3.7.3",
     "nuxt-og-image": "^2.0.26",
     "nuxt-time": "^0.1.1",
     "nuxt-vitest": "^0.10.5",
