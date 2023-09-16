@@ -46,7 +46,7 @@ const filteredSessions = computed(() => {
             </div>
           </div>
           <div class="grow text-trance-400 dark:text-primary-100">
-            <NuxtLink :to="session.url" :aria-label="sessions.title">
+            <NuxtLink :to="session.url" :target="session.urlTarget ? session.urlTarget : ''" :aria-label="sessions.title">
               {{ session.title }}
             </NuxtLink>
             <div class="mt-2 text-xs">
