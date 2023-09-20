@@ -3,6 +3,15 @@ const { isMobileNavOpen } = useMobileNav()
 const route = useRoute()
 const { locale } = useI18n()
 
+const routePath = ref('')
+onMounted(() => {
+  routePath.value = route.path
+  window.addEventListener('resize', () => { isMobileNavOpen.value = false })
+})
+function scrollToTop () {
+  scrollToElement('pageTop')
+}
+
 useHead({
   htmlAttrs: {
     lang: locale
@@ -37,15 +46,6 @@ useHead({
     }
   ]
 })
-
-const routePath = ref('')
-onMounted(() => {
-  routePath.value = route.path
-  window.addEventListener('resize', () => { isMobileNavOpen.value = false })
-})
-function scrollToTop () {
-  scrollToElement('pageTop')
-}
 </script>
 
 <template>

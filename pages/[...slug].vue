@@ -2,12 +2,12 @@
 const route = useRoute()
 const localePath = useLocalePath()
 const { locale } = useI18n()
-const page = await queryContent(route.path).findOne()
 
 const routePath = ref('')
 onMounted(() => {
   routePath.value = route.path
 })
+const page = await queryContent(route.path).findOne()
 
 const ogImageOptions = {
   component: 'OGImageHome'
