@@ -61,7 +61,7 @@
     "vitest": "0.33.0"
   },
   "dependencies": {
-    "@twicpics/components": "^0.22.3",
+    "@twicpics/components": "^0.23.0",
     "resend": "^1.1.0",
     "vue-easy-lightbox": "^1.16.0",
     "yup": "^1.2.0"
