@@ -10,11 +10,11 @@
         },
         {
             "source": "/news/trancedancecroixoupile",
-            "destination": "/news/trancedancedehierberg"
+            "destination": "https://harmonics.be/news/trancedancedehierberg"
         },
         {
             "source": "/:lang*/news/trancedancecroixoupile",
-            "destination": "/:lang*/news/trancedancedehierberg"
+            "destination": "https://harmonics.be/:lang*/news/trancedancedehierberg"
         }
     ]
 }
