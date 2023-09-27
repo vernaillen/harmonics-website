@@ -7,6 +7,14 @@
         {
             "source": "/plio/api/event",
             "destination": "https://plausible.io/api/event"
+        },
+        {
+            "source": "/news/trancedancecroixoupile",
+            "destination": "/news/trancedancedehierberg"
+        },
+        {
+            "source": "/en/news/trancedancecroixoupile",
+            "destination": "/en/news/trancedancedehierberg"
         }
     ]
 }

@@ -1,16 +1,9 @@
 {
     "body": [
         {
-            "title": "The Dance of my Awakening Soul",
-            "description": "A Conscious Healing Dance from Dark into Light into Colour<br>~ een project door Sofie AF De Smet ~",
-            "url": "/news/thedanceofmyawakeningsoul",
-            "date": "2023-09-23 19:00:00",
-            "category": "ecstatic"
-        },
-        {
             "title": "Trancedans ~ Dance Your Inner freedom",
-            "description": "Helende Trancedans in Zaal Croix ou Pile te Saint-Sauveur (nabij Ronse)",
-            "url": "/news/trancedancecroixoupile",
+            "description": "Helende Trancedans in De Hierberg te Nukerke",
+            "url": "/news/trancedancedehierberg",
             "date": "2023-10-02 19:00:00",
             "category": "trance"
         },
@@ -23,16 +16,16 @@
             "category": "ecstatic"
         },
         {
-            "title": "Trancedans in Zaal Croix ou Pile",
-            "description": "Helende Trancedans in Saint-Sauveur (nabij Ronse)",
-            "url": "/news/trancedancecroixoupile",
+            "title": "Trancedans in De Hierberg",
+            "description": "Helende Trancedans in De Hierberg te Nukerke",
+            "url": "/news/trancedancedehierberg",
             "date": "2023-11-06 19:00:00",
             "category": "trance"
         },
         {
-            "title": "Trancedans in Zaal Croix ou Pile",
-            "description": "Helende Trancedans in Saint-Sauveur (nabij Ronse)",
-            "url": "/news/trancedancecroixoupile",
+            "title": "Trancedans in De Hierberg",
+            "description": "Helende Trancedans in De Hierberg te Nukerke",
+            "url": "/news/trancedancedehierberg",
             "date": "2023-12-04 19:00:00",
             "category": "trance"
         }
