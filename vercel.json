@@ -13,8 +13,8 @@
             "destination": "/news/trancedancedehierberg"
         },
         {
-            "source": "/en/news/trancedancecroixoupile",
-            "destination": "/en/news/trancedancedehierberg"
+            "source": "/:lang*/news/trancedancecroixoupile",
+            "destination": "/:lang*/news/trancedancedehierberg"
         }
     ]
 }
