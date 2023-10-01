@@ -1,10 +1,11 @@
 {
     "body": [
         {
-            "title": "Trancedans ~ Dance Your Inner freedom",
+            "title": "Trancedans ~ Dance Your Inner freedom (volzet)",
             "description": "Helende Trancedans in De Hierberg te Nukerke",
             "url": "/news/trancedancedehierberg",
             "date": "2023-10-02 19:00:00",
+            "showTime": true,
             "category": "trance"
         },
         {
@@ -13,6 +14,7 @@
             "url": "https://www.facebook.com/events/979085783379516?ref=newsfeed",
             "urlTarget": "_blank",
             "date": "2023-10-15 15:00:00",
+            "showTime": true,
             "category": "ecstatic"
         },
         {
@@ -20,13 +22,22 @@
             "description": "Helende Trancedans in De Hierberg te Nukerke",
             "url": "/news/trancedancedehierberg",
             "date": "2023-11-06 19:00:00",
+            "showTime": true,
             "category": "trance"
+        },
+        {
+            "title": "Extatic Dance bij de Ringelwikke Ronse",
+            "description": "binnenkort meer info",
+            "date": "2023-11-19",
+            "showTime": false,
+            "category": "ecstatic"
         },
         {
             "title": "Trancedans in De Hierberg",
             "description": "Helende Trancedans in De Hierberg te Nukerke",
             "url": "/news/trancedancedehierberg",
             "date": "2023-12-04 19:00:00",
+            "showTime": true,
             "category": "trance"
         }
     ]

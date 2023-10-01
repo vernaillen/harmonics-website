@@ -56,8 +56,9 @@ const filteredSessions = computed(() => {
                 :locale="locale"
                 day="numeric"
                 month="long"
-                hour="numeric"
-                minute="numeric"
+                year="numeric"
+                :hour="session.showTime ? 'numeric' : undefined"
+                :minute="session.showTime ? 'numeric' : undefined"
               />
             </div>
             <div class="mt-2 mb-4">
