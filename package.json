@@ -38,7 +38,7 @@
     "@nuxt/devtools": "^0.8.5",
     "@nuxt/image": "1.0.0-rc.2",
     "@nuxt/ui": "^2.8.1",
-    "@nuxthq/studio": "^0.14.1",
+    "@nuxthq/studio": "^1.0.0",
     "@nuxtjs/critters": "^0.5.1",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@8.0.0-rc.4-28240475.595f9ca",
