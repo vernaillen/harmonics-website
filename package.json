@@ -41,7 +41,7 @@
     "@nuxthq/studio": "^0.14.1",
     "@nuxtjs/critters": "^0.5.1",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@8.0.0-rc.4-28240475.595f9ca",
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@8.0.0-rc.5-28274558.b818011",
     "@nuxtjs/plausible": "^0.2.3",
     "@types/node": "^20.8.0",
     "@vernaillen/nuxt-base-layer": "^0.2.20",
