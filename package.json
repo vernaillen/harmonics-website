@@ -51,11 +51,11 @@
     "cypress": "^13.3.0",
     "dayjs": "^1.11.10",
     "eslint": "^8.50.0",
-    "happy-dom": "11.2.0",
+    "happy-dom": "12.8.0",
     "nuxt": "^3.7.4",
     "nuxt-og-image": "^2.1.1",
     "nuxt-time": "^0.1.1",
-    "nuxt-vitest": "^0.10.5",
+    "nuxt-vitest": "^0.11.0",
     "remark-breaks": "^4.0.0",
     "start-server-and-test": "^2.0.1",
     "vitest": "0.33.0"
