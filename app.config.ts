@@ -53,7 +53,7 @@ export default defineAppConfig({
       shadow: 'shadow-sm',
       header: {
         base: 'overflow-hidden',
-        padding: 'p-0'
+        padding: 'p-0 sm:p-0'
       }
     },
     dropdown: {
