@@ -1,18 +1,9 @@
 {
     "body": [
         {
-            "title": "Trancedans ~ Dance Your Inner freedom (volzet)",
-            "description": "Helende Trancedans in De Hierberg te Nukerke",
-            "url": "/news/trancedancedehierberg",
-            "date": "2023-10-02 19:00:00",
-            "showTime": true,
-            "category": "trance"
-        },
-        {
             "title": "Nieuwe Maan ~ Cacao ~ Ecstatic Dance @ Simply Be",
             "description": "Cacao ceremonie gevolgd door Ecstatic Dance",
-            "url": "https://www.facebook.com/events/979085783379516?ref=newsfeed",
-            "urlTarget": "_blank",
+            "url": "/news/nieuwemaancacaoecstaticdance",
             "date": "2023-10-15 15:00:00",
             "showTime": true,
             "category": "ecstatic"
