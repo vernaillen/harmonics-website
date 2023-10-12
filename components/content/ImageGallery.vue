@@ -39,14 +39,14 @@ const columns = computed(() => {
   <div class="columns-1 md:columns-2 mx-[-8px]" :class="columns">
     <div v-for="(image, index) in images" :key="index" class="px-1">
       <div
-        class="rounded-xl hover:rounded-2xl overflow-hidden relative mb-6 shadow-md"
-        :class="disableLightbox ? '' : 'imgHoverEffect'"
+        class="imgHoverEffect
+          rounded-xl opacity-90 hover:rounded-2xl hover:opacity-100
+          transition-all duration-500 ease-in-out
+          overflow-hidden relative mb-6 shadow-md"
       >
-        <NuxtPicture
-          loading="lazy"
+        <VImage
           :src="image"
-          format="webp"
-          class="rounded-xl hover:rounded-2xl max-w-full p-0 m-0"
+          class="rounded-xl hover:rounded-2xl max-w-full p-0 m-0 transition-all duration-2000 ease-in-out"
           :class="disableLightbox ? '' : 'cursor-pointer'"
           :alt="image"
           @click="disableLightbox ? null : openGallery(index)"
