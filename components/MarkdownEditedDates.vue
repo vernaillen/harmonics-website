@@ -3,7 +3,7 @@ import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 const { t } = useI18n()
 
 defineProps<{
-  lang: string
+  lang: string | undefined
   post: ParsedContent
 }>()
 </script>

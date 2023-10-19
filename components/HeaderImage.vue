@@ -2,7 +2,7 @@
 import { ParsedContent } from '@nuxt/content/dist/runtime/types'
 
 export interface Props {
-  lang: string
+  lang: string | undefined
   page: ParsedContent
 }
 const props = defineProps<Props>()

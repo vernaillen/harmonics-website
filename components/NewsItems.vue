@@ -1,14 +1,8 @@
 <script setup lang="ts">
-const props = defineProps({
-  lang: {
-    type: String,
-    required: true
-  },
-  path: {
-    type: String,
-    required: true
-  }
-})
+const props = defineProps<{
+    lang: string | undefined
+    path: string
+  }>()
 const { data: posts } = await useAsyncData('posts', () =>
   queryContent(props.path)
     .where({ isNews: true, language: props.lang })

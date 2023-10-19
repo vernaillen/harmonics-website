@@ -40,7 +40,9 @@ function checkCurrentRoute (clickedPath: string | undefined) {
   }
   // else do nothing (mobileNav will be automatically hidden on page:finish)
 }
-
+onMounted(() => {
+  window.addEventListener('resize', () => { isMobileNavOpen.value = false })
+})
 </script>
 
 <template>

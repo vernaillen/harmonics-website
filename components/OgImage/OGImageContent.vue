@@ -5,10 +5,11 @@ defineOptions({
   inheritAttrs: false
 })
 
-const props = defineProps({
-  lang: String,
-  path: String
-})
+export interface Props {
+  lang: string | undefined
+  path: string
+}
+const props = defineProps<Props>()
 const page = await queryContent(props.path).findOne()
 
 const url = computed(() => {
