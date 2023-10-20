@@ -16,7 +16,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image',
     'nuxt-time',
-    'nuxt-vitest',
     [
       '@twicpics/components/nuxt3',
       {
