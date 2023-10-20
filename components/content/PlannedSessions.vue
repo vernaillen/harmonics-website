@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { UpcomingSession } from 'types'
+import type { UpcomingSession } from '../../types'
 
 const { locale, t } = useI18n()
 const localePath = useLocalePath()
