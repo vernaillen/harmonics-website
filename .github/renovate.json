@@ -14,7 +14,7 @@
       "matchPackageNames": [
         "cimg/node"
       ],
-      "allowedVersions": "<=18.18-browsers"
+      "allowedVersions": "<=18.18"
     }
   ]
 }
