@@ -6,7 +6,7 @@
   "assignees": [
     "vernaillen"
   ],
-  "packageRules": [,
+  "packageRules": [
     {
       "matchDatasources": [
         "docker"
