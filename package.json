@@ -27,7 +27,7 @@
     "fulltest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build"
   },
   "devDependencies": {
-    "@dargmuesli/nuxt-cookie-control": "^6.4.6",
+    "@dargmuesli/nuxt-cookie-control": "^7.0.0",
     "@iconify-json/circle-flags": "^1.1.43",
     "@iconify-json/logos": "^1.1.37",
     "@iconify-json/mdi": "^1.1.54",
