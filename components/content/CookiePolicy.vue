@@ -7,9 +7,9 @@ const { data, error } = await useFetch<LegalPolicy>('/api/iubendacookiepolicy')
 
 <template>
   <div>
-    <div v-if="error" class="prose m-auto">
+    <div v-if="error" class="prose dark:prose-invert m-auto">
       Er liep iets mis bij het ophalen van de cookie policy
     </div>
-    <div v-if="data" class="prose m-auto" v-html="data.content" />
+    <div v-if="data" class="prose dark:prose-invert m-auto" v-html="data.content" />
   </div>
 </template>
