@@ -1,24 +1,16 @@
 {
     "body": [
         {
-            "title": "Trancedans ~ The Passion of your Dreams",
-            "description": "Helende Trancedans in De Hierberg te Nukerke",
-            "url": "/news/trancedancedehierberg",
-            "date": "2023-11-06 19:00:00",
-            "showTime": true,
-            "category": "trance"
-        },
-        {
             "title": "Extatic Dance bij de Ringelwikke Ronse",
-            "description": "binnenkort meer info",
+            "description": "DJ Harmonics ~ binnenkort meer info",
             "date": "2023-11-19",
             "showTime": false,
             "category": "ecstatic"
         },
         {
-            "title": "Trancedans in De Hierberg",
-            "description": "Helende Trancedans in De Hierberg te Nukerke",
-            "url": "/news/trancedancedehierberg",
+            "title": "Trancedans",
+            "description": "Helende Trancedans ~ binnenkort meer info",
+            "url": "/trancedance",
             "date": "2023-12-04 19:00:00",
             "showTime": true,
             "category": "trance"
