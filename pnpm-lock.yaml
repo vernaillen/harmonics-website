@@ -95,8 +95,8 @@ devDependencies:
     specifier: ^3.8.0
     version: 3.8.0(@types/node@20.8.9)(eslint@8.52.0)(typescript@5.2.2)(vite@4.5.0)
   nuxt-og-image:
-    specifier: ^2.2.0
-    version: 2.2.0(vue@3.3.7)
+    specifier: ^2.2.3
+    version: 2.2.3(vue@3.3.7)
   nuxt-time:
     specifier: ^0.1.1
     version: 0.1.1
@@ -2711,6 +2711,15 @@ packages:
     dependencies:
       '@tufjs/canonical-json': 2.0.0
       minimatch: 9.0.3
+    dev: true
+
+  /@twemoji/api@14.1.2:
+    resolution: {integrity: sha512-JLuszRq7t+NWJTaNwBD+Hbhf67gzn6jAqhNIDTPndEGT55kHiZTJAYRGCHZB/eA58OGVSp7mIvsJs+F/ZDJanA==}
+    dependencies:
+      fs-extra: 8.1.0
+      jsonfile: 5.0.0
+      twemoji-parser: 14.0.0
+      universalify: 0.1.2
     dev: true
 
   /@twicpics/components@0.24.0:
@@ -9373,12 +9382,13 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-og-image@2.2.0(vue@3.3.7):
-    resolution: {integrity: sha512-7ydP99KhNJMrupyG0iDdwZyxxTOYngbDgWMsBWzfWLAQ4Syt2LKH9Uc7y73DvWarQdXKhgUz5GNjswjmZCpaMg==}
+  /nuxt-og-image@2.2.3(vue@3.3.7):
+    resolution: {integrity: sha512-r6EfYcprzndoDIFnfUU+Qq0/iEp5b413LRGehaigTBABRspWzMvI6fqKHlovSbi/k44Y/vWCVUaJQD0gwZ65Wg==}
     dependencies:
       '@nuxt/kit': 3.8.0
       '@resvg/resvg-js': 2.6.0
       '@resvg/resvg-wasm': 2.6.0
+      '@twemoji/api': 14.1.2
       '@types/fs-extra': 11.0.3
       birpc: 0.2.14
       chalk: 5.3.0
