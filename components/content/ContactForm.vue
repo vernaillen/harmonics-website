@@ -71,7 +71,7 @@ const errorClass = 'text-[red] dark:text-white text-sm p-1 absolute'
     :schema="schema"
     :state="state"
     method="POST"
-    @submit.prevent="submitForm"
+    @submit="submitForm"
   >
     <UFormGroup name="name" :label="t('contact.name')" :class="formGroupClass" :ui="formGroupUI">
       <UInput v-model="state.name" :class="inputClass" />
