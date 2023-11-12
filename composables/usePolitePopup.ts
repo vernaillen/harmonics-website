@@ -79,7 +79,7 @@ const _usePolitePopup = () => {
     storedData: storedData.value
   }))
 
-  const trigger = () => {
+  const triggerPolitePopup = () => {
     readTimeElapsed.value = false
     start()
   }
@@ -121,7 +121,7 @@ const _usePolitePopup = () => {
 
   return {
     visible,
-    trigger,
+    triggerPolitePopup,
     setClosed,
     setSubscribed,
     debugInfo

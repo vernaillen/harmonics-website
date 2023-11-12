@@ -1,13 +1,20 @@
 <script setup lang="ts">
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+
 const route = useRoute()
 const localePath = useLocalePath()
 const { locale } = useI18n()
 
-const routePath = ref('')
-onMounted(() => {
-  routePath.value = route.path
-})
-const page = await queryContent(route.path).findOne()
+const { page } = useContent()
+const pageContent = ref<ParsedContent | null>(null)
+
+if (page.value) {
+  pageContent.value = page.value
+} else {
+  pageContent.value = await queryContent(localePath('/_404')).findOne()
+  const event = useRequestEvent()
+  setResponseStatus(event, 404)
+}
 
 const ogImageOptions = {
   component: 'OGImageHome'
@@ -18,8 +25,8 @@ const ogImageOptions = {
 // a. Use the Composition API
 defineOgImage(ogImageOptions)
 
-const { trigger } = usePolitePopup()
-if (route.path !== '/contact' && route.path !== '/en/contact') { trigger() }
+const { triggerPolitePopup } = usePolitePopup()
+if (route.path !== '/contact' && route.path !== '/en/contact') { triggerPolitePopup() }
 </script>
 
 <template>
@@ -29,25 +36,33 @@ if (route.path !== '/contact' && route.path !== '/en/contact') { trigger() }
       <main class="flex-grow">
         <HeaderImage
           :lang="locale"
-          :page="page"
+          :page="pageContent"
           class="w-full container mx-auto pb-6"
         />
         <div class="w-full container mx-auto py-4">
           <div class="prose prose-primary dark:prose-invert">
             <NextPreviousPost v-if="isNews(route.path)" :path="route.path" :lang="locale" :news-path="localePath('/news')" />
             <div class="slide-enter-content">
-              <ContentDoc
-                v-if="isHydrated && routePath === route.path"
-                v-slot="{ doc }"
-                :path="routePath"
-              >
-                <ContentRenderer
-                  :value="doc"
-                  class="mainContent pt-3"
-                  :class="doc && doc.category ? 'category-' + doc.category : ''"
-                />
+              <ContentDoc>
+                <template #default="{ doc }">
+                  <ContentRenderer
+                    v-if="isHydrated"
+                    :value="doc"
+                    class="mainContent pt-3"
+                    :class="doc && doc.category ? 'category-' + doc.category : ''"
+                  />
+                  <ContentSkeleton v-else />
+                </template>
+                <template #not-found>
+                  <h2>{{ page?.title }}</h2>
+                  <ContentRenderer v-if="pageContent" :value="pageContent">
+                    <ContentRendererMarkdown :value="pageContent" />
+                  </ContentRenderer>
+                  <UButton :to="localePath('/')">
+                    {{ $t('nav.backToHome') }}
+                  </UButton>
+                </template>
               </ContentDoc>
-              <ContentSkeleton v-else />
             </div>
           </div>
         </div>

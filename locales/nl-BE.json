@@ -15,7 +15,8 @@
     },
     "nav": {
         "gotopage": "Ga naar pagina ",
-        "back": "Terug"
+        "back": "Terug",
+        "backToHome": "Terug naar Home"
     },
     "news": {
         "title": "Nieuws",

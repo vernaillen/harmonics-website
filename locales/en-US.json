@@ -15,7 +15,8 @@
     },
     "nav": {
         "gotopage": "Go to page ",
-        "back": "Back"
+        "back": "Back",
+        "backToHome": "Back Home"
     },
     "news": {
         "title": "News",
