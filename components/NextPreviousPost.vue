@@ -24,8 +24,8 @@ const [prev, next] = await queryContent(props.newsPath)
         >
           <template #leading>
             <span class="iconHoverEffect">
-              <UIcon name="i-heroicons-chevron-left" class="icon" />
-              <UIcon name="i-heroicons-arrow-left-20-solid" class="icon--hover" />
+              <UIcon name="i-heroicons-chevron-left" class="icon moveleft duration-500 transform transition-all" />
+              <UIcon name="i-heroicons-arrow-left-20-solid" class="icon--hover duration-500 transform transition-all" />
             </span>
           </template>
           <span class="hidden lg:inline-block">{{ prev.title }}</span>
@@ -39,8 +39,8 @@ const [prev, next] = await queryContent(props.newsPath)
           {{ t('news.title', 1, { locale: lang }) }}
           <template #trailing>
             <span class="iconHoverEffect">
-              <UIcon name="i-heroicons-chevron-up" class="icon" />
-              <UIcon name="i-heroicons-arrow-up-20-solid" class="icon--hover" />
+              <UIcon name="i-heroicons-chevron-up" class="icon moveup duration-500 transform transition-all" />
+              <UIcon name="i-heroicons-arrow-up-20-solid" class="icon--hover duration-500 transform transition-all" />
             </span>
           </template>
         </UButton>
@@ -57,8 +57,8 @@ const [prev, next] = await queryContent(props.newsPath)
           <span class="hidden lg:inline-block">{{ next.title }}</span>
           <template #trailing>
             <span class="iconHoverEffect">
-              <UIcon name="i-heroicons-chevron-right" class="icon" />
-              <UIcon name="i-heroicons-arrow-right-20-solid" class="icon--hover" />
+              <UIcon name="i-heroicons-chevron-right" class="icon moveright duration-500 transform transition-all" />
+              <UIcon name="i-heroicons-arrow-right-20-solid" class="icon--hover duration-500 transform transition-all" />
             </span>
           </template>
         </UButton>

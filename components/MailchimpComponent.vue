@@ -25,8 +25,8 @@ defineProps({
 
         <template #trailing>
           <span class="iconHoverEffect">
-            <UIcon name="i-heroicons-chevron-right" class="icon" />
-            <UIcon name="i-heroicons-arrow-right-20-solid" class="icon--hover" />
+            <UIcon name="i-heroicons-chevron-right" class="icon moveright duration-500 transform transition-all" />
+            <UIcon name="i-heroicons-arrow-right-20-solid" class="icon--hover duration-500 transform transition-all" />
           </span>
         </template>
       </UButton>

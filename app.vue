@@ -44,7 +44,7 @@ useHead({
 
 <template>
   <NuxtLoadingIndicator id="pageTop" color="repeating-linear-gradient(to right,rgb(197 213 45/100%) 0%,rgb(170 168 87/100%) 33%,rgb(157 177 159/100%) 66%,rgb(0 71 69/100%) 100%)" />
-  <div class="bg-white dark:bg-dark transition-colors duration-[1s] ease-in-out">
+  <div class="bg-white dark:bg-dark">
     <HeaderComponent />
     <div class="pt-[76px] min-h-screen">
       <NuxtPage />
@@ -90,8 +90,8 @@ useHead({
 
 @keyframes slide-enter {
   0% {
-    opacity: 0;
-    filter: blur(0.2rem);
+    opacity: 50;
+    filter: blur(0.05rem);
   }
   to {
     opacity: 100;
@@ -104,7 +104,7 @@ useHead({
     --enter-stage: 0;
     --enter-step: 60ms;
     --enter-initial: 0ms;
-    animation: slide-enter 0.2s both 0.2s;
+    animation: slide-enter 0.1s both 0.1s;
     animation-delay: calc(var(--enter-initial) + var(--enter-stage) * var(--enter-step));
     animation-delay: 60ms;
   }
@@ -121,21 +121,24 @@ a .iconHoverEffect {
 a .iconHoverEffect .icon {
     position: absolute;
     transform: translateX(0);
-    transition: 'color 1s cubic-bezier(.65, 0, .28, 1), transform 1s cubic-bezier(.65, 0, .28, 1)'
 }
 a:hover .iconHoverEffect .icon {
     color: transparent;
-    transform: translate(7px);
-    transition: 'color 1s cubic-bezier(.65, 0, .28, 1), transform 1s cubic-bezier(.65, 0, .28, 1)'
+}
+a:hover .iconHoverEffect .icon.moveleft {
+    transform: translate(-5px);
+}
+a:hover .iconHoverEffect .icon.moveright {
+    transform: translate(5px);
+}
+a:hover .iconHoverEffect .icon.moveup {
+    transform: translateY(-5px);
 }
 a .iconHoverEffect .icon--hover {
     position: absolute;
     transform: scaleX(0);
-    transform-origin: center center;
-    transition: 'color 1s cubic-bezier(.65, 0, .28, 1), transform 1s cubic-bezier(.65, 0, .28, 1)'
 }
 a:hover .iconHoverEffect .icon--hover {
     transform: scaleX(1);
-    transition: 'color 1s cubic-bezier(.65, 0, .28, 1), transform 1s cubic-bezier(.65, 0, .28, 1)'
 }
 </style>
