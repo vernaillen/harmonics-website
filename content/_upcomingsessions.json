@@ -1,16 +1,9 @@
 {
     "body": [
         {
-            "title": "Extatic Dance bij de Ringelwikke Ronse",
-            "description": "DJ Harmonics ~ binnenkort meer info",
-            "date": "2023-11-19",
-            "showTime": false,
-            "category": "ecstatic"
-        },
-        {
-            "title": "Trancedans",
-            "description": "Helende Trancedans ~ binnenkort meer info",
-            "url": "/trancedance",
+            "title": "Trancedans: The Passion of your Dreams",
+            "description": "Helende Trancedans bij De Ringelwikke in Ronse",
+            "url": "/news/trancedancethepassionofyourdreams",
             "date": "2023-12-04 19:00:00",
             "showTime": true,
             "category": "trance"
