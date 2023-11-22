@@ -6,7 +6,7 @@ const { data: posts } = await useAsyncData('posts', () =>
   queryContent(localePath('/news'))
     .where({ isNews: true, language: locale.value })
     .sort({ _file: -1 })
-    .limit(1)
+    .limit(2)
     .find())
 </script>
 
@@ -18,9 +18,12 @@ const { data: posts } = await useAsyncData('posts', () =>
           {{ t('news.recent') }}
         </NuxtLink>
       </h1>
-      <div class="w-full md:w-2/3 lg:w-1/2 mx-auto">
+      <div class="w-full grid md:grid-cols-2 gap-6 ">
         <template v-for="post, index in posts" :key="index">
           <div v-if="index === 0" class="w-full">
+            <NewsItem :post="post" />
+          </div>
+          <div v-if="index === 1" class="w-full">
             <NewsItem :post="post" />
           </div>
         </template>
