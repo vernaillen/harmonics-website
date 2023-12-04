@@ -44,7 +44,7 @@
     "@nuxtjs/plausible": "^0.2.3",
     "@types/node": "^20.10.2",
     "@vernaillen/nuxt-base-layer": "^0.2.21",
-    "@vitest/coverage-v8": "^0.34.6",
+    "@vitest/coverage-v8": "^1.0.0",
     "@vueuse/nuxt": "^10.6.1",
     "cssnano": "^6.0.1",
     "cypress": "^13.6.0",
@@ -56,7 +56,7 @@
     "nuxt-time": "^0.1.1",
     "remark-breaks": "^4.0.0",
     "start-server-and-test": "^2.0.3",
-    "vitest": "^0.34.6"
+    "vitest": "^1.0.0"
   },
   "dependencies": {
     "@twicpics/components": "^0.26.0",
