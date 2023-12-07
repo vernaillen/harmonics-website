@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 const { isMobileNavOpen } = useMobileNav()
 const { locale } = useI18n()
 
@@ -62,6 +63,7 @@ useHead({
   </div>
   <EasyLightbox />
   <PolitePopup />
+  <SpeedInsights />
 </template>
 
 <style>
