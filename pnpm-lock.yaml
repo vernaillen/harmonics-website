@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^0.2.21
     version: 0.2.21(nuxt@3.8.2)(rollup@3.29.4)(vue@3.3.11)
   '@vitest/coverage-v8':
-    specifier: 1.0.4
-    version: 1.0.4(vitest@1.0.4)
+    specifier: 1.1.0
+    version: 1.1.0(vitest@1.0.4)
   '@vueuse/nuxt':
     specifier: ^10.6.1
     version: 10.7.0(nuxt@3.8.2)(rollup@3.29.4)(vue@3.3.11)
@@ -2330,6 +2330,7 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.5
+      napi-wasm: 1.1.0
     dev: true
     bundledDependencies:
       - napi-wasm
@@ -3610,8 +3611,8 @@ packages:
       vue: 3.3.11(typescript@5.3.3)
     dev: true
 
-  /@vitest/coverage-v8@1.0.4(vitest@1.0.4):
-    resolution: {integrity: sha512-xD6Yuql6RW0Ir/JJIs6rVrmnG2/KOWJF+IRX1oJQk5wGKGxbtdrYPbl+WTUn/4ICCQ2G20zbE1e8/nPNyAG5Vg==}
+  /@vitest/coverage-v8@1.1.0(vitest@1.0.4):
+    resolution: {integrity: sha512-kHQRk70vTdXAyQY2C0vKOHPyQD/R6IUzcGdO4vCuyr4alE5Yg1+Sk2jSdjlIrTTXdcNEs+ReWVM09mmSFJpzyQ==}
     peerDependencies:
       vitest: ^1.0.0
     dependencies:
@@ -9248,6 +9249,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /napi-wasm@1.1.0:
+    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
+    dev: true
 
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}

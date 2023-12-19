@@ -39,7 +39,7 @@
     "@nuxtjs/i18n": "8.0.0-rc.11",
     "@nuxtjs/plausible": "^0.2.3",
     "@vernaillen/nuxt-base-layer": "^0.2.21",
-    "@vitest/coverage-v8": "1.0.4",
+    "@vitest/coverage-v8": "1.1.0",
     "@vueuse/nuxt": "^10.6.1",
     "cssnano": "^6.0.2",
     "cypress": "^13.6.0",
