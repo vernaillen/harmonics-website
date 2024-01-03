@@ -139,10 +139,6 @@ export default defineNuxtConfig({
     enabled: true,
     timeline: {
       enabled: true
-    },
-    vscode: {
-      enabled: true,
-      startOnBoot: true
     }
   },
   // debug: true,
