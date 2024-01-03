@@ -27,7 +27,7 @@
     "fulltest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.163",
+    "@iconify/json": "^2.2.164",
     "@nuxt/content": "2.9.0",
     "@nuxt/devtools": "1.0.6",
     "@nuxt/image": "1.1.0",
@@ -39,14 +39,14 @@
     "@nuxtjs/i18n": "8.0.0",
     "@nuxtjs/plausible": "^0.2.3",
     "@vernaillen/nuxt-base-layer": "^0.2.22",
-    "@vitest/coverage-v8": "1.1.0",
+    "@vitest/coverage-v8": "1.1.1",
     "@vueuse/nuxt": "^10.7.1",
     "cssnano": "^6.0.2",
     "cypress": "^13.6.2",
     "dayjs": "^1.11.10",
     "eslint": "^8.56.0",
     "nuxt": "^3.9.0",
-    "nuxt-og-image": "3.0.0-rc.13",
+    "nuxt-og-image": "3.0.0-rc.14",
     "remark-breaks": "^4.0.0",
     "start-server-and-test": "^2.0.3"
   },
