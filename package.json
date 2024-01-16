@@ -46,7 +46,7 @@
     "dayjs": "^1.11.10",
     "eslint": "^8.56.0",
     "nuxt": "^3.9.1",
-    "nuxt-og-image": "3.0.0-rc.23",
+    "nuxt-og-image": "3.0.0-rc.27",
     "remark-breaks": "^4.0.0",
     "start-server-and-test": "^2.0.3"
   },
