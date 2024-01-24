@@ -66,8 +66,8 @@ onMounted(() => {
           </button>
         </div>
         <div class="col-span-2 text-right py-5 mx-0 px-0 align-top">
-          <LanguageSwitcher small class="hidden sm:inline-block" />
-          <ColorModeSwitcher class="mr-4" />
+          <LanguageSwitcher small />
+          <ColorModeSwitcher class="mr-2" />
           <WhatsAppCommunity size="xs" />
         </div>
       </div>

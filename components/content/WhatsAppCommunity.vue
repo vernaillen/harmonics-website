@@ -7,6 +7,6 @@
     aria-label="Harmonics community op WhatsApp"
     class="!mx-0"
   >
-    Community
+    <span class="hidden sm:inline-flex">Community</span>
   </UButton>
 </template>

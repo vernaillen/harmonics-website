@@ -28,7 +28,7 @@ const items = [
 </script>
 
 <template>
-  <div class="">
+  <div class="inline-flex relative">
     <UDropdown :items="items" class="-top-[4px]" :class="small ? '-right-3' : ''">
       <UButton size="xs" :label="locale.toUpperCase()">
         <template #trailing>

@@ -67,7 +67,7 @@
         "no": "Hoeft niet"
     },
     "sessions": {
-        "planned": "Geplande {category} sessies najaar 2023",
+        "planned": "Geplande {category} sessies",
         "singleCategory": "Dit zijn enkel de geplande {category} sessies.",
         "allCats": "Een overzicht vinden van alle sessies kan je vinden op de ",
         "newsPage": "nieuws pagina"
