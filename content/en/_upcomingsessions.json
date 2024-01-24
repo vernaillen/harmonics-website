@@ -1,12 +1,20 @@
 {
     "body": [
         {
-            "title": "Trance Dance: The Passion of your Dreams",  
-            "description": "Healing trance dance at De Ringelwikke in Ronse",
-            "url": "/en/news/trancedancethepassionofyourdreams",
-            "date": "2023-12-04 19:00:00",
+            "title": "Full Moon ~ Cacao ~ Ecstatic Dance",
+            "description": "At Simply Be in Brakel ~ with Sandrine & DJ Harmonics ",
+            "url": "https://www.simply-be.be/agenda/",
+            "date": "2024-02-25 15:00:00",
             "showTime": true,
-            "category": "trance"
+            "category": "ecstatic"
+        },
+        {
+            "title": "Ecstatic Dance @Kerk",
+            "description": "WestremKerk in Wetteren ~ part of the Expo 'Het Helend Samenspel'",
+            "url": "https://www.facebook.com/events/113723708502954",
+            "date": "2024-04-13 19:00:00",
+            "showTime": true,
+            "category": "ecstatic"
         }
     ]
 }

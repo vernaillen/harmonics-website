@@ -69,6 +69,7 @@
     "sessions": {
         "planned": "Planned {category} sessions autumn 2023",
         "singleCategory": "These are only the planned {category} sessions. You can find an overview of all sessions on the ",
+        "allCats": "You can find an overview of all sessions on the ",
         "newsPage": "news page"
     },
     "contact": {
