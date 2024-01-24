@@ -51,7 +51,7 @@ onMounted(() => {
     class="header fixed h-[68px] sm:h-[72px] bg-opacity-0 w-full flex z-40 transition-colors duration-300"
   >
     <div class="w-full container mx-auto">
-      <div class="grid grid-cols-2">
+      <div class="grid grid-cols-3">
         <div class="text-left py-4 px-0">
           <button
             id="navbarToggler"
@@ -65,7 +65,7 @@ onMounted(() => {
             <span class="relative :w-[30px] h-[2px] my-[6px] block bg-trance dark:bg-primary-200 transition" />
           </button>
         </div>
-        <div class=" text-right py-5 mx-0 px-0 align-top">
+        <div class="col-span-2 text-right py-5 mx-0 px-0 align-top">
           <LanguageSwitcher small class="hidden sm:inline-block" />
           <ColorModeSwitcher class="mr-4" />
           <WhatsAppCommunity size="xs" />
