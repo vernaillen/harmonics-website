@@ -12,8 +12,8 @@ export default defineAppConfig({
       icon: 'i-mdi-instagram'
     },
     whatsapp: {
-      name: 'WhatsApp',
-      url: 'https://wa.me/+32473344656',
+      name: 'WhatsApp community',
+      url: 'https://chat.whatsapp.com/Jj1VjJkzKzg6vbMtHp58hu',
       icon: 'i-logos-whatsapp-icon'
     },
     telegram: {
