@@ -69,7 +69,7 @@ onMounted(() => {
           <LanguageSwitcher small />
           <ColorModeSwitcher class="-mr-2 md:mr-0" />
           <WhatsAppCommunity
-            class="shadow-md fixed rotate-90 top-40 -right-14 rounded-t-none
+            class="shadow-md fixed rotate-90 top-48 -right-11 rounded-t-none
           md:static md:rotate-0 md:rounded-xl"
           />
         </div>

@@ -8,8 +8,5 @@
     class="!mx-0"
   >
     Community
-    <template #trailing>
-      <UIcon name="i-iconoir-community" class="w-4 h-4 overflow-hidden" />
-    </template>
   </UButton>
 </template>
