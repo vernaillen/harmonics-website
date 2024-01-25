@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.174",
-    "@nuxt/content": "2.9.0",
+    "@nuxt/content": "2.11.0",
     "@nuxt/devtools": "^1.0.8",
     "@nuxt/image": "^1.3.0",
     "@nuxt/test-utils": "^3.10.0",
