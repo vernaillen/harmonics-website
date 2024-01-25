@@ -68,7 +68,7 @@ export default defineNuxtConfig({
   },
 
   ui: {
-    icons: ['circle-flags', 'heroicons', 'logos', 'mdi', 'noto', 'ph', 'simple-icons']
+    icons: ['circle-flags', 'heroicons', 'logos', 'mdi', 'noto', 'ph', 'simple-icons', 'iconoir']
   },
 
   colorMode: {

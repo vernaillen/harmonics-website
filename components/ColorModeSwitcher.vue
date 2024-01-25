@@ -15,22 +15,24 @@ onMounted(() => {
 </script>
 
 <template>
-  <ClientOnly>
-    <UButton
-      size="xs"
-      aria-label="Switch Color Mode"
-      class="z-20"
-      :icon="isDark ? 'i-heroicons-moon' : 'i-heroicons-sun'"
-      @click="isDark = !isDark"
-    />
-    <template #fallback>
+  <div class="inline-flex">
+    <ClientOnly>
       <UButton
-        v-if="showSpinner"
         size="xs"
-        aria-label="Loading Color Mode..."
-        icon="i-ph-spinner"
-        class="z-10 !my-0 inline-flex animate-spin rounded-full"
+        aria-label="Switch Color Mode"
+        class="z-20"
+        :icon="isDark ? 'i-heroicons-moon' : 'i-heroicons-sun'"
+        @click="isDark = !isDark"
       />
-    </template>
-  </ClientOnly>
+      <template #fallback>
+        <UButton
+          v-if="showSpinner"
+          size="xs"
+          aria-label="Loading Color Mode..."
+          icon="i-ph-spinner"
+          class="z-10 !my-0 inline-flex animate-spin rounded-full"
+        />
+      </template>
+    </ClientOnly>
+  </div>
 </template>

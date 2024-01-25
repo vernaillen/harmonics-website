@@ -65,10 +65,13 @@ onMounted(() => {
             <span class="relative :w-[30px] h-[2px] my-[6px] block bg-trance dark:bg-primary-200 transition" />
           </button>
         </div>
-        <div class="col-span-2 text-right py-5 mx-0 px-0 align-top">
+        <div class="col-span-2 text-right py-5 mx-0 px-0 align-top relative">
           <LanguageSwitcher small />
-          <ColorModeSwitcher class="mr-2" />
-          <WhatsAppCommunity size="xs" />
+          <ColorModeSwitcher class="-mr-2 md:mr-0" />
+          <WhatsAppCommunity
+            class="shadow-md fixed rotate-90 top-40 -right-14 rounded-t-none
+          md:static md:rotate-0 md:rounded-xl"
+          />
         </div>
       </div>
     </div>

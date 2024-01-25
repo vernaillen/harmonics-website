@@ -7,6 +7,9 @@
     aria-label="Harmonics community op WhatsApp"
     class="!mx-0"
   >
-    <span class="hidden sm:inline-flex">Community</span>
+    Community
+    <template #trailing>
+      <UIcon name="i-iconoir-community" class="w-4 h-4 overflow-hidden" />
+    </template>
   </UButton>
 </template>
