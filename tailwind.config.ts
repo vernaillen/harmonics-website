@@ -254,7 +254,8 @@ module.exports = {
                 fontSize: '0.9em',
                 fontWeight: 400,
                 paddingLeft: '1em',
-                borderLeftWidth: 0
+                borderLeftWidth: 0,
+                position: 'relative'
               },
               'blockquote p:first-of-type::before': {
                 content: 'open-quote',

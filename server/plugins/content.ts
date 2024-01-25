@@ -31,6 +31,6 @@ export default defineNitroPlugin((nitroApp) => {
 })
 
 function enrichNode (node: any, index: number) {
-  node.props.class = (node.props.class ? node.props.class : '') + ' slide-enter'
+  node.props.className = (node.props.className ? node.props.className : '') + ' slide-enter'
   node.props.style = (node.props.style ? node.props.style : '') + ' --enter-stage: ' + index + '; --enter-step: 90ms;'
 }
