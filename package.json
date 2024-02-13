@@ -36,7 +36,7 @@
     "@nuxthq/studio": "^1.0.10",
     "@nuxtjs/critters": "^0.6.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@nuxtjs/i18n": "8.1.0",
+    "@nuxtjs/i18n": "8.1.1",
     "@nuxtjs/plausible": "^0.2.3",
     "@vernaillen/nuxt-base-layer": "^0.2.25",
     "@vitest/coverage-v8": "^1.2.2",
