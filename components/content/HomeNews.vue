@@ -21,7 +21,7 @@ const { data: posts } = await useAsyncData('posts', () =>
       <div class="w-full md:w-2/3 lg:w-1/2 mx-auto">
         <template v-for="post, index in posts" :key="index">
           <div v-if="index === 0" class="w-full">
-            <NewsItem :post="post" />
+            <NewsItem :post="post" :bigger="true" />
           </div>
         </template>
       </div>

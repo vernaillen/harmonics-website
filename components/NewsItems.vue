@@ -19,6 +19,7 @@ const { data: posts } = await useAsyncData('posts', () =>
             <div v-if="index < 1" class="w-full">
               <NewsItem
                 :post="post"
+                :bigger="true"
                 :lang="lang"
                 class="slide-enter"
                 :style="'--enter-stage:' + index + ';--enter-step:60ms;'"

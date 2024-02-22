@@ -3,6 +3,7 @@ import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 const { locale, t } = useI18n()
 export interface Props {
   post: ParsedContent
+  bigger?: boolean
 }
 const props = defineProps<Props>()
 const imgWidth = 624
@@ -25,7 +26,7 @@ onMounted(() => {
       <template #header>
         <div
           v-if="post.thumbnail || post.thumb_video"
-          class="h-[144px] sm:h-[257px] md:h-[167px] lg:h-[147px] xl:h-[179px] 2xl:h-[210px]"
+          :class="bigger ? '' : 'h-[144px] sm:h-[257px] md:h-[167px] lg:h-[147px] xl:h-[179px] 2xl:h-[210px]'"
         >
           <NuxtLink
             v-if="post.thumbnail"
