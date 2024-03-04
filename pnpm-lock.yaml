@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@twicpics/components':
-    specifier: ^0.27.2
-    version: 0.27.2
+    specifier: ^0.28.0
+    version: 0.28.0
   '@vercel/speed-insights':
     specifier: ^1.0.10
     version: 1.0.10(react@18.2.0)(vue-router@4.3.0)(vue@3.4.19)
@@ -3699,8 +3699,8 @@ packages:
       minimatch: 9.0.3
     dev: true
 
-  /@twicpics/components@0.27.2:
-    resolution: {integrity: sha512-vD7xltpBPwk79rVK7U2uWj4XRM92TEuy9brSaSjV9izC68iCjd5LCrEFFXwCo+vmYVFbzeHWq7wLNCT1eop+3Q==}
+  /@twicpics/components@0.28.0:
+    resolution: {integrity: sha512-bVHjPtGogvvfrj82nMrzEY2EM91S049eMb/QZPC9EHeXSMT+F05CU280WoU3tvSZB8yR3zDzqo7Bs3qY27FOpA==}
     dev: false
 
   /@types/debug@4.1.12:
