@@ -1,7 +1,5 @@
 {
   "recommendations": [
-    "Nuxtr.nuxtr-vscode",
-    "Vue.volar",
-    "Vue.vscode-typescript-vue-plugin",
+    "Nuxtr.nuxtr-vscode"
   ]
 }
