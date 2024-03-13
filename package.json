@@ -27,7 +27,7 @@
     "fulltest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.190",
+    "@iconify/json": "^2.2.191",
     "@nuxt/content": "2.12.1",
     "@nuxt/devtools": "^1.0.8",
     "@nuxt/image": "^1.4.0",
@@ -46,7 +46,7 @@
     "dayjs": "^1.11.10",
     "eslint": "^8.57.0",
     "nuxt": "^3.10.3",
-    "nuxt-og-image": "3.0.0-rc.42",
+    "nuxt-og-image": "3.0.0-rc.43",
     "remark-breaks": "^4.0.0",
     "start-server-and-test": "^2.0.3"
   },
