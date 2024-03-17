@@ -29,12 +29,6 @@ module.exports = {
       xl: '1140px',
       '2xl': '1320px'
     },
-    fontFamily: {
-      mic32: ['mic32, mic32fallback, "Helvetica Neue", sans-serif'],
-      mic32fallback: ['mic32fallback, "Helvetica Neue", sans-serif'],
-      display: ['mic32, mic32fallback, "Helvetica Neue", sans-serif'],
-      sans: ['montserrat, Verdana, sans-serif']
-    },
     extend: {
       colors: {
         avocado: {
@@ -144,8 +138,6 @@ module.exports = {
             css: {
               maxWidth: '1320px', // add required value here
               'h1, h2': {
-                fontFamily: theme('fontFamily.mic32'),
-                fontWeight: 900,
                 'scroll-margin-top': 'var(--scroll-mt)'
               },
               'h3, h4, h5, h6': {
@@ -153,7 +145,6 @@ module.exports = {
                 'scroll-margin-top': 'var(--scroll-mt)'
               },
               'h1 a, h2 a, h3 a, h4 a': {
-                fontFamily: theme('fontFamily.mic32'),
                 color: 'inherit',
                 fontWeight: 'inherit'
               },

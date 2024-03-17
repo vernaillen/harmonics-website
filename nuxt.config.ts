@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   modules: [
     // '@dargmuesli/nuxt-cookie-control',
     '@nuxt/content',
+    '@nuxt/fonts',
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxthq/studio',
@@ -50,6 +51,16 @@ export default defineNuxtConfig({
     '~/assets/css/main.css',
     '~/assets/css/lazyYoutubeVideo.css'
   ],
+
+  fonts: {
+    experimental: { addPreloadLinks: true },
+    families: [
+      { name: 'mic32', src: '/fonts/58405e358c3b387807fb206f187b0aa4-webfont.woff2', weights: [500] },
+      { name: 'montserrat', src: '/fonts/montserrat-light-webfont.woff2', weights: [300] },
+      { name: 'montserrat', src: '/fonts/montserrat-regular-webfont.woff2', weights: [400] },
+      { name: 'montserrat', src: '/fonts/montserrat-medium-webfont.woff2', weights: [500] }
+    ]
+  },
 
   postcss: {
     plugins: {

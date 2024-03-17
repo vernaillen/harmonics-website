@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SpeedInsights } from "@vercel/speed-insights/nuxt"
+import { SpeedInsights } from '@vercel/speed-insights/nuxt'
 const { isMobileNavOpen } = useMobileNav()
 const { locale } = useI18n()
 
@@ -15,29 +15,6 @@ useHead({
     {
       name: 'description',
       content: 'Healing power of Sound, Music & Dance'
-    }
-  ],
-  link: [
-    {
-      rel: 'preload',
-      as: 'font',
-      type: 'font/woff2',
-      crossorigin: '',
-      href: '/fonts/58405e358c3b387807fb206f187b0aa4-webfont.woff2'
-    },
-    {
-      rel: 'preload',
-      as: 'font',
-      type: 'font/woff2',
-      crossorigin: '',
-      href: '/fonts/montserrat-light-webfont.woff2'
-    },
-    {
-      rel: 'preload',
-      as: 'font',
-      type: 'font/woff2',
-      crossorigin: '',
-      href: '/fonts/montserrat-regular-webfont.woff2'
     }
   ]
 })
