@@ -29,6 +29,10 @@ module.exports = {
       xl: '1140px',
       '2xl': '1320px'
     },
+    fontFamily: {
+      mic32: ['mic32, "Helvetica Neue", sans-serif'],
+      sans: ['montserrat, Verdana, sans-serif']
+    },
     extend: {
       colors: {
         avocado: {
