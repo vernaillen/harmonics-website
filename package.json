@@ -39,7 +39,7 @@
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/i18n": "8.2.0",
     "@nuxtjs/plausible": "^0.2.3",
-    "@vernaillen/nuxt-base-layer": "^0.2.29",
+    "@vernaillen/nuxt-base-layer": "^0.3.0",
     "@vitest/coverage-v8": "^1.4.0",
     "@vueuse/nuxt": "^10.9.0",
     "cssnano": "^6.1.2",
