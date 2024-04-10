@@ -52,7 +52,7 @@
     "start-server-and-test": "^2.0.3"
   },
   "dependencies": {
-    "@twicpics/components": "^0.28.1",
+    "@twicpics/components": "^0.29.0",
     "@vercel/speed-insights": "^1.0.10",
     "resend": "^3.2.0",
     "vue-easy-lightbox": "^1.19.0",

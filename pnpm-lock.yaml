@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@twicpics/components':
-    specifier: ^0.28.1
-    version: 0.28.1
+    specifier: ^0.29.0
+    version: 0.29.0
   '@vercel/speed-insights':
     specifier: ^1.0.10
     version: 1.0.10(react@18.2.0)(vue-router@4.3.0)(vue@3.4.21)
@@ -3264,8 +3264,8 @@ packages:
       minimatch: 9.0.4
     dev: true
 
-  /@twicpics/components@0.28.1:
-    resolution: {integrity: sha512-zPHMVvzPvJ79HggZOoEf5BuapQpWbGaejByPkwDVPP+5x0pS5o/RveAzoVt7h5TkxY0iNgd8/x2oBxMkIOanOA==}
+  /@twicpics/components@0.29.0:
+    resolution: {integrity: sha512-JJJf2iFIlmY8KBNIV4mk5FRU+foYkKq/sntfX8zJ4SS61GIZbYLWc3wN1n7x97r/kLaqsa+D73EuWBck3J+ALA==}
     dev: false
 
   /@types/debug@4.1.12:
@@ -5211,6 +5211,7 @@ packages:
 
   /b4a@1.6.6:
     resolution: {integrity: sha512-5Tk1HLk6b6ctmjIkAcU/Ujv/1WqiDl0F0JdRCR80VsOcUlHcu7pWeWRlOqQLHfDEsVx9YH/aif5AG4ehoCtTmg==}
+    requiresBuild: true
     dev: true
 
   /bail@2.0.2:
@@ -6560,6 +6561,7 @@ packages:
 
   /end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
+    requiresBuild: true
     dependencies:
       once: 1.4.0
     dev: true
@@ -7306,6 +7308,7 @@ packages:
 
   /fast-fifo@1.3.2:
     resolution: {integrity: sha512-/d9sfos4yxzpwkDkuN7k2SqFKtYNmCTzgfEpz82x34IM9/zc8KGxQoXg1liNC/izpRM/MBdt44Nmx41ZWqk+FQ==}
+    requiresBuild: true
     dev: true
 
   /fast-glob@3.3.2:
@@ -11647,6 +11650,7 @@ packages:
 
   /queue-tick@1.0.1:
     resolution: {integrity: sha512-kJt5qhMxoszgU/62PLP1CJytzd2NKetjSRnyuj31fDd3Rlcz3fzlFdFLD1SItunPwyqEOkca6GbV612BWfaBag==}
+    requiresBuild: true
     dev: true
 
   /queue@6.0.2:
@@ -12689,6 +12693,7 @@ packages:
 
   /streamx@2.16.1:
     resolution: {integrity: sha512-m9QYj6WygWyWa3H1YY69amr4nVgy61xfjys7xO7kviL5rfIEc2naf+ewFiOA+aEJD7y0JO3h2GoiUv4TDwEGzQ==}
+    requiresBuild: true
     dependencies:
       fast-fifo: 1.3.2
       queue-tick: 1.0.1
