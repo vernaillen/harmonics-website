@@ -1,17 +1,10 @@
 {
     "body": [
         {
-            "title": "Full Moon ~ Cacao ~ Ecstatic Dance",
-            "description": "At Simply Be in Brakel ~ with Sandrine & DJ Harmonics ",
-            "url": "/news/fullmooncacaoecstaticsimplybe",
-            "date": "2024-02-25 15:00:00",
-            "showTime": true,
-            "category": "ecstatic"
-        },
-        {
-            "title": "Xtatic dance Ronse",
-            "description": "TBA",
-            "date": "2024-04-21 15:00:00",
+            "title": "Xtatic dance Ronse: Oriental Journey",
+            "description": "Let's Celebrate life 2gether on Sun-day 28/4 @ de Ringelwikke Ronse",
+            "date": "2024-04-28 15:00:00",
+            "url": "/news/xtaticdanceronse-orientaljourney",
             "showTime": true,
             "category": "ecstatic"
         }

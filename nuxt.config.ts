@@ -1,7 +1,9 @@
+import nuxtPkg from 'nuxt/package.json'
+
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   extends: [
-    '@vernaillen/nuxt-base-layer'
+    '@nuxt/ui-pro'
   ],
   modules: [
     // '@dargmuesli/nuxt-cookie-control',
@@ -33,6 +35,9 @@ export default defineNuxtConfig({
     description: 'Healing Power of Sound, Music and Dance'
   },
   runtimeConfig: {
+    public: {
+      nuxtVersion: nuxtPkg.version
+    },
     iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
     iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup'
   },

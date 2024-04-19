@@ -14,7 +14,7 @@ onMounted(() => {
 
 <template>
   <div class="w-full">
-    <div ref="horizontalRule" class="horizontal-rule mx-4 mt-12 mb-10 pt-[1px]" />
+    <hr class="mx-4 mt-12 mb-10 pt-[1px]">
   </div>
 </template>
 
