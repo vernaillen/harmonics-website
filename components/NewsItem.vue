@@ -40,7 +40,7 @@ onMounted(() => {
               loading="lazy"
               :src="post.thumbnail"
               :alt="`thumbnail ${post.title}`"
-              img-class="!my-0 relative object-cover "
+              img-class="!my-0 relative w-full object-cover "
             />
           </NuxtLink>
           <NuxtLink v-if="post.thumb_video" :to="post._path" :aria-label="post.title">
@@ -50,7 +50,7 @@ onMounted(() => {
               ratio="3:2"
               mode="cover"
               :src="'/harmonics.be' + post.thumb_video"
-              class="opacity-0"
+              class="opacity-0 videoThumb"
               style="transition: opacity 2s;"
             />
           </NuxtLink>
@@ -116,3 +116,9 @@ onMounted(() => {
     </UCard>
   </div>
 </template>
+
+<style>
+.videoThumb video {
+  @apply mt-0;
+}
+</style>
