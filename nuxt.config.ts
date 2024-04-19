@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     '@nuxtjs/i18n',
     '@nuxtjs/plausible',
+    '@nuxtjs/seo',
     '@nuxtjs/sitemap',
     '@vueuse/nuxt',
     'nuxt-og-image',
@@ -27,7 +28,9 @@ export default defineNuxtConfig({
     ]
   ],
   site: {
-    url: 'https://harmonics.be'
+    url: 'https://harmonics.be',
+    name: 'Harmonics.be',
+    description: 'Healing Power of Sound, Music and Dance'
   },
   runtimeConfig: {
     iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',

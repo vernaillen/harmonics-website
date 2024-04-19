@@ -6,8 +6,8 @@ const { locale } = useI18n()
 function scrollToTop () {
   scrollToElement('pageTop')
 }
-
 useHead({
+  titleTemplate: '%s %separator %siteName',
   htmlAttrs: {
     lang: locale
   },
