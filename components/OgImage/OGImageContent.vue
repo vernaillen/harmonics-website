@@ -209,9 +209,9 @@ const category = 'trance'
           </div>
         </div>
         <div
-          v-if="page?.desc"
+          v-if="page?.description"
           class="text-3xl leading-normal p-7"
-          v-html="page?.desc"
+          v-html="page?.description"
         />
       </div>
     </div>

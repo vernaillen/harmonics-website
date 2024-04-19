@@ -11,12 +11,9 @@ useHead({
   htmlAttrs: {
     lang: locale
   },
-  meta: [
-    {
-      name: 'description',
-      content: 'Healing power of Sound, Music & Dance'
-    }
-  ]
+  templateParams: {
+    separator: '-'
+  }
 })
 </script>
 

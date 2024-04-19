@@ -16,6 +16,12 @@ if (page.value) {
   setResponseStatus(event, 404)
 }
 
+useSeoMeta({
+  title: pageContent.value?.title,
+  ogTitle: pageContent.value?.title,
+  description: pageContent.value?.description,
+  ogDescription: pageContent.value?.description
+})
 const ogImageOptions = {
   component: 'OGImageHome'
   /* component: 'OGImageContent',

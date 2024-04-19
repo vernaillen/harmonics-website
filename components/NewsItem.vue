@@ -97,7 +97,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <p class="text-sm md:text-md" v-html="post.desc" />
+      <p class="text-sm md:text-md" v-html="post.description" />
       <p class="!mb-0 w-full flex justify-end">
         <UButton
           :to="post._path"

@@ -4,15 +4,11 @@ const localePath = useLocalePath()
 const route = useRoute()
 const page = await queryContent(route.path).findOne()
 
-const title = `${t('news.title')} | ${t('website.title')}`
-useHead({
-  title,
-  meta: [
-    {
-      property: 'og:title',
-      content: title
-    }
-  ]
+useSeoMeta({
+  title: t('news.title'),
+  ogTitle: t('news.title'),
+  description: t('news.description'),
+  ogDescription: t('news.description')
 })
 defineOgImage({
   component: 'OGImageHome'
