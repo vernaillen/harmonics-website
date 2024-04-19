@@ -28,6 +28,10 @@ export default defineNuxtConfig({
     ]
   ],
 
+  site: {
+    url: 'https://harmonics.be'
+  },
+  
   runtimeConfig: {
     iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
     iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup'
