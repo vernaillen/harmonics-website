@@ -46,7 +46,7 @@
     "cssnano": "^6.1.2",
     "cypress": "^13.8.0",
     "dayjs": "^1.11.10",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "nuxt": "^3.11.2",
     "nuxt-og-image": "3.0.0-rc.52",
     "nuxt-time": "^0.1.3",
