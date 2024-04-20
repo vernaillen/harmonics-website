@@ -15,21 +15,16 @@ if (page.value) {
   const event = useRequestEvent()
   setResponseStatus(event, 404)
 }
-
 useSeoMeta({
   title: pageContent.value?.title,
   ogTitle: pageContent.value?.title,
   description: pageContent.value?.description,
   ogDescription: pageContent.value?.description
 })
-const ogImageOptions = {
-  component: 'OGImageHome'
-  /* component: 'OGImageContent',
+defineOgImageComponent('OGImageContent', {
   lang: locale,
-  path: route.path */
-}
-// a. Use the Composition API
-defineOgImage(ogImageOptions)
+  image: pageContent.value?.ogImage
+})
 
 const { triggerPolitePopup } = usePolitePopup()
 if (route.path !== '/contact' && route.path !== '/en/contact') { triggerPolitePopup() }
@@ -38,7 +33,6 @@ if (route.path !== '/contact' && route.path !== '/en/contact') { triggerPolitePo
 <template>
   <div>
     <NuxtLayout>
-      <OgImage v-bind="ogImageOptions" />
       <main class="flex-grow">
         <HeaderImage
           :lang="locale"

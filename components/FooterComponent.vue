@@ -73,8 +73,8 @@ const linksNL = [{
         >
           <template #right>
             <div class="w-full text-center xl:text-right">
-              <LanguageSwitcher class="" />
-              <ColorModeSwitcher class="mr-8" />
+              <LanguageSwitcher />
+              <ColorModeSwitcher />
               <SocialIcons class="px-3" />
             </div>
           </template>
@@ -101,7 +101,7 @@ const linksNL = [{
       </template>
 
       <template #right>
-        <p class="w-full text-right prose dark:prose-invert text-sm">
+        <p class="w-full text-center xl:text-right prose dark:prose-invert text-sm">
           built with
           <UIcon
             name="i-mdi-heart"
