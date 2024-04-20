@@ -10,12 +10,7 @@ useSeoMeta({
   description: t('news.description'),
   ogDescription: t('news.description')
 })
-defineOgImage({
-  component: 'OGImageHome'
-  /* component: 'OGImageContent',
-  lang: locale,
-  path: route.path */
-})
+defineOgImageComponent('OGImageMain')
 </script>
 
 <template>

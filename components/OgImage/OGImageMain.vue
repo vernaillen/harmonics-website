@@ -4,7 +4,6 @@ defineOptions({
   inheritAttrs: false
 })
 defineProps<{
-  lang: string
   image?: string
 }>()
 </script>

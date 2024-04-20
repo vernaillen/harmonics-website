@@ -15,15 +15,15 @@ if (page.value) {
   const event = useRequestEvent()
   setResponseStatus(event, 404)
 }
+
+defineOgImageComponent('OGImageMain', {
+  image: pageContent.value?.ogImage
+})
 useSeoMeta({
   title: pageContent.value?.title,
   ogTitle: pageContent.value?.title,
   description: pageContent.value?.description,
   ogDescription: pageContent.value?.description
-})
-defineOgImageComponent('OGImageContent', {
-  lang: locale,
-  image: pageContent.value?.ogImage
 })
 
 const { triggerPolitePopup } = usePolitePopup()
