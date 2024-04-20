@@ -17,7 +17,7 @@ if (page.value) {
 }
 
 defineOgImageComponent('OGImageMain', {
-  image: pageContent.value?.ogImage
+  image: pageContent.value?.thumbnail,
 })
 useSeoMeta({
   title: pageContent.value?.title,
