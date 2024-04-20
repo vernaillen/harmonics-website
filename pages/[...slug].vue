@@ -16,9 +16,7 @@ if (page.value) {
   setResponseStatus(event, 404)
 }
 
-defineOgImageComponent('OGImageMain', {
-  image: pageContent.value?.thumbnail,
-})
+defineOgImageComponent('OGImageMain')
 useSeoMeta({
   title: pageContent.value?.title,
   ogTitle: pageContent.value?.title,
