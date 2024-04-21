@@ -81,6 +81,14 @@ export default defineNuxtConfig({
   ui: {
     icons: ['circle-flags', 'heroicons', 'logos', 'mdi', 'noto', 'ph', 'simple-icons', 'iconoir']
   },
+  uiPro: {
+    routerOptions: false
+  },
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  },
   colorMode: {
     preference: 'light',
     classSuffix: ''
