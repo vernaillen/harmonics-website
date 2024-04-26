@@ -10,7 +10,8 @@ const pageContent = ref<ParsedContent | null>(null)
 
 if (page.value) {
   pageContent.value = page.value
-} else {
+}
+else {
   pageContent.value = await queryContent(localePath('/_404')).findOne()
   const event = useRequestEvent()
   setResponseStatus(event, 404)
@@ -25,7 +26,7 @@ useSeoMeta({
 })
 
 const { triggerPolitePopup } = usePolitePopup()
-if (route.path !== '/contact' && route.path !== '/en/contact') { triggerPolitePopup() }
+if (route.path !== '/contact' && route.path !== '/en/contact') triggerPolitePopup()
 </script>
 
 <template>
@@ -39,7 +40,11 @@ if (route.path !== '/contact' && route.path !== '/en/contact') { triggerPolitePo
         />
         <div class="w-full container mx-auto py-4">
           <div class="prose prose-primary dark:prose-invert">
-            <NextPreviousPost v-if="isNews(route.path)" :path="route.path" :lang="locale" :news-path="localePath('/news')" />
+            <NextPreviousPost
+              v-if="isNews(route.path)" :path="route.path"
+              :lang="locale"
+              :news-path="localePath('/news')"
+            />
             <div class="slide-enter-content">
               <ContentDoc>
                 <template #default="{ doc }">

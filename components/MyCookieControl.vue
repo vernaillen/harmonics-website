@@ -25,7 +25,11 @@ watch(
       <template #bar>
         <div class="prose text-left w-full grid sm:grid-cols-5 gap-1 mr-2">
           <div>
-            <NuxtImg src="/images/lovecookie.png" width="80" height="80" class="m-0" />
+            <NuxtImg
+              src="/images/lovecookie.png" width="80"
+              height="80"
+              class="m-0"
+            />
           </div>
           <div class="col-span-4">
             <h1 class="text-primary-500 dark:text-primary-200 text-2xl">

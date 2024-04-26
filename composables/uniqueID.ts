@@ -1,4 +1,4 @@
-let uidCounter: Number = 0
+let uidCounter: number = 0
 
 export const useUniqueID = () => {
   uidCounter += 1

@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   ],
   modules: [
     // '@dargmuesli/nuxt-cookie-control',
+    '@nuxt/eslint',
     '@nuxt/content',
     '@nuxt/fonts',
     '@nuxt/image',
@@ -29,6 +30,15 @@ export default defineNuxtConfig({
       }
     ]
   ],
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+    checker: {
+      lintOnStart: true,
+      fix: true,
+    },
+  },
   site: {
     url: 'https://harmonics.be',
     name: 'Harmonics.be',

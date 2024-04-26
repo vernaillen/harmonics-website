@@ -4,7 +4,11 @@ const appConfig = useAppConfig()
 </script>
 
 <template>
-  <NuxtLink v-if="appConfig.mailchimpLink" :href="appConfig.mailchimpLink" target="_blank" :aria-label="t('mailinglist.name')">
+  <NuxtLink
+    v-if="appConfig.mailchimpLink" :href="appConfig.mailchimpLink"
+    target="_blank"
+    :aria-label="t('mailinglist.name')"
+  >
     {{ t('mailinglist.name') }}
   </NuxtLink>
 </template>

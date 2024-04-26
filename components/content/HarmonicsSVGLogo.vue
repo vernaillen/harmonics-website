@@ -36,10 +36,18 @@ watch(() => colorMode.value, () => {
         />
       </clipPath>
       <clipPath id="clippath-1">
-        <rect class="cls-1" x="48.7" y="3.11" width="523.3" height="507.47" />
+        <rect
+          class="cls-1" x="48.7"
+          y="3.11"
+          width="523.3" height="507.47"
+        />
       </clipPath>
       <clipPath id="clippath-2">
-        <rect class="cls-1" x="48.7" y="3.11" width="523.3" height="507.47" />
+        <rect
+          class="cls-1" x="48.7"
+          y="3.11"
+          width="523.3" height="507.47"
+        />
       </clipPath>
       <filter
         id="luminosity-noclip"
@@ -109,7 +117,11 @@ watch(() => colorMode.value, () => {
           transform="translate(48.29 3.09) scale(.48)"
           xlink:href="https://vernaillen.twic.pics/harmonics.be/images/harmonics_svglogo_bol.png?twic=v1/output=webp"
         />
-        <g id="logoFeather" ref="logoFeather" :class="transitionClass" class="duration-1000">
+        <g
+          id="logoFeather" ref="logoFeather"
+          :class="transitionClass"
+          class="duration-1000"
+        >
           <g>
             <path
               class="fill-white"
@@ -1630,7 +1642,11 @@ watch(() => colorMode.value, () => {
             xlink:href="https://vernaillen.twic.pics/harmonics.be/images/harmonics_svglogo_shadow.png?twic=v1/output=webp"
           />
         </g>
-        <g id="logoTitle" ref="logoTitle" :class="transitionClass" class="duration-75">
+        <g
+          id="logoTitle" ref="logoTitle"
+          :class="transitionClass"
+          class="duration-75"
+        >
           <path
             class="fill-trance dark:fill-trance-100"
             d="m55.2,463.13c0-3.15,2.1-5.25,5.25-5.25h6.18c3.15,0,5.25,2.1,5.25,5.25v20.41c2.57-1.4,6.53-2.8,10.38-2.8,12.36,0,23.09,7.11,23.09,24.38v32.89c0,3.15-2.1,5.25-5.25,5.25h-6.18c-3.15,0-5.25-2.1-5.25-5.25v-31.96c0-8.51-2.92-11.2-7.93-11.2-3.03,0-5.95.93-8.86,2.1v41.05c0,3.15-2.1,5.25-5.25,5.25h-6.18c-3.15,0-5.25-2.1-5.25-5.25v-74.88Z"
@@ -1667,9 +1683,17 @@ watch(() => colorMode.value, () => {
             class="fill-trance dark:fill-trance-100"
             d="m340.71,480.74c-17.68,0-32.02,14.33-32.02,32.02s14.33,32.02,32.02,32.02,32.02-14.33,32.02-32.02-14.33-32.02-32.02-32.02Zm0,48.64c-9.18,0-16.62-7.44-16.62-16.62s7.44-16.62,16.62-16.62,16.62,7.44,16.62,16.62-7.44,16.62-16.62,16.62Z"
           />
-          <circle class="fill-trance dark:fill-trance-100" cx="454.44" cy="463.4" r="9.43" />
+          <circle
+            class="fill-trance dark:fill-trance-100" cx="454.44"
+            cy="463.4"
+            r="9.43"
+          />
         </g>
-        <g id="logoSubTitle" ref="logoSubTitle" :class="transitionClass" class="duration-500">
+        <g
+          id="logoSubTitle" ref="logoSubTitle"
+          :class="transitionClass"
+          class="duration-500"
+        >
           <path
             class="fill-trance dark:fill-trance-100"
             d="m70.76,563.98v17.26h-1.26v-8.21h-11.54v8.21h-1.26v-17.26h1.26v7.94h11.54v-7.94h1.26Z"

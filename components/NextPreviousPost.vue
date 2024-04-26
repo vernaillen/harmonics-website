@@ -2,7 +2,7 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 const props = defineProps<{
-  lang: string | undefined,
+  lang: string | undefined
   path: string
   newsPath: string
 }>()

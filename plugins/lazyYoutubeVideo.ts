@@ -2,6 +2,7 @@
 Thanks Andrew Vasilchuk & Andrew Kazakov!
 */
 import { defineComponent, ref, computed, onUnmounted, openBlock, createElementBlock, createElementVNode, normalizeStyle, unref, mergeProps, Fragment, createCommentVNode, renderSlot } from 'vue'
+
 const DEFAULT_ALT_ATTRIBUTE = 'Video thumbnail'
 const DEFAULT_BUTTON_LABEL = 'Play video'
 const DEFAULT_ASPECT_RATIO = '16:9'
@@ -98,7 +99,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     }
   },
   emits: ['load:iframe', 'init:player'],
-  setup (__props, { expose, emit }) {
+  setup(__props, { expose, emit }) {
     const props = __props
     const activated = ref(props.autoplay)
     const playerInstance = ref(null)
@@ -110,7 +111,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       const executionResult = YOUTUBE_REGEX.exec(src)
       if (executionResult !== null) {
         return executionResult[1]
-      } else {
+      }
+      else {
         warn(`Failed to extract video id from ${src}`)
         return ''
       }
@@ -132,7 +134,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     const getPaddingBottom = () => {
       let { aspectRatio } = props
       const warningMessage = `Invalid value ${aspectRatio} supplied to \`aspectRatio\` property, instead fallback value ${DEFAULT_ASPECT_RATIO} is used `
-      if (typeof aspectRatio !== 'string' || typeof aspectRatio === 'string' && isAspectRatio(aspectRatio) === false) {
+      if (typeof aspectRatio !== 'string' || (typeof aspectRatio === 'string' && isAspectRatio(aspectRatio) === false)) {
         aspectRatio = DEFAULT_ASPECT_RATIO
         warn(warningMessage)
       }
@@ -192,10 +194,12 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         try {
           window.YT.Player
           initPlayerInstance()
-        } catch (e) {
+        }
+        catch (e) {
           if (props.injectPlayerScript) {
             doInjectPlayerScript()
-          } else {
+          }
+          else {
             console.error(
               '[vue-lazy-youtube-video]: window.YT.Player is not defined. Make sure you either included the IFrame Player API or passed `injectPlayerScript` prop'
             )
@@ -212,7 +216,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       let _a, _b
       return openBlock(), createElementBlock('div', {
         class: 'y-video',
-        onClick: _cache[1] || (_cache[1] = $event => activated.value = true)
+        onClick: _cache[1] || (_cache[1] = () => activated.value = true)
       }, [
         createElementVNode('div', {
           class: 'y-video__inner',
@@ -226,7 +230,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                 class: 'y-video__media'
               }, unref(iframeAttrs), {
                 src: unref(srcAttribute),
-                onLoad: _cache[0] || (_cache[0] = $event => onIframeLoad())
+                onLoad: _cache[0] || (_cache[0] = () => onIframeLoad())
               }), null, 16, _hoisted_1))
             : (openBlock(), createElementBlock(Fragment, { key: 1 }, [
                 createElementVNode('picture', null, [
@@ -246,9 +250,9 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                 _ctx.$slots.button
                   ? renderSlot(_ctx.$slots, 'button', { key: 0 })
                   : (openBlock(), createElementBlock('button', {
-                      key: 1,
-                      class: 'y-video__button',
-                      type: 'button',
+                      'key': 1,
+                      'class': 'y-video__button',
+                      'type': 'button',
                       'aria-label': __props.buttonLabel
                     }, [
                       _ctx.$slots.icon ? renderSlot(_ctx.$slots, 'icon', { key: 0 }) : (openBlock(), createElementBlock('svg', _hoisted_5, _hoisted_8))

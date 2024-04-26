@@ -64,6 +64,7 @@ const linksNL = [{
   ]
 }]
 </script>
+
 <template>
   <div class="text-center pb-5 ">
     <UFooter :ui="{ wrapper: 'border-t border-primary-500/50 mt-5' }">
@@ -82,7 +83,7 @@ const linksNL = [{
       </template>
       <template #left>
         <span class="prose dark:prose-invert text-sm text-primary-500 dark:text-primary-200">
-          {{ t( 'footer.copyright' ) }} {{ currentYear }} Harmonics BV - BE0503971022
+          {{ t('footer.copyright') }} {{ currentYear }} Harmonics BV - BE0503971022
         </span>
       </template>
       <template #center>

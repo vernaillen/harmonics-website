@@ -18,11 +18,19 @@ const { debugInfo } = usePolitePopup()
   >
     <div class="flex gap-4">
       <div>
-        <input v-model="debugInfo.readTimeElapsed" type="checkbox" disabled name="readTimeElapsed">
+        <input
+          v-model="debugInfo.readTimeElapsed" type="checkbox"
+          disabled
+          name="readTimeElapsed"
+        >
         <label for="readTimeElapsed">Read time elapsed</label>
       </div>
       <div>
-        <input v-model="debugInfo.scrolledContent" type="checkbox" disabled name="scrolledContent">
+        <input
+          v-model="debugInfo.scrolledContent" type="checkbox"
+          disabled
+          name="scrolledContent"
+        >
         <label for="scrolledContent">Content scrolled</label>
       </div>
       <span>{{ debugInfo.amountScrolledInPercentage }}% scrolled</span>

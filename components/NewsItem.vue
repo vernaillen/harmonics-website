@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+
 const { locale, t } = useI18n()
 export interface Props {
   post: ParsedContent

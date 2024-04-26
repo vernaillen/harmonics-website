@@ -1,6 +1,7 @@
 import { Resend } from 'resend'
+
 const resend = new Resend(process.env.RESEND_API_KEY)
-const allowLocalhost = process.env.RESEND_ALLOW_LOCALHOST === 'true'
+// const allowLocalhost = process.env.RESEND_ALLOW_LOCALHOST === 'true'
 
 export default defineEventHandler(async (event) => {
   const domain = event.req.headers.referer?.split('/')[2].split(':')[0]
@@ -36,7 +37,8 @@ export default defineEventHandler(async (event) => {
       html: 'Dag ' + body.name + '<br><br>' + body.bodyForSender.replace(/\n/g, '<br>')
     })
     return data
-  } catch (error) {
+  }
+  catch (error) {
     return { error }
   }
   /* } else {

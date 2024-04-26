@@ -2,7 +2,7 @@
   <div class="mt-10">
     <div class="col-left">
       <USkeleton class="h-8 w-1/2 mb-10" />
-      <div v-for="items, index in [1,2]" :key="index" class="space-y-2 mb-5">
+      <div v-for="items, index in [1, 2]" :key="index" class="space-y-2 mb-5">
         <USkeleton class="h-4 w-full" />
         <USkeleton class="h-4 w-[100px]" />
         <USkeleton class="h-4 w-1/2" />

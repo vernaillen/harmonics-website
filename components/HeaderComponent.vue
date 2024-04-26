@@ -11,9 +11,11 @@ const navbarTogglerClass = computed(() => {
 const navbarCollapseClass = computed(() => {
   if (isMobileNavOpen.value && isMobileNavClosing.value) {
     return 'opacity-10 blur-lg'
-  } else if (isMobileNavOpen.value) {
+  }
+  else if (isMobileNavOpen.value) {
     return ''
-  } else {
+  }
+  else {
     return 'hidden'
   }
 })
@@ -34,14 +36,14 @@ watch(() => locale.value, () => {
   refresh()
 })
 
-function checkCurrentRoute (clickedPath: string | undefined) {
+function checkCurrentRoute(clickedPath: string | undefined) {
   if (clickedPath === route.path) {
     isMobileNavOpen.value = false
   }
   // else do nothing (mobileNav will be automatically hidden on page:finish)
 }
 onMounted(() => {
-  window.addEventListener('resize', () => { isMobileNavOpen.value = false })
+  window.addEventListener('resize', () => isMobileNavOpen.value = false)
 })
 </script>
 

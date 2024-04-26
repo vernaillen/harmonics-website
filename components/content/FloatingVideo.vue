@@ -30,6 +30,7 @@ withDefaults(defineProps<Props>(), {
     <span>{{ title }}</span>
   </p>
 </template>
+
 <style>
 .prose .y-video__media--type--img,
 .videoPicture picture {

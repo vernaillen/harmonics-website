@@ -1,7 +1,7 @@
 <script setup lang="ts">
 export interface Props {
-    to: string;
-    label: string;
+  to: string
+  label: string
 }
 defineProps<Props>()
 </script>

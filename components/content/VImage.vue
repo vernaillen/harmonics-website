@@ -9,7 +9,7 @@ export interface Props {
   placeholder?: string
   fit?: string
   format?: string
-  modifiers?: Object
+  modifiers?: object
   finalOpacity?: number
 }
 const props = withDefaults(defineProps<Props>(), {

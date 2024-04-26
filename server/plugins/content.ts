@@ -15,12 +15,15 @@ export default defineNitroPlugin((nitroApp) => {
         if (ancestors.length === 1 && ancestors[0].type === 'root') {
           if (node.tag === 'div' && node.props.class && node.props.class.startsWith('col-')) {
             // do nothing
-          } else if (node.props.class && node.props.class === 'no-sliding') {
+          }
+          else if (node.props.class && node.props.class === 'no-sliding') {
             // do nothing
-          } else {
+          }
+          else {
             enrichNode(node, index++)
           }
-        } else if (ancestors.length === 2 && ancestors[0].type === 'root') {
+        }
+        else if (ancestors.length === 2 && ancestors[0].type === 'root') {
           if (ancestors[1].tag === 'div' && ancestors[1].props.class && ancestors[1].props.class.startsWith('col-') && !node.tag.startsWith('planned-')) {
             enrichNode(node, index++)
           }
@@ -29,8 +32,8 @@ export default defineNitroPlugin((nitroApp) => {
     }
   })
 })
-
-function enrichNode (node: any, index: number) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function enrichNode(node: any, index: number) {
   node.props.className = (node.props.className ? node.props.className : '') + ' slide-enter'
   node.props.style = (node.props.style ? node.props.style : '') + ' --enter-stage: ' + index + '; --enter-step: 90ms;'
 }

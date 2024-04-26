@@ -23,10 +23,10 @@ module.exports = {
       padding: '20px'
     },
     screens: {
-      sm: '540px',
-      md: '720px',
-      lg: '960px',
-      xl: '1140px',
+      'sm': '540px',
+      'md': '720px',
+      'lg': '960px',
+      'xl': '1140px',
       '2xl': '1320px'
     },
     fontFamily: {
@@ -140,37 +140,37 @@ module.exports = {
         return {
           DEFAULT: {
             css: {
-              maxWidth: '1320px', // add required value here
+              'maxWidth': '1320px', // add required value here
               'h1, h2': {
                 'scroll-margin-top': 'var(--scroll-mt)'
               },
               'h3, h4, h5, h6': {
-                fontWeight: theme('fontWeight.medium'),
+                'fontWeight': theme('fontWeight.medium'),
                 'scroll-margin-top': 'var(--scroll-mt)'
               },
               'h1 a, h2 a, h3 a, h4 a': {
                 color: 'inherit',
                 fontWeight: 'inherit'
               },
-              h1: {
+              'h1': {
                 fontSize: '2em'
               },
-              h2: {
+              'h2': {
                 fontSize: '1.6em'
               },
-              h3: {
+              'h3': {
                 fontSize: '1.25em'
               },
-              h4: {
+              'h4': {
                 fontSize: '1.15em'
               },
-              h5: {
+              'h5': {
                 fontSize: '1.1em'
               },
-              h6: {
+              'h6': {
                 fontSize: '1em'
               },
-              a: {
+              'a': {
                 fontWeight: theme('fontWeight.normal'),
                 textDecoration: 'none',
                 borderBottom: '1px solid rgba(123, 136, 86, 0.2)',
@@ -226,14 +226,14 @@ module.exports = {
                 color: 'var(--tw-prose-links)',
                 borderColor: 'var(--tw-prose-links)'
               },
-              pre: {
+              'pre': {
                 margin: '0',
                 borderRadius: '0.375rem',
                 border: '1px solid var(--tw-prose-pre-border)',
                 whiteSpace: 'pre-wrap',
                 wordBreak: 'break-words'
               },
-              code: {
+              'code': {
                 backgroundColor: 'var(--tw-prose-pre-bg)',
                 padding: '0.25rem 0.375rem',
                 borderRadius: '0.375rem',
@@ -245,7 +245,7 @@ module.exports = {
               'code::after': {
                 content: ''
               },
-              blockquote: {
+              'blockquote': {
                 fontSize: '0.9em',
                 fontWeight: 400,
                 paddingLeft: '1em',
@@ -267,13 +267,13 @@ module.exports = {
                 position: 'absolute'
               },
               'input[type="checkbox"]': {
-                color: 'rgb(var(--color-primary-500))',
-                borderRadius: theme('borderRadius.DEFAULT'),
-                borderColor: 'rgb(var(--color-gray-300))',
-                height: theme('spacing.4'),
-                width: theme('spacing.4'),
-                marginTop: '-3.5px !important',
-                marginBottom: '0 !important',
+                'color': 'rgb(var(--color-primary-500))',
+                'borderRadius': theme('borderRadius.DEFAULT'),
+                'borderColor': 'rgb(var(--color-gray-300))',
+                'height': theme('spacing.4'),
+                'width': theme('spacing.4'),
+                'marginTop': '-3.5px !important',
+                'marginBottom': '0 !important',
                 '&:focus': {
                   '--tw-ring-offset-width': 0
                 }
@@ -319,7 +319,7 @@ module.exports = {
               'ul > li > button': {
                 verticalAlign: 'baseline !important'
               },
-              table: {
+              'table': {
                 wordBreak: 'break-all'
               }
             }

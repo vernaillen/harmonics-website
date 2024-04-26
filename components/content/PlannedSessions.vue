@@ -11,7 +11,10 @@ const props = withDefaults(defineProps<Props>(), {
   category: 'all'
 })
 const categoryName = computed(() => {
-  if (props.category === 'all') { return '' } else {
+  if (props.category === 'all') {
+    return ''
+  }
+  else {
     const langKey = 'category.' + props.category
     return t(langKey)
   }
@@ -22,6 +25,9 @@ const filteredSessions = computed(() => {
     return sessions.value.body.filter((session: UpcomingSession) => {
       return session.category === props.category || props.category === 'all'
     })
+  }
+  else {
+    return []
   }
 })
 </script>

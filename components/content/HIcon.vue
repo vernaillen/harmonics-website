@@ -1,6 +1,6 @@
 <script setup lang="ts">
 export interface Props {
-    name: string
+  name: string
 }
 defineProps<Props>()
 </script>

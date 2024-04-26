@@ -2,7 +2,7 @@
 export interface Props {
   folder: string
   columns?: number
-  filter?:string
+  filter?: string
   disableLightbox?: boolean
 }
 const props = withDefaults(defineProps<Props>(), {
@@ -15,14 +15,14 @@ const lightbox = useLightbox()
 const images: string[] = []
 Object.values(import.meta.glob('/public/images/**')).forEach((imageModule) => {
   if (
-    imageModule.name &&
-    imageModule.name.startsWith(`/public/images/${props.folder}`) &&
-    (props.filter == null ||
-      props.filter === '' ||
-      imageModule.name.indexOf(props.filter) > 0)
+    imageModule.name
+    && imageModule.name.startsWith(`/public/images/${props.folder}`)
+    && (props.filter == null
+    || props.filter === ''
+    || imageModule.name.indexOf(props.filter) > 0)
   ) { images.push(imageModule.name.substring('/public'.length)) }
 })
-function openGallery (i: number) {
+function openGallery(i: number) {
   if (!props.disableLightbox) {
     lightbox.images = images
     lightbox.visible.value = true

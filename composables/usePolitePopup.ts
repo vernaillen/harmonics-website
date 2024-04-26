@@ -12,12 +12,12 @@ const config = {
   contentScrollThresholdInPercentage: 20
 }
 
-function isToday (date: Date): boolean {
+function isToday(date: Date): boolean {
   const today = new Date()
   return (
-    date.getDate() === today.getDate() &&
-    date.getMonth() === today.getMonth() &&
-    date.getFullYear() === today.getFullYear()
+    date.getDate() === today.getDate()
+    && date.getMonth() === today.getMonth()
+    && date.getFullYear() === today.getFullYear()
   )
 }
 
@@ -38,7 +38,9 @@ const _usePolitePopup = () => {
 
   // Returns percentage scrolled (ie: 80 or NaN if trackLength == 0)
   const amountScrolledInPercentage = computed(() => {
-    if (!process.client) { return 0 }
+    if (!import.meta.client) {
+      return 0
+    }
 
     const documentScrollHeight = document.documentElement.scrollHeight
     const trackLength = documentScrollHeight - windowHeight.value
@@ -67,8 +69,8 @@ const _usePolitePopup = () => {
 
   const scrolledContent = computed(
     () =>
-      amountScrolledInPercentage.value >=
-      config.contentScrollThresholdInPercentage
+      amountScrolledInPercentage.value
+      >= config.contentScrollThresholdInPercentage
   )
 
   const debugInfo = computed(() => ({
@@ -104,8 +106,8 @@ const _usePolitePopup = () => {
       }
 
       if (
-        storedData.value.lastSeenAt &&
-        isToday(new Date(storedData.value.lastSeenAt))
+        storedData.value.lastSeenAt
+        && isToday(new Date(storedData.value.lastSeenAt))
       ) {
         return
       }

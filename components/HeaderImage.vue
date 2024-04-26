@@ -10,16 +10,19 @@ const props = defineProps<Props>()
 const url = computed(() => {
   if (props.page && props.page.header && props.page.header.image) {
     return props.page.header.image
-  } else if (props.page && props.page.thumbnail) {
+  }
+  else if (props.page && props.page.thumbnail) {
     return props.page.thumbnail
-  } else {
+  }
+  else {
     return null
   }
 })
 const videoUrl = computed(() => {
   if (props.page && props.page.header && props.page.header.video) {
     return props.page.header.video
-  } else {
+  }
+  else {
     return null
   }
 })
@@ -27,7 +30,8 @@ const baseImgClass = 'object-cover h-[120px] sm:h-[150px] md:h-[180px] lg:h-[230
 const imgClass = computed(() => {
   if (props.page && props.page.header && props.page.header.imageClass) {
     return baseImgClass + ' ' + props.page.header.imageClass
-  } else {
+  }
+  else {
     return baseImgClass
   }
 })

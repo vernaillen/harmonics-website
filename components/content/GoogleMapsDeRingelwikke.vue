@@ -1,7 +1,3 @@
-<script setup lang="ts">
-const { t } = useI18n()
-</script>
-
 <template>
   <div>
     <NuxtLink href="https://maps.app.goo.gl/ZT6QpLor45CThPKo9" target="_blank" aria-label="google maps">

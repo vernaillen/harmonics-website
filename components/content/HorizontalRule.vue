@@ -7,7 +7,9 @@ const props = withDefaults(defineProps<{
 const horizontalRule = ref<HTMLElement | null>(null)
 onMounted(() => {
   setTimeout(() => {
-    if (horizontalRule.value) { horizontalRule.value.classList.add('category-' + props.category) }
+    if (horizontalRule.value) {
+      horizontalRule.value.classList.add('category-' + props.category)
+    }
   }, 200)
 })
 </script>

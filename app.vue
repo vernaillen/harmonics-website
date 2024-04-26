@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { SpeedInsights } from '@vercel/speed-insights/nuxt'
+
 const { isMobileNavOpen } = useMobileNav()
 const { locale } = useI18n()
 
-function scrollToTop () {
+function scrollToTop() {
   scrollToElement('pageTop')
 }
 useHead({
