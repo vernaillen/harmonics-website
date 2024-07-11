@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   extends: [
     '@nuxt/ui-pro'
   ],
+
   modules: [
     // '@dargmuesli/nuxt-cookie-control',
     '@nuxt/eslint',
@@ -30,6 +31,12 @@ export default defineNuxtConfig({
       }
     ]
   ],
+
+  future: {
+    compatibilityVersion: 4
+  },
+  compatibilityDate: '2024-07-11',
+
   eslint: {
     config: {
       stylistic: true,
@@ -39,11 +46,13 @@ export default defineNuxtConfig({
       fix: true,
     },
   },
+
   site: {
     url: 'https://harmonics.be',
     name: 'Harmonics.be',
     description: 'Healing Power of Sound, Music and Dance'
   },
+
   runtimeConfig: {
     public: {
       nuxtVersion: nuxtPkg.version
@@ -51,9 +60,11 @@ export default defineNuxtConfig({
     iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
     iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup'
   },
+
   plausible: {
     apiHost: 'https://harmonics.be/plio'
   },
+
   ogImage: {
     fonts: [
       // will load this font from Google fonts
@@ -62,11 +73,13 @@ export default defineNuxtConfig({
       'Montserrat:700'
     ]
   },
+
   css: [
     '@twicpics/components/style.css',
     '~/assets/css/main.css',
     '~/assets/css/lazyYoutubeVideo.css'
   ],
+
   fonts: {
     experimental: { addPreloadLinks: true },
     families: [
@@ -74,11 +87,13 @@ export default defineNuxtConfig({
       { name: 'montserrat', weights: [300, 400, 500, 600] }
     ]
   },
+
   postcss: {
     plugins: {
       cssnano: true
     }
   },
+
   svgo: {
     svgo: true,
     autoImportPath: './assets/svg/',
@@ -88,21 +103,26 @@ export default defineNuxtConfig({
       multipass: true
     }
   },
+
   ui: {
     icons: ['circle-flags', 'heroicons', 'logos', 'mdi', 'noto', 'ph', 'simple-icons', 'iconoir']
   },
+
   uiPro: {
     routerOptions: false
   },
+
   router: {
     options: {
       scrollBehaviorType: 'smooth'
     }
   },
+
   colorMode: {
     preference: 'light',
     classSuffix: ''
   },
+
   content: {
     documentDriven: true,
     markdown: {
@@ -117,6 +137,7 @@ export default defineNuxtConfig({
       }
     }
   },
+
   i18n: {
     detectBrowserLanguage: {
       useCookie: true,
@@ -131,6 +152,7 @@ export default defineNuxtConfig({
     defaultLocale: 'nl',
     strategy: 'prefix_except_default'
   },
+
   image: {
     provider: 'twicpics',
     cloudinary: {
@@ -140,6 +162,7 @@ export default defineNuxtConfig({
       baseURL: 'https://vernaillen.twic.pics/harmonics.be'
     }
   },
+
   /* cookieControl: {
     cookieNameIsConsentGiven: 'cookieConsentGiven',
     cookieNameCookiesEnabledIds: 'allCookiesAccepted',
@@ -153,21 +176,25 @@ export default defineNuxtConfig({
     }
   }, */
   sourcemap: false,
+
   typescript: {
     strict: true
   },
+
   devtools: {
     enabled: true,
     timeline: {
       enabled: true
     }
   },
+
   nitro: {
     prerender: {
       crawlLinks: true,
       routes: ['/', '/sitemap.xml']
     }
   },
+
   // debug: true,
   plugins: [
     '~/plugins/pageHooks.ts',
