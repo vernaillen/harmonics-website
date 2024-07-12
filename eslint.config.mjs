@@ -19,5 +19,12 @@ export default withNuxt(
       'import/named': 0,
       '@stylistic/comma-dangle': ['error', 'only-multiline']
     },
+    ignores: [
+      'node_modules',
+      'dist',
+      '.nuxt',
+      'coverage',
+      'docs'
+    ]
   },
 )
