@@ -4,7 +4,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-24 md:mt-32 mb-16 md:mb-20 place-items-center text-center">
+  <div class="grid md:grid-cols-3 xl:grid-cols-5 gap-4 mt-24 md:mt-32 mb-16 md:mb-20 place-items-center text-center">
     <div class="hidden xl:block" />
     <UButton
       color="ecstatic"
@@ -19,6 +19,13 @@ const { t } = useI18n()
       class="w-full h-full justify-center text-lg !text-white dark:!text-white hover:!bg-trance-400 dark:!bg-trance-500 dark:hover:!bg-trance-400"
       :label="t('category.trance')"
       :to="localePath('/trancedance')"
+    />
+    <UButton
+      color="music"
+      variant="solid"
+      class="w-full h-full justify-center text-lg !text-white dark:!text-white hover:!bg-music-400 dark:!bg-music-500 dark:hover:!bg-music-400"
+      label="DJ Harmonics"
+      :to="localePath('/djharmonics')"
     />
     <div class="hidden xl:block" />
   </div>

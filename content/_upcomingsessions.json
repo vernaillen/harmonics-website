@@ -1,12 +1,28 @@
 {
-    "body": [
-        {
-            "title": "Xtatic dance Ronse: Oriental Journey",
-            "description": "Let's Celebrate life 2gether on Sun-day 28/4 @ de Ringelwikke Ronse",
-            "date": "2024-04-28 15:00:00",
-            "url": "/news/extaticdanceronse-orientaljourney",
-            "showTime": true,
-            "category": "ecstatic"
-        }
-    ]
+  "body": [
+    {
+      "title": "Cacao Soul Food",
+      "description": "",
+      "date": "2024-07-29 16:00:00",
+      "url": "/news/extaticdanceronse-orientaljourney",
+      "showTime": true,
+      "category": "ecstatic"
+    },
+    {
+      "title": "Trance Movement ~ Blessed to be Alive",
+      "description": "begeleiding door Sigi Daman<br>Kasteel Krollenstein te Nijlen",
+      "date": "2024-08-18 10:00:00",
+      "url": "/news/extaticdanceronse-orientaljourney",
+      "showTime": true,
+      "category": "trance"
+    },
+    {
+      "title": "Cacao Soul Food",
+      "description": "",
+      "date": "2024-08-21 18:44:00",
+      "url": "/news/extaticdanceronse-orientaljourney",
+      "showTime": true,
+      "category": "ecstatic"
+    }
+  ]
 }
