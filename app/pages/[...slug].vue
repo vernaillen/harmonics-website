@@ -5,7 +5,10 @@ const route = useRoute()
 const localePath = useLocalePath()
 const { locale } = useI18n()
 
-const { page } = useContent()
+const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Post not found', fatal: true })
+}
 const pageContent = ref<ParsedContent | null>(null)
 
 if (page.value) {
