@@ -9,6 +9,9 @@ executors:
       - image: cimg/node:lts-browsers
     working_directory: /tmp/workspace
 
+environment:
+  NODE_OPTIONS: --max_old_space_size=4096
+
 jobs:
   build:
     executor: pnpm-executor
