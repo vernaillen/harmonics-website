@@ -12,8 +12,8 @@ importers:
         specifier: ^1.3.1
         version: 1.3.1(axios@1.7.2)(magicast@0.3.4)(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.11)(terser@5.31.3))(vue@3.4.32(typescript@5.5.3))
       '@twicpics/components':
-        specifier: ^0.29.3
-        version: 0.29.3
+        specifier: ^0.30.0
+        version: 0.30.0
       '@vercel/speed-insights':
         specifier: ^1.0.12
         version: 1.0.12(react@18.3.1)(vue-router@4.4.0(vue@3.4.32(typescript@5.5.3)))(vue@3.4.32(typescript@5.5.3))
@@ -1598,8 +1598,8 @@ packages:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
 
-  '@twicpics/components@0.29.3':
-    resolution: {integrity: sha512-Pidpa7o3uSMZnxWxgDyTUCh8m0g5STdVCxPyUfzxyOdj2+IGznPHcxUyQ8RnHq0RFAuFjACuQRKhbQ7bECbu7w==}
+  '@twicpics/components@0.30.0':
+    resolution: {integrity: sha512-wbHNcstIBtJo2x14BYXccyghX0Fgj7wMYltUGl7EordL3/zYwXgPFheO6ddO12X2JgbmWGkrPhhDNsZop5jkLw==}
 
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
@@ -8308,7 +8308,7 @@ snapshots:
 
   '@trysound/sax@0.2.0': {}
 
-  '@twicpics/components@0.29.3': {}
+  '@twicpics/components@0.30.0': {}
 
   '@types/debug@4.1.12':
     dependencies:
