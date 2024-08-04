@@ -28,7 +28,12 @@
     "fulltest": "rm -rf node_modules && pnpm i && pnpm run lint && pnpm run coverage && pnpm run build"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.233",
+    "@iconify-json/circle-flags": "^1.1.48",
+    "@iconify-json/logos": "^1.1.43",
+    "@iconify-json/mdi": "^1.1.67",
+    "@iconify-json/noto": "^1.1.19",
+    "@iconify-json/ph": "^1.1.13",
+    "@iconify-json/simple-icons": "^1.1.111",
     "@nuxt/content": "2.13.2",
     "@nuxt/devtools": "^1.3.9",
     "@nuxt/eslint": "^0.4.0",

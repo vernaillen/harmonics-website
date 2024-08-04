@@ -105,7 +105,7 @@ export default defineNuxtConfig({
   },
 
   ui: {
-    icons: ['circle-flags', 'heroicons', 'logos', 'mdi', 'noto', 'ph', 'simple-icons', 'iconoir']
+    icons: ['circle-flags', 'heroicons', 'logos', 'mdi', 'noto', 'ph', 'simple-icons']
   },
 
   uiPro: {

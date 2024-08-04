@@ -30,9 +30,24 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
     devDependencies:
-      '@iconify/json':
-        specifier: ^2.2.233
-        version: 2.2.233
+      '@iconify-json/circle-flags':
+        specifier: ^1.1.48
+        version: 1.1.48
+      '@iconify-json/logos':
+        specifier: ^1.1.43
+        version: 1.1.43
+      '@iconify-json/mdi':
+        specifier: ^1.1.67
+        version: 1.1.67
+      '@iconify-json/noto':
+        specifier: ^1.1.19
+        version: 1.1.19
+      '@iconify-json/ph':
+        specifier: ^1.1.13
+        version: 1.1.13
+      '@iconify-json/simple-icons':
+        specifier: ^1.1.111
+        version: 1.1.111
       '@nuxt/content':
         specifier: 2.13.2
         version: 2.13.2(ioredis@5.4.1)(magicast@0.3.4)(nuxt@3.12.4(@parcel/watcher@2.4.1)(@types/node@22.1.0)(eslint@8.57.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.20.0)(terser@5.31.3)(typescript@5.5.4)(vite@5.3.5(@types/node@22.1.0)(terser@5.31.3)))(rollup@4.20.0)(vue@3.4.35(typescript@5.5.4))
@@ -819,14 +834,29 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
+  '@iconify-json/circle-flags@1.1.48':
+    resolution: {integrity: sha512-UPAkY91gTOdsMm+A0K9fi0bEfMVRijBuPOw6MpUJfiASpkQK8HdEjtBzuR70ElD/78UiotTw7c8vdhpC+c9sVQ==}
+
   '@iconify-json/heroicons@1.1.23':
     resolution: {integrity: sha512-LLev2ZBBDJKMzjnQgZRhEj0Nkz5m9O4UtQVH2TpPchdXSkxQUUOlPpsM4MVQCs49a2MaJfKiay+48WaZli5cNQ==}
 
+  '@iconify-json/logos@1.1.43':
+    resolution: {integrity: sha512-UtvL1yDHUr9dl1Tqihh6K9m5dmbYKOYyLf3i9aKhymSW76QjOCGjpgQc0PQ4GJCAdU1cAMu+WO61TgPxdonrlg==}
+
+  '@iconify-json/mdi@1.1.67':
+    resolution: {integrity: sha512-00nllHES8hyACwIfgySlQgAE6MKgpr2wsKfpifMiZWZ9aXC5l4Jb0lR3lJSWwXgOW6kzAOdzC3T+2VOfBBZ13A==}
+
+  '@iconify-json/noto@1.1.19':
+    resolution: {integrity: sha512-cETAVztBho+WmzGjyPSd8SphQLyiTUQtcXZY+g1iB4G94BuGqf6JfelHPHkMpxYfye6GuFcdWsd/PreZgOlhlg==}
+
+  '@iconify-json/ph@1.1.13':
+    resolution: {integrity: sha512-xtM4JJ63HCKj09WRqrBswXiHrpliBlqboWSZH8odcmqYXbvIFceU9/Til4V+MQr6+MoUC+KB72cxhky2+A6r/g==}
+
+  '@iconify-json/simple-icons@1.1.111':
+    resolution: {integrity: sha512-9+d69tCopShQB4a/mlQjP6uqkzJnDfeLNVwly11QMvucLIFfCG08xBXcWSyPCnfsR2bX/G50e43LaUXubNyYuw==}
+
   '@iconify/collections@1.0.445':
     resolution: {integrity: sha512-xvIojlhJ5Xk5+Cj4M5JYvRXjkG5Ur++2ia7/ErUsTKh2eXene2d3JulzG98UvlSl9/WhfUKfE0N56GKttsjExw==}
-
-  '@iconify/json@2.2.233':
-    resolution: {integrity: sha512-i0URcf6w1TxEQixrYi/hBLdY3ArglF0uOx7pwqaNN5oGW82+G6ojWXeHXekntLxH7EpaXTNQ5bo6CJCbU3fpdQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -6987,18 +7017,37 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
+  '@iconify-json/circle-flags@1.1.48':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/heroicons@1.1.23':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/logos@1.1.43':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/mdi@1.1.67':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/noto@1.1.19':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/ph@1.1.13':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/simple-icons@1.1.111':
     dependencies:
       '@iconify/types': 2.0.0
 
   '@iconify/collections@1.0.445':
     dependencies:
       '@iconify/types': 2.0.0
-
-  '@iconify/json@2.2.233':
-    dependencies:
-      '@iconify/types': 2.0.0
-      pathe: 1.1.2
 
   '@iconify/types@2.0.0': {}
 
