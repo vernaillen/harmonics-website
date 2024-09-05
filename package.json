@@ -40,7 +40,7 @@
     "@nuxtjs/critters": "^0.7.1",
     "@nuxtjs/i18n": "8.3.1",
     "@nuxtjs/plausible": "^1.0.0",
-    "@nuxtjs/seo": "2.0.0-rc.16",
+    "@nuxtjs/seo": "2.0.0-rc.21",
     "@nuxtjs/sitemap": "^5.3.5",
     "@vitest/coverage-v8": "^2.0.3",
     "@vueuse/nuxt": "^10.11.0",
