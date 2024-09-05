@@ -1,26 +1,10 @@
 {
   "body": [
     {
-      "title": "Cacao Soul Food",
-      "description": "in Zonnebeke",
-      "date": "2024-07-29 16:00:00",
-      "url": "/news/extaticdanceronse-orientaljourney",
-      "showTime": true,
-      "category": "ecstatic"
-    },
-    {
-      "title": "Trance Movement ~ Blessed to be Alive",
-      "description": "guided by Sigi Daman<br>Kasteel Krollenstein in Nijlen",
-      "date": "2024-08-18 10:00:00",
-      "url": "/news/extaticdanceronse-orientaljourney",
-      "showTime": true,
-      "category": "trance"
-    },
-    {
-      "title": "Cacao Soul Food Dance",
-      "description": "Hoeve Wabi Sabi",
-      "date": "2024-08-21 18:44:00",
-      "url": "/news/extaticdanceronse-orientaljourney",
+      "title": "Cacao Dance @ Hoeve Wabi Sabi",
+      "description": "barefoot dance on 18 September",
+      "date": "2024-09-18 18:44:00",
+      "url": "/en/news/extaticdanceronse-orientaljourney",
       "showTime": true,
       "category": "ecstatic"
     }
