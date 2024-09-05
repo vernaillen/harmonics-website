@@ -27,7 +27,7 @@ async function validateForm() {
     return await form.value!.validate()
   }
   catch (e) {
-    // do nothing
+    console.trace(e)
   }
 }
 watch(() => state.value.message, () => validateForm())
@@ -49,7 +49,7 @@ async function submitForm() {
     }
   }
   catch (e) {
-    // do nothing
+    console.trace(e)
   }
 }
 function resetForm() {

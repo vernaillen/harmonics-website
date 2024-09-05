@@ -4,7 +4,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-24 md:mt-32 mb-16 md:mb-20 place-items-center text-center">
+  <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-4 mt-24 md:mt-32 mb-16 md:mb-20 place-items-center text-center">
     <div class="hidden xl:block" />
     <UButton
       color="ecstatic"

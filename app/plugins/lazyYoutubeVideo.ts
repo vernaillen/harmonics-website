@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 /* compiled from the vue3 branch of https://github.com/andreww2012/vue-lazy-youtube-video
 Thanks Andrew Vasilchuk & Andrew Kazakov!
 */
