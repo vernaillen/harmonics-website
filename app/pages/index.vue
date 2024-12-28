@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineOgImageComponent('OGImageMain')
+// defineOgImageComponent('OGImageMain')
 definePageMeta({
   layout: 'home'
 })

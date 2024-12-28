@@ -19,7 +19,6 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxtjs/sitemap',
     '@vueuse/nuxt',
-    'nuxt-og-image',
     'nuxt-time',
     [
       '@twicpics/components/nuxt3',
@@ -113,7 +112,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
-  compatibilityDate: '2024-07-11',
+  compatibilityDate: '2024-12-28',
 
   nitro: {
     prerender: {

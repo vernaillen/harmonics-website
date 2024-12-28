@@ -16,6 +16,10 @@ useHead({
     separator: '-'
   }
 })
+
+useSeoMeta({
+  ogImage: 'https://harmonics.be/images/harmonics-og.png'
+})
 </script>
 
 <template>
