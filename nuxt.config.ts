@@ -32,46 +32,19 @@ export default defineNuxtConfig({
     ]
   ],
 
-  future: {
-    compatibilityVersion: 4
-  },
-  compatibilityDate: '2024-07-11',
+  // debug: true,
+  plugins: [
+    '~/plugins/pageHooks.ts',
+    '~/plugins/lazyYoutubeVideo.ts',
+    '~/plugins/hydration.client.ts',
+    '~/plugins/scrollEvents.client.ts'
+  ],
 
-  eslint: {
-    config: {
-      stylistic: true,
-    },
-    checker: {
-      lintOnStart: true,
-      fix: true,
-    },
-  },
-
-  site: {
-    url: 'https://harmonics.be',
-    name: 'Harmonics.be',
-    description: 'Healing Power of Sound, Music and Dance'
-  },
-
-  runtimeConfig: {
-    public: {
-      nuxtVersion: nuxtPkg.version
-    },
-    iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
-    iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup'
-  },
-
-  plausible: {
-    apiHost: 'https://harmonics.be/plio'
-  },
-
-  ogImage: {
-    fonts: [
-      // will load this font from Google fonts
-      'Montserrat:500',
-      'Montserrat:600',
-      'Montserrat:700'
-    ]
+  devtools: {
+    enabled: true,
+    timeline: {
+      enabled: true
+    }
   },
 
   css: [
@@ -80,42 +53,16 @@ export default defineNuxtConfig({
     '~/assets/css/lazyYoutubeVideo.css'
   ],
 
-  fonts: {
-    experimental: { addPreloadLinks: true },
-    families: [
-      { name: 'mic32', src: '/fonts/58405e358c3b387807fb206f187b0aa4-webfont.woff2' },
-      { name: 'montserrat', weights: [300, 400, 500, 600] }
-    ]
-  },
-
-  postcss: {
-    plugins: {
-      cssnano: true
-    }
-  },
-
-  svgo: {
-    svgo: true,
-    autoImportPath: './assets/svg/',
-
-    defaultImport: 'component',
-    svgoConfig: {
-      multipass: true
-    }
-  },
-
-  ui: {
-    icons: ['circle-flags', 'heroicons', 'logos', 'mdi', 'noto', 'ph', 'simple-icons']
-  },
-
-  uiPro: {
-    routerOptions: false
-  },
-
   router: {
     options: {
       scrollBehaviorType: 'smooth'
     }
+  },
+
+  site: {
+    url: 'https://harmonics.be',
+    name: 'Harmonics.be',
+    description: 'Healing Power of Sound, Music and Dance'
   },
 
   colorMode: {
@@ -137,29 +84,16 @@ export default defineNuxtConfig({
     }
   },
 
-  i18n: {
-    detectBrowserLanguage: {
-      useCookie: true,
-      redirectOn: 'root'
-    },
-    locales: [
-      { code: 'nl', iso: 'en-BE', file: 'nl-BE.json' },
-      { code: 'en', iso: 'en-US', file: 'en-US.json' }
-    ],
-    langDir: 'locales/',
-    lazy: false,
-    defaultLocale: 'nl',
-    strategy: 'prefix_except_default'
+  ui: {
+    icons: ['circle-flags', 'heroicons', 'logos', 'mdi', 'noto', 'ph', 'simple-icons']
   },
 
-  image: {
-    provider: 'twicpics',
-    cloudinary: {
-      baseURL: 'https://res.cloudinary.com/dys7j44q8/image/upload/harmonics/'
+  runtimeConfig: {
+    public: {
+      nuxtVersion: nuxtPkg.version
     },
-    twicpics: {
-      baseURL: 'https://vernaillen.twic.pics/harmonics.be'
-    }
+    iubendaPrivacyPolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/no-markup',
+    iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup'
   },
 
   /* cookieControl: {
@@ -176,16 +110,10 @@ export default defineNuxtConfig({
   }, */
   sourcemap: false,
 
-  typescript: {
-    strict: true
+  future: {
+    compatibilityVersion: 4
   },
-
-  devtools: {
-    enabled: true,
-    timeline: {
-      enabled: true
-    }
-  },
+  compatibilityDate: '2024-07-11',
 
   nitro: {
     prerender: {
@@ -194,11 +122,82 @@ export default defineNuxtConfig({
     }
   },
 
-  // debug: true,
-  plugins: [
-    '~/plugins/pageHooks.ts',
-    '~/plugins/lazyYoutubeVideo.ts',
-    '~/plugins/hydration.client.ts',
-    '~/plugins/scrollEvents.client.ts'
-  ]
+  typescript: {
+    strict: true
+  },
+
+  postcss: {
+    plugins: {
+      cssnano: true
+    }
+  },
+
+  eslint: {
+    config: {
+      stylistic: true,
+    },
+    checker: {
+      lintOnStart: true,
+      fix: true,
+    },
+  },
+
+  fonts: {
+    experimental: { addPreloadLinks: true },
+    families: [
+      { name: 'mic32', src: '/fonts/58405e358c3b387807fb206f187b0aa4-webfont.woff2' },
+      { name: 'montserrat', weights: [300, 400, 500, 600] }
+    ]
+  },
+
+  i18n: {
+    detectBrowserLanguage: {
+      useCookie: true,
+      redirectOn: 'root'
+    },
+    locales: [
+      { code: 'nl', iso: 'en-BE', file: 'nl-BE.json' },
+      { code: 'en', iso: 'en-US', file: 'en-US.json' }
+    ],
+    lazy: false,
+    defaultLocale: 'nl',
+    strategy: 'prefix_except_default'
+  },
+
+  image: {
+    provider: 'twicpics',
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/dys7j44q8/image/upload/harmonics/'
+    },
+    twicpics: {
+      baseURL: 'https://vernaillen.twic.pics/harmonics.be'
+    }
+  },
+
+  ogImage: {
+    fonts: [
+      // will load this font from Google fonts
+      'Montserrat:500',
+      'Montserrat:600',
+      'Montserrat:700'
+    ]
+  },
+
+  plausible: {
+    apiHost: 'https://harmonics.be/plio'
+  },
+
+  svgo: {
+    svgo: true,
+    autoImportPath: './assets/svg/',
+
+    defaultImport: 'component',
+    svgoConfig: {
+      multipass: true
+    }
+  },
+
+  uiPro: {
+    routerOptions: false
+  },
 })

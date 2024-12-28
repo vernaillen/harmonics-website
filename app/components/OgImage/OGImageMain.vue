@@ -21,7 +21,11 @@ defineProps<{
         >
       </div>
       <div v-else class="w-full items-start text-center p-12">
-        <img src="/images/harmonics_fulllogo400.png" width="550" class="mx-auto">
+        <img
+          src="/images/harmonics_fulllogo400.png" width="550"
+          height="550"
+          class="mx-auto"
+        >
       </div>
     </div>
   </div>

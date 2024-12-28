@@ -145,7 +145,7 @@ module.exports = {
                 'scroll-margin-top': 'var(--scroll-mt)'
               },
               'h3, h4, h5, h6': {
-                'fontWeight': theme('fontWeight.medium'),
+                'fontWeight': 500,
                 'scroll-margin-top': 'var(--scroll-mt)'
               },
               'h1 a, h2 a, h3 a, h4 a': {
@@ -171,7 +171,7 @@ module.exports = {
                 fontSize: '1em'
               },
               'a': {
-                fontWeight: theme('fontWeight.normal'),
+                fontWeight: 400,
                 textDecoration: 'none',
                 borderBottom: '1px solid rgba(123, 136, 86, 0.2)',
                 transition: 'color 0.3s cubic-bezier(.65, 0, .28, 1)',
@@ -268,10 +268,10 @@ module.exports = {
               },
               'input[type="checkbox"]': {
                 'color': 'rgb(var(--color-primary-500))',
-                'borderRadius': theme('borderRadius.DEFAULT'),
+                'borderRadius': '0.25rem',
                 'borderColor': 'rgb(var(--color-gray-300))',
-                'height': theme('spacing.4'),
-                'width': theme('spacing.4'),
+                'height': '1rem',
+                'width': '1rem',
                 'marginTop': '-3.5px !important',
                 'marginBottom': '0 !important',
                 '&:focus': {
@@ -289,10 +289,10 @@ module.exports = {
                 marginLeft: '-1.625em'
               },
               'ul ul': {
-                paddingLeft: theme('padding.6')
+                paddingLeft: '1.5rem'
               },
               'ul ol': {
-                paddingLeft: theme('padding.6')
+                paddingLeft: '1.5rem'
               },
               'ul > li.task-list-item': {
                 paddingLeft: '0 !important'
