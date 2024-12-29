@@ -73,8 +73,5 @@
     "overrides": {
       "vite": "5.4.11"
     }
-  },
-  "engines": {
-    "pnpm": ">=9.3.0"
   }
 }
