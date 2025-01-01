@@ -136,7 +136,7 @@ module.exports = {
         black: '#004745',
         dark: '#001818'
       },
-      typography: (theme) => {
+      typography: () => {
         return {
           DEFAULT: {
             css: {

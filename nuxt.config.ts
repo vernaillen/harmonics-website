@@ -112,7 +112,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
-  compatibilityDate: '2024-12-28',
+  compatibilityDate: '2025-01-01',
 
   nitro: {
     prerender: {
@@ -123,12 +123,6 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true
-  },
-
-  postcss: {
-    plugins: {
-      cssnano: true
-    }
   },
 
   eslint: {
