@@ -19,7 +19,7 @@ const navbarCollapseClass = computed(() => {
     return 'hidden'
   }
 })
-const { data: pages, refresh } = await useAsyncData('navigation', () =>
+const { data: pages, refresh } = await useAsyncData('navigation-' + locale.value, () =>
   queryContent()
     .where({
       language: locale.value,

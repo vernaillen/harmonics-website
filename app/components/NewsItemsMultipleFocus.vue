@@ -3,7 +3,7 @@ const props = defineProps<{
   lang: string | undefined
   path: string
 }>()
-const { data: posts } = await useAsyncData('posts', () =>
+const { data: posts } = await useAsyncData('posts-' + props.path, () =>
   queryContent(props.path)
     .where({ isNews: true, language: props.lang })
     .sort({ _file: -1 })

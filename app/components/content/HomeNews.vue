@@ -2,7 +2,7 @@
 const localePath = useLocalePath()
 const { locale, t } = useI18n()
 
-const { data: posts } = await useAsyncData('posts', () =>
+const { data: posts } = await useAsyncData('home-' + localePath('/news'), () =>
   queryContent(localePath('/news'))
     .where({ isNews: true, language: locale.value })
     .sort({ _file: -1 })
