@@ -68,10 +68,5 @@
     "vue-easy-lightbox": "^1.19.0",
     "vue3-lazyload": "^0.3.8",
     "yup": "^1.6.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "vite": "5.4.11"
-    }
   }
 }
