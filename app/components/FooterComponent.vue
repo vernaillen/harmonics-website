@@ -108,15 +108,26 @@ const linksNL = [{
             name="i-mdi-heart"
             class="bg-red-500 inline-block align-text-bottom mb-[2px]"
           />
+          by <NuxtLink
+            href="https://vernaillen.dev"
+            target="_blank"
+          >
+            <UAvatar
+              src="https://avatars.githubusercontent.com/u/102268?s=40&v=4"
+              alt="Avatar"
+              size="3xs"
+              class="-mb-[20px] mx-1"
+            />
+          </NuxtLink>
           using
-          <UIcon
-            class="inline-block align-text-bottom mb-[3px] w-4 h-3"
-            name="i-logos-nuxt-icon"
-          />
           <NuxtLink
             href="https://nuxt.com"
             target="_blank"
           >
+            <UIcon
+              class="inline-block align-text-bottom mb-[3px] w-4 h-3"
+              name="i-logos-nuxt-icon"
+            />
             Nuxt {{ config.public.nuxtVersion }}
           </NuxtLink>
         </p>
