@@ -1,15 +1,14 @@
 {
     "body": [
         {
-            "label": "Dance concepts",
             "children": [
                 {
-                    "label": "Ecstatic Dance",
-                    "to": "/ecstaticdance"
+                  "label": "Trance Movement™",
+                  "to": "/en/trancemovement"
                 },
                 {
-                    "label": "Trance Dance",
-                    "to": "/trancedance"
+                    "label": "Ecstatic Dance",
+                    "to": "/en/ecstaticdance"
                 }
             ]
         },
@@ -18,15 +17,15 @@
             "children": [
                 {
                     "label": "News",
-                    "to": "/news"
+                    "to": "/en/news"
                 },
                 {
                     "label": "About",
-                    "to": "/about"
+                    "to": "/en/about"
                 },
                 {
                     "label": "Contact",
-                    "to": "/contact"
+                    "to": "/en/contact"
                 }
             ]
         }

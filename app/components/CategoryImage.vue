@@ -73,7 +73,7 @@ onMounted(() => {
         <stop offset="1" style="stop-color:#004644" />
       </radialGradient>
       <radialGradient
-        id="musicGradient"
+        id="soundGradient"
         cx="606.3086"
         cy="643.9041"
         r="717.1711"
@@ -92,7 +92,7 @@ onMounted(() => {
         <stop offset="1" style="stop-color:#A8A757" />
       </radialGradient>
       <radialGradient
-        id="soundGradient"
+        id="musicGradient"
         cx="631.3786"
         cy="643.9041"
         r="717.1711"

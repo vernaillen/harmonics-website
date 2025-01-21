@@ -11,7 +11,7 @@
         "ecstatic": "Ecstatic Dance",
         "music": "Muziek",
         "sound": "Sound Healing",
-        "trance": "Trancedans"
+        "trance": "Trance Movement™"
     },
     "nav": {
         "gotopage": "Ga naar pagina ",
@@ -20,7 +20,7 @@
     },
     "news": {
         "title": "Nieuws",
-        "description": "Blijf op de hoogte van de komende ecstatic dance & trance dance sessies",
+        "description": "Blijf op de hoogte van de komende Ecstatic Dance & Trance Movement™ sessies",
         "readmore": "lees meer {locale}",
         "findoutmore": "ontdek meer",
         "by": "door",
@@ -57,12 +57,12 @@
     },
     "mailinglist": {
         "name": "Harmonics nieuwsbrief",
-        "desc": "Blijf op de hoogte van de komende ecstatic dance & trance dance sessies:",
+        "desc": "Blijf op de hoogte van de komende Ecstatic Dance & Trance Movement™ sessies:",
         "subscribe": "Schrijf nu in",
         "opensmailchimp": "(opent de mailchimp registratie pagina)"
     },
     "politePopup": {
-        "title": "Blijf je graag op de hoogte van nieuwe dans sessies?",
+        "title": "Blijf je graag op de hoogte van geplande sessies?",
         "desc": "Schrijf je dan in op de Harmonics nieuwsbrief",
         "yes": "Graag!",
         "no": "Hoeft niet"

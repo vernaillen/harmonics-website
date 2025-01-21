@@ -8,6 +8,8 @@ export default defineNuxtConfig({
 
   modules: [
     // '@dargmuesli/nuxt-cookie-control',
+    '@nuxtjs/seo',
+    '@nuxtjs/sitemap',
     '@nuxt/eslint',
     '@nuxt/content',
     '@nuxt/fonts',
@@ -16,8 +18,6 @@ export default defineNuxtConfig({
     '@nuxthq/studio',
     '@nuxtjs/i18n',
     '@nuxtjs/plausible',
-    '@nuxtjs/seo',
-    '@nuxtjs/sitemap',
     '@vueuse/nuxt',
     'nuxt-time',
     [
@@ -95,6 +95,11 @@ export default defineNuxtConfig({
     iubendaCookiePolicyURL: 'https://www.iubenda.com/api/privacy-policy/41044780/cookie-policy/no-markup'
   },
 
+  routeRules: {
+    '/trancedance': { redirect: '/trancemovement' },
+    '/en/trancedance': { redirect: '/en/trancemovement' },
+  },
+
   /* cookieControl: {
     cookieNameIsConsentGiven: 'cookieConsentGiven',
     cookieNameCookiesEnabledIds: 'allCookiesAccepted',
@@ -136,7 +141,6 @@ export default defineNuxtConfig({
   },
 
   fonts: {
-    experimental: { addPreloadLinks: true },
     families: [
       { name: 'mic32', src: '/fonts/58405e358c3b387807fb206f187b0aa4-webfont.woff2' },
       { name: 'montserrat', weights: [300, 400, 500, 600] }

@@ -4,20 +4,18 @@ const config = useRuntimeConfig()
 const { locale, t } = useI18n()
 const currentYear: number = new Date().getFullYear()
 const linksEN = [{
-  label: 'Dance concepts',
   children: [
+    {
+      label: 'Trance Movement™',
+      to: '/en/trancemovement'
+    },
     {
       label: 'Ecstatic Dance',
       to: '/en/ecstaticdance'
-    },
-    {
-      label: 'Trance Dance',
-      to: '/en/trancedance'
     }
   ]
 },
 {
-  label: 'Pages',
   children: [
     {
       label: 'News',
@@ -34,20 +32,18 @@ const linksEN = [{
   ]
 }]
 const linksNL = [{
-  label: 'Dans concepten',
   children: [
+    {
+      label: 'Trance Movement™',
+      to: '/trancemovement'
+    },
     {
       label: 'Ecstatic Dance',
       to: '/ecstaticdance'
-    },
-    {
-      label: 'Trancedans',
-      to: '/trancedance'
     }
   ]
 },
 {
-  label: 'Pagina\'s',
   children: [
     {
       label: 'Nieuws',

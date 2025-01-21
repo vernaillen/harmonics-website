@@ -1,15 +1,14 @@
 {
   "body": [
     {
-      "label": "Dance concepts",
       "children": [
+        {
+          "label": "Trance Movement™",
+          "to": "/trancemovement"
+        },
         {
           "label": "Ecstatic Dance",
           "to": "/ecstaticdance"
-        },
-        {
-          "label": "Trance Dance",
-          "to": "/trancedance"
         }
       ]
     },

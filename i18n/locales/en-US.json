@@ -11,7 +11,7 @@
         "ecstatic": "Ecstatic Dance",
         "music": "Music",
         "sound": "Sound Healing",
-        "trance": "Trance Dance"
+        "trance": "Trance Movement™"
     },
     "nav": {
         "gotopage": "Go to page ",
@@ -20,7 +20,7 @@
     },
     "news": {
         "title": "News",
-        "description": "Stay up to date about the upcoming ecstatic dance & trance dance sessions.",
+        "description": "Stay up to date about the upcoming Ecstatic Dance & Trance Movement™ sessions.",
         "readmore": "read more",
         "findoutmore": "find out more",
         "by": "by",
@@ -57,12 +57,12 @@
     },
     "mailinglist": {
         "name": "Harmonics newsletter",
-        "desc": "Stay up to date about the upcoming ecstatic dance & trance dance sessions:",
+        "desc": "Stay up to date about the upcoming Ecstatic Dance & Trance Movement™ sessions:",
         "subscribe": "Subscribe now",
         "opensmailchimp": "(opens the mailchimp registration page)"
     },
     "politePopup": {
-        "title": "Do you want to be informed about upcoming dance sessions?",
+        "title": "Do you want to be informed about upcoming sessions?",
         "desc": "Subscribe to the Harmonics newsletter",
         "yes": "Yes please!",
         "no": "No need"

@@ -91,7 +91,7 @@ module.exports = {
           900: '#616816',
           950: '#3a3e0d'
         },
-        music: {
+        sound: {
           DEFAULT: '#AAA857',
           50: '#fbfbf7',
           100: '#f7f6ee',
@@ -105,7 +105,7 @@ module.exports = {
           900: '#53522b',
           950: '#32311a'
         },
-        sound: {
+        music: {
           DEFAULT: '#9DB19F',
           50: '#fafbfa',
           100: '#f5f7f5',
