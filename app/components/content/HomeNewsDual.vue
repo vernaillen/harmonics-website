@@ -2,12 +2,12 @@
 const localePath = useLocalePath()
 const { locale, t } = useI18n()
 
-const { data: posts } = await useAsyncData('homedual-' + localePath('/news'), () =>
-  queryContent(localePath('/news'))
-    .where({ isNews: true, language: locale.value })
-    .sort({ _file: -1 })
+const { data: posts } = await useAsyncData('homenews-' + locale.value, () =>
+  queryCollection('news' + locale.value)
+    .order('id', 'DESC')
     .limit(2)
-    .find())
+    .all()
+)
 </script>
 
 <template>

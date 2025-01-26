@@ -6,20 +6,21 @@ const props = defineProps<{
   path: string
   newsPath: string
 }>()
-const [prev, next] = await queryContent(props.newsPath)
-  .sort({ _file: 1 })
-  .where({ isNews: true, language: props.lang })
-  .findSurround(props.path)
+
+const { data } = await useAsyncData('surround', () => {
+  return queryCollectionItemSurroundings('news' + props.lang, props.path)
+    .order('id', 'DESC')
+})
 </script>
 
 <template>
-  <div v-if="prev || next" class="container mx-auto p-0 mb-6">
+  <div v-if="data?.[0] || data?.[1]" class="container mx-auto p-0 mb-6">
     <div class="grid grid-cols-5 md:grid-cols-3">
       <div>
         <UButton
-          v-if="prev"
-          :to="prev._path"
-          :aria-label="`${t('news.previous', 1, { locale: lang })}: ${prev.title}`"
+          v-if="data?.[0]"
+          :to="data?.[0].path"
+          :aria-label="`${t('news.previous', 1, { locale: lang })}: ${data?.[0].title}`"
           class="min-h-[32px] ml-0"
         >
           <template #leading>
@@ -28,7 +29,7 @@ const [prev, next] = await queryContent(props.newsPath)
               <UIcon name="i-heroicons-arrow-left-20-solid" class="icon--hover duration-500 transform transition-all" />
             </span>
           </template>
-          <span class="hidden lg:inline-block">{{ prev.title }}</span>
+          <span class="hidden lg:inline-block">{{ data?.[0].title }}</span>
         </UButton>
       </div>
       <div class="text-center col-span-3 md:col-span-1">
@@ -49,12 +50,12 @@ const [prev, next] = await queryContent(props.newsPath)
         class="text-end"
       >
         <UButton
-          v-if="next"
-          :to="next._path"
-          :aria-label="`${t('news.next', 1, { locale: lang })}: ${next.title}`"
+          v-if="data?.[1]"
+          :to="data?.[1].path"
+          :aria-label="`${t('news.next', 1, { locale: lang })}: ${data?.[1].title}`"
           class="min-h-[32px] mr-0"
         >
-          <span class="hidden lg:inline-block">{{ next.title }}</span>
+          <span class="hidden lg:inline-block">{{ data?.[1].title }}</span>
           <template #trailing>
             <span class="iconHoverEffect">
               <UIcon name="i-heroicons-chevron-right" class="icon moveright duration-500 transform transition-all" />

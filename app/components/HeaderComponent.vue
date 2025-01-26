@@ -20,17 +20,10 @@ const navbarCollapseClass = computed(() => {
   }
 })
 const { data: pages, refresh } = await useAsyncData('navigation-' + locale.value, () =>
-  queryContent()
-    .where({
-      language: locale.value,
-      navigation: {
-        enabled: {
-          $eq: true
-        }
-      }
-    })
-    .sort({ _file: 1 })
-    .find()
+  queryCollection('pages' + locale.value)
+    .where('navigation', '=', true)
+    .order('id', 'ASC')
+    .all()
 )
 watch(() => locale.value, () => {
   refresh()
@@ -96,24 +89,28 @@ onMounted(() => {
           </NuxtLink>
         </div>
         <ul>
-          <li
+          <template
             v-for="link of pages"
-            :key="link._path"
-            class="font-mic32 prose text-center p-0 my-3 sm:my-6 lg:my-8"
+            :key="link.path"
           >
-            <div :class="link.category ? 'category-' + link.category : ''">
-              <NuxtLink
-                :to="link._path"
-                :class="getNavItemColors(link.category)"
-                class="text-2xl sm:text-3xl text-center border-transparent"
-                :aria-label="t('nav.gotopage') + link.title"
-                @click="checkCurrentRoute(link._path)"
-              >
-                <UIcon v-if="link.navigation.icon" :name="link.navigation.icon" class="p-0" />
-                <span v-else>{{ link.title }}</span>
-              </NuxtLink>
-            </div>
-          </li>
+            <li
+              v-if="link.nav"
+              class="font-mic32 prose text-center p-0 my-3 sm:my-6 lg:my-8"
+            >
+              <div :class="link.meta.category ? 'category-' + link.meta.category : ''">
+                <NuxtLink
+                  :to="link.path"
+                  :class="getNavItemColors(link.category)"
+                  class="text-2xl sm:text-3xl text-center border-transparent"
+                  :aria-label="t('nav.gotopage') + link.title"
+                  @click="checkCurrentRoute(link.path)"
+                >
+                  <UIcon v-if="link.navIcon" :name="link.navIcon" class="p-0" />
+                  <span v-else>{{ link.title }}</span>
+                </NuxtLink>
+              </div>
+            </li>
+          </template>
         </ul>
         <LanguageSwitcher class="mt-2" />
       </div>

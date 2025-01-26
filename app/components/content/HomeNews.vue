@@ -2,12 +2,12 @@
 const localePath = useLocalePath()
 const { locale, t } = useI18n()
 
-const { data: posts } = await useAsyncData('home-' + localePath('/news'), () =>
-  queryContent(localePath('/news'))
-    .where({ isNews: true, language: locale.value })
-    .sort({ _file: -1 })
+const { data: posts } = await useAsyncData('homenews-' + locale.value, () =>
+  queryCollection('news' + locale.value)
+    .order('id', 'DESC')
     .limit(1)
-    .find())
+    .all()
+)
 </script>
 
 <template>
@@ -20,7 +20,7 @@ const { data: posts } = await useAsyncData('home-' + localePath('/news'), () =>
       </h1>
       <div class="w-full md:w-2/3 lg:w-1/2 mx-auto">
         <template v-for="post, index in posts" :key="index">
-          <div v-if="index === 0" class="w-full">
+          <div class="w-full">
             <NewsItem :post="post" :bigger="true" />
           </div>
         </template>

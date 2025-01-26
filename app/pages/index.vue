@@ -1,4 +1,11 @@
 <script setup lang="ts">
+const route = useRoute()
+const { locale } = useI18n()
+const { data: page } = await useAsyncData(route.path, () => queryCollection('pages' + locale.value).path(route.path).first())
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+}
+
 // defineOgImageComponent('OGImageMain')
 definePageMeta({
   layout: 'home'
@@ -11,11 +18,7 @@ definePageMeta({
       <main class="flex-grow">
         <div class="w-full container mx-auto py-4">
           <div class="prose prose-primary dark:prose-invert text-center">
-            <ContentDoc v-slot="{ doc }">
-              <ContentRenderer v-if="doc" :value="doc">
-                <ContentRendererMarkdown :value="doc" />
-              </ContentRenderer>
-            </ContentDoc>
+            <ContentRenderer v-if="page" :value="page" />
           </div>
         </div>
       </main>

@@ -14,3 +14,4 @@ cypress/screenshots/
 cypress/downloads/downloads.html
 **/.DS_Store
 .eslintcache
+.data/content/contents.sqlite

@@ -11,9 +11,9 @@ const imgWidth = 624
 const imgHeight = 326
 
 onMounted(() => {
-  if (document.getElementById('video' + props.post._id)) {
+  if (document.getElementById('video' + props.post.id)) {
     setTimeout(() => {
-      const video = document.getElementById('video' + props.post._id)
+      const video = document.getElementById('video' + props.post.id)
       video?.classList.remove('opacity-0')
       video?.classList.add('opacity-90')
     }, 100)
@@ -22,16 +22,16 @@ onMounted(() => {
 </script>
 
 <template>
-  <div v-if="post._path" :class="post.category ? 'category-' + post.category : ''">
+  <div v-if="post.path" :class="post.category ? 'category-' + post.category : ''">
     <UCard>
       <template #header>
         <div
-          v-if="post.thumbnail || post.thumb_video"
+          v-if="post.meta.thumbnail || post.meta.thumb_video"
           :class="bigger ? '' : 'h-[144px] sm:h-[257px] md:h-[167px] lg:h-[147px] xl:h-[179px] 2xl:h-[210px]'"
         >
           <NuxtLink
-            v-if="post.thumbnail"
-            :to="post._path"
+            v-if="post.meta.thumbnail"
+            :to="post.path"
             :aria-label="post.title"
             class="imgHoverEffect"
           >
@@ -39,18 +39,18 @@ onMounted(() => {
               :width="imgWidth"
               :height="imgHeight"
               loading="lazy"
-              :src="post.thumbnail"
+              :src="post.meta.thumbnail"
               :alt="`thumbnail ${post.title}`"
               img-class="!my-0 relative w-full object-cover "
             />
           </NuxtLink>
-          <NuxtLink v-if="post.thumb_video" :to="post._path" :aria-label="post.title">
+          <NuxtLink v-if="post.meta.thumb_video" :to="post.path" :aria-label="post.title">
             <TwicVideo
-              v-if="post.thumb_video"
-              :id="'video' + post._id"
+              v-if="post.meta.thumb_video"
+              :id="'video' + post.id"
               ratio="3:2"
               mode="cover"
-              :src="'/harmonics.be' + post.thumb_video"
+              :src="'/harmonics.be' + post.meta.thumb_video"
               class="opacity-0 videoThumb"
               style="transition: opacity 2s;"
             />
@@ -59,7 +59,7 @@ onMounted(() => {
       </template>
       <h2 href="#" class="mt-0 mb-2 dark:text-primary-200">
         <NuxtLink
-          :to="post._path"
+          :to="post.path"
           :aria-label="post.title"
           :class="useCategoryLinkHover(post.category)"
         >
@@ -101,7 +101,7 @@ onMounted(() => {
       <p class="text-sm md:text-md" v-html="post.description" />
       <p class="!mb-0 w-full flex justify-end">
         <UButton
-          :to="post._path"
+          :to="post.path"
           :aria-label="post.title"
           class="!mb-0 !mr-0 no-underline border-b-0"
         >

@@ -1,31 +1,20 @@
 <script setup lang="ts">
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
-
 const route = useRoute()
 const localePath = useLocalePath()
 const { locale } = useI18n()
 
-const { data: page } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
+const collection = route.path.includes('news') ? 'news' : 'pages'
+const { data: page } = await useAsyncData(route.path, () => queryCollection(collection + locale.value).path(route.path).first())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Post not found', fatal: true })
-}
-const pageContent = ref<ParsedContent | null>(null)
-
-if (page.value) {
-  pageContent.value = page.value
-}
-else {
-  pageContent.value = await queryContent(localePath('/_404')).findOne()
-  const event = useRequestEvent()
-  setResponseStatus(event, 404)
 }
 
 // defineOgImageComponent('OGImageMain')
 useSeoMeta({
-  title: pageContent.value?.title,
-  ogTitle: pageContent.value?.title,
-  description: pageContent.value?.description,
-  ogDescription: pageContent.value?.description
+  title: page.value?.title,
+  ogTitle: page.value?.title,
+  description: page.value?.description,
+  ogDescription: page.value?.description
 })
 
 const { triggerPolitePopup } = usePolitePopup()
@@ -38,7 +27,7 @@ if (route.path !== '/contact' && route.path !== '/en/contact') triggerPolitePopu
       <main class="flex-grow">
         <HeaderImage
           :lang="locale"
-          :page="pageContent"
+          :page="page"
           class="w-full container mx-auto pb-6"
         />
         <div class="w-full container mx-auto py-4">
@@ -49,26 +38,19 @@ if (route.path !== '/contact' && route.path !== '/en/contact') triggerPolitePopu
               :news-path="localePath('/news')"
             />
             <div class="slide-enter-content">
-              <ContentDoc>
-                <template #default="{ doc }">
-                  <ContentRenderer
-                    v-if="isHydrated"
-                    :value="doc"
-                    class="mainContent pt-3"
-                    :class="doc && doc.category ? 'category-' + doc.category : ''"
-                  />
-                  <ContentSkeleton v-else />
-                </template>
-                <template #not-found>
-                  <h2>{{ page?.title }}</h2>
-                  <ContentRenderer v-if="pageContent" :value="pageContent">
-                    <ContentRendererMarkdown :value="pageContent" />
-                  </ContentRenderer>
-                  <UButton :to="localePath('/')">
-                    {{ $t('nav.backToHome') }}
-                  </UButton>
-                </template>
-              </ContentDoc>
+              <ContentRenderer
+                v-if="page && isHydrated"
+                :value="page"
+                class="mainContent pt-3"
+                :class="page && page.category ? 'category-' + page.category : ''"
+              />
+              <ContentSkeleton v-if="page && !isHydrated" />
+              <template v-if="!page && isHydrated">
+                <h2>{{ page?.title }}</h2>
+                <UButton :to="localePath('/')">
+                  {{ $t('nav.backToHome') }}
+                </UButton>
+              </template>
             </div>
           </div>
         </div>

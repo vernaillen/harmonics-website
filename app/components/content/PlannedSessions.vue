@@ -19,10 +19,10 @@ const categoryName = computed(() => {
     return t(langKey)
   }
 })
-const { data: sessions } = await useJsonContent(localePath('/_upcomingsessions'))
+const { data: sessions } = await useJsonContent('upcomingsessions_' + locale.value)
 const filteredSessions = computed(() => {
-  if (sessions && sessions.value && sessions.value.body) {
-    return sessions.value.body.filter((session: UpcomingSession) => {
+  if (sessions?.value[0]?.body) {
+    return sessions.value[0].body.filter((session: UpcomingSession) => {
       return session.category === props.category || props.category === 'all'
     })
   }
@@ -34,7 +34,7 @@ const filteredSessions = computed(() => {
 
 <template>
   <div v-if="filteredSessions.length > 0" class="mb-8 text-sm md:text-md">
-    <UCard v-if="sessions && sessions.body">
+    <UCard v-if="filteredSessions">
       <h2 class="mt-0 text-primary-500 dark:text-primary-200">
         {{ t('sessions.planned', { category: categoryName }) }}
       </h2>

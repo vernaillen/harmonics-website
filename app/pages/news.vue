@@ -2,7 +2,11 @@
 const { locale, t } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
-const page = await queryContent(route.path).findOne()
+const { data: page } = await useAsyncData(route.path, () =>
+  queryCollection('pages' + locale.value)
+    .path(route.path)
+    .first()
+)
 
 useSeoMeta({
   title: t('news.title'),

@@ -4,10 +4,12 @@ const props = defineProps<{
   path: string
 }>()
 const { data: posts } = await useAsyncData('posts-' + props.path, () =>
-  queryContent(props.path)
-    .where({ isNews: true, language: props.lang })
-    .sort({ _file: -1 })
-    .find())
+  queryCollection('news' + props.lang)
+    // .where('meta.isNews', '=', true)
+    // .where('meta.language', '=', props.lang)
+    .order('id', 'DESC')
+    .all()
+)
 </script>
 
 <template>
