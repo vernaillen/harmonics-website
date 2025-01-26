@@ -1,14 +1,10 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { locale, t } = useI18n()
+const route = useRoute()
 const localePath = useLocalePath()
-const props = defineProps<{
-  lang: string | undefined
-  path: string
-  newsPath: string
-}>()
 
-const { data } = await useAsyncData('surround', () => {
-  return queryCollectionItemSurroundings('news' + props.lang, props.path)
+const { data } = await useAsyncData('surround' + route.path, () => {
+  return queryCollectionItemSurroundings('news' + locale.value, route.path)
     .order('id', 'DESC')
 })
 </script>
@@ -20,7 +16,7 @@ const { data } = await useAsyncData('surround', () => {
         <UButton
           v-if="data?.[0]"
           :to="data?.[0].path"
-          :aria-label="`${t('news.previous', 1, { locale: lang })}: ${data?.[0].title}`"
+          :aria-label="`${t('news.previous', 1, { locale })}: ${data?.[0].title}`"
           class="min-h-[32px] ml-0"
         >
           <template #leading>
@@ -34,10 +30,10 @@ const { data } = await useAsyncData('surround', () => {
       </div>
       <div class="text-center col-span-3 md:col-span-1">
         <UButton
-          :aria-label="t('news.backtooverview', 1, { locale: lang })"
+          :aria-label="t('news.backtooverview', 1, { locale })"
           :to="localePath('/news')"
         >
-          {{ t('news.title', 1, { locale: lang }) }}
+          {{ t('news.title', 1, { locale }) }}
           <template #trailing>
             <span class="iconHoverEffect">
               <UIcon name="i-heroicons-chevron-up" class="icon moveup duration-500 transform transition-all" />
@@ -52,7 +48,7 @@ const { data } = await useAsyncData('surround', () => {
         <UButton
           v-if="data?.[1]"
           :to="data?.[1].path"
-          :aria-label="`${t('news.next', 1, { locale: lang })}: ${data?.[1].title}`"
+          :aria-label="`${t('news.next', 1, { locale })}: ${data?.[1].title}`"
           class="min-h-[32px] mr-0"
         >
           <span class="hidden lg:inline-block">{{ data?.[1].title }}</span>
