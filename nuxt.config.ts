@@ -15,7 +15,6 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/image',
     '@nuxt/ui',
-    '@nuxthq/studio',
     '@nuxtjs/i18n',
     '@nuxtjs/plausible',
     '@vueuse/nuxt',
@@ -70,6 +69,9 @@ export default defineNuxtConfig({
   },
 
   content: {
+    preview: {
+      api: 'https://api.nuxt.studio'
+    },
     markdown: {
       anchorLinks: false,
       remarkPlugins: [
