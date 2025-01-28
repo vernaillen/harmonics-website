@@ -150,8 +150,15 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    pages: {
+      index: {
+        en: '/',
+        nl: '/'
+      }
+    },
     detectBrowserLanguage: {
-      useCookie: false
+      useCookie: true,
+      redirectOn: 'root'
     },
     locales: [
       { code: 'nl', iso: 'en-BE', file: 'nl-BE.json' },
