@@ -151,8 +151,7 @@ export default defineNuxtConfig({
 
   i18n: {
     detectBrowserLanguage: {
-      useCookie: true,
-      redirectOn: 'root'
+      useCookie: false
     },
     locales: [
       { code: 'nl', iso: 'en-BE', file: 'nl-BE.json' },
