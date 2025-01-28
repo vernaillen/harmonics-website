@@ -150,12 +150,6 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    pages: {
-      index: {
-        en: '/',
-        nl: '/'
-      }
-    },
     detectBrowserLanguage: {
       useCookie: true,
       redirectOn: 'root'

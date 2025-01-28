@@ -1,6 +1,13 @@
 <script setup lang="ts">
+import { withLeadingSlash } from 'ufo'
+
 const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () => queryCollection('pages').path(route.path).first())
+const slug = computed(() => withLeadingSlash(String(route.params.slug)))
+const { data: page } = await useAsyncData('page-' + slug.value, () => {
+  const content = queryCollection('pages').path(slug.value).first()
+  console.log(content)
+  return content
+})
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
