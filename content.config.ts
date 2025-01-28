@@ -2,29 +2,10 @@ import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
 export default defineContentConfig({
   collections: {
-    pagesnl: defineCollection({
+    pages: defineCollection({
       type: 'page',
       source: {
-        include: '**/*.md',
-        exclude: ['en/**', 'news/**']
-      },
-      schema: z.object({
-        nav: z.string().optional(),
-        navIcon: z.string().optional(),
-        category: z.string().optional(),
-        header: z.object({
-          image: z.string().optional(),
-          video: z.string().optional(),
-          modifiers: z.string().optional(),
-          wrapperClass: z.string().optional(),
-        }).optional(),
-      })
-    }),
-    pagesen: defineCollection({
-      type: 'page',
-      source: {
-        include: 'en/*.md',
-        exclude: ['en/news/**']
+        include: '**/*.md'
       },
       schema: z.object({
         nav: z.string().optional(),

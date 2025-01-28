@@ -4,7 +4,7 @@ const route = useRoute()
 const localePath = useLocalePath()
 const { locale } = useI18n()
 const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('pages' + locale.value)
+  queryCollection('pages')
     .path(localePath('/_404'))
     .first()
 )

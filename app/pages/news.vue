@@ -3,7 +3,7 @@ const { locale, t } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
 const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('pages' + locale.value)
+  queryCollection('pages')
     .path(route.path)
     .first()
 )

@@ -3,8 +3,8 @@ const route = useRoute()
 const localePath = useLocalePath()
 const { locale } = useI18n()
 
-const collection = route.path.includes('news') ? 'news' : 'pages'
-const { data: page } = await useAsyncData(route.path, () => queryCollection(collection + locale.value).path(route.path).first())
+const collection = route.path.includes('news') ? 'news' + locale.value : 'pages'
+const { data: page } = await useAsyncData(route.path, () => queryCollection(collection).path(route.path).first())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Post not found', fatal: true })
 }
