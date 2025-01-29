@@ -121,12 +121,12 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-01-01',
 
-  nitro: {
+  /* nitro: {
     prerender: {
       crawlLinks: true,
       routes: ['/', '/sitemap.xml']
     }
-  },
+  }, */
 
   typescript: {
     strict: true
