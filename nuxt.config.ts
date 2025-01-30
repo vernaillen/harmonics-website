@@ -29,13 +29,15 @@ export default defineNuxtConfig({
       }
     ]
   ],
+
+  ssr: false,
+
   devtools: {
     enabled: true,
     timeline: {
       enabled: true
     }
   },
-
   css: [
     '@twicpics/components/style.css',
     '~/assets/css/main.css',
@@ -85,8 +87,6 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/*': { ssr: false },
-    '/api/*': { ssr: true },
     '/trancedance': { redirect: '/trancemovement' },
     '/en/trancedance': { redirect: '/en/trancemovement' },
   },
