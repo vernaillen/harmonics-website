@@ -85,7 +85,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '*': { ssr: false },
+    '/*': { ssr: false },
     '/api/*': { ssr: true },
     '/trancedance': { redirect: '/trancemovement' },
     '/en/trancedance': { redirect: '/en/trancemovement' },
