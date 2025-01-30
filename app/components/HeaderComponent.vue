@@ -21,7 +21,8 @@ const navbarCollapseClass = computed(() => {
 })
 const { data: pages, refresh } = await useAsyncData('navigation-' + locale.value, () =>
   queryCollection('pages')
-    .where('navigation', '=', true)
+    .where('nav', '=', true)
+    .where('language', '=', locale.value)
     .order('id', 'ASC')
     .all()
 )

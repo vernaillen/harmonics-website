@@ -8,6 +8,7 @@ export default defineContentConfig({
         include: '**/*.md'
       },
       schema: z.object({
+        language: z.string().optional(),
         nav: z.string().optional(),
         navIcon: z.string().optional(),
         category: z.string().optional(),
