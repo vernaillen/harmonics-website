@@ -29,15 +29,6 @@ export default defineNuxtConfig({
       }
     ]
   ],
-
-  // debug: true,
-  plugins: [
-    '~/plugins/pageHooks.ts',
-    '~/plugins/lazyYoutubeVideo.ts',
-    '~/plugins/hydration.client.ts',
-    '~/plugins/scrollEvents.client.ts'
-  ],
-
   devtools: {
     enabled: true,
     timeline: {
@@ -85,10 +76,6 @@ export default defineNuxtConfig({
     }
   },
 
-  ui: {
-    icons: ['circle-flags', 'heroicons', 'logos', 'mdi', 'noto', 'ph', 'simple-icons']
-  },
-
   runtimeConfig: {
     public: {
       nuxtVersion: nuxtPkg.version
@@ -98,6 +85,10 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    '*': { ssr: false },
+    '/contact': { ssr: true },
+    '/en/contact': { ssr: true },
+    '/api/*': { ssr: true },
     '/trancedance': { redirect: '/trancemovement' },
     '/en/trancedance': { redirect: '/en/trancemovement' },
   },
@@ -121,12 +112,12 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2025-01-01',
 
-  /* nitro: {
+  nitro: {
     prerender: {
       crawlLinks: true,
       routes: ['/', '/sitemap.xml']
     }
-  }, */
+  },
 
   typescript: {
     strict: true
