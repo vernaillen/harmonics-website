@@ -17,19 +17,27 @@ defineProps({
           {{ t('mailinglist.name', 1, { locale: lang }) }}
         </NuxtLink>
       </h2>
-      <p class="text-sm">
-        {{ t('mailinglist.desc', 1, { locale: lang }) }}
-      </p>
-      <UButton size="lg" :to="appConfig.mailchimpLink" target="_blank">
-        {{ t('mailinglist.subscribe', 1, { locale: lang }) }}
+      <div class="grid grid-flow-row-dense grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div class="text-sm xl:col-span-2">
+          {{ t('mailinglist.desc', 1, { locale: lang }) }}
+        </div>
+        <div>
+          <UButton
+            size="lg" :to="appConfig.mailchimpLink"
+            target="_blank"
+            class="min-w-[9rem]"
+          >
+            {{ t('mailinglist.subscribe', 1, { locale: lang }) }}
 
-        <template #trailing>
-          <span class="iconHoverEffect">
-            <UIcon name="i-heroicons-chevron-right" class="icon moveright duration-500 transform transition-all" />
-            <UIcon name="i-heroicons-arrow-right-20-solid" class="icon--hover duration-500 transform transition-all" />
-          </span>
-        </template>
-      </UButton>
+            <template #trailing>
+              <span class="iconHoverEffect">
+                <UIcon name="i-heroicons-chevron-right" class="icon moveright duration-500 transform transition-all" />
+                <UIcon name="i-heroicons-arrow-right-20-solid" class="icon--hover duration-500 transform transition-all" />
+              </span>
+            </template>
+          </UButton>
+        </div>
+      </div>
     </UCard>
   </div>
 </template>

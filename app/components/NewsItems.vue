@@ -30,8 +30,8 @@ const { data: posts } = await useAsyncData('posts-' + props.path, () =>
           </template>
         </div>
         <div>
-          <MailchimpComponent :lang="lang" class="slide-enter" />
           <PlannedSessions :lang="lang" />
+          <MailchimpComponent :lang="lang" class="slide-enter" />
         </div>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

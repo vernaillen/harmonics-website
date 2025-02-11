@@ -55,7 +55,7 @@ const filteredSessions = computed(() => {
             <NuxtLink :to="session.url" :target="session.urlTarget ? session.urlTarget : ''" :aria-label="sessions.title">
               {{ session.title }}
             </NuxtLink>
-            <div class="mt-2 text-xs">
+            <div v-if="session.date" class="mt-2 text-xs">
               <UIcon name="i-mdi-calendar" variant="ghost" class="opacity-70 h-3 w-3 mr-1 -mb-[2px]" />
               <NuxtTime
                 :datetime="session.date"
@@ -67,13 +67,13 @@ const filteredSessions = computed(() => {
                 :minute="session.showTime ? 'numeric' : undefined"
               />
             </div>
-            <div class="mt-2 mb-4">
+            <div class="mt-2 mb-3">
               <div v-if="session.description" class="mt-2" v-html="session.description" />
             </div>
           </div>
         </div>
       </div>
-      <p v-if="categoryName" class="text-xs">
+      <p v-if="categoryName" class="text-[0.7rem]">
         {{ t('sessions.singleCategory', { category: categoryName }) }} <br>
         {{ t('sessions.allCats') }}
         <NuxtLink :to="localePath('/news')" :aria-label="t('sessions.newsPage')">

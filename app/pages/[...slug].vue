@@ -69,7 +69,7 @@ if (route.path !== '/contact' && route.path !== '/en/contact') triggerPolitePopu
 .prose .iubenda_legal_document > :first-child {
   margin-top: 0;
 }
-@media (min-width: 640px) {
+@media (min-width: 540px) {
   .prose .col-left,
   .prose .col-right {
     width: 50%;
