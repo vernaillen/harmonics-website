@@ -334,6 +334,10 @@ module.exports = {
     {
       pattern: /text-(primary|ecstatic|sound|music|trance)-(400|500)/,
       variants: ['hover']
+    },
+    {
+      pattern: /bg-(primary|ecstatic|sound|music|trance)-(400|500)/,
+      variants: ['hover']
     }
   ]
 }
