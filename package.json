@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@nuxt/ui-pro": "^1.7.0",
-    "@twicpics/components": "^0.31.3",
+    "@twicpics/components": "^0.32.0",
     "@vercel/speed-insights": "^1.2.0",
     "resend": "^4.1.2",
     "vue-easy-lightbox": "^1.19.0",
