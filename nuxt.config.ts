@@ -23,7 +23,7 @@ export default defineNuxtConfig({
       '@twicpics/components/nuxt3',
       {
         domain: 'https://vernaillen.twic.pics',
-        prefix: 'harmonics.be',
+        prefix: 'harmonics-old',
         anticipation: 0.5,
         step: 100
       }
@@ -158,7 +158,7 @@ export default defineNuxtConfig({
       baseURL: 'https://res.cloudinary.com/dys7j44q8/image/upload/harmonics/'
     },
     twicpics: {
-      baseURL: 'https://vernaillen.twic.pics/harmonics.be'
+      baseURL: 'https://vernaillen.twic.pics/harmonics-old'
     }
   },
 

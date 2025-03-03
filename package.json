@@ -13,8 +13,6 @@
     "generate": "nuxt generate",
     "preview": "nuxt build && nuxt preview",
     "start": "node .output/server/index.mjs",
-    "lagon:dev": "NITRO_PRESET=lagon NUXT_IMAGE_PROVIDER=twicpics pnpm build && npx -p esbuild -p @lagon/cli lagon dev",
-    "lagon:deploy": "NITRO_PRESET=lagon NUXT_IMAGE_PROVIDER=twicpics pnpm build && npx -p esbuild -p @lagon/cli lagon deploy",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest",
