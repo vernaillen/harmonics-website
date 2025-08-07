@@ -63,7 +63,7 @@
     "@nuxt/ui-pro": "^1.7.0",
     "@twicpics/components": "^0.31.3",
     "@vercel/speed-insights": "^1.2.0",
-    "resend": "^4.1.2",
+    "resend": "^5.0.0",
     "vue-easy-lightbox": "^1.19.0",
     "vue3-lazyload": "^0.3.8",
     "yup": "^1.6.1"
